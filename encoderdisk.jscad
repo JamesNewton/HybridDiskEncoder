@@ -27,15 +27,13 @@ var slots = [];
       slots.push(
         rotate([0,0,i], 
           translate([params.slotd/2,-slotwidth/2,-1], 
-            cube({size: [params.slotlength,slotwidth, 2]})
+            square({size: [params.slotlength,slotwidth]})
             )
           )
         );
    }
 
-return cylinder({r: params.disk/2, fn: 50})
-    .subtract(cylinder({r: params.hub/2, h:2, center: true}))
-    .subtract(slots)
-    .translate([0, 0, 0])
-    .scale(1);
+return circle({r: params.disk/2, fn: 50, center: true})
+    .subtract(circle({r: params.hub/2, h:2, center: true}))
+    .subtract(slots);
 }
