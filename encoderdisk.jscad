@@ -46,9 +46,9 @@ var washer = circle({r:(params.hub/2+0.8), center: true})
     .subtract(circle({r:params.hub/2, h:2, center: true}));
 var mask = square({size:[params.slotlength,sensespace], center:true})
 var assembly = [
-    linear_extrude({height: thick},base),
+    linear_extrude({height: thick},base).setColor(1,0.5,0.3),
     linear_extrude({height: thick},washer).translate([0,0,thick]),
-    linear_extrude({height: thick},mask).translate([params.slotd/2,0,thick]),
+    linear_extrude({height: thick},mask).translate([params.slotd/2,0,thick]).setColor([0,0,0]),
     linear_extrude({height: thick},disk).translate([0,0,thick*2]),
     linear_extrude({height: thick},washer).translate([0,0,thick*3]),
     ];
