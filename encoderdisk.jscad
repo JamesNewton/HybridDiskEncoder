@@ -39,12 +39,15 @@ var slots = []
 var disk = circle({r: params.disk/2, fn: 50, center: true})
     .subtract(circle({r: params.hub/2, h:2, center: true}))
     .subtract(slots)
-    ;
-var base = square({size: [params.disk+10, params.disk+10], center:true})
-    ;
+var basesize=params.disk+10
+var base = square({size: [basesize, basesize], center:true})
+    .subtract(translate([params.slotd/2+params.slotlength/2,+sensespace/2,0],circle({r:1.5, center:true})))
+    .subtract(translate([params.slotd/2+params.slotlength/2,-sensespace/2,0],circle({r:1.5, center:true})))
 var washer = circle({r:(params.hub/2+0.8), center: true})
     .subtract(circle({r:params.hub/2, h:2, center: true}));
-var mask = square({size:[params.slotlength,sensespace], center:true})
+var mask = square({size:[params.slotd-basesize,sensespace+6], center:true})
+    .subtract(translate([params.slotlength/2,+sensespace/2,0],rotate([0,0,+slotinc],square({size: [params.slotlength,slotwidth], center:true}))))
+    .subtract(translate([params.slotlength/2,-sensespace/2,0],rotate([0,0,-slotinc],square({size: [params.slotlength,slotwidth], center:true}))))
 var assembly = [
     linear_extrude({height: thick},base).setColor(1,0.5,0.3),
     linear_extrude({height: thick},washer).translate([0,0,thick]),
