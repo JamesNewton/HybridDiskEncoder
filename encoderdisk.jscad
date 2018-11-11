@@ -21,6 +21,9 @@ function getParameterDefinitions() {
 function main () {
 var thick = params.thick
 var slotwidth = Math.PI*params.disk/params.slots/2 - params.cutfudge;
+// LED / photodiodes are T3, (3mm) so center to center ~4mm min
+var senseslots = Math.ceil(4.0 / Math.PI*params.disk/params.slots)*2
+var sensespace =  senseslots*1.5
 var slotinc = 360.0/params.slots
 var slots = []
    for(i=0.0; i<360; i+=slotinc) {
@@ -41,10 +44,11 @@ var base = square({size: [params.disk+10, params.disk+10], center:true})
     ;
 var washer = circle({r:(params.hub/2+0.8), center: true})
     .subtract(circle({r:params.hub/2, h:2, center: true}));
-var mask = square({size:[]})
+var mask = square({size:[params.slotlength,sensespace], center:true})
 var assembly = [
     linear_extrude({height: thick},base),
     linear_extrude({height: thick},washer).translate([0,0,thick]),
+    linear_extrude({height: thick},mask).translate([params.slotd/2,0,thick]),
     linear_extrude({height: thick},disk).translate([0,0,thick*2]),
     linear_extrude({height: thick},washer).translate([0,0,thick*3]),
     ];
