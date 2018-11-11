@@ -39,8 +39,8 @@ var disk = circle({r: params.disk/2, fn: 50, center: true})
     ;
 var base = square({size: [params.disk+10, params.disk+10], center:true})
     ;
-var washer = circle({r:(params.hub+0.8), center: true})
-    .subtract(circle({r:params.hub, h:2, center: true}));
+var washer = circle({r:(params.hub/2+0.8), center: true})
+    .subtract(circle({r:params.hub/2, h:2, center: true}));
 var mask = square({size:[]})
 var assembly = [
     linear_extrude({height: thick},base),
