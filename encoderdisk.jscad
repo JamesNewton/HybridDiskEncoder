@@ -12,6 +12,7 @@ function getParameterDefinitions() {
     { name: 'slots', type: 'float', initial: 15.7, caption: "number of slots:" },
     { name: 'slotd', type: 'float', initial: 66, caption: "slots diameter:" },
     { name: 'slotlength', type: 'float', initial: 3.5, caption: "slot length:" },
+    { name: 'mask', type: 'float', initial: 0.8, caption: "slot mask width:" },
     { name: 'cutfudge', type: 'float', initial: 0.4, caption: "laser cut width or<br> (-) filament spread:" },
     { name: 'thick', type: 'float', initial: 2, caption: "material thickness:" },
     ];
@@ -46,8 +47,8 @@ var base = square({size: [basesize, basesize], center:true})
 var washer = circle({r:(params.hub/2+0.8), center: true})
     .subtract(circle({r:params.hub/2, h:2, center: true}));
 var mask = square({size:[params.slotd-basesize,sensespace+6], center:true})
-    .subtract(translate([params.slotlength/2,+sensespace/2,0],rotate([0,0,+slotinc],square({size: [params.slotlength,slotwidth], center:true}))))
-    .subtract(translate([params.slotlength/2,-sensespace/2,0],rotate([0,0,-slotinc],square({size: [params.slotlength,slotwidth], center:true}))))
+    .subtract(translate([params.slotlength/2,+sensespace/2,0],rotate([0,0,+slotinc],square({size: [params.slotlength,params.mask], center:true}))))
+    .subtract(translate([params.slotlength/2,-sensespace/2,0],rotate([0,0,-slotinc],square({size: [params.slotlength,params.mask], center:true}))))
 var assembly = [
     linear_extrude({height: thick},base).setColor(1,0.5,0.3),
     linear_extrude({height: thick},washer).translate([0,0,thick]),
