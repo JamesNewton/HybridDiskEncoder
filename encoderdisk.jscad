@@ -7,12 +7,13 @@
 
 function getParameterDefinitions() {
   return [
-    { name: 'disk', type: 'float', initial: 77, caption: "diameter of the disk:" },
-    { name: 'hub', type: 'float', initial: 2, caption: "diameter of the hub:" },
+    { name: 'disk', type: 'float', initial: 77, caption: "disk diameter:" },
+    { name: 'hub', type: 'float', initial: 2, caption: "hub diameter:" },
     { name: 'slots', type: 'float', initial: 157, caption: "number of slots:" },
-    { name: 'slotd', type: 'float', initial: 66, caption: "distance slots from center:" },
-    { name: 'slotlength', type: 'float', initial: 3.5, caption: "length of each slot:" },
-    { name: 'cutfudge', type: 'float', initial: 0.4, caption: "width of laser cut / negative spread of printer filament:" },
+    { name: 'slotd', type: 'float', initial: 66, caption: "slots diameter:" },
+    { name: 'slotlength', type: 'float', initial: 3.5, caption: "slot length:" },
+    { name: 'cutfudge', type: 'float', initial: 0.4, caption: "laser cut width or<br> (-) filament spread:" },
+    { name: 'thick', type: 'float', initial: 2, caption: "material thickness:" },
     ];
 }
 
@@ -20,10 +21,8 @@ function getParameterDefinitions() {
 function main () {
 var slotwidth = Math.PI*params.disk/params.slots/2 - params.cutfudge;
 var slotinc = 360.0/params.slots;
-console.log(slotinc);
 var slots = [];
    for(i=0.0; i<360; i+=slotinc) {
-       console.log(i);
       slots.push(
         rotate([0,0,i], 
           translate([params.slotd/2,-slotwidth/2,-1], 
@@ -33,7 +32,19 @@ var slots = [];
         );
    }
 
-return circle({r: params.disk/2, fn: 50, center: true})
+var disk = circle({r: params.disk/2, fn: 50, center: true})
     .subtract(circle({r: params.hub/2, h:2, center: true}))
     .subtract(slots);
+
+
+var base = square({size: [params.disk+10, params.disk+10], center:true});
+
+var assembly = [
+    disk.extrude({height: params.thick})
+        .translate([0,0,params.thick])
+        ,
+    base.extrude({height: params.thick}),
+    ];
+
+return assembly;
 }
