@@ -2,7 +2,7 @@
 // author     : James Newton
 // license    : MIT License
 // revision   : 0
-// tags       : hdrobotics.com
+// tags       : hdrobotic.com
 // file       : encoderdisk.jscad
 
 function getParameterDefinitions() {
