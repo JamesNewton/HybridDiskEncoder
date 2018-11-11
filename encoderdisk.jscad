@@ -9,7 +9,7 @@ function getParameterDefinitions() {
   return [
     { name: 'disk', type: 'float', initial: 77, caption: "disk diameter:" },
     { name: 'hub', type: 'float', initial: 4, caption: "hub diameter:" },
-    { name: 'slots', type: 'float', initial: 15.7, caption: "number of slots:" },
+    { name: 'slots', type: 'int', initial: 80, caption: "number of slots:" },
     { name: 'slotd', type: 'float', initial: 66, caption: "slots diameter:" },
     { name: 'slotlength', type: 'float', initial: 3.5, caption: "slot length:" },
     { name: 'mask', type: 'float', initial: 0.8, caption: "slot mask width:" },
