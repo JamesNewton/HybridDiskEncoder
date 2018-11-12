@@ -66,8 +66,9 @@ return cut;
 }
 
 function placeright(o,a) {
-    edge = a.reduce((t, e) => t + e.getBounds()[1].x, 0)
-    edge += o.getBounds()[1].x/2
+    var edge = a.reduce((t, e) => t + 
+        (e.getBounds()[1].x - e.getBounds()[0].x), 0)
+    //edge += (o.getBounds()[1].x - o.getBounds()[0].x)/2
     a.push(translate([0,edge], o))
     }
     
