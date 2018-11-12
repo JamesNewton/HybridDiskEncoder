@@ -16,7 +16,7 @@ function getParameterDefinitions() {
     { name: 'mask', type: 'float', initial: 0.8, caption: "slot mask width:" },
     { name: 'cutfudge', type: 'float', initial: 0.4, caption: "laser cut width or<br> (-) filament spread:" },
     { name: 'thick', type: 'float', initial: 2, caption: "material thickness:" },
-    ];
+{ name: 'output', type: 'choice', caption: 'Output:', values: [0, 1], captions: ["Assembly", "Parts"], initial: 0 }    ];
 }
 
 function main () {
@@ -62,7 +62,9 @@ var cut = []
     placeright(mask,cut)
     placeright(washer,cut)
     placeright(washer,cut)
-return cut;
+var out 
+if (0 == params.output) out = assembly; else out = cut;
+return out;
 }
 
 function placeright(o,a) {
