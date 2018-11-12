@@ -2,8 +2,9 @@
 // author     : James Newton
 // license    : MIT License
 // revision   : 0
-// tags       : hdrobotic.com
+// tags       : hdrobotics.com
 // file       : encoderdisk.jscad
+// http://openjscad.com/#https://gist.githubusercontent.com/JamesNewton/c8598878736442c440bbe41d086291ac/raw//encoderdisk.jscad
 
 function getParameterDefinitions() {
   return [
@@ -17,7 +18,6 @@ function getParameterDefinitions() {
     { name: 'thick', type: 'float', initial: 2, caption: "material thickness:" },
     ];
 }
-
 
 function main () {
 var thick = params.thick
@@ -44,6 +44,7 @@ var basesize=params.disk+10
 var base = square({size: [basesize, basesize], center:true})
     .subtract(translate([params.slotd/2+params.slotlength/2,+sensespace/2,0],circle({r:1.5, center:true})))
     .subtract(translate([params.slotd/2+params.slotlength/2,-sensespace/2,0],circle({r:1.5, center:true})))
+    base.w = basesize; base.h = basesize;
 var washer = circle({r:(params.hub/2+0.8), center: true})
     .subtract(circle({r:params.hub/2, h:2, center: true}));
 var mask = square({size:[params.slotd-basesize,sensespace+6], center:true})
@@ -55,7 +56,19 @@ var assembly = [
     linear_extrude({height: thick},mask).translate([params.slotd/2,0,thick]).setColor([0,0,0]),
     linear_extrude({height: thick},disk).translate([0,0,thick*2]),
     linear_extrude({height: thick},washer).translate([0,0,thick*3]),
-    ];
-
-return assembly;
+    ]
+var cut = []
+    cut.push(base)
+    placeright(mask,cut)
+    placeright(washer,cut)
+    placeright(washer,cut)
+return cut;
 }
+
+function placeright(o,a) {
+    edge = a.reduce((t, e) => t + e.getBounds()[1].x, 0)
+    edge += o.getBounds()[1].x/2
+    a.push(translate([0,edge], o))
+    }
+    
+    
