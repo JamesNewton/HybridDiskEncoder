@@ -16,7 +16,7 @@ function getParameterDefinitions() {
     { name: 'mask', type: 'float', initial: 0.8, caption: "slot mask width:" },
     { name: 'cutfudge', type: 'float', initial: 0.4, caption: "laser cut width or<br> (-) filament spread:" },
     { name: 'thick', type: 'float', initial: 2, caption: "material thickness:" },
-    { name: 'othick', type: 'float', initial: 2, caption: "opaque thickness:" },
+    { name: 'othick', type: 'float', initial: 0.5, caption: "opaque thickness:" },
 { name: 'output', type: 'choice', caption: 'Output:', values: [0, 1], captions: ["Assembly", "Parts"], initial: 0 }    ];
 }
 
