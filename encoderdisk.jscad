@@ -52,8 +52,7 @@ var base = square({size: [basesize, basesize], center:true})
     .subtract(circle({r: params.hub/2, center: true}))
 var washer = circle({r:(params.hub/2+0.8), center: true})
     .subtract(circle({r:params.hub/2, h:2, center: true}));
-var washertop = circle({r:(params.hub/2+0.8), center: true})
-    .subtract(circle({r:params.hub/2, h:2, center: true}));
+var washertop = washer.translate([0,0,0])
 var mask = square({size:[slotd-basesize,sensespace+6], center:true})
     .subtract(translate([params.slotlength/2,+sensespace/2,0],rotate([0,0,+slotinc],square({size: [params.slotlength,params.mask], center:true}))))
     .subtract(translate([params.slotlength/2,-sensespace/2,0],rotate([0,0,-slotinc],square({size: [params.slotlength,params.mask], center:true}))))
@@ -93,7 +92,8 @@ var cut = []
     cut.push(base)
     cut.push(arm)
     cut.push(support)
-    cut.push(riser) //need 2 of these... 
+    cut.push(riser) //need 2 of these...
+    cut.push(riser.translate([0,0,0]))
     cut.push(sensors) 
     cut.push(washer)
     cut.push(washertop)
@@ -101,21 +101,38 @@ var cut = []
     cut.push(disk)
     cut.push(mask)
 
-var out = []
 if (0 == params.output) out = assembly; 
-else { 
-    binPack(cut);
-    for (var i = 0; i < cut.length; ++i) {
-        var p2D = cut[i];
-        var b = p2D.getBounds();
-        out.push(p2D.translate([p2D.fit.x - b[0].x, p2D.fit.y - b[0].y, 0]));
-        }
-    out = union(out);
-    }
+else { out = binPack(cut); }
 return out;
 }
 
-    
+function binPack(pieces2D) {
+    var packingEpsilon = 3; //default spacing. 
+    // add .w and .h to each piece based on bounds + spacing
+    for (var i = 0; i < pieces2D.length; i++) {
+        var bounds = pieces2D[i].getBounds();
+        pieces2D[i].w = bounds[1].x - bounds[0].x + packingEpsilon;
+        pieces2D[i].h = bounds[1].y - bounds[0].y + packingEpsilon;
+        }
+    //sort by largest dimension
+    // https://github.com/jakesgordon/bin-packing/pull/3/commits/a9c72459a968f2be622917f0e05e3dfbeb919720
+    pieces2D.sort(function(a,b) { return (max(b.w, b.h) - max(a.w, a.h)); });
+    //pack
+    var packer = new GrowingPacker();
+    packer.fit(pieces2D);
+    //check, output
+    var out = []
+    for (var i = 0; i < pieces2D.length; ++i) {
+        var p2D = pieces2D[i];
+        if (!p2D.fit) {
+            die("Couldn't fit: " + JSON.stringify(p2D));
+            }
+        var b = p2D.getBounds();
+        out.push(p2D.translate([p2D.fit.x - b[0].x, p2D.fit.y - b[0].y, 0]));
+        }
+    return union(out)
+    }
+
 //////////////////////////////////////////////////////////////////////
 // start include('packer.growing.js');
 // Ami NOTE: grabbed from https://github.com/jakesgordon/bin-packing/blob/master/js/packer.growing.js on 20160803 (not modified since 2011)
@@ -268,28 +285,6 @@ GrowingPacker.prototype = {
 
 // end include('packer.growing.js');
 
-function binPack(pieces2D) {
-    var packingEpsilon = 3; //default spacing. 
-    // add .w and .h to each piece based on bounds + spacing
-    for (var i = 0; i < pieces2D.length; i++) {
-        var bounds = pieces2D[i].getBounds();
-        pieces2D[i].w = bounds[1].x - bounds[0].x + packingEpsilon;
-        pieces2D[i].h = bounds[1].y - bounds[0].y + packingEpsilon;
-        }
-    //sort by largest dimension
-    // https://github.com/jakesgordon/bin-packing/pull/3/commits/a9c72459a968f2be622917f0e05e3dfbeb919720
-    pieces2D.sort(function(a,b) { return (max(b.w, b.h) - max(a.w, a.h)); });
-    //pack
-    var packer = new GrowingPacker();
-    packer.fit(pieces2D);
-    //check
-    for (var i = 0; i < pieces2D.length; ++i) {
-        var p2D = pieces2D[i];
-        if (!p2D.fit) {
-            die("Couldn't fit: " + JSON.stringify(p2D));
-        }
-    }
-}
 
 die = function(msg) {
     throw "error: " + msg;
