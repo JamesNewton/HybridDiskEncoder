@@ -21,15 +21,18 @@ function getParameterDefinitions() {
 }
 
 function main () {
+const M3r = 1.5 //M3 diameter
 var thick = params.thick
+var thin = params.othick
 var slotwidth = Math.PI*params.disk/params.slots/2 - params.cutfudge;
 // LED / photodiodes are T3, (3mm) so center to center ~4mm min
 var senseslots = Math.ceil(4.0 / Math.PI*params.disk/params.slots)*2
 var sensespace =  senseslots*1.5
 var slotinc = 360.0/params.slots
-var slotd = params.disk - params.slotd
+var slotd = params.disk - params.slotd //disk diameter less slot inset
 var basesize=params.disk+10
 var edge = (basesize-params.disk)/2
+var supsize = basesize/2+params.hub
 var slots = []
    for(i=0.0; i<360; i+=slotinc) {
       slots.push(
@@ -44,11 +47,13 @@ var slots = []
 var disk = circle({r: params.disk/2-0.5, fn: 50, center: true})
     .subtract(circle({r: params.hub/2, h:2, center: true}))
     .subtract(slots)
+var disksup = circle({r: params.disk/6, center: true})
+    .subtract(circle({r: params.hub/2, h:2, center: true}))
 var base = square({size: [basesize, basesize], center:true})
     .subtract(translate([slotd/2+params.slotlength/2,+sensespace/2,0],circle({r:1.5, center:true})))
     .subtract(translate([slotd/2+params.slotlength/2,-sensespace/2,0],circle({r:1.5, center:true})))
-    .subtract(translate([basesize/2-3,+sensespace/2,0],circle({r: 1.5, center:true})))
-    .subtract(translate([basesize/2-3,-sensespace/2,0],circle({r: 1.5, center:true})))
+    .subtract(translate([basesize/2-3,+sensespace/2,0],circle({r: M3r, center:true})))
+    .subtract(translate([basesize/2-3,-sensespace/2,0],circle({r: M3r, center:true})))
     .subtract(circle({r: params.hub/2, center: true}))
 var washer = circle({r:(params.hub/2+0.8), center: true})
     .subtract(circle({r:params.hub/2, h:2, center: true}));
@@ -58,6 +63,7 @@ var mask = square({size:[slotd-basesize,sensespace+6], center:true})
     .subtract(translate([params.slotlength/2,-sensespace/2,0],rotate([0,0,-slotinc],square({size: [params.slotlength,params.mask], center:true}))))
     .subtract(translate([-(slotd-basesize)/2-3,+sensespace/2,0],circle({r: 1.5, center:true})))
     .subtract(translate([-(slotd-basesize)/2-3,-sensespace/2,0],circle({r: 1.5, center:true})))
+var masktop = mask.translate([0,0,0])
 var riser = square({size:[edge,sensespace+6], center:true})
     .subtract(translate([-0.5,+sensespace/2,0],circle({r: 1.5, center:true})))
     .subtract(translate([-0.5,-sensespace/2,0],circle({r: 1.5, center:true})))
@@ -68,25 +74,29 @@ var arm = square({size: [slotd,sensespace+6], center:true})
 var sensors = square({size:[slotd-basesize,sensespace+6], center:true})
     .subtract(translate([params.slotlength/2,+sensespace/2,0],circle({r: 1.5, center:true})))
     .subtract(translate([params.slotlength/2,-sensespace/2,0],circle({r: 1.5, center:true})))
-    .subtract(translate([-(slotd-basesize)/2-3,+sensespace/2,0],circle({r: 1.5, center:true})))
-    .subtract(translate([-(slotd-basesize)/2-3,-sensespace/2,0],circle({r: 1.5, center:true})))
-var support = square({size: [basesize/2+params.hub,sensespace+6], center:true})
+    .subtract(translate([-(slotd-basesize)/2-3,+sensespace/2,0],circle({r: M3r, center:true})))
+    .subtract(translate([-(slotd-basesize)/2-3,-sensespace/2,0],circle({r: M3r, center:true})))
+var support = square({size: [supsize,sensespace+6], center:true})
     .subtract(circle({r: params.hub/2, center: true}).translate([-(basesize/2+params.hub)/2+params.hub,0]))
-    .subtract(translate([(basesize/2+params.hub)/2-edge/2-0.5,+sensespace/2,0],circle({r: 1.5, center:true})))
-    .subtract(translate([(basesize/2+params.hub)/2-edge/2-0.5,-sensespace/2,0],circle({r: 1.5, center:true})))
-    .translate([(basesize/2+params.hub)/2-params.hub,0])
+    .subtract(translate([supsize/2-edge/2-0.5,+sensespace/2,0],circle({r: M3r, center:true})))
+    .subtract(translate([supsize/2-edge/2-0.5,-sensespace/2,0],circle({r: M3r, center:true})))
+    .subtract(translate([supsize/2-edge-params.slotd/2+params.slotlength/2,+sensespace/2,0],circle({r: 1.5, center:true})))
+    .subtract(translate([supsize/2-edge-params.slotd/2+params.slotlength/2,-sensespace/2,0],circle({r: 1.5, center:true})))
+    .translate([supsize/2-params.hub,0])
     
 var assembly = [
     linear_extrude({height: thick},base).setColor(1,0.5,0.3),
     linear_extrude({height: thick},washer).translate([0,0,thick]),
-    linear_extrude({height: params.othick},mask).translate([slotd/2,0,thick]).setColor([.2,.2,.2]),
+    linear_extrude({height: thin},mask).translate([slotd/2,0,thick]).setColor([.2,.2,.2]),
     linear_extrude({height: thick*2},riser).translate([basesize/2-edge/2,0,thick+params.othick]).setColor(1,0.5,0.3),
-    linear_extrude({height: params.othick},disk).translate([0,0,thick*2]).setColor([.2,.2,.2]),
-    linear_extrude({height: thick},arm).translate([0,0,thick*2+params.othick])
+    linear_extrude({height: thin},disksup).translate([0,0,thick*2]).setColor([.2,.2,.2]),
+    linear_extrude({height: thin},disk).translate([0,0,thick*2+thin]).setColor([.2,.2,.2]),
+    linear_extrude({height: thick},arm).translate([0,0,thick*2+thin*2])
         .setColor(1,0.5,0.3),
-    linear_extrude({height: thick},washertop).translate([0,0,thick*3+params.othick]),
-    linear_extrude({height: thick},sensors).translate([slotd/2,0,thick*3+params.othick]).setColor(1,0.5,0.3),
-    linear_extrude({height: thick},support).translate([0,0,thick*4+params.othick]).setColor(1,0.5,0.3),
+    linear_extrude({height: thin},masktop).translate([slotd/2,0,thick*3+thin]).setColor([.2,.2,.2]),
+    linear_extrude({height: thick},washertop).translate([0,0,thick*3+thin*2]),
+    linear_extrude({height: thick},sensors).translate([slotd/2,0,thick*3+thin*2]).setColor(1,0.5,0.3),
+    linear_extrude({height: thick},support).translate([0,0,thick*4+thin*2]).setColor(1,0.5,0.3),
     ]
 var cut = []
     cut.push(base)
@@ -99,7 +109,9 @@ var cut = []
     cut.push(washertop)
 //these should be in a separate cut.
     cut.push(disk)
+    cut.push(disksup)
     cut.push(mask)
+    cut.push(masktop)
 
 if (0 == params.output) out = assembly; 
 else { out = binPack(cut); }
