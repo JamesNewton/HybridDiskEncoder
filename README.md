@@ -60,11 +60,11 @@ At edge:
 - detector mount, 
 - top support arm. 
 
-##Questions:
+## Questions:
 Detector to support mount should be adjustable? Or will laser cut and assembly be accurate enough?
 
-##Status:
-Physical design completed, some disks have been lasercut and appear to work well. 
+## Status:
+- Done: CAD encoder, (some disks have been lasercut and appear to work well.)
 - TODO: Order parts for electronics
 - TODO: Order thin (1 or 2mm) acrylic and black / opaque cardstock.
 - TODO: Lasercut parts for test assembly, update CAD as needed
