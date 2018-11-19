@@ -60,6 +60,11 @@ At edge:
 - detector mount, 
 - top support arm. 
 
+## Building the Firmware
+**IDE:** To start with the cy8ckit-043, you want this link:<br>
+http://www.cypress.com/file/199476
+<br>for both the Creator IDE and the support files for that hardware. 
+
 ## Questions:
 Detector to support mount should be adjustable? Or will laser cut and assembly be accurate enough?
 
