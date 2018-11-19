@@ -21,7 +21,9 @@ http://openjscad.com/#https://gist.githubusercontent.com/JamesNewton/c8598878736
 and edit parameters in the control block lower left. Switch from "Assembly" to "Parts" (bottom control block) to generate DXF or SVG
 output for cutting. 
 
-**Electronics** At this point, we are focused on the Cypress PSoC 4 chips for the processor, with opto .<br>
+**Electronics** At this point, we are focused on the 
+<A href="http://www.cypress.com/products/32-bit-arm-cortex-m0-psoc-4200-programmable-digital-blocks">Cypress PSoC 4 chips</A>
+for the processor, with only opto sensors, and LEDs, (and USB serial interface).<br>
 http://www.cypress.com/part/cy8c4247azi-m485
 <br>This gives us:
 - 8 channel, 12 bit ADC 1-Msps, 
@@ -30,8 +32,7 @@ http://www.cypress.com/part/cy8c4247azi-m485
 
 And if we want to include support for high speed slot counting in the future: 48 macrocells for some FPGA ability. 
 
-It is featured in these development systems:<br>
-http://www.cypress.com/documentation/development-kitsboards/psoc-4-cy8ckit-049-4xxx-prototyping-kits $4 or...<br>
+It is featured in this development system:<br>
 http://www.cypress.com/documentation/development-kitsboards/cy8ckit-043-psoc-4-m-series-prototyping-kit $10 WITH a debugger!
 The importance of a good debugger can not be overstated. 
 
