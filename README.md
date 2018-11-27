@@ -27,7 +27,8 @@ for the processor, with only opto sensors, and LEDs, (and USB serial interface).
 http://www.cypress.com/part/cy8c4247azi-m485
 <br>This gives us:
 - 8 channel, 12 bit ADC 1-Msps, 
-- programmable analog front end (no need for external opamps or manual level adj), 
+- programmable analog front end (no need for external opamps), 
+- PWM output to adjust emmiter brightness (no need for manual adjust),
 - 128K FLASH, 16K RAM, 48 Mhz, 32 bit ARM Cortex-M0.
 
 And if we want to include support for high speed slot counting in the future: 48 macrocells for some FPGA ability. 
