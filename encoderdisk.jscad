@@ -4,7 +4,7 @@
 // revision   : 0
 // tags       : hdrobotics.com
 // file       : encoderdisk.jscad
-// http://openjscad.com/#https://gist.githubusercontent.com/JamesNewton/c8598878736442c440bbe41d086291ac/raw//encoderdisk.jscad
+// https://openjscad.org/#https://raw.githubusercontent.com/JamesNewton/HybridDiskEncoder/master/encoderdisk.jscad
 
 function getParameterDefinitions() {
   return [
@@ -21,6 +21,7 @@ function getParameterDefinitions() {
 }
 
 function main () {
+var packingEpsilon = 3; //default spacing for flat parts
 const M3r = 1.5 //M3 diameter
 var thick = params.thick
 var thin = params.othick
@@ -55,9 +56,9 @@ var base = square({size: [basesize, basesize], center:true})
     .subtract(translate([basesize/2-3,+sensespace/2,0],circle({r: M3r, center:true})))
     .subtract(translate([basesize/2-3,-sensespace/2,0],circle({r: M3r, center:true})))
     .subtract(circle({r: params.hub/2, center: true}))
-var washer = circle({r:(params.hub/2+0.8), center: true})
+var washer = circle({r:(sensespace+6)/2, center: true})
     .subtract(circle({r:params.hub/2, h:2, center: true}));
-var washertop = washer.translate([0,0,0])
+var washertop = washer.translate([0,0,0]) //translate hack copys the object
 var mask = square({size:[slotd-basesize,sensespace+6], center:true})
     .subtract(translate([params.slotlength/2,+sensespace/2,0],rotate([0,0,+slotinc],square({size: [params.slotlength,params.mask], center:true}))))
     .subtract(translate([params.slotlength/2,-sensespace/2,0],rotate([0,0,-slotinc],square({size: [params.slotlength,params.mask], center:true}))))
@@ -68,6 +69,7 @@ var riser = square({size:[edge,sensespace+6], center:true})
     .subtract(translate([-0.5,+sensespace/2,0],circle({r: 1.5, center:true})))
     .subtract(translate([-0.5,-sensespace/2,0],circle({r: 1.5, center:true})))
 var arm = square({size: [slotd,sensespace+6], center:true})
+    .union(circle({r:(sensespace+6)/2, center: true}).translate([slotd/2-params.hub,0]))
     .subtract(circle({r: 1, center: true}).translate([-slotd/3,0]))
     .subtract(circle({r: params.hub/2, center: true}).translate([slotd/2-params.hub,0]))
     .translate([-slotd/2+params.hub,0])
@@ -86,40 +88,47 @@ var support = square({size: [supsize,sensespace+6], center:true})
     
 var assembly = [
     linear_extrude({height: thick},base).setColor(1,0.5,0.3),
-    linear_extrude({height: thick},washer).translate([0,0,thick]),
+    linear_extrude({height: thin},washer).translate([0,0,thick]),
+    linear_extrude({height: thin},disksup).translate([0,0,thick+thin]).setColor([.2,.2,.2]),
+    linear_extrude({height: thin},disk).translate([0,0,thick+thin*2]).setColor([.2,.2,.2]),
+    linear_extrude({height: thick},arm).translate([0,0,thick+thin*3]).setColor(1,0.5,0.3),
+    linear_extrude({height: thin},washertop).translate([0,0,thick*2+thin*3]),
+
     linear_extrude({height: thin},mask).translate([slotd/2,0,thick]).setColor([.2,.2,.2]),
-    linear_extrude({height: thick*2},riser).translate([basesize/2-edge/2,0,thick+params.othick]).setColor(1,0.5,0.3),
-    linear_extrude({height: thin},disksup).translate([0,0,thick*2]).setColor([.2,.2,.2]),
-    linear_extrude({height: thin},disk).translate([0,0,thick*2+thin]).setColor([.2,.2,.2]),
-    linear_extrude({height: thick},arm).translate([0,0,thick*2+thin*2])
-        .setColor(1,0.5,0.3),
-    linear_extrude({height: thin},masktop).translate([slotd/2,0,thick*3+thin]).setColor([.2,.2,.2]),
-    linear_extrude({height: thick},washertop).translate([0,0,thick*3+thin*2]),
-    linear_extrude({height: thick},sensors).translate([slotd/2,0,thick*3+thin*2]).setColor(1,0.5,0.3),
-    linear_extrude({height: thick},support).translate([0,0,thick*4+thin*2]).setColor(1,0.5,0.3),
+    linear_extrude({height: thin*2},riser).translate([basesize/2-edge/2,0,thick+thin]),
+    linear_extrude({height: thin},masktop).translate([slotd/2,0,thick+thin*3]).setColor([.2,.2,.2]),
+    linear_extrude({height: thick},sensors).translate([slotd/2,0,thick+thin*4]).setColor(1,0.5,0.3),
+    linear_extrude({height: thick},support).translate([0,0,thick*2+thin*4]).setColor(1,0.5,0.3),
     ]
-var cut = []
-    cut.push(base)
-    cut.push(arm)
-    cut.push(support)
-    cut.push(riser) //need 2 of these...
-    cut.push(riser.translate([0,0,0]))
-    cut.push(sensors) 
-    cut.push(washer)
-    cut.push(washertop)
+var cutthick = []
+    cutthick.push(base)
+    cutthick.push(arm)
+    cutthick.push(support)
+    cutthick.push(sensors) 
+
 //these should be in a separate cut.
-    cut.push(disk)
-    cut.push(disksup)
-    cut.push(mask)
-    cut.push(masktop)
+var cutthin = []
+    cutthin.push(disk)
+    cutthin.push(disksup)
+    cutthin.push(mask)
+    cutthin.push(masktop)
+    cutthin.push(washer)
+    cutthin.push(washertop)
+    cutthin.push(riser) //need 2 of these...
+    cutthin.push(riser.translate([0,0,0])) //translate to copy the object
 
 if (0 == params.output) out = assembly; 
-else { out = binPack(cut); }
+else { 
+    out = binPack(cutthin, packingEpsilon )
+        .union(binPack(cutthick, packingEpsilon )
+            .translate([0, -basesize-packingEpsilon, 0])
+            )
+        .translate([-basesize, 0, 0]); 
+    }
 return out;
 }
 
-function binPack(pieces2D) {
-    var packingEpsilon = 3; //default spacing. 
+function binPack(pieces2D, packingEpsilon ) {
     // add .w and .h to each piece based on bounds + spacing
     for (var i = 0; i < pieces2D.length; i++) {
         var bounds = pieces2D[i].getBounds();
