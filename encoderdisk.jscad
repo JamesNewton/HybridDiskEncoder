@@ -2,33 +2,36 @@
 // author     : James Newton
 // license    : MIT License
 // revision   : 0
-// tags       : hdrobotics.com
+// tags       : https://github.com/JamesNewton/HybridDiskEncoder
 // file       : encoderdisk.jscad
 // https://openjscad.org/#https://raw.githubusercontent.com/JamesNewton/HybridDiskEncoder/master/encoderdisk.jscad
 
 function getParameterDefinitions() {
   return [
     { name: 'disk', type: 'float', initial: 77, caption: "disk diameter:" },
-    { name: 'hub', type: 'float', initial: 4, caption: "hub diameter:" },
+    { name: 'hub', type: 'float', initial: 3, caption: "hub diameter:" },
     { name: 'slots', type: 'int', initial: 80, caption: "number of slots:" },
     { name: 'slotd', type: 'float', initial: 11, caption: "slots inset:" },
     { name: 'slotlength', type: 'float', initial: 3.5, caption: "slot length:" },
     { name: 'mask', type: 'float', initial: 0.8, caption: "slot mask width:" },
     { name: 'cutfudge', type: 'float', initial: 0.4, caption: "laser cut width or<br> (-) filament spread:" },
-    { name: 'thick', type: 'float', initial: 2, caption: "material thickness:" },
-    { name: 'othick', type: 'float', initial: 0.5, caption: "opaque thickness:" },
+    { name: 'thick', type: 'float', initial: 3, caption: "material thickness:" },
+    { name: 'othick', type: 'float', initial: 0.4, caption: "opaque thickness:" },
 { name: 'output', type: 'choice', caption: 'Output:', values: [0, 1], captions: ["Assembly", "Parts"], initial: 0 }    ];
 }
 
 function main () {
 var packingEpsilon = 3; //default spacing for flat parts
-const M3r = 1.5 //M3 diameter
+const M3r = 1.5 //M3 diameter /2
 var thick = params.thick
 var thin = params.othick
+var maskw = params.mask - params.cutfudge
+var senser = 3/2 - params.cutfudge //size of the sensors LITE-ON LTR-4206E
+var emitr = 3/2 - params.cutfudge //size of the LED emiters LITE-ON LTE-4206
 var slotwidth = Math.PI*params.disk/params.slots/2 - params.cutfudge;
 // LED / photodiodes are T3, (3mm) so center to center ~4mm min
 var senseslots = Math.ceil(4.0 / Math.PI*params.disk/params.slots)*2
-var sensespace =  senseslots*1.5
+var sensespace =  senseslots*1.5 //90 degrees out of phase
 var slotinc = 360.0/params.slots
 var slotd = params.disk - params.slotd //disk diameter less slot inset
 var basesize=params.disk+10
@@ -51,8 +54,8 @@ var disk = circle({r: params.disk/2-0.5, fn: 50, center: true})
 var disksup = circle({r: params.disk/6, center: true})
     .subtract(circle({r: params.hub/2, h:2, center: true}))
 var base = square({size: [basesize, basesize], center:true})
-    .subtract(translate([slotd/2+params.slotlength/2,+sensespace/2,0],circle({r:1.5, center:true})))
-    .subtract(translate([slotd/2+params.slotlength/2,-sensespace/2,0],circle({r:1.5, center:true})))
+    .subtract(translate([slotd/2+params.slotlength/2,+sensespace/2,0],circle({r:emitr, center:true})))
+    .subtract(translate([slotd/2+params.slotlength/2,-sensespace/2,0],circle({r:emitr, center:true})))
     .subtract(translate([basesize/2-3,+sensespace/2,0],circle({r: M3r, center:true})))
     .subtract(translate([basesize/2-3,-sensespace/2,0],circle({r: M3r, center:true})))
     .subtract(circle({r: params.hub/2, center: true}))
@@ -60,30 +63,30 @@ var washer = circle({r:(sensespace+6)/2, center: true})
     .subtract(circle({r:params.hub/2, h:2, center: true}));
 var washertop = washer.translate([0,0,0]) //translate hack copys the object
 var mask = square({size:[slotd-basesize,sensespace+6], center:true})
-    .subtract(translate([params.slotlength/2,+sensespace/2,0],rotate([0,0,+slotinc],square({size: [params.slotlength,params.mask], center:true}))))
-    .subtract(translate([params.slotlength/2,-sensespace/2,0],rotate([0,0,-slotinc],square({size: [params.slotlength,params.mask], center:true}))))
-    .subtract(translate([-(slotd-basesize)/2-3,+sensespace/2,0],circle({r: 1.5, center:true})))
-    .subtract(translate([-(slotd-basesize)/2-3,-sensespace/2,0],circle({r: 1.5, center:true})))
+    .subtract(translate([params.slotlength/2,+sensespace/2,0],rotate([0,0,+slotinc],square({size: [params.slotlength,maskw], center:true}))))
+    .subtract(translate([params.slotlength/2,-sensespace/2,0],rotate([0,0,-slotinc],square({size: [params.slotlength,maskw], center:true}))))
+    .subtract(translate([-(slotd-basesize)/2-3,+sensespace/2,0],circle({r: M3r, center:true})))
+    .subtract(translate([-(slotd-basesize)/2-3,-sensespace/2,0],circle({r: M3r, center:true})))
 var masktop = mask.translate([0,0,0])
 var riser = square({size:[edge,sensespace+6], center:true})
-    .subtract(translate([-0.5,+sensespace/2,0],circle({r: 1.5, center:true})))
-    .subtract(translate([-0.5,-sensespace/2,0],circle({r: 1.5, center:true})))
+    .subtract(translate([-0.5,+sensespace/2,0],circle({r: M3r, center:true})))
+    .subtract(translate([-0.5,-sensespace/2,0],circle({r: M3r, center:true})))
 var arm = square({size: [slotd,sensespace+6], center:true})
     .union(circle({r:(sensespace+6)/2, center: true}).translate([slotd/2-params.hub,0]))
     .subtract(circle({r: 1, center: true}).translate([-slotd/3,0]))
     .subtract(circle({r: params.hub/2, center: true}).translate([slotd/2-params.hub,0]))
     .translate([-slotd/2+params.hub,0])
 var sensors = square({size:[slotd-basesize,sensespace+6], center:true})
-    .subtract(translate([params.slotlength/2,+sensespace/2,0],circle({r: 1.5, center:true})))
-    .subtract(translate([params.slotlength/2,-sensespace/2,0],circle({r: 1.5, center:true})))
+    .subtract(translate([params.slotlength/2,+sensespace/2,0],circle({r: senser, center:true})))
+    .subtract(translate([params.slotlength/2,-sensespace/2,0],circle({r: senser, center:true})))
     .subtract(translate([-(slotd-basesize)/2-3,+sensespace/2,0],circle({r: M3r, center:true})))
     .subtract(translate([-(slotd-basesize)/2-3,-sensespace/2,0],circle({r: M3r, center:true})))
 var support = square({size: [supsize,sensespace+6], center:true})
     .subtract(circle({r: params.hub/2, center: true}).translate([-(basesize/2+params.hub)/2+params.hub,0]))
     .subtract(translate([supsize/2-edge/2-0.5,+sensespace/2,0],circle({r: M3r, center:true})))
     .subtract(translate([supsize/2-edge/2-0.5,-sensespace/2,0],circle({r: M3r, center:true})))
-    .subtract(translate([supsize/2-edge-params.slotd/2+params.slotlength/2,+sensespace/2,0],circle({r: 1.5, center:true})))
-    .subtract(translate([supsize/2-edge-params.slotd/2+params.slotlength/2,-sensespace/2,0],circle({r: 1.5, center:true})))
+    .subtract(circle({r: senser*1.4, center:true}).translate([supsize/2-edge-params.slotd/2+params.slotlength/2,+sensespace/2,0]))
+    .subtract(circle({r: senser*1.4, center:true}).translate([supsize/2-edge-params.slotd/2+params.slotlength/2,-sensespace/2,0]))
     .translate([supsize/2-params.hub,0])
     
 var assembly = [
