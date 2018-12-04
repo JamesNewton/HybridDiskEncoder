@@ -72,8 +72,8 @@ Detector to support mount should be adjustable? Or will laser cut and assembly b
 
 ## Status:
 - Done: CAD encoder, (some disks have been lasercut and appear to work well.)
-- TODO: Order parts for electronics
-- TODO: Order thin (1 or 2mm) acrylic and black / opaque cardstock.
+- Done: Order parts for electronics
+- Done: Order thin (1 or 2mm) acrylic and black / opaque cardstock. 110lb Cardstock with 3mm Acrylic seems to work
 - TODO: Lasercut parts for test assembly, update CAD as needed
 - TODO: Order bearings, update CAD to support.
 - TODO: Write test program for A2D feedback to PC. 
