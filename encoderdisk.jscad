@@ -10,6 +10,8 @@
 // - The small parts, e.g. riser and washer, can be blown away by the laser cutter. Best to cut the inside holes at full power
 //   and the outer parts at reduced power. Or to post edit the vectors to break the outer lines and leave tabs to hold them in.
 // - Lasers alway cut with a bit of an angle. If the LEDs / Sensors won't go in one way, turn the part over. 
+// - The holes for the LEDs / Sensors may need a little filing to fit.
+// - Leave the paper on the bottom of the plexi for the arm and use that to glue to the disk
 
 function getParameterDefinitions() {
   return [
@@ -72,7 +74,6 @@ var mask = square({size:[slotd-basesize,sensespace+6], center:true})
     .subtract(translate([params.slotlength/2,-sensespace/2,0],rotate([0,0,-slotinc],square({size: [params.slotlength,maskw], center:true}))))
     .subtract(translate([-(slotd-basesize)/2-3,+sensespace/2,0],circle({r: M3r, center:true})))
     .subtract(translate([-(slotd-basesize)/2-3,-sensespace/2,0],circle({r: M3r, center:true})))
-var masktop = mask.translate([0,0,0])
 var riser = square({size:[edge,sensespace+6], center:true})
     .subtract(translate([-0.5,+sensespace/2,0],circle({r: M3r, center:true})))
     .subtract(translate([-0.5,-sensespace/2,0],circle({r: M3r, center:true})))
@@ -86,6 +87,7 @@ var sensors = square({size:[slotd-basesize,sensespace+6], center:true})
     .subtract(translate([params.slotlength/2,-sensespace/2,0],circle({r: senser, center:true})))
     .subtract(translate([-(slotd-basesize)/2-3,+sensespace/2,0],circle({r: M3r, center:true})))
     .subtract(translate([-(slotd-basesize)/2-3,-sensespace/2,0],circle({r: M3r, center:true})))
+var LEDs = sensors.translate([0,0,0]) //translate to copy the object
 var support = square({size: [supsize,sensespace+6], center:true})
     .subtract(circle({r: params.hub/2, center: true}).translate([-(basesize/2+params.hub)/2+params.hub,0]))
     .subtract(translate([supsize/2-edge/2-0.5,+sensespace/2,0],circle({r: M3r, center:true})))
@@ -96,33 +98,38 @@ var support = square({size: [supsize,sensespace+6], center:true})
     
 var assembly = [
     linear_extrude({height: thick},base).setColor(1,0.5,0.3),
+    
     linear_extrude({height: thin},washer).translate([0,0,thick]),
     linear_extrude({height: thin},disksup).translate([0,0,thick+thin]).setColor([.2,.2,.2]),
     linear_extrude({height: thin},disk).translate([0,0,thick+thin*2]).setColor([.2,.2,.2]),
     linear_extrude({height: thick},arm).translate([0,0,thick+thin*3]).setColor(1,0.5,0.3),
     linear_extrude({height: thin},washertop).translate([0,0,thick*2+thin*3]),
 
-    linear_extrude({height: thin},mask).translate([slotd/2,0,thick]).setColor([.2,.2,.2]),
-    linear_extrude({height: thin*2},riser).translate([basesize/2-edge/2,0,thick+thin]),
-    linear_extrude({height: thin},masktop).translate([slotd/2,0,thick+thin*3]).setColor([.2,.2,.2]),
+    linear_extrude({height: thick},LEDs).translate([slotd/2,0,-thick]).setColor(1,0.5,0.3), //below the base
+
+    linear_extrude({height: thin*3},riser).translate([basesize/2-edge/2,0,thick]),
+    linear_extrude({height: thin},mask).translate([slotd/2,0,thick+thin*3]).setColor([.2,.2,.2]),
     linear_extrude({height: thick},sensors).translate([slotd/2,0,thick+thin*4]).setColor(1,0.5,0.3),
     linear_extrude({height: thick},support).translate([0,0,thick*2+thin*4]).setColor(1,0.5,0.3),
     ]
+    
 var cutthick = []
     cutthick.push(base)
     cutthick.push(arm)
     cutthick.push(support)
     cutthick.push(sensors) 
+    cutthick.push(LEDs) 
 
 //these should be in a separate cut.
 var cutthin = []
     cutthin.push(disk)
     cutthin.push(disksup)
     cutthin.push(mask)
-    cutthin.push(masktop)
     cutthin.push(washer)
     cutthin.push(washertop)
     cutthin.push(riser) //need 2 of these...
+    cutthin.push(riser.translate([0,0,0])) //translate to copy the object
+    //actually may need three since card stock compresses
     cutthin.push(riser.translate([0,0,0])) //translate to copy the object
 
 if (0 == params.output) out = assembly; 
