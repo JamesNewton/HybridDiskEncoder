@@ -6,6 +6,11 @@
 // file       : encoderdisk.jscad
 // https://openjscad.org/#https://raw.githubusercontent.com/JamesNewton/HybridDiskEncoder/master/encoderdisk.jscad
 
+//NOTES: 
+// - The small parts, e.g. riser and washer, can be blown away by the laser cutter. Best to cut the inside holes at full power
+//   and the outer parts at reduced power. Or to post edit the vectors to break the outer lines and leave tabs to hold them in.
+// - Lasers alway cut with a bit of an angle. If the LEDs / Sensors won't go in one way, turn the part over. 
+
 function getParameterDefinitions() {
   return [
     { name: 'disk', type: 'float', initial: 77, caption: "disk diameter:" },
@@ -26,8 +31,8 @@ const M3r = 1.5 //M3 diameter /2
 var thick = params.thick
 var thin = params.othick
 var maskw = params.mask - params.cutfudge
-var senser = 3/2 - params.cutfudge //size of the sensors LITE-ON LTR-4206E
-var emitr = 3/2 - params.cutfudge //size of the LED emiters LITE-ON LTE-4206
+var senser = (3 - params.cutfudge)/2 //size of the sensors LITE-ON LTR-4206E
+var emitr = (3 - params.cutfudge)/2 //size of the LED emiters LITE-ON LTE-4206
 var slotwidth = Math.PI*params.disk/params.slots/2 - params.cutfudge;
 // LED / photodiodes are T3, (3mm) so center to center ~4mm min
 var senseslots = Math.ceil(4.0 / Math.PI*params.disk/params.slots)*2
