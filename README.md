@@ -45,22 +45,28 @@ https://github.com/clementleger/cypress_linux_tools
 And can apparently be run under wine<br>
 https://appdb.winehq.org/objectManager.php?sClass=application&iId=16168
 
+<table><tr><td>
+<img src="https://raw.githubusercontent.com/JamesNewton/HybridDiskEncoder/master/docs/HybridEncoderFront.jpg">
+  </td><td>
+<img src="https://raw.githubusercontent.com/JamesNewton/HybridDiskEncoder/master/docs/HybridEncoderBack.jpg" >
+  </td></tr></table>
+  
 **Layers**<br>
 Encoder center hub layers: 
-- base w/ bearing, 
-- washer (on bearing inner race), 
+- base, 
+- washer,
 - opaque disk support and code disk, 
 - moving arm, 
 - washer, 
-- bearing in top support arm. 
+- top support arm. 
 
-At edge: 
+At edge:
+- emitter mount, (below base)
 - base w/ holes for M3 screws and emitters, 
-- opaque mask, (code disk edge),
 - riser x2,
 - opaque mask, 
 - detector mount, 
-- top support arm. 
+- top support arm (w/holes for detectors). 
 
 ## Building the Firmware
 **IDE:** To start with the cy8ckit-043, you want this link:<br>
