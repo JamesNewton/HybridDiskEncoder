@@ -74,12 +74,11 @@ Detector to support mount should be adjustable? Or will laser cut and assembly b
 - Done: CAD encoder, (some disks have been lasercut and appear to work well.)
 - Done: Order parts for electronics
 - Done: Order thin (1 or 2mm) acrylic and black / opaque cardstock. 110lb Cardstock with 3mm Acrylic seems to work
-- TODO: Lasercut parts for test assembly, update CAD as needed
-- TODO: Order bearings, update CAD to support.
-- TODO: Write test program for A2D feedback to PC. 
+- Done: Lasercut parts for test assembly, update CAD as needed
+- Done(ish): Write test firmware for A2D feedback to PC. 
 - TODO: Connect LEDs / Sensors to dev board, test and update design 
-- TODO: Add AGC (Automatic Gain Control) to update onboard opamp gain.
 - TODO: Calculate ATAN2 on board and return degrees
+- TODO: Add AGC (Automatic Gain Control) to update onboard opamp gain.
 - TODO: Produce and assemble multiple joints into a non-driven arm with the same physical characteristics as Dexter
 - TODO: Add DDE support for serial connected device as an input only Dexter
 - TODO: Count pulses with on board digital logic for high speed operation?
