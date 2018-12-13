@@ -8,7 +8,7 @@ make sense with out understanding it.
 **Laser cut:** Instead of using 3D printed disks, this project will focus on laser cut parts. As laser cutters become more available and lower cost, 
 their greater resolution and the simplicity of not supporting 3 dimisional objects may provide a cleaner signal and easy processing.
 
-**Firmeware only, no FPGA required:** Because the primary goal of this project is to enable a very low cost human input device, it will not depend on FPGA speed, as humans
+**Firmware only, no FPGA required:** Because the primary goal of this project is to enable a very low cost human input device, it will not depend on FPGA speed, as humans
 don't move that fast, and have builtin motion control systems that avoid the need for a high speed feedback loop. 
 
 **OpenJSCAD:** In keeping with the focus on Javascript in DDE (the Dexter IDE), node.js processing for remote control, and an upcoming 
