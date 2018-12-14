@@ -13,14 +13,31 @@
 <v>Output</v>
 </TreeKeys>
 <TreeStates>
-<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="HybridEncoderCY8CKIT43\HybridEncoder">
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="HybridEncoderCY8CKIT43\HybridEncoder\Source Files\main.c">
 <ExpandedNodeIds>
 <v>HybridEncoderCY8CKIT43</v>
 <v>HybridEncoderCY8CKIT43\HybridEncoder</v>
+<v>HybridEncoderCY8CKIT43\HybridEncoder\TopDesign</v>
+<v>HybridEncoderCY8CKIT43\HybridEncoder\HybridEncoder.cydwr</v>
+<v>HybridEncoderCY8CKIT43\HybridEncoder\Source Files</v>
 </ExpandedNodeIds>
 <VisibleNodeIds>
 <v>HybridEncoderCY8CKIT43</v>
 <v>HybridEncoderCY8CKIT43\HybridEncoder</v>
+<v>HybridEncoderCY8CKIT43\HybridEncoder\TopDesign</v>
+<v>HybridEncoderCY8CKIT43\HybridEncoder\HybridEncoder.cydwr</v>
+<v>HybridEncoderCY8CKIT43\HybridEncoder\HybridEncoder.cydwr\Pins</v>
+<v>HybridEncoderCY8CKIT43\HybridEncoder\HybridEncoder.cydwr\Analog</v>
+<v>HybridEncoderCY8CKIT43\HybridEncoder\HybridEncoder.cydwr\DMA</v>
+<v>HybridEncoderCY8CKIT43\HybridEncoder\HybridEncoder.cydwr\Clocks</v>
+<v>HybridEncoderCY8CKIT43\HybridEncoder\HybridEncoder.cydwr\Interrupts</v>
+<v>HybridEncoderCY8CKIT43\HybridEncoder\HybridEncoder.cydwr\System</v>
+<v>HybridEncoderCY8CKIT43\HybridEncoder\HybridEncoder.cydwr\Directives</v>
+<v>HybridEncoderCY8CKIT43\HybridEncoder\HybridEncoder.cydwr\Flash Security</v>
+<v>HybridEncoderCY8CKIT43\HybridEncoder\Header Files</v>
+<v>HybridEncoderCY8CKIT43\HybridEncoder\Source Files</v>
+<v>HybridEncoderCY8CKIT43\HybridEncoder\Source Files\main.c</v>
+<v>HybridEncoderCY8CKIT43\HybridEncoder\Generated_Source</v>
 </VisibleNodeIds>
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 <CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
@@ -31,16 +48,190 @@
 <VisibleNodeIds>
 <v>HybridEncoderCY8CKIT43</v>
 <v>HybridEncoderCY8CKIT43\HybridEncoder</v>
+<v>HybridEncoderCY8CKIT43\HybridEncoder\TopDesign</v>
 </VisibleNodeIds>
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 <CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
 <ExpandedNodeIds>
 <v>HybridEncoderCY8CKIT43</v>
 <v>HybridEncoderCY8CKIT43\HybridEncoder</v>
+<v>HybridEncoderCY8CKIT43\HybridEncoder\CortexM0</v>
+<v>HybridEncoderCY8CKIT43\HybridEncoder\CortexM0\ARM_GCC_541</v>
+<v>HybridEncoderCY8CKIT43\HybridEncoder\CortexM0\ARM_GCC_541\Debug</v>
+<v>HybridEncoderCY8CKIT43\HybridEncoder\CortexM0\ARM_GCC_541\Debug\Listing Files</v>
+<v>HybridEncoderCY8CKIT43\HybridEncoder\CortexM0\ARM_GCC_541\Debug\Listing Files\ADC.lst</v>
+<v>HybridEncoderCY8CKIT43\HybridEncoder\CortexM0\ARM_GCC_541\Debug\Listing Files\ADC_0.lst</v>
+<v>HybridEncoderCY8CKIT43\HybridEncoder\CortexM0\ARM_GCC_541\Debug\Listing Files\ADC_0_PM.lst</v>
+<v>HybridEncoderCY8CKIT43\HybridEncoder\CortexM0\ARM_GCC_541\Debug\Listing Files\ADC_1M.lst</v>
+<v>HybridEncoderCY8CKIT43\HybridEncoder\CortexM0\ARM_GCC_541\Debug\Listing Files\ADC_1M_PM.lst</v>
+<v>HybridEncoderCY8CKIT43\HybridEncoder\CortexM0\ARM_GCC_541\Debug\Listing Files\ADC_1P.lst</v>
+<v>HybridEncoderCY8CKIT43\HybridEncoder\CortexM0\ARM_GCC_541\Debug\Listing Files\ADC_1P_PM.lst</v>
+<v>HybridEncoderCY8CKIT43\HybridEncoder\CortexM0\ARM_GCC_541\Debug\Listing Files\ADC_2.lst</v>
+<v>HybridEncoderCY8CKIT43\HybridEncoder\CortexM0\ARM_GCC_541\Debug\Listing Files\ADC_2_Buffer.lst</v>
+<v>HybridEncoderCY8CKIT43\HybridEncoder\CortexM0\ARM_GCC_541\Debug\Listing Files\ADC_2_Buffer_PM.lst</v>
+<v>HybridEncoderCY8CKIT43\HybridEncoder\CortexM0\ARM_GCC_541\Debug\Listing Files\ADC_2_PM.lst</v>
+<v>HybridEncoderCY8CKIT43\HybridEncoder\CortexM0\ARM_GCC_541\Debug\Listing Files\ADC_3.lst</v>
+<v>HybridEncoderCY8CKIT43\HybridEncoder\CortexM0\ARM_GCC_541\Debug\Listing Files\ADC_3_Buffer.lst</v>
+<v>HybridEncoderCY8CKIT43\HybridEncoder\CortexM0\ARM_GCC_541\Debug\Listing Files\ADC_3_Buffer_PM.lst</v>
+<v>HybridEncoderCY8CKIT43\HybridEncoder\CortexM0\ARM_GCC_541\Debug\Listing Files\ADC_3_PM.lst</v>
+<v>HybridEncoderCY8CKIT43\HybridEncoder\CortexM0\ARM_GCC_541\Debug\Listing Files\ADC_EOC_Int.lst</v>
+<v>HybridEncoderCY8CKIT43\HybridEncoder\CortexM0\ARM_GCC_541\Debug\Listing Files\ADC_INT.lst</v>
+<v>HybridEncoderCY8CKIT43\HybridEncoder\CortexM0\ARM_GCC_541\Debug\Listing Files\ADC_intClock.lst</v>
+<v>HybridEncoderCY8CKIT43\HybridEncoder\CortexM0\ARM_GCC_541\Debug\Listing Files\ADC_IRQ.lst</v>
+<v>HybridEncoderCY8CKIT43\HybridEncoder\CortexM0\ARM_GCC_541\Debug\Listing Files\ADC_PM.lst</v>
+<v>HybridEncoderCY8CKIT43\HybridEncoder\CortexM0\ARM_GCC_541\Debug\Listing Files\CapSense.lst</v>
+<v>HybridEncoderCY8CKIT43\HybridEncoder\CortexM0\ARM_GCC_541\Debug\Listing Files\CapSense_CSHL.lst</v>
+<v>HybridEncoderCY8CKIT43\HybridEncoder\CortexM0\ARM_GCC_541\Debug\Listing Files\CapSense_INT.lst</v>
+<v>HybridEncoderCY8CKIT43\HybridEncoder\CortexM0\ARM_GCC_541\Debug\Listing Files\CapSense_PM.lst</v>
+<v>HybridEncoderCY8CKIT43\HybridEncoder\CortexM0\ARM_GCC_541\Debug\Listing Files\CapSense_SampleClk.lst</v>
+<v>HybridEncoderCY8CKIT43\HybridEncoder\CortexM0\ARM_GCC_541\Debug\Listing Files\CapSense_SenseClk.lst</v>
+<v>HybridEncoderCY8CKIT43\HybridEncoder\CortexM0\ARM_GCC_541\Debug\Listing Files\CapSense_SMS.lst</v>
+<v>HybridEncoderCY8CKIT43\HybridEncoder\CortexM0\ARM_GCC_541\Debug\Listing Files\CapSense_TunerHelper.lst</v>
+<v>HybridEncoderCY8CKIT43\HybridEncoder\CortexM0\ARM_GCC_541\Debug\Listing Files\Clock_1MHz.lst</v>
+<v>HybridEncoderCY8CKIT43\HybridEncoder\CortexM0\ARM_GCC_541\Debug\Listing Files\Cm0Start.lst</v>
+<v>HybridEncoderCY8CKIT43\HybridEncoder\CortexM0\ARM_GCC_541\Debug\Listing Files\Comp_0.lst</v>
+<v>HybridEncoderCY8CKIT43\HybridEncoder\CortexM0\ARM_GCC_541\Debug\Listing Files\Comp_0_PM.lst</v>
+<v>HybridEncoderCY8CKIT43\HybridEncoder\CortexM0\ARM_GCC_541\Debug\Listing Files\Comp_1.lst</v>
+<v>HybridEncoderCY8CKIT43\HybridEncoder\CortexM0\ARM_GCC_541\Debug\Listing Files\Comp_1_PM.lst</v>
+<v>HybridEncoderCY8CKIT43\HybridEncoder\CortexM0\ARM_GCC_541\Debug\Listing Files\CompM_0.lst</v>
+<v>HybridEncoderCY8CKIT43\HybridEncoder\CortexM0\ARM_GCC_541\Debug\Listing Files\CompM_0_PM.lst</v>
+<v>HybridEncoderCY8CKIT43\HybridEncoder\CortexM0\ARM_GCC_541\Debug\Listing Files\CompM_1.lst</v>
+<v>HybridEncoderCY8CKIT43\HybridEncoder\CortexM0\ARM_GCC_541\Debug\Listing Files\CompM_1_PM.lst</v>
+<v>HybridEncoderCY8CKIT43\HybridEncoder\CortexM0\ARM_GCC_541\Debug\Listing Files\CompP_0.lst</v>
+<v>HybridEncoderCY8CKIT43\HybridEncoder\CortexM0\ARM_GCC_541\Debug\Listing Files\CompP_0_PM.lst</v>
+<v>HybridEncoderCY8CKIT43\HybridEncoder\CortexM0\ARM_GCC_541\Debug\Listing Files\CompP_1.lst</v>
+<v>HybridEncoderCY8CKIT43\HybridEncoder\CortexM0\ARM_GCC_541\Debug\Listing Files\CompP_1_PM.lst</v>
+<v>HybridEncoderCY8CKIT43\HybridEncoder\CortexM0\ARM_GCC_541\Debug\Listing Files\CyBootAsmGnu.lst</v>
+<v>HybridEncoderCY8CKIT43\HybridEncoder\CortexM0\ARM_GCC_541\Debug\Listing Files\CyDMA.lst</v>
+<v>HybridEncoderCY8CKIT43\HybridEncoder\CortexM0\ARM_GCC_541\Debug\Listing Files\cyfitter_cfg.lst</v>
+<v>HybridEncoderCY8CKIT43\HybridEncoder\CortexM0\ARM_GCC_541\Debug\Listing Files\CyFlash.lst</v>
+<v>HybridEncoderCY8CKIT43\HybridEncoder\CortexM0\ARM_GCC_541\Debug\Listing Files\CyLFClk.lst</v>
+<v>HybridEncoderCY8CKIT43\HybridEncoder\CortexM0\ARM_GCC_541\Debug\Listing Files\CyLib.lst</v>
+<v>HybridEncoderCY8CKIT43\HybridEncoder\CortexM0\ARM_GCC_541\Debug\Listing Files\cymetadata.lst</v>
+<v>HybridEncoderCY8CKIT43\HybridEncoder\CortexM0\ARM_GCC_541\Debug\Listing Files\cyPm.lst</v>
+<v>HybridEncoderCY8CKIT43\HybridEncoder\CortexM0\ARM_GCC_541\Debug\Listing Files\cyutils.lst</v>
+<v>HybridEncoderCY8CKIT43\HybridEncoder\CortexM0\ARM_GCC_541\Debug\Listing Files\DieTemp.lst</v>
+<v>HybridEncoderCY8CKIT43\HybridEncoder\CortexM0\ARM_GCC_541\Debug\Listing Files\I2C.lst</v>
+<v>HybridEncoderCY8CKIT43\HybridEncoder\CortexM0\ARM_GCC_541\Debug\Listing Files\I2C_BOOT.lst</v>
+<v>HybridEncoderCY8CKIT43\HybridEncoder\CortexM0\ARM_GCC_541\Debug\Listing Files\I2C_I2C.lst</v>
+<v>HybridEncoderCY8CKIT43\HybridEncoder\CortexM0\ARM_GCC_541\Debug\Listing Files\I2C_I2C_BOOT.lst</v>
+<v>HybridEncoderCY8CKIT43\HybridEncoder\CortexM0\ARM_GCC_541\Debug\Listing Files\I2C_I2C_INT.lst</v>
+<v>HybridEncoderCY8CKIT43\HybridEncoder\CortexM0\ARM_GCC_541\Debug\Listing Files\I2C_I2C_SLAVE.lst</v>
+<v>HybridEncoderCY8CKIT43\HybridEncoder\CortexM0\ARM_GCC_541\Debug\Listing Files\I2C_PM.lst</v>
+<v>HybridEncoderCY8CKIT43\HybridEncoder\CortexM0\ARM_GCC_541\Debug\Listing Files\I2C_SCB_IRQ.lst</v>
+<v>HybridEncoderCY8CKIT43\HybridEncoder\CortexM0\ARM_GCC_541\Debug\Listing Files\I2C_SCBCLK.lst</v>
+<v>HybridEncoderCY8CKIT43\HybridEncoder\CortexM0\ARM_GCC_541\Debug\Listing Files\I2C_scl.lst</v>
+<v>HybridEncoderCY8CKIT43\HybridEncoder\CortexM0\ARM_GCC_541\Debug\Listing Files\I2C_scl_PM.lst</v>
+<v>HybridEncoderCY8CKIT43\HybridEncoder\CortexM0\ARM_GCC_541\Debug\Listing Files\I2C_sda.lst</v>
+<v>HybridEncoderCY8CKIT43\HybridEncoder\CortexM0\ARM_GCC_541\Debug\Listing Files\I2C_sda_PM.lst</v>
+<v>HybridEncoderCY8CKIT43\HybridEncoder\CortexM0\ARM_GCC_541\Debug\Listing Files\Input_0_Int.lst</v>
+<v>HybridEncoderCY8CKIT43\HybridEncoder\CortexM0\ARM_GCC_541\Debug\Listing Files\Input_1_Int.lst</v>
+<v>HybridEncoderCY8CKIT43\HybridEncoder\CortexM0\ARM_GCC_541\Debug\Listing Files\Input_Pin_0.lst</v>
+<v>HybridEncoderCY8CKIT43\HybridEncoder\CortexM0\ARM_GCC_541\Debug\Listing Files\Input_Pin_0_PM.lst</v>
+<v>HybridEncoderCY8CKIT43\HybridEncoder\CortexM0\ARM_GCC_541\Debug\Listing Files\Input_Pin_1.lst</v>
+<v>HybridEncoderCY8CKIT43\HybridEncoder\CortexM0\ARM_GCC_541\Debug\Listing Files\Input_Pin_1_PM.lst</v>
+<v>HybridEncoderCY8CKIT43\HybridEncoder\CortexM0\ARM_GCC_541\Debug\Listing Files\LPComp_Int.lst</v>
+<v>HybridEncoderCY8CKIT43\HybridEncoder\CortexM0\ARM_GCC_541\Debug\Listing Files\main.lst</v>
+<v>HybridEncoderCY8CKIT43\HybridEncoder\CortexM0\ARM_GCC_541\Debug\Listing Files\Output_Pin_0.lst</v>
+<v>HybridEncoderCY8CKIT43\HybridEncoder\CortexM0\ARM_GCC_541\Debug\Listing Files\Output_Pin_0_PM.lst</v>
+<v>HybridEncoderCY8CKIT43\HybridEncoder\CortexM0\ARM_GCC_541\Debug\Listing Files\Output_Pin_1.lst</v>
+<v>HybridEncoderCY8CKIT43\HybridEncoder\CortexM0\ARM_GCC_541\Debug\Listing Files\Output_Pin_1_PM.lst</v>
+<v>HybridEncoderCY8CKIT43\HybridEncoder\CortexM0\ARM_GCC_541\Debug\Listing Files\PWM_0.lst</v>
+<v>HybridEncoderCY8CKIT43\HybridEncoder\CortexM0\ARM_GCC_541\Debug\Listing Files\PWM_0_Int.lst</v>
+<v>HybridEncoderCY8CKIT43\HybridEncoder\CortexM0\ARM_GCC_541\Debug\Listing Files\PWM_0_Out.lst</v>
+<v>HybridEncoderCY8CKIT43\HybridEncoder\CortexM0\ARM_GCC_541\Debug\Listing Files\PWM_0_Out_PM.lst</v>
+<v>HybridEncoderCY8CKIT43\HybridEncoder\CortexM0\ARM_GCC_541\Debug\Listing Files\PWM_0_PM.lst</v>
+<v>HybridEncoderCY8CKIT43\HybridEncoder\CortexM0\ARM_GCC_541\Debug\Listing Files\PWM_1.lst</v>
+<v>HybridEncoderCY8CKIT43\HybridEncoder\CortexM0\ARM_GCC_541\Debug\Listing Files\PWM_1_Out.lst</v>
+<v>HybridEncoderCY8CKIT43\HybridEncoder\CortexM0\ARM_GCC_541\Debug\Listing Files\PWM_1_Out_PM.lst</v>
+<v>HybridEncoderCY8CKIT43\HybridEncoder\CortexM0\ARM_GCC_541\Debug\Listing Files\PWM_1_PM.lst</v>
+<v>HybridEncoderCY8CKIT43\HybridEncoder\CortexM0\ARM_GCC_541\Debug\Listing Files\PWM_2.lst</v>
+<v>HybridEncoderCY8CKIT43\HybridEncoder\CortexM0\ARM_GCC_541\Debug\Listing Files\PWM_2_Out.lst</v>
+<v>HybridEncoderCY8CKIT43\HybridEncoder\CortexM0\ARM_GCC_541\Debug\Listing Files\PWM_2_Out_PM.lst</v>
+<v>HybridEncoderCY8CKIT43\HybridEncoder\CortexM0\ARM_GCC_541\Debug\Listing Files\PWM_2_PM.lst</v>
+<v>HybridEncoderCY8CKIT43\HybridEncoder\CortexM0\ARM_GCC_541\Debug\Listing Files\SPI.lst</v>
+<v>HybridEncoderCY8CKIT43\HybridEncoder\CortexM0\ARM_GCC_541\Debug\Listing Files\SPI_BOOT.lst</v>
+<v>HybridEncoderCY8CKIT43\HybridEncoder\CortexM0\ARM_GCC_541\Debug\Listing Files\SPI_miso_s.lst</v>
+<v>HybridEncoderCY8CKIT43\HybridEncoder\CortexM0\ARM_GCC_541\Debug\Listing Files\SPI_miso_s_PM.lst</v>
+<v>HybridEncoderCY8CKIT43\HybridEncoder\CortexM0\ARM_GCC_541\Debug\Listing Files\SPI_mosi_s.lst</v>
+<v>HybridEncoderCY8CKIT43\HybridEncoder\CortexM0\ARM_GCC_541\Debug\Listing Files\SPI_mosi_s_PM.lst</v>
+<v>HybridEncoderCY8CKIT43\HybridEncoder\CortexM0\ARM_GCC_541\Debug\Listing Files\SPI_PM.lst</v>
+<v>HybridEncoderCY8CKIT43\HybridEncoder\CortexM0\ARM_GCC_541\Debug\Listing Files\SPI_SCBCLK.lst</v>
+<v>HybridEncoderCY8CKIT43\HybridEncoder\CortexM0\ARM_GCC_541\Debug\Listing Files\SPI_sclk_s.lst</v>
+<v>HybridEncoderCY8CKIT43\HybridEncoder\CortexM0\ARM_GCC_541\Debug\Listing Files\SPI_sclk_s_PM.lst</v>
+<v>HybridEncoderCY8CKIT43\HybridEncoder\CortexM0\ARM_GCC_541\Debug\Listing Files\SPI_SPI.lst</v>
+<v>HybridEncoderCY8CKIT43\HybridEncoder\CortexM0\ARM_GCC_541\Debug\Listing Files\SPI_SPI_BOOT.lst</v>
+<v>HybridEncoderCY8CKIT43\HybridEncoder\CortexM0\ARM_GCC_541\Debug\Listing Files\SPI_SPI_UART.lst</v>
+<v>HybridEncoderCY8CKIT43\HybridEncoder\CortexM0\ARM_GCC_541\Debug\Listing Files\SPI_ss_s.lst</v>
+<v>HybridEncoderCY8CKIT43\HybridEncoder\CortexM0\ARM_GCC_541\Debug\Listing Files\SPI_ss_s_PM.lst</v>
+<v>HybridEncoderCY8CKIT43\HybridEncoder\CortexM0\ARM_GCC_541\Debug\Listing Files\Timer.lst</v>
+<v>HybridEncoderCY8CKIT43\HybridEncoder\CortexM0\ARM_GCC_541\Debug\Listing Files\Timer_Int.lst</v>
+<v>HybridEncoderCY8CKIT43\HybridEncoder\CortexM0\ARM_GCC_541\Debug\Listing Files\Timer_Pin.lst</v>
+<v>HybridEncoderCY8CKIT43\HybridEncoder\CortexM0\ARM_GCC_541\Debug\Listing Files\Timer_Pin_PM.lst</v>
+<v>HybridEncoderCY8CKIT43\HybridEncoder\CortexM0\ARM_GCC_541\Debug\Listing Files\Timer_PM.lst</v>
+<v>HybridEncoderCY8CKIT43\HybridEncoder\CortexM0\ARM_GCC_541\Debug\Listing Files\UART.lst</v>
+<v>HybridEncoderCY8CKIT43\HybridEncoder\CortexM0\ARM_GCC_541\Debug\Listing Files\UART_BOOT.lst</v>
+<v>HybridEncoderCY8CKIT43\HybridEncoder\CortexM0\ARM_GCC_541\Debug\Listing Files\UART_PM.lst</v>
+<v>HybridEncoderCY8CKIT43\HybridEncoder\CortexM0\ARM_GCC_541\Debug\Listing Files\UART_rx.lst</v>
+<v>HybridEncoderCY8CKIT43\HybridEncoder\CortexM0\ARM_GCC_541\Debug\Listing Files\UART_rx_PM.lst</v>
+<v>HybridEncoderCY8CKIT43\HybridEncoder\CortexM0\ARM_GCC_541\Debug\Listing Files\UART_SCBCLK.lst</v>
+<v>HybridEncoderCY8CKIT43\HybridEncoder\CortexM0\ARM_GCC_541\Debug\Listing Files\UART_SPI_UART.lst</v>
+<v>HybridEncoderCY8CKIT43\HybridEncoder\CortexM0\ARM_GCC_541\Debug\Listing Files\UART_SPI_UART_INT.lst</v>
+<v>HybridEncoderCY8CKIT43\HybridEncoder\CortexM0\ARM_GCC_541\Debug\Listing Files\UART_tx.lst</v>
+<v>HybridEncoderCY8CKIT43\HybridEncoder\CortexM0\ARM_GCC_541\Debug\Listing Files\UART_tx_PM.lst</v>
+<v>HybridEncoderCY8CKIT43\HybridEncoder\CortexM0\ARM_GCC_541\Debug\Listing Files\UART_UART.lst</v>
+<v>HybridEncoderCY8CKIT43\HybridEncoder\CortexM0\ARM_GCC_541\Debug\Listing Files\UART_UART_BOOT.lst</v>
+<v>HybridEncoderCY8CKIT43\HybridEncoder\CortexM0\ARM_GCC_541\Debug\Listing Files\Wakeup_Pin.lst</v>
+<v>HybridEncoderCY8CKIT43\HybridEncoder\CortexM0\ARM_GCC_541\Debug\Listing Files\Wakeup_Pin_Int.lst</v>
+<v>HybridEncoderCY8CKIT43\HybridEncoder\CortexM0\ARM_GCC_541\Debug\Listing Files\Wakeup_Pin_PM.lst</v>
+<v>HybridEncoderCY8CKIT43\HybridEncoder\CortexM0\ARM_GCC_541\Debug\HybridEncoder.elf</v>
+<v>HybridEncoderCY8CKIT43\HybridEncoder\CortexM0\ARM_GCC_541\Debug\HybridEncoder.hex</v>
+<v>HybridEncoderCY8CKIT43\HybridEncoder\CortexM0\ARM_GCC_541\Debug\HybridEncoder.map</v>
+<v>HybridEncoderCY8CKIT43\HybridEncoder\HybridEncoder.gpdsc</v>
 </ExpandedNodeIds>
 <VisibleNodeIds>
 <v>HybridEncoderCY8CKIT43</v>
 <v>HybridEncoderCY8CKIT43\HybridEncoder</v>
+<v>HybridEncoderCY8CKIT43\HybridEncoder\CortexM0</v>
+<v>HybridEncoderCY8CKIT43\HybridEncoder\CortexM0\ARM_GCC_541</v>
+<v>HybridEncoderCY8CKIT43\HybridEncoder\CortexM0\ARM_GCC_541\Debug</v>
+<v>HybridEncoderCY8CKIT43\HybridEncoder\CortexM0\ARM_GCC_541\Debug\Listing Files</v>
+<v>HybridEncoderCY8CKIT43\HybridEncoder\CortexM0\ARM_GCC_541\Debug\Listing Files\ADC.lst</v>
+<v>HybridEncoderCY8CKIT43\HybridEncoder\CortexM0\ARM_GCC_541\Debug\Listing Files\ADC_0.lst</v>
+<v>HybridEncoderCY8CKIT43\HybridEncoder\CortexM0\ARM_GCC_541\Debug\Listing Files\ADC_0_PM.lst</v>
+<v>HybridEncoderCY8CKIT43\HybridEncoder\CortexM0\ARM_GCC_541\Debug\Listing Files\ADC_1M.lst</v>
+<v>HybridEncoderCY8CKIT43\HybridEncoder\CortexM0\ARM_GCC_541\Debug\Listing Files\ADC_1M_PM.lst</v>
+<v>HybridEncoderCY8CKIT43\HybridEncoder\CortexM0\ARM_GCC_541\Debug\Listing Files\ADC_1P.lst</v>
+<v>HybridEncoderCY8CKIT43\HybridEncoder\CortexM0\ARM_GCC_541\Debug\Listing Files\ADC_1P_PM.lst</v>
+<v>HybridEncoderCY8CKIT43\HybridEncoder\CortexM0\ARM_GCC_541\Debug\Listing Files\ADC_2.lst</v>
+<v>HybridEncoderCY8CKIT43\HybridEncoder\CortexM0\ARM_GCC_541\Debug\Listing Files\ADC_2_Buffer.lst</v>
+<v>HybridEncoderCY8CKIT43\HybridEncoder\CortexM0\ARM_GCC_541\Debug\Listing Files\ADC_2_Buffer_PM.lst</v>
+<v>HybridEncoderCY8CKIT43\HybridEncoder\CortexM0\ARM_GCC_541\Debug\Listing Files\ADC_2_PM.lst</v>
+<v>HybridEncoderCY8CKIT43\HybridEncoder\CortexM0\ARM_GCC_541\Debug\Listing Files\ADC_3.lst</v>
+<v>HybridEncoderCY8CKIT43\HybridEncoder\CortexM0\ARM_GCC_541\Debug\Listing Files\ADC_3_Buffer.lst</v>
+<v>HybridEncoderCY8CKIT43\HybridEncoder\CortexM0\ARM_GCC_541\Debug\Listing Files\ADC_3_Buffer_PM.lst</v>
+<v>HybridEncoderCY8CKIT43\HybridEncoder\CortexM0\ARM_GCC_541\Debug\Listing Files\ADC_3_PM.lst</v>
+<v>HybridEncoderCY8CKIT43\HybridEncoder\CortexM0\ARM_GCC_541\Debug\Listing Files\ADC_EOC_Int.lst</v>
+<v>HybridEncoderCY8CKIT43\HybridEncoder\CortexM0\ARM_GCC_541\Debug\Listing Files\ADC_INT.lst</v>
+<v>HybridEncoderCY8CKIT43\HybridEncoder\CortexM0\ARM_GCC_541\Debug\Listing Files\ADC_intClock.lst</v>
+<v>HybridEncoderCY8CKIT43\HybridEncoder\CortexM0\ARM_GCC_541\Debug\Listing Files\ADC_IRQ.lst</v>
+<v>HybridEncoderCY8CKIT43\HybridEncoder\CortexM0\ARM_GCC_541\Debug\Listing Files\ADC_PM.lst</v>
+<v>HybridEncoderCY8CKIT43\HybridEncoder\CortexM0\ARM_GCC_541\Debug\Listing Files\CapSense.lst</v>
+<v>HybridEncoderCY8CKIT43\HybridEncoder\CortexM0\ARM_GCC_541\Debug\Listing Files\CapSense_CSHL.lst</v>
+<v>HybridEncoderCY8CKIT43\HybridEncoder\CortexM0\ARM_GCC_541\Debug\Listing Files\CapSense_INT.lst</v>
+<v>HybridEncoderCY8CKIT43\HybridEncoder\CortexM0\ARM_GCC_541\Debug\Listing Files\CapSense_PM.lst</v>
+<v>HybridEncoderCY8CKIT43\HybridEncoder\CortexM0\ARM_GCC_541\Debug\Listing Files\CapSense_SampleClk.lst</v>
+<v>HybridEncoderCY8CKIT43\HybridEncoder\CortexM0\ARM_GCC_541\Debug\Listing Files\CapSense_SenseClk.lst</v>
+<v>HybridEncoderCY8CKIT43\HybridEncoder\CortexM0\ARM_GCC_541\Debug\Listing Files\CapSense_SMS.lst</v>
+<v>HybridEncoderCY8CKIT43\HybridEncoder\CortexM0\ARM_GCC_541\Debug\Listing Files\CapSense_TunerHelper.lst</v>
+<v>HybridEncoderCY8CKIT43\HybridEncoder\CortexM0\ARM_GCC_541\Debug\Listing Files\Clock_1MHz.lst</v>
+<v>HybridEncoderCY8CKIT43\HybridEncoder\CortexM0\ARM_GCC_541\Debug\Listing Files\Cm0Start.lst</v>
+<v>HybridEncoderCY8CKIT43\HybridEncoder\CortexM0\ARM_GCC_541\Debug\Listing Files\Comp_0.lst</v>
+<v>HybridEncoderCY8CKIT43\HybridEncoder\CortexM0\ARM_GCC_541\Debug\Listing Files\Comp_0_PM.lst</v>
+<v>HybridEncoderCY8CKIT43\HybridEncoder\CortexM0\ARM_GCC_541\Debug\Listing Files\Comp_1.lst</v>
+<v>HybridEncoderCY8CKIT43\HybridEncoder\CortexM0\ARM_GCC_541\Debug\Listing Files\Comp_1_PM.lst</v>
+<v>HybridEncoderCY8CKIT43\HybridEncoder\CortexM0\ARM_GCC_541\Debug\Listing Files\CompM_0.lst</v>
+<v>HybridEncoderCY8CKIT43\HybridEncoder\CortexM0\ARM_GCC_541\Debug\Listing Files\CompM_0_PM.lst</v>
 </VisibleNodeIds>
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 </TreeStates>
@@ -51,9 +242,33 @@
 <CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
 <ExpandedNodeIds>
 <v>HybridEncoderCY8CKIT43</v>
+<v>HybridEncoderCY8CKIT43\HybridEncoder\PSoC 4 Architecture TRM</v>
+<v>HybridEncoderCY8CKIT43\HybridEncoder\PSoC 4200M Family Datasheet</v>
+<v>HybridEncoderCY8CKIT43\HybridEncoder\System Reference Guides</v>
+<v>HybridEncoderCY8CKIT43\HybridEncoder\System Reference Guides\cy_boot_v5_60</v>
+<v>HybridEncoderCY8CKIT43\HybridEncoder\System Reference Guides\cy_dmac_v1_10</v>
+<v>HybridEncoderCY8CKIT43\HybridEncoder\System Reference Guides\cy_lfclk_v1_20</v>
+<v>HybridEncoderCY8CKIT43\HybridEncoder\ADC_SAR_SEQ_P4_v2_50.pdf</v>
+<v>HybridEncoderCY8CKIT43\HybridEncoder\CapSense_CSD_P4_v2_60.pdf</v>
+<v>HybridEncoderCY8CKIT43\HybridEncoder\cy_clock_v2_20.pdf</v>
+<v>HybridEncoderCY8CKIT43\HybridEncoder\cy_gsref_v2_10.pdf</v>
+<v>HybridEncoderCY8CKIT43\HybridEncoder\cy_isr_v1_70</v>
+<v>HybridEncoderCY8CKIT43\HybridEncoder\cy_isr_v1_70\cy_isr_v1_70.pdf</v>
+<v>HybridEncoderCY8CKIT43\HybridEncoder\cy_pins_v2_20</v>
+<v>HybridEncoderCY8CKIT43\HybridEncoder\cy_pins_v2_20\cy_pins_v2_20.pdf</v>
+<v>HybridEncoderCY8CKIT43\HybridEncoder\DieTemp_P4_v1_0.pdf</v>
+<v>HybridEncoderCY8CKIT43\HybridEncoder\LPComp_P4_v2_20</v>
+<v>HybridEncoderCY8CKIT43\HybridEncoder\LPComp_P4_v2_20\LPComp_P4_v2_20.pdf</v>
+<v>HybridEncoderCY8CKIT43\HybridEncoder\OpAmp_P4_v1_20</v>
+<v>HybridEncoderCY8CKIT43\HybridEncoder\OpAmp_P4_v1_20\OpAmp_P4_v1_20.pdf</v>
+<v>HybridEncoderCY8CKIT43\HybridEncoder\SCB_P4_v3_20</v>
+<v>HybridEncoderCY8CKIT43\HybridEncoder\SCB_P4_v3_20\SCB_P4_v3_20.pdf</v>
+<v>HybridEncoderCY8CKIT43\HybridEncoder\TCPWM_P4_v2_10</v>
+<v>HybridEncoderCY8CKIT43\HybridEncoder\TCPWM_P4_v2_10\TCPWM_P4_v2_10.pdf</v>
 </ExpandedNodeIds>
 <VisibleNodeIds>
 <v>HybridEncoderCY8CKIT43</v>
+<v>HybridEncoderCY8CKIT43\HybridEncoder</v>
 </VisibleNodeIds>
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 </TreeStatesV2>
@@ -67,14 +282,18 @@
 </userData>
 </CyGuid_fdba8dfd-b15b-4469-9bbb-9e40c3e70997>
 <Unloaded />
-<OpenDocs />
+<OpenDocs>
+<name v=".\HybridEncoder.cydsn\HybridEncoder.cydwr" />
+<name v=".\HybridEncoder.cydsn\TopDesign\TopDesign.cysch" />
+<name v=".\HybridEncoder.cydsn\main.c" />
+</OpenDocs>
 <OpenDocsLayout><![CDATA[<?xml version="1.0"?><!--
 
   Actipro Docking/MDI for WinForms
   Copyright (c) 2001-2016 Actipro Software LLC.  All rights reserved.
   http://www.actiprosoftware.com
 
---><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="1228, 598" SelectedTabbedMdiWindow="7d20cc0f-d8f6-4b32-8efc-e4859167c254"><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="7d20cc0f-d8f6-4b32-8efc-e4859167c254" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
+--><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="1228, 598" SelectedTabbedMdiWindow="078394ee-ea1d-4f5f-b781-7a5901f5e1bc"><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="7d20cc0f-d8f6-4b32-8efc-e4859167c254" /><DocumentWindow Key="C:\Users\JamesN4\Documents\PSoC Creator\HybridEncoderCY8CKIT43\firmware\HybridEncoder.cydsn\HybridEncoder.cydwr" Guid="93562ae5-8104-4bfe-9ce1-e071f2995859" /><DocumentWindow Key="C:\Users\JamesN4\Documents\PSoC Creator\HybridEncoderCY8CKIT43\firmware\HybridEncoder.cydsn\TopDesign\TopDesign.cysch" Guid="078394ee-ea1d-4f5f-b781-7a5901f5e1bc" /><DocumentWindow Key="C:\Users\JamesN4\Documents\PSoC Creator\HybridEncoderCY8CKIT43\firmware\HybridEncoder.cydsn\main.c" Guid="0da7dbef-c087-455d-9a38-49f320e8d5c9" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
 <config v="" />
 <AutoUpdate v="true" />
 </CyGuid_843a90a4-0c4b-4e44-991d-05e7fb117a21>

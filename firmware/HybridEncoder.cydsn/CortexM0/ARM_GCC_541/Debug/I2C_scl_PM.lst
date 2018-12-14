@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc8I5s9N.s 			page 1
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccL28LCp.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc8I5s9N.s 			page 1
   28:Generated_Source\PSoC4/I2C_scl_PM.c **** *  deep-sleep/hibernate modes. This function applies only to SIO and USBIO pins.
   29:Generated_Source\PSoC4/I2C_scl_PM.c **** *  It should not be called for GPIO or GPIO_OVT pins.
   30:Generated_Source\PSoC4/I2C_scl_PM.c **** *
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc8I5s9N.s 			page 2
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccL28LCp.s 			page 2
 
 
   31:Generated_Source\PSoC4/I2C_scl_PM.c **** * <b>Note</b> This function is available in PSoC 4 only.
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc8I5s9N.s 			page 1
   51              		.global	I2C_scl_Wakeup
   52              		.code	16
   53              		.thumb_func
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc8I5s9N.s 			page 3
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccL28LCp.s 			page 3
 
 
   54              		.type	I2C_scl_Wakeup, %function
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc8I5s9N.s 			page 1
   72              	.L5:
   73 000c 00000000 		.word	.LANCHOR0
   74 0010 08040440 		.word	1074005000
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc8I5s9N.s 			page 4
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccL28LCp.s 			page 4
 
 
   75              		.cfi_endproc
@@ -204,48 +204,48 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc8I5s9N.s 			page 1
   93 0006 00000000 		.4byte	.Ldebug_abbrev0
   94 000a 04       		.byte	0x4
   95 000b 01       		.uleb128 0x1
-  96 000c AE000000 		.4byte	.LASF20
+  96 000c 0A010000 		.4byte	.LASF20
   97 0010 0C       		.byte	0xc
-  98 0011 8D010000 		.4byte	.LASF21
-  99 0015 B1010000 		.4byte	.LASF22
+  98 0011 E9010000 		.4byte	.LASF21
+  99 0015 0F000000 		.4byte	.LASF22
  100 0019 00000000 		.4byte	.Ldebug_ranges0+0
  101 001d 00000000 		.4byte	0
  102 0021 00000000 		.4byte	.Ldebug_line0
  103 0025 02       		.uleb128 0x2
  104 0026 01       		.byte	0x1
  105 0027 06       		.byte	0x6
- 106 0028 73010000 		.4byte	.LASF0
+ 106 0028 CF010000 		.4byte	.LASF0
  107 002c 02       		.uleb128 0x2
  108 002d 01       		.byte	0x1
  109 002e 08       		.byte	0x8
- 110 002f 24000000 		.4byte	.LASF1
+ 110 002f 71000000 		.4byte	.LASF1
  111 0033 02       		.uleb128 0x2
  112 0034 02       		.byte	0x2
  113 0035 05       		.byte	0x5
- 114 0036 58010000 		.4byte	.LASF2
+ 114 0036 B4010000 		.4byte	.LASF2
  115 003a 02       		.uleb128 0x2
  116 003b 02       		.byte	0x2
  117 003c 07       		.byte	0x7
- 118 003d 44000000 		.4byte	.LASF3
+ 118 003d 91000000 		.4byte	.LASF3
  119 0041 02       		.uleb128 0x2
  120 0042 04       		.byte	0x4
  121 0043 05       		.byte	0x5
- 122 0044 6A010000 		.4byte	.LASF4
+ 122 0044 C6010000 		.4byte	.LASF4
  123 0048 02       		.uleb128 0x2
  124 0049 04       		.byte	0x4
  125 004a 07       		.byte	0x7
- 126 004b 32000000 		.4byte	.LASF5
+ 126 004b 7F000000 		.4byte	.LASF5
  127 004f 02       		.uleb128 0x2
  128 0050 08       		.byte	0x8
  129 0051 05       		.byte	0x5
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc8I5s9N.s 			page 5
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccL28LCp.s 			page 5
 
 
- 130 0052 45010000 		.4byte	.LASF6
+ 130 0052 A1010000 		.4byte	.LASF6
  131 0056 02       		.uleb128 0x2
  132 0057 08       		.byte	0x8
  133 0058 07       		.byte	0x7
- 134 0059 81000000 		.4byte	.LASF7
+ 134 0059 DD000000 		.4byte	.LASF7
  135 005d 03       		.uleb128 0x3
  136 005e 04       		.byte	0x4
  137 005f 05       		.byte	0x5
@@ -253,24 +253,24 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc8I5s9N.s 			page 1
  139 0064 02       		.uleb128 0x2
  140 0065 04       		.byte	0x4
  141 0066 07       		.byte	0x7
- 142 0067 74000000 		.4byte	.LASF8
+ 142 0067 C1000000 		.4byte	.LASF8
  143 006b 04       		.uleb128 0x4
- 144 006c 5E000000 		.4byte	.LASF12
+ 144 006c AB000000 		.4byte	.LASF12
  145 0070 02       		.byte	0x2
  146 0071 D401     		.2byte	0x1d4
  147 0073 48000000 		.4byte	0x48
  148 0077 02       		.uleb128 0x2
  149 0078 04       		.byte	0x4
  150 0079 04       		.byte	0x4
- 151 007a 1E000000 		.4byte	.LASF9
+ 151 007a 6B000000 		.4byte	.LASF9
  152 007e 02       		.uleb128 0x2
  153 007f 08       		.byte	0x8
  154 0080 04       		.byte	0x4
- 155 0081 57000000 		.4byte	.LASF10
+ 155 0081 A4000000 		.4byte	.LASF10
  156 0085 02       		.uleb128 0x2
  157 0086 01       		.byte	0x1
  158 0087 08       		.byte	0x8
- 159 0088 53010000 		.4byte	.LASF11
+ 159 0088 AF010000 		.4byte	.LASF11
  160 008c 04       		.uleb128 0x4
  161 008d 00000000 		.4byte	.LASF13
  162 0091 02       		.byte	0x2
@@ -284,13 +284,13 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc8I5s9N.s 			page 1
  170 00a0 21       		.byte	0x21
  171 00a1 CA000000 		.4byte	0xca
  172 00a5 07       		.uleb128 0x7
- 173 00a6 62010000 		.4byte	.LASF14
+ 173 00a6 BE010000 		.4byte	.LASF14
  174 00aa 03       		.byte	0x3
  175 00ab 23       		.byte	0x23
  176 00ac 6B000000 		.4byte	0x6b
  177 00b0 00       		.byte	0
  178 00b1 07       		.uleb128 0x7
- 179 00b2 3C010000 		.4byte	.LASF15
+ 179 00b2 98010000 		.4byte	.LASF15
  180 00b6 03       		.byte	0x3
  181 00b7 24       		.byte	0x24
  182 00b8 6B000000 		.4byte	0x6b
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc8I5s9N.s 			page 1
  184 00bd 07       		.uleb128 0x7
  185 00be 06000000 		.4byte	.LASF16
  186 00c2 03       		.byte	0x3
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc8I5s9N.s 			page 6
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccL28LCp.s 			page 6
 
 
  187 00c3 25       		.byte	0x25
@@ -306,12 +306,12 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc8I5s9N.s 			page 1
  189 00c8 08       		.byte	0x8
  190 00c9 00       		.byte	0
  191 00ca 08       		.uleb128 0x8
- 192 00cb 98000000 		.4byte	.LASF17
+ 192 00cb F4000000 		.4byte	.LASF17
  193 00cf 03       		.byte	0x3
  194 00d0 26       		.byte	0x26
  195 00d1 9D000000 		.4byte	0x9d
  196 00d5 09       		.uleb128 0x9
- 197 00d6 7F010000 		.4byte	.LASF18
+ 197 00d6 DB010000 		.4byte	.LASF18
  198 00da 01       		.byte	0x1
  199 00db 2C       		.byte	0x2c
  200 00dc 00000000 		.4byte	.LFB0
@@ -319,7 +319,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc8I5s9N.s 			page 1
  202 00e4 01       		.uleb128 0x1
  203 00e5 9C       		.byte	0x9c
  204 00e6 09       		.uleb128 0x9
- 205 00e7 0F000000 		.4byte	.LASF19
+ 205 00e7 CE000000 		.4byte	.LASF19
  206 00eb 01       		.byte	0x1
  207 00ec 52       		.byte	0x52
  208 00ed 00000000 		.4byte	.LFB1
@@ -327,7 +327,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc8I5s9N.s 			page 1
  210 00f5 01       		.uleb128 0x1
  211 00f6 9C       		.byte	0x9c
  212 00f7 0A       		.uleb128 0xa
- 213 00f8 65000000 		.4byte	.LASF23
+ 213 00f8 B2000000 		.4byte	.LASF23
  214 00fc 01       		.byte	0x1
  215 00fd 14       		.byte	0x14
  216 00fe CA000000 		.4byte	0xca
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc8I5s9N.s 			page 1
  241 0012 00       		.byte	0
  242 0013 02       		.uleb128 0x2
  243 0014 24       		.uleb128 0x24
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc8I5s9N.s 			page 7
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccL28LCp.s 			page 7
 
 
  244 0015 00       		.byte	0
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc8I5s9N.s 			page 1
  298 004b 0D       		.uleb128 0xd
  299 004c 00       		.byte	0
  300 004d 03       		.uleb128 0x3
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc8I5s9N.s 			page 8
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccL28LCp.s 			page 8
 
 
  301 004e 0E       		.uleb128 0xe
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc8I5s9N.s 			page 1
  355 0085 3B       		.uleb128 0x3b
  356 0086 0B       		.uleb128 0xb
  357 0087 49       		.uleb128 0x49
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc8I5s9N.s 			page 9
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccL28LCp.s 			page 9
 
 
  358 0088 13       		.uleb128 0x13
@@ -523,128 +523,128 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc8I5s9N.s 			page 1
  392 0006 75736253 		.ascii	"usbState\000"
  392      74617465 
  392      00
- 393              	.LASF19:
- 394 000f 4932435F 		.ascii	"I2C_scl_Wakeup\000"
- 394      73636C5F 
- 394      57616B65 
- 394      757000
- 395              	.LASF9:
- 396 001e 666C6F61 		.ascii	"float\000"
- 396      7400
- 397              	.LASF1:
- 398 0024 756E7369 		.ascii	"unsigned char\000"
- 398      676E6564 
- 398      20636861 
- 398      7200
- 399              	.LASF5:
- 400 0032 6C6F6E67 		.ascii	"long unsigned int\000"
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc8I5s9N.s 			page 10
+ 393              	.LASF22:
+ 394 000f 433A5C55 		.ascii	"C:\\Users\\JamesN4\\Documents\\PSoC Creator\\Hybrid"
+ 394      73657273 
+ 394      5C4A616D 
+ 394      65734E34 
+ 394      5C446F63 
+ 395 003d 456E636F 		.ascii	"EncoderCY8CKIT43\\firmware\\HybridEncoder.cydsn\000"
+ 395      64657243 
+ 395      5938434B 
+ 395      49543433 
+ 395      5C666972 
+ 396              	.LASF9:
+ 397 006b 666C6F61 		.ascii	"float\000"
+ 397      7400
+ 398              	.LASF1:
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccL28LCp.s 			page 10
 
 
- 400      20756E73 
- 400      69676E65 
- 400      6420696E 
- 400      7400
- 401              	.LASF3:
- 402 0044 73686F72 		.ascii	"short unsigned int\000"
- 402      7420756E 
- 402      7369676E 
- 402      65642069 
- 402      6E7400
- 403              	.LASF10:
- 404 0057 646F7562 		.ascii	"double\000"
- 404      6C6500
- 405              	.LASF12:
- 406 005e 75696E74 		.ascii	"uint32\000"
- 406      333200
- 407              	.LASF23:
- 408 0065 4932435F 		.ascii	"I2C_scl_backup\000"
- 408      73636C5F 
- 408      6261636B 
- 408      757000
- 409              	.LASF8:
- 410 0074 756E7369 		.ascii	"unsigned int\000"
- 410      676E6564 
- 410      20696E74 
- 410      00
- 411              	.LASF7:
- 412 0081 6C6F6E67 		.ascii	"long long unsigned int\000"
- 412      206C6F6E 
- 412      6720756E 
- 412      7369676E 
- 412      65642069 
- 413              	.LASF17:
- 414 0098 4932435F 		.ascii	"I2C_scl_BACKUP_STRUCT\000"
- 414      73636C5F 
- 414      4241434B 
- 414      55505F53 
- 414      54525543 
- 415              	.LASF20:
- 416 00ae 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
- 416      43313120 
- 416      352E342E 
- 416      31203230 
- 416      31363036 
- 417 00e1 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m0 -mthumb -g -O"
- 417      20726576 
- 417      6973696F 
- 417      6E203233 
- 417      37373135 
- 418 0114 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
- 418      66756E63 
- 418      74696F6E 
- 418      2D736563 
- 418      74696F6E 
- 419              	.LASF15:
- 420 013c 73696F53 		.ascii	"sioState\000"
- 420      74617465 
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc8I5s9N.s 			page 11
+ 399 0071 756E7369 		.ascii	"unsigned char\000"
+ 399      676E6564 
+ 399      20636861 
+ 399      7200
+ 400              	.LASF5:
+ 401 007f 6C6F6E67 		.ascii	"long unsigned int\000"
+ 401      20756E73 
+ 401      69676E65 
+ 401      6420696E 
+ 401      7400
+ 402              	.LASF3:
+ 403 0091 73686F72 		.ascii	"short unsigned int\000"
+ 403      7420756E 
+ 403      7369676E 
+ 403      65642069 
+ 403      6E7400
+ 404              	.LASF10:
+ 405 00a4 646F7562 		.ascii	"double\000"
+ 405      6C6500
+ 406              	.LASF12:
+ 407 00ab 75696E74 		.ascii	"uint32\000"
+ 407      333200
+ 408              	.LASF23:
+ 409 00b2 4932435F 		.ascii	"I2C_scl_backup\000"
+ 409      73636C5F 
+ 409      6261636B 
+ 409      757000
+ 410              	.LASF8:
+ 411 00c1 756E7369 		.ascii	"unsigned int\000"
+ 411      676E6564 
+ 411      20696E74 
+ 411      00
+ 412              	.LASF19:
+ 413 00ce 4932435F 		.ascii	"I2C_scl_Wakeup\000"
+ 413      73636C5F 
+ 413      57616B65 
+ 413      757000
+ 414              	.LASF7:
+ 415 00dd 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 415      206C6F6E 
+ 415      6720756E 
+ 415      7369676E 
+ 415      65642069 
+ 416              	.LASF17:
+ 417 00f4 4932435F 		.ascii	"I2C_scl_BACKUP_STRUCT\000"
+ 417      73636C5F 
+ 417      4241434B 
+ 417      55505F53 
+ 417      54525543 
+ 418              	.LASF20:
+ 419 010a 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
+ 419      43313120 
+ 419      352E342E 
+ 419      31203230 
+ 419      31363036 
+ 420 013d 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m0 -mthumb -g -O"
+ 420      20726576 
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccL28LCp.s 			page 11
 
 
- 420      00
- 421              	.LASF6:
- 422 0145 6C6F6E67 		.ascii	"long long int\000"
- 422      206C6F6E 
- 422      6720696E 
- 422      7400
- 423              	.LASF11:
- 424 0153 63686172 		.ascii	"char\000"
- 424      00
- 425              	.LASF2:
- 426 0158 73686F72 		.ascii	"short int\000"
- 426      7420696E 
- 426      7400
- 427              	.LASF14:
- 428 0162 70635374 		.ascii	"pcState\000"
- 428      61746500 
- 429              	.LASF4:
- 430 016a 6C6F6E67 		.ascii	"long int\000"
- 430      20696E74 
- 430      00
- 431              	.LASF0:
- 432 0173 7369676E 		.ascii	"signed char\000"
- 432      65642063 
- 432      68617200 
- 433              	.LASF18:
- 434 017f 4932435F 		.ascii	"I2C_scl_Sleep\000"
- 434      73636C5F 
- 434      536C6565 
- 434      7000
- 435              	.LASF21:
- 436 018d 47656E65 		.ascii	"Generated_Source\\PSoC4\\I2C_scl_PM.c\000"
- 436      72617465 
- 436      645F536F 
- 436      75726365 
- 436      5C50536F 
- 437              	.LASF22:
- 438 01b1 433A5C55 		.ascii	"C:\\Users\\JamesN4\\Documents\\PSoC Creator\\Hybrid"
- 438      73657273 
- 438      5C4A616D 
- 438      65734E34 
- 438      5C446F63 
- 439 01df 456E636F 		.ascii	"EncoderCY8CKIT43\\HybridEncoder.cydsn\000"
- 439      64657243 
- 439      5938434B 
- 439      49543433 
- 439      5C487962 
+ 420      6973696F 
+ 420      6E203233 
+ 420      37373135 
+ 421 0170 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
+ 421      66756E63 
+ 421      74696F6E 
+ 421      2D736563 
+ 421      74696F6E 
+ 422              	.LASF15:
+ 423 0198 73696F53 		.ascii	"sioState\000"
+ 423      74617465 
+ 423      00
+ 424              	.LASF6:
+ 425 01a1 6C6F6E67 		.ascii	"long long int\000"
+ 425      206C6F6E 
+ 425      6720696E 
+ 425      7400
+ 426              	.LASF11:
+ 427 01af 63686172 		.ascii	"char\000"
+ 427      00
+ 428              	.LASF2:
+ 429 01b4 73686F72 		.ascii	"short int\000"
+ 429      7420696E 
+ 429      7400
+ 430              	.LASF14:
+ 431 01be 70635374 		.ascii	"pcState\000"
+ 431      61746500 
+ 432              	.LASF4:
+ 433 01c6 6C6F6E67 		.ascii	"long int\000"
+ 433      20696E74 
+ 433      00
+ 434              	.LASF0:
+ 435 01cf 7369676E 		.ascii	"signed char\000"
+ 435      65642063 
+ 435      68617200 
+ 436              	.LASF18:
+ 437 01db 4932435F 		.ascii	"I2C_scl_Sleep\000"
+ 437      73636C5F 
+ 437      536C6565 
+ 437      7000
+ 438              	.LASF21:
+ 439 01e9 47656E65 		.ascii	"Generated_Source\\PSoC4\\I2C_scl_PM.c\000"
+ 439      72617465 
+ 439      645F536F 
+ 439      75726365 
+ 439      5C50536F 
  440              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran

@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbNQ4GD.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
   29:Generated_Source\PSoC4/CyLFClk.c ****     static volatile uint16 defaultIloTrimRegValue = CY_SYS_CLK_ILO_TRIM_DEFAULT_VALUE;
   30:Generated_Source\PSoC4/CyLFClk.c **** #endif /* (CY_IP_SRSSV2 && (!CY_IP_CPUSS)) */
   31:Generated_Source\PSoC4/CyLFClk.c **** 
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 2
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbNQ4GD.s 			page 2
 
 
   32:Generated_Source\PSoC4/CyLFClk.c **** #if(CY_IP_SRSSV2)
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
   86:Generated_Source\PSoC4/CyLFClk.c **** }
   87:Generated_Source\PSoC4/CyLFClk.c **** 
   88:Generated_Source\PSoC4/CyLFClk.c **** 
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 3
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbNQ4GD.s 			page 3
 
 
   89:Generated_Source\PSoC4/CyLFClk.c **** /*******************************************************************************
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
  143:Generated_Source\PSoC4/CyLFClk.c **** }
  144:Generated_Source\PSoC4/CyLFClk.c **** 
  145:Generated_Source\PSoC4/CyLFClk.c **** 
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 4
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbNQ4GD.s 			page 4
 
 
  146:Generated_Source\PSoC4/CyLFClk.c **** /******************************************************************************
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
  200:Generated_Source\PSoC4/CyLFClk.c **** ******************************************************************************/
  201:Generated_Source\PSoC4/CyLFClk.c **** void CySysClkIloStopMeasurement(void)
  202:Generated_Source\PSoC4/CyLFClk.c **** {
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 5
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbNQ4GD.s 			page 5
 
 
  203:Generated_Source\PSoC4/CyLFClk.c ****     /* Set default configurations in 11...8 DFT register bits to zero */
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
  257:Generated_Source\PSoC4/CyLFClk.c **** *
  258:Generated_Source\PSoC4/CyLFClk.c **** * \return CYRET_INVALID_STATE - Indicates that measurement not started. 
  259:Generated_Source\PSoC4/CyLFClk.c **** * The user should call CySysClkIloStartMeasurement() API before calling 
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 6
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbNQ4GD.s 			page 6
 
 
  260:Generated_Source\PSoC4/CyLFClk.c **** * this API.
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
  314:Generated_Source\PSoC4/CyLFClk.c ****                             iloCompensatedCycles = (((CY_SYS_CNT_REG2_REG * cydelayFreqHz) / (cydel
  315:Generated_Source\PSoC4/CyLFClk.c ****                                                    CY_SYS_CLK_SYS_CLK_DEVIDER)) / CY_SYS_CLK_ILO_FR
  316:Generated_Source\PSoC4/CyLFClk.c ****                                                    (desiredDelayInCounts / CY_SYS_CLK_ILO_FREQ_3LSB
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 7
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbNQ4GD.s 			page 7
 
 
  317:Generated_Source\PSoC4/CyLFClk.c ****                         }
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
  371:Generated_Source\PSoC4/CyLFClk.c ****     {
   27              		.loc 1 371 0
   28              		.cfi_startproc
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 8
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbNQ4GD.s 			page 8
 
 
   29              		@ args = 0, pretend = 0, frame = 0
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
  395:Generated_Source\PSoC4/CyLFClk.c **** *
  396:Generated_Source\PSoC4/CyLFClk.c **** * The CySysClkIloStartMeasurement() API should be called prior to calling this 
  397:Generated_Source\PSoC4/CyLFClk.c **** * API. Otherwise it will return CYRET_INVALID_STATE as the measurement was not 
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 9
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbNQ4GD.s 			page 9
 
 
  398:Generated_Source\PSoC4/CyLFClk.c **** * started.
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
  452:Generated_Source\PSoC4/CyLFClk.c ****     uint32 waitUntilCntr1Stops;
  453:Generated_Source\PSoC4/CyLFClk.c ****     static uint32 trimRunningStatus = CY_SYS_CLK_TRIM_OR_COMP_FINISHED;
  454:Generated_Source\PSoC4/CyLFClk.c ****     uint32 checkStatus;
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 10
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbNQ4GD.s 			page 10
 
 
  455:Generated_Source\PSoC4/CyLFClk.c ****     cystatus returnStatus;
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
  509:Generated_Source\PSoC4/CyLFClk.c ****             if (CY_SYS_CLK_TRIM_OR_COMP_FINISHED != trimRunningStatus)
  510:Generated_Source\PSoC4/CyLFClk.c ****             {
  511:Generated_Source\PSoC4/CyLFClk.c ****                 /* Checking if the counter CNTR 1 finished down-counting */
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 11
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbNQ4GD.s 			page 11
 
 
  512:Generated_Source\PSoC4/CyLFClk.c ****                 if(0u != (CY_SYS_CNT_REG1_REG & CY_SYS_CLK_ILO_CALIBR_COMPLETE_MASK))
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
  566:Generated_Source\PSoC4/CyLFClk.c **** * frequency measuring.
  567:Generated_Source\PSoC4/CyLFClk.c **** *
  568:Generated_Source\PSoC4/CyLFClk.c **** * \endinternal
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 12
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbNQ4GD.s 			page 12
 
 
  569:Generated_Source\PSoC4/CyLFClk.c **** *
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
  623:Generated_Source\PSoC4/CyLFClk.c ****     else
  624:Generated_Source\PSoC4/CyLFClk.c ****     {
  625:Generated_Source\PSoC4/CyLFClk.c ****         errorRangeStatus = CYRET_INVALID_STATE;
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 13
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbNQ4GD.s 			page 13
 
 
  626:Generated_Source\PSoC4/CyLFClk.c ****     }
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
  680:Generated_Source\PSoC4/CyLFClk.c ****     * CY_SYS_CLK_LFCLK_SRC_WCO Low Frequency Watch Crystal Oscillator (WCO)
  681:Generated_Source\PSoC4/CyLFClk.c ****     *
  682:Generated_Source\PSoC4/CyLFClk.c ****     * \endinternal
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 14
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbNQ4GD.s 			page 14
 
 
  683:Generated_Source\PSoC4/CyLFClk.c ****     *
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
  709:Generated_Source\PSoC4/CyLFClk.c ****     *  The function is applicable only for devices with more than one source for 
  710:Generated_Source\PSoC4/CyLFClk.c ****     * LFCLK - PSoC 4100 BLE / PSoC 4200 BLE / PRoC BLE / PSoC 4100M / PSoC 4200M / 
  711:Generated_Source\PSoC4/CyLFClk.c ****     * PSoC 4200L.
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 15
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbNQ4GD.s 			page 15
 
 
  712:Generated_Source\PSoC4/CyLFClk.c ****     *
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
  766:Generated_Source\PSoC4/CyLFClk.c ****     *  during a switch and hence its output should not be used at that moment.
  767:Generated_Source\PSoC4/CyLFClk.c ****     *
  768:Generated_Source\PSoC4/CyLFClk.c ****     *  The CySysClkWcoSetPowerMode() function configures the WCO power mode.
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 16
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbNQ4GD.s 			page 16
 
 
  769:Generated_Source\PSoC4/CyLFClk.c ****     *
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
  823:Generated_Source\PSoC4/CyLFClk.c ****     *******************************************************************************/
  824:Generated_Source\PSoC4/CyLFClk.c ****     uint32 CySysClkWcoEnabled(void)
  825:Generated_Source\PSoC4/CyLFClk.c ****     {
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 17
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbNQ4GD.s 			page 17
 
 
  826:Generated_Source\PSoC4/CyLFClk.c ****         return ((0u != (CY_SYS_CLK_WCO_CONFIG_REG & (uint32)(CY_SYS_CLK_WCO_CONFIG_LPM_ENABLE))) ?
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
  880:Generated_Source\PSoC4/CyLFClk.c ****     ****************************************************************************//**
  881:Generated_Source\PSoC4/CyLFClk.c ****     * \brief
  882:Generated_Source\PSoC4/CyLFClk.c ****     * Selects the WCO block output source.
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 18
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbNQ4GD.s 			page 18
 
 
  883:Generated_Source\PSoC4/CyLFClk.c ****     *
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
  937:Generated_Source\PSoC4/CyLFClk.c ****     /*******************************************************************************
  938:Generated_Source\PSoC4/CyLFClk.c ****     * Function Name: CySysWdtLock
  939:Generated_Source\PSoC4/CyLFClk.c ****     ****************************************************************************//**
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 19
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbNQ4GD.s 			page 19
 
 
  940:Generated_Source\PSoC4/CyLFClk.c ****     * \brief
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
  108 0010 00010B40 		.word	1074462976
  109              		.cfi_endproc
  110              	.LFE18:
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 20
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbNQ4GD.s 			page 20
 
 
  111              		.size	CySysWdtLocked, .-CySysWdtLocked
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
  176:Generated_Source\PSoC4/CyLFClk.c ****         iloTrimTrig = 1u;
  160              		.loc 1 176 0
  161 0008 0D4B     		ldr	r3, .L18+4
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 21
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbNQ4GD.s 			page 21
 
 
  162 000a 1A68     		ldr	r2, [r3]
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
  212              	CySysClkIloStopMeasurement:
  213              	.LFB4:
  202:Generated_Source\PSoC4/CyLFClk.c ****     /* Set default configurations in 11...8 DFT register bits to zero */
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 22
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbNQ4GD.s 			page 22
 
 
  214              		.loc 1 202 0
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
  278:Generated_Source\PSoC4/CyLFClk.c ****        (CY_SYS_TST_DDFT_CTRL_REG == CY_SYS_TST_DDFT_CTRL_REG_SEL2_CLK1) &&
  264              		.loc 1 278 0
  265 000e 8022     		movs	r2, #128
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 23
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbNQ4GD.s 			page 23
 
 
  266 0010 5200     		lsls	r2, r2, #1
@@ -1378,7 +1378,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
  310              	.LVL5:
  311 0050 284B     		ldr	r3, .L35+36
  312 0052 1968     		ldr	r1, [r3]
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 24
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbNQ4GD.s 			page 24
 
 
  313              	.LVL6:
@@ -1438,7 +1438,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
  359 0090 C901     		lsls	r1, r1, #7
  360 0092 FFF7FEFF 		bl	__aeabi_uidiv
  361              	.LVL17:
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 25
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbNQ4GD.s 			page 25
 
 
  362              	.L27:
@@ -1498,7 +1498,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
  410              	.LVL31:
  411              	.L32:
  412 00c4 1120     		movs	r0, #17
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 26
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbNQ4GD.s 			page 26
 
 
  413              	.LVL32:
@@ -1558,7 +1558,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
  463              	.LVL38:
  464 0000 10B5     		push	{r4, lr}
  465              		.cfi_def_cfa_offset 8
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 27
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbNQ4GD.s 			page 27
 
 
  466              		.cfi_offset 4, -8
@@ -1618,7 +1618,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
  514 004a 1549     		ldr	r1, .L47+12
  515 004c FFF7FEFF 		bl	__aeabi_idiv
  516              	.LVL45:
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 28
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbNQ4GD.s 			page 28
 
 
  517 0050 08E0     		b	.L41
@@ -1678,7 +1678,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
  563 0084 1060     		str	r0, [r2]
  564              	.LVL55:
  614:Generated_Source\PSoC4/CyLFClk.c ****         } /* Else return success because error is in +/- 10% range*/
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 29
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbNQ4GD.s 			page 29
 
 
  565              		.loc 1 614 0
@@ -1738,7 +1738,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
  614              		.cfi_offset 5, -12
  615              		.cfi_offset 6, -8
  616              		.cfi_offset 14, -4
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 30
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbNQ4GD.s 			page 30
 
 
  617 0002 0C00     		movs	r4, r1
@@ -1798,7 +1798,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
  661              	.L54:
  475:Generated_Source\PSoC4/CyLFClk.c ****                     if (0u == waitUntilCntr1Stops)
  662              		.loc 1 475 0
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 31
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbNQ4GD.s 			page 31
 
 
  663 003a 013D     		subs	r5, r5, #1
@@ -1858,7 +1858,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
  706 006e 1020     		movs	r0, #16
  707 0070 23E0     		b	.L50
  708              	.LVL72:
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 32
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbNQ4GD.s 			page 32
 
 
  709              	.L51:
@@ -1918,7 +1918,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
  755 00a8 1120     		movs	r0, #17
  756              	.LVL81:
  757 00aa 06E0     		b	.L50
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 33
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbNQ4GD.s 			page 33
 
 
  758              	.LVL82:
@@ -1978,7 +1978,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
  807              		@ link register save eliminated.
  808              	.LVL88:
  653:Generated_Source\PSoC4/CyLFClk.c ****         {
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 34
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbNQ4GD.s 			page 34
 
 
  809              		.loc 1 653 0
@@ -2038,7 +2038,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
  856              		.loc 1 772 0
  857              		.cfi_startproc
  858              		@ args = 0, pretend = 0, frame = 0
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 35
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbNQ4GD.s 			page 35
 
 
  859              		@ frame_needed = 0, uses_anonymous_args = 0
@@ -2098,7 +2098,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
   47:Generated_Source\PSoC4/CyLFClk.h **** */
   48:Generated_Source\PSoC4/CyLFClk.h **** cystatus CySysClkIloCompensate(uint32 desiredDelay, uint32 *compensatedCycles);
   49:Generated_Source\PSoC4/CyLFClk.h **** void CySysClkIloStartMeasurement(void);
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 36
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbNQ4GD.s 			page 36
 
 
   50:Generated_Source\PSoC4/CyLFClk.h **** void CySysClkIloStopMeasurement(void);
@@ -2158,7 +2158,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
  104:Generated_Source\PSoC4/CyLFClk.h ****     uint32 CySysWdtGetMode(uint32 counterNum);
  105:Generated_Source\PSoC4/CyLFClk.h ****     uint32 CySysWdtGetEnabledStatus(uint32 counterNum);
  106:Generated_Source\PSoC4/CyLFClk.h ****     void   CySysWdtSetClearOnMatch(uint32 counterNum, uint32 enable);
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 37
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbNQ4GD.s 			page 37
 
 
  107:Generated_Source\PSoC4/CyLFClk.h ****     uint32 CySysWdtGetClearOnMatch(uint32 counterNum);
@@ -2218,7 +2218,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
  161:Generated_Source\PSoC4/CyLFClk.h ****     uint32 CySysTimerGetMode(uint32 counterNum);
  162:Generated_Source\PSoC4/CyLFClk.h ****     uint32 CySysTimerGetEnabledStatus(uint32 counterNum);
  163:Generated_Source\PSoC4/CyLFClk.h ****     void   CySysTimerSetClearOnMatch(uint32 counterNum, uint32 enable);
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 38
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbNQ4GD.s 			page 38
 
 
  164:Generated_Source\PSoC4/CyLFClk.h ****     uint32 CySysTimerGetClearOnMatch(uint32 counterNum);
@@ -2278,7 +2278,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
  218:Generated_Source\PSoC4/CyLFClk.h **** #if (CY_IP_SRSSV2)
  219:Generated_Source\PSoC4/CyLFClk.h ****     #define CY_SYS_CLK_MAX_DELAY_US                     ((uint32) (0xEE6B2800u))
  220:Generated_Source\PSoC4/CyLFClk.h ****     #define CY_SYS_CLK_ILO_PERIOD                       ((uint32) (0x1Fu))
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 39
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbNQ4GD.s 			page 39
 
 
  221:Generated_Source\PSoC4/CyLFClk.h ****     #define CY_SYS_CLK_ILO_FREQ_2MSB                    ((uint32) 5u)
@@ -2338,7 +2338,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
  275:Generated_Source\PSoC4/CyLFClk.h **** 
  276:Generated_Source\PSoC4/CyLFClk.h ****     /** Selects External clock input on wco_in pin as WCO’s clock source */
  277:Generated_Source\PSoC4/CyLFClk.h ****     #define CY_SYS_CLK_WCO_SEL_PIN                      (0u)
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 40
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbNQ4GD.s 			page 40
 
 
  278:Generated_Source\PSoC4/CyLFClk.h **** #endif /* (CY_IP_WCO) */
@@ -2398,7 +2398,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
  332:Generated_Source\PSoC4/CyLFClk.h ****     #define CY_SYS_CLK_WCO_TRIM_GM_HPM                  (( uint32 ) 0x01u)
  333:Generated_Source\PSoC4/CyLFClk.h ****     #define CY_SYS_CLK_WCO_TRIM_GM_LPM                  (( uint32 ) 0x02u)
  334:Generated_Source\PSoC4/CyLFClk.h **** #endif  /* (CY_IP_WCO) */
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 41
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbNQ4GD.s 			page 41
 
 
  335:Generated_Source\PSoC4/CyLFClk.h **** 
@@ -2458,7 +2458,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
  389:Generated_Source\PSoC4/CyLFClk.h ****     #define CY_SYS_WDT_CLK_LOCK_BIT1            ((uint32)0x01u << 15u)
  390:Generated_Source\PSoC4/CyLFClk.h **** 
  391:Generated_Source\PSoC4/CyLFClk.h ****     #define CY_WDT_NUM_OF_WDT                   (3u)
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 42
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbNQ4GD.s 			page 42
 
 
  392:Generated_Source\PSoC4/CyLFClk.h ****     #define CY_WDT_NUM_OF_CALLBACKS             (3u)
@@ -2518,7 +2518,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
  446:Generated_Source\PSoC4/CyLFClk.h ****     #define CY_SYS_TIMER_CASCADE_12             ((uint32)0x01u << 11u)      /**< Cascade 12 */
  447:Generated_Source\PSoC4/CyLFClk.h **** 
  448:Generated_Source\PSoC4/CyLFClk.h ****     #define CY_SYS_TIMER0_INT                   ((uint32)0x01u << 2u)
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 43
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbNQ4GD.s 			page 43
 
 
  449:Generated_Source\PSoC4/CyLFClk.h ****     #define CY_SYS_TIMER1_INT                   ((uint32)0x01u << 10u)
@@ -2578,7 +2578,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
  503:Generated_Source\PSoC4/CyLFClk.h **** 
  504:Generated_Source\PSoC4/CyLFClk.h **** /* CySysClkWcoSetPowerMode() */
  505:Generated_Source\PSoC4/CyLFClk.h **** #define CY_SYS_CLK_WCO_HPM                              (0x0u)     /**< WCO High power mode */
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 44
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbNQ4GD.s 			page 44
 
 
  506:Generated_Source\PSoC4/CyLFClk.h **** 
@@ -2638,7 +2638,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
  560:Generated_Source\PSoC4/CyLFClk.h **** #endif  /* (CY_IP_SRSSV2) && CY_IP_WCO*/
  561:Generated_Source\PSoC4/CyLFClk.h **** 
  562:Generated_Source\PSoC4/CyLFClk.h **** #if (CY_IP_WCO)
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 45
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbNQ4GD.s 			page 45
 
 
  563:Generated_Source\PSoC4/CyLFClk.h ****     #if (CY_IP_BLESS)
@@ -2698,7 +2698,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
  617:Generated_Source\PSoC4/CyLFClk.h **** 
  618:Generated_Source\PSoC4/CyLFClk.h ****     #define CY_SYS_WDT_COUNTER_REG              (*(reg32 *) CYREG_WDT_COUNTER)
  619:Generated_Source\PSoC4/CyLFClk.h ****     #define CY_SYS_WDT_COUNTER_PTR              ( (reg32 *) CYREG_WDT_COUNTER)
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 46
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbNQ4GD.s 			page 46
 
 
  620:Generated_Source\PSoC4/CyLFClk.h **** 
@@ -2758,7 +2758,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
  876 0010 8243     		bics	r2, r0
  877 0012 1A60     		str	r2, [r3]
  665:Generated_Source\PSoC4/CyLFClk.h **** 
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 47
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbNQ4GD.s 			page 47
 
 
  666:Generated_Source\PSoC4/CyLFClk.h ****         /* Restore WCO trim register HPM settings */
@@ -2818,7 +2818,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
  825:Generated_Source\PSoC4/CyLFClk.c ****         return ((0u != (CY_SYS_CLK_WCO_CONFIG_REG & (uint32)(CY_SYS_CLK_WCO_CONFIG_LPM_ENABLE))) ?
  923              		.loc 1 825 0
  924              		.cfi_startproc
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 48
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbNQ4GD.s 			page 48
 
 
  925              		@ args = 0, pretend = 0, frame = 0
@@ -2878,7 +2878,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
  973 000a 0028     		cmp	r0, #0
  974 000c 15D1     		bne	.L83
  975              	.LBB8:
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 49
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbNQ4GD.s 			page 49
 
 
  976              	.LBB9:
@@ -2938,7 +2938,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
  1021              		.loc 1 875 0
  1022 0040 2000     		movs	r0, r4
  1023              		@ sp needed
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 50
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbNQ4GD.s 			page 50
 
 
  1024              	.LVL99:
@@ -2998,7 +2998,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
  1072              	.LVL103:
  1073              	.L88:
  929:Generated_Source\PSoC4/CyLFClk.c ****             }
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 51
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbNQ4GD.s 			page 51
 
 
  1074              		.loc 1 929 0 discriminator 1
@@ -3058,7 +3058,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
  1122              		.align	2
  1123              	.L92:
  1124 0018 00010B40 		.word	1074462976
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 52
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbNQ4GD.s 			page 52
 
 
  1125              		.cfi_endproc
@@ -3118,7 +3118,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
  1160 001c 1202     		lsls	r2, r2, #8
  1161 001e 1343     		orrs	r3, r2
  1162 0020 0B60     		str	r3, [r1]
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 53
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbNQ4GD.s 			page 53
 
 
  993:Generated_Source\PSoC4/CyLFClk.c ****                 CY_SYS_WDT_CLK_LOCK_BIT1);
@@ -3178,7 +3178,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
  1191              		.cfi_def_cfa_offset 8
  1192              		.cfi_offset 4, -8
  1193              		.cfi_offset 14, -4
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 54
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbNQ4GD.s 			page 54
 
 
  1194 0002 0400     		movs	r4, r0
@@ -3238,7 +3238,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
 1036:Generated_Source\PSoC4/CyLFClk.c ****     * CY_SYS_WDT_MODE_RESET - Reset on match (valid for counter 0 and 1 only).<br>
 1037:Generated_Source\PSoC4/CyLFClk.c ****     * CY_SYS_WDT_MODE_INT_RESET - Generate an interrupt.  Generate a reset on
 1038:Generated_Source\PSoC4/CyLFClk.c ****     * the 3rd non-handled interrupt (valid for counter 0 and counter 1 only).
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 55
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbNQ4GD.s 			page 55
 
 
 1039:Generated_Source\PSoC4/CyLFClk.c ****     *
@@ -3298,7 +3298,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
  1267 0024 A040     		lsls	r0, r0, r4
 1055:Generated_Source\PSoC4/CyLFClk.c ****                                 (uint32)~((uint32)(CY_SYS_WDT_MODE_MASK << (counterNum * CY_SYS_WDT
  1268              		.loc 1 1055 0
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 56
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbNQ4GD.s 			page 56
 
 
  1269 0026 8343     		bics	r3, r0
@@ -3358,7 +3358,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
 1082:Generated_Source\PSoC4/CyLFClk.c ****     * Function Name: CySysWdtSetClearOnMatch
 1083:Generated_Source\PSoC4/CyLFClk.c ****     ****************************************************************************//**
 1084:Generated_Source\PSoC4/CyLFClk.c ****     * 
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 57
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbNQ4GD.s 			page 57
 
 
 1085:Generated_Source\PSoC4/CyLFClk.c ****     * \brief Configures the WDT counter "clear on match" setting.
@@ -3418,7 +3418,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
 1139:Generated_Source\PSoC4/CyLFClk.c ****         CYASSERT((counterNum == CY_SYS_WDT_COUNTER0) ||
 1140:Generated_Source\PSoC4/CyLFClk.c ****                  (counterNum == CY_SYS_WDT_COUNTER1));
 1141:Generated_Source\PSoC4/CyLFClk.c **** 
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 58
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbNQ4GD.s 			page 58
 
 
 1142:Generated_Source\PSoC4/CyLFClk.c ****         return (uint32)((CY_SYS_WDT_CONFIG_REG >>
@@ -3478,7 +3478,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
 1196:Generated_Source\PSoC4/CyLFClk.c ****             while (0u == CySysWdtGetEnabledStatus(CY_SYS_WDT_COUNTER1))
 1197:Generated_Source\PSoC4/CyLFClk.c ****             {
 1198:Generated_Source\PSoC4/CyLFClk.c ****                 /* Wait for changes to come into effect */
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 59
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbNQ4GD.s 			page 59
 
 
 1199:Generated_Source\PSoC4/CyLFClk.c ****             }
@@ -3538,7 +3538,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
 1253:Generated_Source\PSoC4/CyLFClk.c ****                 }
 1254:Generated_Source\PSoC4/CyLFClk.c ****             }
 1255:Generated_Source\PSoC4/CyLFClk.c ****         }
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 60
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbNQ4GD.s 			page 60
 
 
 1256:Generated_Source\PSoC4/CyLFClk.c ****     }
@@ -3598,7 +3598,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
 1310:Generated_Source\PSoC4/CyLFClk.c ****     * \return The mask of the cascade values set.
 1311:Generated_Source\PSoC4/CyLFClk.c ****     * \return CY_SYS_WDT_CASCADE_NONE - Neither
 1312:Generated_Source\PSoC4/CyLFClk.c ****     * \return CY_SYS_WDT_CASCADE_01 - Cascade 01
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 61
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbNQ4GD.s 			page 61
 
 
 1313:Generated_Source\PSoC4/CyLFClk.c ****     * \return CY_SYS_WDT_CASCADE_12 - Cascade 12
@@ -3658,7 +3658,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
 1367:Generated_Source\PSoC4/CyLFClk.c ****     * WDT Counter 2 should be disabled. Otherwise this function call has no
 1368:Generated_Source\PSoC4/CyLFClk.c ****     * effect.
 1369:Generated_Source\PSoC4/CyLFClk.c ****     *
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 62
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbNQ4GD.s 			page 62
 
 
 1370:Generated_Source\PSoC4/CyLFClk.c ****     * If the specified counter is enabled, call the CySysWdtDisable() function with
@@ -3718,7 +3718,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
 1424:Generated_Source\PSoC4/CyLFClk.c **** 
 1425:Generated_Source\PSoC4/CyLFClk.c **** 
 1426:Generated_Source\PSoC4/CyLFClk.c ****     /*******************************************************************************
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 63
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbNQ4GD.s 			page 63
 
 
 1427:Generated_Source\PSoC4/CyLFClk.c ****     * Function Name: CySysWdtGetCount
@@ -3778,7 +3778,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
 1481:Generated_Source\PSoC4/CyLFClk.c ****     uint32 CySysWdtGetInterruptSource(void)
 1482:Generated_Source\PSoC4/CyLFClk.c ****     {
 1483:Generated_Source\PSoC4/CyLFClk.c ****         return (CY_SYS_WDT_CONTROL_REG & (CY_SYS_WDT_COUNTER0_INT | CY_SYS_WDT_COUNTER1_INT | CY_SY
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 64
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbNQ4GD.s 			page 64
 
 
 1484:Generated_Source\PSoC4/CyLFClk.c ****     }
@@ -3838,7 +3838,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
 1538:Generated_Source\PSoC4/CyLFClk.c ****         */
 1539:Generated_Source\PSoC4/CyLFClk.c ****         (void)CY_SYS_WDT_CONTROL_REG;
 1540:Generated_Source\PSoC4/CyLFClk.c **** 
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 65
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbNQ4GD.s 			page 65
 
 
 1541:Generated_Source\PSoC4/CyLFClk.c ****         if (1u == wdtLockState)
@@ -3898,7 +3898,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
 1595:Generated_Source\PSoC4/CyLFClk.c ****     {
 1596:Generated_Source\PSoC4/CyLFClk.c ****         cyWdtCallback prevCallback = (void *)0;
 1597:Generated_Source\PSoC4/CyLFClk.c **** 
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 66
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbNQ4GD.s 			page 66
 
 
 1598:Generated_Source\PSoC4/CyLFClk.c ****         if(counterNum < CY_WDT_NUM_OF_WDT)
@@ -3958,7 +3958,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
 1652:Generated_Source\PSoC4/CyLFClk.c ****     *******************************************************************************/
 1653:Generated_Source\PSoC4/CyLFClk.c ****     void CySysWdtEnableCounterIsr(uint32 counterNum)
 1654:Generated_Source\PSoC4/CyLFClk.c ****     {
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 67
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbNQ4GD.s 			page 67
 
 
 1655:Generated_Source\PSoC4/CyLFClk.c ****         if(counterNum <= CY_SYS_WDT_COUNTER2)
@@ -4018,7 +4018,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
 1709:Generated_Source\PSoC4/CyLFClk.c ****     void CySysWdtIsr(void)
 1710:Generated_Source\PSoC4/CyLFClk.c ****     {
 1711:Generated_Source\PSoC4/CyLFClk.c ****         if(0u != (CY_SYS_WDT_COUNTER0_INT & CY_SYS_WDT_CONTROL_REG))
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 68
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbNQ4GD.s 			page 68
 
 
 1712:Generated_Source\PSoC4/CyLFClk.c ****         {
@@ -4078,7 +4078,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
 1766:Generated_Source\PSoC4/CyLFClk.c ****     * Value of counterNum corresponds to appropriate counter. For example value 1 
 1767:Generated_Source\PSoC4/CyLFClk.c ****     * corresponds to second WDT1 Counter.
 1768:Generated_Source\PSoC4/CyLFClk.c ****     *
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 69
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbNQ4GD.s 			page 69
 
 
 1769:Generated_Source\PSoC4/CyLFClk.c ****     * \details
@@ -4138,7 +4138,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
 1823:Generated_Source\PSoC4/CyLFClk.c ****     *
 1824:Generated_Source\PSoC4/CyLFClk.c ****     * A pair of the CySysClkLfclkPosedgeCatch() and CySysClkLfclkPosedgeRestore()
 1825:Generated_Source\PSoC4/CyLFClk.c ****     * functions is expected to be called inside a critical section.
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 70
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbNQ4GD.s 			page 70
 
 
 1826:Generated_Source\PSoC4/CyLFClk.c ****     *
@@ -4198,7 +4198,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
 1880:Generated_Source\PSoC4/CyLFClk.c ****     *  Restores the WDT configuration after a CySysClkLfclkPosedgeCatch() call.
 1881:Generated_Source\PSoC4/CyLFClk.c ****     *
 1882:Generated_Source\PSoC4/CyLFClk.c ****     *  A pair of the CySysClkLfclkPosedgeCatch() and CySysClkLfclkPosedgeRestore()
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 71
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbNQ4GD.s 			page 71
 
 
 1883:Generated_Source\PSoC4/CyLFClk.c ****     *  functions is expected to be called inside a critical section.
@@ -4258,7 +4258,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
  1331              		.align	2
  1332              	.L108:
  1333 0024 00000000 		.word	.LANCHOR0
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 72
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbNQ4GD.s 			page 72
 
 
  1334 0028 10020B40 		.word	1074463248
@@ -4318,7 +4318,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
  1384              	.LVL126:
  1385 0000 70B5     		push	{r4, r5, r6, lr}
  1386              		.cfi_def_cfa_offset 16
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 73
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbNQ4GD.s 			page 73
 
 
  1387              		.cfi_offset 4, -16
@@ -4378,7 +4378,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
  1432              	.L117:
  1433              		.align	2
  1434              	.L116:
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 74
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbNQ4GD.s 			page 74
 
 
  1435 0030 0C020B40 		.word	1074463244
@@ -4438,7 +4438,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
  1482              	.L120:
  1483 0020 0C020B40 		.word	1074463244
  1484              		.cfi_endproc
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 75
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbNQ4GD.s 			page 75
 
 
  1485              	.LFE24:
@@ -4498,7 +4498,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
 1202:Generated_Source\PSoC4/CyLFClk.c ****         {
  1533              		.loc 1 1202 0
  1534 0028 E303     		lsls	r3, r4, #15
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 76
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbNQ4GD.s 			page 76
 
 
  1535 002a 04D5     		bpl	.L122
@@ -4558,7 +4558,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
  1583              		.loc 1 1232 0
  1584 0014 E307     		lsls	r3, r4, #31
  1585 0016 04D5     		bpl	.L133
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 77
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbNQ4GD.s 			page 77
 
 
  1586              	.L134:
@@ -4618,7 +4618,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
  1634              	.LFB27:
 1286:Generated_Source\PSoC4/CyLFClk.c ****         uint32 configRegValue;
  1635              		.loc 1 1286 0
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 78
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbNQ4GD.s 			page 78
 
 
  1636              		.cfi_startproc
@@ -4678,7 +4678,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
  1680 0028 1560     		str	r5, [r2]
  1681              	.LVL160:
  1682              	.L140:
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 79
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbNQ4GD.s 			page 79
 
 
 1301:Generated_Source\PSoC4/CyLFClk.c **** 
@@ -4738,7 +4738,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
  1732              		.cfi_startproc
  1733              		@ args = 0, pretend = 0, frame = 0
  1734              		@ frame_needed = 0, uses_anonymous_args = 0
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 80
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbNQ4GD.s 			page 80
 
 
  1735              	.LVL161:
@@ -4798,7 +4798,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
 1351:Generated_Source\PSoC4/CyLFClk.c ****     }
  1782              		.loc 1 1351 0 discriminator 4
  1783 0034 044B     		ldr	r3, .L153
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 81
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbNQ4GD.s 			page 81
 
 
  1784              	.LVL169:
@@ -4858,7 +4858,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
  1833 000c 0AD1     		bne	.L155
 1381:Generated_Source\PSoC4/CyLFClk.c ****             configRegValue &= (uint32)(~((uint32)(CY_SYS_WDT_CONFIG_BITS2_MASK << CY_SYS_WDT_CONFIG
  1834              		.loc 1 1381 0
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 82
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbNQ4GD.s 			page 82
 
 
  1835 000e 0649     		ldr	r1, .L157
@@ -4918,7 +4918,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
  1883 0006 1F23     		movs	r3, #31
  1884 0008 1840     		ands	r0, r3
 1401:Generated_Source\PSoC4/CyLFClk.c **** 
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 83
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbNQ4GD.s 			page 83
 
 
  1885              		.loc 1 1401 0
@@ -4978,7 +4978,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
  1932              		.loc 1 1423 0
  1933              		@ sp needed
  1934 001a 10BD     		pop	{r4, pc}
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 84
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbNQ4GD.s 			page 84
 
 
  1935              	.L165:
@@ -5038,7 +5038,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
  1984 001e 000C     		lsrs	r0, r0, #16
  1985              	.LVL189:
 1452:Generated_Source\PSoC4/CyLFClk.c **** 
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 85
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbNQ4GD.s 			page 85
 
 
  1986              		.loc 1 1452 0
@@ -5098,7 +5098,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
  2033              		.loc 1 1845 0
  2034 0002 0020     		movs	r0, #0
  2035 0004 FFF7FEFF 		bl	CySysWdtGetEnabledStatus
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 86
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbNQ4GD.s 			page 86
 
 
  2036              	.LVL196:
@@ -5158,7 +5158,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
  2081              		.loc 1 1864 0
  2082 004a 0021     		movs	r1, #0
  2083 004c 0020     		movs	r0, #0
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 87
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbNQ4GD.s 			page 87
 
 
  2084 004e FFF7FEFF 		bl	CySysWdtSetMode
@@ -5218,7 +5218,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
  114:Generated_Source\PSoC4/CyLFClk.c ****         {
  2133              		.loc 1 114 0
  2134 0002 FFF7FEFF 		bl	CySysWdtLocked
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 88
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbNQ4GD.s 			page 88
 
 
  2135              	.LVL206:
@@ -5278,7 +5278,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
  2180              		@ sp needed
  2181 0044 10BD     		pop	{r4, pc}
  2182              	.L187:
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 89
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbNQ4GD.s 			page 89
 
 
  2183 0046 C046     		.align	2
@@ -5338,7 +5338,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
  742:Generated_Source\PSoC4/CyLFClk.c ****                                     (source & CY_SYS_CLK_LFCLK_SEL_MASK);
  2231              		.loc 1 742 0
  2232 0022 1C43     		orrs	r4, r3
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 90
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbNQ4GD.s 			page 90
 
 
  2233 0024 1460     		str	r4, [r2]
@@ -5398,7 +5398,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
  2280              		.loc 1 800 0
  2281 0016 FFF7FEFF 		bl	CyEnterCriticalSection
  2282              	.LVL225:
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 91
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbNQ4GD.s 			page 91
 
 
  2283 001a 0400     		movs	r4, r0
@@ -5458,7 +5458,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
  2330              		.cfi_startproc
  2331              		@ args = 0, pretend = 0, frame = 0
  2332              		@ frame_needed = 0, uses_anonymous_args = 0
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 92
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbNQ4GD.s 			page 92
 
 
  2333              		@ link register save eliminated.
@@ -5518,7 +5518,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
  2381              		.loc 1 1520 0
  2382 0012 FFF7FEFF 		bl	CySysWdtUnlock
  2383              	.LVL236:
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 93
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbNQ4GD.s 			page 93
 
 
 1519:Generated_Source\PSoC4/CyLFClk.c ****             CySysWdtUnlock();
@@ -5578,7 +5578,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
  2429              	.LFE35:
  2430              		.size	CySysWdtClearInterrupt, .-CySysWdtClearInterrupt
  2431              		.section	.text.CySysWdtResetCounters,"ax",%progbits
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 94
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbNQ4GD.s 			page 94
 
 
  2432              		.align	2
@@ -5638,7 +5638,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
  2481              		@ args = 0, pretend = 0, frame = 0
  2482              		@ frame_needed = 0, uses_anonymous_args = 0
  2483              	.LVL246:
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 95
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbNQ4GD.s 			page 95
 
 
  2484 0000 10B5     		push	{r4, lr}
@@ -5698,7 +5698,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
  2531              		.loc 1 1625 0
  2532              		.cfi_startproc
  2533              		@ args = 0, pretend = 0, frame = 0
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 96
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbNQ4GD.s 			page 96
 
 
  2534              		@ frame_needed = 0, uses_anonymous_args = 0
@@ -5758,7 +5758,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
  2582              		.cfi_startproc
  2583              		@ args = 0, pretend = 0, frame = 0
  2584              		@ frame_needed = 0, uses_anonymous_args = 0
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 97
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbNQ4GD.s 			page 97
 
 
  2585              	.LVL262:
@@ -5818,7 +5818,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
  2634              	CySysWdtDisableCounterIsr:
  2635              	.LFB40:
 1677:Generated_Source\PSoC4/CyLFClk.c ****         if(counterNum <= CY_SYS_WDT_COUNTER2)
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 98
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbNQ4GD.s 			page 98
 
 
  2636              		.loc 1 1677 0
@@ -5878,7 +5878,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
  2685              		.loc 1 1710 0
  2686              		.cfi_startproc
  2687              		@ args = 0, pretend = 0, frame = 0
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 99
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbNQ4GD.s 			page 99
 
 
  2688              		@ frame_needed = 0, uses_anonymous_args = 0
@@ -5938,7 +5938,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
 1727:Generated_Source\PSoC4/CyLFClk.c ****             {
  2734              		.loc 1 1727 0
  2735 003e 164B     		ldr	r3, .L237+4
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 100
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbNQ4GD.s 			page 100
 
 
  2736 0040 5B68     		ldr	r3, [r3, #4]
@@ -5998,7 +5998,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
  2782 0086 00D0     		beq	.L236
 1745:Generated_Source\PSoC4/CyLFClk.c ****                 }
  2783              		.loc 1 1745 0
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 101
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbNQ4GD.s 			page 101
 
 
  2784 0088 9847     		blx	r3
@@ -6058,7 +6058,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
  2832 000e 0130     		adds	r0, r0, #1
  2833 0010 FFF7FEFF 		bl	CySysWdtClearInterrupt
  2834              	.LVL280:
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 102
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbNQ4GD.s 			page 102
 
 
  2835 0014 23E0     		b	.L239
@@ -6118,7 +6118,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
  2880              		.loc 1 1801 0
  2881 0056 8020     		movs	r0, #128
  2882 0058 C000     		lsls	r0, r0, #3
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 103
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbNQ4GD.s 			page 103
 
 
  2883 005a FFF7FEFF 		bl	CySysWdtClearInterrupt
@@ -6178,7 +6178,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
 1939:Generated_Source\PSoC4/CyLFClk.c ****         CY_SYS_WDT_DISABLE_KEY_REG = 0u;
 1940:Generated_Source\PSoC4/CyLFClk.c ****     }
 1941:Generated_Source\PSoC4/CyLFClk.c **** 
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 104
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbNQ4GD.s 			page 104
 
 
 1942:Generated_Source\PSoC4/CyLFClk.c **** 
@@ -6238,7 +6238,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
 1996:Generated_Source\PSoC4/CyLFClk.c ****     *
 1997:Generated_Source\PSoC4/CyLFClk.c ****     * \return A live counter value.
 1998:Generated_Source\PSoC4/CyLFClk.c ****     *
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 105
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbNQ4GD.s 			page 105
 
 
 1999:Generated_Source\PSoC4/CyLFClk.c ****     *******************************************************************************/
@@ -6298,7 +6298,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
 2053:Generated_Source\PSoC4/CyLFClk.c ****     *
 2054:Generated_Source\PSoC4/CyLFClk.c ****     *******************************************************************************/
 2055:Generated_Source\PSoC4/CyLFClk.c ****     void CySysWdtClearInterrupt(void)
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 106
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbNQ4GD.s 			page 106
 
 
 2056:Generated_Source\PSoC4/CyLFClk.c ****     {
@@ -6358,7 +6358,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
 2110:Generated_Source\PSoC4/CyLFClk.c ****         return(prevCallback);
 2111:Generated_Source\PSoC4/CyLFClk.c ****     }
 2112:Generated_Source\PSoC4/CyLFClk.c **** 
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 107
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbNQ4GD.s 			page 107
 
 
 2113:Generated_Source\PSoC4/CyLFClk.c **** 
@@ -6418,7 +6418,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
 2167:Generated_Source\PSoC4/CyLFClk.c **** * \brief Gets the clock source for the DeepSleep Timers.
 2168:Generated_Source\PSoC4/CyLFClk.c **** *
 2169:Generated_Source\PSoC4/CyLFClk.c **** * The function is applicable only for PSoC 4100S / PSoC Analog Coprocessor.
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 108
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbNQ4GD.s 			page 108
 
 
 2170:Generated_Source\PSoC4/CyLFClk.c **** *
@@ -6478,7 +6478,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
 2224:Generated_Source\PSoC4/CyLFClk.c ****                                     (source & CY_SYS_CLK_TIMER_SEL_MASK);
 2225:Generated_Source\PSoC4/CyLFClk.c ****             CyExitCriticalSection(interruptState);
 2226:Generated_Source\PSoC4/CyLFClk.c ****         }
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 109
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbNQ4GD.s 			page 109
 
 
 2227:Generated_Source\PSoC4/CyLFClk.c **** 
@@ -6538,7 +6538,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
 2281:Generated_Source\PSoC4/CyLFClk.c ****     *******************************************************************************/
 2282:Generated_Source\PSoC4/CyLFClk.c ****     void CySysTimerSetMode(uint32 counterNum, uint32 mode)
 2283:Generated_Source\PSoC4/CyLFClk.c ****     {
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 110
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbNQ4GD.s 			page 110
 
 
 2284:Generated_Source\PSoC4/CyLFClk.c ****         uint32 configRegValue;
@@ -6598,7 +6598,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
 2338:Generated_Source\PSoC4/CyLFClk.c ****     *
 2339:Generated_Source\PSoC4/CyLFClk.c ****     *******************************************************************************/
 2340:Generated_Source\PSoC4/CyLFClk.c ****     void CySysTimerSetClearOnMatch(uint32 counterNum, uint32 enable)
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 111
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbNQ4GD.s 			page 111
 
 
 2341:Generated_Source\PSoC4/CyLFClk.c ****     {
@@ -6658,7 +6658,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
 2395:Generated_Source\PSoC4/CyLFClk.c ****     * Enabling or disabling Timer requires 3 Timer source-cycles to come into effect.
 2396:Generated_Source\PSoC4/CyLFClk.c ****     * Therefore, the Timer enable state must not be changed more than once in
 2397:Generated_Source\PSoC4/CyLFClk.c ****     * that period.
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 112
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbNQ4GD.s 			page 112
 
 
 2398:Generated_Source\PSoC4/CyLFClk.c ****     *
@@ -6718,7 +6718,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
 2452:Generated_Source\PSoC4/CyLFClk.c ****     *******************************************************************************/
 2453:Generated_Source\PSoC4/CyLFClk.c ****     void CySysTimerDisable(uint32 counterMask)
 2454:Generated_Source\PSoC4/CyLFClk.c ****     {
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 113
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbNQ4GD.s 			page 113
 
 
 2455:Generated_Source\PSoC4/CyLFClk.c **** 
@@ -6778,7 +6778,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
 2509:Generated_Source\PSoC4/CyLFClk.c ****     * take up to 3 Timers source-cycles.
 2510:Generated_Source\PSoC4/CyLFClk.c ****     *
 2511:Generated_Source\PSoC4/CyLFClk.c ****     *******************************************************************************/
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 114
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbNQ4GD.s 			page 114
 
 
 2512:Generated_Source\PSoC4/CyLFClk.c ****     void CySysTimerSetCascade(uint32 cascadeMask)
@@ -6838,7 +6838,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
 2566:Generated_Source\PSoC4/CyLFClk.c **** 
 2567:Generated_Source\PSoC4/CyLFClk.c ****         CYASSERT((counterNum == CY_SYS_TIMER0) ||
 2568:Generated_Source\PSoC4/CyLFClk.c ****                  (counterNum == CY_SYS_TIMER1));
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 115
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbNQ4GD.s 			page 115
 
 
 2569:Generated_Source\PSoC4/CyLFClk.c **** 
@@ -6898,7 +6898,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
 2623:Generated_Source\PSoC4/CyLFClk.c ****     *******************************************************************************/
 2624:Generated_Source\PSoC4/CyLFClk.c ****     uint32 CySysTimerGetToggleBit(void)
 2625:Generated_Source\PSoC4/CyLFClk.c ****     {
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 116
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbNQ4GD.s 			page 116
 
 
 2626:Generated_Source\PSoC4/CyLFClk.c ****         return ((CY_SYS_WCO_WDT_CONFIG_REG >> CY_SYS_TIMER_CONFIG_BITS2_POS) & CY_SYS_TIMER_CONFIG_
@@ -6958,7 +6958,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
 2680:Generated_Source\PSoC4/CyLFClk.c ****             /* Timer Counter 2 */
 2681:Generated_Source\PSoC4/CyLFClk.c ****             case 2u:
 2682:Generated_Source\PSoC4/CyLFClk.c ****                 regValue = CY_SYS_WCO_WDT_CTRHIGH_REG;
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 117
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbNQ4GD.s 			page 117
 
 
 2683:Generated_Source\PSoC4/CyLFClk.c ****             break;
@@ -7018,7 +7018,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
 2737:Generated_Source\PSoC4/CyLFClk.c ****                         CY_SYS_TIMER2_INT);
 2738:Generated_Source\PSoC4/CyLFClk.c **** 
 2739:Generated_Source\PSoC4/CyLFClk.c ****         CY_SYS_WCO_WDT_CONTROL_REG = counterMask | (CY_SYS_WCO_WDT_CONTROL_REG & ~(CY_SYS_TIMER0_IN
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 118
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbNQ4GD.s 			page 118
 
 
 2740:Generated_Source\PSoC4/CyLFClk.c ****                                                                            CY_SYS_TIMER1_INT |
@@ -7078,7 +7078,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
 2794:Generated_Source\PSoC4/CyLFClk.c ****     *
 2795:Generated_Source\PSoC4/CyLFClk.c ****     * \return
 2796:Generated_Source\PSoC4/CyLFClk.c ****     * The pointer to the callback function registered for a particular Timer by
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 119
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbNQ4GD.s 			page 119
 
 
 2797:Generated_Source\PSoC4/CyLFClk.c ****     * a particular address that are passed through arguments.
@@ -7138,7 +7138,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
 2851:Generated_Source\PSoC4/CyLFClk.c ****     *******************************************************************************/
 2852:Generated_Source\PSoC4/CyLFClk.c ****     void CySysTimerDisableIsr(uint32 counterNum)
 2853:Generated_Source\PSoC4/CyLFClk.c ****     {
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 120
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbNQ4GD.s 			page 120
 
 
 2854:Generated_Source\PSoC4/CyLFClk.c ****         if(counterNum <= CY_SYS_TIMER2)
@@ -7198,7 +7198,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
 2908:Generated_Source\PSoC4/CyLFClk.c ****             }
 2909:Generated_Source\PSoC4/CyLFClk.c ****             CySysTimerClearInterrupt(CY_SYS_TIMER1_INT);
 2910:Generated_Source\PSoC4/CyLFClk.c ****         }
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 121
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbNQ4GD.s 			page 121
 
 
 2911:Generated_Source\PSoC4/CyLFClk.c **** 
@@ -7258,7 +7258,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
 2965:Generated_Source\PSoC4/CyLFClk.c ****     * PSoC 4200 BLE / PRoC BLE / PSoC 4200L / PSoC 4100M / PSoC 4200M devices to 
 2966:Generated_Source\PSoC4/CyLFClk.c ****     * use WDT. Also this API is available to use for PSoC4100S and / PSoC Analog 
 2967:Generated_Source\PSoC4/CyLFClk.c ****     * Coprocessor devices to use DeepSleep Timers.
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 122
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbNQ4GD.s 			page 122
 
 
 2968:Generated_Source\PSoC4/CyLFClk.c ****     *
@@ -7318,7 +7318,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
 3022:Generated_Source\PSoC4/CyLFClk.c ****     * \param delay The delay value in the LFCLK ticks 
 3023:Generated_Source\PSoC4/CyLFClk.c ****     * (allowable range - 16-bit value).
 3024:Generated_Source\PSoC4/CyLFClk.c ****     *
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 123
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbNQ4GD.s 			page 123
 
 
 3025:Generated_Source\PSoC4/CyLFClk.c ****     * \details
@@ -7378,7 +7378,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
 3079:Generated_Source\PSoC4/CyLFClk.c ****     * Also this API is available to use for PSoC4100S / Analog Coprocessor devices
 3080:Generated_Source\PSoC4/CyLFClk.c ****     * to use DeepSleep Timers.
 3081:Generated_Source\PSoC4/CyLFClk.c ****     * 
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 124
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbNQ4GD.s 			page 124
 
 
 3082:Generated_Source\PSoC4/CyLFClk.c ****     * For PSoC 4100 / PSoC 4200 / PSoC 4100 BLE / PSoC 4200 BLE / PRoC BLE / PSoC 
@@ -7438,7 +7438,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
 3136:Generated_Source\PSoC4/CyLFClk.c ****     * - Call the CySysWdtDisableCounterIsr() for WDT or 
 3137:Generated_Source\PSoC4/CyLFClk.c ****     * CySysTimerDisableIsr() for DeepSleep Timer function to disable servicing
 3138:Generated_Source\PSoC4/CyLFClk.c ****     * interrupts of the specified WDT or DeepSleep Timer counter.
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 125
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbNQ4GD.s 			page 125
 
 
 3139:Generated_Source\PSoC4/CyLFClk.c ****     *
@@ -7498,7 +7498,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
 3167:Generated_Source\PSoC4/CyLFClk.c ****             {
 3168:Generated_Source\PSoC4/CyLFClk.c ****                 if(delayType == CY_SYS_TIMER_WAIT)
  2927              		.loc 1 3168 0 is_stmt 1
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 126
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbNQ4GD.s 			page 126
 
 
  2928 001a 002E     		cmp	r6, #0
@@ -7558,7 +7558,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
 3186:Generated_Source\PSoC4/CyLFClk.c ****                     wdtIsrMask |= tmpValue;
  2965              		.loc 1 3186 0
  2966 004a 074A     		ldr	r2, .L250+12
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 127
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbNQ4GD.s 			page 127
 
 
  2967 004c 5368     		ldr	r3, [r2, #4]
@@ -7618,7 +7618,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
  2981              	.LVL302:
  2982 005a 70BD     		pop	{r4, r5, r6, pc}
  2983              	.L251:
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 128
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbNQ4GD.s 			page 128
 
 
  2984              		.align	2
@@ -7678,7 +7678,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
  3032 0020 2A18     		adds	r2, r5, r0
  3033 0022 1204     		lsls	r2, r2, #16
  3034 0024 120C     		lsrs	r2, r2, #16
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 129
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbNQ4GD.s 			page 129
 
 
  3035              	.LVL306:
@@ -7738,7 +7738,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
  3086              		.size	iloTrimTrig.4871, 1
  3087              	iloTrimTrig.4871:
  3088 0000 00       		.space	1
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 130
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbNQ4GD.s 			page 130
 
 
  3089 0001 000000   		.space	3
@@ -7785,8 +7785,8 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
  3128 000b 01       		.uleb128 0x1
  3129 000c CA000000 		.4byte	.LASF123
  3130 0010 0C       		.byte	0xc
- 3131 0011 1D070000 		.4byte	.LASF124
- 3132 0015 DB080000 		.4byte	.LASF125
+ 3131 0011 79070000 		.4byte	.LASF124
+ 3132 0015 DB040000 		.4byte	.LASF125
  3133 0019 00000000 		.4byte	.Ldebug_ranges0+0
  3134 001d 00000000 		.4byte	0
  3135 0021 00000000 		.4byte	.Ldebug_line0
@@ -7798,17 +7798,17 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
  3141 002d 01       		.byte	0x1
  3142 002e 06       		.byte	0x6
  3143 002f F0010000 		.4byte	.LASF1
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 131
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbNQ4GD.s 			page 131
 
 
  3144 0033 02       		.uleb128 0x2
  3145 0034 01       		.byte	0x1
  3146 0035 08       		.byte	0x8
- 3147 0036 55060000 		.4byte	.LASF2
+ 3147 0036 B1060000 		.4byte	.LASF2
  3148 003a 02       		.uleb128 0x2
  3149 003b 02       		.byte	0x2
  3150 003c 05       		.byte	0x5
- 3151 003d 9F060000 		.4byte	.LASF3
+ 3151 003d FB060000 		.4byte	.LASF3
  3152 0041 02       		.uleb128 0x2
  3153 0042 02       		.byte	0x2
  3154 0043 07       		.byte	0x7
@@ -7856,9 +7856,9 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
  3196 009b 02       		.uleb128 0x2
  3197 009c 04       		.byte	0x4
  3198 009d 04       		.byte	0x4
- 3199 009e 0F060000 		.4byte	.LASF13
+ 3199 009e 6B060000 		.4byte	.LASF13
  3200 00a2 02       		.uleb128 0x2
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 132
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbNQ4GD.s 			page 132
 
 
  3201 00a3 08       		.byte	0x8
@@ -7867,16 +7867,16 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
  3204 00a9 02       		.uleb128 0x2
  3205 00aa 01       		.byte	0x1
  3206 00ab 08       		.byte	0x8
- 3207 00ac 91070000 		.4byte	.LASF15
+ 3207 00ac ED070000 		.4byte	.LASF15
  3208 00b0 04       		.uleb128 0x4
- 3209 00b1 84080000 		.4byte	.LASF16
+ 3209 00b1 E0080000 		.4byte	.LASF16
  3210 00b5 03       		.byte	0x3
  3211 00b6 7402     		.2byte	0x274
  3212 00b8 4F000000 		.4byte	0x4f
  3213 00bc 05       		.uleb128 0x5
  3214 00bd 77000000 		.4byte	0x77
  3215 00c1 04       		.uleb128 0x4
- 3216 00c2 ED040000 		.4byte	.LASF17
+ 3216 00c2 49050000 		.4byte	.LASF17
  3217 00c6 03       		.byte	0x3
  3218 00c7 7E02     		.2byte	0x27e
  3219 00c9 CD000000 		.4byte	0xcd
@@ -7893,10 +7893,10 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
  3230 00e0 1A       		.byte	0x1a
  3231 00e1 F2000000 		.4byte	0xf2
  3232 00e5 09       		.uleb128 0x9
- 3233 00e6 A2050000 		.4byte	.LASF18
+ 3233 00e6 FE050000 		.4byte	.LASF18
  3234 00ea 00       		.byte	0
  3235 00eb 09       		.uleb128 0x9
- 3236 00ec C4080000 		.4byte	.LASF19
+ 3236 00ec 20090000 		.4byte	.LASF19
  3237 00f0 01       		.byte	0x1
  3238 00f1 00       		.byte	0
  3239 00f2 0A       		.uleb128 0xa
@@ -7912,13 +7912,13 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
  3249 0108 02       		.uleb128 0x2
  3250 0109 08       		.byte	0x8
  3251 010a 04       		.byte	0x4
- 3252 010b 61050000 		.4byte	.LASF22
+ 3252 010b BD050000 		.4byte	.LASF22
  3253 010f 02       		.uleb128 0x2
  3254 0110 04       		.byte	0x4
  3255 0111 07       		.byte	0x7
- 3256 0112 58050000 		.4byte	.LASF23
+ 3256 0112 B4050000 		.4byte	.LASF23
  3257 0116 0B       		.uleb128 0xb
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 133
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbNQ4GD.s 			page 133
 
 
  3258 0117 C6010000 		.4byte	.LASF126
@@ -7926,7 +7926,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
  3260 011c 9202     		.2byte	0x292
  3261 011e 03       		.byte	0x3
  3262 011f 0C       		.uleb128 0xc
- 3263 0120 EF060000 		.4byte	.LASF24
+ 3263 0120 4B070000 		.4byte	.LASF24
  3264 0124 01       		.byte	0x1
  3265 0125 7201     		.2byte	0x172
  3266 0127 83000000 		.4byte	0x83
@@ -7953,7 +7953,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
  3287 015c 50       		.byte	0x50
  3288 015d 00       		.byte	0
  3289 015e 0C       		.uleb128 0xc
- 3290 015f 3F060000 		.4byte	.LASF25
+ 3290 015f 9B060000 		.4byte	.LASF25
  3291 0163 01       		.byte	0x1
  3292 0164 C903     		.2byte	0x3c9
  3293 0166 83000000 		.4byte	0x83
@@ -7970,7 +7970,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
  3304 0183 01       		.uleb128 0x1
  3305 0184 9C       		.byte	0x9c
  3306 0185 10       		.uleb128 0x10
- 3307 0186 C3060000 		.4byte	.LASF51
+ 3307 0186 1F070000 		.4byte	.LASF51
  3308 018a 01       		.byte	0x1
  3309 018b A8       		.byte	0xa8
  3310 018c 00000000 		.4byte	.LFB3
@@ -7978,7 +7978,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
  3312 0194 01       		.uleb128 0x1
  3313 0195 9C       		.byte	0x9c
  3314 0196 AC010000 		.4byte	0x1ac
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 134
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbNQ4GD.s 			page 134
 
 
  3315 019a 11       		.uleb128 0x11
@@ -7999,7 +7999,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
  3330 01bb 01       		.uleb128 0x1
  3331 01bc 9C       		.byte	0x9c
  3332 01bd 12       		.uleb128 0x12
- 3333 01be AE080000 		.4byte	.LASF37
+ 3333 01be 0A090000 		.4byte	.LASF37
  3334 01c2 01       		.byte	0x1
  3335 01c3 0B01     		.2byte	0x10b
  3336 01c5 B0000000 		.4byte	0xb0
@@ -8027,30 +8027,30 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
  3358 01ff 83000000 		.4byte	0x83
  3359 0203 4D010000 		.4byte	.LLST2
  3360 0207 14       		.uleb128 0x14
- 3361 0208 1A080000 		.4byte	.LASF33
+ 3361 0208 76080000 		.4byte	.LASF33
  3362 020c 01       		.byte	0x1
  3363 020d 0E01     		.2byte	0x10e
  3364 020f 83000000 		.4byte	0x83
  3365 0213 77010000 		.4byte	.LLST3
  3366 0217 0E       		.uleb128 0xe
- 3367 0218 63060000 		.4byte	.LASF34
+ 3367 0218 BF060000 		.4byte	.LASF34
  3368 021c 01       		.byte	0x1
  3369 021d 0F01     		.2byte	0x10f
  3370 021f 83000000 		.4byte	0x83
  3371 0223 05       		.uleb128 0x5
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 135
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbNQ4GD.s 			page 135
 
 
  3372 0224 03       		.byte	0x3
  3373 0225 04000000 		.4byte	compensateRunningStatus.4881
  3374 0229 14       		.uleb128 0x14
- 3375 022a B4050000 		.4byte	.LASF35
+ 3375 022a 10060000 		.4byte	.LASF35
  3376 022e 01       		.byte	0x1
  3377 022f 1001     		.2byte	0x110
  3378 0231 83000000 		.4byte	0x83
  3379 0235 BF010000 		.4byte	.LLST4
  3380 0239 14       		.uleb128 0x14
- 3381 023a 2A050000 		.4byte	.LASF36
+ 3381 023a 86050000 		.4byte	.LASF36
  3382 023e 01       		.byte	0x1
  3383 023f 1101     		.2byte	0x111
  3384 0241 B0000000 		.4byte	0xb0
@@ -8070,7 +8070,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
  3398 0265 9C       		.byte	0x9c
  3399 0266 CB020000 		.4byte	0x2cb
  3400 026a 13       		.uleb128 0x13
- 3401 026b 3E070000 		.4byte	.LASF39
+ 3401 026b 9A070000 		.4byte	.LASF39
  3402 026f 01       		.byte	0x1
  3403 0270 3B02     		.2byte	0x23b
  3404 0272 CB020000 		.4byte	0x2cb
@@ -8098,7 +8098,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
  3426 02af 01       		.byte	0x1
  3427 02b0 4002     		.2byte	0x240
  3428 02b2 8F000000 		.4byte	0x8f
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 136
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbNQ4GD.s 			page 136
 
 
  3429 02b6 B4020000 		.4byte	.LLST10
@@ -8113,7 +8113,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
  3438 02cc 04       		.byte	0x4
  3439 02cd 8F000000 		.4byte	0x8f
  3440 02d1 15       		.uleb128 0x15
- 3441 02d2 DF060000 		.4byte	.LASF45
+ 3441 02d2 3B070000 		.4byte	.LASF45
  3442 02d6 01       		.byte	0x1
  3443 02d7 C101     		.2byte	0x1c1
  3444 02d9 B0000000 		.4byte	0xb0
@@ -8123,31 +8123,31 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
  3448 02e6 9C       		.byte	0x9c
  3449 02e7 82030000 		.4byte	0x382
  3450 02eb 13       		.uleb128 0x13
- 3451 02ec 96070000 		.4byte	.LASF46
+ 3451 02ec F2070000 		.4byte	.LASF46
  3452 02f0 01       		.byte	0x1
  3453 02f1 C101     		.2byte	0x1c1
  3454 02f3 83000000 		.4byte	0x83
  3455 02f7 FD020000 		.4byte	.LLST12
  3456 02fb 13       		.uleb128 0x13
- 3457 02fc 3E070000 		.4byte	.LASF39
+ 3457 02fc 9A070000 		.4byte	.LASF39
  3458 0300 01       		.byte	0x1
  3459 0301 C101     		.2byte	0x1c1
  3460 0303 CB020000 		.4byte	0x2cb
  3461 0307 B4030000 		.4byte	.LLST13
  3462 030b 14       		.uleb128 0x14
- 3463 030c EA070000 		.4byte	.LASF47
+ 3463 030c 46080000 		.4byte	.LASF47
  3464 0310 01       		.byte	0x1
  3465 0311 C301     		.2byte	0x1c3
  3466 0313 83000000 		.4byte	0x83
  3467 0317 22040000 		.4byte	.LLST14
  3468 031b 14       		.uleb128 0x14
- 3469 031c E4050000 		.4byte	.LASF48
+ 3469 031c 40060000 		.4byte	.LASF48
  3470 0320 01       		.byte	0x1
  3471 0321 C401     		.2byte	0x1c4
  3472 0323 83000000 		.4byte	0x83
  3473 0327 64040000 		.4byte	.LLST15
  3474 032b 0E       		.uleb128 0xe
- 3475 032c F8070000 		.4byte	.LASF49
+ 3475 032c 54080000 		.4byte	.LASF49
  3476 0330 01       		.byte	0x1
  3477 0331 C501     		.2byte	0x1c5
  3478 0333 83000000 		.4byte	0x83
@@ -8155,16 +8155,16 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
  3480 0338 03       		.byte	0x3
  3481 0339 08000000 		.4byte	trimRunningStatus.4893
  3482 033d 14       		.uleb128 0x14
- 3483 033e B4050000 		.4byte	.LASF35
+ 3483 033e 10060000 		.4byte	.LASF35
  3484 0342 01       		.byte	0x1
  3485 0343 C601     		.2byte	0x1c6
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 137
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbNQ4GD.s 			page 137
 
 
  3486 0345 83000000 		.4byte	0x83
  3487 0349 82040000 		.4byte	.LLST16
  3488 034d 14       		.uleb128 0x14
- 3489 034e 2A050000 		.4byte	.LASF36
+ 3489 034e 86050000 		.4byte	.LASF36
  3490 0352 01       		.byte	0x1
  3491 0353 C701     		.2byte	0x1c7
  3492 0355 B0000000 		.4byte	0xb0
@@ -8192,7 +8192,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
  3514 0380 00       		.byte	0
  3515 0381 00       		.byte	0
  3516 0382 15       		.uleb128 0x15
- 3517 0383 84050000 		.4byte	.LASF50
+ 3517 0383 E0050000 		.4byte	.LASF50
  3518 0387 01       		.byte	0x1
  3519 0388 8802     		.2byte	0x288
  3520 038a B0000000 		.4byte	0xb0
@@ -8202,14 +8202,14 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
  3524 0397 9C       		.byte	0x9c
  3525 0398 AD030000 		.4byte	0x3ad
  3526 039c 14       		.uleb128 0x14
- 3527 039d 2A050000 		.4byte	.LASF36
+ 3527 039d 86050000 		.4byte	.LASF36
  3528 03a1 01       		.byte	0x1
  3529 03a2 8A02     		.2byte	0x28a
  3530 03a4 B0000000 		.4byte	0xb0
  3531 03a8 D6040000 		.4byte	.LLST18
  3532 03ac 00       		.byte	0
  3533 03ad 19       		.uleb128 0x19
- 3534 03ae 2F080000 		.4byte	.LASF52
+ 3534 03ae 8B080000 		.4byte	.LASF52
  3535 03b2 01       		.byte	0x1
  3536 03b3 0303     		.2byte	0x303
  3537 03b5 00000000 		.4byte	.LFB12
@@ -8218,7 +8218,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
  3540 03be 9C       		.byte	0x9c
  3541 03bf D4030000 		.4byte	0x3d4
  3542 03c3 1A       		.uleb128 0x1a
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 138
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbNQ4GD.s 			page 138
 
 
  3543 03c4 16010000 		.4byte	0x116
@@ -8237,7 +8237,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
  3556 03e8 01       		.uleb128 0x1
  3557 03e9 9C       		.byte	0x9c
  3558 03ea 15       		.uleb128 0x15
- 3559 03eb 5F070000 		.4byte	.LASF53
+ 3559 03eb BB070000 		.4byte	.LASF53
  3560 03ef 01       		.byte	0x1
  3561 03f0 5303     		.2byte	0x353
  3562 03f2 83000000 		.4byte	0x83
@@ -8247,7 +8247,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
  3566 03ff 9C       		.byte	0x9c
  3567 0400 44040000 		.4byte	0x444
  3568 0404 13       		.uleb128 0x13
- 3569 0405 96070000 		.4byte	.LASF46
+ 3569 0405 F2070000 		.4byte	.LASF46
  3570 0409 01       		.byte	0x1
  3571 040a 5303     		.2byte	0x353
  3572 040c 83000000 		.4byte	0x83
@@ -8275,10 +8275,10 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
  3594 0442 00       		.byte	0
  3595 0443 00       		.byte	0
  3596 0444 19       		.uleb128 0x19
- 3597 0445 3E050000 		.4byte	.LASF55
+ 3597 0445 9A050000 		.4byte	.LASF55
  3598 0449 01       		.byte	0x1
  3599 044a 9603     		.2byte	0x396
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 139
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbNQ4GD.s 			page 139
 
 
  3600 044c 00000000 		.4byte	.LFB16
@@ -8338,7 +8338,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
  3654 04ce F5040000 		.4byte	0x4f5
  3655 04d2 14       		.uleb128 0x14
  3656 04d3 DF030000 		.4byte	.LASF58
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 140
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbNQ4GD.s 			page 140
 
 
  3657 04d7 01       		.byte	0x1
@@ -8394,16 +8394,16 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
  3707 054d 83000000 		.4byte	0x83
  3708 0551 0A060000 		.4byte	.LLST25
  3709 0555 13       		.uleb128 0x13
- 3710 0556 96070000 		.4byte	.LASF46
+ 3710 0556 F2070000 		.4byte	.LASF46
  3711 055a 01       		.byte	0x1
  3712 055b 1704     		.2byte	0x417
  3713 055d 83000000 		.4byte	0x83
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 141
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbNQ4GD.s 			page 141
 
 
  3714 0561 36060000 		.4byte	.LLST26
  3715 0565 14       		.uleb128 0x14
- 3716 0566 4D080000 		.4byte	.LASF63
+ 3716 0566 A9080000 		.4byte	.LASF63
  3717 056a 01       		.byte	0x1
  3718 056b 1904     		.2byte	0x419
  3719 056d 83000000 		.4byte	0x83
@@ -8449,7 +8449,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
  3759 05bd 00       		.byte	0
  3760 05be 00       		.byte	0
  3761 05bf 15       		.uleb128 0x15
- 3762 05c0 0A080000 		.4byte	.LASF64
+ 3762 05c0 66080000 		.4byte	.LASF64
  3763 05c4 01       		.byte	0x1
  3764 05c5 3304     		.2byte	0x433
  3765 05c7 83000000 		.4byte	0x83
@@ -8458,7 +8458,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
  3768 05d3 01       		.uleb128 0x1
  3769 05d4 9C       		.byte	0x9c
  3770 05d5 EA050000 		.4byte	0x5ea
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 142
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbNQ4GD.s 			page 142
 
 
  3771 05d9 13       		.uleb128 0x13
@@ -8469,7 +8469,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
  3776 05e5 80060000 		.4byte	.LLST28
  3777 05e9 00       		.byte	0
  3778 05ea 19       		.uleb128 0x19
- 3779 05eb BF070000 		.4byte	.LASF65
+ 3779 05eb 1B080000 		.4byte	.LASF65
  3780 05ef 01       		.byte	0x1
  3781 05f0 5004     		.2byte	0x450
  3782 05f2 00000000 		.4byte	.LFB23
@@ -8490,7 +8490,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
  3797 0618 83000000 		.4byte	0x83
  3798 061c D8060000 		.4byte	.LLST30
  3799 0620 14       		.uleb128 0x14
- 3800 0621 4D080000 		.4byte	.LASF63
+ 3800 0621 A9080000 		.4byte	.LASF63
  3801 0625 01       		.byte	0x1
  3802 0626 5204     		.2byte	0x452
  3803 0628 83000000 		.4byte	0x83
@@ -8518,7 +8518,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
  3825 0653 00       		.byte	0
  3826 0654 15       		.uleb128 0x15
  3827 0655 6D030000 		.4byte	.LASF67
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 143
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbNQ4GD.s 			page 143
 
 
  3828 0659 01       		.byte	0x1
@@ -8578,7 +8578,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
  3882 06d5 01       		.uleb128 0x1
  3883 06d6 50       		.byte	0x50
  3884 06d7 01       		.uleb128 0x1
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 144
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbNQ4GD.s 			page 144
 
 
  3885 06d8 31       		.byte	0x31
@@ -8594,7 +8594,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
  3895 06e8 00       		.byte	0
  3896 06e9 00       		.byte	0
  3897 06ea 19       		.uleb128 0x19
- 3898 06eb B3060000 		.4byte	.LASF70
+ 3898 06eb 0F070000 		.4byte	.LASF70
  3899 06ef 01       		.byte	0x1
  3900 06f0 CA04     		.2byte	0x4ca
  3901 06f2 00000000 		.4byte	.LFB26
@@ -8638,14 +8638,14 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
  3939 0749 01       		.uleb128 0x1
  3940 074a 50       		.byte	0x50
  3941 074b 01       		.uleb128 0x1
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 145
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbNQ4GD.s 			page 145
 
 
  3942 074c 32       		.byte	0x32
  3943 074d 00       		.byte	0
  3944 074e 00       		.byte	0
  3945 074f 19       		.uleb128 0x19
- 3946 0750 D7070000 		.4byte	.LASF71
+ 3946 0750 33080000 		.4byte	.LASF71
  3947 0754 01       		.byte	0x1
  3948 0755 0505     		.2byte	0x505
  3949 0757 00000000 		.4byte	.LFB27
@@ -8654,13 +8654,13 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
  3952 0760 9C       		.byte	0x9c
  3953 0761 C9070000 		.4byte	0x7c9
  3954 0765 13       		.uleb128 0x13
- 3955 0766 78080000 		.4byte	.LASF72
+ 3955 0766 D4080000 		.4byte	.LASF72
  3956 076a 01       		.byte	0x1
  3957 076b 0505     		.2byte	0x505
  3958 076d 83000000 		.4byte	0x83
  3959 0771 A6070000 		.4byte	.LLST35
  3960 0775 14       		.uleb128 0x14
- 3961 0776 4D080000 		.4byte	.LASF63
+ 3961 0776 A9080000 		.4byte	.LASF63
  3962 077a 01       		.byte	0x1
  3963 077b 0705     		.2byte	0x507
  3964 077d 83000000 		.4byte	0x83
@@ -8698,7 +8698,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
  3996 07c2 17       		.uleb128 0x17
  3997 07c3 01       		.uleb128 0x1
  3998 07c4 50       		.byte	0x50
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 146
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbNQ4GD.s 			page 146
 
 
  3999 07c5 01       		.uleb128 0x1
@@ -8730,7 +8730,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
  4025 07fd 83000000 		.4byte	0x83
  4026 0801 FB070000 		.4byte	.LLST37
  4027 0805 13       		.uleb128 0x13
- 4028 0806 7E050000 		.4byte	.LASF77
+ 4028 0806 DA050000 		.4byte	.LASF77
  4029 080a 01       		.byte	0x1
  4030 080b 3805     		.2byte	0x538
  4031 080d 83000000 		.4byte	0x83
@@ -8758,7 +8758,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
  4053 0842 46000000 		.4byte	.LVL170
  4054 0846 4C100000 		.4byte	0x104c
  4055 084a 00       		.byte	0
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 147
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbNQ4GD.s 			page 147
 
 
  4056 084b 19       		.uleb128 0x19
@@ -8777,7 +8777,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
  4069 0869 83000000 		.4byte	0x83
  4070 086d 66080000 		.4byte	.LLST40
  4071 0871 14       		.uleb128 0x14
- 4072 0872 4D080000 		.4byte	.LASF63
+ 4072 0872 A9080000 		.4byte	.LASF63
  4073 0876 01       		.byte	0x1
  4074 0877 6105     		.2byte	0x561
  4075 0879 83000000 		.4byte	0x83
@@ -8793,7 +8793,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
  4085 088f 00       		.byte	0
  4086 0890 00       		.byte	0
  4087 0891 1B       		.uleb128 0x1b
- 4088 0892 99080000 		.4byte	.LASF81
+ 4088 0892 F5080000 		.4byte	.LASF81
  4089 0896 01       		.byte	0x1
  4090 0897 7605     		.2byte	0x576
  4091 0899 83000000 		.4byte	0x83
@@ -8802,7 +8802,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
  4094 08a5 01       		.uleb128 0x1
  4095 08a6 9C       		.byte	0x9c
  4096 08a7 15       		.uleb128 0x15
- 4097 08a8 6D050000 		.4byte	.LASF82
+ 4097 08a8 C9050000 		.4byte	.LASF82
  4098 08ac 01       		.byte	0x1
  4099 08ad 8805     		.2byte	0x588
  4100 08af 83000000 		.4byte	0x83
@@ -8818,7 +8818,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
  4110 08c9 83000000 		.4byte	0x83
  4111 08cd BB080000 		.4byte	.LLST42
  4112 08d1 18       		.uleb128 0x18
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 148
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbNQ4GD.s 			page 148
 
 
  4113 08d2 0E000000 		.4byte	.LVL181
@@ -8831,7 +8831,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
  4120 08df 00       		.byte	0
  4121 08e0 00       		.byte	0
  4122 08e1 15       		.uleb128 0x15
- 4123 08e2 9B070000 		.4byte	.LASF83
+ 4123 08e2 F7070000 		.4byte	.LASF83
  4124 08e6 01       		.byte	0x1
  4125 08e7 9E05     		.2byte	0x59e
  4126 08e9 83000000 		.4byte	0x83
@@ -8878,10 +8878,10 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
  4167 0949 83000000 		.4byte	0x83
  4168 094d B7090000 		.4byte	.LLST45
  4169 0951 0E       		.uleb128 0xe
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 149
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbNQ4GD.s 			page 149
 
 
- 4170 0952 7B060000 		.4byte	.LASF87
+ 4170 0952 D7060000 		.4byte	.LASF87
  4171 0956 01       		.byte	0x1
  4172 0957 3307     		.2byte	0x733
  4173 0959 83000000 		.4byte	0x83
@@ -8938,7 +8938,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
  4224 09bf 01       		.uleb128 0x1
  4225 09c0 30       		.byte	0x30
  4226 09c1 17       		.uleb128 0x17
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 150
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbNQ4GD.s 			page 150
 
 
  4227 09c2 01       		.uleb128 0x1
@@ -8998,7 +8998,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
  4281 0a43 99050000 		.4byte	0x599
  4282 0a47 18       		.uleb128 0x18
  4283 0a48 38000000 		.4byte	.LVL213
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 151
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbNQ4GD.s 			page 151
 
 
  4284 0a4c 41100000 		.4byte	0x1041
@@ -9020,7 +9020,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
  4300 0a69 9C       		.byte	0x9c
  4301 0a6a C30A0000 		.4byte	0xac3
  4302 0a6e 13       		.uleb128 0x13
- 4303 0a6f 37050000 		.4byte	.LASF90
+ 4303 0a6f 93050000 		.4byte	.LASF90
  4304 0a73 01       		.byte	0x1
  4305 0a74 DE02     		.2byte	0x2de
  4306 0a76 83000000 		.4byte	0x83
@@ -9055,10 +9055,10 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
  4335 0ac1 00       		.byte	0
  4336 0ac2 00       		.byte	0
  4337 0ac3 19       		.uleb128 0x19
- 4338 0ac4 4F070000 		.4byte	.LASF91
+ 4338 0ac4 AB070000 		.4byte	.LASF91
  4339 0ac8 01       		.byte	0x1
  4340 0ac9 1503     		.2byte	0x315
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 152
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbNQ4GD.s 			page 152
 
 
  4341 0acb 00000000 		.4byte	.LFB13
@@ -9099,7 +9099,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
  4376 0b25 00       		.byte	0
  4377 0b26 00       		.byte	0
  4378 0b27 1B       		.uleb128 0x1b
- 4379 0b28 02070000 		.4byte	.LASF92
+ 4379 0b28 5E070000 		.4byte	.LASF92
  4380 0b2c 01       		.byte	0x1
  4381 0b2d C905     		.2byte	0x5c9
  4382 0b2f 83000000 		.4byte	0x83
@@ -9108,7 +9108,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
  4385 0b3b 01       		.uleb128 0x1
  4386 0b3c 9C       		.byte	0x9c
  4387 0b3d 19       		.uleb128 0x19
- 4388 0b3e F8050000 		.4byte	.LASF93
+ 4388 0b3e 54060000 		.4byte	.LASF93
  4389 0b42 01       		.byte	0x1
  4390 0b43 E605     		.2byte	0x5e6
  4391 0b45 00000000 		.4byte	.LFB35
@@ -9118,7 +9118,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
  4395 0b4f B80B0000 		.4byte	0xbb8
  4396 0b53 13       		.uleb128 0x13
  4397 0b54 61030000 		.4byte	.LASF69
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 153
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbNQ4GD.s 			page 153
 
 
  4398 0b58 01       		.byte	0x1
@@ -9132,7 +9132,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
  4406 0b6b 6B000000 		.4byte	0x6b
  4407 0b6f 6C0A0000 		.4byte	.LLST51
  4408 0b73 14       		.uleb128 0x14
- 4409 0b74 40080000 		.4byte	.LASF94
+ 4409 0b74 9C080000 		.4byte	.LASF94
  4410 0b78 01       		.byte	0x1
  4411 0b79 E905     		.2byte	0x5e9
  4412 0b7b 83000000 		.4byte	0x83
@@ -9161,7 +9161,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
  4435 0bb6 00       		.byte	0
  4436 0bb7 00       		.byte	0
  4437 0bb8 19       		.uleb128 0x19
- 4438 0bb9 CE050000 		.4byte	.LASF95
+ 4438 0bb9 2A060000 		.4byte	.LASF95
  4439 0bbd 01       		.byte	0x1
  4440 0bbe 2006     		.2byte	0x620
  4441 0bc0 00000000 		.4byte	.LFB36
@@ -9178,7 +9178,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
  4452 0bde 00       		.byte	0
  4453 0bdf 15       		.uleb128 0x15
  4454 0be0 44030000 		.4byte	.LASF97
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 154
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbNQ4GD.s 			page 154
 
 
  4455 0be4 01       		.byte	0x1
@@ -9238,7 +9238,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
  4509 0c68 01       		.byte	0x1
  4510 0c69 5A06     		.2byte	0x65a
  4511 0c6b FD000000 		.4byte	0xfd
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 155
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbNQ4GD.s 			page 155
 
 
  4512 0c6f 8A0B0000 		.4byte	.LLST58
@@ -9278,7 +9278,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
  4546 0cb7 00       		.byte	0
  4547 0cb8 00       		.byte	0
  4548 0cb9 19       		.uleb128 0x19
- 4549 0cba 77070000 		.4byte	.LASF103
+ 4549 0cba D3070000 		.4byte	.LASF103
  4550 0cbe 01       		.byte	0x1
  4551 0cbf 8C06     		.2byte	0x68c
  4552 0cc1 00000000 		.4byte	.LFB40
@@ -9298,7 +9298,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
  4566 0ce8 17       		.uleb128 0x17
  4567 0ce9 01       		.uleb128 0x1
  4568 0cea 50       		.byte	0x50
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 156
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbNQ4GD.s 			page 156
 
 
  4569 0ceb 01       		.uleb128 0x1
@@ -9306,7 +9306,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
  4571 0ced 00       		.byte	0
  4572 0cee 00       		.byte	0
  4573 0cef 1F       		.uleb128 0x1f
- 4574 0cf0 8D080000 		.4byte	.LASF104
+ 4574 0cf0 E9080000 		.4byte	.LASF104
  4575 0cf4 01       		.byte	0x1
  4576 0cf5 AD06     		.2byte	0x6ad
  4577 0cf7 00000000 		.4byte	.LFB41
@@ -9348,7 +9348,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
  4613 0d3d 00       		.byte	0
  4614 0d3e 00       		.byte	0
  4615 0d3f 19       		.uleb128 0x19
- 4616 0d40 DB040000 		.4byte	.LASF105
+ 4616 0d40 37050000 		.4byte	.LASF105
  4617 0d44 01       		.byte	0x1
  4618 0d45 EE06     		.2byte	0x6ee
  4619 0d47 00000000 		.4byte	.LFB42
@@ -9358,7 +9358,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
  4623 0d51 0B0E0000 		.4byte	0xe0b
  4624 0d55 13       		.uleb128 0x13
  4625 0d56 7B000000 		.4byte	.LASF61
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 157
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbNQ4GD.s 			page 157
 
 
  4626 0d5a 01       		.byte	0x1
@@ -9418,7 +9418,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
  4680 0dcd 0004     		.2byte	0x400
  4681 0dcf 00       		.byte	0
  4682 0dd0 16       		.uleb128 0x16
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 158
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbNQ4GD.s 			page 158
 
 
  4683 0dd1 4A000000 		.4byte	.LVL287
@@ -9454,7 +9454,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
  4713 0e09 00       		.byte	0
  4714 0e0a 00       		.byte	0
  4715 0e0b 19       		.uleb128 0x19
- 4716 0e0c 15060000 		.4byte	.LASF106
+ 4716 0e0c 71060000 		.4byte	.LASF106
  4717 0e10 01       		.byte	0x1
  4718 0e11 580C     		.2byte	0xc58
  4719 0e13 00000000 		.4byte	.LFB46
@@ -9469,22 +9469,22 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
  4728 0e29 83000000 		.4byte	0x83
  4729 0e2d 760C0000 		.4byte	.LLST62
  4730 0e31 13       		.uleb128 0x13
- 4731 0e32 A9060000 		.4byte	.LASF107
+ 4731 0e32 05070000 		.4byte	.LASF107
  4732 0e36 01       		.byte	0x1
  4733 0e37 580C     		.2byte	0xc58
  4734 0e39 F2000000 		.4byte	0xf2
  4735 0e3d A20C0000 		.4byte	.LLST63
  4736 0e41 13       		.uleb128 0x13
- 4737 0e42 7E050000 		.4byte	.LASF77
+ 4737 0e42 DA050000 		.4byte	.LASF77
  4738 0e46 01       		.byte	0x1
  4739 0e47 580C     		.2byte	0xc58
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 159
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbNQ4GD.s 			page 159
 
 
  4740 0e49 83000000 		.4byte	0x83
  4741 0e4d C30C0000 		.4byte	.LLST64
  4742 0e51 14       		.uleb128 0x14
- 4743 0e52 21050000 		.4byte	.LASF108
+ 4743 0e52 7D050000 		.4byte	.LASF108
  4744 0e56 01       		.byte	0x1
  4745 0e57 5A0C     		.2byte	0xc5a
  4746 0e59 83000000 		.4byte	0x83
@@ -9538,7 +9538,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
  4794 0eb3 02       		.uleb128 0x2
  4795 0eb4 75       		.byte	0x75
  4796 0eb5 00       		.sleb128 0
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 160
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbNQ4GD.s 			page 160
 
 
  4797 0eb6 00       		.byte	0
@@ -9553,7 +9553,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
  4806 0ec5 00       		.byte	0
  4807 0ec6 00       		.byte	0
  4808 0ec7 19       		.uleb128 0x19
- 4809 0ec8 2F060000 		.4byte	.LASF109
+ 4809 0ec8 8B060000 		.4byte	.LASF109
  4810 0ecc 01       		.byte	0x1
  4811 0ecd D70B     		.2byte	0xbd7
  4812 0ecf 00000000 		.4byte	.LFB45
@@ -9568,13 +9568,13 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
  4821 0ee5 83000000 		.4byte	0x83
  4822 0ee9 180D0000 		.4byte	.LLST66
  4823 0eed 13       		.uleb128 0x13
- 4824 0eee A9060000 		.4byte	.LASF107
+ 4824 0eee 05070000 		.4byte	.LASF107
  4825 0ef2 01       		.byte	0x1
  4826 0ef3 D70B     		.2byte	0xbd7
  4827 0ef5 F2000000 		.4byte	0xf2
  4828 0ef9 440D0000 		.4byte	.LLST67
  4829 0efd 13       		.uleb128 0x13
- 4830 0efe 99060000 		.4byte	.LASF110
+ 4830 0efe F5060000 		.4byte	.LASF110
  4831 0f02 01       		.byte	0x1
  4832 0f03 D70B     		.2byte	0xbd7
  4833 0f05 83000000 		.4byte	0x83
@@ -9598,7 +9598,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
  4851 0f3a 17       		.uleb128 0x17
  4852 0f3b 01       		.uleb128 0x1
  4853 0f3c 50       		.byte	0x50
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 161
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbNQ4GD.s 			page 161
 
 
  4854 0f3d 02       		.uleb128 0x2
@@ -9644,7 +9644,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
  4894 0f7d 00       		.byte	0
  4895 0f7e 00       		.byte	0
  4896 0f7f 11       		.uleb128 0x11
- 4897 0f80 F3040000 		.4byte	.LASF112
+ 4897 0f80 4F050000 		.4byte	.LASF112
  4898 0f84 01       		.byte	0x1
  4899 0f85 1D       		.byte	0x1d
  4900 0f86 BC000000 		.4byte	0xbc
@@ -9658,12 +9658,12 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
  4908 0f97 83000000 		.4byte	0x83
  4909 0f9b 05       		.uleb128 0x5
  4910 0f9c 03       		.byte	0x3
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 162
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbNQ4GD.s 			page 162
 
 
  4911 0f9d 0C000000 		.4byte	lfclkPosedgeWdtCounter0Enabled
  4912 0fa1 11       		.uleb128 0x11
- 4913 0fa2 5C080000 		.4byte	.LASF114
+ 4913 0fa2 B8080000 		.4byte	.LASF114
  4914 0fa6 01       		.byte	0x1
  4915 0fa7 23       		.byte	0x23
  4916 0fa8 83000000 		.4byte	0x83
@@ -9671,7 +9671,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
  4918 0fad 03       		.byte	0x3
  4919 0fae 10000000 		.4byte	lfclkPosedgeWdtCounter0Mode
  4920 0fb2 11       		.uleb128 0x11
- 4921 0fb3 AC070000 		.4byte	.LASF115
+ 4921 0fb3 08080000 		.4byte	.LASF115
  4922 0fb7 01       		.byte	0x1
  4923 0fb8 25       		.byte	0x25
  4924 0fb9 CD000000 		.4byte	0xcd
@@ -9718,24 +9718,24 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
  4965 1015 44       		.byte	0x44
  4966 1016 FF0F0000 		.4byte	0xfff
  4967 101a 05       		.uleb128 0x5
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 163
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbNQ4GD.s 			page 163
 
 
  4968 101b 03       		.byte	0x3
  4969 101c 18000000 		.4byte	cySysWdtCallback
  4970 1020 23       		.uleb128 0x23
- 4971 1021 C0050000 		.4byte	.LASF128
+ 4971 1021 1C060000 		.4byte	.LASF128
  4972 1025 04       		.byte	0x4
  4973 1026 D4       		.byte	0xd4
  4974 1027 83000000 		.4byte	0x83
  4975 102b 24       		.uleb128 0x24
- 4976 102c 4E060000 		.4byte	.LASF119
- 4977 1030 4E060000 		.4byte	.LASF119
+ 4976 102c AA060000 		.4byte	.LASF119
+ 4977 1030 AA060000 		.4byte	.LASF119
  4978 1034 04       		.byte	0x4
  4979 1035 E7       		.byte	0xe7
  4980 1036 24       		.uleb128 0x24
- 4981 1037 0A050000 		.4byte	.LASF120
- 4982 103b 0A050000 		.4byte	.LASF120
+ 4981 1037 66050000 		.4byte	.LASF120
+ 4982 103b 66050000 		.4byte	.LASF120
  4983 103f 04       		.byte	0x4
  4984 1040 E5       		.byte	0xe5
  4985 1041 24       		.uleb128 0x24
@@ -9778,7 +9778,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
  5022 0018 3E       		.uleb128 0x3e
  5023 0019 0B       		.uleb128 0xb
  5024 001a 03       		.uleb128 0x3
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 164
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbNQ4GD.s 			page 164
 
 
  5025 001b 0E       		.uleb128 0xe
@@ -9838,7 +9838,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
  5079 0051 0B       		.uleb128 0xb
  5080 0052 49       		.uleb128 0x49
  5081 0053 13       		.uleb128 0x13
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 165
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbNQ4GD.s 			page 165
 
 
  5082 0054 3A       		.uleb128 0x3a
@@ -9898,7 +9898,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
  5136 008a 27       		.uleb128 0x27
  5137 008b 19       		.uleb128 0x19
  5138 008c 49       		.uleb128 0x49
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 166
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbNQ4GD.s 			page 166
 
 
  5139 008d 13       		.uleb128 0x13
@@ -9958,7 +9958,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
  5193 00c5 3F       		.uleb128 0x3f
  5194 00c6 19       		.uleb128 0x19
  5195 00c7 03       		.uleb128 0x3
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 167
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbNQ4GD.s 			page 167
 
 
  5196 00c8 0E       		.uleb128 0xe
@@ -10018,7 +10018,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
  5250 0100 18       		.uleb128 0x18
  5251 0101 00       		.byte	0
  5252 0102 00       		.byte	0
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 168
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbNQ4GD.s 			page 168
 
 
  5253 0103 12       		.uleb128 0x12
@@ -10078,7 +10078,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
  5307 013a 17       		.uleb128 0x17
  5308 013b 00       		.byte	0
  5309 013c 00       		.byte	0
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 169
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbNQ4GD.s 			page 169
 
 
  5310 013d 15       		.uleb128 0x15
@@ -10138,7 +10138,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
  5364 017b 00       		.byte	0
  5365 017c 00       		.byte	0
  5366 017d 19       		.uleb128 0x19
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 170
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbNQ4GD.s 			page 170
 
 
  5367 017e 2E       		.uleb128 0x2e
@@ -10198,7 +10198,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
  5421 01b5 11       		.uleb128 0x11
  5422 01b6 01       		.uleb128 0x1
  5423 01b7 12       		.uleb128 0x12
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 171
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbNQ4GD.s 			page 171
 
 
  5424 01b8 06       		.uleb128 0x6
@@ -10258,7 +10258,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
  5478 01f2 1F       		.uleb128 0x1f
  5479 01f3 2E       		.uleb128 0x2e
  5480 01f4 01       		.byte	0x1
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 172
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbNQ4GD.s 			page 172
 
 
  5481 01f5 3F       		.uleb128 0x3f
@@ -10318,7 +10318,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
  5535 022c 3B       		.uleb128 0x3b
  5536 022d 0B       		.uleb128 0xb
  5537 022e 49       		.uleb128 0x49
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 173
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbNQ4GD.s 			page 173
 
 
  5538 022f 13       		.uleb128 0x13
@@ -10378,7 +10378,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
  5592 0044 50       		.byte	0x50
  5593 0045 B2000000 		.4byte	.LVL22
  5594 0049 B4000000 		.4byte	.LVL23
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 174
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbNQ4GD.s 			page 174
 
 
  5595 004d 0100     		.2byte	0x1
@@ -10438,7 +10438,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
  5649 00df CE000000 		.4byte	.LVL36
  5650 00e3 04010000 		.4byte	.LFE5
  5651 00e7 0400     		.2byte	0x4
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 175
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbNQ4GD.s 			page 175
 
 
  5652 00e9 F3       		.byte	0xf3
@@ -10498,7 +10498,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
  5706 016f 00000000 		.4byte	0
  5707 0173 00000000 		.4byte	0
  5708              	.LLST3:
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 176
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbNQ4GD.s 			page 176
 
 
  5709 0177 4C000000 		.4byte	.LVL4
@@ -10558,7 +10558,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
  5763 01e8 9F       		.byte	0x9f
  5764 01e9 B0000000 		.4byte	.LVL21
  5765 01ed B4000000 		.4byte	.LVL23
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 177
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbNQ4GD.s 			page 177
 
 
  5766 01f1 0200     		.2byte	0x2
@@ -10618,7 +10618,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
  5820 027b 00000000 		.4byte	0
  5821              	.LLST9:
  5822 027f 30000000 		.4byte	.LVL43
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 178
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbNQ4GD.s 			page 178
 
 
  5823 0283 42000000 		.4byte	.LVL44
@@ -10678,7 +10678,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
  5877 0312 F3       		.byte	0xf3
  5878 0313 01       		.uleb128 0x1
  5879 0314 50       		.byte	0x50
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 179
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbNQ4GD.s 			page 179
 
 
  5880 0315 9F       		.byte	0x9f
@@ -10738,7 +10738,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
  5934 0391 50       		.byte	0x50
  5935 0392 9F       		.byte	0x9f
  5936 0393 B8000000 		.4byte	.LVL85
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 180
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbNQ4GD.s 			page 180
 
 
  5937 0397 BA000000 		.4byte	.LVL86
@@ -10798,7 +10798,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
  5991              	.LLST14:
  5992 0422 04000000 		.4byte	.LVL63
  5993 0426 2E000000 		.4byte	.LVL67
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 181
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbNQ4GD.s 			page 181
 
 
  5994 042a 0200     		.2byte	0x2
@@ -10858,7 +10858,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
  6048 04b6 50       		.byte	0x50
  6049 04b7 A0000000 		.4byte	.LVL76
  6050 04bb A4000000 		.4byte	.LVL78
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 182
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbNQ4GD.s 			page 182
 
 
  6051 04bf 0200     		.2byte	0x2
@@ -10918,7 +10918,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
  6105 053f 3C000000 		.4byte	.LVL97
  6106 0543 4C000000 		.4byte	.LFE15
  6107 0547 0400     		.2byte	0x4
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 183
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbNQ4GD.s 			page 183
 
 
  6108 0549 F3       		.byte	0xf3
@@ -10978,7 +10978,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
  6162 05cb 06000000 		.4byte	.LVL107
  6163 05cf 25000000 		.4byte	.LVL108-1
  6164 05d3 0100     		.2byte	0x1
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 184
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbNQ4GD.s 			page 184
 
 
  6165 05d5 50       		.byte	0x50
@@ -11038,7 +11038,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
  6219 0659 9F       		.byte	0x9f
  6220 065a 00000000 		.4byte	0
  6221 065e 00000000 		.4byte	0
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 185
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbNQ4GD.s 			page 185
 
 
  6222              	.LLST27:
@@ -11098,7 +11098,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
  6276 06eb 0100     		.2byte	0x1
  6277 06ed 55       		.byte	0x55
  6278 06ee 2A000000 		.4byte	.LVL132
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 186
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbNQ4GD.s 			page 186
 
 
  6279 06f2 34000000 		.4byte	.LFE23
@@ -11158,7 +11158,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
  6333 0776 00000000 		.4byte	0
  6334              	.LLST34:
  6335 077a 00000000 		.4byte	.LVL145
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 187
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbNQ4GD.s 			page 187
 
 
  6336 077e 07000000 		.4byte	.LVL146-1
@@ -11218,7 +11218,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
  6390 0806 0C000000 		.4byte	.LVL162
  6391 080a 28000000 		.4byte	.LVL166
  6392 080e 0100     		.2byte	0x1
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 188
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbNQ4GD.s 			page 188
 
 
  6393 0810 55       		.byte	0x55
@@ -11278,7 +11278,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
  6447 0892 12000000 		.4byte	.LVL174
  6448 0896 18000000 		.4byte	.LVL175
  6449 089a 0100     		.2byte	0x1
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 189
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbNQ4GD.s 			page 189
 
 
  6450 089c 50       		.byte	0x50
@@ -11338,7 +11338,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
  6504 0921 0100     		.2byte	0x1
  6505 0923 50       		.byte	0x50
  6506 0924 26000000 		.4byte	.LVL191
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 190
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbNQ4GD.s 			page 190
 
 
  6507 0928 28000000 		.4byte	.LVL192
@@ -11398,7 +11398,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
  6561 09ac 0100     		.2byte	0x1
  6562 09ae 50       		.byte	0x50
  6563 09af 00000000 		.4byte	0
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 191
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbNQ4GD.s 			page 191
 
 
  6564 09b3 00000000 		.4byte	0
@@ -11458,7 +11458,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
  6618 0a42 0100     		.2byte	0x1
  6619 0a44 55       		.byte	0x55
  6620 0a45 20000000 		.4byte	.LVL239
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 192
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbNQ4GD.s 			page 192
 
 
  6621 0a49 2A000000 		.4byte	.LVL240
@@ -11518,7 +11518,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
  6675 0ace 12000000 		.4byte	.LVL250
  6676 0ad2 0400     		.2byte	0x4
  6677 0ad4 F3       		.byte	0xf3
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 193
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbNQ4GD.s 			page 193
 
 
  6678 0ad5 01       		.uleb128 0x1
@@ -11578,7 +11578,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
  6732 0b58 0100     		.2byte	0x1
  6733 0b5a 50       		.byte	0x50
  6734 0b5b 08000000 		.4byte	.LVL256
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 194
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbNQ4GD.s 			page 194
 
 
  6735 0b5f 10000000 		.4byte	.LVL258
@@ -11638,7 +11638,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
  6789 0be1 0100     		.2byte	0x1
  6790 0be3 50       		.byte	0x50
  6791 0be4 20000000 		.4byte	.LVL265
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 195
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbNQ4GD.s 			page 195
 
 
  6792 0be8 34000000 		.4byte	.LFE39
@@ -11698,7 +11698,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
  6846 0c6b 01       		.uleb128 0x1
  6847 0c6c 50       		.byte	0x50
  6848 0c6d 9F       		.byte	0x9f
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 196
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbNQ4GD.s 			page 196
 
 
  6849 0c6e 00000000 		.4byte	0
@@ -11758,7 +11758,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
  6903 0cf3 2A000000 		.4byte	.LVL294
  6904 0cf7 0100     		.2byte	0x1
  6905 0cf9 50       		.byte	0x50
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 197
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbNQ4GD.s 			page 197
 
 
  6906 0cfa 2E000000 		.4byte	.LVL295
@@ -11818,7 +11818,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
  6960 0d85 F3       		.byte	0xf3
  6961 0d86 01       		.uleb128 0x1
  6962 0d87 52       		.byte	0x52
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 198
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbNQ4GD.s 			page 198
 
 
  6963 0d88 9F       		.byte	0x9f
@@ -11878,7 +11878,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
  7017 0084 1C000000 		.4byte	.LFE17-.LFB17
  7018 0088 00000000 		.4byte	.LFB19
  7019 008c 30000000 		.4byte	.LFE19-.LFB19
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 199
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbNQ4GD.s 			page 199
 
 
  7020 0090 00000000 		.4byte	.LFB20
@@ -11938,7 +11938,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
  7074 0168 00000000 		.4byte	.LFB42
  7075 016c 60000000 		.4byte	.LFE42-.LFB42
  7076 0170 00000000 		.4byte	.LFB46
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 200
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbNQ4GD.s 			page 200
 
 
  7077 0174 6C000000 		.4byte	.LFE46-.LFB46
@@ -11998,7 +11998,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
  7131 00bc 44000000 		.4byte	.LFE26
  7132 00c0 00000000 		.4byte	.LFB27
  7133 00c4 34000000 		.4byte	.LFE27
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 201
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbNQ4GD.s 			page 201
 
 
  7134 00c8 00000000 		.4byte	.LFB28
@@ -12058,7 +12058,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
  7183              	.LASF121:
  7184 0007 43794578 		.ascii	"CyExitCriticalSection\000"
  7184      69744372 
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 202
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbNQ4GD.s 			page 202
 
 
  7184      69746963 
@@ -12118,7 +12118,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
  7204      66636C6B 
  7204      536F7572 
  7205              	.LASF123:
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 203
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbNQ4GD.s 			page 203
 
 
  7206 00ca 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
@@ -12178,7 +12178,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
  7222      6720696E 
  7222      7400
  7223              	.LASF1:
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 204
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbNQ4GD.s 			page 204
 
 
  7224 01f0 7369676E 		.ascii	"signed char\000"
@@ -12238,7 +12238,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
  7249              	.LASF66:
  7250 0283 656E6162 		.ascii	"enable\000"
  7250      6C6500
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 205
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbNQ4GD.s 			page 205
 
 
  7251              	.LASF14:
@@ -12298,7 +12298,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
  7272      736B00
  7273              	.LASF68:
  7274 0335 43795379 		.ascii	"CySysWdtEnable\000"
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 206
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbNQ4GD.s 			page 206
 
 
  7274      73576474 
@@ -12358,7 +12358,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
  7295              	.LASF111:
  7296 03ee 6D617463 		.ascii	"matchValue\000"
  7296      6856616C 
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 207
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbNQ4GD.s 			page 207
 
 
  7296      756500
@@ -12418,7 +12418,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
  7316      53657454 
  7316      6F67676C 
  7316      65426974 
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 208
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbNQ4GD.s 			page 208
 
 
  7317              	.LASF54:
@@ -12426,336 +12426,336 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 1
  7318      724D6F64 
  7318      65537461 
  7318      74757300 
- 7319              	.LASF105:
- 7320 04db 43795379 		.ascii	"CySysWatchdogFeed\000"
- 7320      73576174 
- 7320      6368646F 
- 7320      67466565 
- 7320      6400
- 7321              	.LASF17:
- 7322 04ed 72656733 		.ascii	"reg32\000"
- 7322      3200
- 7323              	.LASF112:
- 7324 04f3 64656661 		.ascii	"defaultIloTrimRegValue\000"
- 7324      756C7449 
- 7324      6C6F5472 
- 7324      696D5265 
- 7324      6756616C 
- 7325              	.LASF120:
- 7326 050a 4379456E 		.ascii	"CyEnterCriticalSection\000"
- 7326      74657243 
- 7326      72697469 
- 7326      63616C53 
- 7326      65637469 
- 7327              	.LASF108:
- 7328 0521 746D7056 		.ascii	"tmpValue\000"
- 7328      616C7565 
- 7328      00
- 7329              	.LASF36:
- 7330 052a 72657475 		.ascii	"returnStatus\000"
- 7330      726E5374 
- 7330      61747573 
- 7330      00
- 7331              	.LASF90:
- 7332 0537 736F7572 		.ascii	"source\000"
- 7332      636500
- 7333              	.LASF55:
- 7334 053e 43795379 		.ascii	"CySysClkWcoClockOutSelect\000"
- 7334      73436C6B 
- 7334      57636F43 
- 7334      6C6F636B 
- 7334      4F757453 
- 7335              	.LASF23:
- 7336 0558 73697A65 		.ascii	"sizetype\000"
- 7336      74797065 
- 7336      00
- 7337              	.LASF22:
- 7338 0561 6C6F6E67 		.ascii	"long double\000"
- 7338      20646F75 
- 7338      626C6500 
- 7339              	.LASF82:
- 7340 056d 43795379 		.ascii	"CySysWdtGetMatch\000"
- 7340      73576474 
- 7340      4765744D 
- 7340      61746368 
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 209
+ 7319              	.LASF125:
+ 7320 04db 433A5C55 		.ascii	"C:\\Users\\JamesN4\\Documents\\PSoC Creator\\Hybrid"
+ 7320      73657273 
+ 7320      5C4A616D 
+ 7320      65734E34 
+ 7320      5C446F63 
+ 7321 0509 456E636F 		.ascii	"EncoderCY8CKIT43\\firmware\\HybridEncoder.cydsn\000"
+ 7321      64657243 
+ 7321      5938434B 
+ 7321      49543433 
+ 7321      5C666972 
+ 7322              	.LASF105:
+ 7323 0537 43795379 		.ascii	"CySysWatchdogFeed\000"
+ 7323      73576174 
+ 7323      6368646F 
+ 7323      67466565 
+ 7323      6400
+ 7324              	.LASF17:
+ 7325 0549 72656733 		.ascii	"reg32\000"
+ 7325      3200
+ 7326              	.LASF112:
+ 7327 054f 64656661 		.ascii	"defaultIloTrimRegValue\000"
+ 7327      756C7449 
+ 7327      6C6F5472 
+ 7327      696D5265 
+ 7327      6756616C 
+ 7328              	.LASF120:
+ 7329 0566 4379456E 		.ascii	"CyEnterCriticalSection\000"
+ 7329      74657243 
+ 7329      72697469 
+ 7329      63616C53 
+ 7329      65637469 
+ 7330              	.LASF108:
+ 7331 057d 746D7056 		.ascii	"tmpValue\000"
+ 7331      616C7565 
+ 7331      00
+ 7332              	.LASF36:
+ 7333 0586 72657475 		.ascii	"returnStatus\000"
+ 7333      726E5374 
+ 7333      61747573 
+ 7333      00
+ 7334              	.LASF90:
+ 7335 0593 736F7572 		.ascii	"source\000"
+ 7335      636500
+ 7336              	.LASF55:
+ 7337 059a 43795379 		.ascii	"CySysClkWcoClockOutSelect\000"
+ 7337      73436C6B 
+ 7337      57636F43 
+ 7337      6C6F636B 
+ 7337      4F757453 
+ 7338              	.LASF23:
+ 7339 05b4 73697A65 		.ascii	"sizetype\000"
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbNQ4GD.s 			page 209
 
 
- 7340      00
- 7341              	.LASF77:
- 7342 057e 6D617463 		.ascii	"match\000"
- 7342      6800
- 7343              	.LASF50:
- 7344 0584 43795379 		.ascii	"CySysClkIloRestoreFactoryTrim\000"
- 7344      73436C6B 
- 7344      496C6F52 
- 7344      6573746F 
- 7344      72654661 
- 7345              	.LASF18:
- 7346 05a2 43595F53 		.ascii	"CY_SYS_TIMER_WAIT\000"
- 7346      59535F54 
- 7346      494D4552 
- 7346      5F574149 
- 7346      5400
- 7347              	.LASF35:
- 7348 05b4 63686563 		.ascii	"checkStatus\000"
- 7348      6B537461 
- 7348      74757300 
- 7349              	.LASF128:
- 7350 05c0 63796465 		.ascii	"cydelayFreqHz\000"
- 7350      6C617946 
- 7350      72657148 
- 7350      7A00
- 7351              	.LASF95:
- 7352 05ce 43795379 		.ascii	"CySysWdtResetCounters\000"
- 7352      73576474 
- 7352      52657365 
- 7352      74436F75 
- 7352      6E746572 
- 7353              	.LASF48:
- 7354 05e4 77616974 		.ascii	"waitUntilCntr1Stops\000"
- 7354      556E7469 
- 7354      6C436E74 
- 7354      72315374 
- 7354      6F707300 
- 7355              	.LASF93:
- 7356 05f8 43795379 		.ascii	"CySysWdtClearInterrupt\000"
- 7356      73576474 
- 7356      436C6561 
- 7356      72496E74 
- 7356      65727275 
- 7357              	.LASF13:
- 7358 060f 666C6F61 		.ascii	"float\000"
- 7358      7400
- 7359              	.LASF106:
- 7360 0615 43795379 		.ascii	"CySysTimerDelayUntilMatch\000"
- 7360      7354696D 
- 7360      65724465 
- 7360      6C617955 
- 7360      6E74696C 
- 7361              	.LASF109:
- 7362 062f 43795379 		.ascii	"CySysTimerDelay\000"
- 7362      7354696D 
- 7362      65724465 
- 7362      6C617900 
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 210
+ 7339      74797065 
+ 7339      00
+ 7340              	.LASF22:
+ 7341 05bd 6C6F6E67 		.ascii	"long double\000"
+ 7341      20646F75 
+ 7341      626C6500 
+ 7342              	.LASF82:
+ 7343 05c9 43795379 		.ascii	"CySysWdtGetMatch\000"
+ 7343      73576474 
+ 7343      4765744D 
+ 7343      61746368 
+ 7343      00
+ 7344              	.LASF77:
+ 7345 05da 6D617463 		.ascii	"match\000"
+ 7345      6800
+ 7346              	.LASF50:
+ 7347 05e0 43795379 		.ascii	"CySysClkIloRestoreFactoryTrim\000"
+ 7347      73436C6B 
+ 7347      496C6F52 
+ 7347      6573746F 
+ 7347      72654661 
+ 7348              	.LASF18:
+ 7349 05fe 43595F53 		.ascii	"CY_SYS_TIMER_WAIT\000"
+ 7349      59535F54 
+ 7349      494D4552 
+ 7349      5F574149 
+ 7349      5400
+ 7350              	.LASF35:
+ 7351 0610 63686563 		.ascii	"checkStatus\000"
+ 7351      6B537461 
+ 7351      74757300 
+ 7352              	.LASF128:
+ 7353 061c 63796465 		.ascii	"cydelayFreqHz\000"
+ 7353      6C617946 
+ 7353      72657148 
+ 7353      7A00
+ 7354              	.LASF95:
+ 7355 062a 43795379 		.ascii	"CySysWdtResetCounters\000"
+ 7355      73576474 
+ 7355      52657365 
+ 7355      74436F75 
+ 7355      6E746572 
+ 7356              	.LASF48:
+ 7357 0640 77616974 		.ascii	"waitUntilCntr1Stops\000"
+ 7357      556E7469 
+ 7357      6C436E74 
+ 7357      72315374 
+ 7357      6F707300 
+ 7358              	.LASF93:
+ 7359 0654 43795379 		.ascii	"CySysWdtClearInterrupt\000"
+ 7359      73576474 
+ 7359      436C6561 
+ 7359      72496E74 
+ 7359      65727275 
+ 7360              	.LASF13:
+ 7361 066b 666C6F61 		.ascii	"float\000"
+ 7361      7400
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbNQ4GD.s 			page 210
 
 
- 7363              	.LASF25:
- 7364 063f 43795379 		.ascii	"CySysWdtLocked\000"
- 7364      73576474 
- 7364      4C6F636B 
- 7364      656400
- 7365              	.LASF119:
- 7366 064e 43794861 		.ascii	"CyHalt\000"
- 7366      6C7400
- 7367              	.LASF2:
- 7368 0655 756E7369 		.ascii	"unsigned char\000"
- 7368      676E6564 
- 7368      20636861 
- 7368      7200
- 7369              	.LASF34:
- 7370 0663 636F6D70 		.ascii	"compensateRunningStatus\000"
- 7370      656E7361 
- 7370      74655275 
- 7370      6E6E696E 
- 7370      67537461 
- 7371              	.LASF87:
- 7372 067b 6C66636C 		.ascii	"lfclkPosedgeEnabledWdtCounter\000"
- 7372      6B506F73 
- 7372      65646765 
- 7372      456E6162 
- 7372      6C656457 
- 7373              	.LASF110:
- 7374 0699 64656C61 		.ascii	"delay\000"
- 7374      7900
- 7375              	.LASF3:
- 7376 069f 73686F72 		.ascii	"short int\000"
- 7376      7420696E 
- 7376      7400
- 7377              	.LASF107:
- 7378 06a9 64656C61 		.ascii	"delayType\000"
- 7378      79547970 
- 7378      6500
- 7379              	.LASF70:
- 7380 06b3 43795379 		.ascii	"CySysWdtDisable\000"
- 7380      73576474 
- 7380      44697361 
- 7380      626C6500 
- 7381              	.LASF51:
- 7382 06c3 43795379 		.ascii	"CySysClkIloStartMeasurement\000"
- 7382      73436C6B 
- 7382      496C6F53 
- 7382      74617274 
- 7382      4D656173 
- 7383              	.LASF45:
- 7384 06df 43795379 		.ascii	"CySysClkIloTrim\000"
- 7384      73436C6B 
- 7384      496C6F54 
- 7384      72696D00 
- 7385              	.LASF24:
- 7386 06ef 43795379 		.ascii	"CySysClkIloEnabled\000"
- 7386      73436C6B 
- 7386      496C6F45 
- 7386      6E61626C 
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 211
+ 7362              	.LASF106:
+ 7363 0671 43795379 		.ascii	"CySysTimerDelayUntilMatch\000"
+ 7363      7354696D 
+ 7363      65724465 
+ 7363      6C617955 
+ 7363      6E74696C 
+ 7364              	.LASF109:
+ 7365 068b 43795379 		.ascii	"CySysTimerDelay\000"
+ 7365      7354696D 
+ 7365      65724465 
+ 7365      6C617900 
+ 7366              	.LASF25:
+ 7367 069b 43795379 		.ascii	"CySysWdtLocked\000"
+ 7367      73576474 
+ 7367      4C6F636B 
+ 7367      656400
+ 7368              	.LASF119:
+ 7369 06aa 43794861 		.ascii	"CyHalt\000"
+ 7369      6C7400
+ 7370              	.LASF2:
+ 7371 06b1 756E7369 		.ascii	"unsigned char\000"
+ 7371      676E6564 
+ 7371      20636861 
+ 7371      7200
+ 7372              	.LASF34:
+ 7373 06bf 636F6D70 		.ascii	"compensateRunningStatus\000"
+ 7373      656E7361 
+ 7373      74655275 
+ 7373      6E6E696E 
+ 7373      67537461 
+ 7374              	.LASF87:
+ 7375 06d7 6C66636C 		.ascii	"lfclkPosedgeEnabledWdtCounter\000"
+ 7375      6B506F73 
+ 7375      65646765 
+ 7375      456E6162 
+ 7375      6C656457 
+ 7376              	.LASF110:
+ 7377 06f5 64656C61 		.ascii	"delay\000"
+ 7377      7900
+ 7378              	.LASF3:
+ 7379 06fb 73686F72 		.ascii	"short int\000"
+ 7379      7420696E 
+ 7379      7400
+ 7380              	.LASF107:
+ 7381 0705 64656C61 		.ascii	"delayType\000"
+ 7381      79547970 
+ 7381      6500
+ 7382              	.LASF70:
+ 7383 070f 43795379 		.ascii	"CySysWdtDisable\000"
+ 7383      73576474 
+ 7383      44697361 
+ 7383      626C6500 
+ 7384              	.LASF51:
+ 7385 071f 43795379 		.ascii	"CySysClkIloStartMeasurement\000"
+ 7385      73436C6B 
+ 7385      496C6F53 
+ 7385      74617274 
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbNQ4GD.s 			page 211
 
 
- 7386      656400
- 7387              	.LASF92:
- 7388 0702 43795379 		.ascii	"CySysWdtGetInterruptSource\000"
- 7388      73576474 
- 7388      47657449 
- 7388      6E746572 
- 7388      72757074 
- 7389              	.LASF124:
- 7390 071d 47656E65 		.ascii	"Generated_Source\\PSoC4\\CyLFClk.c\000"
- 7390      72617465 
- 7390      645F536F 
- 7390      75726365 
- 7390      5C50536F 
- 7391              	.LASF39:
- 7392 073e 696C6F41 		.ascii	"iloAccuracyInPPT\000"
- 7392      63637572 
- 7392      61637949 
- 7392      6E505054 
- 7392      00
- 7393              	.LASF91:
- 7394 074f 43795379 		.ascii	"CySysClkWcoStop\000"
- 7394      73436C6B 
- 7394      57636F53 
- 7394      746F7000 
- 7395              	.LASF53:
- 7396 075f 43795379 		.ascii	"CySysClkWcoSetPowerMode\000"
- 7396      73436C6B 
- 7396      57636F53 
- 7396      6574506F 
- 7396      7765724D 
- 7397              	.LASF103:
- 7398 0777 43795379 		.ascii	"CySysWdtDisableCounterIsr\000"
- 7398      73576474 
- 7398      44697361 
- 7398      626C6543 
- 7398      6F756E74 
- 7399              	.LASF15:
- 7400 0791 63686172 		.ascii	"char\000"
- 7400      00
- 7401              	.LASF46:
- 7402 0796 6D6F6465 		.ascii	"mode\000"
- 7402      00
- 7403              	.LASF83:
- 7404 079b 43795379 		.ascii	"CySysWdtGetCount\000"
- 7404      73576474 
- 7404      47657443 
- 7404      6F756E74 
- 7404      00
- 7405              	.LASF115:
- 7406 07ac 64697361 		.ascii	"disableServicedIsr\000"
- 7406      626C6553 
- 7406      65727669 
- 7406      63656449 
- 7406      737200
- 7407              	.LASF65:
- 7408 07bf 43795379 		.ascii	"CySysWdtSetClearOnMatch\000"
- 7408      73576474 
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 212
+ 7385      4D656173 
+ 7386              	.LASF45:
+ 7387 073b 43795379 		.ascii	"CySysClkIloTrim\000"
+ 7387      73436C6B 
+ 7387      496C6F54 
+ 7387      72696D00 
+ 7388              	.LASF24:
+ 7389 074b 43795379 		.ascii	"CySysClkIloEnabled\000"
+ 7389      73436C6B 
+ 7389      496C6F45 
+ 7389      6E61626C 
+ 7389      656400
+ 7390              	.LASF92:
+ 7391 075e 43795379 		.ascii	"CySysWdtGetInterruptSource\000"
+ 7391      73576474 
+ 7391      47657449 
+ 7391      6E746572 
+ 7391      72757074 
+ 7392              	.LASF124:
+ 7393 0779 47656E65 		.ascii	"Generated_Source\\PSoC4\\CyLFClk.c\000"
+ 7393      72617465 
+ 7393      645F536F 
+ 7393      75726365 
+ 7393      5C50536F 
+ 7394              	.LASF39:
+ 7395 079a 696C6F41 		.ascii	"iloAccuracyInPPT\000"
+ 7395      63637572 
+ 7395      61637949 
+ 7395      6E505054 
+ 7395      00
+ 7396              	.LASF91:
+ 7397 07ab 43795379 		.ascii	"CySysClkWcoStop\000"
+ 7397      73436C6B 
+ 7397      57636F53 
+ 7397      746F7000 
+ 7398              	.LASF53:
+ 7399 07bb 43795379 		.ascii	"CySysClkWcoSetPowerMode\000"
+ 7399      73436C6B 
+ 7399      57636F53 
+ 7399      6574506F 
+ 7399      7765724D 
+ 7400              	.LASF103:
+ 7401 07d3 43795379 		.ascii	"CySysWdtDisableCounterIsr\000"
+ 7401      73576474 
+ 7401      44697361 
+ 7401      626C6543 
+ 7401      6F756E74 
+ 7402              	.LASF15:
+ 7403 07ed 63686172 		.ascii	"char\000"
+ 7403      00
+ 7404              	.LASF46:
+ 7405 07f2 6D6F6465 		.ascii	"mode\000"
+ 7405      00
+ 7406              	.LASF83:
+ 7407 07f7 43795379 		.ascii	"CySysWdtGetCount\000"
+ 7407      73576474 
+ 7407      47657443 
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbNQ4GD.s 			page 212
 
 
- 7408      53657443 
- 7408      6C656172 
- 7408      4F6E4D61 
- 7409              	.LASF71:
- 7410 07d7 43795379 		.ascii	"CySysWdtSetCascade\000"
- 7410      73576474 
- 7410      53657443 
- 7410      61736361 
- 7410      646500
- 7411              	.LASF47:
- 7412 07ea 74696D65 		.ascii	"timeOutClocks\000"
- 7412      4F757443 
- 7412      6C6F636B 
- 7412      7300
- 7413              	.LASF49:
- 7414 07f8 7472696D 		.ascii	"trimRunningStatus\000"
- 7414      52756E6E 
- 7414      696E6753 
- 7414      74617475 
- 7414      7300
- 7415              	.LASF64:
- 7416 080a 43795379 		.ascii	"CySysWdtGetMode\000"
- 7416      73576474 
- 7416      4765744D 
- 7416      6F646500 
- 7417              	.LASF33:
- 7418 081a 64657369 		.ascii	"desiredDelayInCounts\000"
- 7418      72656444 
- 7418      656C6179 
- 7418      496E436F 
- 7418      756E7473 
- 7419              	.LASF52:
- 7420 082f 43795379 		.ascii	"CySysClkWcoStart\000"
- 7420      73436C6B 
- 7420      57636F53 
- 7420      74617274 
- 7420      00
- 7421              	.LASF94:
- 7422 0840 7764744C 		.ascii	"wdtLockState\000"
- 7422      6F636B53 
- 7422      74617465 
- 7422      00
- 7423              	.LASF63:
- 7424 084d 636F6E66 		.ascii	"configRegValue\000"
- 7424      69675265 
- 7424      6756616C 
- 7424      756500
- 7425              	.LASF114:
- 7426 085c 6C66636C 		.ascii	"lfclkPosedgeWdtCounter0Mode\000"
- 7426      6B506F73 
- 7426      65646765 
- 7426      57647443 
- 7426      6F756E74 
- 7427              	.LASF72:
- 7428 0878 63617363 		.ascii	"cascadeMask\000"
- 7428      6164654D 
- 7428      61736B00 
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc66MRF1.s 			page 213
+ 7407      6F756E74 
+ 7407      00
+ 7408              	.LASF115:
+ 7409 0808 64697361 		.ascii	"disableServicedIsr\000"
+ 7409      626C6553 
+ 7409      65727669 
+ 7409      63656449 
+ 7409      737200
+ 7410              	.LASF65:
+ 7411 081b 43795379 		.ascii	"CySysWdtSetClearOnMatch\000"
+ 7411      73576474 
+ 7411      53657443 
+ 7411      6C656172 
+ 7411      4F6E4D61 
+ 7412              	.LASF71:
+ 7413 0833 43795379 		.ascii	"CySysWdtSetCascade\000"
+ 7413      73576474 
+ 7413      53657443 
+ 7413      61736361 
+ 7413      646500
+ 7414              	.LASF47:
+ 7415 0846 74696D65 		.ascii	"timeOutClocks\000"
+ 7415      4F757443 
+ 7415      6C6F636B 
+ 7415      7300
+ 7416              	.LASF49:
+ 7417 0854 7472696D 		.ascii	"trimRunningStatus\000"
+ 7417      52756E6E 
+ 7417      696E6753 
+ 7417      74617475 
+ 7417      7300
+ 7418              	.LASF64:
+ 7419 0866 43795379 		.ascii	"CySysWdtGetMode\000"
+ 7419      73576474 
+ 7419      4765744D 
+ 7419      6F646500 
+ 7420              	.LASF33:
+ 7421 0876 64657369 		.ascii	"desiredDelayInCounts\000"
+ 7421      72656444 
+ 7421      656C6179 
+ 7421      496E436F 
+ 7421      756E7473 
+ 7422              	.LASF52:
+ 7423 088b 43795379 		.ascii	"CySysClkWcoStart\000"
+ 7423      73436C6B 
+ 7423      57636F53 
+ 7423      74617274 
+ 7423      00
+ 7424              	.LASF94:
+ 7425 089c 7764744C 		.ascii	"wdtLockState\000"
+ 7425      6F636B53 
+ 7425      74617465 
+ 7425      00
+ 7426              	.LASF63:
+ 7427 08a9 636F6E66 		.ascii	"configRegValue\000"
+ 7427      69675265 
+ 7427      6756616C 
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbNQ4GD.s 			page 213
 
 
- 7429              	.LASF16:
- 7430 0884 63797374 		.ascii	"cystatus\000"
- 7430      61747573 
- 7430      00
- 7431              	.LASF104:
- 7432 088d 43795379 		.ascii	"CySysWdtIsr\000"
- 7432      73576474 
- 7432      49737200 
- 7433              	.LASF81:
- 7434 0899 43795379 		.ascii	"CySysWdtGetToggleBit\000"
- 7434      73576474 
- 7434      47657454 
- 7434      6F67676C 
- 7434      65426974 
- 7435              	.LASF37:
- 7436 08ae 43795379 		.ascii	"CySysClkIloCompensate\000"
- 7436      73436C6B 
- 7436      496C6F43 
- 7436      6F6D7065 
- 7436      6E736174 
- 7437              	.LASF19:
- 7438 08c4 43595F53 		.ascii	"CY_SYS_TIMER_INTERRUPT\000"
- 7438      59535F54 
- 7438      494D4552 
- 7438      5F494E54 
- 7438      45525255 
- 7439              	.LASF125:
- 7440 08db 433A5C55 		.ascii	"C:\\Users\\JamesN4\\Documents\\PSoC Creator\\Hybrid"
- 7440      73657273 
- 7440      5C4A616D 
- 7440      65734E34 
- 7440      5C446F63 
- 7441 0909 456E636F 		.ascii	"EncoderCY8CKIT43\\HybridEncoder.cydsn\000"
- 7441      64657243 
- 7441      5938434B 
- 7441      49543433 
- 7441      5C487962 
+ 7427      756500
+ 7428              	.LASF114:
+ 7429 08b8 6C66636C 		.ascii	"lfclkPosedgeWdtCounter0Mode\000"
+ 7429      6B506F73 
+ 7429      65646765 
+ 7429      57647443 
+ 7429      6F756E74 
+ 7430              	.LASF72:
+ 7431 08d4 63617363 		.ascii	"cascadeMask\000"
+ 7431      6164654D 
+ 7431      61736B00 
+ 7432              	.LASF16:
+ 7433 08e0 63797374 		.ascii	"cystatus\000"
+ 7433      61747573 
+ 7433      00
+ 7434              	.LASF104:
+ 7435 08e9 43795379 		.ascii	"CySysWdtIsr\000"
+ 7435      73576474 
+ 7435      49737200 
+ 7436              	.LASF81:
+ 7437 08f5 43795379 		.ascii	"CySysWdtGetToggleBit\000"
+ 7437      73576474 
+ 7437      47657454 
+ 7437      6F67676C 
+ 7437      65426974 
+ 7438              	.LASF37:
+ 7439 090a 43795379 		.ascii	"CySysClkIloCompensate\000"
+ 7439      73436C6B 
+ 7439      496C6F43 
+ 7439      6F6D7065 
+ 7439      6E736174 
+ 7440              	.LASF19:
+ 7441 0920 43595F53 		.ascii	"CY_SYS_TIMER_INTERRUPT\000"
+ 7441      59535F54 
+ 7441      494D4552 
+ 7441      5F494E54 
+ 7441      45525255 
  7442              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran

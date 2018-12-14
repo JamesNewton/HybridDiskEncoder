@@ -1243,7 +1243,7 @@ END GROUP
 .debug_pubnames
  *(.debug_pubnames)
 
-.debug_info     0x00000000     0x5245
+.debug_info     0x00000000     0x524e
  *(.debug_info .gnu.linkonce.wi.*)
  .debug_info    0x00000000      0x4e0 .\CortexM0\ARM_GCC_541\Debug\main.o
  .debug_info    0x000004e0      0x405 .\CortexM0\ARM_GCC_541\Debug\cyfitter_cfg.o
@@ -1259,8 +1259,8 @@ END GROUP
  .debug_info    0x00002dc8      0x305 .\CortexM0\ARM_GCC_541\Debug\HybridEncoder.a(ADC_IRQ.o)
  .debug_info    0x000030cd      0xd2f .\CortexM0\ARM_GCC_541\Debug\HybridEncoder.a(CyLib.o)
  .debug_info    0x00003dfc     0x1058 .\CortexM0\ARM_GCC_541\Debug\HybridEncoder.a(CyLFClk.o)
- .debug_info    0x00004e54       0xa1 .\CortexM0\ARM_GCC_541\Debug\HybridEncoder.a(CyBootAsmGnu.o)
- .debug_info    0x00004ef5      0x350 .\CortexM0\ARM_GCC_541\Debug\HybridEncoder.a(CyFlash.o)
+ .debug_info    0x00004e54       0xaa .\CortexM0\ARM_GCC_541\Debug\HybridEncoder.a(CyBootAsmGnu.o)
+ .debug_info    0x00004efe      0x350 .\CortexM0\ARM_GCC_541\Debug\HybridEncoder.a(CyFlash.o)
 
 .debug_abbrev   0x00000000     0x1502
  *(.debug_abbrev)
@@ -1342,38 +1342,38 @@ END GROUP
  .debug_frame   0x00001d14       0x20 c:/program files (x86)/cypress/psoc creator/4.1/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-nano-msizer.o)
  .debug_frame   0x00001d34       0x48 c:/program files (x86)/cypress/psoc creator/4.1/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-reent.o)
 
-.debug_str      0x00000000     0x2086
+.debug_str      0x00000000     0x208f
  *(.debug_str)
- .debug_str     0x00000000      0x2e5 .\CortexM0\ARM_GCC_541\Debug\main.o
-                                0x32b (size before relaxing)
- .debug_str     0x000002e5      0x14b .\CortexM0\ARM_GCC_541\Debug\cyfitter_cfg.o
-                                0x30e (size before relaxing)
- .debug_str     0x00000430       0x63 .\CortexM0\ARM_GCC_541\Debug\cymetadata.o
-                                0x1d9 (size before relaxing)
- .debug_str     0x00000493      0x13a .\CortexM0\ARM_GCC_541\Debug\Cm0Start.o
-                                0x312 (size before relaxing)
- .debug_str     0x000005cd      0x1d3 .\CortexM0\ARM_GCC_541\Debug\HybridEncoder.a(ADC.o)
-                                0x3e9 (size before relaxing)
- .debug_str     0x000007a0       0x29 .\CortexM0\ARM_GCC_541\Debug\HybridEncoder.a(ADC_INT.o)
-                                0x1ce (size before relaxing)
- .debug_str     0x000007c9      0x3f9 .\CortexM0\ARM_GCC_541\Debug\HybridEncoder.a(PWM_2.o)
-                                0x5c2 (size before relaxing)
- .debug_str     0x00000bc2      0x314 .\CortexM0\ARM_GCC_541\Debug\HybridEncoder.a(PWM_1.o)
-                                0x5c2 (size before relaxing)
- .debug_str     0x00000ed6       0xf7 .\CortexM0\ARM_GCC_541\Debug\HybridEncoder.a(UART.o)
-                                0x2a8 (size before relaxing)
- .debug_str     0x00000fcd      0x11d .\CortexM0\ARM_GCC_541\Debug\HybridEncoder.a(UART_SPI_UART.o)
-                                0x2df (size before relaxing)
- .debug_str     0x000010ea      0x13b .\CortexM0\ARM_GCC_541\Debug\HybridEncoder.a(UART_UART.o)
-                                0x39f (size before relaxing)
- .debug_str     0x00001225      0x119 .\CortexM0\ARM_GCC_541\Debug\HybridEncoder.a(ADC_IRQ.o)
+ .debug_str     0x00000000      0x2ee .\CortexM0\ARM_GCC_541\Debug\main.o
+                                0x334 (size before relaxing)
+ .debug_str     0x000002ee      0x14b .\CortexM0\ARM_GCC_541\Debug\cyfitter_cfg.o
                                 0x317 (size before relaxing)
- .debug_str     0x0000133e      0x5c4 .\CortexM0\ARM_GCC_541\Debug\HybridEncoder.a(CyLib.o)
-                                0x826 (size before relaxing)
- .debug_str     0x00001902      0x6dd .\CortexM0\ARM_GCC_541\Debug\HybridEncoder.a(CyLFClk.o)
-                                0x92e (size before relaxing)
- .debug_str     0x00001fdf       0xa7 .\CortexM0\ARM_GCC_541\Debug\HybridEncoder.a(CyFlash.o)
-                                0x2c1 (size before relaxing)
+ .debug_str     0x00000439       0x63 .\CortexM0\ARM_GCC_541\Debug\cymetadata.o
+                                0x1e2 (size before relaxing)
+ .debug_str     0x0000049c      0x13a .\CortexM0\ARM_GCC_541\Debug\Cm0Start.o
+                                0x31b (size before relaxing)
+ .debug_str     0x000005d6      0x1d3 .\CortexM0\ARM_GCC_541\Debug\HybridEncoder.a(ADC.o)
+                                0x3f2 (size before relaxing)
+ .debug_str     0x000007a9       0x29 .\CortexM0\ARM_GCC_541\Debug\HybridEncoder.a(ADC_INT.o)
+                                0x1d7 (size before relaxing)
+ .debug_str     0x000007d2      0x3f9 .\CortexM0\ARM_GCC_541\Debug\HybridEncoder.a(PWM_2.o)
+                                0x5cb (size before relaxing)
+ .debug_str     0x00000bcb      0x314 .\CortexM0\ARM_GCC_541\Debug\HybridEncoder.a(PWM_1.o)
+                                0x5cb (size before relaxing)
+ .debug_str     0x00000edf       0xf7 .\CortexM0\ARM_GCC_541\Debug\HybridEncoder.a(UART.o)
+                                0x2b1 (size before relaxing)
+ .debug_str     0x00000fd6      0x11d .\CortexM0\ARM_GCC_541\Debug\HybridEncoder.a(UART_SPI_UART.o)
+                                0x2e8 (size before relaxing)
+ .debug_str     0x000010f3      0x13b .\CortexM0\ARM_GCC_541\Debug\HybridEncoder.a(UART_UART.o)
+                                0x3a8 (size before relaxing)
+ .debug_str     0x0000122e      0x119 .\CortexM0\ARM_GCC_541\Debug\HybridEncoder.a(ADC_IRQ.o)
+                                0x320 (size before relaxing)
+ .debug_str     0x00001347      0x5c4 .\CortexM0\ARM_GCC_541\Debug\HybridEncoder.a(CyLib.o)
+                                0x82f (size before relaxing)
+ .debug_str     0x0000190b      0x6dd .\CortexM0\ARM_GCC_541\Debug\HybridEncoder.a(CyLFClk.o)
+                                0x937 (size before relaxing)
+ .debug_str     0x00001fe8       0xa7 .\CortexM0\ARM_GCC_541\Debug\HybridEncoder.a(CyFlash.o)
+                                0x2ca (size before relaxing)
 
 .debug_loc      0x00000000     0x2f9f
  *(.debug_loc)
@@ -1552,4 +1552,4 @@ END GROUP
 
 /DISCARD/
  *(.note.GNU-stack)
-OUTPUT(C:\Users\JamesN4\Documents\PSoC Creator\HybridEncoderCY8CKIT43\HybridEncoder.cydsn\CortexM0\ARM_GCC_541\Debug\HybridEncoder.elf elf32-littlearm)
+OUTPUT(C:\Users\JamesN4\Documents\PSoC Creator\HybridEncoderCY8CKIT43\firmware\HybridEncoder.cydsn\CortexM0\ARM_GCC_541\Debug\HybridEncoder.elf elf32-littlearm)

@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccKnRe35.s 			page 1
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccmtxbNc.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccKnRe35.s 			page 1
   28:Generated_Source\PSoC4/CapSense_PM.c **** *
   29:Generated_Source\PSoC4/CapSense_PM.c **** * Summary:
   30:Generated_Source\PSoC4/CapSense_PM.c **** *  Saves the customer configuration of CapSense.
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccKnRe35.s 			page 2
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccmtxbNc.s 			page 2
 
 
   31:Generated_Source\PSoC4/CapSense_PM.c **** *
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccKnRe35.s 			page 1
   60              	CapSense_Sleep:
   61              	.LFB34:
   53:Generated_Source\PSoC4/CapSense_PM.c **** 
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccKnRe35.s 			page 3
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccmtxbNc.s 			page 3
 
 
   54:Generated_Source\PSoC4/CapSense_PM.c **** 
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccKnRe35.s 			page 1
   86 001a 5B08     		lsrs	r3, r3, #1
   87 001c 1360     		str	r3, [r2]
   84:Generated_Source\PSoC4/CapSense_PM.c ****     #endif /* (CapSense_IDAC_CNT == 2u) */
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccKnRe35.s 			page 4
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccmtxbNc.s 			page 4
 
 
   85:Generated_Source\PSoC4/CapSense_PM.c **** 
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccKnRe35.s 			page 1
  114:Generated_Source\PSoC4/CapSense_PM.c **** void CapSense_RestoreConfig(void)
  115:Generated_Source\PSoC4/CapSense_PM.c **** {
  113              		.loc 1 115 0
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccKnRe35.s 			page 5
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccmtxbNc.s 			page 5
 
 
  114              		.cfi_startproc
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccKnRe35.s 			page 1
  140              		.loc 1 143 0
  141 0002 FF20     		movs	r0, #255
  142 0004 FFF7FEFF 		bl	CapSense_SenseClk_StartEx
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccKnRe35.s 			page 6
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccmtxbNc.s 			page 6
 
 
  143              	.LVL4:
@@ -354,11 +354,11 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccKnRe35.s 			page 1
  185 0006 00000000 		.4byte	.Ldebug_abbrev0
  186 000a 04       		.byte	0x4
  187 000b 01       		.uleb128 0x1
- 188 000c 3C010000 		.4byte	.LASF28
+ 188 000c 45010000 		.4byte	.LASF28
  189 0010 0C       		.byte	0xc
  190 0011 82000000 		.4byte	.LASF29
- 191 0015 A7000000 		.4byte	.LASF30
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccKnRe35.s 			page 7
+ 191 0015 AE000000 		.4byte	.LASF30
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccmtxbNc.s 			page 7
 
 
  192 0019 00000000 		.4byte	.Ldebug_ranges0+0
@@ -367,7 +367,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccKnRe35.s 			page 1
  195 0025 02       		.uleb128 0x2
  196 0026 01       		.byte	0x1
  197 0027 06       		.byte	0x6
- 198 0028 78020000 		.4byte	.LASF0
+ 198 0028 81020000 		.4byte	.LASF0
  199 002c 02       		.uleb128 0x2
  200 002d 01       		.byte	0x1
  201 002e 08       		.byte	0x8
@@ -375,7 +375,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccKnRe35.s 			page 1
  203 0033 02       		.uleb128 0x2
  204 0034 02       		.byte	0x2
  205 0035 05       		.byte	0x5
- 206 0036 1C020000 		.4byte	.LASF2
+ 206 0036 25020000 		.4byte	.LASF2
  207 003a 02       		.uleb128 0x2
  208 003b 02       		.byte	0x2
  209 003c 07       		.byte	0x7
@@ -383,7 +383,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccKnRe35.s 			page 1
  211 0041 02       		.uleb128 0x2
  212 0042 04       		.byte	0x4
  213 0043 05       		.byte	0x5
- 214 0044 57020000 		.4byte	.LASF4
+ 214 0044 60020000 		.4byte	.LASF4
  215 0048 02       		.uleb128 0x2
  216 0049 04       		.byte	0x4
  217 004a 07       		.byte	0x7
@@ -391,11 +391,11 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccKnRe35.s 			page 1
  219 004f 02       		.uleb128 0x2
  220 0050 08       		.byte	0x8
  221 0051 05       		.byte	0x5
- 222 0052 D3010000 		.4byte	.LASF6
+ 222 0052 DC010000 		.4byte	.LASF6
  223 0056 02       		.uleb128 0x2
  224 0057 08       		.byte	0x8
  225 0058 07       		.byte	0x7
- 226 0059 25010000 		.4byte	.LASF7
+ 226 0059 2E010000 		.4byte	.LASF7
  227 005d 03       		.uleb128 0x3
  228 005e 04       		.byte	0x4
  229 005f 05       		.byte	0x5
@@ -403,14 +403,14 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccKnRe35.s 			page 1
  231 0064 02       		.uleb128 0x2
  232 0065 04       		.byte	0x4
  233 0066 07       		.byte	0x7
- 234 0067 18010000 		.4byte	.LASF8
+ 234 0067 21010000 		.4byte	.LASF8
  235 006b 04       		.uleb128 0x4
- 236 006c 3D020000 		.4byte	.LASF9
+ 236 006c 46020000 		.4byte	.LASF9
  237 0070 02       		.byte	0x2
  238 0071 D201     		.2byte	0x1d2
  239 0073 2C000000 		.4byte	0x2c
  240 0077 04       		.uleb128 0x4
- 241 0078 01010000 		.4byte	.LASF10
+ 241 0078 0A010000 		.4byte	.LASF10
  242 007c 02       		.byte	0x2
  243 007d D401     		.2byte	0x1d4
  244 007f 48000000 		.4byte	0x48
@@ -418,17 +418,17 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccKnRe35.s 			page 1
  246 0084 04       		.byte	0x4
  247 0085 04       		.byte	0x4
  248 0086 4C000000 		.4byte	.LASF11
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccKnRe35.s 			page 8
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccmtxbNc.s 			page 8
 
 
  249 008a 02       		.uleb128 0x2
  250 008b 08       		.byte	0x8
  251 008c 04       		.byte	0x4
- 252 008d FA000000 		.4byte	.LASF12
+ 252 008d A7000000 		.4byte	.LASF12
  253 0091 02       		.uleb128 0x2
  254 0092 01       		.byte	0x1
  255 0093 08       		.byte	0x8
- 256 0094 E1010000 		.4byte	.LASF13
+ 256 0094 EA010000 		.4byte	.LASF13
  257 0098 04       		.uleb128 0x4
  258 0099 00000000 		.4byte	.LASF14
  259 009d 02       		.byte	0x2
@@ -439,30 +439,30 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccKnRe35.s 			page 1
  264 00a9 02       		.uleb128 0x2
  265 00aa 04       		.byte	0x4
  266 00ab 07       		.byte	0x7
- 267 00ac CA010000 		.4byte	.LASF15
+ 267 00ac D3010000 		.4byte	.LASF15
  268 00b0 02       		.uleb128 0x2
  269 00b1 08       		.byte	0x8
  270 00b2 04       		.byte	0x4
- 271 00b3 6C020000 		.4byte	.LASF16
+ 271 00b3 75020000 		.4byte	.LASF16
  272 00b7 06       		.uleb128 0x6
  273 00b8 01       		.byte	0x1
  274 00b9 03       		.byte	0x3
  275 00ba 8A       		.byte	0x8a
  276 00bb CC000000 		.4byte	0xcc
  277 00bf 07       		.uleb128 0x7
- 278 00c0 60020000 		.4byte	.LASF31
+ 278 00c0 69020000 		.4byte	.LASF31
  279 00c4 03       		.byte	0x3
  280 00c5 8C       		.byte	0x8c
  281 00c6 6B000000 		.4byte	0x6b
  282 00ca 00       		.byte	0
  283 00cb 00       		.byte	0
  284 00cc 08       		.uleb128 0x8
- 285 00cd 26020000 		.4byte	.LASF17
+ 285 00cd 2F020000 		.4byte	.LASF17
  286 00d1 03       		.byte	0x3
  287 00d2 8D       		.byte	0x8d
  288 00d3 B7000000 		.4byte	0xb7
  289 00d7 09       		.uleb128 0x9
- 290 00d8 43020000 		.4byte	.LASF18
+ 290 00d8 4C020000 		.4byte	.LASF18
  291 00dc 01       		.byte	0x1
  292 00dd 2E       		.byte	0x2e
  293 00de 00000000 		.4byte	.LFB33
@@ -470,7 +470,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccKnRe35.s 			page 1
  295 00e6 01       		.uleb128 0x1
  296 00e7 9C       		.byte	0x9c
  297 00e8 0A       		.uleb128 0xa
- 298 00e9 E6010000 		.4byte	.LASF20
+ 298 00e9 EF010000 		.4byte	.LASF20
  299 00ed 01       		.byte	0x1
  300 00ee 49       		.byte	0x49
  301 00ef 00000000 		.4byte	.LFB34
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccKnRe35.s 			page 1
  303 00f7 01       		.uleb128 0x1
  304 00f8 9C       		.byte	0x9c
  305 00f9 2C010000 		.4byte	0x12c
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccKnRe35.s 			page 9
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccmtxbNc.s 			page 9
 
 
  306 00fd 0B       		.uleb128 0xb
@@ -502,7 +502,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccKnRe35.s 			page 1
  324 0127 AB010000 		.4byte	0x1ab
  325 012b 00       		.byte	0
  326 012c 09       		.uleb128 0x9
- 327 012d 94020000 		.4byte	.LASF19
+ 327 012d 9D020000 		.4byte	.LASF19
  328 0131 01       		.byte	0x1
  329 0132 72       		.byte	0x72
  330 0133 00000000 		.4byte	.LFB35
@@ -510,7 +510,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccKnRe35.s 			page 1
  332 013b 01       		.uleb128 0x1
  333 013c 9C       		.byte	0x9c
  334 013d 0A       		.uleb128 0xa
- 335 013e 08010000 		.4byte	.LASF21
+ 335 013e 11010000 		.4byte	.LASF21
  336 0142 01       		.byte	0x1
  337 0143 8C       		.byte	0x8c
  338 0144 00000000 		.4byte	.LFB36
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccKnRe35.s 			page 1
  360 0175 50       		.byte	0x50
  361 0176 02       		.uleb128 0x2
  362 0177 08       		.byte	0x8
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccKnRe35.s 			page 10
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccmtxbNc.s 			page 10
 
 
  363 0178 FF       		.byte	0xff
@@ -556,13 +556,13 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccKnRe35.s 			page 1
  375 0190 03       		.byte	0x3
  376 0191 00000000 		.4byte	CapSense_backup
  377 0195 0F       		.uleb128 0xf
- 378 0196 0F020000 		.4byte	.LASF22
- 379 019a 0F020000 		.4byte	.LASF22
+ 378 0196 18020000 		.4byte	.LASF22
+ 379 019a 18020000 		.4byte	.LASF22
  380 019e 04       		.byte	0x4
  381 019f C5       		.byte	0xc5
  382 01a0 0F       		.uleb128 0xf
- 383 01a1 AB020000 		.4byte	.LASF23
- 384 01a5 AB020000 		.4byte	.LASF23
+ 383 01a1 B4020000 		.4byte	.LASF23
+ 384 01a5 B4020000 		.4byte	.LASF23
  385 01a9 05       		.byte	0x5
  386 01aa 27       		.byte	0x27
  387 01ab 0F       		.uleb128 0xf
@@ -571,8 +571,8 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccKnRe35.s 			page 1
  390 01b4 06       		.byte	0x6
  391 01b5 27       		.byte	0x27
  392 01b6 0F       		.uleb128 0xf
- 393 01b7 F5010000 		.4byte	.LASF25
- 394 01bb F5010000 		.4byte	.LASF25
+ 393 01b7 FE010000 		.4byte	.LASF25
+ 394 01bb FE010000 		.4byte	.LASF25
  395 01bf 05       		.byte	0x5
  396 01c0 1D       		.byte	0x1d
  397 01c1 0F       		.uleb128 0xf
@@ -581,8 +581,8 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccKnRe35.s 			page 1
  400 01ca 06       		.byte	0x6
  401 01cb 1D       		.byte	0x1d
  402 01cc 0F       		.uleb128 0xf
- 403 01cd 84020000 		.4byte	.LASF27
- 404 01d1 84020000 		.4byte	.LASF27
+ 403 01cd 8D020000 		.4byte	.LASF27
+ 404 01d1 8D020000 		.4byte	.LASF27
  405 01d5 03       		.byte	0x3
  406 01d6 95       		.byte	0x95
  407 01d7 00       		.byte	0
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccKnRe35.s 			page 1
  417 0007 03       		.uleb128 0x3
  418 0008 0E       		.uleb128 0xe
  419 0009 1B       		.uleb128 0x1b
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccKnRe35.s 			page 11
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccmtxbNc.s 			page 11
 
 
  420 000a 0E       		.uleb128 0xe
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccKnRe35.s 			page 1
  474 0040 0B       		.uleb128 0xb
  475 0041 0B       		.uleb128 0xb
  476 0042 3A       		.uleb128 0x3a
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccKnRe35.s 			page 12
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccmtxbNc.s 			page 12
 
 
  477 0043 0B       		.uleb128 0xb
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccKnRe35.s 			page 1
  531 0079 9742     		.uleb128 0x2117
  532 007b 19       		.uleb128 0x19
  533 007c 00       		.byte	0
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccKnRe35.s 			page 13
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccmtxbNc.s 			page 13
 
 
  534 007d 00       		.byte	0
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccKnRe35.s 			page 1
  588 00bb 00       		.byte	0
  589 00bc 0E       		.uleb128 0xe
  590 00bd 34       		.uleb128 0x34
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccKnRe35.s 			page 14
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccmtxbNc.s 			page 14
 
 
  591 00be 00       		.byte	0
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccKnRe35.s 			page 1
  645 000c 30000000 		.4byte	.LFE34
  646 0010 00000000 		.4byte	.LFB35
  647 0014 02000000 		.4byte	.LFE35
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccKnRe35.s 			page 15
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccmtxbNc.s 			page 15
 
 
  648 0018 00000000 		.4byte	.LFB36
@@ -898,140 +898,140 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccKnRe35.s 			page 1
  672      645F536F 
  672      75726365 
  672      5C50536F 
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccKnRe35.s 			page 16
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccmtxbNc.s 			page 16
 
 
- 673              	.LASF30:
- 674 00a7 433A5C55 		.ascii	"C:\\Users\\JamesN4\\Documents\\PSoC Creator\\Hybrid"
- 674      73657273 
- 674      5C4A616D 
- 674      65734E34 
- 674      5C446F63 
- 675 00d5 456E636F 		.ascii	"EncoderCY8CKIT43\\HybridEncoder.cydsn\000"
- 675      64657243 
- 675      5938434B 
- 675      49543433 
- 675      5C487962 
- 676              	.LASF12:
- 677 00fa 646F7562 		.ascii	"double\000"
- 677      6C6500
+ 673              	.LASF12:
+ 674 00a7 646F7562 		.ascii	"double\000"
+ 674      6C6500
+ 675              	.LASF30:
+ 676 00ae 433A5C55 		.ascii	"C:\\Users\\JamesN4\\Documents\\PSoC Creator\\Hybrid"
+ 676      73657273 
+ 676      5C4A616D 
+ 676      65734E34 
+ 676      5C446F63 
+ 677 00dc 456E636F 		.ascii	"EncoderCY8CKIT43\\firmware\\HybridEncoder.cydsn\000"
+ 677      64657243 
+ 677      5938434B 
+ 677      49543433 
+ 677      5C666972 
  678              	.LASF10:
- 679 0101 75696E74 		.ascii	"uint32\000"
+ 679 010a 75696E74 		.ascii	"uint32\000"
  679      333200
  680              	.LASF21:
- 681 0108 43617053 		.ascii	"CapSense_Wakeup\000"
+ 681 0111 43617053 		.ascii	"CapSense_Wakeup\000"
  681      656E7365 
  681      5F57616B 
  681      65757000 
  682              	.LASF8:
- 683 0118 756E7369 		.ascii	"unsigned int\000"
+ 683 0121 756E7369 		.ascii	"unsigned int\000"
  683      676E6564 
  683      20696E74 
  683      00
  684              	.LASF7:
- 685 0125 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 685 012e 6C6F6E67 		.ascii	"long long unsigned int\000"
  685      206C6F6E 
  685      6720756E 
  685      7369676E 
  685      65642069 
  686              	.LASF28:
- 687 013c 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
+ 687 0145 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
  687      43313120 
  687      352E342E 
  687      31203230 
  687      31363036 
- 688 016f 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m0 -mthumb -g -O"
+ 688 0178 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m0 -mthumb -g -O"
  688      20726576 
  688      6973696F 
  688      6E203233 
  688      37373135 
- 689 01a2 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
+ 689 01ab 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
  689      66756E63 
  689      74696F6E 
  689      2D736563 
  689      74696F6E 
  690              	.LASF15:
- 691 01ca 73697A65 		.ascii	"sizetype\000"
+ 691 01d3 73697A65 		.ascii	"sizetype\000"
  691      74797065 
  691      00
  692              	.LASF6:
- 693 01d3 6C6F6E67 		.ascii	"long long int\000"
+ 693 01dc 6C6F6E67 		.ascii	"long long int\000"
  693      206C6F6E 
  693      6720696E 
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccKnRe35.s 			page 17
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccmtxbNc.s 			page 17
 
 
  693      7400
  694              	.LASF13:
- 695 01e1 63686172 		.ascii	"char\000"
+ 695 01ea 63686172 		.ascii	"char\000"
  695      00
  696              	.LASF20:
- 697 01e6 43617053 		.ascii	"CapSense_Sleep\000"
+ 697 01ef 43617053 		.ascii	"CapSense_Sleep\000"
  697      656E7365 
  697      5F536C65 
  697      657000
  698              	.LASF25:
- 699 01f5 43617053 		.ascii	"CapSense_SenseClk_StartEx\000"
+ 699 01fe 43617053 		.ascii	"CapSense_SenseClk_StartEx\000"
  699      656E7365 
  699      5F53656E 
  699      7365436C 
  699      6B5F5374 
  700              	.LASF22:
- 701 020f 4379496E 		.ascii	"CyIntDisable\000"
+ 701 0218 4379496E 		.ascii	"CyIntDisable\000"
  701      74446973 
  701      61626C65 
  701      00
  702              	.LASF2:
- 703 021c 73686F72 		.ascii	"short int\000"
+ 703 0225 73686F72 		.ascii	"short int\000"
  703      7420696E 
  703      7400
  704              	.LASF17:
- 705 0226 43617053 		.ascii	"CapSense_BACKUP_STRUCT\000"
+ 705 022f 43617053 		.ascii	"CapSense_BACKUP_STRUCT\000"
  705      656E7365 
  705      5F424143 
  705      4B55505F 
  705      53545255 
  706              	.LASF9:
- 707 023d 75696E74 		.ascii	"uint8\000"
+ 707 0246 75696E74 		.ascii	"uint8\000"
  707      3800
  708              	.LASF18:
- 709 0243 43617053 		.ascii	"CapSense_SaveConfig\000"
+ 709 024c 43617053 		.ascii	"CapSense_SaveConfig\000"
  709      656E7365 
  709      5F536176 
  709      65436F6E 
  709      66696700 
  710              	.LASF4:
- 711 0257 6C6F6E67 		.ascii	"long int\000"
+ 711 0260 6C6F6E67 		.ascii	"long int\000"
  711      20696E74 
  711      00
  712              	.LASF31:
- 713 0260 656E6162 		.ascii	"enableState\000"
+ 713 0269 656E6162 		.ascii	"enableState\000"
  713      6C655374 
  713      61746500 
  714              	.LASF16:
- 715 026c 6C6F6E67 		.ascii	"long double\000"
+ 715 0275 6C6F6E67 		.ascii	"long double\000"
  715      20646F75 
  715      626C6500 
  716              	.LASF0:
- 717 0278 7369676E 		.ascii	"signed char\000"
+ 717 0281 7369676E 		.ascii	"signed char\000"
  717      65642063 
  717      68617200 
  718              	.LASF27:
- 719 0284 43617053 		.ascii	"CapSense_Enable\000"
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccKnRe35.s 			page 18
+ 719 028d 43617053 		.ascii	"CapSense_Enable\000"
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccmtxbNc.s 			page 18
 
 
  719      656E7365 
  719      5F456E61 
  719      626C6500 
  720              	.LASF19:
- 721 0294 43617053 		.ascii	"CapSense_RestoreConfig\000"
+ 721 029d 43617053 		.ascii	"CapSense_RestoreConfig\000"
  721      656E7365 
  721      5F526573 
  721      746F7265 
  721      436F6E66 
  722              	.LASF23:
- 723 02ab 43617053 		.ascii	"CapSense_SenseClk_Stop\000"
+ 723 02b4 43617053 		.ascii	"CapSense_SenseClk_Stop\000"
  723      656E7365 
  723      5F53656E 
  723      7365436C 

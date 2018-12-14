@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 #ifndef INCLUDED_CYDISABLEDSHEETS_H
 #define INCLUDED_CYDISABLEDSHEETS_H
 
@@ -6,12 +5,3 @@
 #define LCD__DISABLED 1u /* LCD */
 
 #endif /* INCLUDED_CYDISABLEDSHEETS_H */
-=======
-#ifndef INCLUDED_CYDISABLEDSHEETS_H
-#define INCLUDED_CYDISABLEDSHEETS_H
-
-#define DAC__DISABLED 1u /* DAC */
-#define LCD__DISABLED 1u /* LCD */
-
-#endif /* INCLUDED_CYDISABLEDSHEETS_H */
->>>>>>> remotes/origin/master

@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cchLhQl1.s 			page 1
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccUTzjm7.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cchLhQl1.s 			page 1
   28:Generated_Source\PSoC4/ADC.c **** 
   29:Generated_Source\PSoC4/ADC.c **** /***************************************
   30:Generated_Source\PSoC4/ADC.c **** * Local data allocation
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cchLhQl1.s 			page 2
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccUTzjm7.s 			page 2
 
 
   31:Generated_Source\PSoC4/ADC.c **** ***************************************/
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cchLhQl1.s 			page 1
   85:Generated_Source\PSoC4/ADC.c **** *  None.
   86:Generated_Source\PSoC4/ADC.c **** *
   87:Generated_Source\PSoC4/ADC.c **** * Return:
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cchLhQl1.s 			page 3
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccUTzjm7.s 			page 3
 
 
   88:Generated_Source\PSoC4/ADC.c **** *  None.
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cchLhQl1.s 			page 1
  134:Generated_Source\PSoC4/ADC.c ****             #endif /* End ADC_TOTAL_CHANNELS_NUM > 8u */
  135:Generated_Source\PSoC4/ADC.c ****             #if(ADC_TOTAL_CHANNELS_NUM > 9u)
  136:Generated_Source\PSoC4/ADC.c ****                 ,(uint8)(ADC_cy_psoc4_sarmux_8__CH_9_PORT << 4u) |
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cchLhQl1.s 			page 4
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccUTzjm7.s 			page 4
 
 
  137:Generated_Source\PSoC4/ADC.c ****                  (uint8)ADC_cy_psoc4_sarmux_8__CH_9_PIN
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cchLhQl1.s 			page 1
   49 0016 1A60     		str	r2, [r3]
  178:Generated_Source\PSoC4/ADC.c ****     ADC_SAR_CTRL_REG |= ADC_DEFAULT_CTRL_REG_CFG | 
  179:Generated_Source\PSoC4/ADC.c ****         /* Enable the SAR internal pump when global pump is enabled */
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cchLhQl1.s 			page 5
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccUTzjm7.s 			page 5
 
 
  180:Generated_Source\PSoC4/ADC.c ****         (((ADC_PUMP_CTRL_REG & ADC_PUMP_CTRL_ENABLED) != 0u) ? 
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cchLhQl1.s 			page 1
  196:Generated_Source\PSoC4/ADC.c **** 
  197:Generated_Source\PSoC4/ADC.c ****     ADC_SAR_SATURATE_INTR_MASK_REG = 0u;
   86              		.loc 1 197 0 discriminator 4
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cchLhQl1.s 			page 6
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccUTzjm7.s 			page 6
 
 
   87 004c 3C4A     		ldr	r2, .L12+60
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cchLhQl1.s 			page 1
  229:Generated_Source\PSoC4/ADC.c ****         ADC_WOUNDING_REG = ADC_ALT_WOUNDING;
  230:Generated_Source\PSoC4/ADC.c ****     #endif /* ADC_MAX_RESOLUTION != ADC_RESOLUTION_12 */
  231:Generated_Source\PSoC4/ADC.c **** 
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cchLhQl1.s 			page 7
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccUTzjm7.s 			page 7
 
 
  232:Generated_Source\PSoC4/ADC.c ****     for(chNum = 0u; chNum < ADC_TOTAL_CHANNELS_NUM; chNum++)
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cchLhQl1.s 			page 1
  138 0088 2D48     		ldr	r0, .L12+60
  139 008a 0168     		ldr	r1, [r0]
  140              	.LVL10:
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cchLhQl1.s 			page 8
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccUTzjm7.s 			page 8
 
 
  141 008c 0123     		movs	r3, #1
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cchLhQl1.s 			page 1
  170              	.LVL14:
  171 00b6 5958     		ldr	r1, [r3, r1]
  172              	.LVL15:
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cchLhQl1.s 			page 9
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccUTzjm7.s 			page 9
 
 
  173 00b8 8B05     		lsls	r3, r1, #22
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cchLhQl1.s 			page 1
  202 00da 5C52     		strh	r4, [r3, r1]
  203              	.L8:
  308:Generated_Source\PSoC4/ADC.c ****             #endif /* end ADC_DEFAULT_DIFF_RESULT_FORMAT_SEL == ADC__FUNSIGNED */
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cchLhQl1.s 			page 10
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccUTzjm7.s 			page 10
 
 
  309:Generated_Source\PSoC4/ADC.c ****         }
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cchLhQl1.s 			page 1
  249 0138 04000400 		.word	262148
  250 013c 14003A40 		.word	1077542932
  251 0140 28023A40 		.word	1077543464
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cchLhQl1.s 			page 11
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccUTzjm7.s 			page 11
 
 
  252 0144 38023A40 		.word	1077543480
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cchLhQl1.s 			page 1
  335:Generated_Source\PSoC4/ADC.c **** 
  336:Generated_Source\PSoC4/ADC.c ****             while (0u != (ADC_SAR_STATUS_REG & ADC_STATUS_BUSY))
  286              		.loc 1 336 0 discriminator 1
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cchLhQl1.s 			page 12
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccUTzjm7.s 			page 12
 
 
  287 000a 084B     		ldr	r3, .L17+4
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cchLhQl1.s 			page 1
  329              		.cfi_offset 14, -4
   66:Generated_Source\PSoC4/ADC.c ****     {
  330              		.loc 1 66 0
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cchLhQl1.s 			page 13
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccUTzjm7.s 			page 13
 
 
  331 0002 064B     		ldr	r3, .L21
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cchLhQl1.s 			page 1
  365:Generated_Source\PSoC4/ADC.c **** void ADC_Stop(void)
  366:Generated_Source\PSoC4/ADC.c **** {
  364              		.loc 1 366 0
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cchLhQl1.s 			page 14
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccUTzjm7.s 			page 14
 
 
  365              		.cfi_startproc
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cchLhQl1.s 			page 1
  393              		.loc 1 392 0
  394              		.cfi_startproc
  395              		@ args = 0, pretend = 0, frame = 0
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cchLhQl1.s 			page 15
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccUTzjm7.s 			page 15
 
 
  396              		@ frame_needed = 0, uses_anonymous_args = 0
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cchLhQl1.s 			page 1
  425              		@ args = 0, pretend = 0, frame = 0
  426              		@ frame_needed = 0, uses_anonymous_args = 0
  427              		@ link register save eliminated.
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cchLhQl1.s 			page 16
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccUTzjm7.s 			page 16
 
 
  418:Generated_Source\PSoC4/ADC.c ****     #if(ADC_DEFAULT_SAMPLE_MODE_SEL == ADC__FREERUNNING)
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cchLhQl1.s 			page 1
  447:Generated_Source\PSoC4/ADC.c **** *  If the returned value is zero, the ADC is still in the process of a scan.
  448:Generated_Source\PSoC4/ADC.c **** *
  449:Generated_Source\PSoC4/ADC.c **** *******************************************************************************/
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cchLhQl1.s 			page 17
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccUTzjm7.s 			page 17
 
 
  450:Generated_Source\PSoC4/ADC.c **** uint32 ADC_IsEndConversion(uint32 retMode)
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cchLhQl1.s 			page 1
  491              	.LVL31:
  492              	.L33:
  465:Generated_Source\PSoC4/ADC.c ****         }
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cchLhQl1.s 			page 18
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccUTzjm7.s 			page 18
 
 
  466:Generated_Source\PSoC4/ADC.c ****     }
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cchLhQl1.s 			page 1
  502:Generated_Source\PSoC4/ADC.c **** *
  503:Generated_Source\PSoC4/ADC.c **** *******************************************************************************/
  504:Generated_Source\PSoC4/ADC.c **** int16 ADC_GetResult16(uint32 chan)
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cchLhQl1.s 			page 19
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccUTzjm7.s 			page 19
 
 
  505:Generated_Source\PSoC4/ADC.c **** {
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cchLhQl1.s 			page 1
  548              	.LVL38:
  549              	.L41:
  522:Generated_Source\PSoC4/ADC.c ****         #endif /* ADC_INJ_CHANNEL_ENABLED */
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cchLhQl1.s 			page 20
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccUTzjm7.s 			page 20
 
 
  523:Generated_Source\PSoC4/ADC.c ****     }
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cchLhQl1.s 			page 1
  576              	.LVL40:
  551:Generated_Source\PSoC4/ADC.c ****     ADC_SAR_CHAN_EN_REG = mask & ADC_MAX_CHANNELS_EN_MASK;
  577              		.loc 1 551 0
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cchLhQl1.s 			page 21
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccUTzjm7.s 			page 21
 
 
  578 0000 0F23     		movs	r3, #15
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cchLhQl1.s 			page 1
  583:Generated_Source\PSoC4/ADC.c **** * Summary:
  584:Generated_Source\PSoC4/ADC.c **** *  Sets the low limit parameter for a limit condition.
  585:Generated_Source\PSoC4/ADC.c **** *
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cchLhQl1.s 			page 22
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccUTzjm7.s 			page 22
 
 
  586:Generated_Source\PSoC4/ADC.c **** * Parameters:
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cchLhQl1.s 			page 1
  603:Generated_Source\PSoC4/ADC.c **** *
  604:Generated_Source\PSoC4/ADC.c **** * Summary:
  605:Generated_Source\PSoC4/ADC.c **** *  Sets the low limit parameter for a limit condition.
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cchLhQl1.s 			page 23
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccUTzjm7.s 			page 23
 
 
  606:Generated_Source\PSoC4/ADC.c **** *
@@ -1378,7 +1378,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cchLhQl1.s 			page 1
  624:Generated_Source\PSoC4/ADC.c **** *
  625:Generated_Source\PSoC4/ADC.c **** * Summary:
  626:Generated_Source\PSoC4/ADC.c **** *  Sets the channel limit condition mask.
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cchLhQl1.s 			page 24
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccUTzjm7.s 			page 24
 
 
  627:Generated_Source\PSoC4/ADC.c **** *
@@ -1438,7 +1438,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cchLhQl1.s 			page 1
  651:Generated_Source\PSoC4/ADC.c **** * Parameters:
  652:Generated_Source\PSoC4/ADC.c **** *  mask: Sets which channels that may cause a
  653:Generated_Source\PSoC4/ADC.c **** *  saturation event interrupt. Setting bits for channels that do not exist
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cchLhQl1.s 			page 25
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccUTzjm7.s 			page 25
 
 
  654:Generated_Source\PSoC4/ADC.c **** *  will have no effect. For example, if only 8 channels were enabled,
@@ -1498,7 +1498,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cchLhQl1.s 			page 1
  678:Generated_Source\PSoC4/ADC.c **** *  chan: ADC channel number.
  679:Generated_Source\PSoC4/ADC.c **** *  offset: This value is a measured value when the
  680:Generated_Source\PSoC4/ADC.c **** *          inputs are shorted or connected to the same input voltage.
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cchLhQl1.s 			page 26
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccUTzjm7.s 			page 26
 
 
  681:Generated_Source\PSoC4/ADC.c **** *
@@ -1558,7 +1558,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cchLhQl1.s 			page 1
  773              		.global	ADC_SetGain
  774              		.code	16
  775              		.thumb_func
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cchLhQl1.s 			page 27
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccUTzjm7.s 			page 27
 
 
  776              		.type	ADC_SetGain, %function
@@ -1618,7 +1618,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cchLhQl1.s 			page 1
  799              	.LVL56:
  800              	.L65:
  727:Generated_Source\PSoC4/ADC.c **** 
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cchLhQl1.s 			page 28
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccUTzjm7.s 			page 28
 
 
  728:Generated_Source\PSoC4/ADC.c ****     ADC_countsPer10Volt[chan] = adcGain;
@@ -1678,7 +1678,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cchLhQl1.s 			page 1
  757:Generated_Source\PSoC4/ADC.c ****     {
  826              		.loc 1 757 0
  827              		.cfi_startproc
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cchLhQl1.s 			page 29
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccUTzjm7.s 			page 29
 
 
  828              		@ args = 0, pretend = 0, frame = 0
@@ -1738,7 +1738,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cchLhQl1.s 			page 1
  864 0026 0C4A     		ldr	r2, .L72+8
  865 0028 9A58     		ldr	r2, [r3, r2]
  866 002a D30F     		lsrs	r3, r2, #31
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cchLhQl1.s 			page 30
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccUTzjm7.s 			page 30
 
 
  867 002c 9A18     		adds	r2, r3, r2
@@ -1798,7 +1798,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cchLhQl1.s 			page 1
  780:Generated_Source\PSoC4/ADC.c **** 
  781:Generated_Source\PSoC4/ADC.c **** 
  782:Generated_Source\PSoC4/ADC.c ****     /*******************************************************************************
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cchLhQl1.s 			page 31
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccUTzjm7.s 			page 31
 
 
  783:Generated_Source\PSoC4/ADC.c ****     * Function Name: ADC_CountsTo_uVolts
@@ -1858,7 +1858,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cchLhQl1.s 			page 1
  936              	.L75:
  816:Generated_Source\PSoC4/ADC.c **** 
  817:Generated_Source\PSoC4/ADC.c ****         /* Divide the adcCount when accumulate averaging mode selected */
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cchLhQl1.s 			page 32
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccUTzjm7.s 			page 32
 
 
  818:Generated_Source\PSoC4/ADC.c ****         #if(ADC_DEFAULT_AVG_MODE == ADC__ACCUMULATE)
@@ -1918,7 +1918,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cchLhQl1.s 			page 1
  977              		.thumb_func
  978              		.type	ADC_CountsTo_Volts, %function
  979              	ADC_CountsTo_Volts:
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cchLhQl1.s 			page 33
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccUTzjm7.s 			page 33
 
 
  980              	.LFB18:
@@ -1978,7 +1978,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cchLhQl1.s 			page 1
  863:Generated_Source\PSoC4/ADC.c ****         #if(ADC_DEFAULT_AVG_MODE == ADC__ACCUMULATE)
  864:Generated_Source\PSoC4/ADC.c ****             if((ADC_channelsConfig[chan] & ADC_AVERAGING_EN) != 0u)
  865:Generated_Source\PSoC4/ADC.c ****             {
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cchLhQl1.s 			page 34
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccUTzjm7.s 			page 34
 
 
  866:Generated_Source\PSoC4/ADC.c ****                 adcCounts /= ADC_DEFAULT_AVG_SAMPLES_DIV;
@@ -2038,7 +2038,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cchLhQl1.s 			page 1
  1046              		.type	ADC_channelsConfig, %object
  1047              		.size	ADC_channelsConfig, 16
  1048              	ADC_channelsConfig:
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cchLhQl1.s 			page 35
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccUTzjm7.s 			page 35
 
 
  1049 0000 00040000 		.word	1024
@@ -2071,8 +2071,8 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cchLhQl1.s 			page 1
  1076 000b 01       		.uleb128 0x1
  1077 000c 32000000 		.4byte	.LASF64
  1078 0010 0C       		.byte	0xc
- 1079 0011 9C020000 		.4byte	.LASF65
- 1080 0015 96030000 		.4byte	.LASF66
+ 1079 0011 F8020000 		.4byte	.LASF65
+ 1080 0015 1D020000 		.4byte	.LASF66
  1081 0019 00000000 		.4byte	.Ldebug_ranges0+0
  1082 001d 00000000 		.4byte	0
  1083 0021 00000000 		.4byte	.Ldebug_line0
@@ -2083,11 +2083,11 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cchLhQl1.s 			page 1
  1088 002c 02       		.uleb128 0x2
  1089 002d 01       		.byte	0x1
  1090 002e 08       		.byte	0x8
- 1091 002f 00030000 		.4byte	.LASF1
+ 1091 002f 5C030000 		.4byte	.LASF1
  1092 0033 02       		.uleb128 0x2
  1093 0034 02       		.byte	0x2
  1094 0035 05       		.byte	0x5
- 1095 0036 19030000 		.4byte	.LASF2
+ 1095 0036 75030000 		.4byte	.LASF2
  1096 003a 02       		.uleb128 0x2
  1097 003b 02       		.byte	0x2
  1098 003c 07       		.byte	0x7
@@ -2098,7 +2098,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cchLhQl1.s 			page 1
  1103 0044 2D010000 		.4byte	.LASF4
  1104 0048 02       		.uleb128 0x2
  1105 0049 04       		.byte	0x4
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cchLhQl1.s 			page 36
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccUTzjm7.s 			page 36
 
 
  1106 004a 07       		.byte	0x7
@@ -2135,7 +2135,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cchLhQl1.s 			page 1
  1137 0089 D401     		.2byte	0x1d4
  1138 008b 48000000 		.4byte	0x48
  1139 008f 04       		.uleb128 0x4
- 1140 0090 6B030000 		.4byte	.LASF12
+ 1140 0090 C7030000 		.4byte	.LASF12
  1141 0094 02       		.byte	0x2
  1142 0095 D601     		.2byte	0x1d6
  1143 0097 33000000 		.4byte	0x33
@@ -2145,32 +2145,32 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cchLhQl1.s 			page 1
  1147 00a1 D701     		.2byte	0x1d7
  1148 00a3 41000000 		.4byte	0x41
  1149 00a7 04       		.uleb128 0x4
- 1150 00a8 2A020000 		.4byte	.LASF14
+ 1150 00a8 86020000 		.4byte	.LASF14
  1151 00ac 02       		.byte	0x2
  1152 00ad D801     		.2byte	0x1d8
  1153 00af B3000000 		.4byte	0xb3
  1154 00b3 02       		.uleb128 0x2
  1155 00b4 04       		.byte	0x4
  1156 00b5 04       		.byte	0x4
- 1157 00b6 C5020000 		.4byte	.LASF15
+ 1157 00b6 21030000 		.4byte	.LASF15
  1158 00ba 02       		.uleb128 0x2
  1159 00bb 08       		.byte	0x8
  1160 00bc 04       		.byte	0x4
  1161 00bd 6E010000 		.4byte	.LASF16
  1162 00c1 04       		.uleb128 0x4
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cchLhQl1.s 			page 37
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccUTzjm7.s 			page 37
 
 
- 1163 00c2 75020000 		.4byte	.LASF17
+ 1163 00c2 D1020000 		.4byte	.LASF17
  1164 00c6 02       		.byte	0x2
  1165 00c7 DD01     		.2byte	0x1dd
  1166 00c9 4F000000 		.4byte	0x4f
  1167 00cd 02       		.uleb128 0x2
  1168 00ce 01       		.byte	0x1
  1169 00cf 08       		.byte	0x8
- 1170 00d0 37030000 		.4byte	.LASF18
+ 1170 00d0 93030000 		.4byte	.LASF18
  1171 00d4 04       		.uleb128 0x4
- 1172 00d5 24020000 		.4byte	.LASF19
+ 1172 00d5 80020000 		.4byte	.LASF19
  1173 00d9 02       		.byte	0x2
  1174 00da 7E02     		.2byte	0x27e
  1175 00dc E0000000 		.4byte	0xe0
@@ -2179,11 +2179,11 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cchLhQl1.s 			page 1
  1178 00e5 02       		.uleb128 0x2
  1179 00e6 08       		.byte	0x8
  1180 00e7 04       		.byte	0x4
- 1181 00e8 44020000 		.4byte	.LASF20
+ 1181 00e8 A0020000 		.4byte	.LASF20
  1182 00ec 02       		.uleb128 0x2
  1183 00ed 04       		.byte	0x4
  1184 00ee 07       		.byte	0x7
- 1185 00ef 32020000 		.4byte	.LASF21
+ 1185 00ef 8E020000 		.4byte	.LASF21
  1186 00f3 06       		.uleb128 0x6
  1187 00f4 29000000 		.4byte	.LASF26
  1188 00f8 01       		.byte	0x1
@@ -2194,7 +2194,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cchLhQl1.s 			page 1
  1193 0103 9C       		.byte	0x9c
  1194 0104 6E010000 		.4byte	0x16e
  1195 0108 07       		.uleb128 0x7
- 1196 0109 2C030000 		.4byte	.LASF22
+ 1196 0109 88030000 		.4byte	.LASF22
  1197 010d 01       		.byte	0x1
  1198 010e 60       		.byte	0x60
  1199 010f 83000000 		.4byte	0x83
@@ -2218,7 +2218,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cchLhQl1.s 			page 1
  1217 013c 83010000 		.4byte	0x183
  1218 0140 05       		.uleb128 0x5
  1219 0141 03       		.byte	0x3
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cchLhQl1.s 			page 38
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccUTzjm7.s 			page 38
 
 
  1220 0142 10000000 		.4byte	ADC_InputsPlacement.4915
@@ -2259,7 +2259,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cchLhQl1.s 			page 1
  1255 0183 0E       		.uleb128 0xe
  1256 0184 6E010000 		.4byte	0x16e
  1257 0188 0F       		.uleb128 0xf
- 1258 0189 60030000 		.4byte	.LASF27
+ 1258 0189 BC030000 		.4byte	.LASF27
  1259 018d 01       		.byte	0x1
  1260 018e 4A01     		.2byte	0x14a
  1261 0190 00000000 		.4byte	.LFB3
@@ -2278,7 +2278,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cchLhQl1.s 			page 1
  1274 01ac 00       		.byte	0
  1275 01ad 00       		.byte	0
  1276 01ae 06       		.uleb128 0x6
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cchLhQl1.s 			page 39
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccUTzjm7.s 			page 39
 
 
  1277 01af 23010000 		.4byte	.LASF28
@@ -2297,7 +2297,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cchLhQl1.s 			page 1
  1290 01d1 88010000 		.4byte	0x188
  1291 01d5 00       		.byte	0
  1292 01d6 11       		.uleb128 0x11
- 1293 01d7 23030000 		.4byte	.LASF29
+ 1293 01d7 7F030000 		.4byte	.LASF29
  1294 01db 01       		.byte	0x1
  1295 01dc 6D01     		.2byte	0x16d
  1296 01de 00000000 		.4byte	.LFB4
@@ -2321,7 +2321,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cchLhQl1.s 			page 1
  1314 020a 01       		.uleb128 0x1
  1315 020b 9C       		.byte	0x9c
  1316 020c 12       		.uleb128 0x12
- 1317 020d 61020000 		.4byte	.LASF33
+ 1317 020d BD020000 		.4byte	.LASF33
  1318 0211 01       		.byte	0x1
  1319 0212 C201     		.2byte	0x1c2
  1320 0214 83000000 		.4byte	0x83
@@ -2338,7 +2338,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cchLhQl1.s 			page 1
  1331 0232 8B010000 		.4byte	.LLST3
  1332 0236 14       		.uleb128 0x14
  1333 0237 16010000 		.4byte	.LASF32
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cchLhQl1.s 			page 40
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccUTzjm7.s 			page 40
 
 
  1334 023b 01       		.byte	0x1
@@ -2347,7 +2347,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cchLhQl1.s 			page 1
  1337 0242 D0010000 		.4byte	.LLST4
  1338 0246 00       		.byte	0
  1339 0247 12       		.uleb128 0x12
- 1340 0248 86030000 		.4byte	.LASF34
+ 1340 0248 E2030000 		.4byte	.LASF34
  1341 024c 01       		.byte	0x1
  1342 024d F801     		.2byte	0x1f8
  1343 024f 8F000000 		.4byte	0x8f
@@ -2357,13 +2357,13 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cchLhQl1.s 			page 1
  1347 025c 9C       		.byte	0x9c
  1348 025d 91020000 		.4byte	0x291
  1349 0261 13       		.uleb128 0x13
- 1350 0262 32030000 		.4byte	.LASF36
+ 1350 0262 8E030000 		.4byte	.LASF36
  1351 0266 01       		.byte	0x1
  1352 0267 F801     		.2byte	0x1f8
  1353 0269 83000000 		.4byte	0x83
  1354 026d 06020000 		.4byte	.LLST5
  1355 0271 14       		.uleb128 0x14
- 1356 0272 7F030000 		.4byte	.LASF37
+ 1356 0272 DB030000 		.4byte	.LASF37
  1357 0276 01       		.byte	0x1
  1358 0277 FA01     		.2byte	0x1fa
  1359 0279 83000000 		.4byte	0x83
@@ -2379,7 +2379,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cchLhQl1.s 			page 1
  1369 028f 00       		.byte	0
  1370 0290 00       		.byte	0
  1371 0291 0F       		.uleb128 0xf
- 1372 0292 8C020000 		.4byte	.LASF38
+ 1372 0292 E8020000 		.4byte	.LASF38
  1373 0296 01       		.byte	0x1
  1374 0297 2502     		.2byte	0x225
  1375 0299 00000000 		.4byte	.LFB9
@@ -2395,10 +2395,10 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cchLhQl1.s 			page 1
  1385 02b3 69020000 		.4byte	.LLST7
  1386 02b7 00       		.byte	0
  1387 02b8 0F       		.uleb128 0xf
- 1388 02b9 E9020000 		.4byte	.LASF40
+ 1388 02b9 45030000 		.4byte	.LASF40
  1389 02bd 01       		.byte	0x1
  1390 02be 5102     		.2byte	0x251
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cchLhQl1.s 			page 41
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccUTzjm7.s 			page 41
 
 
  1391 02c0 00000000 		.4byte	.LFB10
@@ -2407,14 +2407,14 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cchLhQl1.s 			page 1
  1394 02c9 9C       		.byte	0x9c
  1395 02ca DF020000 		.4byte	0x2df
  1396 02ce 13       		.uleb128 0x13
- 1397 02cf 3B020000 		.4byte	.LASF41
+ 1397 02cf 97020000 		.4byte	.LASF41
  1398 02d3 01       		.byte	0x1
  1399 02d4 5102     		.2byte	0x251
  1400 02d6 83000000 		.4byte	0x83
  1401 02da 8A020000 		.4byte	.LLST8
  1402 02de 00       		.byte	0
  1403 02df 0F       		.uleb128 0xf
- 1404 02e0 50020000 		.4byte	.LASF42
+ 1404 02e0 AC020000 		.4byte	.LASF42
  1405 02e4 01       		.byte	0x1
  1406 02e5 6602     		.2byte	0x266
  1407 02e7 00000000 		.4byte	.LFB11
@@ -2423,7 +2423,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cchLhQl1.s 			page 1
  1410 02f0 9C       		.byte	0x9c
  1411 02f1 06030000 		.4byte	0x306
  1412 02f5 13       		.uleb128 0x13
- 1413 02f6 CB020000 		.4byte	.LASF43
+ 1413 02f6 27030000 		.4byte	.LASF43
  1414 02fa 01       		.byte	0x1
  1415 02fb 6602     		.2byte	0x266
  1416 02fd 83000000 		.4byte	0x83
@@ -2458,14 +2458,14 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cchLhQl1.s 			page 1
  1445 0344 7C010000 		.4byte	.LASF39
  1446 0348 01       		.byte	0x1
  1447 0349 9502     		.2byte	0x295
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cchLhQl1.s 			page 42
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccUTzjm7.s 			page 42
 
 
  1448 034b 83000000 		.4byte	0x83
  1449 034f ED020000 		.4byte	.LLST11
  1450 0353 00       		.byte	0
  1451 0354 0F       		.uleb128 0xf
- 1452 0355 71030000 		.4byte	.LASF46
+ 1452 0355 CD030000 		.4byte	.LASF46
  1453 0359 01       		.byte	0x1
  1454 035a B102     		.2byte	0x2b1
  1455 035c 00000000 		.4byte	.LFB14
@@ -2474,13 +2474,13 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cchLhQl1.s 			page 1
  1458 0365 9C       		.byte	0x9c
  1459 0366 9A030000 		.4byte	0x39a
  1460 036a 13       		.uleb128 0x13
- 1461 036b 32030000 		.4byte	.LASF36
+ 1461 036b 8E030000 		.4byte	.LASF36
  1462 036f 01       		.byte	0x1
  1463 0370 B102     		.2byte	0x2b1
  1464 0372 83000000 		.4byte	0x83
  1465 0376 0E030000 		.4byte	.LLST12
  1466 037a 13       		.uleb128 0x13
- 1467 037b 4F030000 		.4byte	.LASF47
+ 1467 037b AB030000 		.4byte	.LASF47
  1468 037f 01       		.byte	0x1
  1469 0380 B102     		.2byte	0x2b1
  1470 0382 8F000000 		.4byte	0x8f
@@ -2496,7 +2496,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cchLhQl1.s 			page 1
  1480 0398 00       		.byte	0
  1481 0399 00       		.byte	0
  1482 039a 0F       		.uleb128 0xf
- 1483 039b B9020000 		.4byte	.LASF48
+ 1483 039b 15030000 		.4byte	.LASF48
  1484 039f 01       		.byte	0x1
  1485 03a0 D302     		.2byte	0x2d3
  1486 03a2 00000000 		.4byte	.LFB15
@@ -2505,7 +2505,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cchLhQl1.s 			page 1
  1489 03ab 9C       		.byte	0x9c
  1490 03ac E0030000 		.4byte	0x3e0
  1491 03b0 13       		.uleb128 0x13
- 1492 03b1 32030000 		.4byte	.LASF36
+ 1492 03b1 8E030000 		.4byte	.LASF36
  1493 03b5 01       		.byte	0x1
  1494 03b6 D302     		.2byte	0x2d3
  1495 03b8 83000000 		.4byte	0x83
@@ -2518,7 +2518,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cchLhQl1.s 			page 1
  1502 03cc 87030000 		.4byte	.LLST15
  1503 03d0 0B       		.uleb128 0xb
  1504 03d1 10000000 		.4byte	.LVL56
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cchLhQl1.s 			page 43
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccUTzjm7.s 			page 43
 
 
  1505 03d5 99050000 		.4byte	0x599
@@ -2530,7 +2530,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cchLhQl1.s 			page 1
  1511 03de 00       		.byte	0
  1512 03df 00       		.byte	0
  1513 03e0 15       		.uleb128 0x15
- 1514 03e1 D5020000 		.4byte	.LASF50
+ 1514 03e1 31030000 		.4byte	.LASF50
  1515 03e5 01       		.byte	0x1
  1516 03e6 F402     		.2byte	0x2f4
  1517 03e8 8F000000 		.4byte	0x8f
@@ -2540,19 +2540,19 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cchLhQl1.s 			page 1
  1521 03f5 9C       		.byte	0x9c
  1522 03f6 38040000 		.4byte	0x438
  1523 03fa 13       		.uleb128 0x13
- 1524 03fb 32030000 		.4byte	.LASF36
+ 1524 03fb 8E030000 		.4byte	.LASF36
  1525 03ff 01       		.byte	0x1
  1526 0400 F402     		.2byte	0x2f4
  1527 0402 83000000 		.4byte	0x83
  1528 0406 B7030000 		.4byte	.LLST16
  1529 040a 13       		.uleb128 0x13
- 1530 040b 56030000 		.4byte	.LASF51
+ 1530 040b B2030000 		.4byte	.LASF51
  1531 040f 01       		.byte	0x1
  1532 0410 F402     		.2byte	0x2f4
  1533 0412 8F000000 		.4byte	0x8f
  1534 0416 E3030000 		.4byte	.LLST17
  1535 041a 16       		.uleb128 0x16
- 1536 041b 1D020000 		.4byte	.LASF52
+ 1536 041b 79020000 		.4byte	.LASF52
  1537 041f 01       		.byte	0x1
  1538 0420 F602     		.2byte	0x2f6
  1539 0422 8F000000 		.4byte	0x8f
@@ -2578,17 +2578,17 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cchLhQl1.s 			page 1
  1559 044c 01       		.uleb128 0x1
  1560 044d 9C       		.byte	0x9c
  1561 044e 8E040000 		.4byte	0x48e
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cchLhQl1.s 			page 44
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccUTzjm7.s 			page 44
 
 
  1562 0452 13       		.uleb128 0x13
- 1563 0453 32030000 		.4byte	.LASF36
+ 1563 0453 8E030000 		.4byte	.LASF36
  1564 0457 01       		.byte	0x1
  1565 0458 2A03     		.2byte	0x32a
  1566 045a 83000000 		.4byte	0x83
  1567 045e 0F040000 		.4byte	.LLST18
  1568 0462 13       		.uleb128 0x13
- 1569 0463 56030000 		.4byte	.LASF51
+ 1569 0463 B2030000 		.4byte	.LASF51
  1570 0467 01       		.byte	0x1
  1571 0468 2A03     		.2byte	0x32a
  1572 046a 8F000000 		.4byte	0x8f
@@ -2619,13 +2619,13 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cchLhQl1.s 			page 1
  1597 04a3 9C       		.byte	0x9c
  1598 04a4 E6040000 		.4byte	0x4e6
  1599 04a8 13       		.uleb128 0x13
- 1600 04a9 32030000 		.4byte	.LASF36
+ 1600 04a9 8E030000 		.4byte	.LASF36
  1601 04ad 01       		.byte	0x1
  1602 04ae 5703     		.2byte	0x357
  1603 04b0 83000000 		.4byte	0x83
  1604 04b4 67040000 		.4byte	.LLST20
  1605 04b8 13       		.uleb128 0x13
- 1606 04b9 56030000 		.4byte	.LASF51
+ 1606 04b9 B2030000 		.4byte	.LASF51
  1607 04bd 01       		.byte	0x1
  1608 04be 5703     		.2byte	0x357
  1609 04c0 8F000000 		.4byte	0x8f
@@ -2638,7 +2638,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cchLhQl1.s 			page 1
  1616 04d4 01       		.uleb128 0x1
  1617 04d5 50       		.byte	0x50
  1618 04d6 0B       		.uleb128 0xb
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cchLhQl1.s 			page 45
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccUTzjm7.s 			page 45
 
 
  1619 04d7 10000000 		.4byte	.LVL76
@@ -2660,7 +2660,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cchLhQl1.s 			page 1
  1635 04f6 0E       		.uleb128 0xe
  1636 04f7 83000000 		.4byte	0x83
  1637 04fb 08       		.uleb128 0x8
- 1638 04fc 3C030000 		.4byte	.LASF56
+ 1638 04fc 98030000 		.4byte	.LASF56
  1639 0500 01       		.byte	0x1
  1640 0501 21       		.byte	0x21
  1641 0502 0C050000 		.4byte	0x50c
@@ -2687,7 +2687,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cchLhQl1.s 			page 1
  1662 0532 05       		.uleb128 0x5
  1663 0533 8F000000 		.4byte	0x8f
  1664 0537 18       		.uleb128 0x18
- 1665 0538 0E030000 		.4byte	.LASF58
+ 1665 0538 6A030000 		.4byte	.LASF58
  1666 053c 01       		.byte	0x1
  1667 053d 19       		.byte	0x19
  1668 053e 48050000 		.4byte	0x548
@@ -2698,7 +2698,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cchLhQl1.s 			page 1
  1673 0549 22050000 		.4byte	0x522
  1674 054d 0C       		.uleb128 0xc
  1675 054e 5D050000 		.4byte	0x55d
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cchLhQl1.s 			page 46
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccUTzjm7.s 			page 46
 
 
  1676 0552 5D050000 		.4byte	0x55d
@@ -2719,8 +2719,8 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cchLhQl1.s 			page 1
  1691 0573 05       		.uleb128 0x5
  1692 0574 4D050000 		.4byte	0x54d
  1693 0578 19       		.uleb128 0x19
- 1694 0579 7B020000 		.4byte	.LASF60
- 1695 057d 7B020000 		.4byte	.LASF60
+ 1694 0579 D7020000 		.4byte	.LASF60
+ 1695 057d D7020000 		.4byte	.LASF60
  1696 0581 03       		.byte	0x3
  1697 0582 C0       		.byte	0xc0
  1698 0583 19       		.uleb128 0x19
@@ -2734,8 +2734,8 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cchLhQl1.s 			page 1
  1706 0597 03       		.byte	0x3
  1707 0598 DA       		.byte	0xda
  1708 0599 19       		.uleb128 0x19
- 1709 059a F9020000 		.4byte	.LASF63
- 1710 059e F9020000 		.4byte	.LASF63
+ 1709 059a 55030000 		.4byte	.LASF63
+ 1710 059e 55030000 		.4byte	.LASF63
  1711 05a2 03       		.byte	0x3
  1712 05a3 E7       		.byte	0xe7
  1713 05a4 00       		.byte	0
@@ -2758,7 +2758,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cchLhQl1.s 			page 1
  1730 000e 01       		.uleb128 0x1
  1731 000f 10       		.uleb128 0x10
  1732 0010 17       		.uleb128 0x17
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cchLhQl1.s 			page 47
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccUTzjm7.s 			page 47
 
 
  1733 0011 00       		.byte	0
@@ -2818,7 +2818,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cchLhQl1.s 			page 1
  1787 0047 0B       		.uleb128 0xb
  1788 0048 27       		.uleb128 0x27
  1789 0049 19       		.uleb128 0x19
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cchLhQl1.s 			page 48
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccUTzjm7.s 			page 48
 
 
  1790 004a 11       		.uleb128 0x11
@@ -2878,7 +2878,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cchLhQl1.s 			page 1
  1844 0083 8A8201   		.uleb128 0x410a
  1845 0086 00       		.byte	0
  1846 0087 02       		.uleb128 0x2
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cchLhQl1.s 			page 49
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccUTzjm7.s 			page 49
 
 
  1847 0088 18       		.uleb128 0x18
@@ -2938,7 +2938,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cchLhQl1.s 			page 1
  1901 00c1 12       		.uleb128 0x12
  1902 00c2 06       		.uleb128 0x6
  1903 00c3 40       		.uleb128 0x40
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cchLhQl1.s 			page 50
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccUTzjm7.s 			page 50
 
 
  1904 00c4 18       		.uleb128 0x18
@@ -2998,7 +2998,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cchLhQl1.s 			page 1
  1958 00fe 11       		.uleb128 0x11
  1959 00ff 01       		.uleb128 0x1
  1960 0100 12       		.uleb128 0x12
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cchLhQl1.s 			page 51
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccUTzjm7.s 			page 51
 
 
  1961 0101 06       		.uleb128 0x6
@@ -3058,7 +3058,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cchLhQl1.s 			page 1
  2015 0138 11       		.uleb128 0x11
  2016 0139 01       		.uleb128 0x1
  2017 013a 12       		.uleb128 0x12
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cchLhQl1.s 			page 52
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccUTzjm7.s 			page 52
 
 
  2018 013b 06       		.uleb128 0x6
@@ -3118,7 +3118,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cchLhQl1.s 			page 1
  2072 0172 19       		.uleb128 0x19
  2073 0173 2E       		.uleb128 0x2e
  2074 0174 00       		.byte	0
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cchLhQl1.s 			page 53
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccUTzjm7.s 			page 53
 
 
  2075 0175 3F       		.uleb128 0x3f
@@ -3178,7 +3178,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cchLhQl1.s 			page 1
  2129 0061 72       		.byte	0x72
  2130 0062 00       		.sleb128 0
  2131 0063 32       		.byte	0x32
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cchLhQl1.s 			page 54
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccUTzjm7.s 			page 54
 
 
  2132 0064 24       		.byte	0x24
@@ -3238,7 +3238,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cchLhQl1.s 			page 1
  2186 00b5 72       		.byte	0x72
  2187 00b6 00       		.sleb128 0
  2188 00b7 03       		.byte	0x3
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cchLhQl1.s 			page 55
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccUTzjm7.s 			page 55
 
 
  2189 00b8 10000000 		.4byte	.LANCHOR0+16
@@ -3298,7 +3298,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cchLhQl1.s 			page 1
  2243 010b 72       		.byte	0x72
  2244 010c 00       		.sleb128 0
  2245 010d 32       		.byte	0x32
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cchLhQl1.s 			page 56
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccUTzjm7.s 			page 56
 
 
  2246 010e 24       		.byte	0x24
@@ -3358,7 +3358,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cchLhQl1.s 			page 1
  2300 0161 72       		.byte	0x72
  2301 0162 00       		.sleb128 0
  2302 0163 03       		.byte	0x3
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cchLhQl1.s 			page 57
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccUTzjm7.s 			page 57
 
 
  2303 0164 10000000 		.4byte	.LANCHOR0+16
@@ -3418,7 +3418,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cchLhQl1.s 			page 1
  2357 01e0 20000000 		.4byte	.LVL30
  2358 01e4 0100     		.2byte	0x1
  2359 01e6 50       		.byte	0x50
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cchLhQl1.s 			page 58
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccUTzjm7.s 			page 58
 
 
  2360 01e7 20000000 		.4byte	.LVL30
@@ -3478,7 +3478,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cchLhQl1.s 			page 1
  2414 0271 0100     		.2byte	0x1
  2415 0273 50       		.byte	0x50
  2416 0274 04000000 		.4byte	.LVL41
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cchLhQl1.s 			page 59
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccUTzjm7.s 			page 59
 
 
  2417 0278 10000000 		.4byte	.LFE9
@@ -3538,7 +3538,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cchLhQl1.s 			page 1
  2471 02f7 50       		.byte	0x50
  2472 02f8 04000000 		.4byte	.LVL49
  2473 02fc 10000000 		.4byte	.LFE13
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cchLhQl1.s 			page 60
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccUTzjm7.s 			page 60
 
 
  2474 0300 0400     		.2byte	0x4
@@ -3598,7 +3598,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cchLhQl1.s 			page 1
  2528 037e 9F       		.byte	0x9f
  2529 037f 00000000 		.4byte	0
  2530 0383 00000000 		.4byte	0
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cchLhQl1.s 			page 61
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccUTzjm7.s 			page 61
 
 
  2531              	.LLST15:
@@ -3658,7 +3658,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cchLhQl1.s 			page 1
  2585 0404 0100     		.2byte	0x1
  2586 0406 51       		.byte	0x51
  2587 0407 00000000 		.4byte	0
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cchLhQl1.s 			page 62
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccUTzjm7.s 			page 62
 
 
  2588 040b 00000000 		.4byte	0
@@ -3718,7 +3718,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cchLhQl1.s 			page 1
  2642 048f 00000000 		.4byte	0
  2643              	.LLST21:
  2644 0493 00000000 		.4byte	.LVL74
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cchLhQl1.s 			page 63
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccUTzjm7.s 			page 63
 
 
  2645 0497 0F000000 		.4byte	.LVL76-1
@@ -3778,7 +3778,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cchLhQl1.s 			page 1
  2699 0088 00000000 		.4byte	.LFB16
  2700 008c 5C000000 		.4byte	.LFE16-.LFB16
  2701 0090 00000000 		.4byte	.LFB17
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cchLhQl1.s 			page 64
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccUTzjm7.s 			page 64
 
 
  2702 0094 40000000 		.4byte	.LFE17-.LFB17
@@ -3838,7 +3838,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cchLhQl1.s 			page 1
  2751      313600
  2752              	.LASF49:
  2753 0007 61646347 		.ascii	"adcGain\000"
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cchLhQl1.s 			page 65
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccUTzjm7.s 			page 65
 
 
  2753      61696E00 
@@ -3898,7 +3898,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cchLhQl1.s 			page 1
  2773 010a 7369676E 		.ascii	"signed char\000"
  2773      65642063 
  2773      68617200 
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cchLhQl1.s 			page 66
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccUTzjm7.s 			page 66
 
 
  2774              	.LASF32:
@@ -3958,7 +3958,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cchLhQl1.s 			page 1
  2801      00
  2802              	.LASF8:
  2803 01a6 756E7369 		.ascii	"unsigned int\000"
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cchLhQl1.s 			page 67
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccUTzjm7.s 			page 67
 
 
  2803      676E6564 
@@ -4001,161 +4001,161 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cchLhQl1.s 			page 1
  2819      53746F70 
  2819      436F6E76 
  2819      65727400 
- 2820              	.LASF52:
- 2821 021d 6D566F6C 		.ascii	"mVolts\000"
- 2821      747300
- 2822              	.LASF19:
- 2823 0224 72656733 		.ascii	"reg32\000"
- 2823      3200
- 2824              	.LASF14:
- 2825 022a 666C6F61 		.ascii	"float32\000"
- 2825      74333200 
- 2826              	.LASF21:
- 2827 0232 73697A65 		.ascii	"sizetype\000"
- 2827      74797065 
- 2827      00
- 2828              	.LASF41:
- 2829 023b 6C6F774C 		.ascii	"lowLimit\000"
- 2829      696D6974 
- 2829      00
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cchLhQl1.s 			page 68
+ 2820              	.LASF66:
+ 2821 021d 433A5C55 		.ascii	"C:\\Users\\JamesN4\\Documents\\PSoC Creator\\Hybrid"
+ 2821      73657273 
+ 2821      5C4A616D 
+ 2821      65734E34 
+ 2821      5C446F63 
+ 2822 024b 456E636F 		.ascii	"EncoderCY8CKIT43\\firmware\\HybridEncoder.cydsn\000"
+ 2822      64657243 
+ 2822      5938434B 
+ 2822      49543433 
+ 2822      5C666972 
+ 2823              	.LASF52:
+ 2824 0279 6D566F6C 		.ascii	"mVolts\000"
+ 2824      747300
+ 2825              	.LASF19:
+ 2826 0280 72656733 		.ascii	"reg32\000"
+ 2826      3200
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccUTzjm7.s 			page 68
 
 
- 2830              	.LASF20:
- 2831 0244 6C6F6E67 		.ascii	"long double\000"
- 2831      20646F75 
- 2831      626C6500 
- 2832              	.LASF42:
- 2833 0250 4144435F 		.ascii	"ADC_SetHighLimit\000"
- 2833      53657448 
- 2833      6967684C 
- 2833      696D6974 
- 2833      00
- 2834              	.LASF33:
- 2835 0261 4144435F 		.ascii	"ADC_IsEndConversion\000"
- 2835      4973456E 
- 2835      64436F6E 
- 2835      76657273 
- 2835      696F6E00 
- 2836              	.LASF17:
- 2837 0275 696E7436 		.ascii	"int64\000"
- 2837      3400
- 2838              	.LASF60:
- 2839 027b 4379496E 		.ascii	"CyIntSetPriority\000"
- 2839      74536574 
- 2839      5072696F 
- 2839      72697479 
- 2839      00
- 2840              	.LASF38:
- 2841 028c 4144435F 		.ascii	"ADC_SetChanMask\000"
- 2841      53657443 
- 2841      68616E4D 
- 2841      61736B00 
- 2842              	.LASF65:
- 2843 029c 47656E65 		.ascii	"Generated_Source\\PSoC4\\ADC.c\000"
- 2843      72617465 
- 2843      645F536F 
- 2843      75726365 
- 2843      5C50536F 
- 2844              	.LASF48:
- 2845 02b9 4144435F 		.ascii	"ADC_SetGain\000"
- 2845      53657447 
- 2845      61696E00 
- 2846              	.LASF15:
- 2847 02c5 666C6F61 		.ascii	"float\000"
- 2847      7400
- 2848              	.LASF43:
- 2849 02cb 68696768 		.ascii	"highLimit\000"
- 2849      4C696D69 
- 2849      7400
- 2850              	.LASF50:
- 2851 02d5 4144435F 		.ascii	"ADC_CountsTo_mVolts\000"
- 2851      436F756E 
- 2851      7473546F 
- 2851      5F6D566F 
- 2851      6C747300 
- 2852              	.LASF40:
- 2853 02e9 4144435F 		.ascii	"ADC_SetLowLimit\000"
- 2853      5365744C 
- 2853      6F774C69 
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cchLhQl1.s 			page 69
+ 2827              	.LASF14:
+ 2828 0286 666C6F61 		.ascii	"float32\000"
+ 2828      74333200 
+ 2829              	.LASF21:
+ 2830 028e 73697A65 		.ascii	"sizetype\000"
+ 2830      74797065 
+ 2830      00
+ 2831              	.LASF41:
+ 2832 0297 6C6F774C 		.ascii	"lowLimit\000"
+ 2832      696D6974 
+ 2832      00
+ 2833              	.LASF20:
+ 2834 02a0 6C6F6E67 		.ascii	"long double\000"
+ 2834      20646F75 
+ 2834      626C6500 
+ 2835              	.LASF42:
+ 2836 02ac 4144435F 		.ascii	"ADC_SetHighLimit\000"
+ 2836      53657448 
+ 2836      6967684C 
+ 2836      696D6974 
+ 2836      00
+ 2837              	.LASF33:
+ 2838 02bd 4144435F 		.ascii	"ADC_IsEndConversion\000"
+ 2838      4973456E 
+ 2838      64436F6E 
+ 2838      76657273 
+ 2838      696F6E00 
+ 2839              	.LASF17:
+ 2840 02d1 696E7436 		.ascii	"int64\000"
+ 2840      3400
+ 2841              	.LASF60:
+ 2842 02d7 4379496E 		.ascii	"CyIntSetPriority\000"
+ 2842      74536574 
+ 2842      5072696F 
+ 2842      72697479 
+ 2842      00
+ 2843              	.LASF38:
+ 2844 02e8 4144435F 		.ascii	"ADC_SetChanMask\000"
+ 2844      53657443 
+ 2844      68616E4D 
+ 2844      61736B00 
+ 2845              	.LASF65:
+ 2846 02f8 47656E65 		.ascii	"Generated_Source\\PSoC4\\ADC.c\000"
+ 2846      72617465 
+ 2846      645F536F 
+ 2846      75726365 
+ 2846      5C50536F 
+ 2847              	.LASF48:
+ 2848 0315 4144435F 		.ascii	"ADC_SetGain\000"
+ 2848      53657447 
+ 2848      61696E00 
+ 2849              	.LASF15:
+ 2850 0321 666C6F61 		.ascii	"float\000"
+ 2850      7400
+ 2851              	.LASF43:
+ 2852 0327 68696768 		.ascii	"highLimit\000"
+ 2852      4C696D69 
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccUTzjm7.s 			page 69
 
 
- 2853      6D697400 
- 2854              	.LASF63:
- 2855 02f9 43794861 		.ascii	"CyHalt\000"
- 2855      6C7400
- 2856              	.LASF1:
- 2857 0300 756E7369 		.ascii	"unsigned char\000"
- 2857      676E6564 
- 2857      20636861 
- 2857      7200
- 2858              	.LASF58:
- 2859 030e 4144435F 		.ascii	"ADC_offset\000"
- 2859      6F666673 
- 2859      657400
- 2860              	.LASF2:
- 2861 0319 73686F72 		.ascii	"short int\000"
- 2861      7420696E 
- 2861      7400
- 2862              	.LASF29:
- 2863 0323 4144435F 		.ascii	"ADC_Stop\000"
- 2863      53746F70 
- 2863      00
- 2864              	.LASF22:
- 2865 032c 63684E75 		.ascii	"chNum\000"
- 2865      6D00
- 2866              	.LASF36:
- 2867 0332 6368616E 		.ascii	"chan\000"
- 2867      00
- 2868              	.LASF18:
- 2869 0337 63686172 		.ascii	"char\000"
- 2869      00
- 2870              	.LASF56:
- 2871 033c 4144435F 		.ascii	"ADC_channelsConfig\000"
- 2871      6368616E 
- 2871      6E656C73 
- 2871      436F6E66 
- 2871      696700
- 2872              	.LASF47:
- 2873 034f 6F666673 		.ascii	"offset\000"
- 2873      657400
- 2874              	.LASF51:
- 2875 0356 61646343 		.ascii	"adcCounts\000"
- 2875      6F756E74 
- 2875      7300
- 2876              	.LASF27:
- 2877 0360 4144435F 		.ascii	"ADC_Enable\000"
- 2877      456E6162 
- 2877      6C6500
- 2878              	.LASF12:
- 2879 036b 696E7431 		.ascii	"int16\000"
- 2879      3600
- 2880              	.LASF46:
- 2881 0371 4144435F 		.ascii	"ADC_SetOffset\000"
- 2881      5365744F 
- 2881      66667365 
- 2881      7400
- 2882              	.LASF37:
- 2883 037f 72657375 		.ascii	"result\000"
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cchLhQl1.s 			page 70
+ 2852      7400
+ 2853              	.LASF50:
+ 2854 0331 4144435F 		.ascii	"ADC_CountsTo_mVolts\000"
+ 2854      436F756E 
+ 2854      7473546F 
+ 2854      5F6D566F 
+ 2854      6C747300 
+ 2855              	.LASF40:
+ 2856 0345 4144435F 		.ascii	"ADC_SetLowLimit\000"
+ 2856      5365744C 
+ 2856      6F774C69 
+ 2856      6D697400 
+ 2857              	.LASF63:
+ 2858 0355 43794861 		.ascii	"CyHalt\000"
+ 2858      6C7400
+ 2859              	.LASF1:
+ 2860 035c 756E7369 		.ascii	"unsigned char\000"
+ 2860      676E6564 
+ 2860      20636861 
+ 2860      7200
+ 2861              	.LASF58:
+ 2862 036a 4144435F 		.ascii	"ADC_offset\000"
+ 2862      6F666673 
+ 2862      657400
+ 2863              	.LASF2:
+ 2864 0375 73686F72 		.ascii	"short int\000"
+ 2864      7420696E 
+ 2864      7400
+ 2865              	.LASF29:
+ 2866 037f 4144435F 		.ascii	"ADC_Stop\000"
+ 2866      53746F70 
+ 2866      00
+ 2867              	.LASF22:
+ 2868 0388 63684E75 		.ascii	"chNum\000"
+ 2868      6D00
+ 2869              	.LASF36:
+ 2870 038e 6368616E 		.ascii	"chan\000"
+ 2870      00
+ 2871              	.LASF18:
+ 2872 0393 63686172 		.ascii	"char\000"
+ 2872      00
+ 2873              	.LASF56:
+ 2874 0398 4144435F 		.ascii	"ADC_channelsConfig\000"
+ 2874      6368616E 
+ 2874      6E656C73 
+ 2874      436F6E66 
+ 2874      696700
+ 2875              	.LASF47:
+ 2876 03ab 6F666673 		.ascii	"offset\000"
+ 2876      657400
+ 2877              	.LASF51:
+ 2878 03b2 61646343 		.ascii	"adcCounts\000"
+ 2878      6F756E74 
+ 2878      7300
+ 2879              	.LASF27:
+ 2880 03bc 4144435F 		.ascii	"ADC_Enable\000"
+ 2880      456E6162 
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccUTzjm7.s 			page 70
 
 
- 2883      6C7400
- 2884              	.LASF34:
- 2885 0386 4144435F 		.ascii	"ADC_GetResult16\000"
- 2885      47657452 
- 2885      6573756C 
- 2885      74313600 
- 2886              	.LASF66:
- 2887 0396 433A5C55 		.ascii	"C:\\Users\\JamesN4\\Documents\\PSoC Creator\\Hybrid"
- 2887      73657273 
- 2887      5C4A616D 
- 2887      65734E34 
- 2887      5C446F63 
- 2888 03c4 456E636F 		.ascii	"EncoderCY8CKIT43\\HybridEncoder.cydsn\000"
- 2888      64657243 
- 2888      5938434B 
- 2888      49543433 
- 2888      5C487962 
+ 2880      6C6500
+ 2881              	.LASF12:
+ 2882 03c7 696E7431 		.ascii	"int16\000"
+ 2882      3600
+ 2883              	.LASF46:
+ 2884 03cd 4144435F 		.ascii	"ADC_SetOffset\000"
+ 2884      5365744F 
+ 2884      66667365 
+ 2884      7400
+ 2885              	.LASF37:
+ 2886 03db 72657375 		.ascii	"result\000"
+ 2886      6C7400
+ 2887              	.LASF34:
+ 2888 03e2 4144435F 		.ascii	"ADC_GetResult16\000"
+ 2888      47657452 
+ 2888      6573756C 
+ 2888      74313600 
  2889              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran

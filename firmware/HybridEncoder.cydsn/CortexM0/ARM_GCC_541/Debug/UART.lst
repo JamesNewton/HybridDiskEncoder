@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccvBcfnm.s 			page 1
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc6psuPc.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccvBcfnm.s 			page 1
   29:Generated_Source\PSoC4/UART.c ****     #include "UART_SPI_UART_PVT.h"
   30:Generated_Source\PSoC4/UART.c **** #endif /* (UART_SCB_MODE_SPI_INC || UART_SCB_MODE_UART_INC) */
   31:Generated_Source\PSoC4/UART.c **** 
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccvBcfnm.s 			page 2
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc6psuPc.s 			page 2
 
 
   32:Generated_Source\PSoC4/UART.c **** 
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccvBcfnm.s 			page 1
   86:Generated_Source\PSoC4/UART.c ****     /** This global variable stores TX interrupt sources after 
   87:Generated_Source\PSoC4/UART.c ****     * UART_Stop() is called. Only these TX interrupt sources 
   88:Generated_Source\PSoC4/UART.c ****     * will be restored on a subsequent UART_Enable() call.
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccvBcfnm.s 			page 3
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc6psuPc.s 			page 3
 
 
   89:Generated_Source\PSoC4/UART.c ****     */
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccvBcfnm.s 			page 1
  143:Generated_Source\PSoC4/UART.c **** 
  144:Generated_Source\PSoC4/UART.c **** #elif (UART_SCB_MODE_EZI2C_CONST_CFG)
  145:Generated_Source\PSoC4/UART.c ****     UART_EzI2CInit();
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccvBcfnm.s 			page 4
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc6psuPc.s 			page 4
 
 
  146:Generated_Source\PSoC4/UART.c **** 
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccvBcfnm.s 			page 1
  200:Generated_Source\PSoC4/UART.c **** *  After this function call, the component is enabled and ready for operation.
  201:Generated_Source\PSoC4/UART.c **** *  When configuration is set to "Unconfigured SCB", the component must first be
  202:Generated_Source\PSoC4/UART.c **** *  initialized to operate in one of the following configurations: I2C, SPI, UART
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccvBcfnm.s 			page 5
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc6psuPc.s 			page 5
 
 
  203:Generated_Source\PSoC4/UART.c **** *  or EZI2C. Otherwise this function does not enable the component.
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccvBcfnm.s 			page 1
  257:Generated_Source\PSoC4/UART.c ****     * is disabled.
  258:Generated_Source\PSoC4/UART.c ****     */
  259:Generated_Source\PSoC4/UART.c ****     UART_SetTxInterruptMode(UART_NO_INTR_SOURCES);
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccvBcfnm.s 			page 6
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc6psuPc.s 			page 6
 
 
  260:Generated_Source\PSoC4/UART.c **** 
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccvBcfnm.s 			page 1
  314:Generated_Source\PSoC4/UART.c **** }
  315:Generated_Source\PSoC4/UART.c **** 
  316:Generated_Source\PSoC4/UART.c **** 
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccvBcfnm.s 			page 7
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc6psuPc.s 			page 7
 
 
  317:Generated_Source\PSoC4/UART.c **** #if (UART_SCB_IRQ_INTERNAL)
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccvBcfnm.s 			page 1
  371:Generated_Source\PSoC4/UART.c **** }
  372:Generated_Source\PSoC4/UART.c **** 
  373:Generated_Source\PSoC4/UART.c **** 
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccvBcfnm.s 			page 8
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc6psuPc.s 			page 8
 
 
  374:Generated_Source\PSoC4/UART.c **** /*******************************************************************************
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccvBcfnm.s 			page 1
   46              		.code	16
   47              		.thumb_func
   48              		.type	UART_ScbModeStop, %function
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccvBcfnm.s 			page 9
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc6psuPc.s 			page 9
 
 
   49              	UART_ScbModeStop:
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccvBcfnm.s 			page 1
  453:Generated_Source\PSoC4/UART.c ****     UART_UartStop();
   59              		.loc 1 453 0
   60 0002 FFF7FEFF 		bl	UART_UartStop
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccvBcfnm.s 			page 10
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc6psuPc.s 			page 10
 
 
   61              	.LVL1:
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccvBcfnm.s 			page 1
  106              		.cfi_def_cfa_offset 8
  107              		.cfi_offset 4, -8
  108              		.cfi_offset 14, -4
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccvBcfnm.s 			page 11
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc6psuPc.s 			page 11
 
 
  185:Generated_Source\PSoC4/UART.c **** 
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccvBcfnm.s 			page 1
  156 0012 1A70     		strb	r2, [r3]
  157              	.L8:
  218:Generated_Source\PSoC4/UART.c **** }
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccvBcfnm.s 			page 12
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc6psuPc.s 			page 12
 
 
  158              		.loc 1 218 0
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccvBcfnm.s 			page 1
  206 0018 00002740 		.word	1076297728
  207 001c 880F2740 		.word	1076301704
  208              		.cfi_endproc
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccvBcfnm.s 			page 13
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc6psuPc.s 			page 13
 
 
  209              	.LFE4:
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccvBcfnm.s 			page 1
  257              	.LFB6:
  305:Generated_Source\PSoC4/UART.c ****     uint32 txFifoCtrl;
  258              		.loc 1 305 0
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccvBcfnm.s 			page 14
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc6psuPc.s 			page 14
 
 
  259              		.cfi_startproc
@@ -838,31 +838,31 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccvBcfnm.s 			page 1
  308              	.Ldebug_info0:
  309 0000 36020000 		.4byte	0x236
  310 0004 0400     		.2byte	0x4
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccvBcfnm.s 			page 15
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc6psuPc.s 			page 15
 
 
  311 0006 00000000 		.4byte	.Ldebug_abbrev0
  312 000a 04       		.byte	0x4
  313 000b 01       		.uleb128 0x1
- 314 000c 61010000 		.4byte	.LASF34
+ 314 000c BD010000 		.4byte	.LASF34
  315 0010 0C       		.byte	0xc
- 316 0011 EF000000 		.4byte	.LASF35
- 317 0015 55020000 		.4byte	.LASF36
+ 316 0011 4B010000 		.4byte	.LASF35
+ 317 0015 65000000 		.4byte	.LASF36
  318 0019 00000000 		.4byte	.Ldebug_ranges0+0
  319 001d 00000000 		.4byte	0
  320 0021 00000000 		.4byte	.Ldebug_line0
  321 0025 02       		.uleb128 0x2
  322 0026 01       		.byte	0x1
  323 0027 06       		.byte	0x6
- 324 0028 49020000 		.4byte	.LASF0
+ 324 0028 A5020000 		.4byte	.LASF0
  325 002c 02       		.uleb128 0x2
  326 002d 01       		.byte	0x1
  327 002e 08       		.byte	0x8
- 328 002f 84000000 		.4byte	.LASF1
+ 328 002f E0000000 		.4byte	.LASF1
  329 0033 02       		.uleb128 0x2
  330 0034 02       		.byte	0x2
  331 0035 05       		.byte	0x5
- 332 0036 1F020000 		.4byte	.LASF2
+ 332 0036 7B020000 		.4byte	.LASF2
  333 003a 02       		.uleb128 0x2
  334 003b 02       		.byte	0x2
  335 003c 07       		.byte	0x7
@@ -870,19 +870,19 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccvBcfnm.s 			page 1
  337 0041 02       		.uleb128 0x2
  338 0042 04       		.byte	0x4
  339 0043 05       		.byte	0x5
- 340 0044 34020000 		.4byte	.LASF4
+ 340 0044 90020000 		.4byte	.LASF4
  341 0048 02       		.uleb128 0x2
  342 0049 04       		.byte	0x4
  343 004a 07       		.byte	0x7
- 344 004b B0000000 		.4byte	.LASF5
+ 344 004b 0C010000 		.4byte	.LASF5
  345 004f 02       		.uleb128 0x2
  346 0050 08       		.byte	0x8
  347 0051 05       		.byte	0x5
- 348 0052 F8010000 		.4byte	.LASF6
+ 348 0052 54020000 		.4byte	.LASF6
  349 0056 02       		.uleb128 0x2
  350 0057 08       		.byte	0x8
  351 0058 07       		.byte	0x7
- 352 0059 40010000 		.4byte	.LASF7
+ 352 0059 9C010000 		.4byte	.LASF7
  353 005d 03       		.uleb128 0x3
  354 005e 04       		.byte	0x4
  355 005f 05       		.byte	0x5
@@ -890,37 +890,37 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccvBcfnm.s 			page 1
  357 0064 02       		.uleb128 0x2
  358 0065 04       		.byte	0x4
  359 0066 07       		.byte	0x7
- 360 0067 25010000 		.4byte	.LASF8
+ 360 0067 81010000 		.4byte	.LASF8
  361 006b 04       		.uleb128 0x4
- 362 006c D0000000 		.4byte	.LASF9
+ 362 006c 2C010000 		.4byte	.LASF9
  363 0070 02       		.byte	0x2
  364 0071 D201     		.2byte	0x1d2
  365 0073 2C000000 		.4byte	0x2c
  366 0077 04       		.uleb128 0x4
- 367 0078 E8000000 		.4byte	.LASF10
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccvBcfnm.s 			page 16
+ 367 0078 44010000 		.4byte	.LASF10
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc6psuPc.s 			page 16
 
 
  368 007c 02       		.byte	0x2
  369 007d D301     		.2byte	0x1d3
  370 007f 3A000000 		.4byte	0x3a
  371 0083 04       		.uleb128 0x4
- 372 0084 0D010000 		.4byte	.LASF11
+ 372 0084 69010000 		.4byte	.LASF11
  373 0088 02       		.byte	0x2
  374 0089 D401     		.2byte	0x1d4
  375 008b 48000000 		.4byte	0x48
  376 008f 02       		.uleb128 0x2
  377 0090 04       		.byte	0x4
  378 0091 04       		.byte	0x4
- 379 0092 72000000 		.4byte	.LASF12
+ 379 0092 CE000000 		.4byte	.LASF12
  380 0096 02       		.uleb128 0x2
  381 0097 08       		.byte	0x8
  382 0098 04       		.byte	0x4
- 383 0099 E1000000 		.4byte	.LASF13
+ 383 0099 3D010000 		.4byte	.LASF13
  384 009d 02       		.uleb128 0x2
  385 009e 01       		.byte	0x1
  386 009f 08       		.byte	0x8
- 387 00a0 1A020000 		.4byte	.LASF14
+ 387 00a0 76020000 		.4byte	.LASF14
  388 00a4 04       		.uleb128 0x4
  389 00a5 00000000 		.4byte	.LASF15
  390 00a9 02       		.byte	0x2
@@ -931,11 +931,11 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccvBcfnm.s 			page 1
  395 00b5 02       		.uleb128 0x2
  396 00b6 08       		.byte	0x8
  397 00b7 04       		.byte	0x4
- 398 00b8 3D020000 		.4byte	.LASF16
+ 398 00b8 99020000 		.4byte	.LASF16
  399 00bc 02       		.uleb128 0x2
  400 00bd 04       		.byte	0x4
  401 00be 07       		.byte	0x7
- 402 00bf EF010000 		.4byte	.LASF17
+ 402 00bf 4B020000 		.4byte	.LASF17
  403 00c3 06       		.uleb128 0x6
  404 00c4 3B000000 		.4byte	.LASF18
  405 00c8 01       		.byte	0x1
@@ -950,7 +950,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccvBcfnm.s 			page 1
  414 00de 18020000 		.4byte	0x218
  415 00e2 00       		.byte	0
  416 00e3 06       		.uleb128 0x6
- 417 00e4 14010000 		.4byte	.LASF19
+ 417 00e4 70010000 		.4byte	.LASF19
  418 00e8 01       		.byte	0x1
  419 00e9 A201     		.2byte	0x1a2
  420 00eb 00000000 		.4byte	.LFB9
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccvBcfnm.s 			page 1
  422 00f3 01       		.uleb128 0x1
  423 00f4 9C       		.byte	0x9c
  424 00f5 03010000 		.4byte	0x103
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccvBcfnm.s 			page 17
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc6psuPc.s 			page 17
 
 
  425 00f9 07       		.uleb128 0x7
@@ -966,7 +966,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccvBcfnm.s 			page 1
  427 00fe 23020000 		.4byte	0x223
  428 0102 00       		.byte	0
  429 0103 08       		.uleb128 0x8
- 430 0104 92000000 		.4byte	.LASF20
+ 430 0104 EE000000 		.4byte	.LASF20
  431 0108 01       		.byte	0x1
  432 0109 7B       		.byte	0x7b
  433 010a 00000000 		.4byte	.LFB1
@@ -979,7 +979,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccvBcfnm.s 			page 1
  440 011d 2E020000 		.4byte	0x22e
  441 0121 00       		.byte	0
  442 0122 08       		.uleb128 0x8
- 443 0123 78000000 		.4byte	.LASF21
+ 443 0123 D4000000 		.4byte	.LASF21
  444 0127 01       		.byte	0x1
  445 0128 AB       		.byte	0xab
  446 0129 00000000 		.4byte	.LFB2
@@ -992,7 +992,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccvBcfnm.s 			page 1
  453 013c C3000000 		.4byte	0xc3
  454 0140 00       		.byte	0
  455 0141 08       		.uleb128 0x8
- 456 0142 D6000000 		.4byte	.LASF22
+ 456 0142 32010000 		.4byte	.LASF22
  457 0146 01       		.byte	0x1
  458 0147 D2       		.byte	0xd2
  459 0148 00000000 		.4byte	.LFB3
@@ -1008,7 +1008,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccvBcfnm.s 			page 1
  469 0164 22010000 		.4byte	0x122
  470 0168 00       		.byte	0
  471 0169 08       		.uleb128 0x8
- 472 016a 57010000 		.4byte	.LASF23
+ 472 016a B3010000 		.4byte	.LASF23
  473 016e 01       		.byte	0x1
  474 016f EF       		.byte	0xef
  475 0170 00000000 		.4byte	.LFB4
@@ -1018,13 +1018,13 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccvBcfnm.s 			page 1
  479 017a 88010000 		.4byte	0x188
  480 017e 07       		.uleb128 0x7
  481 017f 06000000 		.4byte	.LVL6
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccvBcfnm.s 			page 18
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc6psuPc.s 			page 18
 
 
  482 0183 E3000000 		.4byte	0xe3
  483 0187 00       		.byte	0
  484 0188 09       		.uleb128 0x9
- 485 0189 06020000 		.4byte	.LASF24
+ 485 0189 62020000 		.4byte	.LASF24
  486 018d 01       		.byte	0x1
  487 018e 1701     		.2byte	0x117
  488 0190 00000000 		.4byte	.LFB5
@@ -1039,7 +1039,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccvBcfnm.s 			page 1
  497 01a6 83000000 		.4byte	0x83
  498 01aa 00000000 		.4byte	.LLST0
  499 01ae 0B       		.uleb128 0xb
- 500 01af 29020000 		.4byte	.LASF27
+ 500 01af 85020000 		.4byte	.LASF27
  501 01b3 01       		.byte	0x1
  502 01b4 1901     		.2byte	0x119
  503 01b6 83000000 		.4byte	0x83
@@ -1068,7 +1068,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccvBcfnm.s 			page 1
  526 01f1 60000000 		.4byte	.LLST3
  527 01f5 00       		.byte	0
  528 01f6 0C       		.uleb128 0xc
- 529 01f7 65000000 		.4byte	.LASF29
+ 529 01f7 C1000000 		.4byte	.LASF29
  530 01fb 01       		.byte	0x1
  531 01fc 51       		.byte	0x51
  532 01fd 6B000000 		.4byte	0x6b
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccvBcfnm.s 			page 1
  536 0207 0C       		.uleb128 0xc
  537 0208 11000000 		.4byte	.LASF30
  538 020c 01       		.byte	0x1
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccvBcfnm.s 			page 19
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc6psuPc.s 			page 19
 
 
  539 020d 5A       		.byte	0x5a
@@ -1087,18 +1087,18 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccvBcfnm.s 			page 1
  542 0213 03       		.byte	0x3
  543 0214 00000000 		.4byte	UART_IntrTxMask
  544 0218 0D       		.uleb128 0xd
- 545 0219 9C000000 		.4byte	.LASF31
- 546 021d 9C000000 		.4byte	.LASF31
+ 545 0219 F8000000 		.4byte	.LASF31
+ 546 021d F8000000 		.4byte	.LASF31
  547 0221 03       		.byte	0x3
  548 0222 4C       		.byte	0x4c
  549 0223 0D       		.uleb128 0xd
- 550 0224 C2000000 		.4byte	.LASF32
- 551 0228 C2000000 		.4byte	.LASF32
+ 550 0224 1E010000 		.4byte	.LASF32
+ 551 0228 1E010000 		.4byte	.LASF32
  552 022c 03       		.byte	0x3
  553 022d 4D       		.byte	0x4d
  554 022e 0D       		.uleb128 0xd
- 555 022f 32010000 		.4byte	.LASF33
- 556 0233 32010000 		.4byte	.LASF33
+ 555 022f 8E010000 		.4byte	.LASF33
+ 556 0233 8E010000 		.4byte	.LASF33
  557 0237 03       		.byte	0x3
  558 0238 50       		.byte	0x50
  559 0239 00       		.byte	0
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccvBcfnm.s 			page 1
  593 001f 24       		.uleb128 0x24
  594 0020 00       		.byte	0
  595 0021 0B       		.uleb128 0xb
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccvBcfnm.s 			page 20
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc6psuPc.s 			page 20
 
 
  596 0022 0B       		.uleb128 0xb
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccvBcfnm.s 			page 1
  650 005b 01       		.uleb128 0x1
  651 005c 31       		.uleb128 0x31
  652 005d 13       		.uleb128 0x13
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccvBcfnm.s 			page 21
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc6psuPc.s 			page 21
 
 
  653 005e 00       		.byte	0
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccvBcfnm.s 			page 1
  707 0096 00       		.byte	0
  708 0097 03       		.uleb128 0x3
  709 0098 0E       		.uleb128 0xe
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccvBcfnm.s 			page 22
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc6psuPc.s 			page 22
 
 
  710 0099 3A       		.uleb128 0x3a
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccvBcfnm.s 			page 1
  764 00cf 0B       		.uleb128 0xb
  765 00d0 3B       		.uleb128 0x3b
  766 00d1 0B       		.uleb128 0xb
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccvBcfnm.s 			page 23
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc6psuPc.s 			page 23
 
 
  767 00d2 00       		.byte	0
@@ -1378,7 +1378,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccvBcfnm.s 			page 1
  821 007a 00000000 		.4byte	0
  822              		.section	.debug_aranges,"",%progbits
  823 0000 54000000 		.4byte	0x54
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccvBcfnm.s 			page 24
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc6psuPc.s 			page 24
 
 
  824 0004 0200     		.2byte	0x2
@@ -1438,7 +1438,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccvBcfnm.s 			page 1
  873              	.LASF28:
  874 0006 74784669 		.ascii	"txFifoCtrl\000"
  874      666F4374 
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccvBcfnm.s 			page 25
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc6psuPc.s 			page 25
 
 
  874      726C00
@@ -1468,164 +1468,164 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccvBcfnm.s 			page 1
  884      7369676E 
  884      65642069 
  884      6E7400
- 885              	.LASF29:
- 886 0065 55415254 		.ascii	"UART_initVar\000"
- 886      5F696E69 
- 886      74566172 
- 886      00
- 887              	.LASF12:
- 888 0072 666C6F61 		.ascii	"float\000"
- 888      7400
- 889              	.LASF21:
- 890 0078 55415254 		.ascii	"UART_Enable\000"
- 890      5F456E61 
- 890      626C6500 
- 891              	.LASF1:
- 892 0084 756E7369 		.ascii	"unsigned char\000"
- 892      676E6564 
- 892      20636861 
- 892      7200
- 893              	.LASF20:
- 894 0092 55415254 		.ascii	"UART_Init\000"
- 894      5F496E69 
- 894      7400
- 895              	.LASF31:
- 896 009c 55415254 		.ascii	"UART_UartPostEnable\000"
- 896      5F556172 
- 896      74506F73 
- 896      74456E61 
- 896      626C6500 
- 897              	.LASF5:
- 898 00b0 6C6F6E67 		.ascii	"long unsigned int\000"
- 898      20756E73 
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccvBcfnm.s 			page 26
+ 885              	.LASF36:
+ 886 0065 433A5C55 		.ascii	"C:\\Users\\JamesN4\\Documents\\PSoC Creator\\Hybrid"
+ 886      73657273 
+ 886      5C4A616D 
+ 886      65734E34 
+ 886      5C446F63 
+ 887 0093 456E636F 		.ascii	"EncoderCY8CKIT43\\firmware\\HybridEncoder.cydsn\000"
+ 887      64657243 
+ 887      5938434B 
+ 887      49543433 
+ 887      5C666972 
+ 888              	.LASF29:
+ 889 00c1 55415254 		.ascii	"UART_initVar\000"
+ 889      5F696E69 
+ 889      74566172 
+ 889      00
+ 890              	.LASF12:
+ 891 00ce 666C6F61 		.ascii	"float\000"
+ 891      7400
+ 892              	.LASF21:
+ 893 00d4 55415254 		.ascii	"UART_Enable\000"
+ 893      5F456E61 
+ 893      626C6500 
+ 894              	.LASF1:
+ 895 00e0 756E7369 		.ascii	"unsigned char\000"
+ 895      676E6564 
+ 895      20636861 
+ 895      7200
+ 896              	.LASF20:
+ 897 00ee 55415254 		.ascii	"UART_Init\000"
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc6psuPc.s 			page 26
 
 
- 898      69676E65 
- 898      6420696E 
- 898      7400
- 899              	.LASF32:
- 900 00c2 55415254 		.ascii	"UART_UartStop\000"
- 900      5F556172 
- 900      7453746F 
- 900      7000
- 901              	.LASF9:
- 902 00d0 75696E74 		.ascii	"uint8\000"
- 902      3800
- 903              	.LASF22:
- 904 00d6 55415254 		.ascii	"UART_Start\000"
- 904      5F537461 
- 904      727400
- 905              	.LASF13:
- 906 00e1 646F7562 		.ascii	"double\000"
- 906      6C6500
- 907              	.LASF10:
- 908 00e8 75696E74 		.ascii	"uint16\000"
- 908      313600
- 909              	.LASF35:
- 910 00ef 47656E65 		.ascii	"Generated_Source\\PSoC4\\UART.c\000"
- 910      72617465 
- 910      645F536F 
- 910      75726365 
- 910      5C50536F 
- 911              	.LASF11:
- 912 010d 75696E74 		.ascii	"uint32\000"
- 912      333200
- 913              	.LASF19:
- 914 0114 55415254 		.ascii	"UART_ScbModeStop\000"
- 914      5F536362 
- 914      4D6F6465 
- 914      53746F70 
- 914      00
- 915              	.LASF8:
- 916 0125 756E7369 		.ascii	"unsigned int\000"
- 916      676E6564 
- 916      20696E74 
- 916      00
- 917              	.LASF33:
- 918 0132 55415254 		.ascii	"UART_UartInit\000"
- 918      5F556172 
- 918      74496E69 
- 918      7400
- 919              	.LASF7:
- 920 0140 6C6F6E67 		.ascii	"long long unsigned int\000"
- 920      206C6F6E 
- 920      6720756E 
- 920      7369676E 
- 920      65642069 
- 921              	.LASF23:
- 922 0157 55415254 		.ascii	"UART_Stop\000"
- 922      5F53746F 
- 922      7000
- 923              	.LASF34:
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccvBcfnm.s 			page 27
+ 897      5F496E69 
+ 897      7400
+ 898              	.LASF31:
+ 899 00f8 55415254 		.ascii	"UART_UartPostEnable\000"
+ 899      5F556172 
+ 899      74506F73 
+ 899      74456E61 
+ 899      626C6500 
+ 900              	.LASF5:
+ 901 010c 6C6F6E67 		.ascii	"long unsigned int\000"
+ 901      20756E73 
+ 901      69676E65 
+ 901      6420696E 
+ 901      7400
+ 902              	.LASF32:
+ 903 011e 55415254 		.ascii	"UART_UartStop\000"
+ 903      5F556172 
+ 903      7453746F 
+ 903      7000
+ 904              	.LASF9:
+ 905 012c 75696E74 		.ascii	"uint8\000"
+ 905      3800
+ 906              	.LASF22:
+ 907 0132 55415254 		.ascii	"UART_Start\000"
+ 907      5F537461 
+ 907      727400
+ 908              	.LASF13:
+ 909 013d 646F7562 		.ascii	"double\000"
+ 909      6C6500
+ 910              	.LASF10:
+ 911 0144 75696E74 		.ascii	"uint16\000"
+ 911      313600
+ 912              	.LASF35:
+ 913 014b 47656E65 		.ascii	"Generated_Source\\PSoC4\\UART.c\000"
+ 913      72617465 
+ 913      645F536F 
+ 913      75726365 
+ 913      5C50536F 
+ 914              	.LASF11:
+ 915 0169 75696E74 		.ascii	"uint32\000"
+ 915      333200
+ 916              	.LASF19:
+ 917 0170 55415254 		.ascii	"UART_ScbModeStop\000"
+ 917      5F536362 
+ 917      4D6F6465 
+ 917      53746F70 
+ 917      00
+ 918              	.LASF8:
+ 919 0181 756E7369 		.ascii	"unsigned int\000"
+ 919      676E6564 
+ 919      20696E74 
+ 919      00
+ 920              	.LASF33:
+ 921 018e 55415254 		.ascii	"UART_UartInit\000"
+ 921      5F556172 
+ 921      74496E69 
+ 921      7400
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc6psuPc.s 			page 27
 
 
- 924 0161 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
- 924      43313120 
- 924      352E342E 
- 924      31203230 
- 924      31363036 
- 925 0194 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m0 -mthumb -g -O"
- 925      20726576 
- 925      6973696F 
- 925      6E203233 
- 925      37373135 
- 926 01c7 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
- 926      66756E63 
- 926      74696F6E 
- 926      2D736563 
- 926      74696F6E 
- 927              	.LASF17:
- 928 01ef 73697A65 		.ascii	"sizetype\000"
- 928      74797065 
- 928      00
- 929              	.LASF6:
- 930 01f8 6C6F6E67 		.ascii	"long long int\000"
- 930      206C6F6E 
- 930      6720696E 
- 930      7400
- 931              	.LASF24:
- 932 0206 55415254 		.ascii	"UART_SetRxFifoLevel\000"
- 932      5F536574 
- 932      52784669 
- 932      666F4C65 
- 932      76656C00 
- 933              	.LASF14:
- 934 021a 63686172 		.ascii	"char\000"
- 934      00
- 935              	.LASF2:
- 936 021f 73686F72 		.ascii	"short int\000"
- 936      7420696E 
- 936      7400
- 937              	.LASF27:
- 938 0229 72784669 		.ascii	"rxFifoCtrl\000"
- 938      666F4374 
- 938      726C00
- 939              	.LASF4:
- 940 0234 6C6F6E67 		.ascii	"long int\000"
- 940      20696E74 
- 940      00
- 941              	.LASF16:
- 942 023d 6C6F6E67 		.ascii	"long double\000"
- 942      20646F75 
- 942      626C6500 
- 943              	.LASF0:
- 944 0249 7369676E 		.ascii	"signed char\000"
- 944      65642063 
- 944      68617200 
- 945              	.LASF36:
- 946 0255 433A5C55 		.ascii	"C:\\Users\\JamesN4\\Documents\\PSoC Creator\\Hybrid"
- 946      73657273 
- 946      5C4A616D 
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccvBcfnm.s 			page 28
+ 922              	.LASF7:
+ 923 019c 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 923      206C6F6E 
+ 923      6720756E 
+ 923      7369676E 
+ 923      65642069 
+ 924              	.LASF23:
+ 925 01b3 55415254 		.ascii	"UART_Stop\000"
+ 925      5F53746F 
+ 925      7000
+ 926              	.LASF34:
+ 927 01bd 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
+ 927      43313120 
+ 927      352E342E 
+ 927      31203230 
+ 927      31363036 
+ 928 01f0 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m0 -mthumb -g -O"
+ 928      20726576 
+ 928      6973696F 
+ 928      6E203233 
+ 928      37373135 
+ 929 0223 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
+ 929      66756E63 
+ 929      74696F6E 
+ 929      2D736563 
+ 929      74696F6E 
+ 930              	.LASF17:
+ 931 024b 73697A65 		.ascii	"sizetype\000"
+ 931      74797065 
+ 931      00
+ 932              	.LASF6:
+ 933 0254 6C6F6E67 		.ascii	"long long int\000"
+ 933      206C6F6E 
+ 933      6720696E 
+ 933      7400
+ 934              	.LASF24:
+ 935 0262 55415254 		.ascii	"UART_SetRxFifoLevel\000"
+ 935      5F536574 
+ 935      52784669 
+ 935      666F4C65 
+ 935      76656C00 
+ 936              	.LASF14:
+ 937 0276 63686172 		.ascii	"char\000"
+ 937      00
+ 938              	.LASF2:
+ 939 027b 73686F72 		.ascii	"short int\000"
+ 939      7420696E 
+ 939      7400
+ 940              	.LASF27:
+ 941 0285 72784669 		.ascii	"rxFifoCtrl\000"
+ 941      666F4374 
+ 941      726C00
+ 942              	.LASF4:
+ 943 0290 6C6F6E67 		.ascii	"long int\000"
+ 943      20696E74 
+ 943      00
+ 944              	.LASF16:
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc6psuPc.s 			page 28
 
 
- 946      65734E34 
- 946      5C446F63 
- 947 0283 456E636F 		.ascii	"EncoderCY8CKIT43\\HybridEncoder.cydsn\000"
- 947      64657243 
- 947      5938434B 
- 947      49543433 
- 947      5C487962 
+ 945 0299 6C6F6E67 		.ascii	"long double\000"
+ 945      20646F75 
+ 945      626C6500 
+ 946              	.LASF0:
+ 947 02a5 7369676E 		.ascii	"signed char\000"
+ 947      65642063 
+ 947      68617200 
  948              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran

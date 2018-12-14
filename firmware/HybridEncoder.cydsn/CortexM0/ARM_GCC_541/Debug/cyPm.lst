@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccNn33F8.s 			page 1
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccOdCJa1.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccNn33F8.s 			page 1
   28:Generated_Source\PSoC4/cyPm.c **** * its main clock can be removed. It is identical to Active from a peripheral
   29:Generated_Source\PSoC4/cyPm.c **** * point of view. Any enabled interrupts can cause wakeup from the Sleep mode.
   30:Generated_Source\PSoC4/cyPm.c **** *
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccNn33F8.s 			page 2
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccOdCJa1.s 			page 2
 
 
   31:Generated_Source\PSoC4/cyPm.c **** *******************************************************************************/
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccNn33F8.s 			page 1
   67              		.align	2
   68              		.global	CySysPmDeepSleep
   69              		.code	16
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccNn33F8.s 			page 3
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccOdCJa1.s 			page 3
 
 
   70              		.thumb_func
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccNn33F8.s 			page 1
   95 0012 1360     		str	r3, [r2]
   75:Generated_Source\PSoC4/cyPm.c ****     #endif /* (CY_IP_SRSSV2) */
   76:Generated_Source\PSoC4/cyPm.c **** 
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccNn33F8.s 			page 4
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccOdCJa1.s 			page 4
 
 
   77:Generated_Source\PSoC4/cyPm.c ****     #if (CY_IP_CPUSS && CY_IP_SRSSV2)
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccNn33F8.s 			page 1
  126 0038 2B60     		str	r3, [r5]
  101:Generated_Source\PSoC4/cyPm.c ****     #endif /* (CY_IP_SRSSV2) */
  102:Generated_Source\PSoC4/cyPm.c **** 
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccNn33F8.s 			page 5
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccOdCJa1.s 			page 5
 
 
  103:Generated_Source\PSoC4/cyPm.c ****     #if (CY_IP_CPUSS && CY_IP_SRSSV2)
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccNn33F8.s 			page 1
  129:Generated_Source\PSoC4/cyPm.c ****     * corresponding variable should be defined with CY_NOINIT attribute. It
  130:Generated_Source\PSoC4/cyPm.c ****     * prevents data from being initialized to zero on startup. The interrupt
  131:Generated_Source\PSoC4/cyPm.c ****     * cause of the hibernate peripheral is retained, such that it can be either
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccNn33F8.s 			page 6
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccOdCJa1.s 			page 6
 
 
  132:Generated_Source\PSoC4/cyPm.c ****     * read by the firmware or cause an interrupt after the firmware has booted and
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccNn33F8.s 			page 1
   30:Generated_Source\PSoC4/cyPm.h **** Deep Sleep, Hibernate, and Stop. Active, Sleep and Deep-Sleep are standard ARM defined power modes,
   31:Generated_Source\PSoC4/cyPm.h **** ARM CPUs. Hibernate/Stop are even lower power modes that are entered from firmware just like Deep-S
   32:Generated_Source\PSoC4/cyPm.h **** the CPU (and all peripherals) goes through a full reset.
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccNn33F8.s 			page 7
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccOdCJa1.s 			page 7
 
 
   33:Generated_Source\PSoC4/cyPm.h **** 
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccNn33F8.s 			page 1
   87:Generated_Source\PSoC4/cyPm.h **** void CySysPmDeepSleep(void);
   88:Generated_Source\PSoC4/cyPm.h **** 
   89:Generated_Source\PSoC4/cyPm.h **** #if(CY_IP_SRSSV2)
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccNn33F8.s 			page 8
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccOdCJa1.s 			page 8
 
 
   90:Generated_Source\PSoC4/cyPm.h ****     void CySysPmHibernate(void);
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccNn33F8.s 			page 1
  144:Generated_Source\PSoC4/cyPm.h ****     #define CY_PM_CPU_SCR_PTR                   ( (reg32 *) CYREG_CM0P_SCR)
  145:Generated_Source\PSoC4/cyPm.h **** #endif /* (CY_IP_CPUSS_CM0) */
  146:Generated_Source\PSoC4/cyPm.h **** 
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccNn33F8.s 			page 9
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccOdCJa1.s 			page 9
 
 
  147:Generated_Source\PSoC4/cyPm.h **** /* Power System Key & Delay Register */
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccNn33F8.s 			page 1
  201:Generated_Source\PSoC4/cyPm.h ****     #define CY_PM_PWR_KEY_DELAY_REG_DEFAULT     ((uint32) 248u)
  202:Generated_Source\PSoC4/cyPm.h ****     #define CY_PM_PWR_KEY_DELAY_FREQ_DEFAULT    (48u)
  203:Generated_Source\PSoC4/cyPm.h **** #endif /* (CY_IP_SRSSV2) */
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccNn33F8.s 			page 10
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccOdCJa1.s 			page 10
 
 
  204:Generated_Source\PSoC4/cyPm.h **** 
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccNn33F8.s 			page 1
  189 0026 1368     		ldr	r3, [r2]
  190 0028 9B00     		lsls	r3, r3, #2
  191 002a 9B08     		lsrs	r3, r3, #2
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccNn33F8.s 			page 11
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccOdCJa1.s 			page 11
 
 
  192 002c 1360     		str	r3, [r2]
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccNn33F8.s 			page 1
  222 005a 8021     		movs	r1, #128
  223 005c 0906     		lsls	r1, r1, #24
  224 005e 0B43     		orrs	r3, r1
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccNn33F8.s 			page 12
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccOdCJa1.s 			page 12
 
 
  225 0060 1360     		str	r3, [r2]
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccNn33F8.s 			page 1
  257              		.loc 1 172 0
  258              		@ sp needed
  259 008a 10BD     		pop	{r4, pc}
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccNn33F8.s 			page 13
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccOdCJa1.s 			page 13
 
 
  260              	.L9:
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccNn33F8.s 			page 1
  200:Generated_Source\PSoC4/cyPm.c **** 
  201:Generated_Source\PSoC4/cyPm.c ****         /* Update token to indicate Stop mode transition. Preserve only polarity. */
  202:Generated_Source\PSoC4/cyPm.c ****         CY_PM_PWR_STOP_REG = (CY_PM_PWR_STOP_REG & CY_PM_PWR_STOP_POLARITY) | CY_PM_PWR_STOP_TOKEN_
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccNn33F8.s 			page 14
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccOdCJa1.s 			page 14
 
 
  203:Generated_Source\PSoC4/cyPm.c **** 
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccNn33F8.s 			page 1
  297              		.loc 1 246 0
  298 0004 FFF7FEFF 		bl	CyEnterCriticalSection
  299              	.LVL10:
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccNn33F8.s 			page 15
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccOdCJa1.s 			page 15
 
 
  247:Generated_Source\PSoC4/cyPm.c **** 
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccNn33F8.s 			page 1
  255:Generated_Source\PSoC4/cyPm.c **** 
  256:Generated_Source\PSoC4/cyPm.c ****     /*******************************************************************************
  257:Generated_Source\PSoC4/cyPm.c ****     * Function Name: CySysPmGetResetReason
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccNn33F8.s 			page 16
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccOdCJa1.s 			page 16
 
 
  258:Generated_Source\PSoC4/cyPm.c ****     ****************************************************************************//**
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccNn33F8.s 			page 1
  370              	.LVL15:
  371              	.L18:
  285:Generated_Source\PSoC4/cyPm.c **** 
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccNn33F8.s 			page 17
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccOdCJa1.s 			page 17
 
 
  286:Generated_Source\PSoC4/cyPm.c ****         /* Wakeup from Stop (through WAKEUP pin assert) */
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccNn33F8.s 			page 1
  311:Generated_Source\PSoC4/cyPm.c ****     *******************************************************************************/
  312:Generated_Source\PSoC4/cyPm.c ****     void CySysPmFreezeIo(void)
  313:Generated_Source\PSoC4/cyPm.c ****     {
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccNn33F8.s 			page 18
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccOdCJa1.s 			page 18
 
 
  400              		.loc 1 313 0
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccNn33F8.s 			page 1
  429              		.loc 1 337 0
  430 0020 1A68     		ldr	r2, [r3]
  431 0022 1A60     		str	r2, [r3]
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccNn33F8.s 			page 19
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccOdCJa1.s 			page 19
 
 
  432              	.L24:
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccNn33F8.s 			page 1
  478              	.LVL21:
  208:Generated_Source\PSoC4/cyPm.c **** 
  479              		.loc 1 208 0
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccNn33F8.s 			page 20
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccOdCJa1.s 			page 20
 
 
  480 001a 2368     		ldr	r3, [r4]
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccNn33F8.s 			page 1
  351:Generated_Source\PSoC4/cyPm.c ****     *
  352:Generated_Source\PSoC4/cyPm.c ****     * If the firmware intent is to retain the data value on the port, then the
  353:Generated_Source\PSoC4/cyPm.c ****     * value must be read and re-written to the data register before calling this
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccNn33F8.s 			page 21
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccOdCJa1.s 			page 21
 
 
  354:Generated_Source\PSoC4/cyPm.c ****     * API. Furthermore, the drive mode must be re-programmed.  If this is not done,
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccNn33F8.s 			page 1
  548 001c 1140     		ands	r1, r2
  549 001e 1960     		str	r1, [r3]
  380:Generated_Source\PSoC4/cyPm.c **** 
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccNn33F8.s 			page 22
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccOdCJa1.s 			page 22
 
 
  381:Generated_Source\PSoC4/cyPm.c ****         CyExitCriticalSection(interruptState);
@@ -1288,25 +1288,25 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccNn33F8.s 			page 1
  572 0006 00000000 		.4byte	.Ldebug_abbrev0
  573 000a 04       		.byte	0x4
  574 000b 01       		.uleb128 0x1
- 575 000c 70010000 		.4byte	.LASF32
+ 575 000c CC010000 		.4byte	.LASF32
  576 0010 0C       		.byte	0xc
- 577 0011 4B020000 		.4byte	.LASF33
- 578 0015 91020000 		.4byte	.LASF34
+ 577 0011 A7020000 		.4byte	.LASF33
+ 578 0015 45000000 		.4byte	.LASF34
  579 0019 00000000 		.4byte	.Ldebug_ranges0+0
  580 001d 00000000 		.4byte	0
  581 0021 00000000 		.4byte	.Ldebug_line0
  582 0025 02       		.uleb128 0x2
  583 0026 01       		.byte	0x1
  584 0027 06       		.byte	0x6
- 585 0028 75020000 		.4byte	.LASF0
+ 585 0028 D1020000 		.4byte	.LASF0
  586 002c 02       		.uleb128 0x2
  587 002d 01       		.byte	0x1
  588 002e 08       		.byte	0x8
- 589 002f 91000000 		.4byte	.LASF1
+ 589 002f ED000000 		.4byte	.LASF1
  590 0033 02       		.uleb128 0x2
  591 0034 02       		.byte	0x2
  592 0035 05       		.byte	0x5
- 593 0036 27020000 		.4byte	.LASF2
+ 593 0036 83020000 		.4byte	.LASF2
  594 003a 02       		.uleb128 0x2
  595 003b 02       		.byte	0x2
  596 003c 07       		.byte	0x7
@@ -1314,22 +1314,22 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccNn33F8.s 			page 1
  598 0041 02       		.uleb128 0x2
  599 0042 04       		.byte	0x4
  600 0043 05       		.byte	0x5
- 601 0044 42020000 		.4byte	.LASF4
+ 601 0044 9E020000 		.4byte	.LASF4
  602 0048 02       		.uleb128 0x2
  603 0049 04       		.byte	0x4
  604 004a 07       		.byte	0x7
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccNn33F8.s 			page 23
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccOdCJa1.s 			page 23
 
 
- 605 004b AE000000 		.4byte	.LASF5
+ 605 004b 0A010000 		.4byte	.LASF5
  606 004f 02       		.uleb128 0x2
  607 0050 08       		.byte	0x8
  608 0051 05       		.byte	0x5
- 609 0052 07020000 		.4byte	.LASF6
+ 609 0052 63020000 		.4byte	.LASF6
  610 0056 02       		.uleb128 0x2
  611 0057 08       		.byte	0x8
  612 0058 07       		.byte	0x7
- 613 0059 7A000000 		.4byte	.LASF7
+ 613 0059 D6000000 		.4byte	.LASF7
  614 005d 03       		.uleb128 0x3
  615 005e 04       		.byte	0x4
  616 005f 05       		.byte	0x5
@@ -1337,34 +1337,34 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccNn33F8.s 			page 1
  618 0064 02       		.uleb128 0x2
  619 0065 04       		.byte	0x4
  620 0066 07       		.byte	0x7
- 621 0067 10010000 		.4byte	.LASF8
+ 621 0067 6C010000 		.4byte	.LASF8
  622 006b 04       		.uleb128 0x4
- 623 006c C0000000 		.4byte	.LASF9
+ 623 006c 1C010000 		.4byte	.LASF9
  624 0070 03       		.byte	0x3
  625 0071 D201     		.2byte	0x1d2
  626 0073 2C000000 		.4byte	0x2c
  627 0077 04       		.uleb128 0x4
- 628 0078 EB000000 		.4byte	.LASF10
+ 628 0078 47010000 		.4byte	.LASF10
  629 007c 03       		.byte	0x3
  630 007d D301     		.2byte	0x1d3
  631 007f 3A000000 		.4byte	0x3a
  632 0083 04       		.uleb128 0x4
- 633 0084 F2000000 		.4byte	.LASF11
+ 633 0084 4E010000 		.4byte	.LASF11
  634 0088 03       		.byte	0x3
  635 0089 D401     		.2byte	0x1d4
  636 008b 48000000 		.4byte	0x48
  637 008f 02       		.uleb128 0x2
  638 0090 04       		.byte	0x4
  639 0091 04       		.byte	0x4
- 640 0092 74000000 		.4byte	.LASF12
+ 640 0092 D0000000 		.4byte	.LASF12
  641 0096 02       		.uleb128 0x2
  642 0097 08       		.byte	0x8
  643 0098 04       		.byte	0x4
- 644 0099 D2000000 		.4byte	.LASF13
+ 644 0099 2E010000 		.4byte	.LASF13
  645 009d 02       		.uleb128 0x2
  646 009e 01       		.byte	0x1
  647 009f 08       		.byte	0x8
- 648 00a0 15020000 		.4byte	.LASF14
+ 648 00a0 71020000 		.4byte	.LASF14
  649 00a4 04       		.uleb128 0x4
  650 00a5 00000000 		.4byte	.LASF15
  651 00a9 03       		.byte	0x3
@@ -1378,18 +1378,18 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccNn33F8.s 			page 1
  659 00bb 7E02     		.2byte	0x27e
  660 00bd C1000000 		.4byte	0xc1
  661 00c1 05       		.uleb128 0x5
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccNn33F8.s 			page 24
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccOdCJa1.s 			page 24
 
 
  662 00c2 83000000 		.4byte	0x83
  663 00c6 02       		.uleb128 0x2
  664 00c7 08       		.byte	0x8
  665 00c8 04       		.byte	0x4
- 666 00c9 69020000 		.4byte	.LASF17
+ 666 00c9 C5020000 		.4byte	.LASF17
  667 00cd 02       		.uleb128 0x2
  668 00ce 04       		.byte	0x4
  669 00cf 07       		.byte	0x7
- 670 00d0 FE010000 		.4byte	.LASF18
+ 670 00d0 5A020000 		.4byte	.LASF18
  671 00d4 06       		.uleb128 0x6
  672 00d5 25000000 		.4byte	.LASF19
  673 00d9 01       		.byte	0x1
@@ -1400,7 +1400,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccNn33F8.s 			page 1
  678 00e4 9C       		.byte	0x9c
  679 00e5 0B010000 		.4byte	0x10b
  680 00e9 07       		.uleb128 0x7
- 681 00ea 9F000000 		.4byte	.LASF21
+ 681 00ea FB000000 		.4byte	.LASF21
  682 00ee 01       		.byte	0x1
  683 00ef 22       		.byte	0x22
  684 00f0 6B000000 		.4byte	0x6b
@@ -1413,7 +1413,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccNn33F8.s 			page 1
  691 0106 CE020000 		.4byte	0x2ce
  692 010a 00       		.byte	0
  693 010b 06       		.uleb128 0x6
- 694 010c 31020000 		.4byte	.LASF20
+ 694 010c 8D020000 		.4byte	.LASF20
  695 0110 01       		.byte	0x1
  696 0111 3F       		.byte	0x3f
  697 0112 00000000 		.4byte	.LFB3
@@ -1422,13 +1422,13 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccNn33F8.s 			page 1
  700 011b 9C       		.byte	0x9c
  701 011c 6A010000 		.4byte	0x16a
  702 0120 07       		.uleb128 0x7
- 703 0121 9F000000 		.4byte	.LASF21
+ 703 0121 FB000000 		.4byte	.LASF21
  704 0125 01       		.byte	0x1
  705 0126 41       		.byte	0x41
  706 0127 6B000000 		.4byte	0x6b
  707 012b 13000000 		.4byte	.LLST1
  708 012f 09       		.uleb128 0x9
- 709 0130 1A020000 		.4byte	.LASF22
+ 709 0130 76020000 		.4byte	.LASF22
  710 0134 01       		.byte	0x1
  711 0135 43       		.byte	0x43
  712 0136 C1000000 		.4byte	0xc1
@@ -1438,7 +1438,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccNn33F8.s 			page 1
  716 013d 08       		.uleb128 0x8
  717 013e 08000000 		.4byte	.LVL2
  718 0142 C3020000 		.4byte	0x2c3
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccNn33F8.s 			page 25
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccOdCJa1.s 			page 25
 
 
  719 0146 0A       		.uleb128 0xa
@@ -1463,12 +1463,12 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccNn33F8.s 			page 1
  738 0168 00       		.byte	0
  739 0169 00       		.byte	0
  740 016a 0D       		.uleb128 0xd
- 741 016b 56000000 		.4byte	.LASF35
+ 741 016b B2000000 		.4byte	.LASF35
  742 016f 02       		.byte	0x2
  743 0170 DE       		.byte	0xde
  744 0171 03       		.byte	0x3
  745 0172 06       		.uleb128 0x6
- 746 0173 45000000 		.4byte	.LASF23
+ 746 0173 A1000000 		.4byte	.LASF23
  747 0177 01       		.byte	0x1
  748 0178 8A       		.byte	0x8a
  749 0179 00000000 		.4byte	.LFB4
@@ -1477,7 +1477,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccNn33F8.s 			page 1
  752 0182 9C       		.byte	0x9c
  753 0183 B8010000 		.4byte	0x1b8
  754 0187 07       		.uleb128 0x7
- 755 0188 9F000000 		.4byte	.LASF21
+ 755 0188 FB000000 		.4byte	.LASF21
  756 018c 01       		.byte	0x1
  757 018d 8C       		.byte	0x8c
  758 018e 6B000000 		.4byte	0x6b
@@ -1498,7 +1498,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccNn33F8.s 			page 1
  773 01b8 06       		.uleb128 0x6
  774 01b9 0C000000 		.4byte	.LASF24
  775 01bd 01       		.byte	0x1
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccNn33F8.s 			page 26
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccOdCJa1.s 			page 26
 
 
  776 01be F2       		.byte	0xf2
@@ -1508,13 +1508,13 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccNn33F8.s 			page 1
  780 01c8 9C       		.byte	0x9c
  781 01c9 FE010000 		.4byte	0x1fe
  782 01cd 0F       		.uleb128 0xf
- 783 01ce 51010000 		.4byte	.LASF36
+ 783 01ce AD010000 		.4byte	.LASF36
  784 01d2 01       		.byte	0x1
  785 01d3 F2       		.byte	0xf2
  786 01d4 83000000 		.4byte	0x83
  787 01d8 39000000 		.4byte	.LLST3
  788 01dc 07       		.uleb128 0x7
- 789 01dd 9F000000 		.4byte	.LASF21
+ 789 01dd FB000000 		.4byte	.LASF21
  790 01e1 01       		.byte	0x1
  791 01e2 F4       		.byte	0xf4
  792 01e3 6B000000 		.4byte	0x6b
@@ -1527,7 +1527,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccNn33F8.s 			page 1
  799 01f9 CE020000 		.4byte	0x2ce
  800 01fd 00       		.byte	0
  801 01fe 10       		.uleb128 0x10
- 802 01ff 5A010000 		.4byte	.LASF37
+ 802 01ff B6010000 		.4byte	.LASF37
  803 0203 01       		.byte	0x1
  804 0204 0E01     		.2byte	0x10e
  805 0206 83000000 		.4byte	0x83
@@ -1537,14 +1537,14 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccNn33F8.s 			page 1
  809 0213 9C       		.byte	0x9c
  810 0214 29020000 		.4byte	0x229
  811 0218 11       		.uleb128 0x11
- 812 0219 4A010000 		.4byte	.LASF25
+ 812 0219 A6010000 		.4byte	.LASF25
  813 021d 01       		.byte	0x1
  814 021e 1001     		.2byte	0x110
  815 0220 83000000 		.4byte	0x83
  816 0224 78000000 		.4byte	.LLST5
  817 0228 00       		.byte	0
  818 0229 12       		.uleb128 0x12
- 819 022a 81020000 		.4byte	.LASF26
+ 819 022a DD020000 		.4byte	.LASF26
  820 022e 01       		.byte	0x1
  821 022f 3801     		.2byte	0x138
  822 0231 00000000 		.4byte	.LFB8
@@ -1553,12 +1553,12 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccNn33F8.s 			page 1
  825 023a 9C       		.byte	0x9c
  826 023b 62020000 		.4byte	0x262
  827 023f 11       		.uleb128 0x11
- 828 0240 9F000000 		.4byte	.LASF21
+ 828 0240 FB000000 		.4byte	.LASF21
  829 0244 01       		.byte	0x1
  830 0245 3A01     		.2byte	0x13a
  831 0247 6B000000 		.4byte	0x6b
  832 024b BB000000 		.4byte	.LLST6
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccNn33F8.s 			page 27
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccOdCJa1.s 			page 27
 
 
  833 024f 08       		.uleb128 0x8
@@ -1569,7 +1569,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccNn33F8.s 			page 1
  838 025d CE020000 		.4byte	0x2ce
  839 0261 00       		.byte	0
  840 0262 06       		.uleb128 0x6
- 841 0263 C6000000 		.4byte	.LASF27
+ 841 0263 22010000 		.4byte	.LASF27
  842 0267 01       		.byte	0x1
  843 0268 C5       		.byte	0xc5
  844 0269 00000000 		.4byte	.LFB5
@@ -1585,7 +1585,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccNn33F8.s 			page 1
  854 0285 29020000 		.4byte	0x229
  855 0289 00       		.byte	0
  856 028a 12       		.uleb128 0x12
- 857 028b D9000000 		.4byte	.LASF28
+ 857 028b 35010000 		.4byte	.LASF28
  858 028f 01       		.byte	0x1
  859 0290 6801     		.2byte	0x168
  860 0292 00000000 		.4byte	.LFB9
@@ -1594,7 +1594,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccNn33F8.s 			page 1
  863 029b 9C       		.byte	0x9c
  864 029c C3020000 		.4byte	0x2c3
  865 02a0 11       		.uleb128 0x11
- 866 02a1 9F000000 		.4byte	.LASF21
+ 866 02a1 FB000000 		.4byte	.LASF21
  867 02a5 01       		.byte	0x1
  868 02a6 6A01     		.2byte	0x16a
  869 02a8 6B000000 		.4byte	0x6b
@@ -1607,21 +1607,21 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccNn33F8.s 			page 1
  876 02be CE020000 		.4byte	0x2ce
  877 02c2 00       		.byte	0
  878 02c3 13       		.uleb128 0x13
- 879 02c4 F9000000 		.4byte	.LASF29
- 880 02c8 F9000000 		.4byte	.LASF29
+ 879 02c4 55010000 		.4byte	.LASF29
+ 880 02c8 55010000 		.4byte	.LASF29
  881 02cc 04       		.byte	0x4
  882 02cd E5       		.byte	0xe5
  883 02ce 13       		.uleb128 0x13
- 884 02cf 1D010000 		.4byte	.LASF30
- 885 02d3 1D010000 		.4byte	.LASF30
+ 884 02cf 79010000 		.4byte	.LASF30
+ 885 02d3 79010000 		.4byte	.LASF30
  886 02d7 04       		.byte	0x4
  887 02d8 E6       		.byte	0xe6
  888 02d9 13       		.uleb128 0x13
- 889 02da 33010000 		.4byte	.LASF31
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccNn33F8.s 			page 28
+ 889 02da 8F010000 		.4byte	.LASF31
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccOdCJa1.s 			page 28
 
 
- 890 02de 33010000 		.4byte	.LASF31
+ 890 02de 8F010000 		.4byte	.LASF31
  891 02e2 04       		.byte	0x4
  892 02e3 6B       		.byte	0x6b
  893 02e4 00       		.byte	0
@@ -1678,7 +1678,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccNn33F8.s 			page 1
  944 0030 3B       		.uleb128 0x3b
  945 0031 05       		.uleb128 0x5
  946 0032 49       		.uleb128 0x49
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccNn33F8.s 			page 29
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccOdCJa1.s 			page 29
 
 
  947 0033 13       		.uleb128 0x13
@@ -1738,7 +1738,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccNn33F8.s 			page 1
  1001 006c 01       		.uleb128 0x1
  1002 006d 31       		.uleb128 0x31
  1003 006e 13       		.uleb128 0x13
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccNn33F8.s 			page 30
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccOdCJa1.s 			page 30
 
 
  1004 006f 00       		.byte	0
@@ -1798,7 +1798,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccNn33F8.s 			page 1
  1058 00ac 0B       		.uleb128 0xb
  1059 00ad 27       		.uleb128 0x27
  1060 00ae 19       		.uleb128 0x19
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccNn33F8.s 			page 31
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccOdCJa1.s 			page 31
 
 
  1061 00af 20       		.uleb128 0x20
@@ -1858,7 +1858,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccNn33F8.s 			page 1
  1115 00e5 18       		.uleb128 0x18
  1116 00e6 9742     		.uleb128 0x2117
  1117 00e8 19       		.uleb128 0x19
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccNn33F8.s 			page 32
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccOdCJa1.s 			page 32
 
 
  1118 00e9 01       		.uleb128 0x1
@@ -1918,7 +1918,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccNn33F8.s 			page 1
  1172 0120 0E       		.uleb128 0xe
  1173 0121 3A       		.uleb128 0x3a
  1174 0122 0B       		.uleb128 0xb
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccNn33F8.s 			page 33
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccOdCJa1.s 			page 33
 
 
  1175 0123 3B       		.uleb128 0x3b
@@ -1978,7 +1978,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccNn33F8.s 			page 1
  1229 0078 00000000 		.4byte	.LVL13
  1230 007c 18000000 		.4byte	.LVL14
  1231 0080 0200     		.2byte	0x2
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccNn33F8.s 			page 34
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccOdCJa1.s 			page 34
 
 
  1232 0082 30       		.byte	0x30
@@ -2038,7 +2038,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccNn33F8.s 			page 1
  1286 0034 28000000 		.4byte	.LFE7-.LFB7
  1287 0038 00000000 		.4byte	.LFB8
  1288 003c 38000000 		.4byte	.LFE8-.LFB8
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccNn33F8.s 			page 35
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccOdCJa1.s 			page 35
 
 
  1289 0040 00000000 		.4byte	.LFB5
@@ -2097,188 +2097,188 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccNn33F8.s 			page 1
  1327      7369676E 
  1327      65642069 
  1327      6E7400
- 1328              	.LASF23:
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccNn33F8.s 			page 36
+ 1328              	.LASF34:
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccOdCJa1.s 			page 36
 
 
- 1329 0045 43795379 		.ascii	"CySysPmHibernate\000"
- 1329      73506D48 
- 1329      69626572 
- 1329      6E617465 
- 1329      00
- 1330              	.LASF35:
- 1331 0056 43795379 		.ascii	"CySysPmHibPinsDisableInputBuf\000"
- 1331      73506D48 
- 1331      69625069 
- 1331      6E734469 
- 1331      7361626C 
- 1332              	.LASF12:
- 1333 0074 666C6F61 		.ascii	"float\000"
- 1333      7400
- 1334              	.LASF7:
- 1335 007a 6C6F6E67 		.ascii	"long long unsigned int\000"
- 1335      206C6F6E 
- 1335      6720756E 
- 1335      7369676E 
- 1335      65642069 
- 1336              	.LASF1:
- 1337 0091 756E7369 		.ascii	"unsigned char\000"
- 1337      676E6564 
- 1337      20636861 
- 1337      7200
- 1338              	.LASF21:
- 1339 009f 696E7465 		.ascii	"interruptState\000"
- 1339      72727570 
- 1339      74537461 
- 1339      746500
- 1340              	.LASF5:
- 1341 00ae 6C6F6E67 		.ascii	"long unsigned int\000"
- 1341      20756E73 
- 1341      69676E65 
- 1341      6420696E 
- 1341      7400
- 1342              	.LASF9:
- 1343 00c0 75696E74 		.ascii	"uint8\000"
- 1343      3800
- 1344              	.LASF27:
- 1345 00c6 43795379 		.ascii	"CySysPmStop\000"
- 1345      73506D53 
- 1345      746F7000 
- 1346              	.LASF13:
- 1347 00d2 646F7562 		.ascii	"double\000"
- 1347      6C6500
- 1348              	.LASF28:
- 1349 00d9 43795379 		.ascii	"CySysPmUnfreezeIo\000"
- 1349      73506D55 
- 1349      6E667265 
- 1349      657A6549 
- 1349      6F00
- 1350              	.LASF10:
- 1351 00eb 75696E74 		.ascii	"uint16\000"
- 1351      313600
- 1352              	.LASF11:
- 1353 00f2 75696E74 		.ascii	"uint32\000"
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccNn33F8.s 			page 37
+ 1329 0045 433A5C55 		.ascii	"C:\\Users\\JamesN4\\Documents\\PSoC Creator\\Hybrid"
+ 1329      73657273 
+ 1329      5C4A616D 
+ 1329      65734E34 
+ 1329      5C446F63 
+ 1330 0073 456E636F 		.ascii	"EncoderCY8CKIT43\\firmware\\HybridEncoder.cydsn\000"
+ 1330      64657243 
+ 1330      5938434B 
+ 1330      49543433 
+ 1330      5C666972 
+ 1331              	.LASF23:
+ 1332 00a1 43795379 		.ascii	"CySysPmHibernate\000"
+ 1332      73506D48 
+ 1332      69626572 
+ 1332      6E617465 
+ 1332      00
+ 1333              	.LASF35:
+ 1334 00b2 43795379 		.ascii	"CySysPmHibPinsDisableInputBuf\000"
+ 1334      73506D48 
+ 1334      69625069 
+ 1334      6E734469 
+ 1334      7361626C 
+ 1335              	.LASF12:
+ 1336 00d0 666C6F61 		.ascii	"float\000"
+ 1336      7400
+ 1337              	.LASF7:
+ 1338 00d6 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 1338      206C6F6E 
+ 1338      6720756E 
+ 1338      7369676E 
+ 1338      65642069 
+ 1339              	.LASF1:
+ 1340 00ed 756E7369 		.ascii	"unsigned char\000"
+ 1340      676E6564 
+ 1340      20636861 
+ 1340      7200
+ 1341              	.LASF21:
+ 1342 00fb 696E7465 		.ascii	"interruptState\000"
+ 1342      72727570 
+ 1342      74537461 
+ 1342      746500
+ 1343              	.LASF5:
+ 1344 010a 6C6F6E67 		.ascii	"long unsigned int\000"
+ 1344      20756E73 
+ 1344      69676E65 
+ 1344      6420696E 
+ 1344      7400
+ 1345              	.LASF9:
+ 1346 011c 75696E74 		.ascii	"uint8\000"
+ 1346      3800
+ 1347              	.LASF27:
+ 1348 0122 43795379 		.ascii	"CySysPmStop\000"
+ 1348      73506D53 
+ 1348      746F7000 
+ 1349              	.LASF13:
+ 1350 012e 646F7562 		.ascii	"double\000"
+ 1350      6C6500
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccOdCJa1.s 			page 37
 
 
- 1353      333200
- 1354              	.LASF29:
- 1355 00f9 4379456E 		.ascii	"CyEnterCriticalSection\000"
- 1355      74657243 
- 1355      72697469 
- 1355      63616C53 
- 1355      65637469 
- 1356              	.LASF8:
- 1357 0110 756E7369 		.ascii	"unsigned int\000"
- 1357      676E6564 
- 1357      20696E74 
- 1357      00
- 1358              	.LASF30:
- 1359 011d 43794578 		.ascii	"CyExitCriticalSection\000"
- 1359      69744372 
- 1359      69746963 
- 1359      616C5365 
- 1359      6374696F 
- 1360              	.LASF31:
- 1361 0133 43795379 		.ascii	"CySysClkWriteSysclkDiv\000"
- 1361      73436C6B 
- 1361      57726974 
- 1361      65537973 
- 1361      636C6B44 
- 1362              	.LASF25:
- 1363 014a 72656173 		.ascii	"reason\000"
- 1363      6F6E00
- 1364              	.LASF36:
- 1365 0151 706F6C61 		.ascii	"polarity\000"
- 1365      72697479 
- 1365      00
- 1366              	.LASF37:
- 1367 015a 43795379 		.ascii	"CySysPmGetResetReason\000"
- 1367      73506D47 
- 1367      65745265 
- 1367      73657452 
- 1367      6561736F 
- 1368              	.LASF32:
- 1369 0170 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
- 1369      43313120 
- 1369      352E342E 
- 1369      31203230 
- 1369      31363036 
- 1370 01a3 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m0 -mthumb -g -O"
- 1370      20726576 
- 1370      6973696F 
- 1370      6E203233 
- 1370      37373135 
- 1371 01d6 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
- 1371      66756E63 
- 1371      74696F6E 
- 1371      2D736563 
- 1371      74696F6E 
- 1372              	.LASF18:
- 1373 01fe 73697A65 		.ascii	"sizetype\000"
- 1373      74797065 
- 1373      00
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccNn33F8.s 			page 38
+ 1351              	.LASF28:
+ 1352 0135 43795379 		.ascii	"CySysPmUnfreezeIo\000"
+ 1352      73506D55 
+ 1352      6E667265 
+ 1352      657A6549 
+ 1352      6F00
+ 1353              	.LASF10:
+ 1354 0147 75696E74 		.ascii	"uint16\000"
+ 1354      313600
+ 1355              	.LASF11:
+ 1356 014e 75696E74 		.ascii	"uint32\000"
+ 1356      333200
+ 1357              	.LASF29:
+ 1358 0155 4379456E 		.ascii	"CyEnterCriticalSection\000"
+ 1358      74657243 
+ 1358      72697469 
+ 1358      63616C53 
+ 1358      65637469 
+ 1359              	.LASF8:
+ 1360 016c 756E7369 		.ascii	"unsigned int\000"
+ 1360      676E6564 
+ 1360      20696E74 
+ 1360      00
+ 1361              	.LASF30:
+ 1362 0179 43794578 		.ascii	"CyExitCriticalSection\000"
+ 1362      69744372 
+ 1362      69746963 
+ 1362      616C5365 
+ 1362      6374696F 
+ 1363              	.LASF31:
+ 1364 018f 43795379 		.ascii	"CySysClkWriteSysclkDiv\000"
+ 1364      73436C6B 
+ 1364      57726974 
+ 1364      65537973 
+ 1364      636C6B44 
+ 1365              	.LASF25:
+ 1366 01a6 72656173 		.ascii	"reason\000"
+ 1366      6F6E00
+ 1367              	.LASF36:
+ 1368 01ad 706F6C61 		.ascii	"polarity\000"
+ 1368      72697479 
+ 1368      00
+ 1369              	.LASF37:
+ 1370 01b6 43795379 		.ascii	"CySysPmGetResetReason\000"
+ 1370      73506D47 
+ 1370      65745265 
+ 1370      73657452 
+ 1370      6561736F 
+ 1371              	.LASF32:
+ 1372 01cc 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
+ 1372      43313120 
+ 1372      352E342E 
+ 1372      31203230 
+ 1372      31363036 
+ 1373 01ff 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m0 -mthumb -g -O"
+ 1373      20726576 
+ 1373      6973696F 
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccOdCJa1.s 			page 38
 
 
- 1374              	.LASF6:
- 1375 0207 6C6F6E67 		.ascii	"long long int\000"
- 1375      206C6F6E 
- 1375      6720696E 
- 1375      7400
- 1376              	.LASF14:
- 1377 0215 63686172 		.ascii	"char\000"
- 1377      00
- 1378              	.LASF22:
- 1379 021a 636C6B53 		.ascii	"clkSelectReg\000"
- 1379      656C6563 
- 1379      74526567 
- 1379      00
- 1380              	.LASF2:
- 1381 0227 73686F72 		.ascii	"short int\000"
- 1381      7420696E 
- 1381      7400
- 1382              	.LASF20:
- 1383 0231 43795379 		.ascii	"CySysPmDeepSleep\000"
- 1383      73506D44 
- 1383      65657053 
- 1383      6C656570 
- 1383      00
- 1384              	.LASF4:
- 1385 0242 6C6F6E67 		.ascii	"long int\000"
- 1385      20696E74 
- 1385      00
- 1386              	.LASF33:
- 1387 024b 47656E65 		.ascii	"Generated_Source\\PSoC4\\cyPm.c\000"
- 1387      72617465 
- 1387      645F536F 
- 1387      75726365 
- 1387      5C50536F 
- 1388              	.LASF17:
- 1389 0269 6C6F6E67 		.ascii	"long double\000"
- 1389      20646F75 
- 1389      626C6500 
- 1390              	.LASF0:
- 1391 0275 7369676E 		.ascii	"signed char\000"
- 1391      65642063 
- 1391      68617200 
- 1392              	.LASF26:
- 1393 0281 43795379 		.ascii	"CySysPmFreezeIo\000"
- 1393      73506D46 
- 1393      7265657A 
- 1393      65496F00 
- 1394              	.LASF34:
- 1395 0291 433A5C55 		.ascii	"C:\\Users\\JamesN4\\Documents\\PSoC Creator\\Hybrid"
- 1395      73657273 
- 1395      5C4A616D 
- 1395      65734E34 
- 1395      5C446F63 
- 1396 02bf 456E636F 		.ascii	"EncoderCY8CKIT43\\HybridEncoder.cydsn\000"
- 1396      64657243 
- 1396      5938434B 
- 1396      49543433 
- 1396      5C487962 
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccNn33F8.s 			page 39
+ 1373      6E203233 
+ 1373      37373135 
+ 1374 0232 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
+ 1374      66756E63 
+ 1374      74696F6E 
+ 1374      2D736563 
+ 1374      74696F6E 
+ 1375              	.LASF18:
+ 1376 025a 73697A65 		.ascii	"sizetype\000"
+ 1376      74797065 
+ 1376      00
+ 1377              	.LASF6:
+ 1378 0263 6C6F6E67 		.ascii	"long long int\000"
+ 1378      206C6F6E 
+ 1378      6720696E 
+ 1378      7400
+ 1379              	.LASF14:
+ 1380 0271 63686172 		.ascii	"char\000"
+ 1380      00
+ 1381              	.LASF22:
+ 1382 0276 636C6B53 		.ascii	"clkSelectReg\000"
+ 1382      656C6563 
+ 1382      74526567 
+ 1382      00
+ 1383              	.LASF2:
+ 1384 0283 73686F72 		.ascii	"short int\000"
+ 1384      7420696E 
+ 1384      7400
+ 1385              	.LASF20:
+ 1386 028d 43795379 		.ascii	"CySysPmDeepSleep\000"
+ 1386      73506D44 
+ 1386      65657053 
+ 1386      6C656570 
+ 1386      00
+ 1387              	.LASF4:
+ 1388 029e 6C6F6E67 		.ascii	"long int\000"
+ 1388      20696E74 
+ 1388      00
+ 1389              	.LASF33:
+ 1390 02a7 47656E65 		.ascii	"Generated_Source\\PSoC4\\cyPm.c\000"
+ 1390      72617465 
+ 1390      645F536F 
+ 1390      75726365 
+ 1390      5C50536F 
+ 1391              	.LASF17:
+ 1392 02c5 6C6F6E67 		.ascii	"long double\000"
+ 1392      20646F75 
+ 1392      626C6500 
+ 1393              	.LASF0:
+ 1394 02d1 7369676E 		.ascii	"signed char\000"
+ 1394      65642063 
+ 1394      68617200 
+ 1395              	.LASF26:
+ 1396 02dd 43795379 		.ascii	"CySysPmFreezeIo\000"
+ 1396      73506D46 
+ 1396      7265657A 
+ 1396      65496F00 
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccOdCJa1.s 			page 39
 
 
  1397              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran

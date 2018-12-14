@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc6kofap.s 			page 1
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccf2QNpA.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc6kofap.s 			page 1
   28:Generated_Source\PSoC4/Comp_0.c ****         * from Hibernate. Attribute CY_NOINIT puts SRAM variable in memory section 
   29:Generated_Source\PSoC4/Comp_0.c ****         * which is retained in low power modes 
   30:Generated_Source\PSoC4/Comp_0.c ****         */
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc6kofap.s 			page 2
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccf2QNpA.s 			page 2
 
 
   31:Generated_Source\PSoC4/Comp_0.c ****         CY_NOINIT static uint32 Comp_0_intrMaskRegState;
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc6kofap.s 			page 1
   85:Generated_Source\PSoC4/Comp_0.c **** *******************************************************************************/
   86:Generated_Source\PSoC4/Comp_0.c **** void Comp_0_Init(void)
   87:Generated_Source\PSoC4/Comp_0.c **** {
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc6kofap.s 			page 3
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccf2QNpA.s 			page 3
 
 
   28              		.loc 1 87 0
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc6kofap.s 			page 1
  105:Generated_Source\PSoC4/Comp_0.c ****                 Comp_0_INTR_MASK_REG |= Comp_0_INTR_MASK_REG_DEFAULT;    
   65              		.loc 1 105 0
   66 002e 084B     		ldr	r3, .L4+12
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc6kofap.s 			page 4
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccf2QNpA.s 			page 4
 
 
   67 0030 1A68     		ldr	r2, [r3]
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc6kofap.s 			page 1
  126:Generated_Source\PSoC4/Comp_0.c **** *
  127:Generated_Source\PSoC4/Comp_0.c **** * Parameters:
  128:Generated_Source\PSoC4/Comp_0.c **** *  None
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc6kofap.s 			page 5
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccf2QNpA.s 			page 5
 
 
  129:Generated_Source\PSoC4/Comp_0.c **** *
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc6kofap.s 			page 1
  134 0024 00000000 		.word	.LANCHOR0
  135              		.cfi_endproc
  136              	.LFE4:
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc6kofap.s 			page 6
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccf2QNpA.s 			page 6
 
 
  137              		.size	Comp_0_Enable, .-Comp_0_Enable
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc6kofap.s 			page 1
  185              		.type	Comp_0_Stop, %function
  186              	Comp_0_Stop:
  187              	.LFB5:
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc6kofap.s 			page 7
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccf2QNpA.s 			page 7
 
 
  150:Generated_Source\PSoC4/Comp_0.c **** 
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc6kofap.s 			page 1
  204 000e 1360     		str	r3, [r2]
  188:Generated_Source\PSoC4/Comp_0.c ****     CyExitCriticalSection(enableInterrupts);
  205              		.loc 1 188 0
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc6kofap.s 			page 8
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccf2QNpA.s 			page 8
 
 
  206 0010 FFF7FEFF 		bl	CyExitCriticalSection
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc6kofap.s 			page 1
  213:Generated_Source\PSoC4/Comp_0.c ****     enableInterrupts = CyEnterCriticalSection();
  236              		.loc 1 213 0
  237 0004 FFF7FEFF 		bl	CyEnterCriticalSection
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc6kofap.s 			page 9
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccf2QNpA.s 			page 9
 
 
  238              	.LVL12:
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc6kofap.s 			page 1
  235:Generated_Source\PSoC4/Comp_0.c **** * Return:
  236:Generated_Source\PSoC4/Comp_0.c **** *  None
  237:Generated_Source\PSoC4/Comp_0.c **** *
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc6kofap.s 			page 10
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccf2QNpA.s 			page 10
 
 
  238:Generated_Source\PSoC4/Comp_0.c **** *******************************************************************************/
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc6kofap.s 			page 1
  312 0028 04002B40 		.word	1076559876
  313              		.cfi_endproc
  314              	.LFE7:
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc6kofap.s 			page 11
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccf2QNpA.s 			page 11
 
 
  315              		.size	Comp_0_SetInterruptMode, .-Comp_0_SetInterruptMode
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc6kofap.s 			page 1
  345              		.code	16
  346              		.thumb_func
  347              		.type	Comp_0_ClearInterrupt, %function
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc6kofap.s 			page 12
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccf2QNpA.s 			page 12
 
 
  348              	Comp_0_ClearInterrupt:
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc6kofap.s 			page 1
  300:Generated_Source\PSoC4/Comp_0.c **** 
  301:Generated_Source\PSoC4/Comp_0.c **** /*******************************************************************************
  302:Generated_Source\PSoC4/Comp_0.c **** * Function Name: Comp_0_SetInterrupt
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc6kofap.s 			page 13
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccf2QNpA.s 			page 13
 
 
  303:Generated_Source\PSoC4/Comp_0.c **** ********************************************************************************
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc6kofap.s 			page 1
  407              	.LFE10:
  408              		.size	Comp_0_SetInterrupt, .-Comp_0_SetInterrupt
  409              		.section	.text.Comp_0_SetHysteresis,"ax",%progbits
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc6kofap.s 			page 14
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccf2QNpA.s 			page 14
 
 
  410              		.align	2
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc6kofap.s 			page 1
  438 0014 1360     		str	r3, [r2]
  439 0016 04E0     		b	.L33
  440              	.L32:
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc6kofap.s 			page 15
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccf2QNpA.s 			page 15
 
 
  353:Generated_Source\PSoC4/Comp_0.c ****     }
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc6kofap.s 			page 1
  378:Generated_Source\PSoC4/Comp_0.c **** *
  379:Generated_Source\PSoC4/Comp_0.c **** *******************************************************************************/
  380:Generated_Source\PSoC4/Comp_0.c **** void Comp_0_SetFilter(uint32 filter)
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc6kofap.s 			page 16
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccf2QNpA.s 			page 16
 
 
  381:Generated_Source\PSoC4/Comp_0.c **** {
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc6kofap.s 			page 1
  510              	.L39:
  511 0028 04002B40 		.word	1076559876
  512              		.cfi_endproc
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc6kofap.s 			page 17
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccf2QNpA.s 			page 17
 
 
  513              	.LFE12:
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc6kofap.s 			page 1
  541              	.L42:
  542 0010 04002B40 		.word	1076559876
  543              		.cfi_endproc
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc6kofap.s 			page 18
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccf2QNpA.s 			page 18
 
 
  544              	.LFE13:
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc6kofap.s 			page 1
  449:Generated_Source\PSoC4/Comp_0.c ****     Comp_0_TRIMA_REG = 0u;
  570              		.loc 1 449 0
  571 000c 0023     		movs	r3, #0
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc6kofap.s 			page 19
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccf2QNpA.s 			page 19
 
 
  572 000e 234A     		ldr	r2, .L53+4
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc6kofap.s 			page 1
  609              	.LVL40:
  610 0040 8542     		cmp	r5, r0
  611 0042 02D1     		bne	.L47
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc6kofap.s 			page 20
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccf2QNpA.s 			page 20
 
 
  461:Generated_Source\PSoC4/Comp_0.c ****     {
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc6kofap.s 			page 1
  645 0066 1368     		ldr	r3, [r2]
  646 0068 0133     		adds	r3, r3, #1
  647 006a 1360     		str	r3, [r2]
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc6kofap.s 			page 21
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccf2QNpA.s 			page 21
 
 
  484:Generated_Source\PSoC4/Comp_0.c ****             CyDelayUs(1u);
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc6kofap.s 			page 1
  688 00a0 04FF2B40 		.word	1076625156
  689 00a4 04002B40 		.word	1076559876
  690              		.cfi_endproc
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc6kofap.s 			page 22
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccf2QNpA.s 			page 22
 
 
  691              	.LFE14:
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc6kofap.s 			page 1
  722              	.L57:
  723              		.align	2
  724              	.L56:
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc6kofap.s 			page 23
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccf2QNpA.s 			page 23
 
 
  725 0014 00FF2B40 		.word	1076625152
@@ -1378,7 +1378,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc6kofap.s 			page 1
  751              		.loc 1 546 0
  752 0008 0A4B     		ldr	r3, .L61
  753 000a 1968     		ldr	r1, [r3]
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc6kofap.s 			page 24
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccf2QNpA.s 			page 24
 
 
  754 000c 0A4A     		ldr	r2, .L61+4
@@ -1438,7 +1438,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc6kofap.s 			page 1
  552:Generated_Source\PSoC4/Comp_0.c **** 
  553:Generated_Source\PSoC4/Comp_0.c **** 
  554:Generated_Source\PSoC4/Comp_0.c **** /*******************************************************************************
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc6kofap.s 			page 25
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccf2QNpA.s 			page 25
 
 
  555:Generated_Source\PSoC4/Comp_0.c **** * Function Name: Comp_0_SetInterruptMask
@@ -1498,7 +1498,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc6kofap.s 			page 1
  578:Generated_Source\PSoC4/Comp_0.c **** 
  579:Generated_Source\PSoC4/Comp_0.c **** 
  580:Generated_Source\PSoC4/Comp_0.c **** /*******************************************************************************
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc6kofap.s 			page 26
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccf2QNpA.s 			page 26
 
 
  581:Generated_Source\PSoC4/Comp_0.c **** * Function Name: Comp_0_GetInterruptMask
@@ -1558,7 +1558,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc6kofap.s 			page 1
  609:Generated_Source\PSoC4/Comp_0.c **** * Parameters:
  610:Generated_Source\PSoC4/Comp_0.c **** *  None
  611:Generated_Source\PSoC4/Comp_0.c **** *
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc6kofap.s 			page 27
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccf2QNpA.s 			page 27
 
 
  612:Generated_Source\PSoC4/Comp_0.c **** * Return:
@@ -1618,29 +1618,29 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc6kofap.s 			page 1
  904 0004 0400     		.2byte	0x4
  905 0006 00000000 		.4byte	.Ldebug_abbrev0
  906 000a 04       		.byte	0x4
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc6kofap.s 			page 28
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccf2QNpA.s 			page 28
 
 
  907 000b 01       		.uleb128 0x1
- 908 000c 04020000 		.4byte	.LASF49
+ 908 000c 60020000 		.4byte	.LASF49
  909 0010 0C       		.byte	0xc
- 910 0011 81030000 		.4byte	.LASF50
- 911 0015 A1030000 		.4byte	.LASF51
+ 910 0011 DD030000 		.4byte	.LASF50
+ 911 0015 9F000000 		.4byte	.LASF51
  912 0019 00000000 		.4byte	.Ldebug_ranges0+0
  913 001d 00000000 		.4byte	0
  914 0021 00000000 		.4byte	.Ldebug_line0
  915 0025 02       		.uleb128 0x2
  916 0026 01       		.byte	0x1
  917 0027 06       		.byte	0x6
- 918 0028 4E030000 		.4byte	.LASF0
+ 918 0028 AA030000 		.4byte	.LASF0
  919 002c 02       		.uleb128 0x2
  920 002d 01       		.byte	0x1
  921 002e 08       		.byte	0x8
- 922 002f 18010000 		.4byte	.LASF1
+ 922 002f 74010000 		.4byte	.LASF1
  923 0033 02       		.uleb128 0x2
  924 0034 02       		.byte	0x2
  925 0035 05       		.byte	0x5
- 926 0036 F6020000 		.4byte	.LASF2
+ 926 0036 52030000 		.4byte	.LASF2
  927 003a 02       		.uleb128 0x2
  928 003b 02       		.byte	0x2
  929 003c 07       		.byte	0x7
@@ -1648,19 +1648,19 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc6kofap.s 			page 1
  931 0041 02       		.uleb128 0x2
  932 0042 04       		.byte	0x4
  933 0043 05       		.byte	0x5
- 934 0044 39030000 		.4byte	.LASF4
+ 934 0044 95030000 		.4byte	.LASF4
  935 0048 02       		.uleb128 0x2
  936 0049 04       		.byte	0x4
  937 004a 07       		.byte	0x7
- 938 004b 38010000 		.4byte	.LASF5
+ 938 004b 94010000 		.4byte	.LASF5
  939 004f 02       		.uleb128 0x2
  940 0050 08       		.byte	0x8
  941 0051 05       		.byte	0x5
- 942 0052 BD020000 		.4byte	.LASF6
+ 942 0052 19030000 		.4byte	.LASF6
  943 0056 02       		.uleb128 0x2
  944 0057 08       		.byte	0x8
  945 0058 07       		.byte	0x7
- 946 0059 01010000 		.4byte	.LASF7
+ 946 0059 5D010000 		.4byte	.LASF7
  947 005d 03       		.uleb128 0x3
  948 005e 04       		.byte	0x4
  949 005f 05       		.byte	0x5
@@ -1668,17 +1668,17 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc6kofap.s 			page 1
  951 0064 02       		.uleb128 0x2
  952 0065 04       		.byte	0x4
  953 0066 07       		.byte	0x7
- 954 0067 DC010000 		.4byte	.LASF8
+ 954 0067 38020000 		.4byte	.LASF8
  955 006b 04       		.uleb128 0x4
- 956 006c 4A010000 		.4byte	.LASF9
+ 956 006c A6010000 		.4byte	.LASF9
  957 0070 02       		.byte	0x2
  958 0071 D201     		.2byte	0x1d2
  959 0073 2C000000 		.4byte	0x2c
  960 0077 04       		.uleb128 0x4
- 961 0078 BE010000 		.4byte	.LASF10
+ 961 0078 1A020000 		.4byte	.LASF10
  962 007c 02       		.byte	0x2
  963 007d D401     		.2byte	0x1d4
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc6kofap.s 			page 29
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccf2QNpA.s 			page 29
 
 
  964 007f 48000000 		.4byte	0x48
@@ -1689,11 +1689,11 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc6kofap.s 			page 1
  969 008a 02       		.uleb128 0x2
  970 008b 08       		.byte	0x8
  971 008c 04       		.byte	0x4
- 972 008d 76010000 		.4byte	.LASF12
+ 972 008d D2010000 		.4byte	.LASF12
  973 0091 02       		.uleb128 0x2
  974 0092 01       		.byte	0x1
  975 0093 08       		.byte	0x8
- 976 0094 E1020000 		.4byte	.LASF13
+ 976 0094 3D030000 		.4byte	.LASF13
  977 0098 04       		.uleb128 0x4
  978 0099 1D000000 		.4byte	.LASF14
  979 009d 02       		.byte	0x2
@@ -1704,13 +1704,13 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc6kofap.s 			page 1
  984 00a9 02       		.uleb128 0x2
  985 00aa 08       		.byte	0x8
  986 00ab 04       		.byte	0x4
- 987 00ac 42030000 		.4byte	.LASF15
+ 987 00ac 9E030000 		.4byte	.LASF15
  988 00b0 02       		.uleb128 0x2
  989 00b1 04       		.byte	0x4
  990 00b2 07       		.byte	0x7
- 991 00b3 A3020000 		.4byte	.LASF16
+ 991 00b3 FF020000 		.4byte	.LASF16
  992 00b7 06       		.uleb128 0x6
- 993 00b8 CB020000 		.4byte	.LASF17
+ 993 00b8 27030000 		.4byte	.LASF17
  994 00bc 01       		.byte	0x1
  995 00bd 56       		.byte	0x56
  996 00be 00000000 		.4byte	.LFB3
@@ -1719,7 +1719,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc6kofap.s 			page 1
  999 00c7 9C       		.byte	0x9c
  1000 00c8 FE000000 		.4byte	0xfe
  1001 00cc 07       		.uleb128 0x7
- 1002 00cd AC020000 		.4byte	.LASF19
+ 1002 00cd 08030000 		.4byte	.LASF19
  1003 00d1 01       		.byte	0x1
  1004 00d2 58       		.byte	0x58
  1005 00d3 6B000000 		.4byte	0x6b
@@ -1738,7 +1738,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc6kofap.s 			page 1
  1018 00f8 50       		.byte	0x50
  1019 00f9 02       		.uleb128 0x2
  1020 00fa 74       		.byte	0x74
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc6kofap.s 			page 30
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccf2QNpA.s 			page 30
 
 
  1021 00fb 00       		.sleb128 0
@@ -1754,7 +1754,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc6kofap.s 			page 1
  1031 010e 9C       		.byte	0x9c
  1032 010f 35010000 		.4byte	0x135
  1033 0113 07       		.uleb128 0x7
- 1034 0114 AC020000 		.4byte	.LASF19
+ 1034 0114 08030000 		.4byte	.LASF19
  1035 0118 01       		.byte	0x1
  1036 0119 88       		.byte	0x88
  1037 011a 6B000000 		.4byte	0x6b
@@ -1767,7 +1767,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc6kofap.s 			page 1
  1044 0130 1A050000 		.4byte	0x51a
  1045 0134 00       		.byte	0
  1046 0135 06       		.uleb128 0x6
- 1047 0136 AE000000 		.4byte	.LASF20
+ 1047 0136 0A010000 		.4byte	.LASF20
  1048 013a 01       		.byte	0x1
  1049 013b 3A       		.byte	0x3a
  1050 013c 00000000 		.4byte	.LFB2
@@ -1783,7 +1783,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc6kofap.s 			page 1
  1060 0158 FE000000 		.4byte	0xfe
  1061 015c 00       		.byte	0
  1062 015d 06       		.uleb128 0x6
- 1063 015e BB000000 		.4byte	.LASF21
+ 1063 015e 17010000 		.4byte	.LASF21
  1064 0162 01       		.byte	0x1
  1065 0163 A9       		.byte	0xa9
  1066 0164 00000000 		.4byte	.LFB5
@@ -1792,13 +1792,13 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc6kofap.s 			page 1
  1069 016d 9C       		.byte	0x9c
  1070 016e 94010000 		.4byte	0x194
  1071 0172 07       		.uleb128 0x7
- 1072 0173 AC020000 		.4byte	.LASF19
+ 1072 0173 08030000 		.4byte	.LASF19
  1073 0177 01       		.byte	0x1
  1074 0178 AB       		.byte	0xab
  1075 0179 6B000000 		.4byte	0x6b
  1076 017d 26000000 		.4byte	.LLST2
  1077 0181 08       		.uleb128 0x8
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc6kofap.s 			page 31
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccf2QNpA.s 			page 31
 
 
  1078 0182 06000000 		.4byte	.LVL9
@@ -1808,7 +1808,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc6kofap.s 			page 1
  1082 018f 1A050000 		.4byte	0x51a
  1083 0193 00       		.byte	0
  1084 0194 06       		.uleb128 0x6
- 1085 0195 E6020000 		.4byte	.LASF22
+ 1085 0195 42030000 		.4byte	.LASF22
  1086 0199 01       		.byte	0x1
  1087 019a D0       		.byte	0xd0
  1088 019b 00000000 		.4byte	.LFB6
@@ -1817,19 +1817,19 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc6kofap.s 			page 1
  1091 01a4 9C       		.byte	0x9c
  1092 01a5 E9010000 		.4byte	0x1e9
  1093 01a9 0B       		.uleb128 0xb
- 1094 01aa 9D020000 		.4byte	.LASF25
+ 1094 01aa F9020000 		.4byte	.LASF25
  1095 01ae 01       		.byte	0x1
  1096 01af D0       		.byte	0xd0
  1097 01b0 77000000 		.4byte	0x77
  1098 01b4 39000000 		.4byte	.LLST3
  1099 01b8 07       		.uleb128 0x7
- 1100 01b9 6F010000 		.4byte	.LASF23
+ 1100 01b9 CB010000 		.4byte	.LASF23
  1101 01bd 01       		.byte	0x1
  1102 01be D2       		.byte	0xd2
  1103 01bf 77000000 		.4byte	0x77
  1104 01c3 65000000 		.4byte	.LLST4
  1105 01c7 07       		.uleb128 0x7
- 1106 01c8 AC020000 		.4byte	.LASF19
+ 1106 01c8 08030000 		.4byte	.LASF19
  1107 01cc 01       		.byte	0x1
  1108 01cd D3       		.byte	0xd3
  1109 01ce 6B000000 		.4byte	0x6b
@@ -1842,7 +1842,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc6kofap.s 			page 1
  1116 01e4 1A050000 		.4byte	0x51a
  1117 01e8 00       		.byte	0
  1118 01e9 06       		.uleb128 0x6
- 1119 01ea 50010000 		.4byte	.LASF24
+ 1119 01ea AC010000 		.4byte	.LASF24
  1120 01ee 01       		.byte	0x1
  1121 01ef EF       		.byte	0xef
  1122 01f0 00000000 		.4byte	.LFB7
@@ -1851,14 +1851,14 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc6kofap.s 			page 1
  1125 01f9 9C       		.byte	0x9c
  1126 01fa 3E020000 		.4byte	0x23e
  1127 01fe 0B       		.uleb128 0xb
- 1128 01ff FF010000 		.4byte	.LASF26
+ 1128 01ff 5B020000 		.4byte	.LASF26
  1129 0203 01       		.byte	0x1
  1130 0204 EF       		.byte	0xef
  1131 0205 77000000 		.4byte	0x77
  1132 0209 8B000000 		.4byte	.LLST6
  1133 020d 07       		.uleb128 0x7
- 1134 020e 6F010000 		.4byte	.LASF23
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc6kofap.s 			page 32
+ 1134 020e CB010000 		.4byte	.LASF23
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccf2QNpA.s 			page 32
 
 
  1135 0212 01       		.byte	0x1
@@ -1866,7 +1866,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc6kofap.s 			page 1
  1137 0214 77000000 		.4byte	0x77
  1138 0218 AC000000 		.4byte	.LLST7
  1139 021c 07       		.uleb128 0x7
- 1140 021d AC020000 		.4byte	.LASF19
+ 1140 021d 08030000 		.4byte	.LASF19
  1141 0221 01       		.byte	0x1
  1142 0222 F2       		.byte	0xf2
  1143 0223 6B000000 		.4byte	0x6b
@@ -1879,7 +1879,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc6kofap.s 			page 1
  1150 0239 1A050000 		.4byte	0x51a
  1151 023d 00       		.byte	0
  1152 023e 0C       		.uleb128 0xc
- 1153 023f C7000000 		.4byte	.LASF34
+ 1153 023f 23010000 		.4byte	.LASF34
  1154 0243 01       		.byte	0x1
  1155 0244 0F01     		.2byte	0x10f
  1156 0246 77000000 		.4byte	0x77
@@ -1888,7 +1888,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc6kofap.s 			page 1
  1159 0252 01       		.uleb128 0x1
  1160 0253 9C       		.byte	0x9c
  1161 0254 0D       		.uleb128 0xd
- 1162 0255 92010000 		.4byte	.LASF27
+ 1162 0255 EE010000 		.4byte	.LASF27
  1163 0259 01       		.byte	0x1
  1164 025a 2701     		.2byte	0x127
  1165 025c 00000000 		.4byte	.LFB9
@@ -1897,7 +1897,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc6kofap.s 			page 1
  1168 0265 9C       		.byte	0x9c
  1169 0266 79020000 		.4byte	0x279
  1170 026a 0E       		.uleb128 0xe
- 1171 026b 2B030000 		.4byte	.LASF28
+ 1171 026b 87030000 		.4byte	.LASF28
  1172 026f 01       		.byte	0x1
  1173 0270 2701     		.2byte	0x127
  1174 0272 77000000 		.4byte	0x77
@@ -1914,16 +1914,16 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc6kofap.s 			page 1
  1185 028a 9C       		.byte	0x9c
  1186 028b C2020000 		.4byte	0x2c2
  1187 028f 0F       		.uleb128 0xf
- 1188 0290 2B030000 		.4byte	.LASF28
+ 1188 0290 87030000 		.4byte	.LASF28
  1189 0294 01       		.byte	0x1
  1190 0295 3F01     		.2byte	0x13f
  1191 0297 77000000 		.4byte	0x77
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc6kofap.s 			page 33
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccf2QNpA.s 			page 33
 
 
  1192 029b D2000000 		.4byte	.LLST9
  1193 029f 10       		.uleb128 0x10
- 1194 02a0 AC020000 		.4byte	.LASF19
+ 1194 02a0 08030000 		.4byte	.LASF19
  1195 02a4 01       		.byte	0x1
  1196 02a5 4101     		.2byte	0x141
  1197 02a7 6B000000 		.4byte	0x6b
@@ -1945,13 +1945,13 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc6kofap.s 			page 1
  1213 02d3 9C       		.byte	0x9c
  1214 02d4 0B030000 		.4byte	0x30b
  1215 02d8 0F       		.uleb128 0xf
- 1216 02d9 92020000 		.4byte	.LASF31
+ 1216 02d9 EE020000 		.4byte	.LASF31
  1217 02dd 01       		.byte	0x1
  1218 02de 5901     		.2byte	0x159
  1219 02e0 77000000 		.4byte	0x77
  1220 02e4 11010000 		.4byte	.LLST11
  1221 02e8 10       		.uleb128 0x10
- 1222 02e9 AC020000 		.4byte	.LASF19
+ 1222 02e9 08030000 		.4byte	.LASF19
  1223 02ed 01       		.byte	0x1
  1224 02ee 5B01     		.2byte	0x15b
  1225 02f0 6B000000 		.4byte	0x6b
@@ -1973,16 +1973,16 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc6kofap.s 			page 1
  1241 031c 9C       		.byte	0x9c
  1242 031d 54030000 		.4byte	0x354
  1243 0321 0F       		.uleb128 0xf
- 1244 0322 68010000 		.4byte	.LASF33
+ 1244 0322 C4010000 		.4byte	.LASF33
  1245 0326 01       		.byte	0x1
  1246 0327 7C01     		.2byte	0x17c
  1247 0329 77000000 		.4byte	0x77
  1248 032d 50010000 		.4byte	.LLST13
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc6kofap.s 			page 34
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccf2QNpA.s 			page 34
 
 
  1249 0331 10       		.uleb128 0x10
- 1250 0332 AC020000 		.4byte	.LASF19
+ 1250 0332 08030000 		.4byte	.LASF19
  1251 0336 01       		.byte	0x1
  1252 0337 7E01     		.2byte	0x17e
  1253 0339 6B000000 		.4byte	0x6b
@@ -1995,7 +1995,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc6kofap.s 			page 1
  1260 034f 1A050000 		.4byte	0x51a
  1261 0353 00       		.byte	0
  1262 0354 0C       		.uleb128 0xc
- 1263 0355 26010000 		.4byte	.LASF35
+ 1263 0355 82010000 		.4byte	.LASF35
  1264 0359 01       		.byte	0x1
  1265 035a A101     		.2byte	0x1a1
  1266 035c 77000000 		.4byte	0x77
@@ -2004,7 +2004,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc6kofap.s 			page 1
  1269 0368 01       		.uleb128 0x1
  1270 0369 9C       		.byte	0x9c
  1271 036a 11       		.uleb128 0x11
- 1272 036b 5A030000 		.4byte	.LASF52
+ 1272 036b B6030000 		.4byte	.LASF52
  1273 036f 01       		.byte	0x1
  1274 0370 BB01     		.2byte	0x1bb
  1275 0372 77000000 		.4byte	0x77
@@ -2014,7 +2014,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc6kofap.s 			page 1
  1279 037f 9C       		.byte	0x9c
  1280 0380 00040000 		.4byte	0x400
  1281 0384 10       		.uleb128 0x10
- 1282 0385 24030000 		.4byte	.LASF36
+ 1282 0385 80030000 		.4byte	.LASF36
  1283 0389 01       		.byte	0x1
  1284 038a BD01     		.2byte	0x1bd
  1285 038c 77000000 		.4byte	0x77
@@ -2038,7 +2038,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc6kofap.s 			page 1
  1303 03b5 08       		.uleb128 0x8
  1304 03b6 20000000 		.4byte	.LVL36
  1305 03ba 54030000 		.4byte	0x354
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc6kofap.s 			page 35
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccf2QNpA.s 			page 35
 
 
  1306 03be 13       		.uleb128 0x13
@@ -2072,7 +2072,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc6kofap.s 			page 1
  1334 03fb 54030000 		.4byte	0x354
  1335 03ff 00       		.byte	0
  1336 0400 0D       		.uleb128 0xd
- 1337 0401 00030000 		.4byte	.LASF37
+ 1337 0401 5C030000 		.4byte	.LASF37
  1338 0405 01       		.byte	0x1
  1339 0406 0202     		.2byte	0x202
  1340 0408 00000000 		.4byte	.LFB15
@@ -2088,7 +2088,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc6kofap.s 			page 1
  1350 0422 E1010000 		.4byte	.LLST17
  1351 0426 00       		.byte	0
  1352 0427 0D       		.uleb128 0xd
- 1353 0428 7D010000 		.4byte	.LASF39
+ 1353 0428 D9010000 		.4byte	.LASF39
  1354 042c 01       		.byte	0x1
  1355 042d 1C02     		.2byte	0x21c
  1356 042f 00000000 		.4byte	.LFB16
@@ -2097,8 +2097,8 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc6kofap.s 			page 1
  1359 0438 9C       		.byte	0x9c
  1360 0439 80040000 		.4byte	0x480
  1361 043d 0F       		.uleb128 0xf
- 1362 043e FF010000 		.4byte	.LASF26
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc6kofap.s 			page 36
+ 1362 043e 5B020000 		.4byte	.LASF26
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccf2QNpA.s 			page 36
 
 
  1363 0442 01       		.byte	0x1
@@ -2106,13 +2106,13 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc6kofap.s 			page 1
  1365 0445 77000000 		.4byte	0x77
  1366 0449 02020000 		.4byte	.LLST18
  1367 044d 10       		.uleb128 0x10
- 1368 044e 6F010000 		.4byte	.LASF23
+ 1368 044e CB010000 		.4byte	.LASF23
  1369 0452 01       		.byte	0x1
  1370 0453 1E02     		.2byte	0x21e
  1371 0455 77000000 		.4byte	0x77
  1372 0459 2E020000 		.4byte	.LLST19
  1373 045d 10       		.uleb128 0x10
- 1374 045e AC020000 		.4byte	.LASF19
+ 1374 045e 08030000 		.4byte	.LASF19
  1375 0462 01       		.byte	0x1
  1376 0463 1F02     		.2byte	0x21f
  1377 0465 6B000000 		.4byte	0x6b
@@ -2125,7 +2125,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc6kofap.s 			page 1
  1384 047b 1A050000 		.4byte	0x51a
  1385 047f 00       		.byte	0
  1386 0480 0D       		.uleb128 0xd
- 1387 0481 69030000 		.4byte	.LASF40
+ 1387 0481 C5030000 		.4byte	.LASF40
  1388 0485 01       		.byte	0x1
  1389 0486 3A02     		.2byte	0x23a
  1390 0488 00000000 		.4byte	.LFB17
@@ -2134,7 +2134,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc6kofap.s 			page 1
  1393 0491 9C       		.byte	0x9c
  1394 0492 A5040000 		.4byte	0x4a5
  1395 0496 0E       		.uleb128 0xe
- 1396 0497 2B030000 		.4byte	.LASF28
+ 1396 0497 87030000 		.4byte	.LASF28
  1397 049b 01       		.byte	0x1
  1398 049c 3A02     		.2byte	0x23a
  1399 049e 77000000 		.4byte	0x77
@@ -2151,19 +2151,19 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc6kofap.s 			page 1
  1410 04b9 01       		.uleb128 0x1
  1411 04ba 9C       		.byte	0x9c
  1412 04bb 0C       		.uleb128 0xc
- 1413 04bc E1000000 		.4byte	.LASF42
+ 1413 04bc 3D010000 		.4byte	.LASF42
  1414 04c0 01       		.byte	0x1
  1415 04c1 6902     		.2byte	0x269
  1416 04c3 77000000 		.4byte	0x77
  1417 04c7 00000000 		.4byte	.LFB19
  1418 04cb 0C000000 		.4byte	.LFE19-.LFB19
  1419 04cf 01       		.uleb128 0x1
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc6kofap.s 			page 37
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccf2QNpA.s 			page 37
 
 
  1420 04d0 9C       		.byte	0x9c
  1421 04d1 14       		.uleb128 0x14
- 1422 04d2 10030000 		.4byte	.LASF43
+ 1422 04d2 6C030000 		.4byte	.LASF43
  1423 04d6 01       		.byte	0x1
  1424 04d7 18       		.byte	0x18
  1425 04d8 77000000 		.4byte	0x77
@@ -2179,7 +2179,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc6kofap.s 			page 1
  1435 04ee 03       		.byte	0x3
  1436 04ef 00000000 		.4byte	Comp_0_intrMaskRegState
  1437 04f3 15       		.uleb128 0x15
- 1438 04f4 9F000000 		.4byte	.LASF53
+ 1438 04f4 FB000000 		.4byte	.LASF53
  1439 04f8 01       		.byte	0x1
  1440 04f9 17       		.byte	0x17
  1441 04fa 6B000000 		.4byte	0x6b
@@ -2187,23 +2187,23 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc6kofap.s 			page 1
  1443 04ff 03       		.byte	0x3
  1444 0500 00000000 		.4byte	Comp_0_initVar
  1445 0504 16       		.uleb128 0x16
- 1446 0505 C5010000 		.4byte	.LASF45
- 1447 0509 C5010000 		.4byte	.LASF45
+ 1446 0505 21020000 		.4byte	.LASF45
+ 1447 0509 21020000 		.4byte	.LASF45
  1448 050d 03       		.byte	0x3
  1449 050e E5       		.byte	0xe5
  1450 050f 16       		.uleb128 0x16
- 1451 0510 A8010000 		.4byte	.LASF46
- 1452 0514 A8010000 		.4byte	.LASF46
+ 1451 0510 04020000 		.4byte	.LASF46
+ 1452 0514 04020000 		.4byte	.LASF46
  1453 0518 04       		.byte	0x4
  1454 0519 5D       		.byte	0x5d
  1455 051a 16       		.uleb128 0x16
- 1456 051b E9010000 		.4byte	.LASF47
- 1457 051f E9010000 		.4byte	.LASF47
+ 1456 051b 45020000 		.4byte	.LASF47
+ 1457 051f 45020000 		.4byte	.LASF47
  1458 0523 03       		.byte	0x3
  1459 0524 E6       		.byte	0xe6
  1460 0525 16       		.uleb128 0x16
- 1461 0526 D7020000 		.4byte	.LASF48
- 1462 052a D7020000 		.4byte	.LASF48
+ 1461 0526 33030000 		.4byte	.LASF48
+ 1462 052a 33030000 		.4byte	.LASF48
  1463 052e 03       		.byte	0x3
  1464 052f DA       		.byte	0xda
  1465 0530 00       		.byte	0
@@ -2218,7 +2218,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc6kofap.s 			page 1
  1474 0006 0B       		.uleb128 0xb
  1475 0007 03       		.uleb128 0x3
  1476 0008 0E       		.uleb128 0xe
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc6kofap.s 			page 38
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccf2QNpA.s 			page 38
 
 
  1477 0009 1B       		.uleb128 0x1b
@@ -2278,7 +2278,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc6kofap.s 			page 1
  1531 003f 01       		.byte	0x1
  1532 0040 3F       		.uleb128 0x3f
  1533 0041 19       		.uleb128 0x19
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc6kofap.s 			page 39
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccf2QNpA.s 			page 39
 
 
  1534 0042 03       		.uleb128 0x3
@@ -2338,7 +2338,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc6kofap.s 			page 1
  1588 007d 8A8201   		.uleb128 0x410a
  1589 0080 00       		.byte	0
  1590 0081 02       		.uleb128 0x2
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc6kofap.s 			page 40
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccf2QNpA.s 			page 40
 
 
  1591 0082 18       		.uleb128 0x18
@@ -2398,7 +2398,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc6kofap.s 			page 1
  1645 00ba 3B       		.uleb128 0x3b
  1646 00bb 05       		.uleb128 0x5
  1647 00bc 27       		.uleb128 0x27
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc6kofap.s 			page 41
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccf2QNpA.s 			page 41
 
 
  1648 00bd 19       		.uleb128 0x19
@@ -2458,7 +2458,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc6kofap.s 			page 1
  1702 00f4 02       		.uleb128 0x2
  1703 00f5 17       		.uleb128 0x17
  1704 00f6 00       		.byte	0
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc6kofap.s 			page 42
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccf2QNpA.s 			page 42
 
 
  1705 00f7 00       		.byte	0
@@ -2518,7 +2518,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc6kofap.s 			page 1
  1759 0130 14       		.uleb128 0x14
  1760 0131 34       		.uleb128 0x34
  1761 0132 00       		.byte	0
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc6kofap.s 			page 43
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccf2QNpA.s 			page 43
 
 
  1762 0133 03       		.uleb128 0x3
@@ -2578,7 +2578,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc6kofap.s 			page 1
  1816 000b 00000000 		.4byte	0
  1817 000f 00000000 		.4byte	0
  1818              	.LLST1:
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc6kofap.s 			page 44
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccf2QNpA.s 			page 44
 
 
  1819 0013 06000000 		.4byte	.LVL5
@@ -2638,7 +2638,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc6kofap.s 			page 1
  1873 00a1 01       		.uleb128 0x1
  1874 00a2 50       		.byte	0x50
  1875 00a3 9F       		.byte	0x9f
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc6kofap.s 			page 45
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccf2QNpA.s 			page 45
 
 
  1876 00a4 00000000 		.4byte	0
@@ -2698,7 +2698,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc6kofap.s 			page 1
  1930 0132 01       		.uleb128 0x1
  1931 0133 50       		.byte	0x50
  1932 0134 9F       		.byte	0x9f
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc6kofap.s 			page 46
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccf2QNpA.s 			page 46
 
 
  1933 0135 00000000 		.4byte	0
@@ -2758,7 +2758,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc6kofap.s 			page 1
  1987 01c3 2E000000 		.4byte	.LVL38
  1988 01c7 62000000 		.4byte	.LVL44
  1989 01cb 0100     		.2byte	0x1
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc6kofap.s 			page 47
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccf2QNpA.s 			page 47
 
 
  1990 01cd 54       		.byte	0x54
@@ -2818,7 +2818,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc6kofap.s 			page 1
  2044 0000 A4000000 		.4byte	0xa4
  2045 0004 0200     		.2byte	0x2
  2046 0006 00000000 		.4byte	.Ldebug_info0
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc6kofap.s 			page 48
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccf2QNpA.s 			page 48
 
 
  2047 000a 04       		.byte	0x4
@@ -2878,7 +2878,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc6kofap.s 			page 1
  2101 0028 00000000 		.4byte	.LFB7
  2102 002c 2C000000 		.4byte	.LFE7
  2103 0030 00000000 		.4byte	.LFB8
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc6kofap.s 			page 49
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccf2QNpA.s 			page 49
 
 
  2104 0034 0C000000 		.4byte	.LFE8
@@ -2938,7 +2938,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc6kofap.s 			page 1
  2141      6500
  2142              	.LASF41:
  2143 0045 436F6D70 		.ascii	"Comp_0_GetInterruptMask\000"
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc6kofap.s 			page 50
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccf2QNpA.s 			page 50
 
 
  2143      5F305F47 
@@ -2966,241 +2966,241 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc6kofap.s 			page 1
  2151      7369676E 
  2151      65642069 
  2151      6E7400
- 2152              	.LASF53:
- 2153 009f 436F6D70 		.ascii	"Comp_0_initVar\000"
- 2153      5F305F69 
- 2153      6E697456 
- 2153      617200
- 2154              	.LASF20:
- 2155 00ae 436F6D70 		.ascii	"Comp_0_Start\000"
- 2155      5F305F53 
- 2155      74617274 
- 2155      00
- 2156              	.LASF21:
- 2157 00bb 436F6D70 		.ascii	"Comp_0_Stop\000"
- 2157      5F305F53 
- 2157      746F7000 
- 2158              	.LASF34:
- 2159 00c7 436F6D70 		.ascii	"Comp_0_GetInterruptSource\000"
- 2159      5F305F47 
- 2159      6574496E 
- 2159      74657272 
- 2159      75707453 
- 2160              	.LASF42:
- 2161 00e1 436F6D70 		.ascii	"Comp_0_GetInterruptSourceMasked\000"
- 2161      5F305F47 
- 2161      6574496E 
- 2161      74657272 
- 2161      75707453 
- 2162              	.LASF7:
- 2163 0101 6C6F6E67 		.ascii	"long long unsigned int\000"
- 2163      206C6F6E 
- 2163      6720756E 
- 2163      7369676E 
- 2163      65642069 
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc6kofap.s 			page 51
+ 2152              	.LASF51:
+ 2153 009f 433A5C55 		.ascii	"C:\\Users\\JamesN4\\Documents\\PSoC Creator\\Hybrid"
+ 2153      73657273 
+ 2153      5C4A616D 
+ 2153      65734E34 
+ 2153      5C446F63 
+ 2154 00cd 456E636F 		.ascii	"EncoderCY8CKIT43\\firmware\\HybridEncoder.cydsn\000"
+ 2154      64657243 
+ 2154      5938434B 
+ 2154      49543433 
+ 2154      5C666972 
+ 2155              	.LASF53:
+ 2156 00fb 436F6D70 		.ascii	"Comp_0_initVar\000"
+ 2156      5F305F69 
+ 2156      6E697456 
+ 2156      617200
+ 2157              	.LASF20:
+ 2158 010a 436F6D70 		.ascii	"Comp_0_Start\000"
+ 2158      5F305F53 
+ 2158      74617274 
+ 2158      00
+ 2159              	.LASF21:
+ 2160 0117 436F6D70 		.ascii	"Comp_0_Stop\000"
+ 2160      5F305F53 
+ 2160      746F7000 
+ 2161              	.LASF34:
+ 2162 0123 436F6D70 		.ascii	"Comp_0_GetInterruptSource\000"
+ 2162      5F305F47 
+ 2162      6574496E 
+ 2162      74657272 
+ 2162      75707453 
+ 2163              	.LASF42:
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccf2QNpA.s 			page 51
 
 
- 2164              	.LASF1:
- 2165 0118 756E7369 		.ascii	"unsigned char\000"
- 2165      676E6564 
- 2165      20636861 
- 2165      7200
- 2166              	.LASF35:
- 2167 0126 436F6D70 		.ascii	"Comp_0_GetCompare\000"
- 2167      5F305F47 
- 2167      6574436F 
- 2167      6D706172 
- 2167      6500
- 2168              	.LASF5:
- 2169 0138 6C6F6E67 		.ascii	"long unsigned int\000"
- 2169      20756E73 
- 2169      69676E65 
- 2169      6420696E 
- 2169      7400
- 2170              	.LASF9:
- 2171 014a 75696E74 		.ascii	"uint8\000"
- 2171      3800
- 2172              	.LASF24:
- 2173 0150 436F6D70 		.ascii	"Comp_0_SetInterruptMode\000"
- 2173      5F305F53 
- 2173      6574496E 
- 2173      74657272 
- 2173      7570744D 
- 2174              	.LASF33:
- 2175 0168 66696C74 		.ascii	"filter\000"
- 2175      657200
- 2176              	.LASF23:
- 2177 016f 636F6E66 		.ascii	"config\000"
- 2177      696700
- 2178              	.LASF12:
- 2179 0176 646F7562 		.ascii	"double\000"
- 2179      6C6500
- 2180              	.LASF39:
- 2181 017d 436F6D70 		.ascii	"Comp_0_SetOutputMode\000"
- 2181      5F305F53 
- 2181      65744F75 
- 2181      74707574 
- 2181      4D6F6465 
- 2182              	.LASF27:
- 2183 0192 436F6D70 		.ascii	"Comp_0_ClearInterrupt\000"
- 2183      5F305F43 
- 2183      6C656172 
- 2183      496E7465 
- 2183      72727570 
- 2184              	.LASF46:
- 2185 01a8 43795379 		.ascii	"CySysPmGetResetReason\000"
- 2185      73506D47 
- 2185      65745265 
- 2185      73657452 
- 2185      6561736F 
- 2186              	.LASF10:
- 2187 01be 75696E74 		.ascii	"uint32\000"
- 2187      333200
- 2188              	.LASF45:
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc6kofap.s 			page 52
+ 2164 013d 436F6D70 		.ascii	"Comp_0_GetInterruptSourceMasked\000"
+ 2164      5F305F47 
+ 2164      6574496E 
+ 2164      74657272 
+ 2164      75707453 
+ 2165              	.LASF7:
+ 2166 015d 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 2166      206C6F6E 
+ 2166      6720756E 
+ 2166      7369676E 
+ 2166      65642069 
+ 2167              	.LASF1:
+ 2168 0174 756E7369 		.ascii	"unsigned char\000"
+ 2168      676E6564 
+ 2168      20636861 
+ 2168      7200
+ 2169              	.LASF35:
+ 2170 0182 436F6D70 		.ascii	"Comp_0_GetCompare\000"
+ 2170      5F305F47 
+ 2170      6574436F 
+ 2170      6D706172 
+ 2170      6500
+ 2171              	.LASF5:
+ 2172 0194 6C6F6E67 		.ascii	"long unsigned int\000"
+ 2172      20756E73 
+ 2172      69676E65 
+ 2172      6420696E 
+ 2172      7400
+ 2173              	.LASF9:
+ 2174 01a6 75696E74 		.ascii	"uint8\000"
+ 2174      3800
+ 2175              	.LASF24:
+ 2176 01ac 436F6D70 		.ascii	"Comp_0_SetInterruptMode\000"
+ 2176      5F305F53 
+ 2176      6574496E 
+ 2176      74657272 
+ 2176      7570744D 
+ 2177              	.LASF33:
+ 2178 01c4 66696C74 		.ascii	"filter\000"
+ 2178      657200
+ 2179              	.LASF23:
+ 2180 01cb 636F6E66 		.ascii	"config\000"
+ 2180      696700
+ 2181              	.LASF12:
+ 2182 01d2 646F7562 		.ascii	"double\000"
+ 2182      6C6500
+ 2183              	.LASF39:
+ 2184 01d9 436F6D70 		.ascii	"Comp_0_SetOutputMode\000"
+ 2184      5F305F53 
+ 2184      65744F75 
+ 2184      74707574 
+ 2184      4D6F6465 
+ 2185              	.LASF27:
+ 2186 01ee 436F6D70 		.ascii	"Comp_0_ClearInterrupt\000"
+ 2186      5F305F43 
+ 2186      6C656172 
+ 2186      496E7465 
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccf2QNpA.s 			page 52
 
 
- 2189 01c5 4379456E 		.ascii	"CyEnterCriticalSection\000"
- 2189      74657243 
- 2189      72697469 
- 2189      63616C53 
- 2189      65637469 
- 2190              	.LASF8:
- 2191 01dc 756E7369 		.ascii	"unsigned int\000"
- 2191      676E6564 
- 2191      20696E74 
- 2191      00
- 2192              	.LASF47:
- 2193 01e9 43794578 		.ascii	"CyExitCriticalSection\000"
- 2193      69744372 
- 2193      69746963 
- 2193      616C5365 
- 2193      6374696F 
- 2194              	.LASF26:
- 2195 01ff 6D6F6465 		.ascii	"mode\000"
- 2195      00
- 2196              	.LASF49:
- 2197 0204 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
- 2197      43313120 
- 2197      352E342E 
- 2197      31203230 
- 2197      31363036 
- 2198 0237 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m0 -mthumb -g -O"
- 2198      20726576 
- 2198      6973696F 
- 2198      6E203233 
- 2198      37373135 
- 2199 026a 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
- 2199      66756E63 
- 2199      74696F6E 
- 2199      2D736563 
- 2199      74696F6E 
- 2200              	.LASF31:
- 2201 0292 68797374 		.ascii	"hysteresis\000"
- 2201      65726573 
- 2201      697300
- 2202              	.LASF25:
- 2203 029d 73706565 		.ascii	"speed\000"
- 2203      6400
- 2204              	.LASF16:
- 2205 02a3 73697A65 		.ascii	"sizetype\000"
- 2205      74797065 
- 2205      00
- 2206              	.LASF19:
- 2207 02ac 656E6162 		.ascii	"enableInterrupts\000"
- 2207      6C65496E 
- 2207      74657272 
- 2207      75707473 
- 2207      00
- 2208              	.LASF6:
- 2209 02bd 6C6F6E67 		.ascii	"long long int\000"
- 2209      206C6F6E 
- 2209      6720696E 
- 2209      7400
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc6kofap.s 			page 53
+ 2186      72727570 
+ 2187              	.LASF46:
+ 2188 0204 43795379 		.ascii	"CySysPmGetResetReason\000"
+ 2188      73506D47 
+ 2188      65745265 
+ 2188      73657452 
+ 2188      6561736F 
+ 2189              	.LASF10:
+ 2190 021a 75696E74 		.ascii	"uint32\000"
+ 2190      333200
+ 2191              	.LASF45:
+ 2192 0221 4379456E 		.ascii	"CyEnterCriticalSection\000"
+ 2192      74657243 
+ 2192      72697469 
+ 2192      63616C53 
+ 2192      65637469 
+ 2193              	.LASF8:
+ 2194 0238 756E7369 		.ascii	"unsigned int\000"
+ 2194      676E6564 
+ 2194      20696E74 
+ 2194      00
+ 2195              	.LASF47:
+ 2196 0245 43794578 		.ascii	"CyExitCriticalSection\000"
+ 2196      69744372 
+ 2196      69746963 
+ 2196      616C5365 
+ 2196      6374696F 
+ 2197              	.LASF26:
+ 2198 025b 6D6F6465 		.ascii	"mode\000"
+ 2198      00
+ 2199              	.LASF49:
+ 2200 0260 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
+ 2200      43313120 
+ 2200      352E342E 
+ 2200      31203230 
+ 2200      31363036 
+ 2201 0293 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m0 -mthumb -g -O"
+ 2201      20726576 
+ 2201      6973696F 
+ 2201      6E203233 
+ 2201      37373135 
+ 2202 02c6 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
+ 2202      66756E63 
+ 2202      74696F6E 
+ 2202      2D736563 
+ 2202      74696F6E 
+ 2203              	.LASF31:
+ 2204 02ee 68797374 		.ascii	"hysteresis\000"
+ 2204      65726573 
+ 2204      697300
+ 2205              	.LASF25:
+ 2206 02f9 73706565 		.ascii	"speed\000"
+ 2206      6400
+ 2207              	.LASF16:
+ 2208 02ff 73697A65 		.ascii	"sizetype\000"
+ 2208      74797065 
+ 2208      00
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccf2QNpA.s 			page 53
 
 
- 2210              	.LASF17:
- 2211 02cb 436F6D70 		.ascii	"Comp_0_Init\000"
- 2211      5F305F49 
- 2211      6E697400 
- 2212              	.LASF48:
- 2213 02d7 43794465 		.ascii	"CyDelayUs\000"
- 2213      6C617955 
- 2213      7300
- 2214              	.LASF13:
- 2215 02e1 63686172 		.ascii	"char\000"
- 2215      00
- 2216              	.LASF22:
- 2217 02e6 436F6D70 		.ascii	"Comp_0_SetSpeed\000"
- 2217      5F305F53 
- 2217      65745370 
- 2217      65656400 
- 2218              	.LASF2:
- 2219 02f6 73686F72 		.ascii	"short int\000"
- 2219      7420696E 
- 2219      7400
- 2220              	.LASF37:
- 2221 0300 436F6D70 		.ascii	"Comp_0_LoadTrim\000"
- 2221      5F305F4C 
- 2221      6F616454 
- 2221      72696D00 
- 2222              	.LASF43:
- 2223 0310 436F6D70 		.ascii	"Comp_0_internalIntr\000"
- 2223      5F305F69 
- 2223      6E746572 
- 2223      6E616C49 
- 2223      6E747200 
- 2224              	.LASF36:
- 2225 0324 636D704F 		.ascii	"cmpOut\000"
- 2225      757400
- 2226              	.LASF28:
- 2227 032b 696E7465 		.ascii	"interruptMask\000"
- 2227      72727570 
- 2227      744D6173 
- 2227      6B00
- 2228              	.LASF4:
- 2229 0339 6C6F6E67 		.ascii	"long int\000"
- 2229      20696E74 
- 2229      00
- 2230              	.LASF15:
- 2231 0342 6C6F6E67 		.ascii	"long double\000"
- 2231      20646F75 
- 2231      626C6500 
- 2232              	.LASF0:
- 2233 034e 7369676E 		.ascii	"signed char\000"
- 2233      65642063 
- 2233      68617200 
- 2234              	.LASF52:
- 2235 035a 436F6D70 		.ascii	"Comp_0_ZeroCal\000"
- 2235      5F305F5A 
- 2235      65726F43 
- 2235      616C00
- 2236              	.LASF40:
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc6kofap.s 			page 54
+ 2209              	.LASF19:
+ 2210 0308 656E6162 		.ascii	"enableInterrupts\000"
+ 2210      6C65496E 
+ 2210      74657272 
+ 2210      75707473 
+ 2210      00
+ 2211              	.LASF6:
+ 2212 0319 6C6F6E67 		.ascii	"long long int\000"
+ 2212      206C6F6E 
+ 2212      6720696E 
+ 2212      7400
+ 2213              	.LASF17:
+ 2214 0327 436F6D70 		.ascii	"Comp_0_Init\000"
+ 2214      5F305F49 
+ 2214      6E697400 
+ 2215              	.LASF48:
+ 2216 0333 43794465 		.ascii	"CyDelayUs\000"
+ 2216      6C617955 
+ 2216      7300
+ 2217              	.LASF13:
+ 2218 033d 63686172 		.ascii	"char\000"
+ 2218      00
+ 2219              	.LASF22:
+ 2220 0342 436F6D70 		.ascii	"Comp_0_SetSpeed\000"
+ 2220      5F305F53 
+ 2220      65745370 
+ 2220      65656400 
+ 2221              	.LASF2:
+ 2222 0352 73686F72 		.ascii	"short int\000"
+ 2222      7420696E 
+ 2222      7400
+ 2223              	.LASF37:
+ 2224 035c 436F6D70 		.ascii	"Comp_0_LoadTrim\000"
+ 2224      5F305F4C 
+ 2224      6F616454 
+ 2224      72696D00 
+ 2225              	.LASF43:
+ 2226 036c 436F6D70 		.ascii	"Comp_0_internalIntr\000"
+ 2226      5F305F69 
+ 2226      6E746572 
+ 2226      6E616C49 
+ 2226      6E747200 
+ 2227              	.LASF36:
+ 2228 0380 636D704F 		.ascii	"cmpOut\000"
+ 2228      757400
+ 2229              	.LASF28:
+ 2230 0387 696E7465 		.ascii	"interruptMask\000"
+ 2230      72727570 
+ 2230      744D6173 
+ 2230      6B00
+ 2231              	.LASF4:
+ 2232 0395 6C6F6E67 		.ascii	"long int\000"
+ 2232      20696E74 
+ 2232      00
+ 2233              	.LASF15:
+ 2234 039e 6C6F6E67 		.ascii	"long double\000"
+ 2234      20646F75 
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccf2QNpA.s 			page 54
 
 
- 2237 0369 436F6D70 		.ascii	"Comp_0_SetInterruptMask\000"
- 2237      5F305F53 
- 2237      6574496E 
- 2237      74657272 
- 2237      7570744D 
- 2238              	.LASF50:
- 2239 0381 47656E65 		.ascii	"Generated_Source\\PSoC4\\Comp_0.c\000"
- 2239      72617465 
- 2239      645F536F 
- 2239      75726365 
- 2239      5C50536F 
- 2240              	.LASF51:
- 2241 03a1 433A5C55 		.ascii	"C:\\Users\\JamesN4\\Documents\\PSoC Creator\\Hybrid"
- 2241      73657273 
- 2241      5C4A616D 
- 2241      65734E34 
- 2241      5C446F63 
- 2242 03cf 456E636F 		.ascii	"EncoderCY8CKIT43\\HybridEncoder.cydsn\000"
- 2242      64657243 
- 2242      5938434B 
- 2242      49543433 
- 2242      5C487962 
+ 2234      626C6500 
+ 2235              	.LASF0:
+ 2236 03aa 7369676E 		.ascii	"signed char\000"
+ 2236      65642063 
+ 2236      68617200 
+ 2237              	.LASF52:
+ 2238 03b6 436F6D70 		.ascii	"Comp_0_ZeroCal\000"
+ 2238      5F305F5A 
+ 2238      65726F43 
+ 2238      616C00
+ 2239              	.LASF40:
+ 2240 03c5 436F6D70 		.ascii	"Comp_0_SetInterruptMask\000"
+ 2240      5F305F53 
+ 2240      6574496E 
+ 2240      74657272 
+ 2240      7570744D 
+ 2241              	.LASF50:
+ 2242 03dd 47656E65 		.ascii	"Generated_Source\\PSoC4\\Comp_0.c\000"
+ 2242      72617465 
+ 2242      645F536F 
+ 2242      75726365 
+ 2242      5C50536F 
  2243              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran

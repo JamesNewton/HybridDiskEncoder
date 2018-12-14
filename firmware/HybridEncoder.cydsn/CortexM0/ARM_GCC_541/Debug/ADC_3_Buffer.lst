@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc6LnelX.s 			page 1
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccXDiK49.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc6LnelX.s 			page 1
   28:Generated_Source\PSoC4/ADC_3_Buffer.c **** *  Initializes or restores the component according to the customizer Configure 
   29:Generated_Source\PSoC4/ADC_3_Buffer.c **** *  dialog settings. It is not necessary to call Init() because the Start() API 
   30:Generated_Source\PSoC4/ADC_3_Buffer.c **** *  calls this function and is the preferred method to begin the component operation.
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc6LnelX.s 			page 2
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccXDiK49.s 			page 2
 
 
   31:Generated_Source\PSoC4/ADC_3_Buffer.c **** *
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc6LnelX.s 			page 1
   67              		.type	ADC_3_Buffer_Enable, %function
   68              	ADC_3_Buffer_Enable:
   69              	.LFB1:
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc6LnelX.s 			page 3
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccXDiK49.s 			page 3
 
 
   46:Generated_Source\PSoC4/ADC_3_Buffer.c **** 
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc6LnelX.s 			page 1
  101              		.type	ADC_3_Buffer_Start, %function
  102              	ADC_3_Buffer_Start:
  103              	.LFB2:
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc6LnelX.s 			page 4
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccXDiK49.s 			page 4
 
 
   69:Generated_Source\PSoC4/ADC_3_Buffer.c **** 
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc6LnelX.s 			page 1
  127              	.LVL1:
  100:Generated_Source\PSoC4/ADC_3_Buffer.c **** }
  128              		.loc 1 100 0
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc6LnelX.s 			page 5
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccXDiK49.s 			page 5
 
 
  129              		@ sp needed
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc6LnelX.s 			page 1
  162              	.L12:
  163 000c 04003040 		.word	1076887556
  164 0010 FCF7FFFF 		.word	-2052
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc6LnelX.s 			page 6
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccXDiK49.s 			page 6
 
 
  165              		.cfi_endproc
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc6LnelX.s 			page 1
  148:Generated_Source\PSoC4/ADC_3_Buffer.c ****     ADC_3_Buffer_OA_RES_CTRL_REG = tmp | ADC_3_Buffer_internalPower;
  193              		.loc 1 148 0
  194 000e 1843     		orrs	r0, r3
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc6LnelX.s 			page 7
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccXDiK49.s 			page 7
 
 
  195 0010 1060     		str	r0, [r2]
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc6LnelX.s 			page 1
  223 0002 06D0     		beq	.L18
  175:Generated_Source\PSoC4/ADC_3_Buffer.c ****     {
  176:Generated_Source\PSoC4/ADC_3_Buffer.c ****         ADC_3_Buffer_OA_RES_CTRL |= ADC_3_Buffer_OA_PUMP_EN;    
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc6LnelX.s 			page 8
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccXDiK49.s 			page 8
 
 
  224              		.loc 1 176 0
@@ -476,48 +476,48 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc6LnelX.s 			page 1
  270 0006 00000000 		.4byte	.Ldebug_abbrev0
  271 000a 04       		.byte	0x4
  272 000b 01       		.uleb128 0x1
- 273 000c F4000000 		.4byte	.LASF24
+ 273 000c 50010000 		.4byte	.LASF24
  274 0010 0C       		.byte	0xc
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc6LnelX.s 			page 9
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccXDiK49.s 			page 9
 
 
- 275 0011 68000000 		.4byte	.LASF25
- 276 0015 13020000 		.4byte	.LASF26
+ 275 0011 C4000000 		.4byte	.LASF25
+ 276 0015 1C000000 		.4byte	.LASF26
  277 0019 00000000 		.4byte	.Ldebug_ranges0+0
  278 001d 00000000 		.4byte	0
  279 0021 00000000 		.4byte	.Ldebug_line0
  280 0025 02       		.uleb128 0x2
  281 0026 01       		.byte	0x1
  282 0027 06       		.byte	0x6
- 283 0028 F5010000 		.4byte	.LASF0
+ 283 0028 51020000 		.4byte	.LASF0
  284 002c 02       		.uleb128 0x2
  285 002d 01       		.byte	0x1
  286 002e 08       		.byte	0x8
- 287 002f 28000000 		.4byte	.LASF1
+ 287 002f 84000000 		.4byte	.LASF1
  288 0033 02       		.uleb128 0x2
  289 0034 02       		.byte	0x2
  290 0035 05       		.byte	0x5
- 291 0036 95010000 		.4byte	.LASF2
+ 291 0036 F1010000 		.4byte	.LASF2
  292 003a 02       		.uleb128 0x2
  293 003b 02       		.byte	0x2
  294 003c 07       		.byte	0x7
- 295 003d 4E000000 		.4byte	.LASF3
+ 295 003d AA000000 		.4byte	.LASF3
  296 0041 02       		.uleb128 0x2
  297 0042 04       		.byte	0x4
  298 0043 05       		.byte	0x5
- 299 0044 D9010000 		.4byte	.LASF4
+ 299 0044 35020000 		.4byte	.LASF4
  300 0048 02       		.uleb128 0x2
  301 0049 04       		.byte	0x4
  302 004a 07       		.byte	0x7
- 303 004b 3C000000 		.4byte	.LASF5
+ 303 004b 98000000 		.4byte	.LASF5
  304 004f 02       		.uleb128 0x2
  305 0050 08       		.byte	0x8
  306 0051 05       		.byte	0x5
- 307 0052 82010000 		.4byte	.LASF6
+ 307 0052 DE010000 		.4byte	.LASF6
  308 0056 02       		.uleb128 0x2
  309 0057 08       		.byte	0x8
  310 0058 07       		.byte	0x7
- 311 0059 CB000000 		.4byte	.LASF7
+ 311 0059 27010000 		.4byte	.LASF7
  312 005d 03       		.uleb128 0x3
  313 005e 04       		.byte	0x4
  314 005f 05       		.byte	0x5
@@ -525,32 +525,32 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc6LnelX.s 			page 1
  316 0064 02       		.uleb128 0x2
  317 0065 04       		.byte	0x4
  318 0066 07       		.byte	0x7
- 319 0067 AA000000 		.4byte	.LASF8
+ 319 0067 06010000 		.4byte	.LASF8
  320 006b 04       		.uleb128 0x4
- 321 006c 9F010000 		.4byte	.LASF9
+ 321 006c FB010000 		.4byte	.LASF9
  322 0070 02       		.byte	0x2
  323 0071 D201     		.2byte	0x1d2
  324 0073 2C000000 		.4byte	0x2c
  325 0077 04       		.uleb128 0x4
- 326 0078 A3000000 		.4byte	.LASF10
+ 326 0078 FF000000 		.4byte	.LASF10
  327 007c 02       		.byte	0x2
  328 007d D401     		.2byte	0x1d4
  329 007f 48000000 		.4byte	0x48
  330 0083 02       		.uleb128 0x2
  331 0084 04       		.byte	0x4
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc6LnelX.s 			page 10
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccXDiK49.s 			page 10
 
 
  332 0085 04       		.byte	0x4
- 333 0086 22000000 		.4byte	.LASF11
+ 333 0086 7E000000 		.4byte	.LASF11
  334 008a 02       		.uleb128 0x2
  335 008b 08       		.byte	0x8
  336 008c 04       		.byte	0x4
- 337 008d 61000000 		.4byte	.LASF12
+ 337 008d BD000000 		.4byte	.LASF12
  338 0091 02       		.uleb128 0x2
  339 0092 01       		.byte	0x1
  340 0093 08       		.byte	0x8
- 341 0094 90010000 		.4byte	.LASF13
+ 341 0094 EC010000 		.4byte	.LASF13
  342 0098 04       		.uleb128 0x4
  343 0099 00000000 		.4byte	.LASF14
  344 009d 02       		.byte	0x2
@@ -559,7 +559,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc6LnelX.s 			page 1
  347 00a4 05       		.uleb128 0x5
  348 00a5 77000000 		.4byte	0x77
  349 00a9 06       		.uleb128 0x6
- 350 00aa E2000000 		.4byte	.LASF15
+ 350 00aa 3E010000 		.4byte	.LASF15
  351 00ae 01       		.byte	0x1
  352 00af 27       		.byte	0x27
  353 00b0 00000000 		.4byte	.LFB0
@@ -567,7 +567,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc6LnelX.s 			page 1
  355 00b8 01       		.uleb128 0x1
  356 00b9 9C       		.byte	0x9c
  357 00ba 06       		.uleb128 0x6
- 358 00bb B7000000 		.4byte	.LASF16
+ 358 00bb 13010000 		.4byte	.LASF16
  359 00bf 01       		.byte	0x1
  360 00c0 40       		.byte	0x40
  361 00c1 00000000 		.4byte	.LFB1
@@ -575,7 +575,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc6LnelX.s 			page 1
  363 00c9 01       		.uleb128 0x1
  364 00ca 9C       		.byte	0x9c
  365 00cb 07       		.uleb128 0x7
- 366 00cc E2010000 		.4byte	.LASF18
+ 366 00cc 3E020000 		.4byte	.LASF18
  367 00d0 01       		.byte	0x1
  368 00d1 5C       		.byte	0x5c
  369 00d2 00000000 		.4byte	.LFB2
@@ -591,14 +591,14 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc6LnelX.s 			page 1
  379 00ee BA000000 		.4byte	0xba
  380 00f2 00       		.byte	0
  381 00f3 06       		.uleb128 0x6
- 382 00f4 01020000 		.4byte	.LASF17
+ 382 00f4 5D020000 		.4byte	.LASF17
  383 00f8 01       		.byte	0x1
  384 00f9 75       		.byte	0x75
  385 00fa 00000000 		.4byte	.LFB3
  386 00fe 14000000 		.4byte	.LFE3-.LFB3
  387 0102 01       		.uleb128 0x1
  388 0103 9C       		.byte	0x9c
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc6LnelX.s 			page 11
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccXDiK49.s 			page 11
 
 
  389 0104 07       		.uleb128 0x7
@@ -611,7 +611,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc6LnelX.s 			page 1
  396 0114 9C       		.byte	0x9c
  397 0115 36010000 		.4byte	0x136
  398 0119 09       		.uleb128 0x9
- 399 011a 1C000000 		.4byte	.LASF21
+ 399 011a 78000000 		.4byte	.LASF21
  400 011e 01       		.byte	0x1
  401 011f 8D       		.byte	0x8d
  402 0120 77000000 		.4byte	0x77
@@ -625,7 +625,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc6LnelX.s 			page 1
  410 0134 53       		.byte	0x53
  411 0135 00       		.byte	0
  412 0136 07       		.uleb128 0x7
- 413 0137 C0010000 		.4byte	.LASF20
+ 413 0137 1C020000 		.4byte	.LASF20
  414 013b 01       		.byte	0x1
  415 013c AB       		.byte	0xab
  416 013d 00000000 		.4byte	.LFB5
@@ -634,7 +634,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc6LnelX.s 			page 1
  419 0146 9C       		.byte	0x9c
  420 0147 59010000 		.4byte	0x159
  421 014b 0B       		.uleb128 0xb
- 422 014c 36000000 		.4byte	.LASF22
+ 422 014c 92000000 		.4byte	.LASF22
  423 0150 01       		.byte	0x1
  424 0151 AB       		.byte	0xab
  425 0152 77000000 		.4byte	0x77
@@ -642,7 +642,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc6LnelX.s 			page 1
  427 0157 50       		.byte	0x50
  428 0158 00       		.byte	0
  429 0159 0C       		.uleb128 0xc
- 430 015a A5010000 		.4byte	.LASF23
+ 430 015a 01020000 		.4byte	.LASF23
  431 015e 01       		.byte	0x1
  432 015f 14       		.byte	0x14
  433 0160 77000000 		.4byte	0x77
@@ -650,7 +650,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc6LnelX.s 			page 1
  435 0165 03       		.byte	0x3
  436 0166 00000000 		.4byte	ADC_3_Buffer_internalPower
  437 016a 0D       		.uleb128 0xd
- 438 016b 8E000000 		.4byte	.LASF27
+ 438 016b EA000000 		.4byte	.LASF27
  439 016f 01       		.byte	0x1
  440 0170 13       		.byte	0x13
  441 0171 6B000000 		.4byte	0x6b
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc6LnelX.s 			page 1
  443 0176 03       		.byte	0x3
  444 0177 00000000 		.4byte	ADC_3_Buffer_initVar
  445 017b 00       		.byte	0
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc6LnelX.s 			page 12
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccXDiK49.s 			page 12
 
 
  446              		.section	.debug_abbrev,"",%progbits
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc6LnelX.s 			page 1
  500 0034 00       		.byte	0
  501 0035 00       		.byte	0
  502 0036 05       		.uleb128 0x5
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc6LnelX.s 			page 13
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccXDiK49.s 			page 13
 
 
  503 0037 35       		.uleb128 0x35
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc6LnelX.s 			page 1
  557 006f 08       		.uleb128 0x8
  558 0070 898201   		.uleb128 0x4109
  559 0073 00       		.byte	0
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc6LnelX.s 			page 14
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccXDiK49.s 			page 14
 
 
  560 0074 11       		.uleb128 0x11
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc6LnelX.s 			page 1
  614 00aa 03       		.uleb128 0x3
  615 00ab 0E       		.uleb128 0xe
  616 00ac 3A       		.uleb128 0x3a
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc6LnelX.s 			page 15
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccXDiK49.s 			page 15
 
 
  617 00ad 0B       		.uleb128 0xb
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc6LnelX.s 			page 1
  671 001c 1C000000 		.4byte	.LFE1-.LFB1
  672 0020 00000000 		.4byte	.LFB2
  673 0024 20000000 		.4byte	.LFE2-.LFB2
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc6LnelX.s 			page 16
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccXDiK49.s 			page 16
 
 
  674 0028 00000000 		.4byte	.LFB3
@@ -941,154 +941,154 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc6LnelX.s 			page 1
  704      66666572 
  704      5F536574 
  704      506F7765 
- 705              	.LASF21:
- 706 001c 706F7765 		.ascii	"power\000"
- 706      7200
- 707              	.LASF11:
- 708 0022 666C6F61 		.ascii	"float\000"
- 708      7400
- 709              	.LASF1:
- 710 0028 756E7369 		.ascii	"unsigned char\000"
- 710      676E6564 
- 710      20636861 
- 710      7200
- 711              	.LASF22:
- 712 0036 6F6E4F66 		.ascii	"onOff\000"
- 712      6600
- 713              	.LASF5:
- 714 003c 6C6F6E67 		.ascii	"long unsigned int\000"
- 714      20756E73 
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc6LnelX.s 			page 17
+ 705              	.LASF26:
+ 706 001c 433A5C55 		.ascii	"C:\\Users\\JamesN4\\Documents\\PSoC Creator\\Hybrid"
+ 706      73657273 
+ 706      5C4A616D 
+ 706      65734E34 
+ 706      5C446F63 
+ 707 004a 456E636F 		.ascii	"EncoderCY8CKIT43\\firmware\\HybridEncoder.cydsn\000"
+ 707      64657243 
+ 707      5938434B 
+ 707      49543433 
+ 707      5C666972 
+ 708              	.LASF21:
+ 709 0078 706F7765 		.ascii	"power\000"
+ 709      7200
+ 710              	.LASF11:
+ 711 007e 666C6F61 		.ascii	"float\000"
+ 711      7400
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccXDiK49.s 			page 17
 
 
- 714      69676E65 
- 714      6420696E 
- 714      7400
- 715              	.LASF3:
- 716 004e 73686F72 		.ascii	"short unsigned int\000"
- 716      7420756E 
- 716      7369676E 
- 716      65642069 
- 716      6E7400
- 717              	.LASF12:
- 718 0061 646F7562 		.ascii	"double\000"
- 718      6C6500
- 719              	.LASF25:
- 720 0068 47656E65 		.ascii	"Generated_Source\\PSoC4\\ADC_3_Buffer.c\000"
- 720      72617465 
- 720      645F536F 
- 720      75726365 
- 720      5C50536F 
- 721              	.LASF27:
- 722 008e 4144435F 		.ascii	"ADC_3_Buffer_initVar\000"
- 722      335F4275 
- 722      66666572 
- 722      5F696E69 
- 722      74566172 
- 723              	.LASF10:
- 724 00a3 75696E74 		.ascii	"uint32\000"
- 724      333200
- 725              	.LASF8:
- 726 00aa 756E7369 		.ascii	"unsigned int\000"
- 726      676E6564 
- 726      20696E74 
- 726      00
- 727              	.LASF16:
- 728 00b7 4144435F 		.ascii	"ADC_3_Buffer_Enable\000"
- 728      335F4275 
- 728      66666572 
- 728      5F456E61 
- 728      626C6500 
- 729              	.LASF7:
- 730 00cb 6C6F6E67 		.ascii	"long long unsigned int\000"
- 730      206C6F6E 
- 730      6720756E 
- 730      7369676E 
- 730      65642069 
- 731              	.LASF15:
- 732 00e2 4144435F 		.ascii	"ADC_3_Buffer_Init\000"
- 732      335F4275 
- 732      66666572 
- 732      5F496E69 
- 732      7400
- 733              	.LASF24:
- 734 00f4 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
- 734      43313120 
- 734      352E342E 
- 734      31203230 
- 734      31363036 
- 735 0127 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m0 -mthumb -g -O"
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc6LnelX.s 			page 18
+ 712              	.LASF1:
+ 713 0084 756E7369 		.ascii	"unsigned char\000"
+ 713      676E6564 
+ 713      20636861 
+ 713      7200
+ 714              	.LASF22:
+ 715 0092 6F6E4F66 		.ascii	"onOff\000"
+ 715      6600
+ 716              	.LASF5:
+ 717 0098 6C6F6E67 		.ascii	"long unsigned int\000"
+ 717      20756E73 
+ 717      69676E65 
+ 717      6420696E 
+ 717      7400
+ 718              	.LASF3:
+ 719 00aa 73686F72 		.ascii	"short unsigned int\000"
+ 719      7420756E 
+ 719      7369676E 
+ 719      65642069 
+ 719      6E7400
+ 720              	.LASF12:
+ 721 00bd 646F7562 		.ascii	"double\000"
+ 721      6C6500
+ 722              	.LASF25:
+ 723 00c4 47656E65 		.ascii	"Generated_Source\\PSoC4\\ADC_3_Buffer.c\000"
+ 723      72617465 
+ 723      645F536F 
+ 723      75726365 
+ 723      5C50536F 
+ 724              	.LASF27:
+ 725 00ea 4144435F 		.ascii	"ADC_3_Buffer_initVar\000"
+ 725      335F4275 
+ 725      66666572 
+ 725      5F696E69 
+ 725      74566172 
+ 726              	.LASF10:
+ 727 00ff 75696E74 		.ascii	"uint32\000"
+ 727      333200
+ 728              	.LASF8:
+ 729 0106 756E7369 		.ascii	"unsigned int\000"
+ 729      676E6564 
+ 729      20696E74 
+ 729      00
+ 730              	.LASF16:
+ 731 0113 4144435F 		.ascii	"ADC_3_Buffer_Enable\000"
+ 731      335F4275 
+ 731      66666572 
+ 731      5F456E61 
+ 731      626C6500 
+ 732              	.LASF7:
+ 733 0127 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 733      206C6F6E 
+ 733      6720756E 
+ 733      7369676E 
+ 733      65642069 
+ 734              	.LASF15:
+ 735 013e 4144435F 		.ascii	"ADC_3_Buffer_Init\000"
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccXDiK49.s 			page 18
 
 
- 735      20726576 
- 735      6973696F 
- 735      6E203233 
- 735      37373135 
- 736 015a 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
- 736      66756E63 
- 736      74696F6E 
- 736      2D736563 
- 736      74696F6E 
- 737              	.LASF6:
- 738 0182 6C6F6E67 		.ascii	"long long int\000"
- 738      206C6F6E 
- 738      6720696E 
- 738      7400
- 739              	.LASF13:
- 740 0190 63686172 		.ascii	"char\000"
- 740      00
- 741              	.LASF2:
- 742 0195 73686F72 		.ascii	"short int\000"
- 742      7420696E 
- 742      7400
- 743              	.LASF9:
- 744 019f 75696E74 		.ascii	"uint8\000"
- 744      3800
- 745              	.LASF23:
- 746 01a5 4144435F 		.ascii	"ADC_3_Buffer_internalPower\000"
- 746      335F4275 
- 746      66666572 
- 746      5F696E74 
- 746      65726E61 
- 747              	.LASF20:
- 748 01c0 4144435F 		.ascii	"ADC_3_Buffer_PumpControl\000"
- 748      335F4275 
- 748      66666572 
- 748      5F50756D 
- 748      70436F6E 
- 749              	.LASF4:
- 750 01d9 6C6F6E67 		.ascii	"long int\000"
- 750      20696E74 
- 750      00
- 751              	.LASF18:
- 752 01e2 4144435F 		.ascii	"ADC_3_Buffer_Start\000"
- 752      335F4275 
- 752      66666572 
- 752      5F537461 
- 752      727400
- 753              	.LASF0:
- 754 01f5 7369676E 		.ascii	"signed char\000"
- 754      65642063 
- 754      68617200 
- 755              	.LASF17:
- 756 0201 4144435F 		.ascii	"ADC_3_Buffer_Stop\000"
- 756      335F4275 
- 756      66666572 
- 756      5F53746F 
- 756      7000
- 757              	.LASF26:
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc6LnelX.s 			page 19
+ 735      335F4275 
+ 735      66666572 
+ 735      5F496E69 
+ 735      7400
+ 736              	.LASF24:
+ 737 0150 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
+ 737      43313120 
+ 737      352E342E 
+ 737      31203230 
+ 737      31363036 
+ 738 0183 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m0 -mthumb -g -O"
+ 738      20726576 
+ 738      6973696F 
+ 738      6E203233 
+ 738      37373135 
+ 739 01b6 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
+ 739      66756E63 
+ 739      74696F6E 
+ 739      2D736563 
+ 739      74696F6E 
+ 740              	.LASF6:
+ 741 01de 6C6F6E67 		.ascii	"long long int\000"
+ 741      206C6F6E 
+ 741      6720696E 
+ 741      7400
+ 742              	.LASF13:
+ 743 01ec 63686172 		.ascii	"char\000"
+ 743      00
+ 744              	.LASF2:
+ 745 01f1 73686F72 		.ascii	"short int\000"
+ 745      7420696E 
+ 745      7400
+ 746              	.LASF9:
+ 747 01fb 75696E74 		.ascii	"uint8\000"
+ 747      3800
+ 748              	.LASF23:
+ 749 0201 4144435F 		.ascii	"ADC_3_Buffer_internalPower\000"
+ 749      335F4275 
+ 749      66666572 
+ 749      5F696E74 
+ 749      65726E61 
+ 750              	.LASF20:
+ 751 021c 4144435F 		.ascii	"ADC_3_Buffer_PumpControl\000"
+ 751      335F4275 
+ 751      66666572 
+ 751      5F50756D 
+ 751      70436F6E 
+ 752              	.LASF4:
+ 753 0235 6C6F6E67 		.ascii	"long int\000"
+ 753      20696E74 
+ 753      00
+ 754              	.LASF18:
+ 755 023e 4144435F 		.ascii	"ADC_3_Buffer_Start\000"
+ 755      335F4275 
+ 755      66666572 
+ 755      5F537461 
+ 755      727400
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccXDiK49.s 			page 19
 
 
- 758 0213 433A5C55 		.ascii	"C:\\Users\\JamesN4\\Documents\\PSoC Creator\\Hybrid"
- 758      73657273 
- 758      5C4A616D 
- 758      65734E34 
- 758      5C446F63 
- 759 0241 456E636F 		.ascii	"EncoderCY8CKIT43\\HybridEncoder.cydsn\000"
- 759      64657243 
- 759      5938434B 
- 759      49543433 
- 759      5C487962 
+ 756              	.LASF0:
+ 757 0251 7369676E 		.ascii	"signed char\000"
+ 757      65642063 
+ 757      68617200 
+ 758              	.LASF17:
+ 759 025d 4144435F 		.ascii	"ADC_3_Buffer_Stop\000"
+ 759      335F4275 
+ 759      66666572 
+ 759      5F53746F 
+ 759      7000
  760              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran
