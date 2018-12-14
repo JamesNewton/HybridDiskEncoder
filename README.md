@@ -83,7 +83,8 @@ Detector to support mount should be adjustable? Or will laser cut and assembly b
 - Done: Lasercut parts for test assembly, update CAD as needed
 - Done(ish): Write test firmware for A2D feedback to PC. 
 - TODO: Connect LEDs / Sensors to dev board, test and update design 
-- TODO: Calculate ATAN2 on board and return degrees
+- Done: Calculate ATAN2 on board and return degrees
+- TODO: Count slots with the hardware and combine with ATAN2 degrees
 - TODO: Add AGC (Automatic Gain Control) to update onboard opamp gain.
 - TODO: Produce and assemble multiple joints into a non-driven arm with the same physical characteristics as Dexter
 - TODO: Add DDE support for serial connected device as an input only Dexter
