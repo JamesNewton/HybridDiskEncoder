@@ -1,0 +1,870 @@
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccGwt8XN.s 			page 1
+
+
+   1              		.syntax unified
+   2              		.cpu cortex-m0
+   3              		.fpu softvfp
+   4              		.eabi_attribute 20, 1
+   5              		.eabi_attribute 21, 1
+   6              		.eabi_attribute 23, 3
+   7              		.eabi_attribute 24, 1
+   8              		.eabi_attribute 25, 1
+   9              		.eabi_attribute 26, 1
+  10              		.eabi_attribute 30, 1
+  11              		.eabi_attribute 34, 0
+  12              		.eabi_attribute 18, 4
+  13              		.thumb
+  14              		.syntax unified
+  15              		.file	"ADC_2_Buffer_PM.c"
+  16              		.text
+  17              	.Ltext0:
+  18              		.cfi_sections	.debug_frame
+  19              		.section	.text.ADC_2_Buffer_SaveConfig,"ax",%progbits
+  20              		.align	2
+  21              		.global	ADC_2_Buffer_SaveConfig
+  22              		.code	16
+  23              		.thumb_func
+  24              		.type	ADC_2_Buffer_SaveConfig, %function
+  25              	ADC_2_Buffer_SaveConfig:
+  26              	.LFB0:
+  27              		.file 1 "Generated_Source\\PSoC4\\ADC_2_Buffer_PM.c"
+   1:Generated_Source\PSoC4/ADC_2_Buffer_PM.c **** /*******************************************************************************
+   2:Generated_Source\PSoC4/ADC_2_Buffer_PM.c **** * File Name: ADC_2_Buffer_PM.c
+   3:Generated_Source\PSoC4/ADC_2_Buffer_PM.c **** * Version 1.20
+   4:Generated_Source\PSoC4/ADC_2_Buffer_PM.c **** *
+   5:Generated_Source\PSoC4/ADC_2_Buffer_PM.c **** * Description:
+   6:Generated_Source\PSoC4/ADC_2_Buffer_PM.c **** *  This file provides the power management source code to the API for the
+   7:Generated_Source\PSoC4/ADC_2_Buffer_PM.c **** *  Opamp (Analog Buffer) component.
+   8:Generated_Source\PSoC4/ADC_2_Buffer_PM.c **** *
+   9:Generated_Source\PSoC4/ADC_2_Buffer_PM.c **** *
+  10:Generated_Source\PSoC4/ADC_2_Buffer_PM.c **** ********************************************************************************
+  11:Generated_Source\PSoC4/ADC_2_Buffer_PM.c **** * Copyright 2013-2015, Cypress Semiconductor Corporation.  All rights reserved.
+  12:Generated_Source\PSoC4/ADC_2_Buffer_PM.c **** * You may use this file only in accordance with the license, terms, conditions,
+  13:Generated_Source\PSoC4/ADC_2_Buffer_PM.c **** * disclaimers, and limitations in the end user license agreement accompanying
+  14:Generated_Source\PSoC4/ADC_2_Buffer_PM.c **** * the software package with which this file was provided.
+  15:Generated_Source\PSoC4/ADC_2_Buffer_PM.c **** *******************************************************************************/
+  16:Generated_Source\PSoC4/ADC_2_Buffer_PM.c **** 
+  17:Generated_Source\PSoC4/ADC_2_Buffer_PM.c **** #include "ADC_2_Buffer.h"
+  18:Generated_Source\PSoC4/ADC_2_Buffer_PM.c **** 
+  19:Generated_Source\PSoC4/ADC_2_Buffer_PM.c **** #if(!ADC_2_Buffer_CHECK_DEEPSLEEP_SUPPORT)
+  20:Generated_Source\PSoC4/ADC_2_Buffer_PM.c ****     static ADC_2_Buffer_BACKUP_STRUCT ADC_2_Buffer_backup =
+  21:Generated_Source\PSoC4/ADC_2_Buffer_PM.c ****     {
+  22:Generated_Source\PSoC4/ADC_2_Buffer_PM.c ****         0u, /* enableState */
+  23:Generated_Source\PSoC4/ADC_2_Buffer_PM.c ****     };
+  24:Generated_Source\PSoC4/ADC_2_Buffer_PM.c **** #endif /* (ADC_2_Buffer_CHECK_DEEPSLEEP_SUPPORT) */
+  25:Generated_Source\PSoC4/ADC_2_Buffer_PM.c **** 
+  26:Generated_Source\PSoC4/ADC_2_Buffer_PM.c **** 
+  27:Generated_Source\PSoC4/ADC_2_Buffer_PM.c **** /*******************************************************************************
+  28:Generated_Source\PSoC4/ADC_2_Buffer_PM.c **** * Function Name: ADC_2_Buffer_SaveConfig
+  29:Generated_Source\PSoC4/ADC_2_Buffer_PM.c **** ********************************************************************************
+  30:Generated_Source\PSoC4/ADC_2_Buffer_PM.c **** *
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccGwt8XN.s 			page 2
+
+
+  31:Generated_Source\PSoC4/ADC_2_Buffer_PM.c **** * Summary:
+  32:Generated_Source\PSoC4/ADC_2_Buffer_PM.c **** *  Empty function. Included for consistency with other components.
+  33:Generated_Source\PSoC4/ADC_2_Buffer_PM.c **** *
+  34:Generated_Source\PSoC4/ADC_2_Buffer_PM.c **** * Parameters:
+  35:Generated_Source\PSoC4/ADC_2_Buffer_PM.c **** *  None
+  36:Generated_Source\PSoC4/ADC_2_Buffer_PM.c **** *
+  37:Generated_Source\PSoC4/ADC_2_Buffer_PM.c **** * Return:
+  38:Generated_Source\PSoC4/ADC_2_Buffer_PM.c **** *  None
+  39:Generated_Source\PSoC4/ADC_2_Buffer_PM.c **** *
+  40:Generated_Source\PSoC4/ADC_2_Buffer_PM.c **** *******************************************************************************/
+  41:Generated_Source\PSoC4/ADC_2_Buffer_PM.c **** void ADC_2_Buffer_SaveConfig(void)
+  42:Generated_Source\PSoC4/ADC_2_Buffer_PM.c **** {
+  28              		.loc 1 42 0
+  29              		.cfi_startproc
+  30              		@ args = 0, pretend = 0, frame = 0
+  31              		@ frame_needed = 0, uses_anonymous_args = 0
+  32              		@ link register save eliminated.
+  43:Generated_Source\PSoC4/ADC_2_Buffer_PM.c **** 
+  44:Generated_Source\PSoC4/ADC_2_Buffer_PM.c **** }
+  33              		.loc 1 44 0
+  34              		@ sp needed
+  35 0000 7047     		bx	lr
+  36              		.cfi_endproc
+  37              	.LFE0:
+  38              		.size	ADC_2_Buffer_SaveConfig, .-ADC_2_Buffer_SaveConfig
+  39 0002 C046     		.section	.text.ADC_2_Buffer_RestoreConfig,"ax",%progbits
+  40              		.align	2
+  41              		.global	ADC_2_Buffer_RestoreConfig
+  42              		.code	16
+  43              		.thumb_func
+  44              		.type	ADC_2_Buffer_RestoreConfig, %function
+  45              	ADC_2_Buffer_RestoreConfig:
+  46              	.LFB1:
+  45:Generated_Source\PSoC4/ADC_2_Buffer_PM.c **** 
+  46:Generated_Source\PSoC4/ADC_2_Buffer_PM.c **** 
+  47:Generated_Source\PSoC4/ADC_2_Buffer_PM.c **** /*******************************************************************************
+  48:Generated_Source\PSoC4/ADC_2_Buffer_PM.c **** * Function Name: ADC_2_Buffer_RestoreConfig
+  49:Generated_Source\PSoC4/ADC_2_Buffer_PM.c **** ********************************************************************************
+  50:Generated_Source\PSoC4/ADC_2_Buffer_PM.c **** *
+  51:Generated_Source\PSoC4/ADC_2_Buffer_PM.c **** * Summary:
+  52:Generated_Source\PSoC4/ADC_2_Buffer_PM.c **** *  Empty function. Included for consistency with other components.
+  53:Generated_Source\PSoC4/ADC_2_Buffer_PM.c **** *
+  54:Generated_Source\PSoC4/ADC_2_Buffer_PM.c **** * Parameters:
+  55:Generated_Source\PSoC4/ADC_2_Buffer_PM.c **** *  None
+  56:Generated_Source\PSoC4/ADC_2_Buffer_PM.c **** *
+  57:Generated_Source\PSoC4/ADC_2_Buffer_PM.c **** * Return:
+  58:Generated_Source\PSoC4/ADC_2_Buffer_PM.c **** *  None
+  59:Generated_Source\PSoC4/ADC_2_Buffer_PM.c **** *
+  60:Generated_Source\PSoC4/ADC_2_Buffer_PM.c **** *******************************************************************************/
+  61:Generated_Source\PSoC4/ADC_2_Buffer_PM.c **** void ADC_2_Buffer_RestoreConfig(void)
+  62:Generated_Source\PSoC4/ADC_2_Buffer_PM.c **** {
+  47              		.loc 1 62 0
+  48              		.cfi_startproc
+  49              		@ args = 0, pretend = 0, frame = 0
+  50              		@ frame_needed = 0, uses_anonymous_args = 0
+  51              		@ link register save eliminated.
+  63:Generated_Source\PSoC4/ADC_2_Buffer_PM.c ****     
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccGwt8XN.s 			page 3
+
+
+  64:Generated_Source\PSoC4/ADC_2_Buffer_PM.c **** }
+  52              		.loc 1 64 0
+  53              		@ sp needed
+  54 0000 7047     		bx	lr
+  55              		.cfi_endproc
+  56              	.LFE1:
+  57              		.size	ADC_2_Buffer_RestoreConfig, .-ADC_2_Buffer_RestoreConfig
+  58 0002 C046     		.section	.text.ADC_2_Buffer_Sleep,"ax",%progbits
+  59              		.align	2
+  60              		.global	ADC_2_Buffer_Sleep
+  61              		.code	16
+  62              		.thumb_func
+  63              		.type	ADC_2_Buffer_Sleep, %function
+  64              	ADC_2_Buffer_Sleep:
+  65              	.LFB2:
+  65:Generated_Source\PSoC4/ADC_2_Buffer_PM.c **** 
+  66:Generated_Source\PSoC4/ADC_2_Buffer_PM.c **** 
+  67:Generated_Source\PSoC4/ADC_2_Buffer_PM.c **** /*******************************************************************************
+  68:Generated_Source\PSoC4/ADC_2_Buffer_PM.c **** * Function Name: ADC_2_Buffer_Sleep
+  69:Generated_Source\PSoC4/ADC_2_Buffer_PM.c **** ********************************************************************************
+  70:Generated_Source\PSoC4/ADC_2_Buffer_PM.c **** *
+  71:Generated_Source\PSoC4/ADC_2_Buffer_PM.c **** * Summary:
+  72:Generated_Source\PSoC4/ADC_2_Buffer_PM.c **** *  This is the preferred API to prepare the component for sleep. The Sleep() API 
+  73:Generated_Source\PSoC4/ADC_2_Buffer_PM.c **** *  saves the current component state. Call the Sleep() function before calling the 
+  74:Generated_Source\PSoC4/ADC_2_Buffer_PM.c **** *  CySysPmDeepSleep() or the CySysPmHibernate() functions. The "Deep sleep operation" 
+  75:Generated_Source\PSoC4/ADC_2_Buffer_PM.c **** *  option has an influence on this function implementation.
+  76:Generated_Source\PSoC4/ADC_2_Buffer_PM.c **** *
+  77:Generated_Source\PSoC4/ADC_2_Buffer_PM.c **** * Parameters:
+  78:Generated_Source\PSoC4/ADC_2_Buffer_PM.c **** *  None
+  79:Generated_Source\PSoC4/ADC_2_Buffer_PM.c **** *
+  80:Generated_Source\PSoC4/ADC_2_Buffer_PM.c **** * Return:
+  81:Generated_Source\PSoC4/ADC_2_Buffer_PM.c **** *  None
+  82:Generated_Source\PSoC4/ADC_2_Buffer_PM.c **** *
+  83:Generated_Source\PSoC4/ADC_2_Buffer_PM.c **** * Global variables:
+  84:Generated_Source\PSoC4/ADC_2_Buffer_PM.c **** *  ADC_2_Buffer_backup: The structure field 'enableState' is modified
+  85:Generated_Source\PSoC4/ADC_2_Buffer_PM.c **** *  depending on the enable state of the block before entering the sleep mode.
+  86:Generated_Source\PSoC4/ADC_2_Buffer_PM.c **** *
+  87:Generated_Source\PSoC4/ADC_2_Buffer_PM.c **** *******************************************************************************/
+  88:Generated_Source\PSoC4/ADC_2_Buffer_PM.c **** void ADC_2_Buffer_Sleep(void)
+  89:Generated_Source\PSoC4/ADC_2_Buffer_PM.c **** {
+  66              		.loc 1 89 0
+  67              		.cfi_startproc
+  68              		@ args = 0, pretend = 0, frame = 0
+  69              		@ frame_needed = 0, uses_anonymous_args = 0
+  70 0000 10B5     		push	{r4, lr}
+  71              		.cfi_def_cfa_offset 8
+  72              		.cfi_offset 4, -8
+  73              		.cfi_offset 14, -4
+  90:Generated_Source\PSoC4/ADC_2_Buffer_PM.c **** #if(!ADC_2_Buffer_CHECK_DEEPSLEEP_SUPPORT)
+  91:Generated_Source\PSoC4/ADC_2_Buffer_PM.c ****     if(ADC_2_Buffer_CHECK_PWR_MODE_OFF)
+  74              		.loc 1 91 0
+  75 0002 074B     		ldr	r3, .L6
+  76 0004 1B68     		ldr	r3, [r3]
+  77 0006 9B07     		lsls	r3, r3, #30
+  78 0008 05D0     		beq	.L4
+  92:Generated_Source\PSoC4/ADC_2_Buffer_PM.c ****     {
+  93:Generated_Source\PSoC4/ADC_2_Buffer_PM.c ****         ADC_2_Buffer_backup.enableState = 1u;
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccGwt8XN.s 			page 4
+
+
+  79              		.loc 1 93 0
+  80 000a 0122     		movs	r2, #1
+  81 000c 054B     		ldr	r3, .L6+4
+  82 000e 1A70     		strb	r2, [r3]
+  94:Generated_Source\PSoC4/ADC_2_Buffer_PM.c ****         ADC_2_Buffer_Stop();
+  83              		.loc 1 94 0
+  84 0010 FFF7FEFF 		bl	ADC_2_Buffer_Stop
+  85              	.LVL0:
+  86 0014 02E0     		b	.L3
+  87              	.L4:
+  95:Generated_Source\PSoC4/ADC_2_Buffer_PM.c ****     }
+  96:Generated_Source\PSoC4/ADC_2_Buffer_PM.c ****     else /* The component is disabled */
+  97:Generated_Source\PSoC4/ADC_2_Buffer_PM.c ****     {
+  98:Generated_Source\PSoC4/ADC_2_Buffer_PM.c ****         ADC_2_Buffer_backup.enableState = 0u;
+  88              		.loc 1 98 0
+  89 0016 0022     		movs	r2, #0
+  90 0018 024B     		ldr	r3, .L6+4
+  91 001a 1A70     		strb	r2, [r3]
+  92              	.L3:
+  99:Generated_Source\PSoC4/ADC_2_Buffer_PM.c ****     }
+ 100:Generated_Source\PSoC4/ADC_2_Buffer_PM.c **** #endif /* (ADC_2_Buffer_CHECK_DEEPSLEEP_SUPPORT) */
+ 101:Generated_Source\PSoC4/ADC_2_Buffer_PM.c **** }
+  93              		.loc 1 101 0
+  94              		@ sp needed
+  95 001c 10BD     		pop	{r4, pc}
+  96              	.L7:
+  97 001e C046     		.align	2
+  98              	.L6:
+  99 0020 08003040 		.word	1076887560
+ 100 0024 00000000 		.word	.LANCHOR0
+ 101              		.cfi_endproc
+ 102              	.LFE2:
+ 103              		.size	ADC_2_Buffer_Sleep, .-ADC_2_Buffer_Sleep
+ 104              		.section	.text.ADC_2_Buffer_Wakeup,"ax",%progbits
+ 105              		.align	2
+ 106              		.global	ADC_2_Buffer_Wakeup
+ 107              		.code	16
+ 108              		.thumb_func
+ 109              		.type	ADC_2_Buffer_Wakeup, %function
+ 110              	ADC_2_Buffer_Wakeup:
+ 111              	.LFB3:
+ 102:Generated_Source\PSoC4/ADC_2_Buffer_PM.c **** 
+ 103:Generated_Source\PSoC4/ADC_2_Buffer_PM.c **** 
+ 104:Generated_Source\PSoC4/ADC_2_Buffer_PM.c **** /*******************************************************************************
+ 105:Generated_Source\PSoC4/ADC_2_Buffer_PM.c **** * Function Name: ADC_2_Buffer_Wakeup
+ 106:Generated_Source\PSoC4/ADC_2_Buffer_PM.c **** ********************************************************************************
+ 107:Generated_Source\PSoC4/ADC_2_Buffer_PM.c **** *
+ 108:Generated_Source\PSoC4/ADC_2_Buffer_PM.c **** * Summary:
+ 109:Generated_Source\PSoC4/ADC_2_Buffer_PM.c **** *  This is the preferred API to restore the component to the state when Sleep() 
+ 110:Generated_Source\PSoC4/ADC_2_Buffer_PM.c **** *  is called. If the component has been enabled before the Sleep() function is 
+ 111:Generated_Source\PSoC4/ADC_2_Buffer_PM.c **** *  called, the Wakeup() function will also re-enable the component.
+ 112:Generated_Source\PSoC4/ADC_2_Buffer_PM.c **** *  The "Deep sleep operation" option has an influence on this function
+ 113:Generated_Source\PSoC4/ADC_2_Buffer_PM.c **** *  implementation.
+ 114:Generated_Source\PSoC4/ADC_2_Buffer_PM.c **** *
+ 115:Generated_Source\PSoC4/ADC_2_Buffer_PM.c **** * Parameters:
+ 116:Generated_Source\PSoC4/ADC_2_Buffer_PM.c **** *  None
+ 117:Generated_Source\PSoC4/ADC_2_Buffer_PM.c **** *
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccGwt8XN.s 			page 5
+
+
+ 118:Generated_Source\PSoC4/ADC_2_Buffer_PM.c **** * Return:
+ 119:Generated_Source\PSoC4/ADC_2_Buffer_PM.c **** *  None
+ 120:Generated_Source\PSoC4/ADC_2_Buffer_PM.c **** *
+ 121:Generated_Source\PSoC4/ADC_2_Buffer_PM.c **** * Global variables:
+ 122:Generated_Source\PSoC4/ADC_2_Buffer_PM.c **** *  ADC_2_Buffer_backup: The structure field 'enableState' is used to
+ 123:Generated_Source\PSoC4/ADC_2_Buffer_PM.c **** *  restore the enable state of block after wakeup from sleep mode.
+ 124:Generated_Source\PSoC4/ADC_2_Buffer_PM.c **** *
+ 125:Generated_Source\PSoC4/ADC_2_Buffer_PM.c **** *******************************************************************************/
+ 126:Generated_Source\PSoC4/ADC_2_Buffer_PM.c **** void ADC_2_Buffer_Wakeup(void)
+ 127:Generated_Source\PSoC4/ADC_2_Buffer_PM.c **** {
+ 112              		.loc 1 127 0
+ 113              		.cfi_startproc
+ 114              		@ args = 0, pretend = 0, frame = 0
+ 115              		@ frame_needed = 0, uses_anonymous_args = 0
+ 116 0000 10B5     		push	{r4, lr}
+ 117              		.cfi_def_cfa_offset 8
+ 118              		.cfi_offset 4, -8
+ 119              		.cfi_offset 14, -4
+ 128:Generated_Source\PSoC4/ADC_2_Buffer_PM.c **** #if(!ADC_2_Buffer_CHECK_DEEPSLEEP_SUPPORT)
+ 129:Generated_Source\PSoC4/ADC_2_Buffer_PM.c ****     if(0u != ADC_2_Buffer_backup.enableState)
+ 120              		.loc 1 129 0
+ 121 0002 034B     		ldr	r3, .L10
+ 122 0004 1B78     		ldrb	r3, [r3]
+ 123 0006 002B     		cmp	r3, #0
+ 124 0008 01D0     		beq	.L8
+ 130:Generated_Source\PSoC4/ADC_2_Buffer_PM.c ****     {
+ 131:Generated_Source\PSoC4/ADC_2_Buffer_PM.c ****         /* Enable Opamp's operation */
+ 132:Generated_Source\PSoC4/ADC_2_Buffer_PM.c ****         ADC_2_Buffer_Enable();
+ 125              		.loc 1 132 0
+ 126 000a FFF7FEFF 		bl	ADC_2_Buffer_Enable
+ 127              	.LVL1:
+ 128              	.L8:
+ 133:Generated_Source\PSoC4/ADC_2_Buffer_PM.c ****     } /* Do nothing if Opamp was disabled before */
+ 134:Generated_Source\PSoC4/ADC_2_Buffer_PM.c **** #endif /* (ADC_2_Buffer_CHECK_DEEPSLEEP_SUPPORT) */
+ 135:Generated_Source\PSoC4/ADC_2_Buffer_PM.c **** }
+ 129              		.loc 1 135 0
+ 130              		@ sp needed
+ 131 000e 10BD     		pop	{r4, pc}
+ 132              	.L11:
+ 133              		.align	2
+ 134              	.L10:
+ 135 0010 00000000 		.word	.LANCHOR0
+ 136              		.cfi_endproc
+ 137              	.LFE3:
+ 138              		.size	ADC_2_Buffer_Wakeup, .-ADC_2_Buffer_Wakeup
+ 139              		.bss
+ 140              		.align	2
+ 141              		.set	.LANCHOR0,. + 0
+ 142              		.type	ADC_2_Buffer_backup, %object
+ 143              		.size	ADC_2_Buffer_backup, 1
+ 144              	ADC_2_Buffer_backup:
+ 145 0000 00       		.space	1
+ 146              		.text
+ 147              	.Letext0:
+ 148              		.file 2 "Generated_Source\\PSoC4\\cytypes.h"
+ 149              		.file 3 "Generated_Source\\PSoC4\\ADC_2_Buffer.h"
+ 150              		.section	.debug_info,"",%progbits
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccGwt8XN.s 			page 6
+
+
+ 151              	.Ldebug_info0:
+ 152 0000 4D010000 		.4byte	0x14d
+ 153 0004 0400     		.2byte	0x4
+ 154 0006 00000000 		.4byte	.Ldebug_abbrev0
+ 155 000a 04       		.byte	0x4
+ 156 000b 01       		.uleb128 0x1
+ 157 000c 1D010000 		.4byte	.LASF22
+ 158 0010 0C       		.byte	0xc
+ 159 0011 2D000000 		.4byte	.LASF23
+ 160 0015 1B020000 		.4byte	.LASF24
+ 161 0019 00000000 		.4byte	.Ldebug_ranges0+0
+ 162 001d 00000000 		.4byte	0
+ 163 0021 00000000 		.4byte	.Ldebug_line0
+ 164 0025 02       		.uleb128 0x2
+ 165 0026 01       		.byte	0x1
+ 166 0027 06       		.byte	0x6
+ 167 0028 0F020000 		.4byte	.LASF0
+ 168 002c 02       		.uleb128 0x2
+ 169 002d 01       		.byte	0x1
+ 170 002e 08       		.byte	0x8
+ 171 002f 6E000000 		.4byte	.LASF1
+ 172 0033 02       		.uleb128 0x2
+ 173 0034 02       		.byte	0x2
+ 174 0035 05       		.byte	0x5
+ 175 0036 BE010000 		.4byte	.LASF2
+ 176 003a 02       		.uleb128 0x2
+ 177 003b 02       		.byte	0x2
+ 178 003c 07       		.byte	0x7
+ 179 003d 8E000000 		.4byte	.LASF3
+ 180 0041 02       		.uleb128 0x2
+ 181 0042 04       		.byte	0x4
+ 182 0043 05       		.byte	0x5
+ 183 0044 CE010000 		.4byte	.LASF4
+ 184 0048 02       		.uleb128 0x2
+ 185 0049 04       		.byte	0x4
+ 186 004a 07       		.byte	0x7
+ 187 004b 7C000000 		.4byte	.LASF5
+ 188 004f 02       		.uleb128 0x2
+ 189 0050 08       		.byte	0x8
+ 190 0051 05       		.byte	0x5
+ 191 0052 AB010000 		.4byte	.LASF6
+ 192 0056 02       		.uleb128 0x2
+ 193 0057 08       		.byte	0x8
+ 194 0058 07       		.byte	0x7
+ 195 0059 EB000000 		.4byte	.LASF7
+ 196 005d 03       		.uleb128 0x3
+ 197 005e 04       		.byte	0x4
+ 198 005f 05       		.byte	0x5
+ 199 0060 696E7400 		.ascii	"int\000"
+ 200 0064 02       		.uleb128 0x2
+ 201 0065 04       		.byte	0x4
+ 202 0066 07       		.byte	0x7
+ 203 0067 DE000000 		.4byte	.LASF8
+ 204 006b 04       		.uleb128 0x4
+ 205 006c C8010000 		.4byte	.LASF9
+ 206 0070 02       		.byte	0x2
+ 207 0071 D201     		.2byte	0x1d2
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccGwt8XN.s 			page 7
+
+
+ 208 0073 2C000000 		.4byte	0x2c
+ 209 0077 04       		.uleb128 0x4
+ 210 0078 D7000000 		.4byte	.LASF10
+ 211 007c 02       		.byte	0x2
+ 212 007d D401     		.2byte	0x1d4
+ 213 007f 48000000 		.4byte	0x48
+ 214 0083 02       		.uleb128 0x2
+ 215 0084 04       		.byte	0x4
+ 216 0085 04       		.byte	0x4
+ 217 0086 68000000 		.4byte	.LASF11
+ 218 008a 02       		.uleb128 0x2
+ 219 008b 08       		.byte	0x8
+ 220 008c 04       		.byte	0x4
+ 221 008d BC000000 		.4byte	.LASF12
+ 222 0091 02       		.uleb128 0x2
+ 223 0092 01       		.byte	0x1
+ 224 0093 08       		.byte	0x8
+ 225 0094 B9010000 		.4byte	.LASF13
+ 226 0098 04       		.uleb128 0x4
+ 227 0099 00000000 		.4byte	.LASF14
+ 228 009d 02       		.byte	0x2
+ 229 009e 7E02     		.2byte	0x27e
+ 230 00a0 A4000000 		.4byte	0xa4
+ 231 00a4 05       		.uleb128 0x5
+ 232 00a5 77000000 		.4byte	0x77
+ 233 00a9 06       		.uleb128 0x6
+ 234 00aa 01       		.byte	0x1
+ 235 00ab 03       		.byte	0x3
+ 236 00ac 1E       		.byte	0x1e
+ 237 00ad BE000000 		.4byte	0xbe
+ 238 00b1 07       		.uleb128 0x7
+ 239 00b2 D7010000 		.4byte	.LASF25
+ 240 00b6 03       		.byte	0x3
+ 241 00b7 20       		.byte	0x20
+ 242 00b8 6B000000 		.4byte	0x6b
+ 243 00bc 00       		.byte	0
+ 244 00bd 00       		.byte	0
+ 245 00be 08       		.uleb128 0x8
+ 246 00bf 02010000 		.4byte	.LASF15
+ 247 00c3 03       		.byte	0x3
+ 248 00c4 21       		.byte	0x21
+ 249 00c5 A9000000 		.4byte	0xa9
+ 250 00c9 09       		.uleb128 0x9
+ 251 00ca E3010000 		.4byte	.LASF16
+ 252 00ce 01       		.byte	0x1
+ 253 00cf 29       		.byte	0x29
+ 254 00d0 00000000 		.4byte	.LFB0
+ 255 00d4 02000000 		.4byte	.LFE0-.LFB0
+ 256 00d8 01       		.uleb128 0x1
+ 257 00d9 9C       		.byte	0x9c
+ 258 00da 09       		.uleb128 0x9
+ 259 00db A1000000 		.4byte	.LASF17
+ 260 00df 01       		.byte	0x1
+ 261 00e0 3D       		.byte	0x3d
+ 262 00e1 00000000 		.4byte	.LFB1
+ 263 00e5 02000000 		.4byte	.LFE1-.LFB1
+ 264 00e9 01       		.uleb128 0x1
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccGwt8XN.s 			page 8
+
+
+ 265 00ea 9C       		.byte	0x9c
+ 266 00eb 0A       		.uleb128 0xa
+ 267 00ec 1A000000 		.4byte	.LASF18
+ 268 00f0 01       		.byte	0x1
+ 269 00f1 58       		.byte	0x58
+ 270 00f2 00000000 		.4byte	.LFB2
+ 271 00f6 28000000 		.4byte	.LFE2-.LFB2
+ 272 00fa 01       		.uleb128 0x1
+ 273 00fb 9C       		.byte	0x9c
+ 274 00fc 0A010000 		.4byte	0x10a
+ 275 0100 0B       		.uleb128 0xb
+ 276 0101 14000000 		.4byte	.LVL0
+ 277 0105 3A010000 		.4byte	0x13a
+ 278 0109 00       		.byte	0
+ 279 010a 0A       		.uleb128 0xa
+ 280 010b 06000000 		.4byte	.LASF19
+ 281 010f 01       		.byte	0x1
+ 282 0110 7E       		.byte	0x7e
+ 283 0111 00000000 		.4byte	.LFB3
+ 284 0115 14000000 		.4byte	.LFE3-.LFB3
+ 285 0119 01       		.uleb128 0x1
+ 286 011a 9C       		.byte	0x9c
+ 287 011b 29010000 		.4byte	0x129
+ 288 011f 0B       		.uleb128 0xb
+ 289 0120 0E000000 		.4byte	.LVL1
+ 290 0124 45010000 		.4byte	0x145
+ 291 0128 00       		.byte	0
+ 292 0129 0C       		.uleb128 0xc
+ 293 012a FB010000 		.4byte	.LASF26
+ 294 012e 01       		.byte	0x1
+ 295 012f 14       		.byte	0x14
+ 296 0130 BE000000 		.4byte	0xbe
+ 297 0134 05       		.uleb128 0x5
+ 298 0135 03       		.byte	0x3
+ 299 0136 00000000 		.4byte	ADC_2_Buffer_backup
+ 300 013a 0D       		.uleb128 0xd
+ 301 013b 56000000 		.4byte	.LASF20
+ 302 013f 56000000 		.4byte	.LASF20
+ 303 0143 03       		.byte	0x3
+ 304 0144 2A       		.byte	0x2a
+ 305 0145 0D       		.uleb128 0xd
+ 306 0146 C3000000 		.4byte	.LASF21
+ 307 014a C3000000 		.4byte	.LASF21
+ 308 014e 03       		.byte	0x3
+ 309 014f 28       		.byte	0x28
+ 310 0150 00       		.byte	0
+ 311              		.section	.debug_abbrev,"",%progbits
+ 312              	.Ldebug_abbrev0:
+ 313 0000 01       		.uleb128 0x1
+ 314 0001 11       		.uleb128 0x11
+ 315 0002 01       		.byte	0x1
+ 316 0003 25       		.uleb128 0x25
+ 317 0004 0E       		.uleb128 0xe
+ 318 0005 13       		.uleb128 0x13
+ 319 0006 0B       		.uleb128 0xb
+ 320 0007 03       		.uleb128 0x3
+ 321 0008 0E       		.uleb128 0xe
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccGwt8XN.s 			page 9
+
+
+ 322 0009 1B       		.uleb128 0x1b
+ 323 000a 0E       		.uleb128 0xe
+ 324 000b 55       		.uleb128 0x55
+ 325 000c 17       		.uleb128 0x17
+ 326 000d 11       		.uleb128 0x11
+ 327 000e 01       		.uleb128 0x1
+ 328 000f 10       		.uleb128 0x10
+ 329 0010 17       		.uleb128 0x17
+ 330 0011 00       		.byte	0
+ 331 0012 00       		.byte	0
+ 332 0013 02       		.uleb128 0x2
+ 333 0014 24       		.uleb128 0x24
+ 334 0015 00       		.byte	0
+ 335 0016 0B       		.uleb128 0xb
+ 336 0017 0B       		.uleb128 0xb
+ 337 0018 3E       		.uleb128 0x3e
+ 338 0019 0B       		.uleb128 0xb
+ 339 001a 03       		.uleb128 0x3
+ 340 001b 0E       		.uleb128 0xe
+ 341 001c 00       		.byte	0
+ 342 001d 00       		.byte	0
+ 343 001e 03       		.uleb128 0x3
+ 344 001f 24       		.uleb128 0x24
+ 345 0020 00       		.byte	0
+ 346 0021 0B       		.uleb128 0xb
+ 347 0022 0B       		.uleb128 0xb
+ 348 0023 3E       		.uleb128 0x3e
+ 349 0024 0B       		.uleb128 0xb
+ 350 0025 03       		.uleb128 0x3
+ 351 0026 08       		.uleb128 0x8
+ 352 0027 00       		.byte	0
+ 353 0028 00       		.byte	0
+ 354 0029 04       		.uleb128 0x4
+ 355 002a 16       		.uleb128 0x16
+ 356 002b 00       		.byte	0
+ 357 002c 03       		.uleb128 0x3
+ 358 002d 0E       		.uleb128 0xe
+ 359 002e 3A       		.uleb128 0x3a
+ 360 002f 0B       		.uleb128 0xb
+ 361 0030 3B       		.uleb128 0x3b
+ 362 0031 05       		.uleb128 0x5
+ 363 0032 49       		.uleb128 0x49
+ 364 0033 13       		.uleb128 0x13
+ 365 0034 00       		.byte	0
+ 366 0035 00       		.byte	0
+ 367 0036 05       		.uleb128 0x5
+ 368 0037 35       		.uleb128 0x35
+ 369 0038 00       		.byte	0
+ 370 0039 49       		.uleb128 0x49
+ 371 003a 13       		.uleb128 0x13
+ 372 003b 00       		.byte	0
+ 373 003c 00       		.byte	0
+ 374 003d 06       		.uleb128 0x6
+ 375 003e 13       		.uleb128 0x13
+ 376 003f 01       		.byte	0x1
+ 377 0040 0B       		.uleb128 0xb
+ 378 0041 0B       		.uleb128 0xb
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccGwt8XN.s 			page 10
+
+
+ 379 0042 3A       		.uleb128 0x3a
+ 380 0043 0B       		.uleb128 0xb
+ 381 0044 3B       		.uleb128 0x3b
+ 382 0045 0B       		.uleb128 0xb
+ 383 0046 01       		.uleb128 0x1
+ 384 0047 13       		.uleb128 0x13
+ 385 0048 00       		.byte	0
+ 386 0049 00       		.byte	0
+ 387 004a 07       		.uleb128 0x7
+ 388 004b 0D       		.uleb128 0xd
+ 389 004c 00       		.byte	0
+ 390 004d 03       		.uleb128 0x3
+ 391 004e 0E       		.uleb128 0xe
+ 392 004f 3A       		.uleb128 0x3a
+ 393 0050 0B       		.uleb128 0xb
+ 394 0051 3B       		.uleb128 0x3b
+ 395 0052 0B       		.uleb128 0xb
+ 396 0053 49       		.uleb128 0x49
+ 397 0054 13       		.uleb128 0x13
+ 398 0055 38       		.uleb128 0x38
+ 399 0056 0B       		.uleb128 0xb
+ 400 0057 00       		.byte	0
+ 401 0058 00       		.byte	0
+ 402 0059 08       		.uleb128 0x8
+ 403 005a 16       		.uleb128 0x16
+ 404 005b 00       		.byte	0
+ 405 005c 03       		.uleb128 0x3
+ 406 005d 0E       		.uleb128 0xe
+ 407 005e 3A       		.uleb128 0x3a
+ 408 005f 0B       		.uleb128 0xb
+ 409 0060 3B       		.uleb128 0x3b
+ 410 0061 0B       		.uleb128 0xb
+ 411 0062 49       		.uleb128 0x49
+ 412 0063 13       		.uleb128 0x13
+ 413 0064 00       		.byte	0
+ 414 0065 00       		.byte	0
+ 415 0066 09       		.uleb128 0x9
+ 416 0067 2E       		.uleb128 0x2e
+ 417 0068 00       		.byte	0
+ 418 0069 3F       		.uleb128 0x3f
+ 419 006a 19       		.uleb128 0x19
+ 420 006b 03       		.uleb128 0x3
+ 421 006c 0E       		.uleb128 0xe
+ 422 006d 3A       		.uleb128 0x3a
+ 423 006e 0B       		.uleb128 0xb
+ 424 006f 3B       		.uleb128 0x3b
+ 425 0070 0B       		.uleb128 0xb
+ 426 0071 27       		.uleb128 0x27
+ 427 0072 19       		.uleb128 0x19
+ 428 0073 11       		.uleb128 0x11
+ 429 0074 01       		.uleb128 0x1
+ 430 0075 12       		.uleb128 0x12
+ 431 0076 06       		.uleb128 0x6
+ 432 0077 40       		.uleb128 0x40
+ 433 0078 18       		.uleb128 0x18
+ 434 0079 9742     		.uleb128 0x2117
+ 435 007b 19       		.uleb128 0x19
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccGwt8XN.s 			page 11
+
+
+ 436 007c 00       		.byte	0
+ 437 007d 00       		.byte	0
+ 438 007e 0A       		.uleb128 0xa
+ 439 007f 2E       		.uleb128 0x2e
+ 440 0080 01       		.byte	0x1
+ 441 0081 3F       		.uleb128 0x3f
+ 442 0082 19       		.uleb128 0x19
+ 443 0083 03       		.uleb128 0x3
+ 444 0084 0E       		.uleb128 0xe
+ 445 0085 3A       		.uleb128 0x3a
+ 446 0086 0B       		.uleb128 0xb
+ 447 0087 3B       		.uleb128 0x3b
+ 448 0088 0B       		.uleb128 0xb
+ 449 0089 27       		.uleb128 0x27
+ 450 008a 19       		.uleb128 0x19
+ 451 008b 11       		.uleb128 0x11
+ 452 008c 01       		.uleb128 0x1
+ 453 008d 12       		.uleb128 0x12
+ 454 008e 06       		.uleb128 0x6
+ 455 008f 40       		.uleb128 0x40
+ 456 0090 18       		.uleb128 0x18
+ 457 0091 9742     		.uleb128 0x2117
+ 458 0093 19       		.uleb128 0x19
+ 459 0094 01       		.uleb128 0x1
+ 460 0095 13       		.uleb128 0x13
+ 461 0096 00       		.byte	0
+ 462 0097 00       		.byte	0
+ 463 0098 0B       		.uleb128 0xb
+ 464 0099 898201   		.uleb128 0x4109
+ 465 009c 00       		.byte	0
+ 466 009d 11       		.uleb128 0x11
+ 467 009e 01       		.uleb128 0x1
+ 468 009f 31       		.uleb128 0x31
+ 469 00a0 13       		.uleb128 0x13
+ 470 00a1 00       		.byte	0
+ 471 00a2 00       		.byte	0
+ 472 00a3 0C       		.uleb128 0xc
+ 473 00a4 34       		.uleb128 0x34
+ 474 00a5 00       		.byte	0
+ 475 00a6 03       		.uleb128 0x3
+ 476 00a7 0E       		.uleb128 0xe
+ 477 00a8 3A       		.uleb128 0x3a
+ 478 00a9 0B       		.uleb128 0xb
+ 479 00aa 3B       		.uleb128 0x3b
+ 480 00ab 0B       		.uleb128 0xb
+ 481 00ac 49       		.uleb128 0x49
+ 482 00ad 13       		.uleb128 0x13
+ 483 00ae 02       		.uleb128 0x2
+ 484 00af 18       		.uleb128 0x18
+ 485 00b0 00       		.byte	0
+ 486 00b1 00       		.byte	0
+ 487 00b2 0D       		.uleb128 0xd
+ 488 00b3 2E       		.uleb128 0x2e
+ 489 00b4 00       		.byte	0
+ 490 00b5 3F       		.uleb128 0x3f
+ 491 00b6 19       		.uleb128 0x19
+ 492 00b7 3C       		.uleb128 0x3c
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccGwt8XN.s 			page 12
+
+
+ 493 00b8 19       		.uleb128 0x19
+ 494 00b9 6E       		.uleb128 0x6e
+ 495 00ba 0E       		.uleb128 0xe
+ 496 00bb 03       		.uleb128 0x3
+ 497 00bc 0E       		.uleb128 0xe
+ 498 00bd 3A       		.uleb128 0x3a
+ 499 00be 0B       		.uleb128 0xb
+ 500 00bf 3B       		.uleb128 0x3b
+ 501 00c0 0B       		.uleb128 0xb
+ 502 00c1 00       		.byte	0
+ 503 00c2 00       		.byte	0
+ 504 00c3 00       		.byte	0
+ 505              		.section	.debug_aranges,"",%progbits
+ 506 0000 34000000 		.4byte	0x34
+ 507 0004 0200     		.2byte	0x2
+ 508 0006 00000000 		.4byte	.Ldebug_info0
+ 509 000a 04       		.byte	0x4
+ 510 000b 00       		.byte	0
+ 511 000c 0000     		.2byte	0
+ 512 000e 0000     		.2byte	0
+ 513 0010 00000000 		.4byte	.LFB0
+ 514 0014 02000000 		.4byte	.LFE0-.LFB0
+ 515 0018 00000000 		.4byte	.LFB1
+ 516 001c 02000000 		.4byte	.LFE1-.LFB1
+ 517 0020 00000000 		.4byte	.LFB2
+ 518 0024 28000000 		.4byte	.LFE2-.LFB2
+ 519 0028 00000000 		.4byte	.LFB3
+ 520 002c 14000000 		.4byte	.LFE3-.LFB3
+ 521 0030 00000000 		.4byte	0
+ 522 0034 00000000 		.4byte	0
+ 523              		.section	.debug_ranges,"",%progbits
+ 524              	.Ldebug_ranges0:
+ 525 0000 00000000 		.4byte	.LFB0
+ 526 0004 02000000 		.4byte	.LFE0
+ 527 0008 00000000 		.4byte	.LFB1
+ 528 000c 02000000 		.4byte	.LFE1
+ 529 0010 00000000 		.4byte	.LFB2
+ 530 0014 28000000 		.4byte	.LFE2
+ 531 0018 00000000 		.4byte	.LFB3
+ 532 001c 14000000 		.4byte	.LFE3
+ 533 0020 00000000 		.4byte	0
+ 534 0024 00000000 		.4byte	0
+ 535              		.section	.debug_line,"",%progbits
+ 536              	.Ldebug_line0:
+ 537 0000 AC000000 		.section	.debug_str,"MS",%progbits,1
+ 537      02005E00 
+ 537      00000201 
+ 537      FB0E0D00 
+ 537      01010101 
+ 538              	.LASF14:
+ 539 0000 72656733 		.ascii	"reg32\000"
+ 539      3200
+ 540              	.LASF19:
+ 541 0006 4144435F 		.ascii	"ADC_2_Buffer_Wakeup\000"
+ 541      325F4275 
+ 541      66666572 
+ 541      5F57616B 
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccGwt8XN.s 			page 13
+
+
+ 541      65757000 
+ 542              	.LASF18:
+ 543 001a 4144435F 		.ascii	"ADC_2_Buffer_Sleep\000"
+ 543      325F4275 
+ 543      66666572 
+ 543      5F536C65 
+ 543      657000
+ 544              	.LASF23:
+ 545 002d 47656E65 		.ascii	"Generated_Source\\PSoC4\\ADC_2_Buffer_PM.c\000"
+ 545      72617465 
+ 545      645F536F 
+ 545      75726365 
+ 545      5C50536F 
+ 546              	.LASF20:
+ 547 0056 4144435F 		.ascii	"ADC_2_Buffer_Stop\000"
+ 547      325F4275 
+ 547      66666572 
+ 547      5F53746F 
+ 547      7000
+ 548              	.LASF11:
+ 549 0068 666C6F61 		.ascii	"float\000"
+ 549      7400
+ 550              	.LASF1:
+ 551 006e 756E7369 		.ascii	"unsigned char\000"
+ 551      676E6564 
+ 551      20636861 
+ 551      7200
+ 552              	.LASF5:
+ 553 007c 6C6F6E67 		.ascii	"long unsigned int\000"
+ 553      20756E73 
+ 553      69676E65 
+ 553      6420696E 
+ 553      7400
+ 554              	.LASF3:
+ 555 008e 73686F72 		.ascii	"short unsigned int\000"
+ 555      7420756E 
+ 555      7369676E 
+ 555      65642069 
+ 555      6E7400
+ 556              	.LASF17:
+ 557 00a1 4144435F 		.ascii	"ADC_2_Buffer_RestoreConfig\000"
+ 557      325F4275 
+ 557      66666572 
+ 557      5F526573 
+ 557      746F7265 
+ 558              	.LASF12:
+ 559 00bc 646F7562 		.ascii	"double\000"
+ 559      6C6500
+ 560              	.LASF21:
+ 561 00c3 4144435F 		.ascii	"ADC_2_Buffer_Enable\000"
+ 561      325F4275 
+ 561      66666572 
+ 561      5F456E61 
+ 561      626C6500 
+ 562              	.LASF10:
+ 563 00d7 75696E74 		.ascii	"uint32\000"
+ 563      333200
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccGwt8XN.s 			page 14
+
+
+ 564              	.LASF8:
+ 565 00de 756E7369 		.ascii	"unsigned int\000"
+ 565      676E6564 
+ 565      20696E74 
+ 565      00
+ 566              	.LASF7:
+ 567 00eb 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 567      206C6F6E 
+ 567      6720756E 
+ 567      7369676E 
+ 567      65642069 
+ 568              	.LASF15:
+ 569 0102 4144435F 		.ascii	"ADC_2_Buffer_BACKUP_STRUCT\000"
+ 569      325F4275 
+ 569      66666572 
+ 569      5F424143 
+ 569      4B55505F 
+ 570              	.LASF22:
+ 571 011d 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
+ 571      43313120 
+ 571      352E342E 
+ 571      31203230 
+ 571      31363036 
+ 572 0150 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m0 -mthumb -g -O"
+ 572      20726576 
+ 572      6973696F 
+ 572      6E203233 
+ 572      37373135 
+ 573 0183 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
+ 573      66756E63 
+ 573      74696F6E 
+ 573      2D736563 
+ 573      74696F6E 
+ 574              	.LASF6:
+ 575 01ab 6C6F6E67 		.ascii	"long long int\000"
+ 575      206C6F6E 
+ 575      6720696E 
+ 575      7400
+ 576              	.LASF13:
+ 577 01b9 63686172 		.ascii	"char\000"
+ 577      00
+ 578              	.LASF2:
+ 579 01be 73686F72 		.ascii	"short int\000"
+ 579      7420696E 
+ 579      7400
+ 580              	.LASF9:
+ 581 01c8 75696E74 		.ascii	"uint8\000"
+ 581      3800
+ 582              	.LASF4:
+ 583 01ce 6C6F6E67 		.ascii	"long int\000"
+ 583      20696E74 
+ 583      00
+ 584              	.LASF25:
+ 585 01d7 656E6162 		.ascii	"enableState\000"
+ 585      6C655374 
+ 585      61746500 
+ 586              	.LASF16:
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccGwt8XN.s 			page 15
+
+
+ 587 01e3 4144435F 		.ascii	"ADC_2_Buffer_SaveConfig\000"
+ 587      325F4275 
+ 587      66666572 
+ 587      5F536176 
+ 587      65436F6E 
+ 588              	.LASF26:
+ 589 01fb 4144435F 		.ascii	"ADC_2_Buffer_backup\000"
+ 589      325F4275 
+ 589      66666572 
+ 589      5F626163 
+ 589      6B757000 
+ 590              	.LASF0:
+ 591 020f 7369676E 		.ascii	"signed char\000"
+ 591      65642063 
+ 591      68617200 
+ 592              	.LASF24:
+ 593 021b 433A5C55 		.ascii	"C:\\Users\\JamesN4\\Documents\\PSoC Creator\\Hybrid"
+ 593      73657273 
+ 593      5C4A616D 
+ 593      65734E34 
+ 593      5C446F63 
+ 594 0249 456E636F 		.ascii	"EncoderCY8CKIT43\\HybridEncoder.cydsn\000"
+ 594      64657243 
+ 594      5938434B 
+ 594      49543433 
+ 594      5C487962 
+ 595              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran

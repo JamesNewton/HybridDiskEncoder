@@ -1,0 +1,2051 @@
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccfpevo1.s 			page 1
+
+
+   1              		.syntax unified
+   2              		.cpu cortex-m0
+   3              		.fpu softvfp
+   4              		.eabi_attribute 20, 1
+   5              		.eabi_attribute 21, 1
+   6              		.eabi_attribute 23, 3
+   7              		.eabi_attribute 24, 1
+   8              		.eabi_attribute 25, 1
+   9              		.eabi_attribute 26, 1
+  10              		.eabi_attribute 30, 1
+  11              		.eabi_attribute 34, 0
+  12              		.eabi_attribute 18, 4
+  13              		.thumb
+  14              		.syntax unified
+  15              		.file	"Input_1_Int.c"
+  16              		.text
+  17              	.Ltext0:
+  18              		.cfi_sections	.debug_frame
+  19              		.section	.text.Input_1_Int_Interrupt,"ax",%progbits
+  20              		.align	2
+  21              		.global	Input_1_Int_Interrupt
+  22              		.code	16
+  23              		.thumb_func
+  24              		.type	Input_1_Int_Interrupt, %function
+  25              	Input_1_Int_Interrupt:
+  26              	.LFB4:
+  27              		.file 1 "Generated_Source\\PSoC4\\Input_1_Int.c"
+   1:Generated_Source\PSoC4/Input_1_Int.c **** /*******************************************************************************
+   2:Generated_Source\PSoC4/Input_1_Int.c **** * File Name: Input_1_Int.c  
+   3:Generated_Source\PSoC4/Input_1_Int.c **** * Version 1.70
+   4:Generated_Source\PSoC4/Input_1_Int.c **** *
+   5:Generated_Source\PSoC4/Input_1_Int.c **** *  Description:
+   6:Generated_Source\PSoC4/Input_1_Int.c **** *   API for controlling the state of an interrupt.
+   7:Generated_Source\PSoC4/Input_1_Int.c **** *
+   8:Generated_Source\PSoC4/Input_1_Int.c **** *
+   9:Generated_Source\PSoC4/Input_1_Int.c **** *  Note:
+  10:Generated_Source\PSoC4/Input_1_Int.c **** *
+  11:Generated_Source\PSoC4/Input_1_Int.c **** ********************************************************************************
+  12:Generated_Source\PSoC4/Input_1_Int.c **** * Copyright 2008-2015, Cypress Semiconductor Corporation.  All rights reserved.
+  13:Generated_Source\PSoC4/Input_1_Int.c **** * You may use this file only in accordance with the license, terms, conditions, 
+  14:Generated_Source\PSoC4/Input_1_Int.c **** * disclaimers, and limitations in the end user license agreement accompanying 
+  15:Generated_Source\PSoC4/Input_1_Int.c **** * the software package with which this file was provided.
+  16:Generated_Source\PSoC4/Input_1_Int.c **** *******************************************************************************/
+  17:Generated_Source\PSoC4/Input_1_Int.c **** 
+  18:Generated_Source\PSoC4/Input_1_Int.c **** 
+  19:Generated_Source\PSoC4/Input_1_Int.c **** #include <cydevice_trm.h>
+  20:Generated_Source\PSoC4/Input_1_Int.c **** #include <CyLib.h>
+  21:Generated_Source\PSoC4/Input_1_Int.c **** #include <Input_1_Int.h>
+  22:Generated_Source\PSoC4/Input_1_Int.c **** #include "cyapicallbacks.h"
+  23:Generated_Source\PSoC4/Input_1_Int.c **** 
+  24:Generated_Source\PSoC4/Input_1_Int.c **** #if !defined(Input_1_Int__REMOVED) /* Check for removal by optimization */
+  25:Generated_Source\PSoC4/Input_1_Int.c **** 
+  26:Generated_Source\PSoC4/Input_1_Int.c **** /*******************************************************************************
+  27:Generated_Source\PSoC4/Input_1_Int.c **** *  Place your includes, defines and code here 
+  28:Generated_Source\PSoC4/Input_1_Int.c **** ********************************************************************************/
+  29:Generated_Source\PSoC4/Input_1_Int.c **** /* `#START Input_1_Int_intc` */
+  30:Generated_Source\PSoC4/Input_1_Int.c **** 
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccfpevo1.s 			page 2
+
+
+  31:Generated_Source\PSoC4/Input_1_Int.c **** /* `#END` */
+  32:Generated_Source\PSoC4/Input_1_Int.c **** 
+  33:Generated_Source\PSoC4/Input_1_Int.c **** extern cyisraddress CyRamVectors[CYINT_IRQ_BASE + CY_NUM_INTERRUPTS];
+  34:Generated_Source\PSoC4/Input_1_Int.c **** 
+  35:Generated_Source\PSoC4/Input_1_Int.c **** /* Declared in startup, used to set unused interrupts to. */
+  36:Generated_Source\PSoC4/Input_1_Int.c **** CY_ISR_PROTO(IntDefaultHandler);
+  37:Generated_Source\PSoC4/Input_1_Int.c **** 
+  38:Generated_Source\PSoC4/Input_1_Int.c **** 
+  39:Generated_Source\PSoC4/Input_1_Int.c **** /*******************************************************************************
+  40:Generated_Source\PSoC4/Input_1_Int.c **** * Function Name: Input_1_Int_Start
+  41:Generated_Source\PSoC4/Input_1_Int.c **** ********************************************************************************
+  42:Generated_Source\PSoC4/Input_1_Int.c **** *
+  43:Generated_Source\PSoC4/Input_1_Int.c **** * Summary:
+  44:Generated_Source\PSoC4/Input_1_Int.c **** *  Set up the interrupt and enable it. This function disables the interrupt, 
+  45:Generated_Source\PSoC4/Input_1_Int.c **** *  sets the default interrupt vector, sets the priority from the value in the
+  46:Generated_Source\PSoC4/Input_1_Int.c **** *  Design Wide Resources Interrupt Editor, then enables the interrupt to the 
+  47:Generated_Source\PSoC4/Input_1_Int.c **** *  interrupt controller.
+  48:Generated_Source\PSoC4/Input_1_Int.c **** *
+  49:Generated_Source\PSoC4/Input_1_Int.c **** * Parameters:  
+  50:Generated_Source\PSoC4/Input_1_Int.c **** *   None
+  51:Generated_Source\PSoC4/Input_1_Int.c **** *
+  52:Generated_Source\PSoC4/Input_1_Int.c **** * Return:
+  53:Generated_Source\PSoC4/Input_1_Int.c **** *   None
+  54:Generated_Source\PSoC4/Input_1_Int.c **** *
+  55:Generated_Source\PSoC4/Input_1_Int.c **** *******************************************************************************/
+  56:Generated_Source\PSoC4/Input_1_Int.c **** void Input_1_Int_Start(void)
+  57:Generated_Source\PSoC4/Input_1_Int.c **** {
+  58:Generated_Source\PSoC4/Input_1_Int.c ****     /* For all we know the interrupt is active. */
+  59:Generated_Source\PSoC4/Input_1_Int.c ****     Input_1_Int_Disable();
+  60:Generated_Source\PSoC4/Input_1_Int.c **** 
+  61:Generated_Source\PSoC4/Input_1_Int.c ****     /* Set the ISR to point to the Input_1_Int Interrupt. */
+  62:Generated_Source\PSoC4/Input_1_Int.c ****     Input_1_Int_SetVector(&Input_1_Int_Interrupt);
+  63:Generated_Source\PSoC4/Input_1_Int.c **** 
+  64:Generated_Source\PSoC4/Input_1_Int.c ****     /* Set the priority. */
+  65:Generated_Source\PSoC4/Input_1_Int.c ****     Input_1_Int_SetPriority((uint8)Input_1_Int_INTC_PRIOR_NUMBER);
+  66:Generated_Source\PSoC4/Input_1_Int.c **** 
+  67:Generated_Source\PSoC4/Input_1_Int.c ****     /* Enable it. */
+  68:Generated_Source\PSoC4/Input_1_Int.c ****     Input_1_Int_Enable();
+  69:Generated_Source\PSoC4/Input_1_Int.c **** }
+  70:Generated_Source\PSoC4/Input_1_Int.c **** 
+  71:Generated_Source\PSoC4/Input_1_Int.c **** 
+  72:Generated_Source\PSoC4/Input_1_Int.c **** /*******************************************************************************
+  73:Generated_Source\PSoC4/Input_1_Int.c **** * Function Name: Input_1_Int_StartEx
+  74:Generated_Source\PSoC4/Input_1_Int.c **** ********************************************************************************
+  75:Generated_Source\PSoC4/Input_1_Int.c **** *
+  76:Generated_Source\PSoC4/Input_1_Int.c **** * Summary:
+  77:Generated_Source\PSoC4/Input_1_Int.c **** *  Sets up the interrupt and enables it. This function disables the interrupt,
+  78:Generated_Source\PSoC4/Input_1_Int.c **** *  sets the interrupt vector based on the address passed in, sets the priority 
+  79:Generated_Source\PSoC4/Input_1_Int.c **** *  from the value in the Design Wide Resources Interrupt Editor, then enables 
+  80:Generated_Source\PSoC4/Input_1_Int.c **** *  the interrupt to the interrupt controller.
+  81:Generated_Source\PSoC4/Input_1_Int.c **** *  
+  82:Generated_Source\PSoC4/Input_1_Int.c **** *  When defining ISR functions, the CY_ISR and CY_ISR_PROTO macros should be 
+  83:Generated_Source\PSoC4/Input_1_Int.c **** *  used to provide consistent definition across compilers:
+  84:Generated_Source\PSoC4/Input_1_Int.c **** *  
+  85:Generated_Source\PSoC4/Input_1_Int.c **** *  Function definition example:
+  86:Generated_Source\PSoC4/Input_1_Int.c **** *   CY_ISR(MyISR)
+  87:Generated_Source\PSoC4/Input_1_Int.c **** *   {
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccfpevo1.s 			page 3
+
+
+  88:Generated_Source\PSoC4/Input_1_Int.c **** *   }
+  89:Generated_Source\PSoC4/Input_1_Int.c **** *   Function prototype example:
+  90:Generated_Source\PSoC4/Input_1_Int.c **** *   CY_ISR_PROTO(MyISR);
+  91:Generated_Source\PSoC4/Input_1_Int.c **** *
+  92:Generated_Source\PSoC4/Input_1_Int.c **** * Parameters:  
+  93:Generated_Source\PSoC4/Input_1_Int.c **** *   address: Address of the ISR to set in the interrupt vector table.
+  94:Generated_Source\PSoC4/Input_1_Int.c **** *
+  95:Generated_Source\PSoC4/Input_1_Int.c **** * Return:
+  96:Generated_Source\PSoC4/Input_1_Int.c **** *   None
+  97:Generated_Source\PSoC4/Input_1_Int.c **** *
+  98:Generated_Source\PSoC4/Input_1_Int.c **** *******************************************************************************/
+  99:Generated_Source\PSoC4/Input_1_Int.c **** void Input_1_Int_StartEx(cyisraddress address)
+ 100:Generated_Source\PSoC4/Input_1_Int.c **** {
+ 101:Generated_Source\PSoC4/Input_1_Int.c ****     /* For all we know the interrupt is active. */
+ 102:Generated_Source\PSoC4/Input_1_Int.c ****     Input_1_Int_Disable();
+ 103:Generated_Source\PSoC4/Input_1_Int.c **** 
+ 104:Generated_Source\PSoC4/Input_1_Int.c ****     /* Set the ISR to point to the Input_1_Int Interrupt. */
+ 105:Generated_Source\PSoC4/Input_1_Int.c ****     Input_1_Int_SetVector(address);
+ 106:Generated_Source\PSoC4/Input_1_Int.c **** 
+ 107:Generated_Source\PSoC4/Input_1_Int.c ****     /* Set the priority. */
+ 108:Generated_Source\PSoC4/Input_1_Int.c ****     Input_1_Int_SetPriority((uint8)Input_1_Int_INTC_PRIOR_NUMBER);
+ 109:Generated_Source\PSoC4/Input_1_Int.c **** 
+ 110:Generated_Source\PSoC4/Input_1_Int.c ****     /* Enable it. */
+ 111:Generated_Source\PSoC4/Input_1_Int.c ****     Input_1_Int_Enable();
+ 112:Generated_Source\PSoC4/Input_1_Int.c **** }
+ 113:Generated_Source\PSoC4/Input_1_Int.c **** 
+ 114:Generated_Source\PSoC4/Input_1_Int.c **** 
+ 115:Generated_Source\PSoC4/Input_1_Int.c **** /*******************************************************************************
+ 116:Generated_Source\PSoC4/Input_1_Int.c **** * Function Name: Input_1_Int_Stop
+ 117:Generated_Source\PSoC4/Input_1_Int.c **** ********************************************************************************
+ 118:Generated_Source\PSoC4/Input_1_Int.c **** *
+ 119:Generated_Source\PSoC4/Input_1_Int.c **** * Summary:
+ 120:Generated_Source\PSoC4/Input_1_Int.c **** *   Disables and removes the interrupt.
+ 121:Generated_Source\PSoC4/Input_1_Int.c **** *
+ 122:Generated_Source\PSoC4/Input_1_Int.c **** * Parameters:  
+ 123:Generated_Source\PSoC4/Input_1_Int.c **** *   None
+ 124:Generated_Source\PSoC4/Input_1_Int.c **** *
+ 125:Generated_Source\PSoC4/Input_1_Int.c **** * Return:
+ 126:Generated_Source\PSoC4/Input_1_Int.c **** *   None
+ 127:Generated_Source\PSoC4/Input_1_Int.c **** *
+ 128:Generated_Source\PSoC4/Input_1_Int.c **** *******************************************************************************/
+ 129:Generated_Source\PSoC4/Input_1_Int.c **** void Input_1_Int_Stop(void)
+ 130:Generated_Source\PSoC4/Input_1_Int.c **** {
+ 131:Generated_Source\PSoC4/Input_1_Int.c ****     /* Disable this interrupt. */
+ 132:Generated_Source\PSoC4/Input_1_Int.c ****     Input_1_Int_Disable();
+ 133:Generated_Source\PSoC4/Input_1_Int.c **** 
+ 134:Generated_Source\PSoC4/Input_1_Int.c ****     /* Set the ISR to point to the passive one. */
+ 135:Generated_Source\PSoC4/Input_1_Int.c ****     Input_1_Int_SetVector(&IntDefaultHandler);
+ 136:Generated_Source\PSoC4/Input_1_Int.c **** }
+ 137:Generated_Source\PSoC4/Input_1_Int.c **** 
+ 138:Generated_Source\PSoC4/Input_1_Int.c **** 
+ 139:Generated_Source\PSoC4/Input_1_Int.c **** /*******************************************************************************
+ 140:Generated_Source\PSoC4/Input_1_Int.c **** * Function Name: Input_1_Int_Interrupt
+ 141:Generated_Source\PSoC4/Input_1_Int.c **** ********************************************************************************
+ 142:Generated_Source\PSoC4/Input_1_Int.c **** *
+ 143:Generated_Source\PSoC4/Input_1_Int.c **** * Summary:
+ 144:Generated_Source\PSoC4/Input_1_Int.c **** *   The default Interrupt Service Routine for Input_1_Int.
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccfpevo1.s 			page 4
+
+
+ 145:Generated_Source\PSoC4/Input_1_Int.c **** *
+ 146:Generated_Source\PSoC4/Input_1_Int.c **** *   Add custom code between the START and END comments to keep the next version
+ 147:Generated_Source\PSoC4/Input_1_Int.c **** *   of this file from over-writing your code.
+ 148:Generated_Source\PSoC4/Input_1_Int.c **** *
+ 149:Generated_Source\PSoC4/Input_1_Int.c **** *   Note You may use either the default ISR by using this API, or you may define
+ 150:Generated_Source\PSoC4/Input_1_Int.c **** *   your own separate ISR through ISR_StartEx().
+ 151:Generated_Source\PSoC4/Input_1_Int.c **** *
+ 152:Generated_Source\PSoC4/Input_1_Int.c **** * Parameters:  
+ 153:Generated_Source\PSoC4/Input_1_Int.c **** *   None
+ 154:Generated_Source\PSoC4/Input_1_Int.c **** *
+ 155:Generated_Source\PSoC4/Input_1_Int.c **** * Return:
+ 156:Generated_Source\PSoC4/Input_1_Int.c **** *   None
+ 157:Generated_Source\PSoC4/Input_1_Int.c **** *
+ 158:Generated_Source\PSoC4/Input_1_Int.c **** *******************************************************************************/
+ 159:Generated_Source\PSoC4/Input_1_Int.c **** CY_ISR(Input_1_Int_Interrupt)
+ 160:Generated_Source\PSoC4/Input_1_Int.c **** {
+  28              		.loc 1 160 0
+  29              		.cfi_startproc
+  30              		@ args = 0, pretend = 0, frame = 0
+  31              		@ frame_needed = 0, uses_anonymous_args = 0
+  32              		@ link register save eliminated.
+ 161:Generated_Source\PSoC4/Input_1_Int.c ****     #ifdef Input_1_Int_INTERRUPT_INTERRUPT_CALLBACK
+ 162:Generated_Source\PSoC4/Input_1_Int.c ****         Input_1_Int_Interrupt_InterruptCallback();
+ 163:Generated_Source\PSoC4/Input_1_Int.c ****     #endif /* Input_1_Int_INTERRUPT_INTERRUPT_CALLBACK */ 
+ 164:Generated_Source\PSoC4/Input_1_Int.c **** 
+ 165:Generated_Source\PSoC4/Input_1_Int.c ****     /*  Place your Interrupt code here. */
+ 166:Generated_Source\PSoC4/Input_1_Int.c ****     /* `#START Input_1_Int_Interrupt` */
+ 167:Generated_Source\PSoC4/Input_1_Int.c **** 
+ 168:Generated_Source\PSoC4/Input_1_Int.c ****     /* `#END` */
+ 169:Generated_Source\PSoC4/Input_1_Int.c **** }
+  33              		.loc 1 169 0
+  34              		@ sp needed
+  35 0000 7047     		bx	lr
+  36              		.cfi_endproc
+  37              	.LFE4:
+  38              		.size	Input_1_Int_Interrupt, .-Input_1_Int_Interrupt
+  39 0002 C046     		.section	.text.Input_1_Int_SetVector,"ax",%progbits
+  40              		.align	2
+  41              		.global	Input_1_Int_SetVector
+  42              		.code	16
+  43              		.thumb_func
+  44              		.type	Input_1_Int_SetVector, %function
+  45              	Input_1_Int_SetVector:
+  46              	.LFB5:
+ 170:Generated_Source\PSoC4/Input_1_Int.c **** 
+ 171:Generated_Source\PSoC4/Input_1_Int.c **** 
+ 172:Generated_Source\PSoC4/Input_1_Int.c **** /*******************************************************************************
+ 173:Generated_Source\PSoC4/Input_1_Int.c **** * Function Name: Input_1_Int_SetVector
+ 174:Generated_Source\PSoC4/Input_1_Int.c **** ********************************************************************************
+ 175:Generated_Source\PSoC4/Input_1_Int.c **** *
+ 176:Generated_Source\PSoC4/Input_1_Int.c **** * Summary:
+ 177:Generated_Source\PSoC4/Input_1_Int.c **** *   Change the ISR vector for the Interrupt. Note calling Input_1_Int_Start
+ 178:Generated_Source\PSoC4/Input_1_Int.c **** *   will override any effect this method would have had. To set the vector 
+ 179:Generated_Source\PSoC4/Input_1_Int.c **** *   before the component has been started use Input_1_Int_StartEx instead.
+ 180:Generated_Source\PSoC4/Input_1_Int.c **** * 
+ 181:Generated_Source\PSoC4/Input_1_Int.c **** *   When defining ISR functions, the CY_ISR and CY_ISR_PROTO macros should be 
+ 182:Generated_Source\PSoC4/Input_1_Int.c **** *   used to provide consistent definition across compilers:
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccfpevo1.s 			page 5
+
+
+ 183:Generated_Source\PSoC4/Input_1_Int.c **** *
+ 184:Generated_Source\PSoC4/Input_1_Int.c **** *   Function definition example:
+ 185:Generated_Source\PSoC4/Input_1_Int.c **** *   CY_ISR(MyISR)
+ 186:Generated_Source\PSoC4/Input_1_Int.c **** *   {
+ 187:Generated_Source\PSoC4/Input_1_Int.c **** *   }
+ 188:Generated_Source\PSoC4/Input_1_Int.c **** *
+ 189:Generated_Source\PSoC4/Input_1_Int.c **** *   Function prototype example:
+ 190:Generated_Source\PSoC4/Input_1_Int.c **** *     CY_ISR_PROTO(MyISR);
+ 191:Generated_Source\PSoC4/Input_1_Int.c **** *
+ 192:Generated_Source\PSoC4/Input_1_Int.c **** * Parameters:
+ 193:Generated_Source\PSoC4/Input_1_Int.c **** *   address: Address of the ISR to set in the interrupt vector table.
+ 194:Generated_Source\PSoC4/Input_1_Int.c **** *
+ 195:Generated_Source\PSoC4/Input_1_Int.c **** * Return:
+ 196:Generated_Source\PSoC4/Input_1_Int.c **** *   None
+ 197:Generated_Source\PSoC4/Input_1_Int.c **** *
+ 198:Generated_Source\PSoC4/Input_1_Int.c **** *******************************************************************************/
+ 199:Generated_Source\PSoC4/Input_1_Int.c **** void Input_1_Int_SetVector(cyisraddress address)
+ 200:Generated_Source\PSoC4/Input_1_Int.c **** {
+  47              		.loc 1 200 0
+  48              		.cfi_startproc
+  49              		@ args = 0, pretend = 0, frame = 0
+  50              		@ frame_needed = 0, uses_anonymous_args = 0
+  51              		@ link register save eliminated.
+  52              	.LVL0:
+ 201:Generated_Source\PSoC4/Input_1_Int.c ****     CyRamVectors[CYINT_IRQ_BASE + Input_1_Int__INTC_NUMBER] = address;
+  53              		.loc 1 201 0
+  54 0000 014B     		ldr	r3, .L3
+  55 0002 5864     		str	r0, [r3, #68]
+ 202:Generated_Source\PSoC4/Input_1_Int.c **** }
+  56              		.loc 1 202 0
+  57              		@ sp needed
+  58 0004 7047     		bx	lr
+  59              	.L4:
+  60 0006 C046     		.align	2
+  61              	.L3:
+  62 0008 00000000 		.word	CyRamVectors
+  63              		.cfi_endproc
+  64              	.LFE5:
+  65              		.size	Input_1_Int_SetVector, .-Input_1_Int_SetVector
+  66              		.section	.text.Input_1_Int_GetVector,"ax",%progbits
+  67              		.align	2
+  68              		.global	Input_1_Int_GetVector
+  69              		.code	16
+  70              		.thumb_func
+  71              		.type	Input_1_Int_GetVector, %function
+  72              	Input_1_Int_GetVector:
+  73              	.LFB6:
+ 203:Generated_Source\PSoC4/Input_1_Int.c **** 
+ 204:Generated_Source\PSoC4/Input_1_Int.c **** 
+ 205:Generated_Source\PSoC4/Input_1_Int.c **** /*******************************************************************************
+ 206:Generated_Source\PSoC4/Input_1_Int.c **** * Function Name: Input_1_Int_GetVector
+ 207:Generated_Source\PSoC4/Input_1_Int.c **** ********************************************************************************
+ 208:Generated_Source\PSoC4/Input_1_Int.c **** *
+ 209:Generated_Source\PSoC4/Input_1_Int.c **** * Summary:
+ 210:Generated_Source\PSoC4/Input_1_Int.c **** *   Gets the "address" of the current ISR vector for the Interrupt.
+ 211:Generated_Source\PSoC4/Input_1_Int.c **** *
+ 212:Generated_Source\PSoC4/Input_1_Int.c **** * Parameters:
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccfpevo1.s 			page 6
+
+
+ 213:Generated_Source\PSoC4/Input_1_Int.c **** *   None
+ 214:Generated_Source\PSoC4/Input_1_Int.c **** *
+ 215:Generated_Source\PSoC4/Input_1_Int.c **** * Return:
+ 216:Generated_Source\PSoC4/Input_1_Int.c **** *   Address of the ISR in the interrupt vector table.
+ 217:Generated_Source\PSoC4/Input_1_Int.c **** *
+ 218:Generated_Source\PSoC4/Input_1_Int.c **** *******************************************************************************/
+ 219:Generated_Source\PSoC4/Input_1_Int.c **** cyisraddress Input_1_Int_GetVector(void)
+ 220:Generated_Source\PSoC4/Input_1_Int.c **** {
+  74              		.loc 1 220 0
+  75              		.cfi_startproc
+  76              		@ args = 0, pretend = 0, frame = 0
+  77              		@ frame_needed = 0, uses_anonymous_args = 0
+  78              		@ link register save eliminated.
+ 221:Generated_Source\PSoC4/Input_1_Int.c ****     return CyRamVectors[CYINT_IRQ_BASE + Input_1_Int__INTC_NUMBER];
+  79              		.loc 1 221 0
+  80 0000 014B     		ldr	r3, .L6
+  81 0002 586C     		ldr	r0, [r3, #68]
+ 222:Generated_Source\PSoC4/Input_1_Int.c **** }
+  82              		.loc 1 222 0
+  83              		@ sp needed
+  84 0004 7047     		bx	lr
+  85              	.L7:
+  86 0006 C046     		.align	2
+  87              	.L6:
+  88 0008 00000000 		.word	CyRamVectors
+  89              		.cfi_endproc
+  90              	.LFE6:
+  91              		.size	Input_1_Int_GetVector, .-Input_1_Int_GetVector
+  92              		.section	.text.Input_1_Int_SetPriority,"ax",%progbits
+  93              		.align	2
+  94              		.global	Input_1_Int_SetPriority
+  95              		.code	16
+  96              		.thumb_func
+  97              		.type	Input_1_Int_SetPriority, %function
+  98              	Input_1_Int_SetPriority:
+  99              	.LFB7:
+ 223:Generated_Source\PSoC4/Input_1_Int.c **** 
+ 224:Generated_Source\PSoC4/Input_1_Int.c **** 
+ 225:Generated_Source\PSoC4/Input_1_Int.c **** /*******************************************************************************
+ 226:Generated_Source\PSoC4/Input_1_Int.c **** * Function Name: Input_1_Int_SetPriority
+ 227:Generated_Source\PSoC4/Input_1_Int.c **** ********************************************************************************
+ 228:Generated_Source\PSoC4/Input_1_Int.c **** *
+ 229:Generated_Source\PSoC4/Input_1_Int.c **** * Summary:
+ 230:Generated_Source\PSoC4/Input_1_Int.c **** *   Sets the Priority of the Interrupt. 
+ 231:Generated_Source\PSoC4/Input_1_Int.c **** *
+ 232:Generated_Source\PSoC4/Input_1_Int.c **** *   Note calling Input_1_Int_Start or Input_1_Int_StartEx will 
+ 233:Generated_Source\PSoC4/Input_1_Int.c **** *   override any effect this API would have had. This API should only be called
+ 234:Generated_Source\PSoC4/Input_1_Int.c **** *   after Input_1_Int_Start or Input_1_Int_StartEx has been called. 
+ 235:Generated_Source\PSoC4/Input_1_Int.c **** *   To set the initial priority for the component, use the Design-Wide Resources
+ 236:Generated_Source\PSoC4/Input_1_Int.c **** *   Interrupt Editor.
+ 237:Generated_Source\PSoC4/Input_1_Int.c **** *
+ 238:Generated_Source\PSoC4/Input_1_Int.c **** *   Note This API has no effect on Non-maskable interrupt NMI).
+ 239:Generated_Source\PSoC4/Input_1_Int.c **** *
+ 240:Generated_Source\PSoC4/Input_1_Int.c **** * Parameters:
+ 241:Generated_Source\PSoC4/Input_1_Int.c **** *   priority: Priority of the interrupt, 0 being the highest priority
+ 242:Generated_Source\PSoC4/Input_1_Int.c **** *             PSoC 3 and PSoC 5LP: Priority is from 0 to 7.
+ 243:Generated_Source\PSoC4/Input_1_Int.c **** *             PSoC 4: Priority is from 0 to 3.
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccfpevo1.s 			page 7
+
+
+ 244:Generated_Source\PSoC4/Input_1_Int.c **** *
+ 245:Generated_Source\PSoC4/Input_1_Int.c **** * Return:
+ 246:Generated_Source\PSoC4/Input_1_Int.c **** *   None
+ 247:Generated_Source\PSoC4/Input_1_Int.c **** *
+ 248:Generated_Source\PSoC4/Input_1_Int.c **** *******************************************************************************/
+ 249:Generated_Source\PSoC4/Input_1_Int.c **** void Input_1_Int_SetPriority(uint8 priority)
+ 250:Generated_Source\PSoC4/Input_1_Int.c **** {
+ 100              		.loc 1 250 0
+ 101              		.cfi_startproc
+ 102              		@ args = 0, pretend = 0, frame = 0
+ 103              		@ frame_needed = 0, uses_anonymous_args = 0
+ 104              	.LVL1:
+ 105 0000 10B5     		push	{r4, lr}
+ 106              		.cfi_def_cfa_offset 8
+ 107              		.cfi_offset 4, -8
+ 108              		.cfi_offset 14, -4
+ 109 0002 0400     		movs	r4, r0
+ 110              	.LVL2:
+ 251:Generated_Source\PSoC4/Input_1_Int.c **** 	uint8 interruptState;
+ 252:Generated_Source\PSoC4/Input_1_Int.c ****     uint32 priorityOffset = ((Input_1_Int__INTC_NUMBER % 4u) * 8u) + 6u;
+ 253:Generated_Source\PSoC4/Input_1_Int.c ****     
+ 254:Generated_Source\PSoC4/Input_1_Int.c **** 	interruptState = CyEnterCriticalSection();
+ 111              		.loc 1 254 0
+ 112 0004 FFF7FEFF 		bl	CyEnterCriticalSection
+ 113              	.LVL3:
+ 255:Generated_Source\PSoC4/Input_1_Int.c ****     *Input_1_Int_INTC_PRIOR = (*Input_1_Int_INTC_PRIOR & (uint32)(~Input_1_Int__INTC_PRIOR_MASK)) |
+ 114              		.loc 1 255 0
+ 115 0008 044A     		ldr	r2, .L9
+ 116 000a 1168     		ldr	r1, [r2]
+ 117 000c 044B     		ldr	r3, .L9+4
+ 118 000e 0B40     		ands	r3, r1
+ 256:Generated_Source\PSoC4/Input_1_Int.c ****                                     ((uint32)priority << priorityOffset);
+ 119              		.loc 1 256 0
+ 120 0010 A403     		lsls	r4, r4, #14
+ 255:Generated_Source\PSoC4/Input_1_Int.c ****     *Input_1_Int_INTC_PRIOR = (*Input_1_Int_INTC_PRIOR & (uint32)(~Input_1_Int__INTC_PRIOR_MASK)) |
+ 121              		.loc 1 255 0
+ 122 0012 1C43     		orrs	r4, r3
+ 123 0014 1460     		str	r4, [r2]
+ 257:Generated_Source\PSoC4/Input_1_Int.c **** 	CyExitCriticalSection(interruptState);
+ 124              		.loc 1 257 0
+ 125 0016 FFF7FEFF 		bl	CyExitCriticalSection
+ 126              	.LVL4:
+ 258:Generated_Source\PSoC4/Input_1_Int.c **** }
+ 127              		.loc 1 258 0
+ 128              		@ sp needed
+ 129 001a 10BD     		pop	{r4, pc}
+ 130              	.L10:
+ 131              		.align	2
+ 132              	.L9:
+ 133 001c 00E400E0 		.word	-536812544
+ 134 0020 FF3FFFFF 		.word	-49153
+ 135              		.cfi_endproc
+ 136              	.LFE7:
+ 137              		.size	Input_1_Int_SetPriority, .-Input_1_Int_SetPriority
+ 138              		.section	.text.Input_1_Int_GetPriority,"ax",%progbits
+ 139              		.align	2
+ 140              		.global	Input_1_Int_GetPriority
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccfpevo1.s 			page 8
+
+
+ 141              		.code	16
+ 142              		.thumb_func
+ 143              		.type	Input_1_Int_GetPriority, %function
+ 144              	Input_1_Int_GetPriority:
+ 145              	.LFB8:
+ 259:Generated_Source\PSoC4/Input_1_Int.c **** 
+ 260:Generated_Source\PSoC4/Input_1_Int.c **** 
+ 261:Generated_Source\PSoC4/Input_1_Int.c **** /*******************************************************************************
+ 262:Generated_Source\PSoC4/Input_1_Int.c **** * Function Name: Input_1_Int_GetPriority
+ 263:Generated_Source\PSoC4/Input_1_Int.c **** ********************************************************************************
+ 264:Generated_Source\PSoC4/Input_1_Int.c **** *
+ 265:Generated_Source\PSoC4/Input_1_Int.c **** * Summary:
+ 266:Generated_Source\PSoC4/Input_1_Int.c **** *   Gets the Priority of the Interrupt.
+ 267:Generated_Source\PSoC4/Input_1_Int.c **** *
+ 268:Generated_Source\PSoC4/Input_1_Int.c **** * Parameters:
+ 269:Generated_Source\PSoC4/Input_1_Int.c **** *   None
+ 270:Generated_Source\PSoC4/Input_1_Int.c **** *
+ 271:Generated_Source\PSoC4/Input_1_Int.c **** * Return:
+ 272:Generated_Source\PSoC4/Input_1_Int.c **** *   Priority of the interrupt, 0 being the highest priority
+ 273:Generated_Source\PSoC4/Input_1_Int.c **** *    PSoC 3 and PSoC 5LP: Priority is from 0 to 7.
+ 274:Generated_Source\PSoC4/Input_1_Int.c **** *    PSoC 4: Priority is from 0 to 3.
+ 275:Generated_Source\PSoC4/Input_1_Int.c **** *
+ 276:Generated_Source\PSoC4/Input_1_Int.c **** *******************************************************************************/
+ 277:Generated_Source\PSoC4/Input_1_Int.c **** uint8 Input_1_Int_GetPriority(void)
+ 278:Generated_Source\PSoC4/Input_1_Int.c **** {
+ 146              		.loc 1 278 0
+ 147              		.cfi_startproc
+ 148              		@ args = 0, pretend = 0, frame = 0
+ 149              		@ frame_needed = 0, uses_anonymous_args = 0
+ 150              		@ link register save eliminated.
+ 151              	.LVL5:
+ 279:Generated_Source\PSoC4/Input_1_Int.c ****     uint32 priority;
+ 280:Generated_Source\PSoC4/Input_1_Int.c **** 	uint32 priorityOffset = ((Input_1_Int__INTC_NUMBER % 4u) * 8u) + 6u;
+ 281:Generated_Source\PSoC4/Input_1_Int.c **** 
+ 282:Generated_Source\PSoC4/Input_1_Int.c ****     priority = (*Input_1_Int_INTC_PRIOR & Input_1_Int__INTC_PRIOR_MASK) >> priorityOffset;
+ 152              		.loc 1 282 0
+ 153 0000 024B     		ldr	r3, .L12
+ 154 0002 1868     		ldr	r0, [r3]
+ 155 0004 800B     		lsrs	r0, r0, #14
+ 156              	.LVL6:
+ 283:Generated_Source\PSoC4/Input_1_Int.c **** 
+ 284:Generated_Source\PSoC4/Input_1_Int.c ****     return (uint8)priority;
+ 157              		.loc 1 284 0
+ 158 0006 0323     		movs	r3, #3
+ 159 0008 1840     		ands	r0, r3
+ 160              	.LVL7:
+ 285:Generated_Source\PSoC4/Input_1_Int.c **** }
+ 161              		.loc 1 285 0
+ 162              		@ sp needed
+ 163 000a 7047     		bx	lr
+ 164              	.L13:
+ 165              		.align	2
+ 166              	.L12:
+ 167 000c 00E400E0 		.word	-536812544
+ 168              		.cfi_endproc
+ 169              	.LFE8:
+ 170              		.size	Input_1_Int_GetPriority, .-Input_1_Int_GetPriority
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccfpevo1.s 			page 9
+
+
+ 171              		.section	.text.Input_1_Int_Enable,"ax",%progbits
+ 172              		.align	2
+ 173              		.global	Input_1_Int_Enable
+ 174              		.code	16
+ 175              		.thumb_func
+ 176              		.type	Input_1_Int_Enable, %function
+ 177              	Input_1_Int_Enable:
+ 178              	.LFB9:
+ 286:Generated_Source\PSoC4/Input_1_Int.c **** 
+ 287:Generated_Source\PSoC4/Input_1_Int.c **** 
+ 288:Generated_Source\PSoC4/Input_1_Int.c **** /*******************************************************************************
+ 289:Generated_Source\PSoC4/Input_1_Int.c **** * Function Name: Input_1_Int_Enable
+ 290:Generated_Source\PSoC4/Input_1_Int.c **** ********************************************************************************
+ 291:Generated_Source\PSoC4/Input_1_Int.c **** *
+ 292:Generated_Source\PSoC4/Input_1_Int.c **** * Summary:
+ 293:Generated_Source\PSoC4/Input_1_Int.c **** *   Enables the interrupt to the interrupt controller. Do not call this function
+ 294:Generated_Source\PSoC4/Input_1_Int.c **** *   unless ISR_Start() has been called or the functionality of the ISR_Start() 
+ 295:Generated_Source\PSoC4/Input_1_Int.c **** *   function, which sets the vector and the priority, has been called.
+ 296:Generated_Source\PSoC4/Input_1_Int.c **** *
+ 297:Generated_Source\PSoC4/Input_1_Int.c **** * Parameters:
+ 298:Generated_Source\PSoC4/Input_1_Int.c **** *   None
+ 299:Generated_Source\PSoC4/Input_1_Int.c **** *
+ 300:Generated_Source\PSoC4/Input_1_Int.c **** * Return:
+ 301:Generated_Source\PSoC4/Input_1_Int.c **** *   None
+ 302:Generated_Source\PSoC4/Input_1_Int.c **** *
+ 303:Generated_Source\PSoC4/Input_1_Int.c **** *******************************************************************************/
+ 304:Generated_Source\PSoC4/Input_1_Int.c **** void Input_1_Int_Enable(void)
+ 305:Generated_Source\PSoC4/Input_1_Int.c **** {
+ 179              		.loc 1 305 0
+ 180              		.cfi_startproc
+ 181              		@ args = 0, pretend = 0, frame = 0
+ 182              		@ frame_needed = 0, uses_anonymous_args = 0
+ 183              		@ link register save eliminated.
+ 306:Generated_Source\PSoC4/Input_1_Int.c ****     /* Enable the general interrupt. */
+ 307:Generated_Source\PSoC4/Input_1_Int.c ****     *Input_1_Int_INTC_SET_EN = Input_1_Int__INTC_MASK;
+ 184              		.loc 1 307 0
+ 185 0000 0222     		movs	r2, #2
+ 186 0002 014B     		ldr	r3, .L15
+ 187 0004 1A60     		str	r2, [r3]
+ 308:Generated_Source\PSoC4/Input_1_Int.c **** }
+ 188              		.loc 1 308 0
+ 189              		@ sp needed
+ 190 0006 7047     		bx	lr
+ 191              	.L16:
+ 192              		.align	2
+ 193              	.L15:
+ 194 0008 00E100E0 		.word	-536813312
+ 195              		.cfi_endproc
+ 196              	.LFE9:
+ 197              		.size	Input_1_Int_Enable, .-Input_1_Int_Enable
+ 198              		.section	.text.Input_1_Int_GetState,"ax",%progbits
+ 199              		.align	2
+ 200              		.global	Input_1_Int_GetState
+ 201              		.code	16
+ 202              		.thumb_func
+ 203              		.type	Input_1_Int_GetState, %function
+ 204              	Input_1_Int_GetState:
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccfpevo1.s 			page 10
+
+
+ 205              	.LFB10:
+ 309:Generated_Source\PSoC4/Input_1_Int.c **** 
+ 310:Generated_Source\PSoC4/Input_1_Int.c **** 
+ 311:Generated_Source\PSoC4/Input_1_Int.c **** /*******************************************************************************
+ 312:Generated_Source\PSoC4/Input_1_Int.c **** * Function Name: Input_1_Int_GetState
+ 313:Generated_Source\PSoC4/Input_1_Int.c **** ********************************************************************************
+ 314:Generated_Source\PSoC4/Input_1_Int.c **** *
+ 315:Generated_Source\PSoC4/Input_1_Int.c **** * Summary:
+ 316:Generated_Source\PSoC4/Input_1_Int.c **** *   Gets the state (enabled, disabled) of the Interrupt.
+ 317:Generated_Source\PSoC4/Input_1_Int.c **** *
+ 318:Generated_Source\PSoC4/Input_1_Int.c **** * Parameters:
+ 319:Generated_Source\PSoC4/Input_1_Int.c **** *   None
+ 320:Generated_Source\PSoC4/Input_1_Int.c **** *
+ 321:Generated_Source\PSoC4/Input_1_Int.c **** * Return:
+ 322:Generated_Source\PSoC4/Input_1_Int.c **** *   1 if enabled, 0 if disabled.
+ 323:Generated_Source\PSoC4/Input_1_Int.c **** *
+ 324:Generated_Source\PSoC4/Input_1_Int.c **** *******************************************************************************/
+ 325:Generated_Source\PSoC4/Input_1_Int.c **** uint8 Input_1_Int_GetState(void)
+ 326:Generated_Source\PSoC4/Input_1_Int.c **** {
+ 206              		.loc 1 326 0
+ 207              		.cfi_startproc
+ 208              		@ args = 0, pretend = 0, frame = 0
+ 209              		@ frame_needed = 0, uses_anonymous_args = 0
+ 210              		@ link register save eliminated.
+ 327:Generated_Source\PSoC4/Input_1_Int.c ****     /* Get the state of the general interrupt. */
+ 328:Generated_Source\PSoC4/Input_1_Int.c ****     return ((*Input_1_Int_INTC_SET_EN & (uint32)Input_1_Int__INTC_MASK) != 0u) ? 1u:0u;
+ 211              		.loc 1 328 0
+ 212 0000 034B     		ldr	r3, .L20
+ 213 0002 1B68     		ldr	r3, [r3]
+ 214 0004 9B07     		lsls	r3, r3, #30
+ 215 0006 01D5     		bpl	.L19
+ 216 0008 0120     		movs	r0, #1
+ 217 000a 00E0     		b	.L18
+ 218              	.L19:
+ 219 000c 0020     		movs	r0, #0
+ 220              	.L18:
+ 329:Generated_Source\PSoC4/Input_1_Int.c **** }
+ 221              		.loc 1 329 0 discriminator 4
+ 222              		@ sp needed
+ 223 000e 7047     		bx	lr
+ 224              	.L21:
+ 225              		.align	2
+ 226              	.L20:
+ 227 0010 00E100E0 		.word	-536813312
+ 228              		.cfi_endproc
+ 229              	.LFE10:
+ 230              		.size	Input_1_Int_GetState, .-Input_1_Int_GetState
+ 231              		.section	.text.Input_1_Int_Disable,"ax",%progbits
+ 232              		.align	2
+ 233              		.global	Input_1_Int_Disable
+ 234              		.code	16
+ 235              		.thumb_func
+ 236              		.type	Input_1_Int_Disable, %function
+ 237              	Input_1_Int_Disable:
+ 238              	.LFB11:
+ 330:Generated_Source\PSoC4/Input_1_Int.c **** 
+ 331:Generated_Source\PSoC4/Input_1_Int.c **** 
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccfpevo1.s 			page 11
+
+
+ 332:Generated_Source\PSoC4/Input_1_Int.c **** /*******************************************************************************
+ 333:Generated_Source\PSoC4/Input_1_Int.c **** * Function Name: Input_1_Int_Disable
+ 334:Generated_Source\PSoC4/Input_1_Int.c **** ********************************************************************************
+ 335:Generated_Source\PSoC4/Input_1_Int.c **** *
+ 336:Generated_Source\PSoC4/Input_1_Int.c **** * Summary:
+ 337:Generated_Source\PSoC4/Input_1_Int.c **** *   Disables the Interrupt in the interrupt controller.
+ 338:Generated_Source\PSoC4/Input_1_Int.c **** *
+ 339:Generated_Source\PSoC4/Input_1_Int.c **** * Parameters:
+ 340:Generated_Source\PSoC4/Input_1_Int.c **** *   None
+ 341:Generated_Source\PSoC4/Input_1_Int.c **** *
+ 342:Generated_Source\PSoC4/Input_1_Int.c **** * Return:
+ 343:Generated_Source\PSoC4/Input_1_Int.c **** *   None
+ 344:Generated_Source\PSoC4/Input_1_Int.c **** *
+ 345:Generated_Source\PSoC4/Input_1_Int.c **** *******************************************************************************/
+ 346:Generated_Source\PSoC4/Input_1_Int.c **** void Input_1_Int_Disable(void)
+ 347:Generated_Source\PSoC4/Input_1_Int.c **** {
+ 239              		.loc 1 347 0
+ 240              		.cfi_startproc
+ 241              		@ args = 0, pretend = 0, frame = 0
+ 242              		@ frame_needed = 0, uses_anonymous_args = 0
+ 243              		@ link register save eliminated.
+ 348:Generated_Source\PSoC4/Input_1_Int.c ****     /* Disable the general interrupt. */
+ 349:Generated_Source\PSoC4/Input_1_Int.c ****     *Input_1_Int_INTC_CLR_EN = Input_1_Int__INTC_MASK;
+ 244              		.loc 1 349 0
+ 245 0000 0222     		movs	r2, #2
+ 246 0002 014B     		ldr	r3, .L23
+ 247 0004 1A60     		str	r2, [r3]
+ 350:Generated_Source\PSoC4/Input_1_Int.c **** }
+ 248              		.loc 1 350 0
+ 249              		@ sp needed
+ 250 0006 7047     		bx	lr
+ 251              	.L24:
+ 252              		.align	2
+ 253              	.L23:
+ 254 0008 80E100E0 		.word	-536813184
+ 255              		.cfi_endproc
+ 256              	.LFE11:
+ 257              		.size	Input_1_Int_Disable, .-Input_1_Int_Disable
+ 258              		.section	.text.Input_1_Int_Start,"ax",%progbits
+ 259              		.align	2
+ 260              		.global	Input_1_Int_Start
+ 261              		.code	16
+ 262              		.thumb_func
+ 263              		.type	Input_1_Int_Start, %function
+ 264              	Input_1_Int_Start:
+ 265              	.LFB1:
+  57:Generated_Source\PSoC4/Input_1_Int.c ****     /* For all we know the interrupt is active. */
+ 266              		.loc 1 57 0
+ 267              		.cfi_startproc
+ 268              		@ args = 0, pretend = 0, frame = 0
+ 269              		@ frame_needed = 0, uses_anonymous_args = 0
+ 270 0000 10B5     		push	{r4, lr}
+ 271              		.cfi_def_cfa_offset 8
+ 272              		.cfi_offset 4, -8
+ 273              		.cfi_offset 14, -4
+  59:Generated_Source\PSoC4/Input_1_Int.c **** 
+ 274              		.loc 1 59 0
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccfpevo1.s 			page 12
+
+
+ 275 0002 FFF7FEFF 		bl	Input_1_Int_Disable
+ 276              	.LVL8:
+  62:Generated_Source\PSoC4/Input_1_Int.c **** 
+ 277              		.loc 1 62 0
+ 278 0006 0448     		ldr	r0, .L26
+ 279 0008 FFF7FEFF 		bl	Input_1_Int_SetVector
+ 280              	.LVL9:
+  65:Generated_Source\PSoC4/Input_1_Int.c **** 
+ 281              		.loc 1 65 0
+ 282 000c 0320     		movs	r0, #3
+ 283 000e FFF7FEFF 		bl	Input_1_Int_SetPriority
+ 284              	.LVL10:
+  68:Generated_Source\PSoC4/Input_1_Int.c **** }
+ 285              		.loc 1 68 0
+ 286 0012 FFF7FEFF 		bl	Input_1_Int_Enable
+ 287              	.LVL11:
+  69:Generated_Source\PSoC4/Input_1_Int.c **** 
+ 288              		.loc 1 69 0
+ 289              		@ sp needed
+ 290 0016 10BD     		pop	{r4, pc}
+ 291              	.L27:
+ 292              		.align	2
+ 293              	.L26:
+ 294 0018 00000000 		.word	Input_1_Int_Interrupt
+ 295              		.cfi_endproc
+ 296              	.LFE1:
+ 297              		.size	Input_1_Int_Start, .-Input_1_Int_Start
+ 298              		.section	.text.Input_1_Int_StartEx,"ax",%progbits
+ 299              		.align	2
+ 300              		.global	Input_1_Int_StartEx
+ 301              		.code	16
+ 302              		.thumb_func
+ 303              		.type	Input_1_Int_StartEx, %function
+ 304              	Input_1_Int_StartEx:
+ 305              	.LFB2:
+ 100:Generated_Source\PSoC4/Input_1_Int.c ****     /* For all we know the interrupt is active. */
+ 306              		.loc 1 100 0
+ 307              		.cfi_startproc
+ 308              		@ args = 0, pretend = 0, frame = 0
+ 309              		@ frame_needed = 0, uses_anonymous_args = 0
+ 310              	.LVL12:
+ 311 0000 10B5     		push	{r4, lr}
+ 312              		.cfi_def_cfa_offset 8
+ 313              		.cfi_offset 4, -8
+ 314              		.cfi_offset 14, -4
+ 315 0002 0400     		movs	r4, r0
+ 102:Generated_Source\PSoC4/Input_1_Int.c **** 
+ 316              		.loc 1 102 0
+ 317 0004 FFF7FEFF 		bl	Input_1_Int_Disable
+ 318              	.LVL13:
+ 105:Generated_Source\PSoC4/Input_1_Int.c **** 
+ 319              		.loc 1 105 0
+ 320 0008 2000     		movs	r0, r4
+ 321 000a FFF7FEFF 		bl	Input_1_Int_SetVector
+ 322              	.LVL14:
+ 108:Generated_Source\PSoC4/Input_1_Int.c **** 
+ 323              		.loc 1 108 0
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccfpevo1.s 			page 13
+
+
+ 324 000e 0320     		movs	r0, #3
+ 325 0010 FFF7FEFF 		bl	Input_1_Int_SetPriority
+ 326              	.LVL15:
+ 111:Generated_Source\PSoC4/Input_1_Int.c **** }
+ 327              		.loc 1 111 0
+ 328 0014 FFF7FEFF 		bl	Input_1_Int_Enable
+ 329              	.LVL16:
+ 112:Generated_Source\PSoC4/Input_1_Int.c **** 
+ 330              		.loc 1 112 0
+ 331              		@ sp needed
+ 332              	.LVL17:
+ 333 0018 10BD     		pop	{r4, pc}
+ 334              		.cfi_endproc
+ 335              	.LFE2:
+ 336              		.size	Input_1_Int_StartEx, .-Input_1_Int_StartEx
+ 337 001a C046     		.section	.text.Input_1_Int_Stop,"ax",%progbits
+ 338              		.align	2
+ 339              		.global	Input_1_Int_Stop
+ 340              		.code	16
+ 341              		.thumb_func
+ 342              		.type	Input_1_Int_Stop, %function
+ 343              	Input_1_Int_Stop:
+ 344              	.LFB3:
+ 130:Generated_Source\PSoC4/Input_1_Int.c ****     /* Disable this interrupt. */
+ 345              		.loc 1 130 0
+ 346              		.cfi_startproc
+ 347              		@ args = 0, pretend = 0, frame = 0
+ 348              		@ frame_needed = 0, uses_anonymous_args = 0
+ 349 0000 10B5     		push	{r4, lr}
+ 350              		.cfi_def_cfa_offset 8
+ 351              		.cfi_offset 4, -8
+ 352              		.cfi_offset 14, -4
+ 132:Generated_Source\PSoC4/Input_1_Int.c **** 
+ 353              		.loc 1 132 0
+ 354 0002 FFF7FEFF 		bl	Input_1_Int_Disable
+ 355              	.LVL18:
+ 135:Generated_Source\PSoC4/Input_1_Int.c **** }
+ 356              		.loc 1 135 0
+ 357 0006 0248     		ldr	r0, .L30
+ 358 0008 FFF7FEFF 		bl	Input_1_Int_SetVector
+ 359              	.LVL19:
+ 136:Generated_Source\PSoC4/Input_1_Int.c **** 
+ 360              		.loc 1 136 0
+ 361              		@ sp needed
+ 362 000c 10BD     		pop	{r4, pc}
+ 363              	.L31:
+ 364 000e C046     		.align	2
+ 365              	.L30:
+ 366 0010 00000000 		.word	IntDefaultHandler
+ 367              		.cfi_endproc
+ 368              	.LFE3:
+ 369              		.size	Input_1_Int_Stop, .-Input_1_Int_Stop
+ 370              		.section	.text.Input_1_Int_SetPending,"ax",%progbits
+ 371              		.align	2
+ 372              		.global	Input_1_Int_SetPending
+ 373              		.code	16
+ 374              		.thumb_func
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccfpevo1.s 			page 14
+
+
+ 375              		.type	Input_1_Int_SetPending, %function
+ 376              	Input_1_Int_SetPending:
+ 377              	.LFB12:
+ 351:Generated_Source\PSoC4/Input_1_Int.c **** 
+ 352:Generated_Source\PSoC4/Input_1_Int.c **** 
+ 353:Generated_Source\PSoC4/Input_1_Int.c **** /*******************************************************************************
+ 354:Generated_Source\PSoC4/Input_1_Int.c **** * Function Name: Input_1_Int_SetPending
+ 355:Generated_Source\PSoC4/Input_1_Int.c **** ********************************************************************************
+ 356:Generated_Source\PSoC4/Input_1_Int.c **** *
+ 357:Generated_Source\PSoC4/Input_1_Int.c **** * Summary:
+ 358:Generated_Source\PSoC4/Input_1_Int.c **** *   Causes the Interrupt to enter the pending state, a software method of
+ 359:Generated_Source\PSoC4/Input_1_Int.c **** *   generating the interrupt.
+ 360:Generated_Source\PSoC4/Input_1_Int.c **** *
+ 361:Generated_Source\PSoC4/Input_1_Int.c **** * Parameters:
+ 362:Generated_Source\PSoC4/Input_1_Int.c **** *   None
+ 363:Generated_Source\PSoC4/Input_1_Int.c **** *
+ 364:Generated_Source\PSoC4/Input_1_Int.c **** * Return:
+ 365:Generated_Source\PSoC4/Input_1_Int.c **** *   None
+ 366:Generated_Source\PSoC4/Input_1_Int.c **** *
+ 367:Generated_Source\PSoC4/Input_1_Int.c **** * Side Effects:
+ 368:Generated_Source\PSoC4/Input_1_Int.c **** *   If interrupts are enabled and the interrupt is set up properly, the ISR is
+ 369:Generated_Source\PSoC4/Input_1_Int.c **** *   entered (depending on the priority of this interrupt and other pending 
+ 370:Generated_Source\PSoC4/Input_1_Int.c **** *   interrupts).
+ 371:Generated_Source\PSoC4/Input_1_Int.c **** *
+ 372:Generated_Source\PSoC4/Input_1_Int.c **** *******************************************************************************/
+ 373:Generated_Source\PSoC4/Input_1_Int.c **** void Input_1_Int_SetPending(void)
+ 374:Generated_Source\PSoC4/Input_1_Int.c **** {
+ 378              		.loc 1 374 0
+ 379              		.cfi_startproc
+ 380              		@ args = 0, pretend = 0, frame = 0
+ 381              		@ frame_needed = 0, uses_anonymous_args = 0
+ 382              		@ link register save eliminated.
+ 375:Generated_Source\PSoC4/Input_1_Int.c ****     *Input_1_Int_INTC_SET_PD = Input_1_Int__INTC_MASK;
+ 383              		.loc 1 375 0
+ 384 0000 0222     		movs	r2, #2
+ 385 0002 014B     		ldr	r3, .L33
+ 386 0004 1A60     		str	r2, [r3]
+ 376:Generated_Source\PSoC4/Input_1_Int.c **** }
+ 387              		.loc 1 376 0
+ 388              		@ sp needed
+ 389 0006 7047     		bx	lr
+ 390              	.L34:
+ 391              		.align	2
+ 392              	.L33:
+ 393 0008 00E200E0 		.word	-536813056
+ 394              		.cfi_endproc
+ 395              	.LFE12:
+ 396              		.size	Input_1_Int_SetPending, .-Input_1_Int_SetPending
+ 397              		.section	.text.Input_1_Int_ClearPending,"ax",%progbits
+ 398              		.align	2
+ 399              		.global	Input_1_Int_ClearPending
+ 400              		.code	16
+ 401              		.thumb_func
+ 402              		.type	Input_1_Int_ClearPending, %function
+ 403              	Input_1_Int_ClearPending:
+ 404              	.LFB13:
+ 377:Generated_Source\PSoC4/Input_1_Int.c **** 
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccfpevo1.s 			page 15
+
+
+ 378:Generated_Source\PSoC4/Input_1_Int.c **** 
+ 379:Generated_Source\PSoC4/Input_1_Int.c **** /*******************************************************************************
+ 380:Generated_Source\PSoC4/Input_1_Int.c **** * Function Name: Input_1_Int_ClearPending
+ 381:Generated_Source\PSoC4/Input_1_Int.c **** ********************************************************************************
+ 382:Generated_Source\PSoC4/Input_1_Int.c **** *
+ 383:Generated_Source\PSoC4/Input_1_Int.c **** * Summary:
+ 384:Generated_Source\PSoC4/Input_1_Int.c **** *   Clears a pending interrupt in the interrupt controller.
+ 385:Generated_Source\PSoC4/Input_1_Int.c **** *
+ 386:Generated_Source\PSoC4/Input_1_Int.c **** *   Note Some interrupt sources are clear-on-read and require the block 
+ 387:Generated_Source\PSoC4/Input_1_Int.c **** *   interrupt/status register to be read/cleared with the appropriate block API 
+ 388:Generated_Source\PSoC4/Input_1_Int.c **** *   (GPIO, UART, and so on). Otherwise the ISR will continue to remain in 
+ 389:Generated_Source\PSoC4/Input_1_Int.c **** *   pending state even though the interrupt itself is cleared using this API.
+ 390:Generated_Source\PSoC4/Input_1_Int.c **** *
+ 391:Generated_Source\PSoC4/Input_1_Int.c **** * Parameters:
+ 392:Generated_Source\PSoC4/Input_1_Int.c **** *   None
+ 393:Generated_Source\PSoC4/Input_1_Int.c **** *
+ 394:Generated_Source\PSoC4/Input_1_Int.c **** * Return:
+ 395:Generated_Source\PSoC4/Input_1_Int.c **** *   None
+ 396:Generated_Source\PSoC4/Input_1_Int.c **** *
+ 397:Generated_Source\PSoC4/Input_1_Int.c **** *******************************************************************************/
+ 398:Generated_Source\PSoC4/Input_1_Int.c **** void Input_1_Int_ClearPending(void)
+ 399:Generated_Source\PSoC4/Input_1_Int.c **** {
+ 405              		.loc 1 399 0
+ 406              		.cfi_startproc
+ 407              		@ args = 0, pretend = 0, frame = 0
+ 408              		@ frame_needed = 0, uses_anonymous_args = 0
+ 409              		@ link register save eliminated.
+ 400:Generated_Source\PSoC4/Input_1_Int.c ****     *Input_1_Int_INTC_CLR_PD = Input_1_Int__INTC_MASK;
+ 410              		.loc 1 400 0
+ 411 0000 0222     		movs	r2, #2
+ 412 0002 014B     		ldr	r3, .L36
+ 413 0004 1A60     		str	r2, [r3]
+ 401:Generated_Source\PSoC4/Input_1_Int.c **** }
+ 414              		.loc 1 401 0
+ 415              		@ sp needed
+ 416 0006 7047     		bx	lr
+ 417              	.L37:
+ 418              		.align	2
+ 419              	.L36:
+ 420 0008 80E200E0 		.word	-536812928
+ 421              		.cfi_endproc
+ 422              	.LFE13:
+ 423              		.size	Input_1_Int_ClearPending, .-Input_1_Int_ClearPending
+ 424              		.text
+ 425              	.Letext0:
+ 426              		.file 2 "Generated_Source\\PSoC4/cytypes.h"
+ 427              		.file 3 "Generated_Source\\PSoC4/CyLib.h"
+ 428              		.section	.debug_info,"",%progbits
+ 429              	.Ldebug_info0:
+ 430 0000 01030000 		.4byte	0x301
+ 431 0004 0400     		.2byte	0x4
+ 432 0006 00000000 		.4byte	.Ldebug_abbrev0
+ 433 000a 04       		.byte	0x4
+ 434 000b 01       		.uleb128 0x1
+ 435 000c AC010000 		.4byte	.LASF36
+ 436 0010 0C       		.byte	0xc
+ 437 0011 D7020000 		.4byte	.LASF37
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccfpevo1.s 			page 16
+
+
+ 438 0015 FC020000 		.4byte	.LASF38
+ 439 0019 00000000 		.4byte	.Ldebug_ranges0+0
+ 440 001d 00000000 		.4byte	0
+ 441 0021 00000000 		.4byte	.Ldebug_line0
+ 442 0025 02       		.uleb128 0x2
+ 443 0026 01       		.byte	0x1
+ 444 0027 06       		.byte	0x6
+ 445 0028 9E020000 		.4byte	.LASF0
+ 446 002c 02       		.uleb128 0x2
+ 447 002d 01       		.byte	0x1
+ 448 002e 08       		.byte	0x8
+ 449 002f 90000000 		.4byte	.LASF1
+ 450 0033 02       		.uleb128 0x2
+ 451 0034 02       		.byte	0x2
+ 452 0035 05       		.byte	0x5
+ 453 0036 63020000 		.4byte	.LASF2
+ 454 003a 02       		.uleb128 0x2
+ 455 003b 02       		.byte	0x2
+ 456 003c 07       		.byte	0x7
+ 457 003d 20000000 		.4byte	.LASF3
+ 458 0041 02       		.uleb128 0x2
+ 459 0042 04       		.byte	0x4
+ 460 0043 05       		.byte	0x5
+ 461 0044 17000000 		.4byte	.LASF4
+ 462 0048 02       		.uleb128 0x2
+ 463 0049 04       		.byte	0x4
+ 464 004a 07       		.byte	0x7
+ 465 004b D7000000 		.4byte	.LASF5
+ 466 004f 02       		.uleb128 0x2
+ 467 0050 08       		.byte	0x8
+ 468 0051 05       		.byte	0x5
+ 469 0052 43020000 		.4byte	.LASF6
+ 470 0056 02       		.uleb128 0x2
+ 471 0057 08       		.byte	0x8
+ 472 0058 07       		.byte	0x7
+ 473 0059 79000000 		.4byte	.LASF7
+ 474 005d 03       		.uleb128 0x3
+ 475 005e 04       		.byte	0x4
+ 476 005f 05       		.byte	0x5
+ 477 0060 696E7400 		.ascii	"int\000"
+ 478 0064 02       		.uleb128 0x2
+ 479 0065 04       		.byte	0x4
+ 480 0066 07       		.byte	0x7
+ 481 0067 47010000 		.4byte	.LASF8
+ 482 006b 04       		.uleb128 0x4
+ 483 006c E9000000 		.4byte	.LASF9
+ 484 0070 02       		.byte	0x2
+ 485 0071 D201     		.2byte	0x1d2
+ 486 0073 2C000000 		.4byte	0x2c
+ 487 0077 04       		.uleb128 0x4
+ 488 0078 29010000 		.4byte	.LASF10
+ 489 007c 02       		.byte	0x2
+ 490 007d D401     		.2byte	0x1d4
+ 491 007f 48000000 		.4byte	0x48
+ 492 0083 02       		.uleb128 0x2
+ 493 0084 04       		.byte	0x4
+ 494 0085 04       		.byte	0x4
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccfpevo1.s 			page 17
+
+
+ 495 0086 73000000 		.4byte	.LASF11
+ 496 008a 02       		.uleb128 0x2
+ 497 008b 08       		.byte	0x8
+ 498 008c 04       		.byte	0x4
+ 499 008d 0B010000 		.4byte	.LASF12
+ 500 0091 02       		.uleb128 0x2
+ 501 0092 01       		.byte	0x1
+ 502 0093 08       		.byte	0x8
+ 503 0094 51020000 		.4byte	.LASF13
+ 504 0098 04       		.uleb128 0x4
+ 505 0099 00000000 		.4byte	.LASF14
+ 506 009d 02       		.byte	0x2
+ 507 009e 7E02     		.2byte	0x27e
+ 508 00a0 A4000000 		.4byte	0xa4
+ 509 00a4 05       		.uleb128 0x5
+ 510 00a5 77000000 		.4byte	0x77
+ 511 00a9 04       		.uleb128 0x4
+ 512 00aa 9F010000 		.4byte	.LASF15
+ 513 00ae 02       		.byte	0x2
+ 514 00af 8E02     		.2byte	0x28e
+ 515 00b1 B5000000 		.4byte	0xb5
+ 516 00b5 06       		.uleb128 0x6
+ 517 00b6 04       		.byte	0x4
+ 518 00b7 BB000000 		.4byte	0xbb
+ 519 00bb 07       		.uleb128 0x7
+ 520 00bc 02       		.uleb128 0x2
+ 521 00bd 08       		.byte	0x8
+ 522 00be 04       		.byte	0x4
+ 523 00bf 92020000 		.4byte	.LASF16
+ 524 00c3 02       		.uleb128 0x2
+ 525 00c4 04       		.byte	0x4
+ 526 00c5 07       		.byte	0x7
+ 527 00c6 3A020000 		.4byte	.LASF17
+ 528 00ca 08       		.uleb128 0x8
+ 529 00cb 9E000000 		.4byte	.LASF24
+ 530 00cf 01       		.byte	0x1
+ 531 00d0 9F       		.byte	0x9f
+ 532 00d1 00000000 		.4byte	.LFB4
+ 533 00d5 02000000 		.4byte	.LFE4-.LFB4
+ 534 00d9 01       		.uleb128 0x1
+ 535 00da 9C       		.byte	0x9c
+ 536 00db 09       		.uleb128 0x9
+ 537 00dc 7C020000 		.4byte	.LASF18
+ 538 00e0 01       		.byte	0x1
+ 539 00e1 C7       		.byte	0xc7
+ 540 00e2 00000000 		.4byte	.LFB5
+ 541 00e6 0C000000 		.4byte	.LFE5-.LFB5
+ 542 00ea 01       		.uleb128 0x1
+ 543 00eb 9C       		.byte	0x9c
+ 544 00ec FE000000 		.4byte	0xfe
+ 545 00f0 0A       		.uleb128 0xa
+ 546 00f1 54010000 		.4byte	.LASF20
+ 547 00f5 01       		.byte	0x1
+ 548 00f6 C7       		.byte	0xc7
+ 549 00f7 A9000000 		.4byte	0xa9
+ 550 00fb 01       		.uleb128 0x1
+ 551 00fc 50       		.byte	0x50
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccfpevo1.s 			page 18
+
+
+ 552 00fd 00       		.byte	0
+ 553 00fe 0B       		.uleb128 0xb
+ 554 00ff 45000000 		.4byte	.LASF26
+ 555 0103 01       		.byte	0x1
+ 556 0104 DB       		.byte	0xdb
+ 557 0105 A9000000 		.4byte	0xa9
+ 558 0109 00000000 		.4byte	.LFB6
+ 559 010d 0C000000 		.4byte	.LFE6-.LFB6
+ 560 0111 01       		.uleb128 0x1
+ 561 0112 9C       		.byte	0x9c
+ 562 0113 09       		.uleb128 0x9
+ 563 0114 5B000000 		.4byte	.LASF19
+ 564 0118 01       		.byte	0x1
+ 565 0119 F9       		.byte	0xf9
+ 566 011a 00000000 		.4byte	.LFB7
+ 567 011e 24000000 		.4byte	.LFE7-.LFB7
+ 568 0122 01       		.uleb128 0x1
+ 569 0123 9C       		.byte	0x9c
+ 570 0124 65010000 		.4byte	0x165
+ 571 0128 0C       		.uleb128 0xc
+ 572 0129 EF000000 		.4byte	.LASF21
+ 573 012d 01       		.byte	0x1
+ 574 012e F9       		.byte	0xf9
+ 575 012f 6B000000 		.4byte	0x6b
+ 576 0133 00000000 		.4byte	.LLST0
+ 577 0137 0D       		.uleb128 0xd
+ 578 0138 C8000000 		.4byte	.LASF22
+ 579 013c 01       		.byte	0x1
+ 580 013d FB       		.byte	0xfb
+ 581 013e 6B000000 		.4byte	0x6b
+ 582 0142 21000000 		.4byte	.LLST1
+ 583 0146 0E       		.uleb128 0xe
+ 584 0147 6D020000 		.4byte	.LASF23
+ 585 014b 01       		.byte	0x1
+ 586 014c FC       		.byte	0xfc
+ 587 014d 77000000 		.4byte	0x77
+ 588 0151 0E       		.byte	0xe
+ 589 0152 0F       		.uleb128 0xf
+ 590 0153 08000000 		.4byte	.LVL3
+ 591 0157 EE020000 		.4byte	0x2ee
+ 592 015b 0F       		.uleb128 0xf
+ 593 015c 1A000000 		.4byte	.LVL4
+ 594 0160 F9020000 		.4byte	0x2f9
+ 595 0164 00       		.byte	0
+ 596 0165 10       		.uleb128 0x10
+ 597 0166 BF020000 		.4byte	.LASF39
+ 598 016a 01       		.byte	0x1
+ 599 016b 1501     		.2byte	0x115
+ 600 016d 6B000000 		.4byte	0x6b
+ 601 0171 00000000 		.4byte	.LFB8
+ 602 0175 10000000 		.4byte	.LFE8-.LFB8
+ 603 0179 01       		.uleb128 0x1
+ 604 017a 9C       		.byte	0x9c
+ 605 017b 9D010000 		.4byte	0x19d
+ 606 017f 11       		.uleb128 0x11
+ 607 0180 EF000000 		.4byte	.LASF21
+ 608 0184 01       		.byte	0x1
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccfpevo1.s 			page 19
+
+
+ 609 0185 1701     		.2byte	0x117
+ 610 0187 77000000 		.4byte	0x77
+ 611 018b 34000000 		.4byte	.LLST2
+ 612 018f 12       		.uleb128 0x12
+ 613 0190 6D020000 		.4byte	.LASF23
+ 614 0194 01       		.byte	0x1
+ 615 0195 1801     		.2byte	0x118
+ 616 0197 77000000 		.4byte	0x77
+ 617 019b 0E       		.byte	0xe
+ 618 019c 00       		.byte	0
+ 619 019d 13       		.uleb128 0x13
+ 620 019e F8000000 		.4byte	.LASF25
+ 621 01a2 01       		.byte	0x1
+ 622 01a3 3001     		.2byte	0x130
+ 623 01a5 00000000 		.4byte	.LFB9
+ 624 01a9 0C000000 		.4byte	.LFE9-.LFB9
+ 625 01ad 01       		.uleb128 0x1
+ 626 01ae 9C       		.byte	0x9c
+ 627 01af 14       		.uleb128 0x14
+ 628 01b0 AA020000 		.4byte	.LASF27
+ 629 01b4 01       		.byte	0x1
+ 630 01b5 4501     		.2byte	0x145
+ 631 01b7 6B000000 		.4byte	0x6b
+ 632 01bb 00000000 		.4byte	.LFB10
+ 633 01bf 14000000 		.4byte	.LFE10-.LFB10
+ 634 01c3 01       		.uleb128 0x1
+ 635 01c4 9C       		.byte	0x9c
+ 636 01c5 13       		.uleb128 0x13
+ 637 01c6 8B010000 		.4byte	.LASF28
+ 638 01ca 01       		.byte	0x1
+ 639 01cb 5A01     		.2byte	0x15a
+ 640 01cd 00000000 		.4byte	.LFB11
+ 641 01d1 0C000000 		.4byte	.LFE11-.LFB11
+ 642 01d5 01       		.uleb128 0x1
+ 643 01d6 9C       		.byte	0x9c
+ 644 01d7 09       		.uleb128 0x9
+ 645 01d8 33000000 		.4byte	.LASF29
+ 646 01dc 01       		.byte	0x1
+ 647 01dd 38       		.byte	0x38
+ 648 01de 00000000 		.4byte	.LFB1
+ 649 01e2 1C000000 		.4byte	.LFE1-.LFB1
+ 650 01e6 01       		.uleb128 0x1
+ 651 01e7 9C       		.byte	0x9c
+ 652 01e8 29020000 		.4byte	0x229
+ 653 01ec 0F       		.uleb128 0xf
+ 654 01ed 06000000 		.4byte	.LVL8
+ 655 01f1 C5010000 		.4byte	0x1c5
+ 656 01f5 15       		.uleb128 0x15
+ 657 01f6 0C000000 		.4byte	.LVL9
+ 658 01fa DB000000 		.4byte	0xdb
+ 659 01fe 0C020000 		.4byte	0x20c
+ 660 0202 16       		.uleb128 0x16
+ 661 0203 01       		.uleb128 0x1
+ 662 0204 50       		.byte	0x50
+ 663 0205 05       		.uleb128 0x5
+ 664 0206 03       		.byte	0x3
+ 665 0207 00000000 		.4byte	Input_1_Int_Interrupt
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccfpevo1.s 			page 20
+
+
+ 666 020b 00       		.byte	0
+ 667 020c 15       		.uleb128 0x15
+ 668 020d 12000000 		.4byte	.LVL10
+ 669 0211 13010000 		.4byte	0x113
+ 670 0215 1F020000 		.4byte	0x21f
+ 671 0219 16       		.uleb128 0x16
+ 672 021a 01       		.uleb128 0x1
+ 673 021b 50       		.byte	0x50
+ 674 021c 01       		.uleb128 0x1
+ 675 021d 33       		.byte	0x33
+ 676 021e 00       		.byte	0
+ 677 021f 0F       		.uleb128 0xf
+ 678 0220 16000000 		.4byte	.LVL11
+ 679 0224 9D010000 		.4byte	0x19d
+ 680 0228 00       		.byte	0
+ 681 0229 09       		.uleb128 0x9
+ 682 022a B4000000 		.4byte	.LASF30
+ 683 022e 01       		.byte	0x1
+ 684 022f 63       		.byte	0x63
+ 685 0230 00000000 		.4byte	.LFB2
+ 686 0234 1A000000 		.4byte	.LFE2-.LFB2
+ 687 0238 01       		.uleb128 0x1
+ 688 0239 9C       		.byte	0x9c
+ 689 023a 87020000 		.4byte	0x287
+ 690 023e 0C       		.uleb128 0xc
+ 691 023f 54010000 		.4byte	.LASF20
+ 692 0243 01       		.byte	0x1
+ 693 0244 63       		.byte	0x63
+ 694 0245 A9000000 		.4byte	0xa9
+ 695 0249 56000000 		.4byte	.LLST3
+ 696 024d 0F       		.uleb128 0xf
+ 697 024e 08000000 		.4byte	.LVL13
+ 698 0252 C5010000 		.4byte	0x1c5
+ 699 0256 15       		.uleb128 0x15
+ 700 0257 0E000000 		.4byte	.LVL14
+ 701 025b DB000000 		.4byte	0xdb
+ 702 025f 6A020000 		.4byte	0x26a
+ 703 0263 16       		.uleb128 0x16
+ 704 0264 01       		.uleb128 0x1
+ 705 0265 50       		.byte	0x50
+ 706 0266 02       		.uleb128 0x2
+ 707 0267 74       		.byte	0x74
+ 708 0268 00       		.sleb128 0
+ 709 0269 00       		.byte	0
+ 710 026a 15       		.uleb128 0x15
+ 711 026b 14000000 		.4byte	.LVL15
+ 712 026f 13010000 		.4byte	0x113
+ 713 0273 7D020000 		.4byte	0x27d
+ 714 0277 16       		.uleb128 0x16
+ 715 0278 01       		.uleb128 0x1
+ 716 0279 50       		.byte	0x50
+ 717 027a 01       		.uleb128 0x1
+ 718 027b 33       		.byte	0x33
+ 719 027c 00       		.byte	0
+ 720 027d 0F       		.uleb128 0xf
+ 721 027e 18000000 		.4byte	.LVL16
+ 722 0282 9D010000 		.4byte	0x19d
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccfpevo1.s 			page 21
+
+
+ 723 0286 00       		.byte	0
+ 724 0287 09       		.uleb128 0x9
+ 725 0288 06000000 		.4byte	.LASF31
+ 726 028c 01       		.byte	0x1
+ 727 028d 81       		.byte	0x81
+ 728 028e 00000000 		.4byte	.LFB3
+ 729 0292 14000000 		.4byte	.LFE3-.LFB3
+ 730 0296 01       		.uleb128 0x1
+ 731 0297 9C       		.byte	0x9c
+ 732 0298 AF020000 		.4byte	0x2af
+ 733 029c 0F       		.uleb128 0xf
+ 734 029d 06000000 		.4byte	.LVL18
+ 735 02a1 C5010000 		.4byte	0x1c5
+ 736 02a5 0F       		.uleb128 0xf
+ 737 02a6 0C000000 		.4byte	.LVL19
+ 738 02aa DB000000 		.4byte	0xdb
+ 739 02ae 00       		.byte	0
+ 740 02af 13       		.uleb128 0x13
+ 741 02b0 12010000 		.4byte	.LASF32
+ 742 02b4 01       		.byte	0x1
+ 743 02b5 7501     		.2byte	0x175
+ 744 02b7 00000000 		.4byte	.LFB12
+ 745 02bb 0C000000 		.4byte	.LFE12-.LFB12
+ 746 02bf 01       		.uleb128 0x1
+ 747 02c0 9C       		.byte	0x9c
+ 748 02c1 13       		.uleb128 0x13
+ 749 02c2 72010000 		.4byte	.LASF33
+ 750 02c6 01       		.byte	0x1
+ 751 02c7 8E01     		.2byte	0x18e
+ 752 02c9 00000000 		.4byte	.LFB13
+ 753 02cd 0C000000 		.4byte	.LFE13-.LFB13
+ 754 02d1 01       		.uleb128 0x1
+ 755 02d2 9C       		.byte	0x9c
+ 756 02d3 17       		.uleb128 0x17
+ 757 02d4 A9000000 		.4byte	0xa9
+ 758 02d8 E3020000 		.4byte	0x2e3
+ 759 02dc 18       		.uleb128 0x18
+ 760 02dd C3000000 		.4byte	0xc3
+ 761 02e1 2F       		.byte	0x2f
+ 762 02e2 00       		.byte	0
+ 763 02e3 19       		.uleb128 0x19
+ 764 02e4 56020000 		.4byte	.LASF40
+ 765 02e8 01       		.byte	0x1
+ 766 02e9 21       		.byte	0x21
+ 767 02ea D3020000 		.4byte	0x2d3
+ 768 02ee 1A       		.uleb128 0x1a
+ 769 02ef 30010000 		.4byte	.LASF34
+ 770 02f3 30010000 		.4byte	.LASF34
+ 771 02f7 03       		.byte	0x3
+ 772 02f8 E5       		.byte	0xe5
+ 773 02f9 1A       		.uleb128 0x1a
+ 774 02fa 5C010000 		.4byte	.LASF35
+ 775 02fe 5C010000 		.4byte	.LASF35
+ 776 0302 03       		.byte	0x3
+ 777 0303 E6       		.byte	0xe6
+ 778 0304 00       		.byte	0
+ 779              		.section	.debug_abbrev,"",%progbits
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccfpevo1.s 			page 22
+
+
+ 780              	.Ldebug_abbrev0:
+ 781 0000 01       		.uleb128 0x1
+ 782 0001 11       		.uleb128 0x11
+ 783 0002 01       		.byte	0x1
+ 784 0003 25       		.uleb128 0x25
+ 785 0004 0E       		.uleb128 0xe
+ 786 0005 13       		.uleb128 0x13
+ 787 0006 0B       		.uleb128 0xb
+ 788 0007 03       		.uleb128 0x3
+ 789 0008 0E       		.uleb128 0xe
+ 790 0009 1B       		.uleb128 0x1b
+ 791 000a 0E       		.uleb128 0xe
+ 792 000b 55       		.uleb128 0x55
+ 793 000c 17       		.uleb128 0x17
+ 794 000d 11       		.uleb128 0x11
+ 795 000e 01       		.uleb128 0x1
+ 796 000f 10       		.uleb128 0x10
+ 797 0010 17       		.uleb128 0x17
+ 798 0011 00       		.byte	0
+ 799 0012 00       		.byte	0
+ 800 0013 02       		.uleb128 0x2
+ 801 0014 24       		.uleb128 0x24
+ 802 0015 00       		.byte	0
+ 803 0016 0B       		.uleb128 0xb
+ 804 0017 0B       		.uleb128 0xb
+ 805 0018 3E       		.uleb128 0x3e
+ 806 0019 0B       		.uleb128 0xb
+ 807 001a 03       		.uleb128 0x3
+ 808 001b 0E       		.uleb128 0xe
+ 809 001c 00       		.byte	0
+ 810 001d 00       		.byte	0
+ 811 001e 03       		.uleb128 0x3
+ 812 001f 24       		.uleb128 0x24
+ 813 0020 00       		.byte	0
+ 814 0021 0B       		.uleb128 0xb
+ 815 0022 0B       		.uleb128 0xb
+ 816 0023 3E       		.uleb128 0x3e
+ 817 0024 0B       		.uleb128 0xb
+ 818 0025 03       		.uleb128 0x3
+ 819 0026 08       		.uleb128 0x8
+ 820 0027 00       		.byte	0
+ 821 0028 00       		.byte	0
+ 822 0029 04       		.uleb128 0x4
+ 823 002a 16       		.uleb128 0x16
+ 824 002b 00       		.byte	0
+ 825 002c 03       		.uleb128 0x3
+ 826 002d 0E       		.uleb128 0xe
+ 827 002e 3A       		.uleb128 0x3a
+ 828 002f 0B       		.uleb128 0xb
+ 829 0030 3B       		.uleb128 0x3b
+ 830 0031 05       		.uleb128 0x5
+ 831 0032 49       		.uleb128 0x49
+ 832 0033 13       		.uleb128 0x13
+ 833 0034 00       		.byte	0
+ 834 0035 00       		.byte	0
+ 835 0036 05       		.uleb128 0x5
+ 836 0037 35       		.uleb128 0x35
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccfpevo1.s 			page 23
+
+
+ 837 0038 00       		.byte	0
+ 838 0039 49       		.uleb128 0x49
+ 839 003a 13       		.uleb128 0x13
+ 840 003b 00       		.byte	0
+ 841 003c 00       		.byte	0
+ 842 003d 06       		.uleb128 0x6
+ 843 003e 0F       		.uleb128 0xf
+ 844 003f 00       		.byte	0
+ 845 0040 0B       		.uleb128 0xb
+ 846 0041 0B       		.uleb128 0xb
+ 847 0042 49       		.uleb128 0x49
+ 848 0043 13       		.uleb128 0x13
+ 849 0044 00       		.byte	0
+ 850 0045 00       		.byte	0
+ 851 0046 07       		.uleb128 0x7
+ 852 0047 15       		.uleb128 0x15
+ 853 0048 00       		.byte	0
+ 854 0049 27       		.uleb128 0x27
+ 855 004a 19       		.uleb128 0x19
+ 856 004b 00       		.byte	0
+ 857 004c 00       		.byte	0
+ 858 004d 08       		.uleb128 0x8
+ 859 004e 2E       		.uleb128 0x2e
+ 860 004f 00       		.byte	0
+ 861 0050 3F       		.uleb128 0x3f
+ 862 0051 19       		.uleb128 0x19
+ 863 0052 03       		.uleb128 0x3
+ 864 0053 0E       		.uleb128 0xe
+ 865 0054 3A       		.uleb128 0x3a
+ 866 0055 0B       		.uleb128 0xb
+ 867 0056 3B       		.uleb128 0x3b
+ 868 0057 0B       		.uleb128 0xb
+ 869 0058 27       		.uleb128 0x27
+ 870 0059 19       		.uleb128 0x19
+ 871 005a 11       		.uleb128 0x11
+ 872 005b 01       		.uleb128 0x1
+ 873 005c 12       		.uleb128 0x12
+ 874 005d 06       		.uleb128 0x6
+ 875 005e 40       		.uleb128 0x40
+ 876 005f 18       		.uleb128 0x18
+ 877 0060 9742     		.uleb128 0x2117
+ 878 0062 19       		.uleb128 0x19
+ 879 0063 00       		.byte	0
+ 880 0064 00       		.byte	0
+ 881 0065 09       		.uleb128 0x9
+ 882 0066 2E       		.uleb128 0x2e
+ 883 0067 01       		.byte	0x1
+ 884 0068 3F       		.uleb128 0x3f
+ 885 0069 19       		.uleb128 0x19
+ 886 006a 03       		.uleb128 0x3
+ 887 006b 0E       		.uleb128 0xe
+ 888 006c 3A       		.uleb128 0x3a
+ 889 006d 0B       		.uleb128 0xb
+ 890 006e 3B       		.uleb128 0x3b
+ 891 006f 0B       		.uleb128 0xb
+ 892 0070 27       		.uleb128 0x27
+ 893 0071 19       		.uleb128 0x19
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccfpevo1.s 			page 24
+
+
+ 894 0072 11       		.uleb128 0x11
+ 895 0073 01       		.uleb128 0x1
+ 896 0074 12       		.uleb128 0x12
+ 897 0075 06       		.uleb128 0x6
+ 898 0076 40       		.uleb128 0x40
+ 899 0077 18       		.uleb128 0x18
+ 900 0078 9742     		.uleb128 0x2117
+ 901 007a 19       		.uleb128 0x19
+ 902 007b 01       		.uleb128 0x1
+ 903 007c 13       		.uleb128 0x13
+ 904 007d 00       		.byte	0
+ 905 007e 00       		.byte	0
+ 906 007f 0A       		.uleb128 0xa
+ 907 0080 05       		.uleb128 0x5
+ 908 0081 00       		.byte	0
+ 909 0082 03       		.uleb128 0x3
+ 910 0083 0E       		.uleb128 0xe
+ 911 0084 3A       		.uleb128 0x3a
+ 912 0085 0B       		.uleb128 0xb
+ 913 0086 3B       		.uleb128 0x3b
+ 914 0087 0B       		.uleb128 0xb
+ 915 0088 49       		.uleb128 0x49
+ 916 0089 13       		.uleb128 0x13
+ 917 008a 02       		.uleb128 0x2
+ 918 008b 18       		.uleb128 0x18
+ 919 008c 00       		.byte	0
+ 920 008d 00       		.byte	0
+ 921 008e 0B       		.uleb128 0xb
+ 922 008f 2E       		.uleb128 0x2e
+ 923 0090 00       		.byte	0
+ 924 0091 3F       		.uleb128 0x3f
+ 925 0092 19       		.uleb128 0x19
+ 926 0093 03       		.uleb128 0x3
+ 927 0094 0E       		.uleb128 0xe
+ 928 0095 3A       		.uleb128 0x3a
+ 929 0096 0B       		.uleb128 0xb
+ 930 0097 3B       		.uleb128 0x3b
+ 931 0098 0B       		.uleb128 0xb
+ 932 0099 27       		.uleb128 0x27
+ 933 009a 19       		.uleb128 0x19
+ 934 009b 49       		.uleb128 0x49
+ 935 009c 13       		.uleb128 0x13
+ 936 009d 11       		.uleb128 0x11
+ 937 009e 01       		.uleb128 0x1
+ 938 009f 12       		.uleb128 0x12
+ 939 00a0 06       		.uleb128 0x6
+ 940 00a1 40       		.uleb128 0x40
+ 941 00a2 18       		.uleb128 0x18
+ 942 00a3 9742     		.uleb128 0x2117
+ 943 00a5 19       		.uleb128 0x19
+ 944 00a6 00       		.byte	0
+ 945 00a7 00       		.byte	0
+ 946 00a8 0C       		.uleb128 0xc
+ 947 00a9 05       		.uleb128 0x5
+ 948 00aa 00       		.byte	0
+ 949 00ab 03       		.uleb128 0x3
+ 950 00ac 0E       		.uleb128 0xe
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccfpevo1.s 			page 25
+
+
+ 951 00ad 3A       		.uleb128 0x3a
+ 952 00ae 0B       		.uleb128 0xb
+ 953 00af 3B       		.uleb128 0x3b
+ 954 00b0 0B       		.uleb128 0xb
+ 955 00b1 49       		.uleb128 0x49
+ 956 00b2 13       		.uleb128 0x13
+ 957 00b3 02       		.uleb128 0x2
+ 958 00b4 17       		.uleb128 0x17
+ 959 00b5 00       		.byte	0
+ 960 00b6 00       		.byte	0
+ 961 00b7 0D       		.uleb128 0xd
+ 962 00b8 34       		.uleb128 0x34
+ 963 00b9 00       		.byte	0
+ 964 00ba 03       		.uleb128 0x3
+ 965 00bb 0E       		.uleb128 0xe
+ 966 00bc 3A       		.uleb128 0x3a
+ 967 00bd 0B       		.uleb128 0xb
+ 968 00be 3B       		.uleb128 0x3b
+ 969 00bf 0B       		.uleb128 0xb
+ 970 00c0 49       		.uleb128 0x49
+ 971 00c1 13       		.uleb128 0x13
+ 972 00c2 02       		.uleb128 0x2
+ 973 00c3 17       		.uleb128 0x17
+ 974 00c4 00       		.byte	0
+ 975 00c5 00       		.byte	0
+ 976 00c6 0E       		.uleb128 0xe
+ 977 00c7 34       		.uleb128 0x34
+ 978 00c8 00       		.byte	0
+ 979 00c9 03       		.uleb128 0x3
+ 980 00ca 0E       		.uleb128 0xe
+ 981 00cb 3A       		.uleb128 0x3a
+ 982 00cc 0B       		.uleb128 0xb
+ 983 00cd 3B       		.uleb128 0x3b
+ 984 00ce 0B       		.uleb128 0xb
+ 985 00cf 49       		.uleb128 0x49
+ 986 00d0 13       		.uleb128 0x13
+ 987 00d1 1C       		.uleb128 0x1c
+ 988 00d2 0B       		.uleb128 0xb
+ 989 00d3 00       		.byte	0
+ 990 00d4 00       		.byte	0
+ 991 00d5 0F       		.uleb128 0xf
+ 992 00d6 898201   		.uleb128 0x4109
+ 993 00d9 00       		.byte	0
+ 994 00da 11       		.uleb128 0x11
+ 995 00db 01       		.uleb128 0x1
+ 996 00dc 31       		.uleb128 0x31
+ 997 00dd 13       		.uleb128 0x13
+ 998 00de 00       		.byte	0
+ 999 00df 00       		.byte	0
+ 1000 00e0 10       		.uleb128 0x10
+ 1001 00e1 2E       		.uleb128 0x2e
+ 1002 00e2 01       		.byte	0x1
+ 1003 00e3 3F       		.uleb128 0x3f
+ 1004 00e4 19       		.uleb128 0x19
+ 1005 00e5 03       		.uleb128 0x3
+ 1006 00e6 0E       		.uleb128 0xe
+ 1007 00e7 3A       		.uleb128 0x3a
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccfpevo1.s 			page 26
+
+
+ 1008 00e8 0B       		.uleb128 0xb
+ 1009 00e9 3B       		.uleb128 0x3b
+ 1010 00ea 05       		.uleb128 0x5
+ 1011 00eb 27       		.uleb128 0x27
+ 1012 00ec 19       		.uleb128 0x19
+ 1013 00ed 49       		.uleb128 0x49
+ 1014 00ee 13       		.uleb128 0x13
+ 1015 00ef 11       		.uleb128 0x11
+ 1016 00f0 01       		.uleb128 0x1
+ 1017 00f1 12       		.uleb128 0x12
+ 1018 00f2 06       		.uleb128 0x6
+ 1019 00f3 40       		.uleb128 0x40
+ 1020 00f4 18       		.uleb128 0x18
+ 1021 00f5 9742     		.uleb128 0x2117
+ 1022 00f7 19       		.uleb128 0x19
+ 1023 00f8 01       		.uleb128 0x1
+ 1024 00f9 13       		.uleb128 0x13
+ 1025 00fa 00       		.byte	0
+ 1026 00fb 00       		.byte	0
+ 1027 00fc 11       		.uleb128 0x11
+ 1028 00fd 34       		.uleb128 0x34
+ 1029 00fe 00       		.byte	0
+ 1030 00ff 03       		.uleb128 0x3
+ 1031 0100 0E       		.uleb128 0xe
+ 1032 0101 3A       		.uleb128 0x3a
+ 1033 0102 0B       		.uleb128 0xb
+ 1034 0103 3B       		.uleb128 0x3b
+ 1035 0104 05       		.uleb128 0x5
+ 1036 0105 49       		.uleb128 0x49
+ 1037 0106 13       		.uleb128 0x13
+ 1038 0107 02       		.uleb128 0x2
+ 1039 0108 17       		.uleb128 0x17
+ 1040 0109 00       		.byte	0
+ 1041 010a 00       		.byte	0
+ 1042 010b 12       		.uleb128 0x12
+ 1043 010c 34       		.uleb128 0x34
+ 1044 010d 00       		.byte	0
+ 1045 010e 03       		.uleb128 0x3
+ 1046 010f 0E       		.uleb128 0xe
+ 1047 0110 3A       		.uleb128 0x3a
+ 1048 0111 0B       		.uleb128 0xb
+ 1049 0112 3B       		.uleb128 0x3b
+ 1050 0113 05       		.uleb128 0x5
+ 1051 0114 49       		.uleb128 0x49
+ 1052 0115 13       		.uleb128 0x13
+ 1053 0116 1C       		.uleb128 0x1c
+ 1054 0117 0B       		.uleb128 0xb
+ 1055 0118 00       		.byte	0
+ 1056 0119 00       		.byte	0
+ 1057 011a 13       		.uleb128 0x13
+ 1058 011b 2E       		.uleb128 0x2e
+ 1059 011c 00       		.byte	0
+ 1060 011d 3F       		.uleb128 0x3f
+ 1061 011e 19       		.uleb128 0x19
+ 1062 011f 03       		.uleb128 0x3
+ 1063 0120 0E       		.uleb128 0xe
+ 1064 0121 3A       		.uleb128 0x3a
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccfpevo1.s 			page 27
+
+
+ 1065 0122 0B       		.uleb128 0xb
+ 1066 0123 3B       		.uleb128 0x3b
+ 1067 0124 05       		.uleb128 0x5
+ 1068 0125 27       		.uleb128 0x27
+ 1069 0126 19       		.uleb128 0x19
+ 1070 0127 11       		.uleb128 0x11
+ 1071 0128 01       		.uleb128 0x1
+ 1072 0129 12       		.uleb128 0x12
+ 1073 012a 06       		.uleb128 0x6
+ 1074 012b 40       		.uleb128 0x40
+ 1075 012c 18       		.uleb128 0x18
+ 1076 012d 9742     		.uleb128 0x2117
+ 1077 012f 19       		.uleb128 0x19
+ 1078 0130 00       		.byte	0
+ 1079 0131 00       		.byte	0
+ 1080 0132 14       		.uleb128 0x14
+ 1081 0133 2E       		.uleb128 0x2e
+ 1082 0134 00       		.byte	0
+ 1083 0135 3F       		.uleb128 0x3f
+ 1084 0136 19       		.uleb128 0x19
+ 1085 0137 03       		.uleb128 0x3
+ 1086 0138 0E       		.uleb128 0xe
+ 1087 0139 3A       		.uleb128 0x3a
+ 1088 013a 0B       		.uleb128 0xb
+ 1089 013b 3B       		.uleb128 0x3b
+ 1090 013c 05       		.uleb128 0x5
+ 1091 013d 27       		.uleb128 0x27
+ 1092 013e 19       		.uleb128 0x19
+ 1093 013f 49       		.uleb128 0x49
+ 1094 0140 13       		.uleb128 0x13
+ 1095 0141 11       		.uleb128 0x11
+ 1096 0142 01       		.uleb128 0x1
+ 1097 0143 12       		.uleb128 0x12
+ 1098 0144 06       		.uleb128 0x6
+ 1099 0145 40       		.uleb128 0x40
+ 1100 0146 18       		.uleb128 0x18
+ 1101 0147 9742     		.uleb128 0x2117
+ 1102 0149 19       		.uleb128 0x19
+ 1103 014a 00       		.byte	0
+ 1104 014b 00       		.byte	0
+ 1105 014c 15       		.uleb128 0x15
+ 1106 014d 898201   		.uleb128 0x4109
+ 1107 0150 01       		.byte	0x1
+ 1108 0151 11       		.uleb128 0x11
+ 1109 0152 01       		.uleb128 0x1
+ 1110 0153 31       		.uleb128 0x31
+ 1111 0154 13       		.uleb128 0x13
+ 1112 0155 01       		.uleb128 0x1
+ 1113 0156 13       		.uleb128 0x13
+ 1114 0157 00       		.byte	0
+ 1115 0158 00       		.byte	0
+ 1116 0159 16       		.uleb128 0x16
+ 1117 015a 8A8201   		.uleb128 0x410a
+ 1118 015d 00       		.byte	0
+ 1119 015e 02       		.uleb128 0x2
+ 1120 015f 18       		.uleb128 0x18
+ 1121 0160 9142     		.uleb128 0x2111
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccfpevo1.s 			page 28
+
+
+ 1122 0162 18       		.uleb128 0x18
+ 1123 0163 00       		.byte	0
+ 1124 0164 00       		.byte	0
+ 1125 0165 17       		.uleb128 0x17
+ 1126 0166 01       		.uleb128 0x1
+ 1127 0167 01       		.byte	0x1
+ 1128 0168 49       		.uleb128 0x49
+ 1129 0169 13       		.uleb128 0x13
+ 1130 016a 01       		.uleb128 0x1
+ 1131 016b 13       		.uleb128 0x13
+ 1132 016c 00       		.byte	0
+ 1133 016d 00       		.byte	0
+ 1134 016e 18       		.uleb128 0x18
+ 1135 016f 21       		.uleb128 0x21
+ 1136 0170 00       		.byte	0
+ 1137 0171 49       		.uleb128 0x49
+ 1138 0172 13       		.uleb128 0x13
+ 1139 0173 2F       		.uleb128 0x2f
+ 1140 0174 0B       		.uleb128 0xb
+ 1141 0175 00       		.byte	0
+ 1142 0176 00       		.byte	0
+ 1143 0177 19       		.uleb128 0x19
+ 1144 0178 34       		.uleb128 0x34
+ 1145 0179 00       		.byte	0
+ 1146 017a 03       		.uleb128 0x3
+ 1147 017b 0E       		.uleb128 0xe
+ 1148 017c 3A       		.uleb128 0x3a
+ 1149 017d 0B       		.uleb128 0xb
+ 1150 017e 3B       		.uleb128 0x3b
+ 1151 017f 0B       		.uleb128 0xb
+ 1152 0180 49       		.uleb128 0x49
+ 1153 0181 13       		.uleb128 0x13
+ 1154 0182 3F       		.uleb128 0x3f
+ 1155 0183 19       		.uleb128 0x19
+ 1156 0184 3C       		.uleb128 0x3c
+ 1157 0185 19       		.uleb128 0x19
+ 1158 0186 00       		.byte	0
+ 1159 0187 00       		.byte	0
+ 1160 0188 1A       		.uleb128 0x1a
+ 1161 0189 2E       		.uleb128 0x2e
+ 1162 018a 00       		.byte	0
+ 1163 018b 3F       		.uleb128 0x3f
+ 1164 018c 19       		.uleb128 0x19
+ 1165 018d 3C       		.uleb128 0x3c
+ 1166 018e 19       		.uleb128 0x19
+ 1167 018f 6E       		.uleb128 0x6e
+ 1168 0190 0E       		.uleb128 0xe
+ 1169 0191 03       		.uleb128 0x3
+ 1170 0192 0E       		.uleb128 0xe
+ 1171 0193 3A       		.uleb128 0x3a
+ 1172 0194 0B       		.uleb128 0xb
+ 1173 0195 3B       		.uleb128 0x3b
+ 1174 0196 0B       		.uleb128 0xb
+ 1175 0197 00       		.byte	0
+ 1176 0198 00       		.byte	0
+ 1177 0199 00       		.byte	0
+ 1178              		.section	.debug_loc,"",%progbits
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccfpevo1.s 			page 29
+
+
+ 1179              	.Ldebug_loc0:
+ 1180              	.LLST0:
+ 1181 0000 00000000 		.4byte	.LVL1
+ 1182 0004 07000000 		.4byte	.LVL3-1
+ 1183 0008 0100     		.2byte	0x1
+ 1184 000a 50       		.byte	0x50
+ 1185 000b 07000000 		.4byte	.LVL3-1
+ 1186 000f 24000000 		.4byte	.LFE7
+ 1187 0013 0400     		.2byte	0x4
+ 1188 0015 F3       		.byte	0xf3
+ 1189 0016 01       		.uleb128 0x1
+ 1190 0017 50       		.byte	0x50
+ 1191 0018 9F       		.byte	0x9f
+ 1192 0019 00000000 		.4byte	0
+ 1193 001d 00000000 		.4byte	0
+ 1194              	.LLST1:
+ 1195 0021 08000000 		.4byte	.LVL3
+ 1196 0025 19000000 		.4byte	.LVL4-1
+ 1197 0029 0100     		.2byte	0x1
+ 1198 002b 50       		.byte	0x50
+ 1199 002c 00000000 		.4byte	0
+ 1200 0030 00000000 		.4byte	0
+ 1201              	.LLST2:
+ 1202 0034 06000000 		.4byte	.LVL6
+ 1203 0038 0A000000 		.4byte	.LVL7
+ 1204 003c 0500     		.2byte	0x5
+ 1205 003e 70       		.byte	0x70
+ 1206 003f 00       		.sleb128 0
+ 1207 0040 33       		.byte	0x33
+ 1208 0041 1A       		.byte	0x1a
+ 1209 0042 9F       		.byte	0x9f
+ 1210 0043 0A000000 		.4byte	.LVL7
+ 1211 0047 10000000 		.4byte	.LFE8
+ 1212 004b 0100     		.2byte	0x1
+ 1213 004d 50       		.byte	0x50
+ 1214 004e 00000000 		.4byte	0
+ 1215 0052 00000000 		.4byte	0
+ 1216              	.LLST3:
+ 1217 0056 00000000 		.4byte	.LVL12
+ 1218 005a 07000000 		.4byte	.LVL13-1
+ 1219 005e 0100     		.2byte	0x1
+ 1220 0060 50       		.byte	0x50
+ 1221 0061 07000000 		.4byte	.LVL13-1
+ 1222 0065 18000000 		.4byte	.LVL17
+ 1223 0069 0100     		.2byte	0x1
+ 1224 006b 54       		.byte	0x54
+ 1225 006c 18000000 		.4byte	.LVL17
+ 1226 0070 1A000000 		.4byte	.LFE2
+ 1227 0074 0400     		.2byte	0x4
+ 1228 0076 F3       		.byte	0xf3
+ 1229 0077 01       		.uleb128 0x1
+ 1230 0078 50       		.byte	0x50
+ 1231 0079 9F       		.byte	0x9f
+ 1232 007a 00000000 		.4byte	0
+ 1233 007e 00000000 		.4byte	0
+ 1234              		.section	.debug_aranges,"",%progbits
+ 1235 0000 7C000000 		.4byte	0x7c
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccfpevo1.s 			page 30
+
+
+ 1236 0004 0200     		.2byte	0x2
+ 1237 0006 00000000 		.4byte	.Ldebug_info0
+ 1238 000a 04       		.byte	0x4
+ 1239 000b 00       		.byte	0
+ 1240 000c 0000     		.2byte	0
+ 1241 000e 0000     		.2byte	0
+ 1242 0010 00000000 		.4byte	.LFB4
+ 1243 0014 02000000 		.4byte	.LFE4-.LFB4
+ 1244 0018 00000000 		.4byte	.LFB5
+ 1245 001c 0C000000 		.4byte	.LFE5-.LFB5
+ 1246 0020 00000000 		.4byte	.LFB6
+ 1247 0024 0C000000 		.4byte	.LFE6-.LFB6
+ 1248 0028 00000000 		.4byte	.LFB7
+ 1249 002c 24000000 		.4byte	.LFE7-.LFB7
+ 1250 0030 00000000 		.4byte	.LFB8
+ 1251 0034 10000000 		.4byte	.LFE8-.LFB8
+ 1252 0038 00000000 		.4byte	.LFB9
+ 1253 003c 0C000000 		.4byte	.LFE9-.LFB9
+ 1254 0040 00000000 		.4byte	.LFB10
+ 1255 0044 14000000 		.4byte	.LFE10-.LFB10
+ 1256 0048 00000000 		.4byte	.LFB11
+ 1257 004c 0C000000 		.4byte	.LFE11-.LFB11
+ 1258 0050 00000000 		.4byte	.LFB1
+ 1259 0054 1C000000 		.4byte	.LFE1-.LFB1
+ 1260 0058 00000000 		.4byte	.LFB2
+ 1261 005c 1A000000 		.4byte	.LFE2-.LFB2
+ 1262 0060 00000000 		.4byte	.LFB3
+ 1263 0064 14000000 		.4byte	.LFE3-.LFB3
+ 1264 0068 00000000 		.4byte	.LFB12
+ 1265 006c 0C000000 		.4byte	.LFE12-.LFB12
+ 1266 0070 00000000 		.4byte	.LFB13
+ 1267 0074 0C000000 		.4byte	.LFE13-.LFB13
+ 1268 0078 00000000 		.4byte	0
+ 1269 007c 00000000 		.4byte	0
+ 1270              		.section	.debug_ranges,"",%progbits
+ 1271              	.Ldebug_ranges0:
+ 1272 0000 00000000 		.4byte	.LFB4
+ 1273 0004 02000000 		.4byte	.LFE4
+ 1274 0008 00000000 		.4byte	.LFB5
+ 1275 000c 0C000000 		.4byte	.LFE5
+ 1276 0010 00000000 		.4byte	.LFB6
+ 1277 0014 0C000000 		.4byte	.LFE6
+ 1278 0018 00000000 		.4byte	.LFB7
+ 1279 001c 24000000 		.4byte	.LFE7
+ 1280 0020 00000000 		.4byte	.LFB8
+ 1281 0024 10000000 		.4byte	.LFE8
+ 1282 0028 00000000 		.4byte	.LFB9
+ 1283 002c 0C000000 		.4byte	.LFE9
+ 1284 0030 00000000 		.4byte	.LFB10
+ 1285 0034 14000000 		.4byte	.LFE10
+ 1286 0038 00000000 		.4byte	.LFB11
+ 1287 003c 0C000000 		.4byte	.LFE11
+ 1288 0040 00000000 		.4byte	.LFB1
+ 1289 0044 1C000000 		.4byte	.LFE1
+ 1290 0048 00000000 		.4byte	.LFB2
+ 1291 004c 1A000000 		.4byte	.LFE2
+ 1292 0050 00000000 		.4byte	.LFB3
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccfpevo1.s 			page 31
+
+
+ 1293 0054 14000000 		.4byte	.LFE3
+ 1294 0058 00000000 		.4byte	.LFB12
+ 1295 005c 0C000000 		.4byte	.LFE12
+ 1296 0060 00000000 		.4byte	.LFB13
+ 1297 0064 0C000000 		.4byte	.LFE13
+ 1298 0068 00000000 		.4byte	0
+ 1299 006c 00000000 		.4byte	0
+ 1300              		.section	.debug_line,"",%progbits
+ 1301              	.Ldebug_line0:
+ 1302 0000 53010000 		.section	.debug_str,"MS",%progbits,1
+ 1302      02005300 
+ 1302      00000201 
+ 1302      FB0E0D00 
+ 1302      01010101 
+ 1303              	.LASF14:
+ 1304 0000 72656733 		.ascii	"reg32\000"
+ 1304      3200
+ 1305              	.LASF31:
+ 1306 0006 496E7075 		.ascii	"Input_1_Int_Stop\000"
+ 1306      745F315F 
+ 1306      496E745F 
+ 1306      53746F70 
+ 1306      00
+ 1307              	.LASF4:
+ 1308 0017 6C6F6E67 		.ascii	"long int\000"
+ 1308      20696E74 
+ 1308      00
+ 1309              	.LASF3:
+ 1310 0020 73686F72 		.ascii	"short unsigned int\000"
+ 1310      7420756E 
+ 1310      7369676E 
+ 1310      65642069 
+ 1310      6E7400
+ 1311              	.LASF29:
+ 1312 0033 496E7075 		.ascii	"Input_1_Int_Start\000"
+ 1312      745F315F 
+ 1312      496E745F 
+ 1312      53746172 
+ 1312      7400
+ 1313              	.LASF26:
+ 1314 0045 496E7075 		.ascii	"Input_1_Int_GetVector\000"
+ 1314      745F315F 
+ 1314      496E745F 
+ 1314      47657456 
+ 1314      6563746F 
+ 1315              	.LASF19:
+ 1316 005b 496E7075 		.ascii	"Input_1_Int_SetPriority\000"
+ 1316      745F315F 
+ 1316      496E745F 
+ 1316      53657450 
+ 1316      72696F72 
+ 1317              	.LASF11:
+ 1318 0073 666C6F61 		.ascii	"float\000"
+ 1318      7400
+ 1319              	.LASF7:
+ 1320 0079 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 1320      206C6F6E 
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccfpevo1.s 			page 32
+
+
+ 1320      6720756E 
+ 1320      7369676E 
+ 1320      65642069 
+ 1321              	.LASF1:
+ 1322 0090 756E7369 		.ascii	"unsigned char\000"
+ 1322      676E6564 
+ 1322      20636861 
+ 1322      7200
+ 1323              	.LASF24:
+ 1324 009e 496E7075 		.ascii	"Input_1_Int_Interrupt\000"
+ 1324      745F315F 
+ 1324      496E745F 
+ 1324      496E7465 
+ 1324      72727570 
+ 1325              	.LASF30:
+ 1326 00b4 496E7075 		.ascii	"Input_1_Int_StartEx\000"
+ 1326      745F315F 
+ 1326      496E745F 
+ 1326      53746172 
+ 1326      74457800 
+ 1327              	.LASF22:
+ 1328 00c8 696E7465 		.ascii	"interruptState\000"
+ 1328      72727570 
+ 1328      74537461 
+ 1328      746500
+ 1329              	.LASF5:
+ 1330 00d7 6C6F6E67 		.ascii	"long unsigned int\000"
+ 1330      20756E73 
+ 1330      69676E65 
+ 1330      6420696E 
+ 1330      7400
+ 1331              	.LASF9:
+ 1332 00e9 75696E74 		.ascii	"uint8\000"
+ 1332      3800
+ 1333              	.LASF21:
+ 1334 00ef 7072696F 		.ascii	"priority\000"
+ 1334      72697479 
+ 1334      00
+ 1335              	.LASF25:
+ 1336 00f8 496E7075 		.ascii	"Input_1_Int_Enable\000"
+ 1336      745F315F 
+ 1336      496E745F 
+ 1336      456E6162 
+ 1336      6C6500
+ 1337              	.LASF12:
+ 1338 010b 646F7562 		.ascii	"double\000"
+ 1338      6C6500
+ 1339              	.LASF32:
+ 1340 0112 496E7075 		.ascii	"Input_1_Int_SetPending\000"
+ 1340      745F315F 
+ 1340      496E745F 
+ 1340      53657450 
+ 1340      656E6469 
+ 1341              	.LASF10:
+ 1342 0129 75696E74 		.ascii	"uint32\000"
+ 1342      333200
+ 1343              	.LASF34:
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccfpevo1.s 			page 33
+
+
+ 1344 0130 4379456E 		.ascii	"CyEnterCriticalSection\000"
+ 1344      74657243 
+ 1344      72697469 
+ 1344      63616C53 
+ 1344      65637469 
+ 1345              	.LASF8:
+ 1346 0147 756E7369 		.ascii	"unsigned int\000"
+ 1346      676E6564 
+ 1346      20696E74 
+ 1346      00
+ 1347              	.LASF20:
+ 1348 0154 61646472 		.ascii	"address\000"
+ 1348      65737300 
+ 1349              	.LASF35:
+ 1350 015c 43794578 		.ascii	"CyExitCriticalSection\000"
+ 1350      69744372 
+ 1350      69746963 
+ 1350      616C5365 
+ 1350      6374696F 
+ 1351              	.LASF33:
+ 1352 0172 496E7075 		.ascii	"Input_1_Int_ClearPending\000"
+ 1352      745F315F 
+ 1352      496E745F 
+ 1352      436C6561 
+ 1352      7250656E 
+ 1353              	.LASF28:
+ 1354 018b 496E7075 		.ascii	"Input_1_Int_Disable\000"
+ 1354      745F315F 
+ 1354      496E745F 
+ 1354      44697361 
+ 1354      626C6500 
+ 1355              	.LASF15:
+ 1356 019f 63796973 		.ascii	"cyisraddress\000"
+ 1356      72616464 
+ 1356      72657373 
+ 1356      00
+ 1357              	.LASF36:
+ 1358 01ac 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
+ 1358      43313120 
+ 1358      352E342E 
+ 1358      31203230 
+ 1358      31363036 
+ 1359 01df 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m0 -mthumb -g -O"
+ 1359      20726576 
+ 1359      6973696F 
+ 1359      6E203233 
+ 1359      37373135 
+ 1360 0212 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
+ 1360      66756E63 
+ 1360      74696F6E 
+ 1360      2D736563 
+ 1360      74696F6E 
+ 1361              	.LASF17:
+ 1362 023a 73697A65 		.ascii	"sizetype\000"
+ 1362      74797065 
+ 1362      00
+ 1363              	.LASF6:
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccfpevo1.s 			page 34
+
+
+ 1364 0243 6C6F6E67 		.ascii	"long long int\000"
+ 1364      206C6F6E 
+ 1364      6720696E 
+ 1364      7400
+ 1365              	.LASF13:
+ 1366 0251 63686172 		.ascii	"char\000"
+ 1366      00
+ 1367              	.LASF40:
+ 1368 0256 43795261 		.ascii	"CyRamVectors\000"
+ 1368      6D566563 
+ 1368      746F7273 
+ 1368      00
+ 1369              	.LASF2:
+ 1370 0263 73686F72 		.ascii	"short int\000"
+ 1370      7420696E 
+ 1370      7400
+ 1371              	.LASF23:
+ 1372 026d 7072696F 		.ascii	"priorityOffset\000"
+ 1372      72697479 
+ 1372      4F666673 
+ 1372      657400
+ 1373              	.LASF18:
+ 1374 027c 496E7075 		.ascii	"Input_1_Int_SetVector\000"
+ 1374      745F315F 
+ 1374      496E745F 
+ 1374      53657456 
+ 1374      6563746F 
+ 1375              	.LASF16:
+ 1376 0292 6C6F6E67 		.ascii	"long double\000"
+ 1376      20646F75 
+ 1376      626C6500 
+ 1377              	.LASF0:
+ 1378 029e 7369676E 		.ascii	"signed char\000"
+ 1378      65642063 
+ 1378      68617200 
+ 1379              	.LASF27:
+ 1380 02aa 496E7075 		.ascii	"Input_1_Int_GetState\000"
+ 1380      745F315F 
+ 1380      496E745F 
+ 1380      47657453 
+ 1380      74617465 
+ 1381              	.LASF39:
+ 1382 02bf 496E7075 		.ascii	"Input_1_Int_GetPriority\000"
+ 1382      745F315F 
+ 1382      496E745F 
+ 1382      47657450 
+ 1382      72696F72 
+ 1383              	.LASF37:
+ 1384 02d7 47656E65 		.ascii	"Generated_Source\\PSoC4\\Input_1_Int.c\000"
+ 1384      72617465 
+ 1384      645F536F 
+ 1384      75726365 
+ 1384      5C50536F 
+ 1385              	.LASF38:
+ 1386 02fc 433A5C55 		.ascii	"C:\\Users\\JamesN4\\Documents\\PSoC Creator\\Hybrid"
+ 1386      73657273 
+ 1386      5C4A616D 
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccfpevo1.s 			page 35
+
+
+ 1386      65734E34 
+ 1386      5C446F63 
+ 1387 032a 456E636F 		.ascii	"EncoderCY8CKIT43\\HybridEncoder.cydsn\000"
+ 1387      64657243 
+ 1387      5938434B 
+ 1387      49543433 
+ 1387      5C487962 
+ 1388              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran

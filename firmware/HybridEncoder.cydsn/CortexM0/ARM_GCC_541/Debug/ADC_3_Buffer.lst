@@ -1,0 +1,1094 @@
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc6LnelX.s 			page 1
+
+
+   1              		.syntax unified
+   2              		.cpu cortex-m0
+   3              		.fpu softvfp
+   4              		.eabi_attribute 20, 1
+   5              		.eabi_attribute 21, 1
+   6              		.eabi_attribute 23, 3
+   7              		.eabi_attribute 24, 1
+   8              		.eabi_attribute 25, 1
+   9              		.eabi_attribute 26, 1
+  10              		.eabi_attribute 30, 1
+  11              		.eabi_attribute 34, 0
+  12              		.eabi_attribute 18, 4
+  13              		.thumb
+  14              		.syntax unified
+  15              		.file	"ADC_3_Buffer.c"
+  16              		.text
+  17              	.Ltext0:
+  18              		.cfi_sections	.debug_frame
+  19              		.section	.text.ADC_3_Buffer_Init,"ax",%progbits
+  20              		.align	2
+  21              		.global	ADC_3_Buffer_Init
+  22              		.code	16
+  23              		.thumb_func
+  24              		.type	ADC_3_Buffer_Init, %function
+  25              	ADC_3_Buffer_Init:
+  26              	.LFB0:
+  27              		.file 1 "Generated_Source\\PSoC4\\ADC_3_Buffer.c"
+   1:Generated_Source\PSoC4/ADC_3_Buffer.c **** /*******************************************************************************
+   2:Generated_Source\PSoC4/ADC_3_Buffer.c **** * File Name: ADC_3_Buffer.c
+   3:Generated_Source\PSoC4/ADC_3_Buffer.c **** * Version 1.20
+   4:Generated_Source\PSoC4/ADC_3_Buffer.c **** *
+   5:Generated_Source\PSoC4/ADC_3_Buffer.c **** * Description:
+   6:Generated_Source\PSoC4/ADC_3_Buffer.c **** *  This file provides the source code to the API for the Opamp (Analog Buffer)
+   7:Generated_Source\PSoC4/ADC_3_Buffer.c **** *  Component.
+   8:Generated_Source\PSoC4/ADC_3_Buffer.c **** *
+   9:Generated_Source\PSoC4/ADC_3_Buffer.c **** *
+  10:Generated_Source\PSoC4/ADC_3_Buffer.c **** ********************************************************************************
+  11:Generated_Source\PSoC4/ADC_3_Buffer.c **** * Copyright 2013-2015, Cypress Semiconductor Corporation.  All rights reserved.
+  12:Generated_Source\PSoC4/ADC_3_Buffer.c **** * You may use this file only in accordance with the license, terms, conditions,
+  13:Generated_Source\PSoC4/ADC_3_Buffer.c **** * disclaimers, and limitations in the end user license agreement accompanying
+  14:Generated_Source\PSoC4/ADC_3_Buffer.c **** * the software package with which this file was provided.
+  15:Generated_Source\PSoC4/ADC_3_Buffer.c **** *******************************************************************************/
+  16:Generated_Source\PSoC4/ADC_3_Buffer.c **** 
+  17:Generated_Source\PSoC4/ADC_3_Buffer.c **** #include "ADC_3_Buffer.h"
+  18:Generated_Source\PSoC4/ADC_3_Buffer.c **** 
+  19:Generated_Source\PSoC4/ADC_3_Buffer.c **** uint8 ADC_3_Buffer_initVar = 0u; /* Defines if component was initialized */
+  20:Generated_Source\PSoC4/ADC_3_Buffer.c **** static uint32 ADC_3_Buffer_internalPower = 0u; /* Defines component Power value */
+  21:Generated_Source\PSoC4/ADC_3_Buffer.c **** 
+  22:Generated_Source\PSoC4/ADC_3_Buffer.c **** 
+  23:Generated_Source\PSoC4/ADC_3_Buffer.c **** /*******************************************************************************
+  24:Generated_Source\PSoC4/ADC_3_Buffer.c **** * Function Name: ADC_3_Buffer_Init
+  25:Generated_Source\PSoC4/ADC_3_Buffer.c **** ********************************************************************************
+  26:Generated_Source\PSoC4/ADC_3_Buffer.c **** *
+  27:Generated_Source\PSoC4/ADC_3_Buffer.c **** * Summary:
+  28:Generated_Source\PSoC4/ADC_3_Buffer.c **** *  Initializes or restores the component according to the customizer Configure 
+  29:Generated_Source\PSoC4/ADC_3_Buffer.c **** *  dialog settings. It is not necessary to call Init() because the Start() API 
+  30:Generated_Source\PSoC4/ADC_3_Buffer.c **** *  calls this function and is the preferred method to begin the component operation.
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc6LnelX.s 			page 2
+
+
+  31:Generated_Source\PSoC4/ADC_3_Buffer.c **** *
+  32:Generated_Source\PSoC4/ADC_3_Buffer.c **** * Parameters:
+  33:Generated_Source\PSoC4/ADC_3_Buffer.c **** *  None
+  34:Generated_Source\PSoC4/ADC_3_Buffer.c **** *
+  35:Generated_Source\PSoC4/ADC_3_Buffer.c **** * Return:
+  36:Generated_Source\PSoC4/ADC_3_Buffer.c **** *  None
+  37:Generated_Source\PSoC4/ADC_3_Buffer.c **** *
+  38:Generated_Source\PSoC4/ADC_3_Buffer.c **** *******************************************************************************/
+  39:Generated_Source\PSoC4/ADC_3_Buffer.c **** void ADC_3_Buffer_Init(void)
+  40:Generated_Source\PSoC4/ADC_3_Buffer.c **** {
+  28              		.loc 1 40 0
+  29              		.cfi_startproc
+  30              		@ args = 0, pretend = 0, frame = 0
+  31              		@ frame_needed = 0, uses_anonymous_args = 0
+  32              		@ link register save eliminated.
+  41:Generated_Source\PSoC4/ADC_3_Buffer.c ****     ADC_3_Buffer_internalPower = ADC_3_Buffer_POWER;
+  33              		.loc 1 41 0
+  34 0000 0323     		movs	r3, #3
+  35 0002 064A     		ldr	r2, .L2
+  36 0004 1360     		str	r3, [r2]
+  42:Generated_Source\PSoC4/ADC_3_Buffer.c ****     ADC_3_Buffer_CTB_CTRL_REG = ADC_3_Buffer_DEFAULT_CTB_CTRL;
+  37              		.loc 1 42 0
+  38 0006 8021     		movs	r1, #128
+  39 0008 0906     		lsls	r1, r1, #24
+  40 000a 054A     		ldr	r2, .L2+4
+  41 000c 1160     		str	r1, [r2]
+  43:Generated_Source\PSoC4/ADC_3_Buffer.c ****     ADC_3_Buffer_OA_RES_CTRL_REG = ADC_3_Buffer_DEFAULT_OA_RES_CTRL;
+  42              		.loc 1 43 0
+  43 000e 0021     		movs	r1, #0
+  44 0010 044A     		ldr	r2, .L2+8
+  45 0012 1160     		str	r1, [r2]
+  44:Generated_Source\PSoC4/ADC_3_Buffer.c ****     ADC_3_Buffer_OA_COMP_TRIM_REG = ADC_3_Buffer_DEFAULT_OA_COMP_TRIM_REG;
+  46              		.loc 1 44 0
+  47 0014 044A     		ldr	r2, .L2+12
+  48 0016 1360     		str	r3, [r2]
+  45:Generated_Source\PSoC4/ADC_3_Buffer.c **** }
+  49              		.loc 1 45 0
+  50              		@ sp needed
+  51 0018 7047     		bx	lr
+  52              	.L3:
+  53 001a C046     		.align	2
+  54              	.L2:
+  55 001c 00000000 		.word	.LANCHOR0
+  56 0020 00003040 		.word	1076887552
+  57 0024 04003040 		.word	1076887556
+  58 0028 080F3040 		.word	1076891400
+  59              		.cfi_endproc
+  60              	.LFE0:
+  61              		.size	ADC_3_Buffer_Init, .-ADC_3_Buffer_Init
+  62              		.section	.text.ADC_3_Buffer_Enable,"ax",%progbits
+  63              		.align	2
+  64              		.global	ADC_3_Buffer_Enable
+  65              		.code	16
+  66              		.thumb_func
+  67              		.type	ADC_3_Buffer_Enable, %function
+  68              	ADC_3_Buffer_Enable:
+  69              	.LFB1:
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc6LnelX.s 			page 3
+
+
+  46:Generated_Source\PSoC4/ADC_3_Buffer.c **** 
+  47:Generated_Source\PSoC4/ADC_3_Buffer.c **** 
+  48:Generated_Source\PSoC4/ADC_3_Buffer.c **** /*******************************************************************************
+  49:Generated_Source\PSoC4/ADC_3_Buffer.c **** * Function Name: ADC_3_Buffer_Enable
+  50:Generated_Source\PSoC4/ADC_3_Buffer.c **** ********************************************************************************
+  51:Generated_Source\PSoC4/ADC_3_Buffer.c **** *
+  52:Generated_Source\PSoC4/ADC_3_Buffer.c **** * Summary:
+  53:Generated_Source\PSoC4/ADC_3_Buffer.c **** *  Activates the hardware and begins the component operation. It is not necessary to 
+  54:Generated_Source\PSoC4/ADC_3_Buffer.c **** *  call Enable() because the Start() API calls this function, which is the 
+  55:Generated_Source\PSoC4/ADC_3_Buffer.c **** *  preferred method to begin the component operation.
+  56:Generated_Source\PSoC4/ADC_3_Buffer.c **** *
+  57:Generated_Source\PSoC4/ADC_3_Buffer.c **** * Parameters:
+  58:Generated_Source\PSoC4/ADC_3_Buffer.c **** *  None
+  59:Generated_Source\PSoC4/ADC_3_Buffer.c **** *
+  60:Generated_Source\PSoC4/ADC_3_Buffer.c **** * Return:
+  61:Generated_Source\PSoC4/ADC_3_Buffer.c **** *  None
+  62:Generated_Source\PSoC4/ADC_3_Buffer.c **** *
+  63:Generated_Source\PSoC4/ADC_3_Buffer.c **** *******************************************************************************/
+  64:Generated_Source\PSoC4/ADC_3_Buffer.c **** void ADC_3_Buffer_Enable(void)
+  65:Generated_Source\PSoC4/ADC_3_Buffer.c **** {
+  70              		.loc 1 65 0
+  71              		.cfi_startproc
+  72              		@ args = 0, pretend = 0, frame = 0
+  73              		@ frame_needed = 0, uses_anonymous_args = 0
+  74              		@ link register save eliminated.
+  66:Generated_Source\PSoC4/ADC_3_Buffer.c ****     ADC_3_Buffer_OA_RES_CTRL_REG |= ADC_3_Buffer_internalPower | \
+  75              		.loc 1 66 0
+  76 0000 044A     		ldr	r2, .L5
+  77 0002 1168     		ldr	r1, [r2]
+  78 0004 044B     		ldr	r3, .L5+4
+  79 0006 1B68     		ldr	r3, [r3]
+  80 0008 0B43     		orrs	r3, r1
+  81 000a 8021     		movs	r1, #128
+  82 000c 0901     		lsls	r1, r1, #4
+  83 000e 0B43     		orrs	r3, r1
+  84 0010 1360     		str	r3, [r2]
+  67:Generated_Source\PSoC4/ADC_3_Buffer.c ****                                         ADC_3_Buffer_OA_PUMP_EN;
+  68:Generated_Source\PSoC4/ADC_3_Buffer.c **** }
+  85              		.loc 1 68 0
+  86              		@ sp needed
+  87 0012 7047     		bx	lr
+  88              	.L6:
+  89              		.align	2
+  90              	.L5:
+  91 0014 04003040 		.word	1076887556
+  92 0018 00000000 		.word	.LANCHOR0
+  93              		.cfi_endproc
+  94              	.LFE1:
+  95              		.size	ADC_3_Buffer_Enable, .-ADC_3_Buffer_Enable
+  96              		.section	.text.ADC_3_Buffer_Start,"ax",%progbits
+  97              		.align	2
+  98              		.global	ADC_3_Buffer_Start
+  99              		.code	16
+ 100              		.thumb_func
+ 101              		.type	ADC_3_Buffer_Start, %function
+ 102              	ADC_3_Buffer_Start:
+ 103              	.LFB2:
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc6LnelX.s 			page 4
+
+
+  69:Generated_Source\PSoC4/ADC_3_Buffer.c **** 
+  70:Generated_Source\PSoC4/ADC_3_Buffer.c **** 
+  71:Generated_Source\PSoC4/ADC_3_Buffer.c **** /*******************************************************************************
+  72:Generated_Source\PSoC4/ADC_3_Buffer.c **** * Function Name: ADC_3_Buffer_Start
+  73:Generated_Source\PSoC4/ADC_3_Buffer.c **** ********************************************************************************
+  74:Generated_Source\PSoC4/ADC_3_Buffer.c **** *
+  75:Generated_Source\PSoC4/ADC_3_Buffer.c **** * Summary:
+  76:Generated_Source\PSoC4/ADC_3_Buffer.c **** *  Performs all of the required initialization for the component and enables power 
+  77:Generated_Source\PSoC4/ADC_3_Buffer.c **** *  to the block. The first time the routine is executed, the Power level, Mode, 
+  78:Generated_Source\PSoC4/ADC_3_Buffer.c **** *  and Output mode are set. When called to restart the Opamp following a Stop() call, 
+  79:Generated_Source\PSoC4/ADC_3_Buffer.c **** *  the current component parameter settings are retained.
+  80:Generated_Source\PSoC4/ADC_3_Buffer.c **** *
+  81:Generated_Source\PSoC4/ADC_3_Buffer.c **** * Parameters:
+  82:Generated_Source\PSoC4/ADC_3_Buffer.c **** *  None
+  83:Generated_Source\PSoC4/ADC_3_Buffer.c **** *
+  84:Generated_Source\PSoC4/ADC_3_Buffer.c **** * Return:
+  85:Generated_Source\PSoC4/ADC_3_Buffer.c **** *  None
+  86:Generated_Source\PSoC4/ADC_3_Buffer.c **** *
+  87:Generated_Source\PSoC4/ADC_3_Buffer.c **** * Global variables:
+  88:Generated_Source\PSoC4/ADC_3_Buffer.c **** *  ADC_3_Buffer_initVar: Used to check the initial configuration, modified
+  89:Generated_Source\PSoC4/ADC_3_Buffer.c **** *  when this function is called for the first time.
+  90:Generated_Source\PSoC4/ADC_3_Buffer.c **** *
+  91:Generated_Source\PSoC4/ADC_3_Buffer.c **** *******************************************************************************/
+  92:Generated_Source\PSoC4/ADC_3_Buffer.c **** void ADC_3_Buffer_Start(void)
+  93:Generated_Source\PSoC4/ADC_3_Buffer.c **** {
+ 104              		.loc 1 93 0
+ 105              		.cfi_startproc
+ 106              		@ args = 0, pretend = 0, frame = 0
+ 107              		@ frame_needed = 0, uses_anonymous_args = 0
+ 108 0000 10B5     		push	{r4, lr}
+ 109              		.cfi_def_cfa_offset 8
+ 110              		.cfi_offset 4, -8
+ 111              		.cfi_offset 14, -4
+  94:Generated_Source\PSoC4/ADC_3_Buffer.c ****     if( 0u == ADC_3_Buffer_initVar)
+ 112              		.loc 1 94 0
+ 113 0002 064B     		ldr	r3, .L9
+ 114 0004 1B79     		ldrb	r3, [r3, #4]
+ 115 0006 002B     		cmp	r3, #0
+ 116 0008 04D1     		bne	.L8
+  95:Generated_Source\PSoC4/ADC_3_Buffer.c ****     {
+  96:Generated_Source\PSoC4/ADC_3_Buffer.c ****         ADC_3_Buffer_Init();
+ 117              		.loc 1 96 0
+ 118 000a FFF7FEFF 		bl	ADC_3_Buffer_Init
+ 119              	.LVL0:
+  97:Generated_Source\PSoC4/ADC_3_Buffer.c ****         ADC_3_Buffer_initVar = 1u;
+ 120              		.loc 1 97 0
+ 121 000e 0122     		movs	r2, #1
+ 122 0010 024B     		ldr	r3, .L9
+ 123 0012 1A71     		strb	r2, [r3, #4]
+ 124              	.L8:
+  98:Generated_Source\PSoC4/ADC_3_Buffer.c ****     }
+  99:Generated_Source\PSoC4/ADC_3_Buffer.c ****     ADC_3_Buffer_Enable();
+ 125              		.loc 1 99 0
+ 126 0014 FFF7FEFF 		bl	ADC_3_Buffer_Enable
+ 127              	.LVL1:
+ 100:Generated_Source\PSoC4/ADC_3_Buffer.c **** }
+ 128              		.loc 1 100 0
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc6LnelX.s 			page 5
+
+
+ 129              		@ sp needed
+ 130 0018 10BD     		pop	{r4, pc}
+ 131              	.L10:
+ 132 001a C046     		.align	2
+ 133              	.L9:
+ 134 001c 00000000 		.word	.LANCHOR0
+ 135              		.cfi_endproc
+ 136              	.LFE2:
+ 137              		.size	ADC_3_Buffer_Start, .-ADC_3_Buffer_Start
+ 138              		.section	.text.ADC_3_Buffer_Stop,"ax",%progbits
+ 139              		.align	2
+ 140              		.global	ADC_3_Buffer_Stop
+ 141              		.code	16
+ 142              		.thumb_func
+ 143              		.type	ADC_3_Buffer_Stop, %function
+ 144              	ADC_3_Buffer_Stop:
+ 145              	.LFB3:
+ 101:Generated_Source\PSoC4/ADC_3_Buffer.c **** 
+ 102:Generated_Source\PSoC4/ADC_3_Buffer.c **** 
+ 103:Generated_Source\PSoC4/ADC_3_Buffer.c **** /*******************************************************************************
+ 104:Generated_Source\PSoC4/ADC_3_Buffer.c **** * Function Name: ADC_3_Buffer_Stop
+ 105:Generated_Source\PSoC4/ADC_3_Buffer.c **** ********************************************************************************
+ 106:Generated_Source\PSoC4/ADC_3_Buffer.c **** *
+ 107:Generated_Source\PSoC4/ADC_3_Buffer.c **** * Summary:
+ 108:Generated_Source\PSoC4/ADC_3_Buffer.c **** *  Turn off the Opamp block.
+ 109:Generated_Source\PSoC4/ADC_3_Buffer.c **** *
+ 110:Generated_Source\PSoC4/ADC_3_Buffer.c **** * Parameters:
+ 111:Generated_Source\PSoC4/ADC_3_Buffer.c **** *  None
+ 112:Generated_Source\PSoC4/ADC_3_Buffer.c **** *
+ 113:Generated_Source\PSoC4/ADC_3_Buffer.c **** * Return:
+ 114:Generated_Source\PSoC4/ADC_3_Buffer.c **** *  None
+ 115:Generated_Source\PSoC4/ADC_3_Buffer.c **** *
+ 116:Generated_Source\PSoC4/ADC_3_Buffer.c **** *******************************************************************************/
+ 117:Generated_Source\PSoC4/ADC_3_Buffer.c **** void ADC_3_Buffer_Stop(void)
+ 118:Generated_Source\PSoC4/ADC_3_Buffer.c **** {
+ 146              		.loc 1 118 0
+ 147              		.cfi_startproc
+ 148              		@ args = 0, pretend = 0, frame = 0
+ 149              		@ frame_needed = 0, uses_anonymous_args = 0
+ 150              		@ link register save eliminated.
+ 119:Generated_Source\PSoC4/ADC_3_Buffer.c ****     ADC_3_Buffer_OA_RES_CTRL_REG &= ((uint32)~(ADC_3_Buffer_OA_PWR_MODE_MASK | \
+ 151              		.loc 1 119 0
+ 152 0000 024A     		ldr	r2, .L12
+ 153 0002 1168     		ldr	r1, [r2]
+ 154 0004 024B     		ldr	r3, .L12+4
+ 155 0006 0B40     		ands	r3, r1
+ 156 0008 1360     		str	r3, [r2]
+ 120:Generated_Source\PSoC4/ADC_3_Buffer.c ****                                                    ADC_3_Buffer_OA_PUMP_EN));
+ 121:Generated_Source\PSoC4/ADC_3_Buffer.c **** }
+ 157              		.loc 1 121 0
+ 158              		@ sp needed
+ 159 000a 7047     		bx	lr
+ 160              	.L13:
+ 161              		.align	2
+ 162              	.L12:
+ 163 000c 04003040 		.word	1076887556
+ 164 0010 FCF7FFFF 		.word	-2052
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc6LnelX.s 			page 6
+
+
+ 165              		.cfi_endproc
+ 166              	.LFE3:
+ 167              		.size	ADC_3_Buffer_Stop, .-ADC_3_Buffer_Stop
+ 168              		.section	.text.ADC_3_Buffer_SetPower,"ax",%progbits
+ 169              		.align	2
+ 170              		.global	ADC_3_Buffer_SetPower
+ 171              		.code	16
+ 172              		.thumb_func
+ 173              		.type	ADC_3_Buffer_SetPower, %function
+ 174              	ADC_3_Buffer_SetPower:
+ 175              	.LFB4:
+ 122:Generated_Source\PSoC4/ADC_3_Buffer.c **** 
+ 123:Generated_Source\PSoC4/ADC_3_Buffer.c **** 
+ 124:Generated_Source\PSoC4/ADC_3_Buffer.c **** /*******************************************************************************
+ 125:Generated_Source\PSoC4/ADC_3_Buffer.c **** * Function Name: ADC_3_Buffer_SetPower
+ 126:Generated_Source\PSoC4/ADC_3_Buffer.c **** ********************************************************************************
+ 127:Generated_Source\PSoC4/ADC_3_Buffer.c **** *
+ 128:Generated_Source\PSoC4/ADC_3_Buffer.c **** * Summary:
+ 129:Generated_Source\PSoC4/ADC_3_Buffer.c **** *  Sets the Opamp to one of the three power levels.
+ 130:Generated_Source\PSoC4/ADC_3_Buffer.c **** *
+ 131:Generated_Source\PSoC4/ADC_3_Buffer.c **** * Parameters:
+ 132:Generated_Source\PSoC4/ADC_3_Buffer.c **** *  power: power levels.
+ 133:Generated_Source\PSoC4/ADC_3_Buffer.c **** *   ADC_3_Buffer_LOW_POWER - Lowest active power
+ 134:Generated_Source\PSoC4/ADC_3_Buffer.c **** *   ADC_3_Buffer_MED_POWER - Medium power
+ 135:Generated_Source\PSoC4/ADC_3_Buffer.c **** *   ADC_3_Buffer_HIGH_POWER - Highest active power
+ 136:Generated_Source\PSoC4/ADC_3_Buffer.c **** *
+ 137:Generated_Source\PSoC4/ADC_3_Buffer.c **** * Return:
+ 138:Generated_Source\PSoC4/ADC_3_Buffer.c **** *  None
+ 139:Generated_Source\PSoC4/ADC_3_Buffer.c **** *
+ 140:Generated_Source\PSoC4/ADC_3_Buffer.c **** **********************************************************************************/
+ 141:Generated_Source\PSoC4/ADC_3_Buffer.c **** void ADC_3_Buffer_SetPower(uint32 power)
+ 142:Generated_Source\PSoC4/ADC_3_Buffer.c **** {
+ 176              		.loc 1 142 0
+ 177              		.cfi_startproc
+ 178              		@ args = 0, pretend = 0, frame = 0
+ 179              		@ frame_needed = 0, uses_anonymous_args = 0
+ 180              		@ link register save eliminated.
+ 181              	.LVL2:
+ 143:Generated_Source\PSoC4/ADC_3_Buffer.c ****     uint32 tmp;
+ 144:Generated_Source\PSoC4/ADC_3_Buffer.c ****     
+ 145:Generated_Source\PSoC4/ADC_3_Buffer.c ****     ADC_3_Buffer_internalPower = ADC_3_Buffer_GET_OA_PWR_MODE(power);
+ 182              		.loc 1 145 0
+ 183 0000 0321     		movs	r1, #3
+ 184 0002 0840     		ands	r0, r1
+ 185              	.LVL3:
+ 186 0004 034B     		ldr	r3, .L15
+ 187 0006 1860     		str	r0, [r3]
+ 146:Generated_Source\PSoC4/ADC_3_Buffer.c ****     tmp = ADC_3_Buffer_OA_RES_CTRL_REG & \
+ 188              		.loc 1 146 0
+ 189 0008 034A     		ldr	r2, .L15+4
+ 190 000a 1368     		ldr	r3, [r2]
+ 191 000c 8B43     		bics	r3, r1
+ 192              	.LVL4:
+ 147:Generated_Source\PSoC4/ADC_3_Buffer.c ****            (uint32)~ADC_3_Buffer_OA_PWR_MODE_MASK;
+ 148:Generated_Source\PSoC4/ADC_3_Buffer.c ****     ADC_3_Buffer_OA_RES_CTRL_REG = tmp | ADC_3_Buffer_internalPower;
+ 193              		.loc 1 148 0
+ 194 000e 1843     		orrs	r0, r3
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc6LnelX.s 			page 7
+
+
+ 195 0010 1060     		str	r0, [r2]
+ 149:Generated_Source\PSoC4/ADC_3_Buffer.c **** }
+ 196              		.loc 1 149 0
+ 197              		@ sp needed
+ 198 0012 7047     		bx	lr
+ 199              	.L16:
+ 200              		.align	2
+ 201              	.L15:
+ 202 0014 00000000 		.word	.LANCHOR0
+ 203 0018 04003040 		.word	1076887556
+ 204              		.cfi_endproc
+ 205              	.LFE4:
+ 206              		.size	ADC_3_Buffer_SetPower, .-ADC_3_Buffer_SetPower
+ 207              		.section	.text.ADC_3_Buffer_PumpControl,"ax",%progbits
+ 208              		.align	2
+ 209              		.global	ADC_3_Buffer_PumpControl
+ 210              		.code	16
+ 211              		.thumb_func
+ 212              		.type	ADC_3_Buffer_PumpControl, %function
+ 213              	ADC_3_Buffer_PumpControl:
+ 214              	.LFB5:
+ 150:Generated_Source\PSoC4/ADC_3_Buffer.c **** 
+ 151:Generated_Source\PSoC4/ADC_3_Buffer.c **** 
+ 152:Generated_Source\PSoC4/ADC_3_Buffer.c **** /*******************************************************************************
+ 153:Generated_Source\PSoC4/ADC_3_Buffer.c **** * Function Name: ADC_3_Buffer_PumpControl
+ 154:Generated_Source\PSoC4/ADC_3_Buffer.c **** ********************************************************************************
+ 155:Generated_Source\PSoC4/ADC_3_Buffer.c **** *
+ 156:Generated_Source\PSoC4/ADC_3_Buffer.c **** * Summary:
+ 157:Generated_Source\PSoC4/ADC_3_Buffer.c **** *  Allows the user to turn the Opamp's boost pump on or off. By Default the Start() 
+ 158:Generated_Source\PSoC4/ADC_3_Buffer.c **** *  function turns on the pump. Use this API to turn it off. The boost must be 
+ 159:Generated_Source\PSoC4/ADC_3_Buffer.c **** *  turned on when the supply is less than 2.7 volts and off if the supply is more 
+ 160:Generated_Source\PSoC4/ADC_3_Buffer.c **** *  than 4 volts.
+ 161:Generated_Source\PSoC4/ADC_3_Buffer.c **** *
+ 162:Generated_Source\PSoC4/ADC_3_Buffer.c **** * Parameters:
+ 163:Generated_Source\PSoC4/ADC_3_Buffer.c **** *  onOff: Control the pump.
+ 164:Generated_Source\PSoC4/ADC_3_Buffer.c **** *   ADC_3_Buffer_PUMP_OFF - Turn off the pump
+ 165:Generated_Source\PSoC4/ADC_3_Buffer.c **** *   ADC_3_Buffer_PUMP_ON - Turn on the pump
+ 166:Generated_Source\PSoC4/ADC_3_Buffer.c **** *
+ 167:Generated_Source\PSoC4/ADC_3_Buffer.c **** * Return:
+ 168:Generated_Source\PSoC4/ADC_3_Buffer.c **** *  None
+ 169:Generated_Source\PSoC4/ADC_3_Buffer.c **** *
+ 170:Generated_Source\PSoC4/ADC_3_Buffer.c **** **********************************************************************************/
+ 171:Generated_Source\PSoC4/ADC_3_Buffer.c **** void ADC_3_Buffer_PumpControl(uint32 onOff)
+ 172:Generated_Source\PSoC4/ADC_3_Buffer.c **** {
+ 215              		.loc 1 172 0
+ 216              		.cfi_startproc
+ 217              		@ args = 0, pretend = 0, frame = 0
+ 218              		@ frame_needed = 0, uses_anonymous_args = 0
+ 219              		@ link register save eliminated.
+ 220              	.LVL5:
+ 173:Generated_Source\PSoC4/ADC_3_Buffer.c ****     
+ 174:Generated_Source\PSoC4/ADC_3_Buffer.c ****     if(0u != onOff)
+ 221              		.loc 1 174 0
+ 222 0000 0028     		cmp	r0, #0
+ 223 0002 06D0     		beq	.L18
+ 175:Generated_Source\PSoC4/ADC_3_Buffer.c ****     {
+ 176:Generated_Source\PSoC4/ADC_3_Buffer.c ****         ADC_3_Buffer_OA_RES_CTRL |= ADC_3_Buffer_OA_PUMP_EN;    
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc6LnelX.s 			page 8
+
+
+ 224              		.loc 1 176 0
+ 225 0004 064A     		ldr	r2, .L20
+ 226 0006 1368     		ldr	r3, [r2]
+ 227 0008 8021     		movs	r1, #128
+ 228 000a 0901     		lsls	r1, r1, #4
+ 229 000c 0B43     		orrs	r3, r1
+ 230 000e 1360     		str	r3, [r2]
+ 231 0010 04E0     		b	.L17
+ 232              	.L18:
+ 177:Generated_Source\PSoC4/ADC_3_Buffer.c ****     }
+ 178:Generated_Source\PSoC4/ADC_3_Buffer.c ****     else
+ 179:Generated_Source\PSoC4/ADC_3_Buffer.c ****     {
+ 180:Generated_Source\PSoC4/ADC_3_Buffer.c ****         ADC_3_Buffer_OA_RES_CTRL &= (uint32)~ADC_3_Buffer_OA_PUMP_EN;
+ 233              		.loc 1 180 0
+ 234 0012 034A     		ldr	r2, .L20
+ 235 0014 1168     		ldr	r1, [r2]
+ 236 0016 034B     		ldr	r3, .L20+4
+ 237 0018 0B40     		ands	r3, r1
+ 238 001a 1360     		str	r3, [r2]
+ 239              	.L17:
+ 181:Generated_Source\PSoC4/ADC_3_Buffer.c ****     }
+ 182:Generated_Source\PSoC4/ADC_3_Buffer.c **** }
+ 240              		.loc 1 182 0
+ 241              		@ sp needed
+ 242 001c 7047     		bx	lr
+ 243              	.L21:
+ 244 001e C046     		.align	2
+ 245              	.L20:
+ 246 0020 04003040 		.word	1076887556
+ 247 0024 FFF7FFFF 		.word	-2049
+ 248              		.cfi_endproc
+ 249              	.LFE5:
+ 250              		.size	ADC_3_Buffer_PumpControl, .-ADC_3_Buffer_PumpControl
+ 251              		.global	ADC_3_Buffer_initVar
+ 252              		.bss
+ 253              		.align	2
+ 254              		.set	.LANCHOR0,. + 0
+ 255              		.type	ADC_3_Buffer_internalPower, %object
+ 256              		.size	ADC_3_Buffer_internalPower, 4
+ 257              	ADC_3_Buffer_internalPower:
+ 258 0000 00000000 		.space	4
+ 259              		.type	ADC_3_Buffer_initVar, %object
+ 260              		.size	ADC_3_Buffer_initVar, 1
+ 261              	ADC_3_Buffer_initVar:
+ 262 0004 00       		.space	1
+ 263              		.text
+ 264              	.Letext0:
+ 265              		.file 2 "Generated_Source\\PSoC4\\cytypes.h"
+ 266              		.section	.debug_info,"",%progbits
+ 267              	.Ldebug_info0:
+ 268 0000 78010000 		.4byte	0x178
+ 269 0004 0400     		.2byte	0x4
+ 270 0006 00000000 		.4byte	.Ldebug_abbrev0
+ 271 000a 04       		.byte	0x4
+ 272 000b 01       		.uleb128 0x1
+ 273 000c F4000000 		.4byte	.LASF24
+ 274 0010 0C       		.byte	0xc
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc6LnelX.s 			page 9
+
+
+ 275 0011 68000000 		.4byte	.LASF25
+ 276 0015 13020000 		.4byte	.LASF26
+ 277 0019 00000000 		.4byte	.Ldebug_ranges0+0
+ 278 001d 00000000 		.4byte	0
+ 279 0021 00000000 		.4byte	.Ldebug_line0
+ 280 0025 02       		.uleb128 0x2
+ 281 0026 01       		.byte	0x1
+ 282 0027 06       		.byte	0x6
+ 283 0028 F5010000 		.4byte	.LASF0
+ 284 002c 02       		.uleb128 0x2
+ 285 002d 01       		.byte	0x1
+ 286 002e 08       		.byte	0x8
+ 287 002f 28000000 		.4byte	.LASF1
+ 288 0033 02       		.uleb128 0x2
+ 289 0034 02       		.byte	0x2
+ 290 0035 05       		.byte	0x5
+ 291 0036 95010000 		.4byte	.LASF2
+ 292 003a 02       		.uleb128 0x2
+ 293 003b 02       		.byte	0x2
+ 294 003c 07       		.byte	0x7
+ 295 003d 4E000000 		.4byte	.LASF3
+ 296 0041 02       		.uleb128 0x2
+ 297 0042 04       		.byte	0x4
+ 298 0043 05       		.byte	0x5
+ 299 0044 D9010000 		.4byte	.LASF4
+ 300 0048 02       		.uleb128 0x2
+ 301 0049 04       		.byte	0x4
+ 302 004a 07       		.byte	0x7
+ 303 004b 3C000000 		.4byte	.LASF5
+ 304 004f 02       		.uleb128 0x2
+ 305 0050 08       		.byte	0x8
+ 306 0051 05       		.byte	0x5
+ 307 0052 82010000 		.4byte	.LASF6
+ 308 0056 02       		.uleb128 0x2
+ 309 0057 08       		.byte	0x8
+ 310 0058 07       		.byte	0x7
+ 311 0059 CB000000 		.4byte	.LASF7
+ 312 005d 03       		.uleb128 0x3
+ 313 005e 04       		.byte	0x4
+ 314 005f 05       		.byte	0x5
+ 315 0060 696E7400 		.ascii	"int\000"
+ 316 0064 02       		.uleb128 0x2
+ 317 0065 04       		.byte	0x4
+ 318 0066 07       		.byte	0x7
+ 319 0067 AA000000 		.4byte	.LASF8
+ 320 006b 04       		.uleb128 0x4
+ 321 006c 9F010000 		.4byte	.LASF9
+ 322 0070 02       		.byte	0x2
+ 323 0071 D201     		.2byte	0x1d2
+ 324 0073 2C000000 		.4byte	0x2c
+ 325 0077 04       		.uleb128 0x4
+ 326 0078 A3000000 		.4byte	.LASF10
+ 327 007c 02       		.byte	0x2
+ 328 007d D401     		.2byte	0x1d4
+ 329 007f 48000000 		.4byte	0x48
+ 330 0083 02       		.uleb128 0x2
+ 331 0084 04       		.byte	0x4
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc6LnelX.s 			page 10
+
+
+ 332 0085 04       		.byte	0x4
+ 333 0086 22000000 		.4byte	.LASF11
+ 334 008a 02       		.uleb128 0x2
+ 335 008b 08       		.byte	0x8
+ 336 008c 04       		.byte	0x4
+ 337 008d 61000000 		.4byte	.LASF12
+ 338 0091 02       		.uleb128 0x2
+ 339 0092 01       		.byte	0x1
+ 340 0093 08       		.byte	0x8
+ 341 0094 90010000 		.4byte	.LASF13
+ 342 0098 04       		.uleb128 0x4
+ 343 0099 00000000 		.4byte	.LASF14
+ 344 009d 02       		.byte	0x2
+ 345 009e 7E02     		.2byte	0x27e
+ 346 00a0 A4000000 		.4byte	0xa4
+ 347 00a4 05       		.uleb128 0x5
+ 348 00a5 77000000 		.4byte	0x77
+ 349 00a9 06       		.uleb128 0x6
+ 350 00aa E2000000 		.4byte	.LASF15
+ 351 00ae 01       		.byte	0x1
+ 352 00af 27       		.byte	0x27
+ 353 00b0 00000000 		.4byte	.LFB0
+ 354 00b4 2C000000 		.4byte	.LFE0-.LFB0
+ 355 00b8 01       		.uleb128 0x1
+ 356 00b9 9C       		.byte	0x9c
+ 357 00ba 06       		.uleb128 0x6
+ 358 00bb B7000000 		.4byte	.LASF16
+ 359 00bf 01       		.byte	0x1
+ 360 00c0 40       		.byte	0x40
+ 361 00c1 00000000 		.4byte	.LFB1
+ 362 00c5 1C000000 		.4byte	.LFE1-.LFB1
+ 363 00c9 01       		.uleb128 0x1
+ 364 00ca 9C       		.byte	0x9c
+ 365 00cb 07       		.uleb128 0x7
+ 366 00cc E2010000 		.4byte	.LASF18
+ 367 00d0 01       		.byte	0x1
+ 368 00d1 5C       		.byte	0x5c
+ 369 00d2 00000000 		.4byte	.LFB2
+ 370 00d6 20000000 		.4byte	.LFE2-.LFB2
+ 371 00da 01       		.uleb128 0x1
+ 372 00db 9C       		.byte	0x9c
+ 373 00dc F3000000 		.4byte	0xf3
+ 374 00e0 08       		.uleb128 0x8
+ 375 00e1 0E000000 		.4byte	.LVL0
+ 376 00e5 A9000000 		.4byte	0xa9
+ 377 00e9 08       		.uleb128 0x8
+ 378 00ea 18000000 		.4byte	.LVL1
+ 379 00ee BA000000 		.4byte	0xba
+ 380 00f2 00       		.byte	0
+ 381 00f3 06       		.uleb128 0x6
+ 382 00f4 01020000 		.4byte	.LASF17
+ 383 00f8 01       		.byte	0x1
+ 384 00f9 75       		.byte	0x75
+ 385 00fa 00000000 		.4byte	.LFB3
+ 386 00fe 14000000 		.4byte	.LFE3-.LFB3
+ 387 0102 01       		.uleb128 0x1
+ 388 0103 9C       		.byte	0x9c
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc6LnelX.s 			page 11
+
+
+ 389 0104 07       		.uleb128 0x7
+ 390 0105 06000000 		.4byte	.LASF19
+ 391 0109 01       		.byte	0x1
+ 392 010a 8D       		.byte	0x8d
+ 393 010b 00000000 		.4byte	.LFB4
+ 394 010f 1C000000 		.4byte	.LFE4-.LFB4
+ 395 0113 01       		.uleb128 0x1
+ 396 0114 9C       		.byte	0x9c
+ 397 0115 36010000 		.4byte	0x136
+ 398 0119 09       		.uleb128 0x9
+ 399 011a 1C000000 		.4byte	.LASF21
+ 400 011e 01       		.byte	0x1
+ 401 011f 8D       		.byte	0x8d
+ 402 0120 77000000 		.4byte	0x77
+ 403 0124 00000000 		.4byte	.LLST0
+ 404 0128 0A       		.uleb128 0xa
+ 405 0129 746D7000 		.ascii	"tmp\000"
+ 406 012d 01       		.byte	0x1
+ 407 012e 8F       		.byte	0x8f
+ 408 012f 77000000 		.4byte	0x77
+ 409 0133 01       		.uleb128 0x1
+ 410 0134 53       		.byte	0x53
+ 411 0135 00       		.byte	0
+ 412 0136 07       		.uleb128 0x7
+ 413 0137 C0010000 		.4byte	.LASF20
+ 414 013b 01       		.byte	0x1
+ 415 013c AB       		.byte	0xab
+ 416 013d 00000000 		.4byte	.LFB5
+ 417 0141 28000000 		.4byte	.LFE5-.LFB5
+ 418 0145 01       		.uleb128 0x1
+ 419 0146 9C       		.byte	0x9c
+ 420 0147 59010000 		.4byte	0x159
+ 421 014b 0B       		.uleb128 0xb
+ 422 014c 36000000 		.4byte	.LASF22
+ 423 0150 01       		.byte	0x1
+ 424 0151 AB       		.byte	0xab
+ 425 0152 77000000 		.4byte	0x77
+ 426 0156 01       		.uleb128 0x1
+ 427 0157 50       		.byte	0x50
+ 428 0158 00       		.byte	0
+ 429 0159 0C       		.uleb128 0xc
+ 430 015a A5010000 		.4byte	.LASF23
+ 431 015e 01       		.byte	0x1
+ 432 015f 14       		.byte	0x14
+ 433 0160 77000000 		.4byte	0x77
+ 434 0164 05       		.uleb128 0x5
+ 435 0165 03       		.byte	0x3
+ 436 0166 00000000 		.4byte	ADC_3_Buffer_internalPower
+ 437 016a 0D       		.uleb128 0xd
+ 438 016b 8E000000 		.4byte	.LASF27
+ 439 016f 01       		.byte	0x1
+ 440 0170 13       		.byte	0x13
+ 441 0171 6B000000 		.4byte	0x6b
+ 442 0175 05       		.uleb128 0x5
+ 443 0176 03       		.byte	0x3
+ 444 0177 00000000 		.4byte	ADC_3_Buffer_initVar
+ 445 017b 00       		.byte	0
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc6LnelX.s 			page 12
+
+
+ 446              		.section	.debug_abbrev,"",%progbits
+ 447              	.Ldebug_abbrev0:
+ 448 0000 01       		.uleb128 0x1
+ 449 0001 11       		.uleb128 0x11
+ 450 0002 01       		.byte	0x1
+ 451 0003 25       		.uleb128 0x25
+ 452 0004 0E       		.uleb128 0xe
+ 453 0005 13       		.uleb128 0x13
+ 454 0006 0B       		.uleb128 0xb
+ 455 0007 03       		.uleb128 0x3
+ 456 0008 0E       		.uleb128 0xe
+ 457 0009 1B       		.uleb128 0x1b
+ 458 000a 0E       		.uleb128 0xe
+ 459 000b 55       		.uleb128 0x55
+ 460 000c 17       		.uleb128 0x17
+ 461 000d 11       		.uleb128 0x11
+ 462 000e 01       		.uleb128 0x1
+ 463 000f 10       		.uleb128 0x10
+ 464 0010 17       		.uleb128 0x17
+ 465 0011 00       		.byte	0
+ 466 0012 00       		.byte	0
+ 467 0013 02       		.uleb128 0x2
+ 468 0014 24       		.uleb128 0x24
+ 469 0015 00       		.byte	0
+ 470 0016 0B       		.uleb128 0xb
+ 471 0017 0B       		.uleb128 0xb
+ 472 0018 3E       		.uleb128 0x3e
+ 473 0019 0B       		.uleb128 0xb
+ 474 001a 03       		.uleb128 0x3
+ 475 001b 0E       		.uleb128 0xe
+ 476 001c 00       		.byte	0
+ 477 001d 00       		.byte	0
+ 478 001e 03       		.uleb128 0x3
+ 479 001f 24       		.uleb128 0x24
+ 480 0020 00       		.byte	0
+ 481 0021 0B       		.uleb128 0xb
+ 482 0022 0B       		.uleb128 0xb
+ 483 0023 3E       		.uleb128 0x3e
+ 484 0024 0B       		.uleb128 0xb
+ 485 0025 03       		.uleb128 0x3
+ 486 0026 08       		.uleb128 0x8
+ 487 0027 00       		.byte	0
+ 488 0028 00       		.byte	0
+ 489 0029 04       		.uleb128 0x4
+ 490 002a 16       		.uleb128 0x16
+ 491 002b 00       		.byte	0
+ 492 002c 03       		.uleb128 0x3
+ 493 002d 0E       		.uleb128 0xe
+ 494 002e 3A       		.uleb128 0x3a
+ 495 002f 0B       		.uleb128 0xb
+ 496 0030 3B       		.uleb128 0x3b
+ 497 0031 05       		.uleb128 0x5
+ 498 0032 49       		.uleb128 0x49
+ 499 0033 13       		.uleb128 0x13
+ 500 0034 00       		.byte	0
+ 501 0035 00       		.byte	0
+ 502 0036 05       		.uleb128 0x5
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc6LnelX.s 			page 13
+
+
+ 503 0037 35       		.uleb128 0x35
+ 504 0038 00       		.byte	0
+ 505 0039 49       		.uleb128 0x49
+ 506 003a 13       		.uleb128 0x13
+ 507 003b 00       		.byte	0
+ 508 003c 00       		.byte	0
+ 509 003d 06       		.uleb128 0x6
+ 510 003e 2E       		.uleb128 0x2e
+ 511 003f 00       		.byte	0
+ 512 0040 3F       		.uleb128 0x3f
+ 513 0041 19       		.uleb128 0x19
+ 514 0042 03       		.uleb128 0x3
+ 515 0043 0E       		.uleb128 0xe
+ 516 0044 3A       		.uleb128 0x3a
+ 517 0045 0B       		.uleb128 0xb
+ 518 0046 3B       		.uleb128 0x3b
+ 519 0047 0B       		.uleb128 0xb
+ 520 0048 27       		.uleb128 0x27
+ 521 0049 19       		.uleb128 0x19
+ 522 004a 11       		.uleb128 0x11
+ 523 004b 01       		.uleb128 0x1
+ 524 004c 12       		.uleb128 0x12
+ 525 004d 06       		.uleb128 0x6
+ 526 004e 40       		.uleb128 0x40
+ 527 004f 18       		.uleb128 0x18
+ 528 0050 9742     		.uleb128 0x2117
+ 529 0052 19       		.uleb128 0x19
+ 530 0053 00       		.byte	0
+ 531 0054 00       		.byte	0
+ 532 0055 07       		.uleb128 0x7
+ 533 0056 2E       		.uleb128 0x2e
+ 534 0057 01       		.byte	0x1
+ 535 0058 3F       		.uleb128 0x3f
+ 536 0059 19       		.uleb128 0x19
+ 537 005a 03       		.uleb128 0x3
+ 538 005b 0E       		.uleb128 0xe
+ 539 005c 3A       		.uleb128 0x3a
+ 540 005d 0B       		.uleb128 0xb
+ 541 005e 3B       		.uleb128 0x3b
+ 542 005f 0B       		.uleb128 0xb
+ 543 0060 27       		.uleb128 0x27
+ 544 0061 19       		.uleb128 0x19
+ 545 0062 11       		.uleb128 0x11
+ 546 0063 01       		.uleb128 0x1
+ 547 0064 12       		.uleb128 0x12
+ 548 0065 06       		.uleb128 0x6
+ 549 0066 40       		.uleb128 0x40
+ 550 0067 18       		.uleb128 0x18
+ 551 0068 9742     		.uleb128 0x2117
+ 552 006a 19       		.uleb128 0x19
+ 553 006b 01       		.uleb128 0x1
+ 554 006c 13       		.uleb128 0x13
+ 555 006d 00       		.byte	0
+ 556 006e 00       		.byte	0
+ 557 006f 08       		.uleb128 0x8
+ 558 0070 898201   		.uleb128 0x4109
+ 559 0073 00       		.byte	0
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc6LnelX.s 			page 14
+
+
+ 560 0074 11       		.uleb128 0x11
+ 561 0075 01       		.uleb128 0x1
+ 562 0076 31       		.uleb128 0x31
+ 563 0077 13       		.uleb128 0x13
+ 564 0078 00       		.byte	0
+ 565 0079 00       		.byte	0
+ 566 007a 09       		.uleb128 0x9
+ 567 007b 05       		.uleb128 0x5
+ 568 007c 00       		.byte	0
+ 569 007d 03       		.uleb128 0x3
+ 570 007e 0E       		.uleb128 0xe
+ 571 007f 3A       		.uleb128 0x3a
+ 572 0080 0B       		.uleb128 0xb
+ 573 0081 3B       		.uleb128 0x3b
+ 574 0082 0B       		.uleb128 0xb
+ 575 0083 49       		.uleb128 0x49
+ 576 0084 13       		.uleb128 0x13
+ 577 0085 02       		.uleb128 0x2
+ 578 0086 17       		.uleb128 0x17
+ 579 0087 00       		.byte	0
+ 580 0088 00       		.byte	0
+ 581 0089 0A       		.uleb128 0xa
+ 582 008a 34       		.uleb128 0x34
+ 583 008b 00       		.byte	0
+ 584 008c 03       		.uleb128 0x3
+ 585 008d 08       		.uleb128 0x8
+ 586 008e 3A       		.uleb128 0x3a
+ 587 008f 0B       		.uleb128 0xb
+ 588 0090 3B       		.uleb128 0x3b
+ 589 0091 0B       		.uleb128 0xb
+ 590 0092 49       		.uleb128 0x49
+ 591 0093 13       		.uleb128 0x13
+ 592 0094 02       		.uleb128 0x2
+ 593 0095 18       		.uleb128 0x18
+ 594 0096 00       		.byte	0
+ 595 0097 00       		.byte	0
+ 596 0098 0B       		.uleb128 0xb
+ 597 0099 05       		.uleb128 0x5
+ 598 009a 00       		.byte	0
+ 599 009b 03       		.uleb128 0x3
+ 600 009c 0E       		.uleb128 0xe
+ 601 009d 3A       		.uleb128 0x3a
+ 602 009e 0B       		.uleb128 0xb
+ 603 009f 3B       		.uleb128 0x3b
+ 604 00a0 0B       		.uleb128 0xb
+ 605 00a1 49       		.uleb128 0x49
+ 606 00a2 13       		.uleb128 0x13
+ 607 00a3 02       		.uleb128 0x2
+ 608 00a4 18       		.uleb128 0x18
+ 609 00a5 00       		.byte	0
+ 610 00a6 00       		.byte	0
+ 611 00a7 0C       		.uleb128 0xc
+ 612 00a8 34       		.uleb128 0x34
+ 613 00a9 00       		.byte	0
+ 614 00aa 03       		.uleb128 0x3
+ 615 00ab 0E       		.uleb128 0xe
+ 616 00ac 3A       		.uleb128 0x3a
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc6LnelX.s 			page 15
+
+
+ 617 00ad 0B       		.uleb128 0xb
+ 618 00ae 3B       		.uleb128 0x3b
+ 619 00af 0B       		.uleb128 0xb
+ 620 00b0 49       		.uleb128 0x49
+ 621 00b1 13       		.uleb128 0x13
+ 622 00b2 02       		.uleb128 0x2
+ 623 00b3 18       		.uleb128 0x18
+ 624 00b4 00       		.byte	0
+ 625 00b5 00       		.byte	0
+ 626 00b6 0D       		.uleb128 0xd
+ 627 00b7 34       		.uleb128 0x34
+ 628 00b8 00       		.byte	0
+ 629 00b9 03       		.uleb128 0x3
+ 630 00ba 0E       		.uleb128 0xe
+ 631 00bb 3A       		.uleb128 0x3a
+ 632 00bc 0B       		.uleb128 0xb
+ 633 00bd 3B       		.uleb128 0x3b
+ 634 00be 0B       		.uleb128 0xb
+ 635 00bf 49       		.uleb128 0x49
+ 636 00c0 13       		.uleb128 0x13
+ 637 00c1 3F       		.uleb128 0x3f
+ 638 00c2 19       		.uleb128 0x19
+ 639 00c3 02       		.uleb128 0x2
+ 640 00c4 18       		.uleb128 0x18
+ 641 00c5 00       		.byte	0
+ 642 00c6 00       		.byte	0
+ 643 00c7 00       		.byte	0
+ 644              		.section	.debug_loc,"",%progbits
+ 645              	.Ldebug_loc0:
+ 646              	.LLST0:
+ 647 0000 00000000 		.4byte	.LVL2
+ 648 0004 04000000 		.4byte	.LVL3
+ 649 0008 0100     		.2byte	0x1
+ 650 000a 50       		.byte	0x50
+ 651 000b 04000000 		.4byte	.LVL3
+ 652 000f 1C000000 		.4byte	.LFE4
+ 653 0013 0400     		.2byte	0x4
+ 654 0015 F3       		.byte	0xf3
+ 655 0016 01       		.uleb128 0x1
+ 656 0017 50       		.byte	0x50
+ 657 0018 9F       		.byte	0x9f
+ 658 0019 00000000 		.4byte	0
+ 659 001d 00000000 		.4byte	0
+ 660              		.section	.debug_aranges,"",%progbits
+ 661 0000 44000000 		.4byte	0x44
+ 662 0004 0200     		.2byte	0x2
+ 663 0006 00000000 		.4byte	.Ldebug_info0
+ 664 000a 04       		.byte	0x4
+ 665 000b 00       		.byte	0
+ 666 000c 0000     		.2byte	0
+ 667 000e 0000     		.2byte	0
+ 668 0010 00000000 		.4byte	.LFB0
+ 669 0014 2C000000 		.4byte	.LFE0-.LFB0
+ 670 0018 00000000 		.4byte	.LFB1
+ 671 001c 1C000000 		.4byte	.LFE1-.LFB1
+ 672 0020 00000000 		.4byte	.LFB2
+ 673 0024 20000000 		.4byte	.LFE2-.LFB2
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc6LnelX.s 			page 16
+
+
+ 674 0028 00000000 		.4byte	.LFB3
+ 675 002c 14000000 		.4byte	.LFE3-.LFB3
+ 676 0030 00000000 		.4byte	.LFB4
+ 677 0034 1C000000 		.4byte	.LFE4-.LFB4
+ 678 0038 00000000 		.4byte	.LFB5
+ 679 003c 28000000 		.4byte	.LFE5-.LFB5
+ 680 0040 00000000 		.4byte	0
+ 681 0044 00000000 		.4byte	0
+ 682              		.section	.debug_ranges,"",%progbits
+ 683              	.Ldebug_ranges0:
+ 684 0000 00000000 		.4byte	.LFB0
+ 685 0004 2C000000 		.4byte	.LFE0
+ 686 0008 00000000 		.4byte	.LFB1
+ 687 000c 1C000000 		.4byte	.LFE1
+ 688 0010 00000000 		.4byte	.LFB2
+ 689 0014 20000000 		.4byte	.LFE2
+ 690 0018 00000000 		.4byte	.LFB3
+ 691 001c 14000000 		.4byte	.LFE3
+ 692 0020 00000000 		.4byte	.LFB4
+ 693 0024 1C000000 		.4byte	.LFE4
+ 694 0028 00000000 		.4byte	.LFB5
+ 695 002c 28000000 		.4byte	.LFE5
+ 696 0030 00000000 		.4byte	0
+ 697 0034 00000000 		.4byte	0
+ 698              		.section	.debug_line,"",%progbits
+ 699              	.Ldebug_line0:
+ 700 0000 C4000000 		.section	.debug_str,"MS",%progbits,1
+ 700      02004900 
+ 700      00000201 
+ 700      FB0E0D00 
+ 700      01010101 
+ 701              	.LASF14:
+ 702 0000 72656733 		.ascii	"reg32\000"
+ 702      3200
+ 703              	.LASF19:
+ 704 0006 4144435F 		.ascii	"ADC_3_Buffer_SetPower\000"
+ 704      335F4275 
+ 704      66666572 
+ 704      5F536574 
+ 704      506F7765 
+ 705              	.LASF21:
+ 706 001c 706F7765 		.ascii	"power\000"
+ 706      7200
+ 707              	.LASF11:
+ 708 0022 666C6F61 		.ascii	"float\000"
+ 708      7400
+ 709              	.LASF1:
+ 710 0028 756E7369 		.ascii	"unsigned char\000"
+ 710      676E6564 
+ 710      20636861 
+ 710      7200
+ 711              	.LASF22:
+ 712 0036 6F6E4F66 		.ascii	"onOff\000"
+ 712      6600
+ 713              	.LASF5:
+ 714 003c 6C6F6E67 		.ascii	"long unsigned int\000"
+ 714      20756E73 
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc6LnelX.s 			page 17
+
+
+ 714      69676E65 
+ 714      6420696E 
+ 714      7400
+ 715              	.LASF3:
+ 716 004e 73686F72 		.ascii	"short unsigned int\000"
+ 716      7420756E 
+ 716      7369676E 
+ 716      65642069 
+ 716      6E7400
+ 717              	.LASF12:
+ 718 0061 646F7562 		.ascii	"double\000"
+ 718      6C6500
+ 719              	.LASF25:
+ 720 0068 47656E65 		.ascii	"Generated_Source\\PSoC4\\ADC_3_Buffer.c\000"
+ 720      72617465 
+ 720      645F536F 
+ 720      75726365 
+ 720      5C50536F 
+ 721              	.LASF27:
+ 722 008e 4144435F 		.ascii	"ADC_3_Buffer_initVar\000"
+ 722      335F4275 
+ 722      66666572 
+ 722      5F696E69 
+ 722      74566172 
+ 723              	.LASF10:
+ 724 00a3 75696E74 		.ascii	"uint32\000"
+ 724      333200
+ 725              	.LASF8:
+ 726 00aa 756E7369 		.ascii	"unsigned int\000"
+ 726      676E6564 
+ 726      20696E74 
+ 726      00
+ 727              	.LASF16:
+ 728 00b7 4144435F 		.ascii	"ADC_3_Buffer_Enable\000"
+ 728      335F4275 
+ 728      66666572 
+ 728      5F456E61 
+ 728      626C6500 
+ 729              	.LASF7:
+ 730 00cb 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 730      206C6F6E 
+ 730      6720756E 
+ 730      7369676E 
+ 730      65642069 
+ 731              	.LASF15:
+ 732 00e2 4144435F 		.ascii	"ADC_3_Buffer_Init\000"
+ 732      335F4275 
+ 732      66666572 
+ 732      5F496E69 
+ 732      7400
+ 733              	.LASF24:
+ 734 00f4 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
+ 734      43313120 
+ 734      352E342E 
+ 734      31203230 
+ 734      31363036 
+ 735 0127 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m0 -mthumb -g -O"
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc6LnelX.s 			page 18
+
+
+ 735      20726576 
+ 735      6973696F 
+ 735      6E203233 
+ 735      37373135 
+ 736 015a 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
+ 736      66756E63 
+ 736      74696F6E 
+ 736      2D736563 
+ 736      74696F6E 
+ 737              	.LASF6:
+ 738 0182 6C6F6E67 		.ascii	"long long int\000"
+ 738      206C6F6E 
+ 738      6720696E 
+ 738      7400
+ 739              	.LASF13:
+ 740 0190 63686172 		.ascii	"char\000"
+ 740      00
+ 741              	.LASF2:
+ 742 0195 73686F72 		.ascii	"short int\000"
+ 742      7420696E 
+ 742      7400
+ 743              	.LASF9:
+ 744 019f 75696E74 		.ascii	"uint8\000"
+ 744      3800
+ 745              	.LASF23:
+ 746 01a5 4144435F 		.ascii	"ADC_3_Buffer_internalPower\000"
+ 746      335F4275 
+ 746      66666572 
+ 746      5F696E74 
+ 746      65726E61 
+ 747              	.LASF20:
+ 748 01c0 4144435F 		.ascii	"ADC_3_Buffer_PumpControl\000"
+ 748      335F4275 
+ 748      66666572 
+ 748      5F50756D 
+ 748      70436F6E 
+ 749              	.LASF4:
+ 750 01d9 6C6F6E67 		.ascii	"long int\000"
+ 750      20696E74 
+ 750      00
+ 751              	.LASF18:
+ 752 01e2 4144435F 		.ascii	"ADC_3_Buffer_Start\000"
+ 752      335F4275 
+ 752      66666572 
+ 752      5F537461 
+ 752      727400
+ 753              	.LASF0:
+ 754 01f5 7369676E 		.ascii	"signed char\000"
+ 754      65642063 
+ 754      68617200 
+ 755              	.LASF17:
+ 756 0201 4144435F 		.ascii	"ADC_3_Buffer_Stop\000"
+ 756      335F4275 
+ 756      66666572 
+ 756      5F53746F 
+ 756      7000
+ 757              	.LASF26:
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc6LnelX.s 			page 19
+
+
+ 758 0213 433A5C55 		.ascii	"C:\\Users\\JamesN4\\Documents\\PSoC Creator\\Hybrid"
+ 758      73657273 
+ 758      5C4A616D 
+ 758      65734E34 
+ 758      5C446F63 
+ 759 0241 456E636F 		.ascii	"EncoderCY8CKIT43\\HybridEncoder.cydsn\000"
+ 759      64657243 
+ 759      5938434B 
+ 759      49543433 
+ 759      5C487962 
+ 760              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran

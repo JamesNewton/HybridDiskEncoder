@@ -1,0 +1,536 @@
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccJy6YWs.s 			page 1
+
+
+   1              		.syntax unified
+   2              		.cpu cortex-m0
+   3              		.fpu softvfp
+   4              		.eabi_attribute 20, 1
+   5              		.eabi_attribute 21, 1
+   6              		.eabi_attribute 23, 3
+   7              		.eabi_attribute 24, 1
+   8              		.eabi_attribute 25, 1
+   9              		.eabi_attribute 26, 1
+  10              		.eabi_attribute 30, 1
+  11              		.eabi_attribute 34, 0
+  12              		.eabi_attribute 18, 4
+  13              		.thumb
+  14              		.syntax unified
+  15              		.file	"Comp_0_PM.c"
+  16              		.text
+  17              	.Ltext0:
+  18              		.cfi_sections	.debug_frame
+  19              		.section	.text.Comp_0_SaveConfig,"ax",%progbits
+  20              		.align	2
+  21              		.global	Comp_0_SaveConfig
+  22              		.code	16
+  23              		.thumb_func
+  24              		.type	Comp_0_SaveConfig, %function
+  25              	Comp_0_SaveConfig:
+  26              	.LFB0:
+  27              		.file 1 "Generated_Source\\PSoC4\\Comp_0_PM.c"
+   1:Generated_Source\PSoC4/Comp_0_PM.c **** /*******************************************************************************
+   2:Generated_Source\PSoC4/Comp_0_PM.c **** * File Name: Comp_0.c
+   3:Generated_Source\PSoC4/Comp_0_PM.c **** * Version 2.20
+   4:Generated_Source\PSoC4/Comp_0_PM.c **** *
+   5:Generated_Source\PSoC4/Comp_0_PM.c **** * Description:
+   6:Generated_Source\PSoC4/Comp_0_PM.c **** *  This file provides the power management source code APIs for the
+   7:Generated_Source\PSoC4/Comp_0_PM.c **** *  Analog Low Power Comparator component.
+   8:Generated_Source\PSoC4/Comp_0_PM.c **** *
+   9:Generated_Source\PSoC4/Comp_0_PM.c **** * Note:
+  10:Generated_Source\PSoC4/Comp_0_PM.c **** *  None
+  11:Generated_Source\PSoC4/Comp_0_PM.c **** *
+  12:Generated_Source\PSoC4/Comp_0_PM.c **** ********************************************************************************
+  13:Generated_Source\PSoC4/Comp_0_PM.c **** * Copyright 2013-2016, Cypress Semiconductor Corporation.  All rights reserved.
+  14:Generated_Source\PSoC4/Comp_0_PM.c **** * You may use this file only in accordance with the license, terms, conditions,
+  15:Generated_Source\PSoC4/Comp_0_PM.c **** * disclaimers, and limitations in the end user license agreement accompanying
+  16:Generated_Source\PSoC4/Comp_0_PM.c **** * the software package with which this file was provided.
+  17:Generated_Source\PSoC4/Comp_0_PM.c **** *******************************************************************************/
+  18:Generated_Source\PSoC4/Comp_0_PM.c **** 
+  19:Generated_Source\PSoC4/Comp_0_PM.c **** #include "Comp_0.h"
+  20:Generated_Source\PSoC4/Comp_0_PM.c **** 
+  21:Generated_Source\PSoC4/Comp_0_PM.c **** 
+  22:Generated_Source\PSoC4/Comp_0_PM.c **** /*******************************************************************************
+  23:Generated_Source\PSoC4/Comp_0_PM.c **** * Function Name: Comp_0_SaveConfig
+  24:Generated_Source\PSoC4/Comp_0_PM.c **** ********************************************************************************
+  25:Generated_Source\PSoC4/Comp_0_PM.c **** *
+  26:Generated_Source\PSoC4/Comp_0_PM.c **** * Summary:
+  27:Generated_Source\PSoC4/Comp_0_PM.c **** *  Empty function. Included for consistency with other components.
+  28:Generated_Source\PSoC4/Comp_0_PM.c **** *
+  29:Generated_Source\PSoC4/Comp_0_PM.c **** * Parameters:
+  30:Generated_Source\PSoC4/Comp_0_PM.c **** *  None
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccJy6YWs.s 			page 2
+
+
+  31:Generated_Source\PSoC4/Comp_0_PM.c **** *
+  32:Generated_Source\PSoC4/Comp_0_PM.c **** * Return:
+  33:Generated_Source\PSoC4/Comp_0_PM.c **** *  None
+  34:Generated_Source\PSoC4/Comp_0_PM.c **** *
+  35:Generated_Source\PSoC4/Comp_0_PM.c **** *******************************************************************************/
+  36:Generated_Source\PSoC4/Comp_0_PM.c **** void Comp_0_SaveConfig(void)
+  37:Generated_Source\PSoC4/Comp_0_PM.c **** {
+  28              		.loc 1 37 0
+  29              		.cfi_startproc
+  30              		@ args = 0, pretend = 0, frame = 0
+  31              		@ frame_needed = 0, uses_anonymous_args = 0
+  32              		@ link register save eliminated.
+  38:Generated_Source\PSoC4/Comp_0_PM.c **** 
+  39:Generated_Source\PSoC4/Comp_0_PM.c **** }
+  33              		.loc 1 39 0
+  34              		@ sp needed
+  35 0000 7047     		bx	lr
+  36              		.cfi_endproc
+  37              	.LFE0:
+  38              		.size	Comp_0_SaveConfig, .-Comp_0_SaveConfig
+  39 0002 C046     		.section	.text.Comp_0_RestoreConfig,"ax",%progbits
+  40              		.align	2
+  41              		.global	Comp_0_RestoreConfig
+  42              		.code	16
+  43              		.thumb_func
+  44              		.type	Comp_0_RestoreConfig, %function
+  45              	Comp_0_RestoreConfig:
+  46              	.LFB1:
+  40:Generated_Source\PSoC4/Comp_0_PM.c **** 
+  41:Generated_Source\PSoC4/Comp_0_PM.c **** 
+  42:Generated_Source\PSoC4/Comp_0_PM.c **** /*******************************************************************************
+  43:Generated_Source\PSoC4/Comp_0_PM.c **** * Function Name: Comp_0_RestoreConfig
+  44:Generated_Source\PSoC4/Comp_0_PM.c **** ********************************************************************************
+  45:Generated_Source\PSoC4/Comp_0_PM.c **** *
+  46:Generated_Source\PSoC4/Comp_0_PM.c **** * Summary:
+  47:Generated_Source\PSoC4/Comp_0_PM.c **** *  Empty function. Included for consistency with other components.
+  48:Generated_Source\PSoC4/Comp_0_PM.c **** *
+  49:Generated_Source\PSoC4/Comp_0_PM.c **** * Parameters:
+  50:Generated_Source\PSoC4/Comp_0_PM.c **** *  None
+  51:Generated_Source\PSoC4/Comp_0_PM.c **** *
+  52:Generated_Source\PSoC4/Comp_0_PM.c **** * Return:
+  53:Generated_Source\PSoC4/Comp_0_PM.c **** *  None
+  54:Generated_Source\PSoC4/Comp_0_PM.c **** *
+  55:Generated_Source\PSoC4/Comp_0_PM.c **** ********************************************************************************/
+  56:Generated_Source\PSoC4/Comp_0_PM.c **** void Comp_0_RestoreConfig(void)
+  57:Generated_Source\PSoC4/Comp_0_PM.c **** {
+  47              		.loc 1 57 0
+  48              		.cfi_startproc
+  49              		@ args = 0, pretend = 0, frame = 0
+  50              		@ frame_needed = 0, uses_anonymous_args = 0
+  51              		@ link register save eliminated.
+  58:Generated_Source\PSoC4/Comp_0_PM.c **** 
+  59:Generated_Source\PSoC4/Comp_0_PM.c **** }
+  52              		.loc 1 59 0
+  53              		@ sp needed
+  54 0000 7047     		bx	lr
+  55              		.cfi_endproc
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccJy6YWs.s 			page 3
+
+
+  56              	.LFE1:
+  57              		.size	Comp_0_RestoreConfig, .-Comp_0_RestoreConfig
+  58 0002 C046     		.section	.text.Comp_0_Sleep,"ax",%progbits
+  59              		.align	2
+  60              		.global	Comp_0_Sleep
+  61              		.code	16
+  62              		.thumb_func
+  63              		.type	Comp_0_Sleep, %function
+  64              	Comp_0_Sleep:
+  65              	.LFB2:
+  60:Generated_Source\PSoC4/Comp_0_PM.c **** 
+  61:Generated_Source\PSoC4/Comp_0_PM.c **** 
+  62:Generated_Source\PSoC4/Comp_0_PM.c **** /*******************************************************************************
+  63:Generated_Source\PSoC4/Comp_0_PM.c **** * Function Name: Comp_0_Sleep
+  64:Generated_Source\PSoC4/Comp_0_PM.c **** ********************************************************************************
+  65:Generated_Source\PSoC4/Comp_0_PM.c **** *
+  66:Generated_Source\PSoC4/Comp_0_PM.c **** * Summary:
+  67:Generated_Source\PSoC4/Comp_0_PM.c **** *  Empty function. Included for consistency with other components.
+  68:Generated_Source\PSoC4/Comp_0_PM.c **** *
+  69:Generated_Source\PSoC4/Comp_0_PM.c **** * Parameters:
+  70:Generated_Source\PSoC4/Comp_0_PM.c **** *  None
+  71:Generated_Source\PSoC4/Comp_0_PM.c **** *
+  72:Generated_Source\PSoC4/Comp_0_PM.c **** * Return:
+  73:Generated_Source\PSoC4/Comp_0_PM.c **** *  None
+  74:Generated_Source\PSoC4/Comp_0_PM.c **** *
+  75:Generated_Source\PSoC4/Comp_0_PM.c **** *******************************************************************************/
+  76:Generated_Source\PSoC4/Comp_0_PM.c **** void Comp_0_Sleep(void)
+  77:Generated_Source\PSoC4/Comp_0_PM.c **** {
+  66              		.loc 1 77 0
+  67              		.cfi_startproc
+  68              		@ args = 0, pretend = 0, frame = 0
+  69              		@ frame_needed = 0, uses_anonymous_args = 0
+  70              		@ link register save eliminated.
+  78:Generated_Source\PSoC4/Comp_0_PM.c **** 
+  79:Generated_Source\PSoC4/Comp_0_PM.c **** }
+  71              		.loc 1 79 0
+  72              		@ sp needed
+  73 0000 7047     		bx	lr
+  74              		.cfi_endproc
+  75              	.LFE2:
+  76              		.size	Comp_0_Sleep, .-Comp_0_Sleep
+  77 0002 C046     		.section	.text.Comp_0_Wakeup,"ax",%progbits
+  78              		.align	2
+  79              		.global	Comp_0_Wakeup
+  80              		.code	16
+  81              		.thumb_func
+  82              		.type	Comp_0_Wakeup, %function
+  83              	Comp_0_Wakeup:
+  84              	.LFB3:
+  80:Generated_Source\PSoC4/Comp_0_PM.c **** 
+  81:Generated_Source\PSoC4/Comp_0_PM.c **** 
+  82:Generated_Source\PSoC4/Comp_0_PM.c **** /*******************************************************************************
+  83:Generated_Source\PSoC4/Comp_0_PM.c **** * Function Name: Comp_0_Wakeup
+  84:Generated_Source\PSoC4/Comp_0_PM.c **** ********************************************************************************
+  85:Generated_Source\PSoC4/Comp_0_PM.c **** *
+  86:Generated_Source\PSoC4/Comp_0_PM.c **** * Summary:
+  87:Generated_Source\PSoC4/Comp_0_PM.c **** *  Empty function. Included for consistency with other components.
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccJy6YWs.s 			page 4
+
+
+  88:Generated_Source\PSoC4/Comp_0_PM.c **** *
+  89:Generated_Source\PSoC4/Comp_0_PM.c **** * Parameters:
+  90:Generated_Source\PSoC4/Comp_0_PM.c **** *  None
+  91:Generated_Source\PSoC4/Comp_0_PM.c **** *
+  92:Generated_Source\PSoC4/Comp_0_PM.c **** * Return:
+  93:Generated_Source\PSoC4/Comp_0_PM.c **** *  None
+  94:Generated_Source\PSoC4/Comp_0_PM.c **** *
+  95:Generated_Source\PSoC4/Comp_0_PM.c **** *******************************************************************************/
+  96:Generated_Source\PSoC4/Comp_0_PM.c **** void Comp_0_Wakeup(void)
+  97:Generated_Source\PSoC4/Comp_0_PM.c **** {
+  85              		.loc 1 97 0
+  86              		.cfi_startproc
+  87              		@ args = 0, pretend = 0, frame = 0
+  88              		@ frame_needed = 0, uses_anonymous_args = 0
+  89              		@ link register save eliminated.
+  98:Generated_Source\PSoC4/Comp_0_PM.c **** 
+  99:Generated_Source\PSoC4/Comp_0_PM.c **** }
+  90              		.loc 1 99 0
+  91              		@ sp needed
+  92 0000 7047     		bx	lr
+  93              		.cfi_endproc
+  94              	.LFE3:
+  95              		.size	Comp_0_Wakeup, .-Comp_0_Wakeup
+  96 0002 C046     		.text
+  97              	.Letext0:
+  98              		.section	.debug_info,"",%progbits
+  99              	.Ldebug_info0:
+ 100 0000 C1000000 		.4byte	0xc1
+ 101 0004 0400     		.2byte	0x4
+ 102 0006 00000000 		.4byte	.Ldebug_abbrev0
+ 103 000a 04       		.byte	0x4
+ 104 000b 01       		.uleb128 0x1
+ 105 000c C9000000 		.4byte	.LASF16
+ 106 0010 0C       		.byte	0xc
+ 107 0011 00000000 		.4byte	.LASF17
+ 108 0015 89010000 		.4byte	.LASF18
+ 109 0019 00000000 		.4byte	.Ldebug_ranges0+0
+ 110 001d 00000000 		.4byte	0
+ 111 0021 00000000 		.4byte	.Ldebug_line0
+ 112 0025 02       		.uleb128 0x2
+ 113 0026 01       		.byte	0x1
+ 114 0027 06       		.byte	0x6
+ 115 0028 7D010000 		.4byte	.LASF0
+ 116 002c 02       		.uleb128 0x2
+ 117 002d 01       		.byte	0x1
+ 118 002e 08       		.byte	0x8
+ 119 002f 3E000000 		.4byte	.LASF1
+ 120 0033 02       		.uleb128 0x2
+ 121 0034 02       		.byte	0x2
+ 122 0035 05       		.byte	0x5
+ 123 0036 6A010000 		.4byte	.LASF2
+ 124 003a 02       		.uleb128 0x2
+ 125 003b 02       		.byte	0x2
+ 126 003c 07       		.byte	0x7
+ 127 003d 70000000 		.4byte	.LASF3
+ 128 0041 02       		.uleb128 0x2
+ 129 0042 04       		.byte	0x4
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccJy6YWs.s 			page 5
+
+
+ 130 0043 05       		.byte	0x5
+ 131 0044 74010000 		.4byte	.LASF4
+ 132 0048 02       		.uleb128 0x2
+ 133 0049 04       		.byte	0x4
+ 134 004a 07       		.byte	0x7
+ 135 004b 4C000000 		.4byte	.LASF5
+ 136 004f 02       		.uleb128 0x2
+ 137 0050 08       		.byte	0x8
+ 138 0051 05       		.byte	0x5
+ 139 0052 57010000 		.4byte	.LASF6
+ 140 0056 02       		.uleb128 0x2
+ 141 0057 08       		.byte	0x8
+ 142 0058 07       		.byte	0x7
+ 143 0059 97000000 		.4byte	.LASF7
+ 144 005d 03       		.uleb128 0x3
+ 145 005e 04       		.byte	0x4
+ 146 005f 05       		.byte	0x5
+ 147 0060 696E7400 		.ascii	"int\000"
+ 148 0064 02       		.uleb128 0x2
+ 149 0065 04       		.byte	0x4
+ 150 0066 07       		.byte	0x7
+ 151 0067 8A000000 		.4byte	.LASF8
+ 152 006b 02       		.uleb128 0x2
+ 153 006c 04       		.byte	0x4
+ 154 006d 04       		.byte	0x4
+ 155 006e 38000000 		.4byte	.LASF9
+ 156 0072 02       		.uleb128 0x2
+ 157 0073 08       		.byte	0x8
+ 158 0074 04       		.byte	0x4
+ 159 0075 83000000 		.4byte	.LASF10
+ 160 0079 02       		.uleb128 0x2
+ 161 007a 01       		.byte	0x1
+ 162 007b 08       		.byte	0x8
+ 163 007c 65010000 		.4byte	.LASF11
+ 164 0080 04       		.uleb128 0x4
+ 165 0081 5E000000 		.4byte	.LASF12
+ 166 0085 01       		.byte	0x1
+ 167 0086 24       		.byte	0x24
+ 168 0087 00000000 		.4byte	.LFB0
+ 169 008b 02000000 		.4byte	.LFE0-.LFB0
+ 170 008f 01       		.uleb128 0x1
+ 171 0090 9C       		.byte	0x9c
+ 172 0091 04       		.uleb128 0x4
+ 173 0092 23000000 		.4byte	.LASF13
+ 174 0096 01       		.byte	0x1
+ 175 0097 38       		.byte	0x38
+ 176 0098 00000000 		.4byte	.LFB1
+ 177 009c 02000000 		.4byte	.LFE1-.LFB1
+ 178 00a0 01       		.uleb128 0x1
+ 179 00a1 9C       		.byte	0x9c
+ 180 00a2 04       		.uleb128 0x4
+ 181 00a3 BC000000 		.4byte	.LASF14
+ 182 00a7 01       		.byte	0x1
+ 183 00a8 4C       		.byte	0x4c
+ 184 00a9 00000000 		.4byte	.LFB2
+ 185 00ad 02000000 		.4byte	.LFE2-.LFB2
+ 186 00b1 01       		.uleb128 0x1
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccJy6YWs.s 			page 6
+
+
+ 187 00b2 9C       		.byte	0x9c
+ 188 00b3 04       		.uleb128 0x4
+ 189 00b4 AE000000 		.4byte	.LASF15
+ 190 00b8 01       		.byte	0x1
+ 191 00b9 60       		.byte	0x60
+ 192 00ba 00000000 		.4byte	.LFB3
+ 193 00be 02000000 		.4byte	.LFE3-.LFB3
+ 194 00c2 01       		.uleb128 0x1
+ 195 00c3 9C       		.byte	0x9c
+ 196 00c4 00       		.byte	0
+ 197              		.section	.debug_abbrev,"",%progbits
+ 198              	.Ldebug_abbrev0:
+ 199 0000 01       		.uleb128 0x1
+ 200 0001 11       		.uleb128 0x11
+ 201 0002 01       		.byte	0x1
+ 202 0003 25       		.uleb128 0x25
+ 203 0004 0E       		.uleb128 0xe
+ 204 0005 13       		.uleb128 0x13
+ 205 0006 0B       		.uleb128 0xb
+ 206 0007 03       		.uleb128 0x3
+ 207 0008 0E       		.uleb128 0xe
+ 208 0009 1B       		.uleb128 0x1b
+ 209 000a 0E       		.uleb128 0xe
+ 210 000b 55       		.uleb128 0x55
+ 211 000c 17       		.uleb128 0x17
+ 212 000d 11       		.uleb128 0x11
+ 213 000e 01       		.uleb128 0x1
+ 214 000f 10       		.uleb128 0x10
+ 215 0010 17       		.uleb128 0x17
+ 216 0011 00       		.byte	0
+ 217 0012 00       		.byte	0
+ 218 0013 02       		.uleb128 0x2
+ 219 0014 24       		.uleb128 0x24
+ 220 0015 00       		.byte	0
+ 221 0016 0B       		.uleb128 0xb
+ 222 0017 0B       		.uleb128 0xb
+ 223 0018 3E       		.uleb128 0x3e
+ 224 0019 0B       		.uleb128 0xb
+ 225 001a 03       		.uleb128 0x3
+ 226 001b 0E       		.uleb128 0xe
+ 227 001c 00       		.byte	0
+ 228 001d 00       		.byte	0
+ 229 001e 03       		.uleb128 0x3
+ 230 001f 24       		.uleb128 0x24
+ 231 0020 00       		.byte	0
+ 232 0021 0B       		.uleb128 0xb
+ 233 0022 0B       		.uleb128 0xb
+ 234 0023 3E       		.uleb128 0x3e
+ 235 0024 0B       		.uleb128 0xb
+ 236 0025 03       		.uleb128 0x3
+ 237 0026 08       		.uleb128 0x8
+ 238 0027 00       		.byte	0
+ 239 0028 00       		.byte	0
+ 240 0029 04       		.uleb128 0x4
+ 241 002a 2E       		.uleb128 0x2e
+ 242 002b 00       		.byte	0
+ 243 002c 3F       		.uleb128 0x3f
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccJy6YWs.s 			page 7
+
+
+ 244 002d 19       		.uleb128 0x19
+ 245 002e 03       		.uleb128 0x3
+ 246 002f 0E       		.uleb128 0xe
+ 247 0030 3A       		.uleb128 0x3a
+ 248 0031 0B       		.uleb128 0xb
+ 249 0032 3B       		.uleb128 0x3b
+ 250 0033 0B       		.uleb128 0xb
+ 251 0034 27       		.uleb128 0x27
+ 252 0035 19       		.uleb128 0x19
+ 253 0036 11       		.uleb128 0x11
+ 254 0037 01       		.uleb128 0x1
+ 255 0038 12       		.uleb128 0x12
+ 256 0039 06       		.uleb128 0x6
+ 257 003a 40       		.uleb128 0x40
+ 258 003b 18       		.uleb128 0x18
+ 259 003c 9742     		.uleb128 0x2117
+ 260 003e 19       		.uleb128 0x19
+ 261 003f 00       		.byte	0
+ 262 0040 00       		.byte	0
+ 263 0041 00       		.byte	0
+ 264              		.section	.debug_aranges,"",%progbits
+ 265 0000 34000000 		.4byte	0x34
+ 266 0004 0200     		.2byte	0x2
+ 267 0006 00000000 		.4byte	.Ldebug_info0
+ 268 000a 04       		.byte	0x4
+ 269 000b 00       		.byte	0
+ 270 000c 0000     		.2byte	0
+ 271 000e 0000     		.2byte	0
+ 272 0010 00000000 		.4byte	.LFB0
+ 273 0014 02000000 		.4byte	.LFE0-.LFB0
+ 274 0018 00000000 		.4byte	.LFB1
+ 275 001c 02000000 		.4byte	.LFE1-.LFB1
+ 276 0020 00000000 		.4byte	.LFB2
+ 277 0024 02000000 		.4byte	.LFE2-.LFB2
+ 278 0028 00000000 		.4byte	.LFB3
+ 279 002c 02000000 		.4byte	.LFE3-.LFB3
+ 280 0030 00000000 		.4byte	0
+ 281 0034 00000000 		.4byte	0
+ 282              		.section	.debug_ranges,"",%progbits
+ 283              	.Ldebug_ranges0:
+ 284 0000 00000000 		.4byte	.LFB0
+ 285 0004 02000000 		.4byte	.LFE0
+ 286 0008 00000000 		.4byte	.LFB1
+ 287 000c 02000000 		.4byte	.LFE1
+ 288 0010 00000000 		.4byte	.LFB2
+ 289 0014 02000000 		.4byte	.LFE2
+ 290 0018 00000000 		.4byte	.LFB3
+ 291 001c 02000000 		.4byte	.LFE3
+ 292 0020 00000000 		.4byte	0
+ 293 0024 00000000 		.4byte	0
+ 294              		.section	.debug_line,"",%progbits
+ 295              	.Ldebug_line0:
+ 296 0000 81000000 		.section	.debug_str,"MS",%progbits,1
+ 296      02003900 
+ 296      00000201 
+ 296      FB0E0D00 
+ 296      01010101 
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccJy6YWs.s 			page 8
+
+
+ 297              	.LASF17:
+ 298 0000 47656E65 		.ascii	"Generated_Source\\PSoC4\\Comp_0_PM.c\000"
+ 298      72617465 
+ 298      645F536F 
+ 298      75726365 
+ 298      5C50536F 
+ 299              	.LASF13:
+ 300 0023 436F6D70 		.ascii	"Comp_0_RestoreConfig\000"
+ 300      5F305F52 
+ 300      6573746F 
+ 300      7265436F 
+ 300      6E666967 
+ 301              	.LASF9:
+ 302 0038 666C6F61 		.ascii	"float\000"
+ 302      7400
+ 303              	.LASF1:
+ 304 003e 756E7369 		.ascii	"unsigned char\000"
+ 304      676E6564 
+ 304      20636861 
+ 304      7200
+ 305              	.LASF5:
+ 306 004c 6C6F6E67 		.ascii	"long unsigned int\000"
+ 306      20756E73 
+ 306      69676E65 
+ 306      6420696E 
+ 306      7400
+ 307              	.LASF12:
+ 308 005e 436F6D70 		.ascii	"Comp_0_SaveConfig\000"
+ 308      5F305F53 
+ 308      61766543 
+ 308      6F6E6669 
+ 308      6700
+ 309              	.LASF3:
+ 310 0070 73686F72 		.ascii	"short unsigned int\000"
+ 310      7420756E 
+ 310      7369676E 
+ 310      65642069 
+ 310      6E7400
+ 311              	.LASF10:
+ 312 0083 646F7562 		.ascii	"double\000"
+ 312      6C6500
+ 313              	.LASF8:
+ 314 008a 756E7369 		.ascii	"unsigned int\000"
+ 314      676E6564 
+ 314      20696E74 
+ 314      00
+ 315              	.LASF7:
+ 316 0097 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 316      206C6F6E 
+ 316      6720756E 
+ 316      7369676E 
+ 316      65642069 
+ 317              	.LASF15:
+ 318 00ae 436F6D70 		.ascii	"Comp_0_Wakeup\000"
+ 318      5F305F57 
+ 318      616B6575 
+ 318      7000
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccJy6YWs.s 			page 9
+
+
+ 319              	.LASF14:
+ 320 00bc 436F6D70 		.ascii	"Comp_0_Sleep\000"
+ 320      5F305F53 
+ 320      6C656570 
+ 320      00
+ 321              	.LASF16:
+ 322 00c9 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
+ 322      43313120 
+ 322      352E342E 
+ 322      31203230 
+ 322      31363036 
+ 323 00fc 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m0 -mthumb -g -O"
+ 323      20726576 
+ 323      6973696F 
+ 323      6E203233 
+ 323      37373135 
+ 324 012f 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
+ 324      66756E63 
+ 324      74696F6E 
+ 324      2D736563 
+ 324      74696F6E 
+ 325              	.LASF6:
+ 326 0157 6C6F6E67 		.ascii	"long long int\000"
+ 326      206C6F6E 
+ 326      6720696E 
+ 326      7400
+ 327              	.LASF11:
+ 328 0165 63686172 		.ascii	"char\000"
+ 328      00
+ 329              	.LASF2:
+ 330 016a 73686F72 		.ascii	"short int\000"
+ 330      7420696E 
+ 330      7400
+ 331              	.LASF4:
+ 332 0174 6C6F6E67 		.ascii	"long int\000"
+ 332      20696E74 
+ 332      00
+ 333              	.LASF0:
+ 334 017d 7369676E 		.ascii	"signed char\000"
+ 334      65642063 
+ 334      68617200 
+ 335              	.LASF18:
+ 336 0189 433A5C55 		.ascii	"C:\\Users\\JamesN4\\Documents\\PSoC Creator\\Hybrid"
+ 336      73657273 
+ 336      5C4A616D 
+ 336      65734E34 
+ 336      5C446F63 
+ 337 01b7 456E636F 		.ascii	"EncoderCY8CKIT43\\HybridEncoder.cydsn\000"
+ 337      64657243 
+ 337      5938434B 
+ 337      49543433 
+ 337      5C487962 
+ 338              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran

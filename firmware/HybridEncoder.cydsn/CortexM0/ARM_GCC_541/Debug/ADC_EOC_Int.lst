@@ -1,0 +1,2045 @@
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccSCg5fg.s 			page 1
+
+
+   1              		.syntax unified
+   2              		.cpu cortex-m0
+   3              		.fpu softvfp
+   4              		.eabi_attribute 20, 1
+   5              		.eabi_attribute 21, 1
+   6              		.eabi_attribute 23, 3
+   7              		.eabi_attribute 24, 1
+   8              		.eabi_attribute 25, 1
+   9              		.eabi_attribute 26, 1
+  10              		.eabi_attribute 30, 1
+  11              		.eabi_attribute 34, 0
+  12              		.eabi_attribute 18, 4
+  13              		.thumb
+  14              		.syntax unified
+  15              		.file	"ADC_EOC_Int.c"
+  16              		.text
+  17              	.Ltext0:
+  18              		.cfi_sections	.debug_frame
+  19              		.section	.text.ADC_EOC_Int_Interrupt,"ax",%progbits
+  20              		.align	2
+  21              		.global	ADC_EOC_Int_Interrupt
+  22              		.code	16
+  23              		.thumb_func
+  24              		.type	ADC_EOC_Int_Interrupt, %function
+  25              	ADC_EOC_Int_Interrupt:
+  26              	.LFB4:
+  27              		.file 1 "Generated_Source\\PSoC4\\ADC_EOC_Int.c"
+   1:Generated_Source\PSoC4/ADC_EOC_Int.c **** /*******************************************************************************
+   2:Generated_Source\PSoC4/ADC_EOC_Int.c **** * File Name: ADC_EOC_Int.c  
+   3:Generated_Source\PSoC4/ADC_EOC_Int.c **** * Version 1.70
+   4:Generated_Source\PSoC4/ADC_EOC_Int.c **** *
+   5:Generated_Source\PSoC4/ADC_EOC_Int.c **** *  Description:
+   6:Generated_Source\PSoC4/ADC_EOC_Int.c **** *   API for controlling the state of an interrupt.
+   7:Generated_Source\PSoC4/ADC_EOC_Int.c **** *
+   8:Generated_Source\PSoC4/ADC_EOC_Int.c **** *
+   9:Generated_Source\PSoC4/ADC_EOC_Int.c **** *  Note:
+  10:Generated_Source\PSoC4/ADC_EOC_Int.c **** *
+  11:Generated_Source\PSoC4/ADC_EOC_Int.c **** ********************************************************************************
+  12:Generated_Source\PSoC4/ADC_EOC_Int.c **** * Copyright 2008-2015, Cypress Semiconductor Corporation.  All rights reserved.
+  13:Generated_Source\PSoC4/ADC_EOC_Int.c **** * You may use this file only in accordance with the license, terms, conditions, 
+  14:Generated_Source\PSoC4/ADC_EOC_Int.c **** * disclaimers, and limitations in the end user license agreement accompanying 
+  15:Generated_Source\PSoC4/ADC_EOC_Int.c **** * the software package with which this file was provided.
+  16:Generated_Source\PSoC4/ADC_EOC_Int.c **** *******************************************************************************/
+  17:Generated_Source\PSoC4/ADC_EOC_Int.c **** 
+  18:Generated_Source\PSoC4/ADC_EOC_Int.c **** 
+  19:Generated_Source\PSoC4/ADC_EOC_Int.c **** #include <cydevice_trm.h>
+  20:Generated_Source\PSoC4/ADC_EOC_Int.c **** #include <CyLib.h>
+  21:Generated_Source\PSoC4/ADC_EOC_Int.c **** #include <ADC_EOC_Int.h>
+  22:Generated_Source\PSoC4/ADC_EOC_Int.c **** #include "cyapicallbacks.h"
+  23:Generated_Source\PSoC4/ADC_EOC_Int.c **** 
+  24:Generated_Source\PSoC4/ADC_EOC_Int.c **** #if !defined(ADC_EOC_Int__REMOVED) /* Check for removal by optimization */
+  25:Generated_Source\PSoC4/ADC_EOC_Int.c **** 
+  26:Generated_Source\PSoC4/ADC_EOC_Int.c **** /*******************************************************************************
+  27:Generated_Source\PSoC4/ADC_EOC_Int.c **** *  Place your includes, defines and code here 
+  28:Generated_Source\PSoC4/ADC_EOC_Int.c **** ********************************************************************************/
+  29:Generated_Source\PSoC4/ADC_EOC_Int.c **** /* `#START ADC_EOC_Int_intc` */
+  30:Generated_Source\PSoC4/ADC_EOC_Int.c **** 
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccSCg5fg.s 			page 2
+
+
+  31:Generated_Source\PSoC4/ADC_EOC_Int.c **** /* `#END` */
+  32:Generated_Source\PSoC4/ADC_EOC_Int.c **** 
+  33:Generated_Source\PSoC4/ADC_EOC_Int.c **** extern cyisraddress CyRamVectors[CYINT_IRQ_BASE + CY_NUM_INTERRUPTS];
+  34:Generated_Source\PSoC4/ADC_EOC_Int.c **** 
+  35:Generated_Source\PSoC4/ADC_EOC_Int.c **** /* Declared in startup, used to set unused interrupts to. */
+  36:Generated_Source\PSoC4/ADC_EOC_Int.c **** CY_ISR_PROTO(IntDefaultHandler);
+  37:Generated_Source\PSoC4/ADC_EOC_Int.c **** 
+  38:Generated_Source\PSoC4/ADC_EOC_Int.c **** 
+  39:Generated_Source\PSoC4/ADC_EOC_Int.c **** /*******************************************************************************
+  40:Generated_Source\PSoC4/ADC_EOC_Int.c **** * Function Name: ADC_EOC_Int_Start
+  41:Generated_Source\PSoC4/ADC_EOC_Int.c **** ********************************************************************************
+  42:Generated_Source\PSoC4/ADC_EOC_Int.c **** *
+  43:Generated_Source\PSoC4/ADC_EOC_Int.c **** * Summary:
+  44:Generated_Source\PSoC4/ADC_EOC_Int.c **** *  Set up the interrupt and enable it. This function disables the interrupt, 
+  45:Generated_Source\PSoC4/ADC_EOC_Int.c **** *  sets the default interrupt vector, sets the priority from the value in the
+  46:Generated_Source\PSoC4/ADC_EOC_Int.c **** *  Design Wide Resources Interrupt Editor, then enables the interrupt to the 
+  47:Generated_Source\PSoC4/ADC_EOC_Int.c **** *  interrupt controller.
+  48:Generated_Source\PSoC4/ADC_EOC_Int.c **** *
+  49:Generated_Source\PSoC4/ADC_EOC_Int.c **** * Parameters:  
+  50:Generated_Source\PSoC4/ADC_EOC_Int.c **** *   None
+  51:Generated_Source\PSoC4/ADC_EOC_Int.c **** *
+  52:Generated_Source\PSoC4/ADC_EOC_Int.c **** * Return:
+  53:Generated_Source\PSoC4/ADC_EOC_Int.c **** *   None
+  54:Generated_Source\PSoC4/ADC_EOC_Int.c **** *
+  55:Generated_Source\PSoC4/ADC_EOC_Int.c **** *******************************************************************************/
+  56:Generated_Source\PSoC4/ADC_EOC_Int.c **** void ADC_EOC_Int_Start(void)
+  57:Generated_Source\PSoC4/ADC_EOC_Int.c **** {
+  58:Generated_Source\PSoC4/ADC_EOC_Int.c ****     /* For all we know the interrupt is active. */
+  59:Generated_Source\PSoC4/ADC_EOC_Int.c ****     ADC_EOC_Int_Disable();
+  60:Generated_Source\PSoC4/ADC_EOC_Int.c **** 
+  61:Generated_Source\PSoC4/ADC_EOC_Int.c ****     /* Set the ISR to point to the ADC_EOC_Int Interrupt. */
+  62:Generated_Source\PSoC4/ADC_EOC_Int.c ****     ADC_EOC_Int_SetVector(&ADC_EOC_Int_Interrupt);
+  63:Generated_Source\PSoC4/ADC_EOC_Int.c **** 
+  64:Generated_Source\PSoC4/ADC_EOC_Int.c ****     /* Set the priority. */
+  65:Generated_Source\PSoC4/ADC_EOC_Int.c ****     ADC_EOC_Int_SetPriority((uint8)ADC_EOC_Int_INTC_PRIOR_NUMBER);
+  66:Generated_Source\PSoC4/ADC_EOC_Int.c **** 
+  67:Generated_Source\PSoC4/ADC_EOC_Int.c ****     /* Enable it. */
+  68:Generated_Source\PSoC4/ADC_EOC_Int.c ****     ADC_EOC_Int_Enable();
+  69:Generated_Source\PSoC4/ADC_EOC_Int.c **** }
+  70:Generated_Source\PSoC4/ADC_EOC_Int.c **** 
+  71:Generated_Source\PSoC4/ADC_EOC_Int.c **** 
+  72:Generated_Source\PSoC4/ADC_EOC_Int.c **** /*******************************************************************************
+  73:Generated_Source\PSoC4/ADC_EOC_Int.c **** * Function Name: ADC_EOC_Int_StartEx
+  74:Generated_Source\PSoC4/ADC_EOC_Int.c **** ********************************************************************************
+  75:Generated_Source\PSoC4/ADC_EOC_Int.c **** *
+  76:Generated_Source\PSoC4/ADC_EOC_Int.c **** * Summary:
+  77:Generated_Source\PSoC4/ADC_EOC_Int.c **** *  Sets up the interrupt and enables it. This function disables the interrupt,
+  78:Generated_Source\PSoC4/ADC_EOC_Int.c **** *  sets the interrupt vector based on the address passed in, sets the priority 
+  79:Generated_Source\PSoC4/ADC_EOC_Int.c **** *  from the value in the Design Wide Resources Interrupt Editor, then enables 
+  80:Generated_Source\PSoC4/ADC_EOC_Int.c **** *  the interrupt to the interrupt controller.
+  81:Generated_Source\PSoC4/ADC_EOC_Int.c **** *  
+  82:Generated_Source\PSoC4/ADC_EOC_Int.c **** *  When defining ISR functions, the CY_ISR and CY_ISR_PROTO macros should be 
+  83:Generated_Source\PSoC4/ADC_EOC_Int.c **** *  used to provide consistent definition across compilers:
+  84:Generated_Source\PSoC4/ADC_EOC_Int.c **** *  
+  85:Generated_Source\PSoC4/ADC_EOC_Int.c **** *  Function definition example:
+  86:Generated_Source\PSoC4/ADC_EOC_Int.c **** *   CY_ISR(MyISR)
+  87:Generated_Source\PSoC4/ADC_EOC_Int.c **** *   {
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccSCg5fg.s 			page 3
+
+
+  88:Generated_Source\PSoC4/ADC_EOC_Int.c **** *   }
+  89:Generated_Source\PSoC4/ADC_EOC_Int.c **** *   Function prototype example:
+  90:Generated_Source\PSoC4/ADC_EOC_Int.c **** *   CY_ISR_PROTO(MyISR);
+  91:Generated_Source\PSoC4/ADC_EOC_Int.c **** *
+  92:Generated_Source\PSoC4/ADC_EOC_Int.c **** * Parameters:  
+  93:Generated_Source\PSoC4/ADC_EOC_Int.c **** *   address: Address of the ISR to set in the interrupt vector table.
+  94:Generated_Source\PSoC4/ADC_EOC_Int.c **** *
+  95:Generated_Source\PSoC4/ADC_EOC_Int.c **** * Return:
+  96:Generated_Source\PSoC4/ADC_EOC_Int.c **** *   None
+  97:Generated_Source\PSoC4/ADC_EOC_Int.c **** *
+  98:Generated_Source\PSoC4/ADC_EOC_Int.c **** *******************************************************************************/
+  99:Generated_Source\PSoC4/ADC_EOC_Int.c **** void ADC_EOC_Int_StartEx(cyisraddress address)
+ 100:Generated_Source\PSoC4/ADC_EOC_Int.c **** {
+ 101:Generated_Source\PSoC4/ADC_EOC_Int.c ****     /* For all we know the interrupt is active. */
+ 102:Generated_Source\PSoC4/ADC_EOC_Int.c ****     ADC_EOC_Int_Disable();
+ 103:Generated_Source\PSoC4/ADC_EOC_Int.c **** 
+ 104:Generated_Source\PSoC4/ADC_EOC_Int.c ****     /* Set the ISR to point to the ADC_EOC_Int Interrupt. */
+ 105:Generated_Source\PSoC4/ADC_EOC_Int.c ****     ADC_EOC_Int_SetVector(address);
+ 106:Generated_Source\PSoC4/ADC_EOC_Int.c **** 
+ 107:Generated_Source\PSoC4/ADC_EOC_Int.c ****     /* Set the priority. */
+ 108:Generated_Source\PSoC4/ADC_EOC_Int.c ****     ADC_EOC_Int_SetPriority((uint8)ADC_EOC_Int_INTC_PRIOR_NUMBER);
+ 109:Generated_Source\PSoC4/ADC_EOC_Int.c **** 
+ 110:Generated_Source\PSoC4/ADC_EOC_Int.c ****     /* Enable it. */
+ 111:Generated_Source\PSoC4/ADC_EOC_Int.c ****     ADC_EOC_Int_Enable();
+ 112:Generated_Source\PSoC4/ADC_EOC_Int.c **** }
+ 113:Generated_Source\PSoC4/ADC_EOC_Int.c **** 
+ 114:Generated_Source\PSoC4/ADC_EOC_Int.c **** 
+ 115:Generated_Source\PSoC4/ADC_EOC_Int.c **** /*******************************************************************************
+ 116:Generated_Source\PSoC4/ADC_EOC_Int.c **** * Function Name: ADC_EOC_Int_Stop
+ 117:Generated_Source\PSoC4/ADC_EOC_Int.c **** ********************************************************************************
+ 118:Generated_Source\PSoC4/ADC_EOC_Int.c **** *
+ 119:Generated_Source\PSoC4/ADC_EOC_Int.c **** * Summary:
+ 120:Generated_Source\PSoC4/ADC_EOC_Int.c **** *   Disables and removes the interrupt.
+ 121:Generated_Source\PSoC4/ADC_EOC_Int.c **** *
+ 122:Generated_Source\PSoC4/ADC_EOC_Int.c **** * Parameters:  
+ 123:Generated_Source\PSoC4/ADC_EOC_Int.c **** *   None
+ 124:Generated_Source\PSoC4/ADC_EOC_Int.c **** *
+ 125:Generated_Source\PSoC4/ADC_EOC_Int.c **** * Return:
+ 126:Generated_Source\PSoC4/ADC_EOC_Int.c **** *   None
+ 127:Generated_Source\PSoC4/ADC_EOC_Int.c **** *
+ 128:Generated_Source\PSoC4/ADC_EOC_Int.c **** *******************************************************************************/
+ 129:Generated_Source\PSoC4/ADC_EOC_Int.c **** void ADC_EOC_Int_Stop(void)
+ 130:Generated_Source\PSoC4/ADC_EOC_Int.c **** {
+ 131:Generated_Source\PSoC4/ADC_EOC_Int.c ****     /* Disable this interrupt. */
+ 132:Generated_Source\PSoC4/ADC_EOC_Int.c ****     ADC_EOC_Int_Disable();
+ 133:Generated_Source\PSoC4/ADC_EOC_Int.c **** 
+ 134:Generated_Source\PSoC4/ADC_EOC_Int.c ****     /* Set the ISR to point to the passive one. */
+ 135:Generated_Source\PSoC4/ADC_EOC_Int.c ****     ADC_EOC_Int_SetVector(&IntDefaultHandler);
+ 136:Generated_Source\PSoC4/ADC_EOC_Int.c **** }
+ 137:Generated_Source\PSoC4/ADC_EOC_Int.c **** 
+ 138:Generated_Source\PSoC4/ADC_EOC_Int.c **** 
+ 139:Generated_Source\PSoC4/ADC_EOC_Int.c **** /*******************************************************************************
+ 140:Generated_Source\PSoC4/ADC_EOC_Int.c **** * Function Name: ADC_EOC_Int_Interrupt
+ 141:Generated_Source\PSoC4/ADC_EOC_Int.c **** ********************************************************************************
+ 142:Generated_Source\PSoC4/ADC_EOC_Int.c **** *
+ 143:Generated_Source\PSoC4/ADC_EOC_Int.c **** * Summary:
+ 144:Generated_Source\PSoC4/ADC_EOC_Int.c **** *   The default Interrupt Service Routine for ADC_EOC_Int.
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccSCg5fg.s 			page 4
+
+
+ 145:Generated_Source\PSoC4/ADC_EOC_Int.c **** *
+ 146:Generated_Source\PSoC4/ADC_EOC_Int.c **** *   Add custom code between the START and END comments to keep the next version
+ 147:Generated_Source\PSoC4/ADC_EOC_Int.c **** *   of this file from over-writing your code.
+ 148:Generated_Source\PSoC4/ADC_EOC_Int.c **** *
+ 149:Generated_Source\PSoC4/ADC_EOC_Int.c **** *   Note You may use either the default ISR by using this API, or you may define
+ 150:Generated_Source\PSoC4/ADC_EOC_Int.c **** *   your own separate ISR through ISR_StartEx().
+ 151:Generated_Source\PSoC4/ADC_EOC_Int.c **** *
+ 152:Generated_Source\PSoC4/ADC_EOC_Int.c **** * Parameters:  
+ 153:Generated_Source\PSoC4/ADC_EOC_Int.c **** *   None
+ 154:Generated_Source\PSoC4/ADC_EOC_Int.c **** *
+ 155:Generated_Source\PSoC4/ADC_EOC_Int.c **** * Return:
+ 156:Generated_Source\PSoC4/ADC_EOC_Int.c **** *   None
+ 157:Generated_Source\PSoC4/ADC_EOC_Int.c **** *
+ 158:Generated_Source\PSoC4/ADC_EOC_Int.c **** *******************************************************************************/
+ 159:Generated_Source\PSoC4/ADC_EOC_Int.c **** CY_ISR(ADC_EOC_Int_Interrupt)
+ 160:Generated_Source\PSoC4/ADC_EOC_Int.c **** {
+  28              		.loc 1 160 0
+  29              		.cfi_startproc
+  30              		@ args = 0, pretend = 0, frame = 0
+  31              		@ frame_needed = 0, uses_anonymous_args = 0
+  32              		@ link register save eliminated.
+ 161:Generated_Source\PSoC4/ADC_EOC_Int.c ****     #ifdef ADC_EOC_Int_INTERRUPT_INTERRUPT_CALLBACK
+ 162:Generated_Source\PSoC4/ADC_EOC_Int.c ****         ADC_EOC_Int_Interrupt_InterruptCallback();
+ 163:Generated_Source\PSoC4/ADC_EOC_Int.c ****     #endif /* ADC_EOC_Int_INTERRUPT_INTERRUPT_CALLBACK */ 
+ 164:Generated_Source\PSoC4/ADC_EOC_Int.c **** 
+ 165:Generated_Source\PSoC4/ADC_EOC_Int.c ****     /*  Place your Interrupt code here. */
+ 166:Generated_Source\PSoC4/ADC_EOC_Int.c ****     /* `#START ADC_EOC_Int_Interrupt` */
+ 167:Generated_Source\PSoC4/ADC_EOC_Int.c **** 
+ 168:Generated_Source\PSoC4/ADC_EOC_Int.c ****     /* `#END` */
+ 169:Generated_Source\PSoC4/ADC_EOC_Int.c **** }
+  33              		.loc 1 169 0
+  34              		@ sp needed
+  35 0000 7047     		bx	lr
+  36              		.cfi_endproc
+  37              	.LFE4:
+  38              		.size	ADC_EOC_Int_Interrupt, .-ADC_EOC_Int_Interrupt
+  39 0002 C046     		.section	.text.ADC_EOC_Int_SetVector,"ax",%progbits
+  40              		.align	2
+  41              		.global	ADC_EOC_Int_SetVector
+  42              		.code	16
+  43              		.thumb_func
+  44              		.type	ADC_EOC_Int_SetVector, %function
+  45              	ADC_EOC_Int_SetVector:
+  46              	.LFB5:
+ 170:Generated_Source\PSoC4/ADC_EOC_Int.c **** 
+ 171:Generated_Source\PSoC4/ADC_EOC_Int.c **** 
+ 172:Generated_Source\PSoC4/ADC_EOC_Int.c **** /*******************************************************************************
+ 173:Generated_Source\PSoC4/ADC_EOC_Int.c **** * Function Name: ADC_EOC_Int_SetVector
+ 174:Generated_Source\PSoC4/ADC_EOC_Int.c **** ********************************************************************************
+ 175:Generated_Source\PSoC4/ADC_EOC_Int.c **** *
+ 176:Generated_Source\PSoC4/ADC_EOC_Int.c **** * Summary:
+ 177:Generated_Source\PSoC4/ADC_EOC_Int.c **** *   Change the ISR vector for the Interrupt. Note calling ADC_EOC_Int_Start
+ 178:Generated_Source\PSoC4/ADC_EOC_Int.c **** *   will override any effect this method would have had. To set the vector 
+ 179:Generated_Source\PSoC4/ADC_EOC_Int.c **** *   before the component has been started use ADC_EOC_Int_StartEx instead.
+ 180:Generated_Source\PSoC4/ADC_EOC_Int.c **** * 
+ 181:Generated_Source\PSoC4/ADC_EOC_Int.c **** *   When defining ISR functions, the CY_ISR and CY_ISR_PROTO macros should be 
+ 182:Generated_Source\PSoC4/ADC_EOC_Int.c **** *   used to provide consistent definition across compilers:
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccSCg5fg.s 			page 5
+
+
+ 183:Generated_Source\PSoC4/ADC_EOC_Int.c **** *
+ 184:Generated_Source\PSoC4/ADC_EOC_Int.c **** *   Function definition example:
+ 185:Generated_Source\PSoC4/ADC_EOC_Int.c **** *   CY_ISR(MyISR)
+ 186:Generated_Source\PSoC4/ADC_EOC_Int.c **** *   {
+ 187:Generated_Source\PSoC4/ADC_EOC_Int.c **** *   }
+ 188:Generated_Source\PSoC4/ADC_EOC_Int.c **** *
+ 189:Generated_Source\PSoC4/ADC_EOC_Int.c **** *   Function prototype example:
+ 190:Generated_Source\PSoC4/ADC_EOC_Int.c **** *     CY_ISR_PROTO(MyISR);
+ 191:Generated_Source\PSoC4/ADC_EOC_Int.c **** *
+ 192:Generated_Source\PSoC4/ADC_EOC_Int.c **** * Parameters:
+ 193:Generated_Source\PSoC4/ADC_EOC_Int.c **** *   address: Address of the ISR to set in the interrupt vector table.
+ 194:Generated_Source\PSoC4/ADC_EOC_Int.c **** *
+ 195:Generated_Source\PSoC4/ADC_EOC_Int.c **** * Return:
+ 196:Generated_Source\PSoC4/ADC_EOC_Int.c **** *   None
+ 197:Generated_Source\PSoC4/ADC_EOC_Int.c **** *
+ 198:Generated_Source\PSoC4/ADC_EOC_Int.c **** *******************************************************************************/
+ 199:Generated_Source\PSoC4/ADC_EOC_Int.c **** void ADC_EOC_Int_SetVector(cyisraddress address)
+ 200:Generated_Source\PSoC4/ADC_EOC_Int.c **** {
+  47              		.loc 1 200 0
+  48              		.cfi_startproc
+  49              		@ args = 0, pretend = 0, frame = 0
+  50              		@ frame_needed = 0, uses_anonymous_args = 0
+  51              		@ link register save eliminated.
+  52              	.LVL0:
+ 201:Generated_Source\PSoC4/ADC_EOC_Int.c ****     CyRamVectors[CYINT_IRQ_BASE + ADC_EOC_Int__INTC_NUMBER] = address;
+  53              		.loc 1 201 0
+  54 0000 014B     		ldr	r3, .L3
+  55 0002 1864     		str	r0, [r3, #64]
+ 202:Generated_Source\PSoC4/ADC_EOC_Int.c **** }
+  56              		.loc 1 202 0
+  57              		@ sp needed
+  58 0004 7047     		bx	lr
+  59              	.L4:
+  60 0006 C046     		.align	2
+  61              	.L3:
+  62 0008 00000000 		.word	CyRamVectors
+  63              		.cfi_endproc
+  64              	.LFE5:
+  65              		.size	ADC_EOC_Int_SetVector, .-ADC_EOC_Int_SetVector
+  66              		.section	.text.ADC_EOC_Int_GetVector,"ax",%progbits
+  67              		.align	2
+  68              		.global	ADC_EOC_Int_GetVector
+  69              		.code	16
+  70              		.thumb_func
+  71              		.type	ADC_EOC_Int_GetVector, %function
+  72              	ADC_EOC_Int_GetVector:
+  73              	.LFB6:
+ 203:Generated_Source\PSoC4/ADC_EOC_Int.c **** 
+ 204:Generated_Source\PSoC4/ADC_EOC_Int.c **** 
+ 205:Generated_Source\PSoC4/ADC_EOC_Int.c **** /*******************************************************************************
+ 206:Generated_Source\PSoC4/ADC_EOC_Int.c **** * Function Name: ADC_EOC_Int_GetVector
+ 207:Generated_Source\PSoC4/ADC_EOC_Int.c **** ********************************************************************************
+ 208:Generated_Source\PSoC4/ADC_EOC_Int.c **** *
+ 209:Generated_Source\PSoC4/ADC_EOC_Int.c **** * Summary:
+ 210:Generated_Source\PSoC4/ADC_EOC_Int.c **** *   Gets the "address" of the current ISR vector for the Interrupt.
+ 211:Generated_Source\PSoC4/ADC_EOC_Int.c **** *
+ 212:Generated_Source\PSoC4/ADC_EOC_Int.c **** * Parameters:
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccSCg5fg.s 			page 6
+
+
+ 213:Generated_Source\PSoC4/ADC_EOC_Int.c **** *   None
+ 214:Generated_Source\PSoC4/ADC_EOC_Int.c **** *
+ 215:Generated_Source\PSoC4/ADC_EOC_Int.c **** * Return:
+ 216:Generated_Source\PSoC4/ADC_EOC_Int.c **** *   Address of the ISR in the interrupt vector table.
+ 217:Generated_Source\PSoC4/ADC_EOC_Int.c **** *
+ 218:Generated_Source\PSoC4/ADC_EOC_Int.c **** *******************************************************************************/
+ 219:Generated_Source\PSoC4/ADC_EOC_Int.c **** cyisraddress ADC_EOC_Int_GetVector(void)
+ 220:Generated_Source\PSoC4/ADC_EOC_Int.c **** {
+  74              		.loc 1 220 0
+  75              		.cfi_startproc
+  76              		@ args = 0, pretend = 0, frame = 0
+  77              		@ frame_needed = 0, uses_anonymous_args = 0
+  78              		@ link register save eliminated.
+ 221:Generated_Source\PSoC4/ADC_EOC_Int.c ****     return CyRamVectors[CYINT_IRQ_BASE + ADC_EOC_Int__INTC_NUMBER];
+  79              		.loc 1 221 0
+  80 0000 014B     		ldr	r3, .L6
+  81 0002 186C     		ldr	r0, [r3, #64]
+ 222:Generated_Source\PSoC4/ADC_EOC_Int.c **** }
+  82              		.loc 1 222 0
+  83              		@ sp needed
+  84 0004 7047     		bx	lr
+  85              	.L7:
+  86 0006 C046     		.align	2
+  87              	.L6:
+  88 0008 00000000 		.word	CyRamVectors
+  89              		.cfi_endproc
+  90              	.LFE6:
+  91              		.size	ADC_EOC_Int_GetVector, .-ADC_EOC_Int_GetVector
+  92              		.section	.text.ADC_EOC_Int_SetPriority,"ax",%progbits
+  93              		.align	2
+  94              		.global	ADC_EOC_Int_SetPriority
+  95              		.code	16
+  96              		.thumb_func
+  97              		.type	ADC_EOC_Int_SetPriority, %function
+  98              	ADC_EOC_Int_SetPriority:
+  99              	.LFB7:
+ 223:Generated_Source\PSoC4/ADC_EOC_Int.c **** 
+ 224:Generated_Source\PSoC4/ADC_EOC_Int.c **** 
+ 225:Generated_Source\PSoC4/ADC_EOC_Int.c **** /*******************************************************************************
+ 226:Generated_Source\PSoC4/ADC_EOC_Int.c **** * Function Name: ADC_EOC_Int_SetPriority
+ 227:Generated_Source\PSoC4/ADC_EOC_Int.c **** ********************************************************************************
+ 228:Generated_Source\PSoC4/ADC_EOC_Int.c **** *
+ 229:Generated_Source\PSoC4/ADC_EOC_Int.c **** * Summary:
+ 230:Generated_Source\PSoC4/ADC_EOC_Int.c **** *   Sets the Priority of the Interrupt. 
+ 231:Generated_Source\PSoC4/ADC_EOC_Int.c **** *
+ 232:Generated_Source\PSoC4/ADC_EOC_Int.c **** *   Note calling ADC_EOC_Int_Start or ADC_EOC_Int_StartEx will 
+ 233:Generated_Source\PSoC4/ADC_EOC_Int.c **** *   override any effect this API would have had. This API should only be called
+ 234:Generated_Source\PSoC4/ADC_EOC_Int.c **** *   after ADC_EOC_Int_Start or ADC_EOC_Int_StartEx has been called. 
+ 235:Generated_Source\PSoC4/ADC_EOC_Int.c **** *   To set the initial priority for the component, use the Design-Wide Resources
+ 236:Generated_Source\PSoC4/ADC_EOC_Int.c **** *   Interrupt Editor.
+ 237:Generated_Source\PSoC4/ADC_EOC_Int.c **** *
+ 238:Generated_Source\PSoC4/ADC_EOC_Int.c **** *   Note This API has no effect on Non-maskable interrupt NMI).
+ 239:Generated_Source\PSoC4/ADC_EOC_Int.c **** *
+ 240:Generated_Source\PSoC4/ADC_EOC_Int.c **** * Parameters:
+ 241:Generated_Source\PSoC4/ADC_EOC_Int.c **** *   priority: Priority of the interrupt, 0 being the highest priority
+ 242:Generated_Source\PSoC4/ADC_EOC_Int.c **** *             PSoC 3 and PSoC 5LP: Priority is from 0 to 7.
+ 243:Generated_Source\PSoC4/ADC_EOC_Int.c **** *             PSoC 4: Priority is from 0 to 3.
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccSCg5fg.s 			page 7
+
+
+ 244:Generated_Source\PSoC4/ADC_EOC_Int.c **** *
+ 245:Generated_Source\PSoC4/ADC_EOC_Int.c **** * Return:
+ 246:Generated_Source\PSoC4/ADC_EOC_Int.c **** *   None
+ 247:Generated_Source\PSoC4/ADC_EOC_Int.c **** *
+ 248:Generated_Source\PSoC4/ADC_EOC_Int.c **** *******************************************************************************/
+ 249:Generated_Source\PSoC4/ADC_EOC_Int.c **** void ADC_EOC_Int_SetPriority(uint8 priority)
+ 250:Generated_Source\PSoC4/ADC_EOC_Int.c **** {
+ 100              		.loc 1 250 0
+ 101              		.cfi_startproc
+ 102              		@ args = 0, pretend = 0, frame = 0
+ 103              		@ frame_needed = 0, uses_anonymous_args = 0
+ 104              	.LVL1:
+ 105 0000 10B5     		push	{r4, lr}
+ 106              		.cfi_def_cfa_offset 8
+ 107              		.cfi_offset 4, -8
+ 108              		.cfi_offset 14, -4
+ 109 0002 0400     		movs	r4, r0
+ 110              	.LVL2:
+ 251:Generated_Source\PSoC4/ADC_EOC_Int.c **** 	uint8 interruptState;
+ 252:Generated_Source\PSoC4/ADC_EOC_Int.c ****     uint32 priorityOffset = ((ADC_EOC_Int__INTC_NUMBER % 4u) * 8u) + 6u;
+ 253:Generated_Source\PSoC4/ADC_EOC_Int.c ****     
+ 254:Generated_Source\PSoC4/ADC_EOC_Int.c **** 	interruptState = CyEnterCriticalSection();
+ 111              		.loc 1 254 0
+ 112 0004 FFF7FEFF 		bl	CyEnterCriticalSection
+ 113              	.LVL3:
+ 255:Generated_Source\PSoC4/ADC_EOC_Int.c ****     *ADC_EOC_Int_INTC_PRIOR = (*ADC_EOC_Int_INTC_PRIOR & (uint32)(~ADC_EOC_Int__INTC_PRIOR_MASK)) |
+ 114              		.loc 1 255 0
+ 115 0008 044A     		ldr	r2, .L9
+ 116 000a 1368     		ldr	r3, [r2]
+ 117 000c C021     		movs	r1, #192
+ 118 000e 8B43     		bics	r3, r1
+ 256:Generated_Source\PSoC4/ADC_EOC_Int.c ****                                     ((uint32)priority << priorityOffset);
+ 119              		.loc 1 256 0
+ 120 0010 A401     		lsls	r4, r4, #6
+ 255:Generated_Source\PSoC4/ADC_EOC_Int.c ****     *ADC_EOC_Int_INTC_PRIOR = (*ADC_EOC_Int_INTC_PRIOR & (uint32)(~ADC_EOC_Int__INTC_PRIOR_MASK)) |
+ 121              		.loc 1 255 0
+ 122 0012 1C43     		orrs	r4, r3
+ 123 0014 1460     		str	r4, [r2]
+ 257:Generated_Source\PSoC4/ADC_EOC_Int.c **** 	CyExitCriticalSection(interruptState);
+ 124              		.loc 1 257 0
+ 125 0016 FFF7FEFF 		bl	CyExitCriticalSection
+ 126              	.LVL4:
+ 258:Generated_Source\PSoC4/ADC_EOC_Int.c **** }
+ 127              		.loc 1 258 0
+ 128              		@ sp needed
+ 129 001a 10BD     		pop	{r4, pc}
+ 130              	.L10:
+ 131              		.align	2
+ 132              	.L9:
+ 133 001c 00E400E0 		.word	-536812544
+ 134              		.cfi_endproc
+ 135              	.LFE7:
+ 136              		.size	ADC_EOC_Int_SetPriority, .-ADC_EOC_Int_SetPriority
+ 137              		.section	.text.ADC_EOC_Int_GetPriority,"ax",%progbits
+ 138              		.align	2
+ 139              		.global	ADC_EOC_Int_GetPriority
+ 140              		.code	16
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccSCg5fg.s 			page 8
+
+
+ 141              		.thumb_func
+ 142              		.type	ADC_EOC_Int_GetPriority, %function
+ 143              	ADC_EOC_Int_GetPriority:
+ 144              	.LFB8:
+ 259:Generated_Source\PSoC4/ADC_EOC_Int.c **** 
+ 260:Generated_Source\PSoC4/ADC_EOC_Int.c **** 
+ 261:Generated_Source\PSoC4/ADC_EOC_Int.c **** /*******************************************************************************
+ 262:Generated_Source\PSoC4/ADC_EOC_Int.c **** * Function Name: ADC_EOC_Int_GetPriority
+ 263:Generated_Source\PSoC4/ADC_EOC_Int.c **** ********************************************************************************
+ 264:Generated_Source\PSoC4/ADC_EOC_Int.c **** *
+ 265:Generated_Source\PSoC4/ADC_EOC_Int.c **** * Summary:
+ 266:Generated_Source\PSoC4/ADC_EOC_Int.c **** *   Gets the Priority of the Interrupt.
+ 267:Generated_Source\PSoC4/ADC_EOC_Int.c **** *
+ 268:Generated_Source\PSoC4/ADC_EOC_Int.c **** * Parameters:
+ 269:Generated_Source\PSoC4/ADC_EOC_Int.c **** *   None
+ 270:Generated_Source\PSoC4/ADC_EOC_Int.c **** *
+ 271:Generated_Source\PSoC4/ADC_EOC_Int.c **** * Return:
+ 272:Generated_Source\PSoC4/ADC_EOC_Int.c **** *   Priority of the interrupt, 0 being the highest priority
+ 273:Generated_Source\PSoC4/ADC_EOC_Int.c **** *    PSoC 3 and PSoC 5LP: Priority is from 0 to 7.
+ 274:Generated_Source\PSoC4/ADC_EOC_Int.c **** *    PSoC 4: Priority is from 0 to 3.
+ 275:Generated_Source\PSoC4/ADC_EOC_Int.c **** *
+ 276:Generated_Source\PSoC4/ADC_EOC_Int.c **** *******************************************************************************/
+ 277:Generated_Source\PSoC4/ADC_EOC_Int.c **** uint8 ADC_EOC_Int_GetPriority(void)
+ 278:Generated_Source\PSoC4/ADC_EOC_Int.c **** {
+ 145              		.loc 1 278 0
+ 146              		.cfi_startproc
+ 147              		@ args = 0, pretend = 0, frame = 0
+ 148              		@ frame_needed = 0, uses_anonymous_args = 0
+ 149              		@ link register save eliminated.
+ 150              	.LVL5:
+ 279:Generated_Source\PSoC4/ADC_EOC_Int.c ****     uint32 priority;
+ 280:Generated_Source\PSoC4/ADC_EOC_Int.c **** 	uint32 priorityOffset = ((ADC_EOC_Int__INTC_NUMBER % 4u) * 8u) + 6u;
+ 281:Generated_Source\PSoC4/ADC_EOC_Int.c **** 
+ 282:Generated_Source\PSoC4/ADC_EOC_Int.c ****     priority = (*ADC_EOC_Int_INTC_PRIOR & ADC_EOC_Int__INTC_PRIOR_MASK) >> priorityOffset;
+ 151              		.loc 1 282 0
+ 152 0000 024B     		ldr	r3, .L12
+ 153 0002 1868     		ldr	r0, [r3]
+ 154 0004 8009     		lsrs	r0, r0, #6
+ 155              	.LVL6:
+ 283:Generated_Source\PSoC4/ADC_EOC_Int.c **** 
+ 284:Generated_Source\PSoC4/ADC_EOC_Int.c ****     return (uint8)priority;
+ 156              		.loc 1 284 0
+ 157 0006 0323     		movs	r3, #3
+ 158 0008 1840     		ands	r0, r3
+ 159              	.LVL7:
+ 285:Generated_Source\PSoC4/ADC_EOC_Int.c **** }
+ 160              		.loc 1 285 0
+ 161              		@ sp needed
+ 162 000a 7047     		bx	lr
+ 163              	.L13:
+ 164              		.align	2
+ 165              	.L12:
+ 166 000c 00E400E0 		.word	-536812544
+ 167              		.cfi_endproc
+ 168              	.LFE8:
+ 169              		.size	ADC_EOC_Int_GetPriority, .-ADC_EOC_Int_GetPriority
+ 170              		.section	.text.ADC_EOC_Int_Enable,"ax",%progbits
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccSCg5fg.s 			page 9
+
+
+ 171              		.align	2
+ 172              		.global	ADC_EOC_Int_Enable
+ 173              		.code	16
+ 174              		.thumb_func
+ 175              		.type	ADC_EOC_Int_Enable, %function
+ 176              	ADC_EOC_Int_Enable:
+ 177              	.LFB9:
+ 286:Generated_Source\PSoC4/ADC_EOC_Int.c **** 
+ 287:Generated_Source\PSoC4/ADC_EOC_Int.c **** 
+ 288:Generated_Source\PSoC4/ADC_EOC_Int.c **** /*******************************************************************************
+ 289:Generated_Source\PSoC4/ADC_EOC_Int.c **** * Function Name: ADC_EOC_Int_Enable
+ 290:Generated_Source\PSoC4/ADC_EOC_Int.c **** ********************************************************************************
+ 291:Generated_Source\PSoC4/ADC_EOC_Int.c **** *
+ 292:Generated_Source\PSoC4/ADC_EOC_Int.c **** * Summary:
+ 293:Generated_Source\PSoC4/ADC_EOC_Int.c **** *   Enables the interrupt to the interrupt controller. Do not call this function
+ 294:Generated_Source\PSoC4/ADC_EOC_Int.c **** *   unless ISR_Start() has been called or the functionality of the ISR_Start() 
+ 295:Generated_Source\PSoC4/ADC_EOC_Int.c **** *   function, which sets the vector and the priority, has been called.
+ 296:Generated_Source\PSoC4/ADC_EOC_Int.c **** *
+ 297:Generated_Source\PSoC4/ADC_EOC_Int.c **** * Parameters:
+ 298:Generated_Source\PSoC4/ADC_EOC_Int.c **** *   None
+ 299:Generated_Source\PSoC4/ADC_EOC_Int.c **** *
+ 300:Generated_Source\PSoC4/ADC_EOC_Int.c **** * Return:
+ 301:Generated_Source\PSoC4/ADC_EOC_Int.c **** *   None
+ 302:Generated_Source\PSoC4/ADC_EOC_Int.c **** *
+ 303:Generated_Source\PSoC4/ADC_EOC_Int.c **** *******************************************************************************/
+ 304:Generated_Source\PSoC4/ADC_EOC_Int.c **** void ADC_EOC_Int_Enable(void)
+ 305:Generated_Source\PSoC4/ADC_EOC_Int.c **** {
+ 178              		.loc 1 305 0
+ 179              		.cfi_startproc
+ 180              		@ args = 0, pretend = 0, frame = 0
+ 181              		@ frame_needed = 0, uses_anonymous_args = 0
+ 182              		@ link register save eliminated.
+ 306:Generated_Source\PSoC4/ADC_EOC_Int.c ****     /* Enable the general interrupt. */
+ 307:Generated_Source\PSoC4/ADC_EOC_Int.c ****     *ADC_EOC_Int_INTC_SET_EN = ADC_EOC_Int__INTC_MASK;
+ 183              		.loc 1 307 0
+ 184 0000 0122     		movs	r2, #1
+ 185 0002 014B     		ldr	r3, .L15
+ 186 0004 1A60     		str	r2, [r3]
+ 308:Generated_Source\PSoC4/ADC_EOC_Int.c **** }
+ 187              		.loc 1 308 0
+ 188              		@ sp needed
+ 189 0006 7047     		bx	lr
+ 190              	.L16:
+ 191              		.align	2
+ 192              	.L15:
+ 193 0008 00E100E0 		.word	-536813312
+ 194              		.cfi_endproc
+ 195              	.LFE9:
+ 196              		.size	ADC_EOC_Int_Enable, .-ADC_EOC_Int_Enable
+ 197              		.section	.text.ADC_EOC_Int_GetState,"ax",%progbits
+ 198              		.align	2
+ 199              		.global	ADC_EOC_Int_GetState
+ 200              		.code	16
+ 201              		.thumb_func
+ 202              		.type	ADC_EOC_Int_GetState, %function
+ 203              	ADC_EOC_Int_GetState:
+ 204              	.LFB10:
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccSCg5fg.s 			page 10
+
+
+ 309:Generated_Source\PSoC4/ADC_EOC_Int.c **** 
+ 310:Generated_Source\PSoC4/ADC_EOC_Int.c **** 
+ 311:Generated_Source\PSoC4/ADC_EOC_Int.c **** /*******************************************************************************
+ 312:Generated_Source\PSoC4/ADC_EOC_Int.c **** * Function Name: ADC_EOC_Int_GetState
+ 313:Generated_Source\PSoC4/ADC_EOC_Int.c **** ********************************************************************************
+ 314:Generated_Source\PSoC4/ADC_EOC_Int.c **** *
+ 315:Generated_Source\PSoC4/ADC_EOC_Int.c **** * Summary:
+ 316:Generated_Source\PSoC4/ADC_EOC_Int.c **** *   Gets the state (enabled, disabled) of the Interrupt.
+ 317:Generated_Source\PSoC4/ADC_EOC_Int.c **** *
+ 318:Generated_Source\PSoC4/ADC_EOC_Int.c **** * Parameters:
+ 319:Generated_Source\PSoC4/ADC_EOC_Int.c **** *   None
+ 320:Generated_Source\PSoC4/ADC_EOC_Int.c **** *
+ 321:Generated_Source\PSoC4/ADC_EOC_Int.c **** * Return:
+ 322:Generated_Source\PSoC4/ADC_EOC_Int.c **** *   1 if enabled, 0 if disabled.
+ 323:Generated_Source\PSoC4/ADC_EOC_Int.c **** *
+ 324:Generated_Source\PSoC4/ADC_EOC_Int.c **** *******************************************************************************/
+ 325:Generated_Source\PSoC4/ADC_EOC_Int.c **** uint8 ADC_EOC_Int_GetState(void)
+ 326:Generated_Source\PSoC4/ADC_EOC_Int.c **** {
+ 205              		.loc 1 326 0
+ 206              		.cfi_startproc
+ 207              		@ args = 0, pretend = 0, frame = 0
+ 208              		@ frame_needed = 0, uses_anonymous_args = 0
+ 209              		@ link register save eliminated.
+ 327:Generated_Source\PSoC4/ADC_EOC_Int.c ****     /* Get the state of the general interrupt. */
+ 328:Generated_Source\PSoC4/ADC_EOC_Int.c ****     return ((*ADC_EOC_Int_INTC_SET_EN & (uint32)ADC_EOC_Int__INTC_MASK) != 0u) ? 1u:0u;
+ 210              		.loc 1 328 0
+ 211 0000 024B     		ldr	r3, .L18
+ 212 0002 1B68     		ldr	r3, [r3]
+ 213 0004 0120     		movs	r0, #1
+ 214 0006 1840     		ands	r0, r3
+ 329:Generated_Source\PSoC4/ADC_EOC_Int.c **** }
+ 215              		.loc 1 329 0
+ 216              		@ sp needed
+ 217 0008 7047     		bx	lr
+ 218              	.L19:
+ 219 000a C046     		.align	2
+ 220              	.L18:
+ 221 000c 00E100E0 		.word	-536813312
+ 222              		.cfi_endproc
+ 223              	.LFE10:
+ 224              		.size	ADC_EOC_Int_GetState, .-ADC_EOC_Int_GetState
+ 225              		.section	.text.ADC_EOC_Int_Disable,"ax",%progbits
+ 226              		.align	2
+ 227              		.global	ADC_EOC_Int_Disable
+ 228              		.code	16
+ 229              		.thumb_func
+ 230              		.type	ADC_EOC_Int_Disable, %function
+ 231              	ADC_EOC_Int_Disable:
+ 232              	.LFB11:
+ 330:Generated_Source\PSoC4/ADC_EOC_Int.c **** 
+ 331:Generated_Source\PSoC4/ADC_EOC_Int.c **** 
+ 332:Generated_Source\PSoC4/ADC_EOC_Int.c **** /*******************************************************************************
+ 333:Generated_Source\PSoC4/ADC_EOC_Int.c **** * Function Name: ADC_EOC_Int_Disable
+ 334:Generated_Source\PSoC4/ADC_EOC_Int.c **** ********************************************************************************
+ 335:Generated_Source\PSoC4/ADC_EOC_Int.c **** *
+ 336:Generated_Source\PSoC4/ADC_EOC_Int.c **** * Summary:
+ 337:Generated_Source\PSoC4/ADC_EOC_Int.c **** *   Disables the Interrupt in the interrupt controller.
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccSCg5fg.s 			page 11
+
+
+ 338:Generated_Source\PSoC4/ADC_EOC_Int.c **** *
+ 339:Generated_Source\PSoC4/ADC_EOC_Int.c **** * Parameters:
+ 340:Generated_Source\PSoC4/ADC_EOC_Int.c **** *   None
+ 341:Generated_Source\PSoC4/ADC_EOC_Int.c **** *
+ 342:Generated_Source\PSoC4/ADC_EOC_Int.c **** * Return:
+ 343:Generated_Source\PSoC4/ADC_EOC_Int.c **** *   None
+ 344:Generated_Source\PSoC4/ADC_EOC_Int.c **** *
+ 345:Generated_Source\PSoC4/ADC_EOC_Int.c **** *******************************************************************************/
+ 346:Generated_Source\PSoC4/ADC_EOC_Int.c **** void ADC_EOC_Int_Disable(void)
+ 347:Generated_Source\PSoC4/ADC_EOC_Int.c **** {
+ 233              		.loc 1 347 0
+ 234              		.cfi_startproc
+ 235              		@ args = 0, pretend = 0, frame = 0
+ 236              		@ frame_needed = 0, uses_anonymous_args = 0
+ 237              		@ link register save eliminated.
+ 348:Generated_Source\PSoC4/ADC_EOC_Int.c ****     /* Disable the general interrupt. */
+ 349:Generated_Source\PSoC4/ADC_EOC_Int.c ****     *ADC_EOC_Int_INTC_CLR_EN = ADC_EOC_Int__INTC_MASK;
+ 238              		.loc 1 349 0
+ 239 0000 0122     		movs	r2, #1
+ 240 0002 014B     		ldr	r3, .L21
+ 241 0004 1A60     		str	r2, [r3]
+ 350:Generated_Source\PSoC4/ADC_EOC_Int.c **** }
+ 242              		.loc 1 350 0
+ 243              		@ sp needed
+ 244 0006 7047     		bx	lr
+ 245              	.L22:
+ 246              		.align	2
+ 247              	.L21:
+ 248 0008 80E100E0 		.word	-536813184
+ 249              		.cfi_endproc
+ 250              	.LFE11:
+ 251              		.size	ADC_EOC_Int_Disable, .-ADC_EOC_Int_Disable
+ 252              		.section	.text.ADC_EOC_Int_Start,"ax",%progbits
+ 253              		.align	2
+ 254              		.global	ADC_EOC_Int_Start
+ 255              		.code	16
+ 256              		.thumb_func
+ 257              		.type	ADC_EOC_Int_Start, %function
+ 258              	ADC_EOC_Int_Start:
+ 259              	.LFB1:
+  57:Generated_Source\PSoC4/ADC_EOC_Int.c ****     /* For all we know the interrupt is active. */
+ 260              		.loc 1 57 0
+ 261              		.cfi_startproc
+ 262              		@ args = 0, pretend = 0, frame = 0
+ 263              		@ frame_needed = 0, uses_anonymous_args = 0
+ 264 0000 10B5     		push	{r4, lr}
+ 265              		.cfi_def_cfa_offset 8
+ 266              		.cfi_offset 4, -8
+ 267              		.cfi_offset 14, -4
+  59:Generated_Source\PSoC4/ADC_EOC_Int.c **** 
+ 268              		.loc 1 59 0
+ 269 0002 FFF7FEFF 		bl	ADC_EOC_Int_Disable
+ 270              	.LVL8:
+  62:Generated_Source\PSoC4/ADC_EOC_Int.c **** 
+ 271              		.loc 1 62 0
+ 272 0006 0448     		ldr	r0, .L24
+ 273 0008 FFF7FEFF 		bl	ADC_EOC_Int_SetVector
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccSCg5fg.s 			page 12
+
+
+ 274              	.LVL9:
+  65:Generated_Source\PSoC4/ADC_EOC_Int.c **** 
+ 275              		.loc 1 65 0
+ 276 000c 0320     		movs	r0, #3
+ 277 000e FFF7FEFF 		bl	ADC_EOC_Int_SetPriority
+ 278              	.LVL10:
+  68:Generated_Source\PSoC4/ADC_EOC_Int.c **** }
+ 279              		.loc 1 68 0
+ 280 0012 FFF7FEFF 		bl	ADC_EOC_Int_Enable
+ 281              	.LVL11:
+  69:Generated_Source\PSoC4/ADC_EOC_Int.c **** 
+ 282              		.loc 1 69 0
+ 283              		@ sp needed
+ 284 0016 10BD     		pop	{r4, pc}
+ 285              	.L25:
+ 286              		.align	2
+ 287              	.L24:
+ 288 0018 00000000 		.word	ADC_EOC_Int_Interrupt
+ 289              		.cfi_endproc
+ 290              	.LFE1:
+ 291              		.size	ADC_EOC_Int_Start, .-ADC_EOC_Int_Start
+ 292              		.section	.text.ADC_EOC_Int_StartEx,"ax",%progbits
+ 293              		.align	2
+ 294              		.global	ADC_EOC_Int_StartEx
+ 295              		.code	16
+ 296              		.thumb_func
+ 297              		.type	ADC_EOC_Int_StartEx, %function
+ 298              	ADC_EOC_Int_StartEx:
+ 299              	.LFB2:
+ 100:Generated_Source\PSoC4/ADC_EOC_Int.c ****     /* For all we know the interrupt is active. */
+ 300              		.loc 1 100 0
+ 301              		.cfi_startproc
+ 302              		@ args = 0, pretend = 0, frame = 0
+ 303              		@ frame_needed = 0, uses_anonymous_args = 0
+ 304              	.LVL12:
+ 305 0000 10B5     		push	{r4, lr}
+ 306              		.cfi_def_cfa_offset 8
+ 307              		.cfi_offset 4, -8
+ 308              		.cfi_offset 14, -4
+ 309 0002 0400     		movs	r4, r0
+ 102:Generated_Source\PSoC4/ADC_EOC_Int.c **** 
+ 310              		.loc 1 102 0
+ 311 0004 FFF7FEFF 		bl	ADC_EOC_Int_Disable
+ 312              	.LVL13:
+ 105:Generated_Source\PSoC4/ADC_EOC_Int.c **** 
+ 313              		.loc 1 105 0
+ 314 0008 2000     		movs	r0, r4
+ 315 000a FFF7FEFF 		bl	ADC_EOC_Int_SetVector
+ 316              	.LVL14:
+ 108:Generated_Source\PSoC4/ADC_EOC_Int.c **** 
+ 317              		.loc 1 108 0
+ 318 000e 0320     		movs	r0, #3
+ 319 0010 FFF7FEFF 		bl	ADC_EOC_Int_SetPriority
+ 320              	.LVL15:
+ 111:Generated_Source\PSoC4/ADC_EOC_Int.c **** }
+ 321              		.loc 1 111 0
+ 322 0014 FFF7FEFF 		bl	ADC_EOC_Int_Enable
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccSCg5fg.s 			page 13
+
+
+ 323              	.LVL16:
+ 112:Generated_Source\PSoC4/ADC_EOC_Int.c **** 
+ 324              		.loc 1 112 0
+ 325              		@ sp needed
+ 326              	.LVL17:
+ 327 0018 10BD     		pop	{r4, pc}
+ 328              		.cfi_endproc
+ 329              	.LFE2:
+ 330              		.size	ADC_EOC_Int_StartEx, .-ADC_EOC_Int_StartEx
+ 331 001a C046     		.section	.text.ADC_EOC_Int_Stop,"ax",%progbits
+ 332              		.align	2
+ 333              		.global	ADC_EOC_Int_Stop
+ 334              		.code	16
+ 335              		.thumb_func
+ 336              		.type	ADC_EOC_Int_Stop, %function
+ 337              	ADC_EOC_Int_Stop:
+ 338              	.LFB3:
+ 130:Generated_Source\PSoC4/ADC_EOC_Int.c ****     /* Disable this interrupt. */
+ 339              		.loc 1 130 0
+ 340              		.cfi_startproc
+ 341              		@ args = 0, pretend = 0, frame = 0
+ 342              		@ frame_needed = 0, uses_anonymous_args = 0
+ 343 0000 10B5     		push	{r4, lr}
+ 344              		.cfi_def_cfa_offset 8
+ 345              		.cfi_offset 4, -8
+ 346              		.cfi_offset 14, -4
+ 132:Generated_Source\PSoC4/ADC_EOC_Int.c **** 
+ 347              		.loc 1 132 0
+ 348 0002 FFF7FEFF 		bl	ADC_EOC_Int_Disable
+ 349              	.LVL18:
+ 135:Generated_Source\PSoC4/ADC_EOC_Int.c **** }
+ 350              		.loc 1 135 0
+ 351 0006 0248     		ldr	r0, .L28
+ 352 0008 FFF7FEFF 		bl	ADC_EOC_Int_SetVector
+ 353              	.LVL19:
+ 136:Generated_Source\PSoC4/ADC_EOC_Int.c **** 
+ 354              		.loc 1 136 0
+ 355              		@ sp needed
+ 356 000c 10BD     		pop	{r4, pc}
+ 357              	.L29:
+ 358 000e C046     		.align	2
+ 359              	.L28:
+ 360 0010 00000000 		.word	IntDefaultHandler
+ 361              		.cfi_endproc
+ 362              	.LFE3:
+ 363              		.size	ADC_EOC_Int_Stop, .-ADC_EOC_Int_Stop
+ 364              		.section	.text.ADC_EOC_Int_SetPending,"ax",%progbits
+ 365              		.align	2
+ 366              		.global	ADC_EOC_Int_SetPending
+ 367              		.code	16
+ 368              		.thumb_func
+ 369              		.type	ADC_EOC_Int_SetPending, %function
+ 370              	ADC_EOC_Int_SetPending:
+ 371              	.LFB12:
+ 351:Generated_Source\PSoC4/ADC_EOC_Int.c **** 
+ 352:Generated_Source\PSoC4/ADC_EOC_Int.c **** 
+ 353:Generated_Source\PSoC4/ADC_EOC_Int.c **** /*******************************************************************************
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccSCg5fg.s 			page 14
+
+
+ 354:Generated_Source\PSoC4/ADC_EOC_Int.c **** * Function Name: ADC_EOC_Int_SetPending
+ 355:Generated_Source\PSoC4/ADC_EOC_Int.c **** ********************************************************************************
+ 356:Generated_Source\PSoC4/ADC_EOC_Int.c **** *
+ 357:Generated_Source\PSoC4/ADC_EOC_Int.c **** * Summary:
+ 358:Generated_Source\PSoC4/ADC_EOC_Int.c **** *   Causes the Interrupt to enter the pending state, a software method of
+ 359:Generated_Source\PSoC4/ADC_EOC_Int.c **** *   generating the interrupt.
+ 360:Generated_Source\PSoC4/ADC_EOC_Int.c **** *
+ 361:Generated_Source\PSoC4/ADC_EOC_Int.c **** * Parameters:
+ 362:Generated_Source\PSoC4/ADC_EOC_Int.c **** *   None
+ 363:Generated_Source\PSoC4/ADC_EOC_Int.c **** *
+ 364:Generated_Source\PSoC4/ADC_EOC_Int.c **** * Return:
+ 365:Generated_Source\PSoC4/ADC_EOC_Int.c **** *   None
+ 366:Generated_Source\PSoC4/ADC_EOC_Int.c **** *
+ 367:Generated_Source\PSoC4/ADC_EOC_Int.c **** * Side Effects:
+ 368:Generated_Source\PSoC4/ADC_EOC_Int.c **** *   If interrupts are enabled and the interrupt is set up properly, the ISR is
+ 369:Generated_Source\PSoC4/ADC_EOC_Int.c **** *   entered (depending on the priority of this interrupt and other pending 
+ 370:Generated_Source\PSoC4/ADC_EOC_Int.c **** *   interrupts).
+ 371:Generated_Source\PSoC4/ADC_EOC_Int.c **** *
+ 372:Generated_Source\PSoC4/ADC_EOC_Int.c **** *******************************************************************************/
+ 373:Generated_Source\PSoC4/ADC_EOC_Int.c **** void ADC_EOC_Int_SetPending(void)
+ 374:Generated_Source\PSoC4/ADC_EOC_Int.c **** {
+ 372              		.loc 1 374 0
+ 373              		.cfi_startproc
+ 374              		@ args = 0, pretend = 0, frame = 0
+ 375              		@ frame_needed = 0, uses_anonymous_args = 0
+ 376              		@ link register save eliminated.
+ 375:Generated_Source\PSoC4/ADC_EOC_Int.c ****     *ADC_EOC_Int_INTC_SET_PD = ADC_EOC_Int__INTC_MASK;
+ 377              		.loc 1 375 0
+ 378 0000 0122     		movs	r2, #1
+ 379 0002 014B     		ldr	r3, .L31
+ 380 0004 1A60     		str	r2, [r3]
+ 376:Generated_Source\PSoC4/ADC_EOC_Int.c **** }
+ 381              		.loc 1 376 0
+ 382              		@ sp needed
+ 383 0006 7047     		bx	lr
+ 384              	.L32:
+ 385              		.align	2
+ 386              	.L31:
+ 387 0008 00E200E0 		.word	-536813056
+ 388              		.cfi_endproc
+ 389              	.LFE12:
+ 390              		.size	ADC_EOC_Int_SetPending, .-ADC_EOC_Int_SetPending
+ 391              		.section	.text.ADC_EOC_Int_ClearPending,"ax",%progbits
+ 392              		.align	2
+ 393              		.global	ADC_EOC_Int_ClearPending
+ 394              		.code	16
+ 395              		.thumb_func
+ 396              		.type	ADC_EOC_Int_ClearPending, %function
+ 397              	ADC_EOC_Int_ClearPending:
+ 398              	.LFB13:
+ 377:Generated_Source\PSoC4/ADC_EOC_Int.c **** 
+ 378:Generated_Source\PSoC4/ADC_EOC_Int.c **** 
+ 379:Generated_Source\PSoC4/ADC_EOC_Int.c **** /*******************************************************************************
+ 380:Generated_Source\PSoC4/ADC_EOC_Int.c **** * Function Name: ADC_EOC_Int_ClearPending
+ 381:Generated_Source\PSoC4/ADC_EOC_Int.c **** ********************************************************************************
+ 382:Generated_Source\PSoC4/ADC_EOC_Int.c **** *
+ 383:Generated_Source\PSoC4/ADC_EOC_Int.c **** * Summary:
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccSCg5fg.s 			page 15
+
+
+ 384:Generated_Source\PSoC4/ADC_EOC_Int.c **** *   Clears a pending interrupt in the interrupt controller.
+ 385:Generated_Source\PSoC4/ADC_EOC_Int.c **** *
+ 386:Generated_Source\PSoC4/ADC_EOC_Int.c **** *   Note Some interrupt sources are clear-on-read and require the block 
+ 387:Generated_Source\PSoC4/ADC_EOC_Int.c **** *   interrupt/status register to be read/cleared with the appropriate block API 
+ 388:Generated_Source\PSoC4/ADC_EOC_Int.c **** *   (GPIO, UART, and so on). Otherwise the ISR will continue to remain in 
+ 389:Generated_Source\PSoC4/ADC_EOC_Int.c **** *   pending state even though the interrupt itself is cleared using this API.
+ 390:Generated_Source\PSoC4/ADC_EOC_Int.c **** *
+ 391:Generated_Source\PSoC4/ADC_EOC_Int.c **** * Parameters:
+ 392:Generated_Source\PSoC4/ADC_EOC_Int.c **** *   None
+ 393:Generated_Source\PSoC4/ADC_EOC_Int.c **** *
+ 394:Generated_Source\PSoC4/ADC_EOC_Int.c **** * Return:
+ 395:Generated_Source\PSoC4/ADC_EOC_Int.c **** *   None
+ 396:Generated_Source\PSoC4/ADC_EOC_Int.c **** *
+ 397:Generated_Source\PSoC4/ADC_EOC_Int.c **** *******************************************************************************/
+ 398:Generated_Source\PSoC4/ADC_EOC_Int.c **** void ADC_EOC_Int_ClearPending(void)
+ 399:Generated_Source\PSoC4/ADC_EOC_Int.c **** {
+ 399              		.loc 1 399 0
+ 400              		.cfi_startproc
+ 401              		@ args = 0, pretend = 0, frame = 0
+ 402              		@ frame_needed = 0, uses_anonymous_args = 0
+ 403              		@ link register save eliminated.
+ 400:Generated_Source\PSoC4/ADC_EOC_Int.c ****     *ADC_EOC_Int_INTC_CLR_PD = ADC_EOC_Int__INTC_MASK;
+ 404              		.loc 1 400 0
+ 405 0000 0122     		movs	r2, #1
+ 406 0002 014B     		ldr	r3, .L34
+ 407 0004 1A60     		str	r2, [r3]
+ 401:Generated_Source\PSoC4/ADC_EOC_Int.c **** }
+ 408              		.loc 1 401 0
+ 409              		@ sp needed
+ 410 0006 7047     		bx	lr
+ 411              	.L35:
+ 412              		.align	2
+ 413              	.L34:
+ 414 0008 80E200E0 		.word	-536812928
+ 415              		.cfi_endproc
+ 416              	.LFE13:
+ 417              		.size	ADC_EOC_Int_ClearPending, .-ADC_EOC_Int_ClearPending
+ 418              		.text
+ 419              	.Letext0:
+ 420              		.file 2 "Generated_Source\\PSoC4/cytypes.h"
+ 421              		.file 3 "Generated_Source\\PSoC4/CyLib.h"
+ 422              		.section	.debug_info,"",%progbits
+ 423              	.Ldebug_info0:
+ 424 0000 01030000 		.4byte	0x301
+ 425 0004 0400     		.2byte	0x4
+ 426 0006 00000000 		.4byte	.Ldebug_abbrev0
+ 427 000a 04       		.byte	0x4
+ 428 000b 01       		.uleb128 0x1
+ 429 000c B5010000 		.4byte	.LASF36
+ 430 0010 0C       		.byte	0xc
+ 431 0011 4D000000 		.4byte	.LASF37
+ 432 0015 FC020000 		.4byte	.LASF38
+ 433 0019 00000000 		.4byte	.Ldebug_ranges0+0
+ 434 001d 00000000 		.4byte	0
+ 435 0021 00000000 		.4byte	.Ldebug_line0
+ 436 0025 02       		.uleb128 0x2
+ 437 0026 01       		.byte	0x1
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccSCg5fg.s 			page 16
+
+
+ 438 0027 06       		.byte	0x6
+ 439 0028 C5020000 		.4byte	.LASF0
+ 440 002c 02       		.uleb128 0x2
+ 441 002d 01       		.byte	0x1
+ 442 002e 08       		.byte	0x8
+ 443 002f 8F000000 		.4byte	.LASF1
+ 444 0033 02       		.uleb128 0x2
+ 445 0034 02       		.byte	0x2
+ 446 0035 05       		.byte	0x5
+ 447 0036 6C020000 		.4byte	.LASF2
+ 448 003a 02       		.uleb128 0x2
+ 449 003b 02       		.byte	0x2
+ 450 003c 07       		.byte	0x7
+ 451 003d 33000000 		.4byte	.LASF3
+ 452 0041 02       		.uleb128 0x2
+ 453 0042 04       		.byte	0x4
+ 454 0043 05       		.byte	0x5
+ 455 0044 85020000 		.4byte	.LASF4
+ 456 0048 02       		.uleb128 0x2
+ 457 0049 04       		.byte	0x4
+ 458 004a 07       		.byte	0x7
+ 459 004b D8000000 		.4byte	.LASF5
+ 460 004f 02       		.uleb128 0x2
+ 461 0050 08       		.byte	0x8
+ 462 0051 05       		.byte	0x5
+ 463 0052 4C020000 		.4byte	.LASF6
+ 464 0056 02       		.uleb128 0x2
+ 465 0057 08       		.byte	0x8
+ 466 0058 07       		.byte	0x7
+ 467 0059 78000000 		.4byte	.LASF7
+ 468 005d 03       		.uleb128 0x3
+ 469 005e 04       		.byte	0x4
+ 470 005f 05       		.byte	0x5
+ 471 0060 696E7400 		.ascii	"int\000"
+ 472 0064 02       		.uleb128 0x2
+ 473 0065 04       		.byte	0x4
+ 474 0066 07       		.byte	0x7
+ 475 0067 55010000 		.4byte	.LASF8
+ 476 006b 04       		.uleb128 0x4
+ 477 006c FE000000 		.4byte	.LASF9
+ 478 0070 02       		.byte	0x2
+ 479 0071 D201     		.2byte	0x1d2
+ 480 0073 2C000000 		.4byte	0x2c
+ 481 0077 04       		.uleb128 0x4
+ 482 0078 36010000 		.4byte	.LASF10
+ 483 007c 02       		.byte	0x2
+ 484 007d D401     		.2byte	0x1d4
+ 485 007f 48000000 		.4byte	0x48
+ 486 0083 02       		.uleb128 0x2
+ 487 0084 04       		.byte	0x4
+ 488 0085 04       		.byte	0x4
+ 489 0086 72000000 		.4byte	.LASF11
+ 490 008a 02       		.uleb128 0x2
+ 491 008b 08       		.byte	0x8
+ 492 008c 04       		.byte	0x4
+ 493 008d 46000000 		.4byte	.LASF12
+ 494 0091 02       		.uleb128 0x2
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccSCg5fg.s 			page 17
+
+
+ 495 0092 01       		.byte	0x1
+ 496 0093 08       		.byte	0x8
+ 497 0094 5A020000 		.4byte	.LASF13
+ 498 0098 04       		.uleb128 0x4
+ 499 0099 00000000 		.4byte	.LASF14
+ 500 009d 02       		.byte	0x2
+ 501 009e 7E02     		.2byte	0x27e
+ 502 00a0 A4000000 		.4byte	0xa4
+ 503 00a4 05       		.uleb128 0x5
+ 504 00a5 77000000 		.4byte	0x77
+ 505 00a9 04       		.uleb128 0x4
+ 506 00aa A8010000 		.4byte	.LASF15
+ 507 00ae 02       		.byte	0x2
+ 508 00af 8E02     		.2byte	0x28e
+ 509 00b1 B5000000 		.4byte	0xb5
+ 510 00b5 06       		.uleb128 0x6
+ 511 00b6 04       		.byte	0x4
+ 512 00b7 BB000000 		.4byte	0xbb
+ 513 00bb 07       		.uleb128 0x7
+ 514 00bc 02       		.uleb128 0x2
+ 515 00bd 08       		.byte	0x8
+ 516 00be 04       		.byte	0x4
+ 517 00bf A6020000 		.4byte	.LASF16
+ 518 00c3 02       		.uleb128 0x2
+ 519 00c4 04       		.byte	0x4
+ 520 00c5 07       		.byte	0x7
+ 521 00c6 43020000 		.4byte	.LASF17
+ 522 00ca 08       		.uleb128 0x8
+ 523 00cb B3000000 		.4byte	.LASF24
+ 524 00cf 01       		.byte	0x1
+ 525 00d0 9F       		.byte	0x9f
+ 526 00d1 00000000 		.4byte	.LFB4
+ 527 00d5 02000000 		.4byte	.LFE4-.LFB4
+ 528 00d9 01       		.uleb128 0x1
+ 529 00da 9C       		.byte	0x9c
+ 530 00db 09       		.uleb128 0x9
+ 531 00dc D1020000 		.4byte	.LASF18
+ 532 00e0 01       		.byte	0x1
+ 533 00e1 C7       		.byte	0xc7
+ 534 00e2 00000000 		.4byte	.LFB5
+ 535 00e6 0C000000 		.4byte	.LFE5-.LFB5
+ 536 00ea 01       		.uleb128 0x1
+ 537 00eb 9C       		.byte	0x9c
+ 538 00ec FE000000 		.4byte	0xfe
+ 539 00f0 0A       		.uleb128 0xa
+ 540 00f1 73010000 		.4byte	.LASF20
+ 541 00f5 01       		.byte	0x1
+ 542 00f6 C7       		.byte	0xc7
+ 543 00f7 A9000000 		.4byte	0xa9
+ 544 00fb 01       		.uleb128 0x1
+ 545 00fc 50       		.byte	0x50
+ 546 00fd 00       		.byte	0
+ 547 00fe 0B       		.uleb128 0xb
+ 548 00ff 9D000000 		.4byte	.LASF26
+ 549 0103 01       		.byte	0x1
+ 550 0104 DB       		.byte	0xdb
+ 551 0105 A9000000 		.4byte	0xa9
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccSCg5fg.s 			page 18
+
+
+ 552 0109 00000000 		.4byte	.LFB6
+ 553 010d 0C000000 		.4byte	.LFE6-.LFB6
+ 554 0111 01       		.uleb128 0x1
+ 555 0112 9C       		.byte	0x9c
+ 556 0113 09       		.uleb128 0x9
+ 557 0114 8E020000 		.4byte	.LASF19
+ 558 0118 01       		.byte	0x1
+ 559 0119 F9       		.byte	0xf9
+ 560 011a 00000000 		.4byte	.LFB7
+ 561 011e 20000000 		.4byte	.LFE7-.LFB7
+ 562 0122 01       		.uleb128 0x1
+ 563 0123 9C       		.byte	0x9c
+ 564 0124 65010000 		.4byte	0x165
+ 565 0128 0C       		.uleb128 0xc
+ 566 0129 04010000 		.4byte	.LASF21
+ 567 012d 01       		.byte	0x1
+ 568 012e F9       		.byte	0xf9
+ 569 012f 6B000000 		.4byte	0x6b
+ 570 0133 00000000 		.4byte	.LLST0
+ 571 0137 0D       		.uleb128 0xd
+ 572 0138 C9000000 		.4byte	.LASF22
+ 573 013c 01       		.byte	0x1
+ 574 013d FB       		.byte	0xfb
+ 575 013e 6B000000 		.4byte	0x6b
+ 576 0142 21000000 		.4byte	.LLST1
+ 577 0146 0E       		.uleb128 0xe
+ 578 0147 76020000 		.4byte	.LASF23
+ 579 014b 01       		.byte	0x1
+ 580 014c FC       		.byte	0xfc
+ 581 014d 77000000 		.4byte	0x77
+ 582 0151 06       		.byte	0x6
+ 583 0152 0F       		.uleb128 0xf
+ 584 0153 08000000 		.4byte	.LVL3
+ 585 0157 EE020000 		.4byte	0x2ee
+ 586 015b 0F       		.uleb128 0xf
+ 587 015c 1A000000 		.4byte	.LVL4
+ 588 0160 F9020000 		.4byte	0x2f9
+ 589 0164 00       		.byte	0
+ 590 0165 10       		.uleb128 0x10
+ 591 0166 3D010000 		.4byte	.LASF39
+ 592 016a 01       		.byte	0x1
+ 593 016b 1501     		.2byte	0x115
+ 594 016d 6B000000 		.4byte	0x6b
+ 595 0171 00000000 		.4byte	.LFB8
+ 596 0175 10000000 		.4byte	.LFE8-.LFB8
+ 597 0179 01       		.uleb128 0x1
+ 598 017a 9C       		.byte	0x9c
+ 599 017b 9D010000 		.4byte	0x19d
+ 600 017f 11       		.uleb128 0x11
+ 601 0180 04010000 		.4byte	.LASF21
+ 602 0184 01       		.byte	0x1
+ 603 0185 1701     		.2byte	0x117
+ 604 0187 77000000 		.4byte	0x77
+ 605 018b 34000000 		.4byte	.LLST2
+ 606 018f 12       		.uleb128 0x12
+ 607 0190 76020000 		.4byte	.LASF23
+ 608 0194 01       		.byte	0x1
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccSCg5fg.s 			page 19
+
+
+ 609 0195 1801     		.2byte	0x118
+ 610 0197 77000000 		.4byte	0x77
+ 611 019b 06       		.byte	0x6
+ 612 019c 00       		.byte	0
+ 613 019d 13       		.uleb128 0x13
+ 614 019e B2020000 		.4byte	.LASF25
+ 615 01a2 01       		.byte	0x1
+ 616 01a3 3001     		.2byte	0x130
+ 617 01a5 00000000 		.4byte	.LFB9
+ 618 01a9 0C000000 		.4byte	.LFE9-.LFB9
+ 619 01ad 01       		.uleb128 0x1
+ 620 01ae 9C       		.byte	0x9c
+ 621 01af 14       		.uleb128 0x14
+ 622 01b0 E7020000 		.4byte	.LASF27
+ 623 01b4 01       		.byte	0x1
+ 624 01b5 4501     		.2byte	0x145
+ 625 01b7 6B000000 		.4byte	0x6b
+ 626 01bb 00000000 		.4byte	.LFB10
+ 627 01bf 10000000 		.4byte	.LFE10-.LFB10
+ 628 01c3 01       		.uleb128 0x1
+ 629 01c4 9C       		.byte	0x9c
+ 630 01c5 13       		.uleb128 0x13
+ 631 01c6 EA000000 		.4byte	.LASF28
+ 632 01ca 01       		.byte	0x1
+ 633 01cb 5A01     		.2byte	0x15a
+ 634 01cd 00000000 		.4byte	.LFB11
+ 635 01d1 0C000000 		.4byte	.LFE11-.LFB11
+ 636 01d5 01       		.uleb128 0x1
+ 637 01d6 9C       		.byte	0x9c
+ 638 01d7 09       		.uleb128 0x9
+ 639 01d8 0D010000 		.4byte	.LASF29
+ 640 01dc 01       		.byte	0x1
+ 641 01dd 38       		.byte	0x38
+ 642 01de 00000000 		.4byte	.LFB1
+ 643 01e2 1C000000 		.4byte	.LFE1-.LFB1
+ 644 01e6 01       		.uleb128 0x1
+ 645 01e7 9C       		.byte	0x9c
+ 646 01e8 29020000 		.4byte	0x229
+ 647 01ec 0F       		.uleb128 0xf
+ 648 01ed 06000000 		.4byte	.LVL8
+ 649 01f1 C5010000 		.4byte	0x1c5
+ 650 01f5 15       		.uleb128 0x15
+ 651 01f6 0C000000 		.4byte	.LVL9
+ 652 01fa DB000000 		.4byte	0xdb
+ 653 01fe 0C020000 		.4byte	0x20c
+ 654 0202 16       		.uleb128 0x16
+ 655 0203 01       		.uleb128 0x1
+ 656 0204 50       		.byte	0x50
+ 657 0205 05       		.uleb128 0x5
+ 658 0206 03       		.byte	0x3
+ 659 0207 00000000 		.4byte	ADC_EOC_Int_Interrupt
+ 660 020b 00       		.byte	0
+ 661 020c 15       		.uleb128 0x15
+ 662 020d 12000000 		.4byte	.LVL10
+ 663 0211 13010000 		.4byte	0x113
+ 664 0215 1F020000 		.4byte	0x21f
+ 665 0219 16       		.uleb128 0x16
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccSCg5fg.s 			page 20
+
+
+ 666 021a 01       		.uleb128 0x1
+ 667 021b 50       		.byte	0x50
+ 668 021c 01       		.uleb128 0x1
+ 669 021d 33       		.byte	0x33
+ 670 021e 00       		.byte	0
+ 671 021f 0F       		.uleb128 0xf
+ 672 0220 16000000 		.4byte	.LVL11
+ 673 0224 9D010000 		.4byte	0x19d
+ 674 0228 00       		.byte	0
+ 675 0229 09       		.uleb128 0x9
+ 676 022a 1F000000 		.4byte	.LASF30
+ 677 022e 01       		.byte	0x1
+ 678 022f 63       		.byte	0x63
+ 679 0230 00000000 		.4byte	.LFB2
+ 680 0234 1A000000 		.4byte	.LFE2-.LFB2
+ 681 0238 01       		.uleb128 0x1
+ 682 0239 9C       		.byte	0x9c
+ 683 023a 87020000 		.4byte	0x287
+ 684 023e 0C       		.uleb128 0xc
+ 685 023f 73010000 		.4byte	.LASF20
+ 686 0243 01       		.byte	0x1
+ 687 0244 63       		.byte	0x63
+ 688 0245 A9000000 		.4byte	0xa9
+ 689 0249 56000000 		.4byte	.LLST3
+ 690 024d 0F       		.uleb128 0xf
+ 691 024e 08000000 		.4byte	.LVL13
+ 692 0252 C5010000 		.4byte	0x1c5
+ 693 0256 15       		.uleb128 0x15
+ 694 0257 0E000000 		.4byte	.LVL14
+ 695 025b DB000000 		.4byte	0xdb
+ 696 025f 6A020000 		.4byte	0x26a
+ 697 0263 16       		.uleb128 0x16
+ 698 0264 01       		.uleb128 0x1
+ 699 0265 50       		.byte	0x50
+ 700 0266 02       		.uleb128 0x2
+ 701 0267 74       		.byte	0x74
+ 702 0268 00       		.sleb128 0
+ 703 0269 00       		.byte	0
+ 704 026a 15       		.uleb128 0x15
+ 705 026b 14000000 		.4byte	.LVL15
+ 706 026f 13010000 		.4byte	0x113
+ 707 0273 7D020000 		.4byte	0x27d
+ 708 0277 16       		.uleb128 0x16
+ 709 0278 01       		.uleb128 0x1
+ 710 0279 50       		.byte	0x50
+ 711 027a 01       		.uleb128 0x1
+ 712 027b 33       		.byte	0x33
+ 713 027c 00       		.byte	0
+ 714 027d 0F       		.uleb128 0xf
+ 715 027e 18000000 		.4byte	.LVL16
+ 716 0282 9D010000 		.4byte	0x19d
+ 717 0286 00       		.byte	0
+ 718 0287 09       		.uleb128 0x9
+ 719 0288 62010000 		.4byte	.LASF31
+ 720 028c 01       		.byte	0x1
+ 721 028d 81       		.byte	0x81
+ 722 028e 00000000 		.4byte	.LFB3
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccSCg5fg.s 			page 21
+
+
+ 723 0292 14000000 		.4byte	.LFE3-.LFB3
+ 724 0296 01       		.uleb128 0x1
+ 725 0297 9C       		.byte	0x9c
+ 726 0298 AF020000 		.4byte	0x2af
+ 727 029c 0F       		.uleb128 0xf
+ 728 029d 06000000 		.4byte	.LVL18
+ 729 02a1 C5010000 		.4byte	0x1c5
+ 730 02a5 0F       		.uleb128 0xf
+ 731 02a6 0C000000 		.4byte	.LVL19
+ 732 02aa DB000000 		.4byte	0xdb
+ 733 02ae 00       		.byte	0
+ 734 02af 13       		.uleb128 0x13
+ 735 02b0 1F010000 		.4byte	.LASF32
+ 736 02b4 01       		.byte	0x1
+ 737 02b5 7501     		.2byte	0x175
+ 738 02b7 00000000 		.4byte	.LFB12
+ 739 02bb 0C000000 		.4byte	.LFE12-.LFB12
+ 740 02bf 01       		.uleb128 0x1
+ 741 02c0 9C       		.byte	0x9c
+ 742 02c1 13       		.uleb128 0x13
+ 743 02c2 06000000 		.4byte	.LASF33
+ 744 02c6 01       		.byte	0x1
+ 745 02c7 8E01     		.2byte	0x18e
+ 746 02c9 00000000 		.4byte	.LFB13
+ 747 02cd 0C000000 		.4byte	.LFE13-.LFB13
+ 748 02d1 01       		.uleb128 0x1
+ 749 02d2 9C       		.byte	0x9c
+ 750 02d3 17       		.uleb128 0x17
+ 751 02d4 A9000000 		.4byte	0xa9
+ 752 02d8 E3020000 		.4byte	0x2e3
+ 753 02dc 18       		.uleb128 0x18
+ 754 02dd C3000000 		.4byte	0xc3
+ 755 02e1 2F       		.byte	0x2f
+ 756 02e2 00       		.byte	0
+ 757 02e3 19       		.uleb128 0x19
+ 758 02e4 5F020000 		.4byte	.LASF40
+ 759 02e8 01       		.byte	0x1
+ 760 02e9 21       		.byte	0x21
+ 761 02ea D3020000 		.4byte	0x2d3
+ 762 02ee 1A       		.uleb128 0x1a
+ 763 02ef 91010000 		.4byte	.LASF34
+ 764 02f3 91010000 		.4byte	.LASF34
+ 765 02f7 03       		.byte	0x3
+ 766 02f8 E5       		.byte	0xe5
+ 767 02f9 1A       		.uleb128 0x1a
+ 768 02fa 7B010000 		.4byte	.LASF35
+ 769 02fe 7B010000 		.4byte	.LASF35
+ 770 0302 03       		.byte	0x3
+ 771 0303 E6       		.byte	0xe6
+ 772 0304 00       		.byte	0
+ 773              		.section	.debug_abbrev,"",%progbits
+ 774              	.Ldebug_abbrev0:
+ 775 0000 01       		.uleb128 0x1
+ 776 0001 11       		.uleb128 0x11
+ 777 0002 01       		.byte	0x1
+ 778 0003 25       		.uleb128 0x25
+ 779 0004 0E       		.uleb128 0xe
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccSCg5fg.s 			page 22
+
+
+ 780 0005 13       		.uleb128 0x13
+ 781 0006 0B       		.uleb128 0xb
+ 782 0007 03       		.uleb128 0x3
+ 783 0008 0E       		.uleb128 0xe
+ 784 0009 1B       		.uleb128 0x1b
+ 785 000a 0E       		.uleb128 0xe
+ 786 000b 55       		.uleb128 0x55
+ 787 000c 17       		.uleb128 0x17
+ 788 000d 11       		.uleb128 0x11
+ 789 000e 01       		.uleb128 0x1
+ 790 000f 10       		.uleb128 0x10
+ 791 0010 17       		.uleb128 0x17
+ 792 0011 00       		.byte	0
+ 793 0012 00       		.byte	0
+ 794 0013 02       		.uleb128 0x2
+ 795 0014 24       		.uleb128 0x24
+ 796 0015 00       		.byte	0
+ 797 0016 0B       		.uleb128 0xb
+ 798 0017 0B       		.uleb128 0xb
+ 799 0018 3E       		.uleb128 0x3e
+ 800 0019 0B       		.uleb128 0xb
+ 801 001a 03       		.uleb128 0x3
+ 802 001b 0E       		.uleb128 0xe
+ 803 001c 00       		.byte	0
+ 804 001d 00       		.byte	0
+ 805 001e 03       		.uleb128 0x3
+ 806 001f 24       		.uleb128 0x24
+ 807 0020 00       		.byte	0
+ 808 0021 0B       		.uleb128 0xb
+ 809 0022 0B       		.uleb128 0xb
+ 810 0023 3E       		.uleb128 0x3e
+ 811 0024 0B       		.uleb128 0xb
+ 812 0025 03       		.uleb128 0x3
+ 813 0026 08       		.uleb128 0x8
+ 814 0027 00       		.byte	0
+ 815 0028 00       		.byte	0
+ 816 0029 04       		.uleb128 0x4
+ 817 002a 16       		.uleb128 0x16
+ 818 002b 00       		.byte	0
+ 819 002c 03       		.uleb128 0x3
+ 820 002d 0E       		.uleb128 0xe
+ 821 002e 3A       		.uleb128 0x3a
+ 822 002f 0B       		.uleb128 0xb
+ 823 0030 3B       		.uleb128 0x3b
+ 824 0031 05       		.uleb128 0x5
+ 825 0032 49       		.uleb128 0x49
+ 826 0033 13       		.uleb128 0x13
+ 827 0034 00       		.byte	0
+ 828 0035 00       		.byte	0
+ 829 0036 05       		.uleb128 0x5
+ 830 0037 35       		.uleb128 0x35
+ 831 0038 00       		.byte	0
+ 832 0039 49       		.uleb128 0x49
+ 833 003a 13       		.uleb128 0x13
+ 834 003b 00       		.byte	0
+ 835 003c 00       		.byte	0
+ 836 003d 06       		.uleb128 0x6
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccSCg5fg.s 			page 23
+
+
+ 837 003e 0F       		.uleb128 0xf
+ 838 003f 00       		.byte	0
+ 839 0040 0B       		.uleb128 0xb
+ 840 0041 0B       		.uleb128 0xb
+ 841 0042 49       		.uleb128 0x49
+ 842 0043 13       		.uleb128 0x13
+ 843 0044 00       		.byte	0
+ 844 0045 00       		.byte	0
+ 845 0046 07       		.uleb128 0x7
+ 846 0047 15       		.uleb128 0x15
+ 847 0048 00       		.byte	0
+ 848 0049 27       		.uleb128 0x27
+ 849 004a 19       		.uleb128 0x19
+ 850 004b 00       		.byte	0
+ 851 004c 00       		.byte	0
+ 852 004d 08       		.uleb128 0x8
+ 853 004e 2E       		.uleb128 0x2e
+ 854 004f 00       		.byte	0
+ 855 0050 3F       		.uleb128 0x3f
+ 856 0051 19       		.uleb128 0x19
+ 857 0052 03       		.uleb128 0x3
+ 858 0053 0E       		.uleb128 0xe
+ 859 0054 3A       		.uleb128 0x3a
+ 860 0055 0B       		.uleb128 0xb
+ 861 0056 3B       		.uleb128 0x3b
+ 862 0057 0B       		.uleb128 0xb
+ 863 0058 27       		.uleb128 0x27
+ 864 0059 19       		.uleb128 0x19
+ 865 005a 11       		.uleb128 0x11
+ 866 005b 01       		.uleb128 0x1
+ 867 005c 12       		.uleb128 0x12
+ 868 005d 06       		.uleb128 0x6
+ 869 005e 40       		.uleb128 0x40
+ 870 005f 18       		.uleb128 0x18
+ 871 0060 9742     		.uleb128 0x2117
+ 872 0062 19       		.uleb128 0x19
+ 873 0063 00       		.byte	0
+ 874 0064 00       		.byte	0
+ 875 0065 09       		.uleb128 0x9
+ 876 0066 2E       		.uleb128 0x2e
+ 877 0067 01       		.byte	0x1
+ 878 0068 3F       		.uleb128 0x3f
+ 879 0069 19       		.uleb128 0x19
+ 880 006a 03       		.uleb128 0x3
+ 881 006b 0E       		.uleb128 0xe
+ 882 006c 3A       		.uleb128 0x3a
+ 883 006d 0B       		.uleb128 0xb
+ 884 006e 3B       		.uleb128 0x3b
+ 885 006f 0B       		.uleb128 0xb
+ 886 0070 27       		.uleb128 0x27
+ 887 0071 19       		.uleb128 0x19
+ 888 0072 11       		.uleb128 0x11
+ 889 0073 01       		.uleb128 0x1
+ 890 0074 12       		.uleb128 0x12
+ 891 0075 06       		.uleb128 0x6
+ 892 0076 40       		.uleb128 0x40
+ 893 0077 18       		.uleb128 0x18
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccSCg5fg.s 			page 24
+
+
+ 894 0078 9742     		.uleb128 0x2117
+ 895 007a 19       		.uleb128 0x19
+ 896 007b 01       		.uleb128 0x1
+ 897 007c 13       		.uleb128 0x13
+ 898 007d 00       		.byte	0
+ 899 007e 00       		.byte	0
+ 900 007f 0A       		.uleb128 0xa
+ 901 0080 05       		.uleb128 0x5
+ 902 0081 00       		.byte	0
+ 903 0082 03       		.uleb128 0x3
+ 904 0083 0E       		.uleb128 0xe
+ 905 0084 3A       		.uleb128 0x3a
+ 906 0085 0B       		.uleb128 0xb
+ 907 0086 3B       		.uleb128 0x3b
+ 908 0087 0B       		.uleb128 0xb
+ 909 0088 49       		.uleb128 0x49
+ 910 0089 13       		.uleb128 0x13
+ 911 008a 02       		.uleb128 0x2
+ 912 008b 18       		.uleb128 0x18
+ 913 008c 00       		.byte	0
+ 914 008d 00       		.byte	0
+ 915 008e 0B       		.uleb128 0xb
+ 916 008f 2E       		.uleb128 0x2e
+ 917 0090 00       		.byte	0
+ 918 0091 3F       		.uleb128 0x3f
+ 919 0092 19       		.uleb128 0x19
+ 920 0093 03       		.uleb128 0x3
+ 921 0094 0E       		.uleb128 0xe
+ 922 0095 3A       		.uleb128 0x3a
+ 923 0096 0B       		.uleb128 0xb
+ 924 0097 3B       		.uleb128 0x3b
+ 925 0098 0B       		.uleb128 0xb
+ 926 0099 27       		.uleb128 0x27
+ 927 009a 19       		.uleb128 0x19
+ 928 009b 49       		.uleb128 0x49
+ 929 009c 13       		.uleb128 0x13
+ 930 009d 11       		.uleb128 0x11
+ 931 009e 01       		.uleb128 0x1
+ 932 009f 12       		.uleb128 0x12
+ 933 00a0 06       		.uleb128 0x6
+ 934 00a1 40       		.uleb128 0x40
+ 935 00a2 18       		.uleb128 0x18
+ 936 00a3 9742     		.uleb128 0x2117
+ 937 00a5 19       		.uleb128 0x19
+ 938 00a6 00       		.byte	0
+ 939 00a7 00       		.byte	0
+ 940 00a8 0C       		.uleb128 0xc
+ 941 00a9 05       		.uleb128 0x5
+ 942 00aa 00       		.byte	0
+ 943 00ab 03       		.uleb128 0x3
+ 944 00ac 0E       		.uleb128 0xe
+ 945 00ad 3A       		.uleb128 0x3a
+ 946 00ae 0B       		.uleb128 0xb
+ 947 00af 3B       		.uleb128 0x3b
+ 948 00b0 0B       		.uleb128 0xb
+ 949 00b1 49       		.uleb128 0x49
+ 950 00b2 13       		.uleb128 0x13
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccSCg5fg.s 			page 25
+
+
+ 951 00b3 02       		.uleb128 0x2
+ 952 00b4 17       		.uleb128 0x17
+ 953 00b5 00       		.byte	0
+ 954 00b6 00       		.byte	0
+ 955 00b7 0D       		.uleb128 0xd
+ 956 00b8 34       		.uleb128 0x34
+ 957 00b9 00       		.byte	0
+ 958 00ba 03       		.uleb128 0x3
+ 959 00bb 0E       		.uleb128 0xe
+ 960 00bc 3A       		.uleb128 0x3a
+ 961 00bd 0B       		.uleb128 0xb
+ 962 00be 3B       		.uleb128 0x3b
+ 963 00bf 0B       		.uleb128 0xb
+ 964 00c0 49       		.uleb128 0x49
+ 965 00c1 13       		.uleb128 0x13
+ 966 00c2 02       		.uleb128 0x2
+ 967 00c3 17       		.uleb128 0x17
+ 968 00c4 00       		.byte	0
+ 969 00c5 00       		.byte	0
+ 970 00c6 0E       		.uleb128 0xe
+ 971 00c7 34       		.uleb128 0x34
+ 972 00c8 00       		.byte	0
+ 973 00c9 03       		.uleb128 0x3
+ 974 00ca 0E       		.uleb128 0xe
+ 975 00cb 3A       		.uleb128 0x3a
+ 976 00cc 0B       		.uleb128 0xb
+ 977 00cd 3B       		.uleb128 0x3b
+ 978 00ce 0B       		.uleb128 0xb
+ 979 00cf 49       		.uleb128 0x49
+ 980 00d0 13       		.uleb128 0x13
+ 981 00d1 1C       		.uleb128 0x1c
+ 982 00d2 0B       		.uleb128 0xb
+ 983 00d3 00       		.byte	0
+ 984 00d4 00       		.byte	0
+ 985 00d5 0F       		.uleb128 0xf
+ 986 00d6 898201   		.uleb128 0x4109
+ 987 00d9 00       		.byte	0
+ 988 00da 11       		.uleb128 0x11
+ 989 00db 01       		.uleb128 0x1
+ 990 00dc 31       		.uleb128 0x31
+ 991 00dd 13       		.uleb128 0x13
+ 992 00de 00       		.byte	0
+ 993 00df 00       		.byte	0
+ 994 00e0 10       		.uleb128 0x10
+ 995 00e1 2E       		.uleb128 0x2e
+ 996 00e2 01       		.byte	0x1
+ 997 00e3 3F       		.uleb128 0x3f
+ 998 00e4 19       		.uleb128 0x19
+ 999 00e5 03       		.uleb128 0x3
+ 1000 00e6 0E       		.uleb128 0xe
+ 1001 00e7 3A       		.uleb128 0x3a
+ 1002 00e8 0B       		.uleb128 0xb
+ 1003 00e9 3B       		.uleb128 0x3b
+ 1004 00ea 05       		.uleb128 0x5
+ 1005 00eb 27       		.uleb128 0x27
+ 1006 00ec 19       		.uleb128 0x19
+ 1007 00ed 49       		.uleb128 0x49
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccSCg5fg.s 			page 26
+
+
+ 1008 00ee 13       		.uleb128 0x13
+ 1009 00ef 11       		.uleb128 0x11
+ 1010 00f0 01       		.uleb128 0x1
+ 1011 00f1 12       		.uleb128 0x12
+ 1012 00f2 06       		.uleb128 0x6
+ 1013 00f3 40       		.uleb128 0x40
+ 1014 00f4 18       		.uleb128 0x18
+ 1015 00f5 9742     		.uleb128 0x2117
+ 1016 00f7 19       		.uleb128 0x19
+ 1017 00f8 01       		.uleb128 0x1
+ 1018 00f9 13       		.uleb128 0x13
+ 1019 00fa 00       		.byte	0
+ 1020 00fb 00       		.byte	0
+ 1021 00fc 11       		.uleb128 0x11
+ 1022 00fd 34       		.uleb128 0x34
+ 1023 00fe 00       		.byte	0
+ 1024 00ff 03       		.uleb128 0x3
+ 1025 0100 0E       		.uleb128 0xe
+ 1026 0101 3A       		.uleb128 0x3a
+ 1027 0102 0B       		.uleb128 0xb
+ 1028 0103 3B       		.uleb128 0x3b
+ 1029 0104 05       		.uleb128 0x5
+ 1030 0105 49       		.uleb128 0x49
+ 1031 0106 13       		.uleb128 0x13
+ 1032 0107 02       		.uleb128 0x2
+ 1033 0108 17       		.uleb128 0x17
+ 1034 0109 00       		.byte	0
+ 1035 010a 00       		.byte	0
+ 1036 010b 12       		.uleb128 0x12
+ 1037 010c 34       		.uleb128 0x34
+ 1038 010d 00       		.byte	0
+ 1039 010e 03       		.uleb128 0x3
+ 1040 010f 0E       		.uleb128 0xe
+ 1041 0110 3A       		.uleb128 0x3a
+ 1042 0111 0B       		.uleb128 0xb
+ 1043 0112 3B       		.uleb128 0x3b
+ 1044 0113 05       		.uleb128 0x5
+ 1045 0114 49       		.uleb128 0x49
+ 1046 0115 13       		.uleb128 0x13
+ 1047 0116 1C       		.uleb128 0x1c
+ 1048 0117 0B       		.uleb128 0xb
+ 1049 0118 00       		.byte	0
+ 1050 0119 00       		.byte	0
+ 1051 011a 13       		.uleb128 0x13
+ 1052 011b 2E       		.uleb128 0x2e
+ 1053 011c 00       		.byte	0
+ 1054 011d 3F       		.uleb128 0x3f
+ 1055 011e 19       		.uleb128 0x19
+ 1056 011f 03       		.uleb128 0x3
+ 1057 0120 0E       		.uleb128 0xe
+ 1058 0121 3A       		.uleb128 0x3a
+ 1059 0122 0B       		.uleb128 0xb
+ 1060 0123 3B       		.uleb128 0x3b
+ 1061 0124 05       		.uleb128 0x5
+ 1062 0125 27       		.uleb128 0x27
+ 1063 0126 19       		.uleb128 0x19
+ 1064 0127 11       		.uleb128 0x11
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccSCg5fg.s 			page 27
+
+
+ 1065 0128 01       		.uleb128 0x1
+ 1066 0129 12       		.uleb128 0x12
+ 1067 012a 06       		.uleb128 0x6
+ 1068 012b 40       		.uleb128 0x40
+ 1069 012c 18       		.uleb128 0x18
+ 1070 012d 9742     		.uleb128 0x2117
+ 1071 012f 19       		.uleb128 0x19
+ 1072 0130 00       		.byte	0
+ 1073 0131 00       		.byte	0
+ 1074 0132 14       		.uleb128 0x14
+ 1075 0133 2E       		.uleb128 0x2e
+ 1076 0134 00       		.byte	0
+ 1077 0135 3F       		.uleb128 0x3f
+ 1078 0136 19       		.uleb128 0x19
+ 1079 0137 03       		.uleb128 0x3
+ 1080 0138 0E       		.uleb128 0xe
+ 1081 0139 3A       		.uleb128 0x3a
+ 1082 013a 0B       		.uleb128 0xb
+ 1083 013b 3B       		.uleb128 0x3b
+ 1084 013c 05       		.uleb128 0x5
+ 1085 013d 27       		.uleb128 0x27
+ 1086 013e 19       		.uleb128 0x19
+ 1087 013f 49       		.uleb128 0x49
+ 1088 0140 13       		.uleb128 0x13
+ 1089 0141 11       		.uleb128 0x11
+ 1090 0142 01       		.uleb128 0x1
+ 1091 0143 12       		.uleb128 0x12
+ 1092 0144 06       		.uleb128 0x6
+ 1093 0145 40       		.uleb128 0x40
+ 1094 0146 18       		.uleb128 0x18
+ 1095 0147 9742     		.uleb128 0x2117
+ 1096 0149 19       		.uleb128 0x19
+ 1097 014a 00       		.byte	0
+ 1098 014b 00       		.byte	0
+ 1099 014c 15       		.uleb128 0x15
+ 1100 014d 898201   		.uleb128 0x4109
+ 1101 0150 01       		.byte	0x1
+ 1102 0151 11       		.uleb128 0x11
+ 1103 0152 01       		.uleb128 0x1
+ 1104 0153 31       		.uleb128 0x31
+ 1105 0154 13       		.uleb128 0x13
+ 1106 0155 01       		.uleb128 0x1
+ 1107 0156 13       		.uleb128 0x13
+ 1108 0157 00       		.byte	0
+ 1109 0158 00       		.byte	0
+ 1110 0159 16       		.uleb128 0x16
+ 1111 015a 8A8201   		.uleb128 0x410a
+ 1112 015d 00       		.byte	0
+ 1113 015e 02       		.uleb128 0x2
+ 1114 015f 18       		.uleb128 0x18
+ 1115 0160 9142     		.uleb128 0x2111
+ 1116 0162 18       		.uleb128 0x18
+ 1117 0163 00       		.byte	0
+ 1118 0164 00       		.byte	0
+ 1119 0165 17       		.uleb128 0x17
+ 1120 0166 01       		.uleb128 0x1
+ 1121 0167 01       		.byte	0x1
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccSCg5fg.s 			page 28
+
+
+ 1122 0168 49       		.uleb128 0x49
+ 1123 0169 13       		.uleb128 0x13
+ 1124 016a 01       		.uleb128 0x1
+ 1125 016b 13       		.uleb128 0x13
+ 1126 016c 00       		.byte	0
+ 1127 016d 00       		.byte	0
+ 1128 016e 18       		.uleb128 0x18
+ 1129 016f 21       		.uleb128 0x21
+ 1130 0170 00       		.byte	0
+ 1131 0171 49       		.uleb128 0x49
+ 1132 0172 13       		.uleb128 0x13
+ 1133 0173 2F       		.uleb128 0x2f
+ 1134 0174 0B       		.uleb128 0xb
+ 1135 0175 00       		.byte	0
+ 1136 0176 00       		.byte	0
+ 1137 0177 19       		.uleb128 0x19
+ 1138 0178 34       		.uleb128 0x34
+ 1139 0179 00       		.byte	0
+ 1140 017a 03       		.uleb128 0x3
+ 1141 017b 0E       		.uleb128 0xe
+ 1142 017c 3A       		.uleb128 0x3a
+ 1143 017d 0B       		.uleb128 0xb
+ 1144 017e 3B       		.uleb128 0x3b
+ 1145 017f 0B       		.uleb128 0xb
+ 1146 0180 49       		.uleb128 0x49
+ 1147 0181 13       		.uleb128 0x13
+ 1148 0182 3F       		.uleb128 0x3f
+ 1149 0183 19       		.uleb128 0x19
+ 1150 0184 3C       		.uleb128 0x3c
+ 1151 0185 19       		.uleb128 0x19
+ 1152 0186 00       		.byte	0
+ 1153 0187 00       		.byte	0
+ 1154 0188 1A       		.uleb128 0x1a
+ 1155 0189 2E       		.uleb128 0x2e
+ 1156 018a 00       		.byte	0
+ 1157 018b 3F       		.uleb128 0x3f
+ 1158 018c 19       		.uleb128 0x19
+ 1159 018d 3C       		.uleb128 0x3c
+ 1160 018e 19       		.uleb128 0x19
+ 1161 018f 6E       		.uleb128 0x6e
+ 1162 0190 0E       		.uleb128 0xe
+ 1163 0191 03       		.uleb128 0x3
+ 1164 0192 0E       		.uleb128 0xe
+ 1165 0193 3A       		.uleb128 0x3a
+ 1166 0194 0B       		.uleb128 0xb
+ 1167 0195 3B       		.uleb128 0x3b
+ 1168 0196 0B       		.uleb128 0xb
+ 1169 0197 00       		.byte	0
+ 1170 0198 00       		.byte	0
+ 1171 0199 00       		.byte	0
+ 1172              		.section	.debug_loc,"",%progbits
+ 1173              	.Ldebug_loc0:
+ 1174              	.LLST0:
+ 1175 0000 00000000 		.4byte	.LVL1
+ 1176 0004 07000000 		.4byte	.LVL3-1
+ 1177 0008 0100     		.2byte	0x1
+ 1178 000a 50       		.byte	0x50
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccSCg5fg.s 			page 29
+
+
+ 1179 000b 07000000 		.4byte	.LVL3-1
+ 1180 000f 20000000 		.4byte	.LFE7
+ 1181 0013 0400     		.2byte	0x4
+ 1182 0015 F3       		.byte	0xf3
+ 1183 0016 01       		.uleb128 0x1
+ 1184 0017 50       		.byte	0x50
+ 1185 0018 9F       		.byte	0x9f
+ 1186 0019 00000000 		.4byte	0
+ 1187 001d 00000000 		.4byte	0
+ 1188              	.LLST1:
+ 1189 0021 08000000 		.4byte	.LVL3
+ 1190 0025 19000000 		.4byte	.LVL4-1
+ 1191 0029 0100     		.2byte	0x1
+ 1192 002b 50       		.byte	0x50
+ 1193 002c 00000000 		.4byte	0
+ 1194 0030 00000000 		.4byte	0
+ 1195              	.LLST2:
+ 1196 0034 06000000 		.4byte	.LVL6
+ 1197 0038 0A000000 		.4byte	.LVL7
+ 1198 003c 0500     		.2byte	0x5
+ 1199 003e 70       		.byte	0x70
+ 1200 003f 00       		.sleb128 0
+ 1201 0040 33       		.byte	0x33
+ 1202 0041 1A       		.byte	0x1a
+ 1203 0042 9F       		.byte	0x9f
+ 1204 0043 0A000000 		.4byte	.LVL7
+ 1205 0047 10000000 		.4byte	.LFE8
+ 1206 004b 0100     		.2byte	0x1
+ 1207 004d 50       		.byte	0x50
+ 1208 004e 00000000 		.4byte	0
+ 1209 0052 00000000 		.4byte	0
+ 1210              	.LLST3:
+ 1211 0056 00000000 		.4byte	.LVL12
+ 1212 005a 07000000 		.4byte	.LVL13-1
+ 1213 005e 0100     		.2byte	0x1
+ 1214 0060 50       		.byte	0x50
+ 1215 0061 07000000 		.4byte	.LVL13-1
+ 1216 0065 18000000 		.4byte	.LVL17
+ 1217 0069 0100     		.2byte	0x1
+ 1218 006b 54       		.byte	0x54
+ 1219 006c 18000000 		.4byte	.LVL17
+ 1220 0070 1A000000 		.4byte	.LFE2
+ 1221 0074 0400     		.2byte	0x4
+ 1222 0076 F3       		.byte	0xf3
+ 1223 0077 01       		.uleb128 0x1
+ 1224 0078 50       		.byte	0x50
+ 1225 0079 9F       		.byte	0x9f
+ 1226 007a 00000000 		.4byte	0
+ 1227 007e 00000000 		.4byte	0
+ 1228              		.section	.debug_aranges,"",%progbits
+ 1229 0000 7C000000 		.4byte	0x7c
+ 1230 0004 0200     		.2byte	0x2
+ 1231 0006 00000000 		.4byte	.Ldebug_info0
+ 1232 000a 04       		.byte	0x4
+ 1233 000b 00       		.byte	0
+ 1234 000c 0000     		.2byte	0
+ 1235 000e 0000     		.2byte	0
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccSCg5fg.s 			page 30
+
+
+ 1236 0010 00000000 		.4byte	.LFB4
+ 1237 0014 02000000 		.4byte	.LFE4-.LFB4
+ 1238 0018 00000000 		.4byte	.LFB5
+ 1239 001c 0C000000 		.4byte	.LFE5-.LFB5
+ 1240 0020 00000000 		.4byte	.LFB6
+ 1241 0024 0C000000 		.4byte	.LFE6-.LFB6
+ 1242 0028 00000000 		.4byte	.LFB7
+ 1243 002c 20000000 		.4byte	.LFE7-.LFB7
+ 1244 0030 00000000 		.4byte	.LFB8
+ 1245 0034 10000000 		.4byte	.LFE8-.LFB8
+ 1246 0038 00000000 		.4byte	.LFB9
+ 1247 003c 0C000000 		.4byte	.LFE9-.LFB9
+ 1248 0040 00000000 		.4byte	.LFB10
+ 1249 0044 10000000 		.4byte	.LFE10-.LFB10
+ 1250 0048 00000000 		.4byte	.LFB11
+ 1251 004c 0C000000 		.4byte	.LFE11-.LFB11
+ 1252 0050 00000000 		.4byte	.LFB1
+ 1253 0054 1C000000 		.4byte	.LFE1-.LFB1
+ 1254 0058 00000000 		.4byte	.LFB2
+ 1255 005c 1A000000 		.4byte	.LFE2-.LFB2
+ 1256 0060 00000000 		.4byte	.LFB3
+ 1257 0064 14000000 		.4byte	.LFE3-.LFB3
+ 1258 0068 00000000 		.4byte	.LFB12
+ 1259 006c 0C000000 		.4byte	.LFE12-.LFB12
+ 1260 0070 00000000 		.4byte	.LFB13
+ 1261 0074 0C000000 		.4byte	.LFE13-.LFB13
+ 1262 0078 00000000 		.4byte	0
+ 1263 007c 00000000 		.4byte	0
+ 1264              		.section	.debug_ranges,"",%progbits
+ 1265              	.Ldebug_ranges0:
+ 1266 0000 00000000 		.4byte	.LFB4
+ 1267 0004 02000000 		.4byte	.LFE4
+ 1268 0008 00000000 		.4byte	.LFB5
+ 1269 000c 0C000000 		.4byte	.LFE5
+ 1270 0010 00000000 		.4byte	.LFB6
+ 1271 0014 0C000000 		.4byte	.LFE6
+ 1272 0018 00000000 		.4byte	.LFB7
+ 1273 001c 20000000 		.4byte	.LFE7
+ 1274 0020 00000000 		.4byte	.LFB8
+ 1275 0024 10000000 		.4byte	.LFE8
+ 1276 0028 00000000 		.4byte	.LFB9
+ 1277 002c 0C000000 		.4byte	.LFE9
+ 1278 0030 00000000 		.4byte	.LFB10
+ 1279 0034 10000000 		.4byte	.LFE10
+ 1280 0038 00000000 		.4byte	.LFB11
+ 1281 003c 0C000000 		.4byte	.LFE11
+ 1282 0040 00000000 		.4byte	.LFB1
+ 1283 0044 1C000000 		.4byte	.LFE1
+ 1284 0048 00000000 		.4byte	.LFB2
+ 1285 004c 1A000000 		.4byte	.LFE2
+ 1286 0050 00000000 		.4byte	.LFB3
+ 1287 0054 14000000 		.4byte	.LFE3
+ 1288 0058 00000000 		.4byte	.LFB12
+ 1289 005c 0C000000 		.4byte	.LFE12
+ 1290 0060 00000000 		.4byte	.LFB13
+ 1291 0064 0C000000 		.4byte	.LFE13
+ 1292 0068 00000000 		.4byte	0
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccSCg5fg.s 			page 31
+
+
+ 1293 006c 00000000 		.4byte	0
+ 1294              		.section	.debug_line,"",%progbits
+ 1295              	.Ldebug_line0:
+ 1296 0000 4F010000 		.section	.debug_str,"MS",%progbits,1
+ 1296      02005300 
+ 1296      00000201 
+ 1296      FB0E0D00 
+ 1296      01010101 
+ 1297              	.LASF14:
+ 1298 0000 72656733 		.ascii	"reg32\000"
+ 1298      3200
+ 1299              	.LASF33:
+ 1300 0006 4144435F 		.ascii	"ADC_EOC_Int_ClearPending\000"
+ 1300      454F435F 
+ 1300      496E745F 
+ 1300      436C6561 
+ 1300      7250656E 
+ 1301              	.LASF30:
+ 1302 001f 4144435F 		.ascii	"ADC_EOC_Int_StartEx\000"
+ 1302      454F435F 
+ 1302      496E745F 
+ 1302      53746172 
+ 1302      74457800 
+ 1303              	.LASF3:
+ 1304 0033 73686F72 		.ascii	"short unsigned int\000"
+ 1304      7420756E 
+ 1304      7369676E 
+ 1304      65642069 
+ 1304      6E7400
+ 1305              	.LASF12:
+ 1306 0046 646F7562 		.ascii	"double\000"
+ 1306      6C6500
+ 1307              	.LASF37:
+ 1308 004d 47656E65 		.ascii	"Generated_Source\\PSoC4\\ADC_EOC_Int.c\000"
+ 1308      72617465 
+ 1308      645F536F 
+ 1308      75726365 
+ 1308      5C50536F 
+ 1309              	.LASF11:
+ 1310 0072 666C6F61 		.ascii	"float\000"
+ 1310      7400
+ 1311              	.LASF7:
+ 1312 0078 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 1312      206C6F6E 
+ 1312      6720756E 
+ 1312      7369676E 
+ 1312      65642069 
+ 1313              	.LASF1:
+ 1314 008f 756E7369 		.ascii	"unsigned char\000"
+ 1314      676E6564 
+ 1314      20636861 
+ 1314      7200
+ 1315              	.LASF26:
+ 1316 009d 4144435F 		.ascii	"ADC_EOC_Int_GetVector\000"
+ 1316      454F435F 
+ 1316      496E745F 
+ 1316      47657456 
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccSCg5fg.s 			page 32
+
+
+ 1316      6563746F 
+ 1317              	.LASF24:
+ 1318 00b3 4144435F 		.ascii	"ADC_EOC_Int_Interrupt\000"
+ 1318      454F435F 
+ 1318      496E745F 
+ 1318      496E7465 
+ 1318      72727570 
+ 1319              	.LASF22:
+ 1320 00c9 696E7465 		.ascii	"interruptState\000"
+ 1320      72727570 
+ 1320      74537461 
+ 1320      746500
+ 1321              	.LASF5:
+ 1322 00d8 6C6F6E67 		.ascii	"long unsigned int\000"
+ 1322      20756E73 
+ 1322      69676E65 
+ 1322      6420696E 
+ 1322      7400
+ 1323              	.LASF28:
+ 1324 00ea 4144435F 		.ascii	"ADC_EOC_Int_Disable\000"
+ 1324      454F435F 
+ 1324      496E745F 
+ 1324      44697361 
+ 1324      626C6500 
+ 1325              	.LASF9:
+ 1326 00fe 75696E74 		.ascii	"uint8\000"
+ 1326      3800
+ 1327              	.LASF21:
+ 1328 0104 7072696F 		.ascii	"priority\000"
+ 1328      72697479 
+ 1328      00
+ 1329              	.LASF29:
+ 1330 010d 4144435F 		.ascii	"ADC_EOC_Int_Start\000"
+ 1330      454F435F 
+ 1330      496E745F 
+ 1330      53746172 
+ 1330      7400
+ 1331              	.LASF32:
+ 1332 011f 4144435F 		.ascii	"ADC_EOC_Int_SetPending\000"
+ 1332      454F435F 
+ 1332      496E745F 
+ 1332      53657450 
+ 1332      656E6469 
+ 1333              	.LASF10:
+ 1334 0136 75696E74 		.ascii	"uint32\000"
+ 1334      333200
+ 1335              	.LASF39:
+ 1336 013d 4144435F 		.ascii	"ADC_EOC_Int_GetPriority\000"
+ 1336      454F435F 
+ 1336      496E745F 
+ 1336      47657450 
+ 1336      72696F72 
+ 1337              	.LASF8:
+ 1338 0155 756E7369 		.ascii	"unsigned int\000"
+ 1338      676E6564 
+ 1338      20696E74 
+ 1338      00
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccSCg5fg.s 			page 33
+
+
+ 1339              	.LASF31:
+ 1340 0162 4144435F 		.ascii	"ADC_EOC_Int_Stop\000"
+ 1340      454F435F 
+ 1340      496E745F 
+ 1340      53746F70 
+ 1340      00
+ 1341              	.LASF20:
+ 1342 0173 61646472 		.ascii	"address\000"
+ 1342      65737300 
+ 1343              	.LASF35:
+ 1344 017b 43794578 		.ascii	"CyExitCriticalSection\000"
+ 1344      69744372 
+ 1344      69746963 
+ 1344      616C5365 
+ 1344      6374696F 
+ 1345              	.LASF34:
+ 1346 0191 4379456E 		.ascii	"CyEnterCriticalSection\000"
+ 1346      74657243 
+ 1346      72697469 
+ 1346      63616C53 
+ 1346      65637469 
+ 1347              	.LASF15:
+ 1348 01a8 63796973 		.ascii	"cyisraddress\000"
+ 1348      72616464 
+ 1348      72657373 
+ 1348      00
+ 1349              	.LASF36:
+ 1350 01b5 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
+ 1350      43313120 
+ 1350      352E342E 
+ 1350      31203230 
+ 1350      31363036 
+ 1351 01e8 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m0 -mthumb -g -O"
+ 1351      20726576 
+ 1351      6973696F 
+ 1351      6E203233 
+ 1351      37373135 
+ 1352 021b 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
+ 1352      66756E63 
+ 1352      74696F6E 
+ 1352      2D736563 
+ 1352      74696F6E 
+ 1353              	.LASF17:
+ 1354 0243 73697A65 		.ascii	"sizetype\000"
+ 1354      74797065 
+ 1354      00
+ 1355              	.LASF6:
+ 1356 024c 6C6F6E67 		.ascii	"long long int\000"
+ 1356      206C6F6E 
+ 1356      6720696E 
+ 1356      7400
+ 1357              	.LASF13:
+ 1358 025a 63686172 		.ascii	"char\000"
+ 1358      00
+ 1359              	.LASF40:
+ 1360 025f 43795261 		.ascii	"CyRamVectors\000"
+ 1360      6D566563 
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccSCg5fg.s 			page 34
+
+
+ 1360      746F7273 
+ 1360      00
+ 1361              	.LASF2:
+ 1362 026c 73686F72 		.ascii	"short int\000"
+ 1362      7420696E 
+ 1362      7400
+ 1363              	.LASF23:
+ 1364 0276 7072696F 		.ascii	"priorityOffset\000"
+ 1364      72697479 
+ 1364      4F666673 
+ 1364      657400
+ 1365              	.LASF4:
+ 1366 0285 6C6F6E67 		.ascii	"long int\000"
+ 1366      20696E74 
+ 1366      00
+ 1367              	.LASF19:
+ 1368 028e 4144435F 		.ascii	"ADC_EOC_Int_SetPriority\000"
+ 1368      454F435F 
+ 1368      496E745F 
+ 1368      53657450 
+ 1368      72696F72 
+ 1369              	.LASF16:
+ 1370 02a6 6C6F6E67 		.ascii	"long double\000"
+ 1370      20646F75 
+ 1370      626C6500 
+ 1371              	.LASF25:
+ 1372 02b2 4144435F 		.ascii	"ADC_EOC_Int_Enable\000"
+ 1372      454F435F 
+ 1372      496E745F 
+ 1372      456E6162 
+ 1372      6C6500
+ 1373              	.LASF0:
+ 1374 02c5 7369676E 		.ascii	"signed char\000"
+ 1374      65642063 
+ 1374      68617200 
+ 1375              	.LASF18:
+ 1376 02d1 4144435F 		.ascii	"ADC_EOC_Int_SetVector\000"
+ 1376      454F435F 
+ 1376      496E745F 
+ 1376      53657456 
+ 1376      6563746F 
+ 1377              	.LASF27:
+ 1378 02e7 4144435F 		.ascii	"ADC_EOC_Int_GetState\000"
+ 1378      454F435F 
+ 1378      496E745F 
+ 1378      47657453 
+ 1378      74617465 
+ 1379              	.LASF38:
+ 1380 02fc 433A5C55 		.ascii	"C:\\Users\\JamesN4\\Documents\\PSoC Creator\\Hybrid"
+ 1380      73657273 
+ 1380      5C4A616D 
+ 1380      65734E34 
+ 1380      5C446F63 
+ 1381 032a 456E636F 		.ascii	"EncoderCY8CKIT43\\HybridEncoder.cydsn\000"
+ 1381      64657243 
+ 1381      5938434B 
+ 1381      49543433 
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccSCg5fg.s 			page 35
+
+
+ 1381      5C487962 
+ 1382              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran
