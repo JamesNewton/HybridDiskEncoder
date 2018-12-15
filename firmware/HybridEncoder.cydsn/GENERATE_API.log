@@ -1,16 +1,28 @@
---------------- Build Started: 12/04/2018 21:45:39 Project: HybridEncoder, Configuration: ARM GCC 5.4-2016-q2-update Debug ---------------
-cydsfit.exe -.appdatapath "C:\Users\JamesN4\AppData\Local\Cypress Semiconductor\PSoC Creator\4.1" -.fdsnotice -.fdswarpdepfile=warp_dependencies.txt -.fdselabdepfile=elab_dependencies.txt -.fdsbldfile=generated_files.txt -.fdsreffile=referenced_files.txt -p "C:\Users\JamesN4\Documents\PSoC Creator\HybridEncoderCY8CKIT43\HybridEncoder.cydsn\HybridEncoder.cyprj" -d CY8C4247AZI-M485 -s "C:\Users\JamesN4\Documents\PSoC Creator\HybridEncoderCY8CKIT43\HybridEncoder.cydsn\Generated_Source\PSoC4" -- -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE
+--------------- Build Started: 12/14/2018 19:59:04 Project: HybridEncoder, Configuration: ARM GCC 5.4-2016-q2-update Debug ---------------
+cydsfit.exe -.appdatapath "C:\Users\JamesN4\AppData\Local\Cypress Semiconductor\PSoC Creator\4.1" -.fdsnotice -.fdswarpdepfile=warp_dependencies.txt -.fdselabdepfile=elab_dependencies.txt -.fdsbldfile=generated_files.txt -.fdsreffile=referenced_files.txt -p "C:\Users\JamesN4\Documents\PSoC Creator\HybridEncoderCY8CKIT43\firmware\HybridEncoder.cydsn\HybridEncoder.cyprj" -d CY8C4247AZI-M485 -s "C:\Users\JamesN4\Documents\PSoC Creator\HybridEncoderCY8CKIT43\firmware\HybridEncoder.cydsn\Generated_Source\PSoC4" -- -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE
 Elaborating Design...
 ADD: sdb.M0065: information: Analog terminal "DieTemp.temp" on TopDesign is unconnected.
- * C:\Users\JamesN4\Documents\PSoC Creator\HybridEncoderCY8CKIT43\HybridEncoder.cydsn\TopDesign\TopDesign.cysch (Signal: Net_688)
- * C:\Users\JamesN4\Documents\PSoC Creator\HybridEncoderCY8CKIT43\HybridEncoder.cydsn\TopDesign\TopDesign.cysch (Shape_110.3)
- * C:\Users\JamesN4\Documents\PSoC Creator\HybridEncoderCY8CKIT43\HybridEncoder.cydsn\TopDesign\TopDesign.cysch (Shape_133)
- * C:\Users\JamesN4\Documents\PSoC Creator\HybridEncoderCY8CKIT43\HybridEncoder.cydsn\TopDesign\TopDesign.cysch (Shape_134)
- * C:\Users\JamesN4\Documents\PSoC Creator\HybridEncoderCY8CKIT43\HybridEncoder.cydsn\TopDesign\TopDesign.cysch (Shape_135)
+ * C:\Users\JamesN4\Documents\PSoC Creator\HybridEncoderCY8CKIT43\firmware\HybridEncoder.cydsn\TopDesign\TopDesign.cysch (Signal: Net_688)
+ * C:\Users\JamesN4\Documents\PSoC Creator\HybridEncoderCY8CKIT43\firmware\HybridEncoder.cydsn\TopDesign\TopDesign.cysch (Shape_110.3)
+ * C:\Users\JamesN4\Documents\PSoC Creator\HybridEncoderCY8CKIT43\firmware\HybridEncoder.cydsn\TopDesign\TopDesign.cysch (Shape_133)
+ * C:\Users\JamesN4\Documents\PSoC Creator\HybridEncoderCY8CKIT43\firmware\HybridEncoder.cydsn\TopDesign\TopDesign.cysch (Shape_134)
+ * C:\Users\JamesN4\Documents\PSoC Creator\HybridEncoderCY8CKIT43\firmware\HybridEncoder.cydsn\TopDesign\TopDesign.cysch (Shape_135)
+ADD: sdb.M0065: information: Analog terminal "ADC_2_Buffer.Vout" on TopDesign is unconnected.
+ * C:\Users\JamesN4\Documents\PSoC Creator\HybridEncoderCY8CKIT43\firmware\HybridEncoder.cydsn\TopDesign\TopDesign.cysch (Signal: Net_539)
+ * C:\Users\JamesN4\Documents\PSoC Creator\HybridEncoderCY8CKIT43\firmware\HybridEncoder.cydsn\TopDesign\TopDesign.cysch (Shape_111.10)
+ADD: sdb.M0065: information: Analog terminal "ADC_3_Buffer.Vout" on TopDesign is unconnected.
+ * C:\Users\JamesN4\Documents\PSoC Creator\HybridEncoderCY8CKIT43\firmware\HybridEncoder.cydsn\TopDesign\TopDesign.cysch (Signal: Net_540)
+ * C:\Users\JamesN4\Documents\PSoC Creator\HybridEncoderCY8CKIT43\firmware\HybridEncoder.cydsn\TopDesign\TopDesign.cysch (Shape_112.10)
+ADD: sdb.M0065: information: Analog terminal "ADC_3_Buffer.Vplus" on TopDesign is unconnected.
+ * C:\Users\JamesN4\Documents\PSoC Creator\HybridEncoderCY8CKIT43\firmware\HybridEncoder.cydsn\TopDesign\TopDesign.cysch (Signal: Net_541)
+ * C:\Users\JamesN4\Documents\PSoC Creator\HybridEncoderCY8CKIT43\firmware\HybridEncoder.cydsn\TopDesign\TopDesign.cysch (Shape_112.4)
+ADD: sdb.M0065: information: Analog terminal "ADC_2_Buffer.Vplus" on TopDesign is unconnected.
+ * C:\Users\JamesN4\Documents\PSoC Creator\HybridEncoderCY8CKIT43\firmware\HybridEncoder.cydsn\TopDesign\TopDesign.cysch (Signal: Net_542)
+ * C:\Users\JamesN4\Documents\PSoC Creator\HybridEncoderCY8CKIT43\firmware\HybridEncoder.cydsn\TopDesign\TopDesign.cysch (Shape_111.4)
 HDL Generation...
 Synthesis...
 Tech Mapping...
-ADD: pft.M0040: information: The following 26 pin(s) will be assigned a location by the fitter: \CapSense:Cmod(0)\, \CapSense:Sns(0)\, \CapSense:Sns(1)\, \I2C:scl(0)\, \I2C:sda(0)\, \SPI:miso_s(0)\, \SPI:mosi_s(0)\, \SPI:sclk_s(0)\, \SPI:ss_s(0)\, ADC_0(0), ADC_1M(0), ADC_1P(0), CompM_0(0), CompM_1(0), CompP_0(0), CompP_1(0), IDAC_7bit_In(0), IDAC_8bit_Out(0), Input_Pin_0(0), Input_Pin_1(0), Output_Pin_0(0), Output_Pin_1(0), PWM_0_Out(0), PWM_1_Out(0), Timer_Pin(0), Wakeup_Pin(0)
+ADD: pft.M0040: information: The following 22 pin(s) will be assigned a location by the fitter: \CapSense:Cmod(0)\, \CapSense:Sns(0)\, \CapSense:Sns(1)\, \I2C:scl(0)\, \I2C:sda(0)\, \SPI:miso_s(0)\, \SPI:mosi_s(0)\, \SPI:sclk_s(0)\, \SPI:ss_s(0)\, ADC_1(0), CompM_0(0), CompM_1(0), CompP_0(0), CompP_1(0), Input_Pin_0(0), Input_Pin_1(0), Output_Pin_0(0), Output_Pin_1(0), PWM_0_Out(0), PWM_1_Out(0), Timer_Pin(0), Wakeup_Pin(0)
 Analog Placement...
 Analog Routing...
 Analog Code Generation...
@@ -22,4 +34,4 @@ Static timing analysis...
 API Generation...
 Dependency Generation...
 Cleanup...
---------------- Build Succeeded: 12/04/2018 21:46:03 ---------------
+--------------- Build Skipped: 12/14/2018 19:59:21 ---------------

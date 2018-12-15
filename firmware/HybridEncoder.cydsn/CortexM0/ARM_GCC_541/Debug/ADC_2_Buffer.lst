@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc7SKdnQ.s 			page 1
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc96r7in.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc7SKdnQ.s 			page 1
   28:Generated_Source\PSoC4/ADC_2_Buffer.c **** *  Initializes or restores the component according to the customizer Configure 
   29:Generated_Source\PSoC4/ADC_2_Buffer.c **** *  dialog settings. It is not necessary to call Init() because the Start() API 
   30:Generated_Source\PSoC4/ADC_2_Buffer.c **** *  calls this function and is the preferred method to begin the component operation.
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc7SKdnQ.s 			page 2
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc96r7in.s 			page 2
 
 
   31:Generated_Source\PSoC4/ADC_2_Buffer.c **** *
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc7SKdnQ.s 			page 1
   67              		.type	ADC_2_Buffer_Enable, %function
   68              	ADC_2_Buffer_Enable:
   69              	.LFB1:
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc7SKdnQ.s 			page 3
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc96r7in.s 			page 3
 
 
   46:Generated_Source\PSoC4/ADC_2_Buffer.c **** 
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc7SKdnQ.s 			page 1
  101              		.type	ADC_2_Buffer_Start, %function
  102              	ADC_2_Buffer_Start:
  103              	.LFB2:
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc7SKdnQ.s 			page 4
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc96r7in.s 			page 4
 
 
   69:Generated_Source\PSoC4/ADC_2_Buffer.c **** 
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc7SKdnQ.s 			page 1
  127              	.LVL1:
  100:Generated_Source\PSoC4/ADC_2_Buffer.c **** }
  128              		.loc 1 100 0
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc7SKdnQ.s 			page 5
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc96r7in.s 			page 5
 
 
  129              		@ sp needed
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc7SKdnQ.s 			page 1
  162              	.L12:
  163 000c 08003040 		.word	1076887560
  164 0010 FCF7FFFF 		.word	-2052
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc7SKdnQ.s 			page 6
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc96r7in.s 			page 6
 
 
  165              		.cfi_endproc
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc7SKdnQ.s 			page 1
  148:Generated_Source\PSoC4/ADC_2_Buffer.c ****     ADC_2_Buffer_OA_RES_CTRL_REG = tmp | ADC_2_Buffer_internalPower;
  193              		.loc 1 148 0
  194 000e 1843     		orrs	r0, r3
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc7SKdnQ.s 			page 7
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc96r7in.s 			page 7
 
 
  195 0010 1060     		str	r0, [r2]
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc7SKdnQ.s 			page 1
  223 0002 06D0     		beq	.L18
  175:Generated_Source\PSoC4/ADC_2_Buffer.c ****     {
  176:Generated_Source\PSoC4/ADC_2_Buffer.c ****         ADC_2_Buffer_OA_RES_CTRL |= ADC_2_Buffer_OA_PUMP_EN;    
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc7SKdnQ.s 			page 8
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc96r7in.s 			page 8
 
 
  224              		.loc 1 176 0
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc7SKdnQ.s 			page 1
  272 000b 01       		.uleb128 0x1
  273 000c 7E010000 		.4byte	.LASF24
  274 0010 0C       		.byte	0xc
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc7SKdnQ.s 			page 9
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc96r7in.s 			page 9
 
 
  275 0011 58010000 		.4byte	.LASF25
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc7SKdnQ.s 			page 1
  329 007f 48000000 		.4byte	0x48
  330 0083 02       		.uleb128 0x2
  331 0084 04       		.byte	0x4
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc7SKdnQ.s 			page 10
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc96r7in.s 			page 10
 
 
  332 0085 04       		.byte	0x4
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc7SKdnQ.s 			page 1
  386 00fe 14000000 		.4byte	.LFE3-.LFB3
  387 0102 01       		.uleb128 0x1
  388 0103 9C       		.byte	0x9c
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc7SKdnQ.s 			page 11
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc96r7in.s 			page 11
 
 
  389 0104 07       		.uleb128 0x7
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc7SKdnQ.s 			page 1
  443 0176 03       		.byte	0x3
  444 0177 00000000 		.4byte	ADC_2_Buffer_initVar
  445 017b 00       		.byte	0
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc7SKdnQ.s 			page 12
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc96r7in.s 			page 12
 
 
  446              		.section	.debug_abbrev,"",%progbits
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc7SKdnQ.s 			page 1
  500 0034 00       		.byte	0
  501 0035 00       		.byte	0
  502 0036 05       		.uleb128 0x5
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc7SKdnQ.s 			page 13
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc96r7in.s 			page 13
 
 
  503 0037 35       		.uleb128 0x35
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc7SKdnQ.s 			page 1
  557 006f 08       		.uleb128 0x8
  558 0070 898201   		.uleb128 0x4109
  559 0073 00       		.byte	0
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc7SKdnQ.s 			page 14
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc96r7in.s 			page 14
 
 
  560 0074 11       		.uleb128 0x11
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc7SKdnQ.s 			page 1
  614 00aa 03       		.uleb128 0x3
  615 00ab 0E       		.uleb128 0xe
  616 00ac 3A       		.uleb128 0x3a
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc7SKdnQ.s 			page 15
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc96r7in.s 			page 15
 
 
  617 00ad 0B       		.uleb128 0xb
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc7SKdnQ.s 			page 1
  671 001c 1C000000 		.4byte	.LFE1-.LFB1
  672 0020 00000000 		.4byte	.LFB2
  673 0024 20000000 		.4byte	.LFE2-.LFB2
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc7SKdnQ.s 			page 16
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc96r7in.s 			page 16
 
 
  674 0028 00000000 		.4byte	.LFB3
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc7SKdnQ.s 			page 1
  710              	.LASF17:
  711 0083 4144435F 		.ascii	"ADC_2_Buffer_Stop\000"
  711      325F4275 
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc7SKdnQ.s 			page 17
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc96r7in.s 			page 17
 
 
  711      66666572 
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc7SKdnQ.s 			page 1
  733 012d 75696E74 		.ascii	"uint32\000"
  733      333200
  734              	.LASF8:
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc7SKdnQ.s 			page 18
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc96r7in.s 			page 18
 
 
  735 0134 756E7369 		.ascii	"unsigned int\000"
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc7SKdnQ.s 			page 1
  755      68617200 
  756              	.LASF15:
  757 0244 4144435F 		.ascii	"ADC_2_Buffer_Init\000"
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc7SKdnQ.s 			page 19
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc96r7in.s 			page 19
 
 
  757      325F4275 

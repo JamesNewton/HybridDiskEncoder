@@ -1,16 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <blockRegMap version="1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://cypress.com/xsd/cyblockregmap cyblockregmap.xsd" xmlns="http://cypress.com/xsd/cyblockregmap">
-  <block name="Timer_Int" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
-  <block name="Timer_Pin" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
   <block name="Clock_1MHz" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
-  <block name="PWM_0_Out" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="Timer_Int" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
   <block name="PWM_0_Int" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
-  <block name="Input_1_Int" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
-  <block name="Output_Pin_1" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
-  <block name="Output_Pin_0" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="PWM_1_Out" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="PWM_0_Out" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="Input_Pin_1" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
   <block name="Input_Pin_0" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
   <block name="Input_0_Int" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
-  <block name="Input_Pin_1" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="Timer_Pin" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="Input_1_Int" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
   <block name="I2C" BASE="0x0" SIZE="0x0" desc="Serial Communication Block" visible="true" hidden="false">
     <block name="sclk_s_VM" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
     <block name="clock_VM" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
@@ -2083,37 +2082,7 @@
       <field name="CURR_DATA_NR" from="15" to="0" access="RW" resetVal="" desc="Specifies the index of the current data transfer. This value increases from 0 to CONTROL.DATA_NR. HW sets this field: &#xA; - When a descriptor is done (RESPONSE is DONE), the field is set to '0' when PING_CTL.INV_DESCR is '0' and the field is set to PING_CTL.DATA_NR when PING_CTL.INV_DESCR is '1'.                                                                 &#xA; - When a descriptor is not done (RESPONSE is NO_ERROR), the field reflects the progress of a data transfer.                                                                 &#xA; - In case of erroneous behavior (RESPONSE is neither DONE or NO_ERROR), the field is not updated, but keeps its value to ease debugging.                                                                 &#xA; HW only modifies this field for an active descriptor (STATUS.VALID to be '1'). At descriptor initialization, SW should set this field to '0'.                                                                 &#xA; This field allows software to read the progress of the data transfer. Note that SRC.ADDR and DST.ADDR represent base addresses and are not modified during data transfer. However, STATUS.CURR_DATA_NR is modified during data transfer and provides an offset wrt. the base addresses." hidden="false" />
     </register>
   </block>
-  <block name="PWM_0" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false">
-    <block name="VMux_count" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
-    <block name="VMux_reload" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
-    <block name="VMux_start" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
-    <block name="VMux_stop" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
-    <block name="VMux_capture" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
-    <block name="VMux_clock" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
-    <block name="cy_m0s8_tcpwm_1" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
-    <register name="COUNTER" address="0x40200108" bitWidth="32" desc="Current counter value" hidden="false" />
-    <register name="CC" address="0x4020010C" bitWidth="32" desc="Compare / capture value" hidden="false" />
-    <register name="CC_BUF" address="0x40200110" bitWidth="32" desc="Compare / capture buffer value" hidden="false" />
-    <register name="PERIOD" address="0x40200114" bitWidth="32" desc="Period value" hidden="false" />
-    <register name="PERIOD_BUF" address="0x40200118" bitWidth="32" desc="Period buffer value" hidden="false" />
-  </block>
-  <block name="PWM_2_Out" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
-  <block name="PWM_1_Out" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
   <block name="Timer" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false">
-    <block name="VMux_count" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
-    <block name="VMux_reload" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
-    <block name="VMux_start" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
-    <block name="VMux_stop" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
-    <block name="VMux_capture" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
-    <block name="VMux_clock" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
-    <block name="cy_m0s8_tcpwm_1" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
-    <register name="COUNTER" address="0x40200148" bitWidth="32" desc="Current counter value" hidden="false" />
-    <register name="CC" address="0x4020014C" bitWidth="32" desc="Compare / capture value" hidden="false" />
-    <register name="CC_BUF" address="0x40200150" bitWidth="32" desc="Compare / capture buffer value" hidden="false" />
-    <register name="PERIOD" address="0x40200154" bitWidth="32" desc="Period value" hidden="false" />
-    <register name="PERIOD_BUF" address="0x40200158" bitWidth="32" desc="Period buffer value" hidden="false" />
-  </block>
-  <block name="PWM_1" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false">
     <block name="VMux_count" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
     <block name="VMux_reload" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
     <block name="VMux_start" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
@@ -2127,6 +2096,7 @@
     <register name="PERIOD" address="0x40200194" bitWidth="32" desc="Period value" hidden="false" />
     <register name="PERIOD_BUF" address="0x40200198" bitWidth="32" desc="Period buffer value" hidden="false" />
   </block>
+  <block name="PWM_2_Out" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
   <block name="PWM_2" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false">
     <block name="VMux_count" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
     <block name="VMux_reload" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
@@ -2141,47 +2111,34 @@
     <register name="PERIOD" address="0x402002D4" bitWidth="32" desc="Period value" hidden="false" />
     <register name="PERIOD_BUF" address="0x402002D8" bitWidth="32" desc="Period buffer value" hidden="false" />
   </block>
-  <block name="ADC_1M" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
-  <block name="ADC_3_Buffer" BASE="0x0" SIZE="0x0" desc="OpAmp" visible="true" hidden="false">
-    <block name="cy_analog_noconnect_1" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
-    <block name="cy_analog_virtualmux_1" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
-    <block name="cy_analog_virtualmux_2" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
-    <block name="cy_psoc4_abuf" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
-    <register name="CTBM_CTRL" address="0x40300000" bitWidth="32" desc="Global CTB IP and power control" hidden="false">
-      <field name="DEEPSLEEP_ON" from="30" to="30" access="RW" resetVal="" desc="Selects component behavior in DeepSleep power mode" hidden="false">
-        <value name="DISABLE" value="0" desc="CTB IP disabled off during DeepSleep power mode" />
-        <value name="ENABLE" value="1" desc="CTB IP remains enabled during DeepSleep power mode (if ENABLED=1)" />
-      </field>
-      <field name="ENABLED" from="31" to="31" access="RW" resetVal="" desc="Selects component behavior in DeepSleep power mode" hidden="false">
-        <value name="DISABLE" value="0" desc="CTB IP disabled (put analog in power down, open all switches)" />
-        <value name="ENABLE" value="1" desc="CTB IP enabledCTB IP enabled" />
-      </field>
-    </register>
-    <register name="OA_RES_CTRL" address="0x40300004" bitWidth="32" desc="Opamp and resistor control" hidden="false">
-      <field name="OA_PWR_MODE" from="1" to="0" access="RW" resetVal="" desc="Selects power for opamp" hidden="false">
-        <value name="OFF" value="00" desc="Off" />
-        <value name="LOW" value="01" desc="Low power" />
-        <value name="MED" value="10" desc="Medium power" />
-        <value name="HIGH" value="11" desc="High power" />
-      </field>
-      <field name="OA0_DRIVE_STR_SEL" from="2" to="2" access="RW" resetVal="" desc="Opamp output strenght select" hidden="false">
-        <value name="1x" value="0" desc="Internal only" />
-        <value name="10x" value="1" desc="Output to pin" />
-      </field>
-      <field name="OA_PUMP_EN" from="11" to="11" access="RW" resetVal="" desc="Selects pump" hidden="false">
-        <value name="DISABLE" value="0" desc="Pump disabled" />
-        <value name="ENABLE" value="1" desc="Pump enabled" />
-      </field>
-    </register>
-    <register name="OA_COMP_TRIM" address="0x40300F08" bitWidth="32" desc="Opamp Compenation Capacitor Trim" hidden="false">
-      <field name="OA_COMP_TRIM" from="1" to="0" access="RW" resetVal="" desc="Opamp Compenation Capacitor Trim" hidden="false">
-        <value name="HIGH_SPEED" value="01" desc="High Speed" />
-        <value name="BALANCED" value="10" desc="Balanced" />
-        <value name="HIGH_STABILITY" value="11" desc="High Stability" />
-      </field>
-    </register>
+  <block name="PWM_0" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false">
+    <block name="VMux_count" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+    <block name="VMux_reload" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+    <block name="VMux_start" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+    <block name="VMux_stop" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+    <block name="VMux_capture" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+    <block name="VMux_clock" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+    <block name="cy_m0s8_tcpwm_1" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+    <register name="COUNTER" address="0x40200108" bitWidth="32" desc="Current counter value" hidden="false" />
+    <register name="CC" address="0x4020010C" bitWidth="32" desc="Compare / capture value" hidden="false" />
+    <register name="CC_BUF" address="0x40200110" bitWidth="32" desc="Compare / capture buffer value" hidden="false" />
+    <register name="PERIOD" address="0x40200114" bitWidth="32" desc="Period value" hidden="false" />
+    <register name="PERIOD_BUF" address="0x40200118" bitWidth="32" desc="Period buffer value" hidden="false" />
   </block>
-  <block name="ADC_2" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="PWM_1" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false">
+    <block name="VMux_count" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+    <block name="VMux_reload" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+    <block name="VMux_start" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+    <block name="VMux_stop" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+    <block name="VMux_capture" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+    <block name="VMux_clock" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+    <block name="cy_m0s8_tcpwm_1" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+    <register name="COUNTER" address="0x40200148" bitWidth="32" desc="Current counter value" hidden="false" />
+    <register name="CC" address="0x4020014C" bitWidth="32" desc="Compare / capture value" hidden="false" />
+    <register name="CC_BUF" address="0x40200150" bitWidth="32" desc="Compare / capture buffer value" hidden="false" />
+    <register name="PERIOD" address="0x40200154" bitWidth="32" desc="Period value" hidden="false" />
+    <register name="PERIOD_BUF" address="0x40200158" bitWidth="32" desc="Period buffer value" hidden="false" />
+  </block>
   <block name="ADC" BASE="0x0" SIZE="0x0" desc="Sequencing SAR ADC" visible="true" hidden="false">
     <block name="cy_analog_noconnect_31" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
     <block name="cy_analog_noconnect_32" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
@@ -2588,47 +2545,89 @@
     </register>
   </block>
   <block name="ADC_3" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
-  <block name="ADC_2_Buffer" BASE="0x0" SIZE="0x0" desc="OpAmp" visible="true" hidden="false">
-    <block name="cy_analog_noconnect_1" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
-    <block name="cy_analog_virtualmux_1" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
-    <block name="cy_analog_virtualmux_2" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
-    <block name="cy_psoc4_abuf" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
-    <register name="CTBM_CTRL" address="0x40300000" bitWidth="32" desc="Global CTB IP and power control" hidden="false">
-      <field name="DEEPSLEEP_ON" from="30" to="30" access="RW" resetVal="" desc="Selects component behavior in DeepSleep power mode" hidden="false">
-        <value name="DISABLE" value="0" desc="CTB IP disabled off during DeepSleep power mode" />
-        <value name="ENABLE" value="1" desc="CTB IP remains enabled during DeepSleep power mode (if ENABLED=1)" />
+  <block name="Comp_0" BASE="0x0" SIZE="0x0" desc="Low Power Comparator" visible="true" hidden="false">
+    <block name="cy_psoc4_lpcomp_1" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+    <register name="_CONFIG" address="0x402B0004" bitWidth="32" desc="LPCOMP configuration" hidden="false">
+      <field name="MODE1" from="1" to="0" access="RW" resetVal="" desc="Selects  speed for the comparator #1" hidden="false">
+        <value name="MED" value="00" desc="Medium speed" />
+        <value name="FAST" value="01" desc="Fast speed" />
+        <value name="SLOW" value="10" desc="Slow speed" />
       </field>
-      <field name="ENABLED" from="31" to="31" access="RW" resetVal="" desc="Selects component behavior in DeepSleep power mode" hidden="false">
-        <value name="DISABLE" value="0" desc="CTB IP disabled (put analog in power down, open all switches)" />
-        <value name="ENABLE" value="1" desc="CTB IP enabledCTB IP enabled" />
+      <field name="HYST1" from="2" to="2" access="RW" resetVal="" desc="Selects hysteresis (10mV) for the comparator #1" hidden="false">
+        <value name="ENABLE" value="0" desc="Hysteresis enabled" />
+        <value name="DISABLE" value="1" desc="Hysteresis disabled" />
+      </field>
+      <field name="INTTYPE1" from="5" to="4" access="RW" resetVal="" desc="Sets which edge will trigger an IRQ for the comparator #1" hidden="false">
+        <value name="DISABLE" value="00" desc="Disabled" />
+        <value name="RISING" value="01" desc="Rising edge" />
+        <value name="FALLING" value="10" desc="Falling edge" />
+        <value name="BOTH" value="11" desc="Both rising and falling edges" />
+      </field>
+      <field name="OUT1" from="6" to="6" access="R" resetVal="" desc="Current output value of the comparator" hidden="false" />
+      <field name="ENABLE1" from="7" to="7" access="RW" resetVal="" desc="Enable comparator #1" hidden="false">
+        <value name="DISABLE" value="0" desc="Comparator disabled" />
+        <value name="ENABLE" value="1" desc="Comparator enabled" />
+      </field>
+      <field name="MODE2" from="9" to="8" access="RW" resetVal="" desc="Selects speed for the comparator #2" hidden="false">
+        <value name="MED" value="00" desc="Medium speed" />
+        <value name="FAST" value="01" desc="Fast speed" />
+        <value name="SLOW" value="10" desc="Slow speed" />
+      </field>
+      <field name="HYST2" from="10" to="10" access="RW" resetVal="" desc="Selects hysteresis (10mV) for the comparator #2" hidden="false">
+        <value name="ENABLE" value="0" desc="Hysteresis enabled" />
+        <value name="DISABLE" value="1" desc="Hysteresis disabled" />
+      </field>
+      <field name="INTTYPE2" from="13" to="12" access="RW" resetVal="" desc="Sets which edge will trigger an IRQ for the comparator #2" hidden="false">
+        <value name="DISABLE" value="00" desc="Disabled" />
+        <value name="RISING" value="01" desc="Rising edge" />
+        <value name="FALLING" value="10" desc="Falling edge" />
+        <value name="BOTH" value="11" desc="Both rising and falling edges" />
+      </field>
+      <field name="OUT2" from="14" to="14" access="R" resetVal="" desc="Current output value of the comparator #2" hidden="false" />
+      <field name="ENABLE2" from="15" to="15" access="RW" resetVal="" desc="Enable comparator #2" hidden="false">
+        <value name="DISABLE" value="0" desc="Comparator disabled" />
+        <value name="ENABLE" value="1" desc="Comparator enabled" />
+      </field>
+      <field name="DSI_BYPASS1" from="16" to="16" access="RW" resetVal="" desc="Bypass comparator #1 output synchronization for DSI output" hidden="false">
+        <value name="SYNCHRONIZE" value="0" desc="Synchronize (level or pulse)" />
+        <value name="BYPASS" value="1" desc="Bypass (output async)" />
+      </field>
+      <field name="DSI_LEVEL1" from="17" to="17" access="RW" resetVal="" desc="Comparator #1 DSI (trigger) out level" hidden="false">
+        <value name="PULSE" value="0" desc="Pulse" />
+        <value name="LEVEL" value="1" desc="Level" />
+      </field>
+      <field name="DSI_BYPASS2" from="20" to="20" access="RW" resetVal="" desc="Bypass comparator #2 output synchronization for DSI output" hidden="false">
+        <value name="SYNCHRONIZE" value="0" desc="Synchronize (level or pulse)" />
+        <value name="BYPASS" value="1" desc="Bypass (output async)" />
+      </field>
+      <field name="DSI_LEVEL2" from="21" to="21" access="RW" resetVal="" desc="Comparator #2 DSI (trigger) out level" hidden="false">
+        <value name="PULSE" value="0" desc="Pulse" />
+        <value name="LEVEL" value="1" desc="Level" />
       </field>
     </register>
-    <register name="OA_RES_CTRL" address="0x40300008" bitWidth="32" desc="Opamp and resistor control" hidden="false">
-      <field name="OA_PWR_MODE" from="1" to="0" access="RW" resetVal="" desc="Selects power for opamp" hidden="false">
-        <value name="OFF" value="00" desc="Off" />
-        <value name="LOW" value="01" desc="Low power" />
-        <value name="MED" value="10" desc="Medium power" />
-        <value name="HIGH" value="11" desc="High power" />
-      </field>
-      <field name="OA0_DRIVE_STR_SEL" from="2" to="2" access="RW" resetVal="" desc="Opamp output strenght select" hidden="false">
-        <value name="1x" value="0" desc="Internal only" />
-        <value name="10x" value="1" desc="Output to pin" />
-      </field>
-      <field name="OA_PUMP_EN" from="11" to="11" access="RW" resetVal="" desc="Selects pump" hidden="false">
-        <value name="DISABLE" value="0" desc="Pump disabled" />
-        <value name="ENABLE" value="1" desc="Pump enabled" />
-      </field>
+    <register name="_INTR" address="0x402B0010" bitWidth="32" desc="LPCOMP interrupt" hidden="false">
+      <field name="COMP1" from="0" to="0" access="RW" resetVal="" desc="Comparator #1 Interrupt: hardware sets this interrupt when comparator 0 triggers. Write with '1' to clear bit." hidden="false" />
+      <field name="COMP2" from="1" to="1" access="RW" resetVal="" desc="Comparator #2 Interrupt: hardware sets this interrupt when comparator 0 triggers. Write with '1' to clear bit." hidden="false" />
     </register>
-    <register name="OA_COMP_TRIM" address="0x40300F14" bitWidth="32" desc="Opamp Compenation Capacitor Trim" hidden="false">
-      <field name="OA_COMP_TRIM" from="1" to="0" access="RW" resetVal="" desc="Opamp Compenation Capacitor Trim" hidden="false">
-        <value name="HIGH_SPEED" value="01" desc="High Speed" />
-        <value name="BALANCED" value="10" desc="Balanced" />
-        <value name="HIGH_STABILITY" value="11" desc="High Stability" />
-      </field>
+    <register name="_INTR_SET" address="0x402B0014" bitWidth="32" desc="LPCOMP interrupt set register" hidden="false">
+      <field name="COMP1" from="0" to="0" access="RW" resetVal="" desc="Write with '1' to set corresponding bit in interrupt request register." hidden="false" />
+      <field name="COMP2" from="1" to="1" access="RW" resetVal="" desc="Write with '1' to set corresponding bit in interrupt request register." hidden="false" />
     </register>
+    <register name="_INTR_MASK" address="0x402B0018" bitWidth="32" desc="LPCOMP interrupt mask" hidden="false">
+      <field name="COMP1_MASK" from="0" to="0" access="RW" resetVal="" desc="Mask bit for corresponding bit in interrupt request register." hidden="false" />
+      <field name="COMP2_MASK" from="1" to="1" access="RW" resetVal="" desc="Mask bit for corresponding bit in interrupt request register." hidden="false" />
+    </register>
+    <register name="_INTR_MASKED" address="0x402B001C" bitWidth="32" desc="LPCOMP interrupt masked" hidden="false">
+      <field name="COMP1_MASKED" from="0" to="0" access="R" resetVal="" desc="Logical and of corresponding request and mask bits." hidden="false" />
+      <field name="COMP2_MASKED" from="1" to="1" access="R" resetVal="" desc="Logical and of corresponding request and mask bits." hidden="false" />
+    </register>
+    <register name="_TRIM_A" address="0x402BFF00" bitWidth="32" desc="LPCOMP trim A" hidden="false" />
+    <register name="_TRIM_B" address="0x402BFF04" bitWidth="32" desc="LPCOMP trim B" hidden="false" />
   </block>
+  <block name="CompM_0" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="CompP_0" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
   <block name="ADC_0" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
-  <block name="ADC_1P" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="ADC_1" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
   <block name="CapSense" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false">
     <block name="ZeroTerminal_2" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
     <block name="ZeroTerminal_1" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
@@ -2657,13 +2656,9 @@
     </block>
     <block name="ISR" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
   </block>
-  <block name="DieTemp" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false">
-    <block name="cy_analog_noconnect_1" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
-    <block name="cy_psoc4_temp" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
-  </block>
+  <block name="ADC_2" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
   <block name="ADC_EOC_Int" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
-  <block name="LPComp_Int" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
-  <block name="LPCompInt" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="Wakeup_Pin_Int" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
   <block name="Wakeup_Pin" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
   <block name="SPI" BASE="0x0" SIZE="0x0" desc="Serial Communication Block" visible="true" hidden="false">
     <block name="clock_VM" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
@@ -3012,89 +3007,8 @@
       <field name="BREAK_DETECT" from="11" to="11" access="RW" resetVal="" desc="Logical and of corresponding request and mask bits" hidden="false" />
     </register>
   </block>
-  <block name="Wakeup_Pin_Int" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
-  <block name="CompM_1" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
-  <block name="CompP_0" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
-  <block name="Comp_0" BASE="0x0" SIZE="0x0" desc="Low Power Comparator" visible="true" hidden="false">
-    <block name="cy_psoc4_lpcomp_1" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
-    <register name="_CONFIG" address="0x402B0004" bitWidth="32" desc="LPCOMP configuration" hidden="false">
-      <field name="MODE1" from="1" to="0" access="RW" resetVal="" desc="Selects  speed for the comparator #1" hidden="false">
-        <value name="MED" value="00" desc="Medium speed" />
-        <value name="FAST" value="01" desc="Fast speed" />
-        <value name="SLOW" value="10" desc="Slow speed" />
-      </field>
-      <field name="HYST1" from="2" to="2" access="RW" resetVal="" desc="Selects hysteresis (10mV) for the comparator #1" hidden="false">
-        <value name="ENABLE" value="0" desc="Hysteresis enabled" />
-        <value name="DISABLE" value="1" desc="Hysteresis disabled" />
-      </field>
-      <field name="INTTYPE1" from="5" to="4" access="RW" resetVal="" desc="Sets which edge will trigger an IRQ for the comparator #1" hidden="false">
-        <value name="DISABLE" value="00" desc="Disabled" />
-        <value name="RISING" value="01" desc="Rising edge" />
-        <value name="FALLING" value="10" desc="Falling edge" />
-        <value name="BOTH" value="11" desc="Both rising and falling edges" />
-      </field>
-      <field name="OUT1" from="6" to="6" access="R" resetVal="" desc="Current output value of the comparator" hidden="false" />
-      <field name="ENABLE1" from="7" to="7" access="RW" resetVal="" desc="Enable comparator #1" hidden="false">
-        <value name="DISABLE" value="0" desc="Comparator disabled" />
-        <value name="ENABLE" value="1" desc="Comparator enabled" />
-      </field>
-      <field name="MODE2" from="9" to="8" access="RW" resetVal="" desc="Selects speed for the comparator #2" hidden="false">
-        <value name="MED" value="00" desc="Medium speed" />
-        <value name="FAST" value="01" desc="Fast speed" />
-        <value name="SLOW" value="10" desc="Slow speed" />
-      </field>
-      <field name="HYST2" from="10" to="10" access="RW" resetVal="" desc="Selects hysteresis (10mV) for the comparator #2" hidden="false">
-        <value name="ENABLE" value="0" desc="Hysteresis enabled" />
-        <value name="DISABLE" value="1" desc="Hysteresis disabled" />
-      </field>
-      <field name="INTTYPE2" from="13" to="12" access="RW" resetVal="" desc="Sets which edge will trigger an IRQ for the comparator #2" hidden="false">
-        <value name="DISABLE" value="00" desc="Disabled" />
-        <value name="RISING" value="01" desc="Rising edge" />
-        <value name="FALLING" value="10" desc="Falling edge" />
-        <value name="BOTH" value="11" desc="Both rising and falling edges" />
-      </field>
-      <field name="OUT2" from="14" to="14" access="R" resetVal="" desc="Current output value of the comparator #2" hidden="false" />
-      <field name="ENABLE2" from="15" to="15" access="RW" resetVal="" desc="Enable comparator #2" hidden="false">
-        <value name="DISABLE" value="0" desc="Comparator disabled" />
-        <value name="ENABLE" value="1" desc="Comparator enabled" />
-      </field>
-      <field name="DSI_BYPASS1" from="16" to="16" access="RW" resetVal="" desc="Bypass comparator #1 output synchronization for DSI output" hidden="false">
-        <value name="SYNCHRONIZE" value="0" desc="Synchronize (level or pulse)" />
-        <value name="BYPASS" value="1" desc="Bypass (output async)" />
-      </field>
-      <field name="DSI_LEVEL1" from="17" to="17" access="RW" resetVal="" desc="Comparator #1 DSI (trigger) out level" hidden="false">
-        <value name="PULSE" value="0" desc="Pulse" />
-        <value name="LEVEL" value="1" desc="Level" />
-      </field>
-      <field name="DSI_BYPASS2" from="20" to="20" access="RW" resetVal="" desc="Bypass comparator #2 output synchronization for DSI output" hidden="false">
-        <value name="SYNCHRONIZE" value="0" desc="Synchronize (level or pulse)" />
-        <value name="BYPASS" value="1" desc="Bypass (output async)" />
-      </field>
-      <field name="DSI_LEVEL2" from="21" to="21" access="RW" resetVal="" desc="Comparator #2 DSI (trigger) out level" hidden="false">
-        <value name="PULSE" value="0" desc="Pulse" />
-        <value name="LEVEL" value="1" desc="Level" />
-      </field>
-    </register>
-    <register name="_INTR" address="0x402B0010" bitWidth="32" desc="LPCOMP interrupt" hidden="false">
-      <field name="COMP1" from="0" to="0" access="RW" resetVal="" desc="Comparator #1 Interrupt: hardware sets this interrupt when comparator 0 triggers. Write with '1' to clear bit." hidden="false" />
-      <field name="COMP2" from="1" to="1" access="RW" resetVal="" desc="Comparator #2 Interrupt: hardware sets this interrupt when comparator 0 triggers. Write with '1' to clear bit." hidden="false" />
-    </register>
-    <register name="_INTR_SET" address="0x402B0014" bitWidth="32" desc="LPCOMP interrupt set register" hidden="false">
-      <field name="COMP1" from="0" to="0" access="RW" resetVal="" desc="Write with '1' to set corresponding bit in interrupt request register." hidden="false" />
-      <field name="COMP2" from="1" to="1" access="RW" resetVal="" desc="Write with '1' to set corresponding bit in interrupt request register." hidden="false" />
-    </register>
-    <register name="_INTR_MASK" address="0x402B0018" bitWidth="32" desc="LPCOMP interrupt mask" hidden="false">
-      <field name="COMP1_MASK" from="0" to="0" access="RW" resetVal="" desc="Mask bit for corresponding bit in interrupt request register." hidden="false" />
-      <field name="COMP2_MASK" from="1" to="1" access="RW" resetVal="" desc="Mask bit for corresponding bit in interrupt request register." hidden="false" />
-    </register>
-    <register name="_INTR_MASKED" address="0x402B001C" bitWidth="32" desc="LPCOMP interrupt masked" hidden="false">
-      <field name="COMP1_MASKED" from="0" to="0" access="R" resetVal="" desc="Logical and of corresponding request and mask bits." hidden="false" />
-      <field name="COMP2_MASKED" from="1" to="1" access="R" resetVal="" desc="Logical and of corresponding request and mask bits." hidden="false" />
-    </register>
-    <register name="_TRIM_A" address="0x402BFF00" bitWidth="32" desc="LPCOMP trim A" hidden="false" />
-    <register name="_TRIM_B" address="0x402BFF04" bitWidth="32" desc="LPCOMP trim B" hidden="false" />
-  </block>
-  <block name="CompM_0" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="Output_Pin_1" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="Output_Pin_0" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
   <block name="CompP_1" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
   <block name="Comp_1" BASE="0x0" SIZE="0x0" desc="Low Power Comparator" visible="true" hidden="false">
     <block name="cy_psoc4_lpcomp_1" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
@@ -3175,4 +3089,7 @@
     <register name="_TRIM_A" address="0x402BFF08" bitWidth="32" desc="LPCOMP trim A" hidden="false" />
     <register name="_TRIM_B" address="0x402BFF0C" bitWidth="32" desc="LPCOMP trim B" hidden="false" />
   </block>
+  <block name="CompM_1" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="LPComp_Int" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="LPCompInt" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
 </blockRegMap>

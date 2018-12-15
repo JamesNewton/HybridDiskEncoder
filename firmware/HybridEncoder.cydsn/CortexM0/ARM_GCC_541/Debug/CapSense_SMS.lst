@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccHppeej.s 			page 1
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccTg6lv5.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccHppeej.s 			page 1
   28:Generated_Source\PSoC4/CapSense_SMS.c ****     /*  Dividers are not chained */
   29:Generated_Source\PSoC4/CapSense_SMS.c ****     #if (CYDEV_BCLK__HFCLK__MHZ > 24u)
   30:Generated_Source\PSoC4/CapSense_SMS.c ****         const uint8 CapSense_prescalerTable[CapSense_PRESCALERS_TBL_SIZE] = {
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccHppeej.s 			page 2
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccTg6lv5.s 			page 2
 
 
   31:Generated_Source\PSoC4/CapSense_SMS.c ****             4u,     4u,     4u,    8u,    8u,    8u,    8u,    16u,    16u,    16u,    16u,    16u,
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccHppeej.s 			page 1
   85:Generated_Source\PSoC4/CapSense_SMS.c **** uint8 CapSense_kValueTbl[CapSense_TOTAL_SENSOR_COUNT];
   86:Generated_Source\PSoC4/CapSense_SMS.c **** 
   87:Generated_Source\PSoC4/CapSense_SMS.c **** uint8 CapSense_sensorSensitivity[] = {
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccHppeej.s 			page 3
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccTg6lv5.s 			page 3
 
 
   88:Generated_Source\PSoC4/CapSense_SMS.c ****     2u, 2u, 
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccHppeej.s 			page 1
  142:Generated_Source\PSoC4/CapSense_SMS.c **** *  None
  143:Generated_Source\PSoC4/CapSense_SMS.c **** *
  144:Generated_Source\PSoC4/CapSense_SMS.c **** *******************************************************************************/
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccHppeej.s 			page 4
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccTg6lv5.s 			page 4
 
 
  145:Generated_Source\PSoC4/CapSense_SMS.c **** void CapSense_AutoTune(void)
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccHppeej.s 			page 1
  199:Generated_Source\PSoC4/CapSense_SMS.c **** }
  200:Generated_Source\PSoC4/CapSense_SMS.c **** 
  201:Generated_Source\PSoC4/CapSense_SMS.c **** 
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccHppeej.s 			page 5
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccTg6lv5.s 			page 5
 
 
  202:Generated_Source\PSoC4/CapSense_SMS.c **** /*******************************************************************************
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccHppeej.s 			page 1
  239:Generated_Source\PSoC4/CapSense_SMS.c ****         /* Update Threshold manually (flexible) */
  240:Generated_Source\PSoC4/CapSense_SMS.c ****         CapSense_noiseThreshold[widget] = (uint8)(fingerThreshold >> 1u);
  241:Generated_Source\PSoC4/CapSense_SMS.c ****         CapSense_negativeNoiseThreshold[widget] = (uint8)(fingerThreshold >> 1u);
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccHppeej.s 			page 6
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccTg6lv5.s 			page 6
 
 
  242:Generated_Source\PSoC4/CapSense_SMS.c ****         CapSense_hysteresis[widget] = (uint8)(fingerThreshold >> 3u);
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccHppeej.s 			page 1
   82 0038 0EE0     		b	.L1
   83              	.LVL8:
   84              	.L4:
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccHppeej.s 			page 7
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccTg6lv5.s 			page 7
 
 
  259:Generated_Source\PSoC4/CapSense_SMS.c ****         }
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccHppeej.s 			page 1
  124 0064 00000000 		.word	CapSense_noiseThreshold
  125 0068 00000000 		.word	CapSense_config
  126 006c 00000000 		.word	CapSense_negativeNoiseThreshold
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccHppeej.s 			page 8
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccTg6lv5.s 			page 8
 
 
  127 0070 00000000 		.word	CapSense_hysteresis
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccHppeej.s 			page 1
  156 000c 04002840 		.word	1076363268
  157              		.cfi_endproc
  158              	.LFE35:
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccHppeej.s 			page 9
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccTg6lv5.s 			page 9
 
 
  159              		.size	CapSense_SetAnalogSwitchesSrcDirect, .-CapSense_SetAnalogSwitchesSrcDirect
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccHppeej.s 			page 1
  183 000a 8900     		lsls	r1, r1, #2
  184 000c 0B43     		orrs	r3, r1
  185              	.LVL18:
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccHppeej.s 			page 10
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccTg6lv5.s 			page 10
 
 
  329:Generated_Source\PSoC4/CapSense_SMS.c **** 
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccHppeej.s 			page 1
  213              		.cfi_def_cfa_offset 16
  214              		.cfi_offset 4, -16
  215              		.cfi_offset 5, -12
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccHppeej.s 			page 11
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccTg6lv5.s 			page 11
 
 
  216              		.cfi_offset 6, -8
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccHppeej.s 			page 1
  369:Generated_Source\PSoC4/CapSense_SMS.c ****     newRegValue |= (CapSense_CSD_IDAC1_MODE_VARIABLE | CapSense_CSD_IDAC2_MODE_FIXED);
  255              		.loc 1 369 0
  256 002c 0749     		ldr	r1, .L18+16
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccHppeej.s 			page 12
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccTg6lv5.s 			page 12
 
 
  257 002e 0B43     		orrs	r3, r1
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccHppeej.s 			page 1
  303              		.loc 1 152 0
  304 000a 9A70     		strb	r2, [r3, #2]
  154:Generated_Source\PSoC4/CapSense_SMS.c ****     CapSense_config.sensetivitySeed = CapSense_SENSETIVITY_FACTOR;
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccHppeej.s 			page 13
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccTg6lv5.s 			page 13
 
 
  305              		.loc 1 154 0
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccHppeej.s 			page 1
  349              		.loc 1 167 0 discriminator 3
  350 0042 0133     		adds	r3, r3, #1
  351              	.LVL34:
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccHppeej.s 			page 14
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccTg6lv5.s 			page 14
 
 
  352              	.L23:
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccHppeej.s 			page 1
  195:Generated_Source\PSoC4/CapSense_SMS.c ****     {
  396              		.loc 1 195 0 is_stmt 0 discriminator 1
  397 007e 012C     		cmp	r4, #1
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccHppeej.s 			page 15
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccTg6lv5.s 			page 15
 
 
  398 0080 F9D9     		bls	.L26
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccHppeej.s 			page 1
  400:Generated_Source\PSoC4/CapSense_SMS.c **** *
  401:Generated_Source\PSoC4/CapSense_SMS.c **** *  Return Value:
  402:Generated_Source\PSoC4/CapSense_SMS.c **** *   None
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccHppeej.s 			page 16
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccTg6lv5.s 			page 16
 
 
  403:Generated_Source\PSoC4/CapSense_SMS.c **** *
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccHppeej.s 			page 1
  458              	.LFE38:
  459              		.size	CapSense_SetSensitivity, .-CapSense_SetSensitivity
  460              		.section	.text.CapSense_GetSensitivityCoefficient,"ax",%progbits
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccHppeej.s 			page 17
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccTg6lv5.s 			page 17
 
 
  461              		.align	2
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccHppeej.s 			page 1
  489              		.align	2
  490              		.global	CapSense_GetNoiseEnvelope
  491              		.code	16
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccHppeej.s 			page 18
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccTg6lv5.s 			page 18
 
 
  492              		.thumb_func
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccHppeej.s 			page 1
  518              		.global	__aeabi_uidiv
  519              		.section	.text.CapSense_GetNormalizedDiffCountData,"ax",%progbits
  520              		.align	2
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccHppeej.s 			page 19
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccTg6lv5.s 			page 19
 
 
  521              		.global	CapSense_GetNormalizedDiffCountData
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccHppeej.s 			page 1
  548              		@ sp needed
  549 0014 10BD     		pop	{r4, pc}
  550              	.L42:
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccHppeej.s 			page 20
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccTg6lv5.s 			page 20
 
 
  551 0016 C046     		.align	2
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccHppeej.s 			page 1
  605 0060 08       		.byte	8
  606 0061 08       		.byte	8
  607 0062 08       		.byte	8
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccHppeej.s 			page 21
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccTg6lv5.s 			page 21
 
 
  608 0063 10       		.byte	16
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccHppeej.s 			page 1
  662 0041 02       		.uleb128 0x2
  663 0042 04       		.byte	0x4
  664 0043 05       		.byte	0x5
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccHppeej.s 			page 22
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccTg6lv5.s 			page 22
 
 
  665 0044 EA010000 		.4byte	.LASF4
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccHppeej.s 			page 1
  719 00b1 83000000 		.4byte	0x83
  720 00b5 02       		.uleb128 0x2
  721 00b6 04       		.byte	0x4
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccHppeej.s 			page 23
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccTg6lv5.s 			page 23
 
 
  722 00b7 07       		.byte	0x7
@@ -1378,7 +1378,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccHppeej.s 			page 1
  776 0120 2E040000 		.4byte	.LASF25
  777 0124 03       		.byte	0x3
  778 0125 38       		.byte	0x38
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccHppeej.s 			page 24
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccTg6lv5.s 			page 24
 
 
  779 0126 E0010000 		.4byte	0x1e0
@@ -1438,7 +1438,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccHppeej.s 			page 1
  833 0192 E6010000 		.4byte	0x1e6
  834 0196 40       		.byte	0x40
  835 0197 07       		.uleb128 0x7
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccHppeej.s 			page 25
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccTg6lv5.s 			page 25
 
 
  836 0198 93010000 		.4byte	.LASF35
@@ -1498,7 +1498,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccHppeej.s 			page 1
  890 0207 83000000 		.4byte	0x83
  891 020b 00       		.byte	0
  892 020c 08       		.uleb128 0x8
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccHppeej.s 			page 26
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccTg6lv5.s 			page 26
 
 
  893 020d 04       		.byte	0x4
@@ -1558,7 +1558,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccHppeej.s 			page 1
  947 0282 01       		.byte	0x1
  948 0283 07       		.uleb128 0x7
  949 0284 EA020000 		.4byte	.LASF44
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccHppeej.s 			page 27
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccTg6lv5.s 			page 27
 
 
  950 0288 03       		.byte	0x3
@@ -1618,7 +1618,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccHppeej.s 			page 1
  1004 02fd 10       		.uleb128 0x10
  1005 02fe 75050000 		.4byte	.LASF50
  1006 0302 01       		.byte	0x1
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccHppeej.s 			page 28
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccTg6lv5.s 			page 28
 
 
  1007 0303 E9       		.byte	0xe9
@@ -1678,7 +1678,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccHppeej.s 			page 1
  1061 035c 01       		.uleb128 0x1
  1062 035d 9C       		.byte	0x9c
  1063 035e 73030000 		.4byte	0x373
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccHppeej.s 			page 29
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccTg6lv5.s 			page 29
 
 
  1064 0362 15       		.uleb128 0x15
@@ -1738,7 +1738,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccHppeej.s 			page 1
  1118 03dc 08       		.uleb128 0x8
  1119 03dd 04       		.byte	0x4
  1120 03de E2030000 		.4byte	0x3e2
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccHppeej.s 			page 30
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccTg6lv5.s 			page 30
 
 
  1121 03e2 09       		.uleb128 0x9
@@ -1798,7 +1798,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccHppeej.s 			page 1
  1175 0457 74       		.byte	0x74
  1176 0458 00       		.sleb128 0
  1177 0459 00       		.byte	0
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccHppeej.s 			page 31
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccTg6lv5.s 			page 31
 
 
  1178 045a 17       		.uleb128 0x17
@@ -1858,7 +1858,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccHppeej.s 			page 1
  1232 04b5 00000000 		.4byte	.LFB38
  1233 04b9 1C000000 		.4byte	.LFE38-.LFB38
  1234 04bd 01       		.uleb128 0x1
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccHppeej.s 			page 32
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccTg6lv5.s 			page 32
 
 
  1235 04be 9C       		.byte	0x9c
@@ -1918,7 +1918,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccHppeej.s 			page 1
  1289 0540 77000000 		.4byte	0x77
  1290 0544 00000000 		.4byte	.LFB41
  1291 0548 20000000 		.4byte	.LFE41-.LFB41
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccHppeej.s 			page 33
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccTg6lv5.s 			page 33
 
 
  1292 054c 01       		.uleb128 0x1
@@ -1978,7 +1978,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccHppeej.s 			page 1
  1346 05c9 EF02     		.2byte	0x2ef
  1347 05cb 7F050000 		.4byte	0x57f
  1348 05cf 1E       		.uleb128 0x1e
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccHppeej.s 			page 34
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccTg6lv5.s 			page 34
 
 
  1349 05d0 0A000000 		.4byte	.LASF69
@@ -2038,7 +2038,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccHppeej.s 			page 1
  1403 0651 55060000 		.4byte	0x655
  1404 0655 09       		.uleb128 0x9
  1405 0656 DB050000 		.4byte	0x5db
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccHppeej.s 			page 35
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccTg6lv5.s 			page 35
 
 
  1406 065a 1F       		.uleb128 0x1f
@@ -2098,7 +2098,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccHppeej.s 			page 1
  1460 06cc 00000000 		.4byte	CapSense_previousSampleTbl
  1461 06d0 1F       		.uleb128 0x1f
  1462 06d1 B4010000 		.4byte	.LASF84
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccHppeej.s 			page 36
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccTg6lv5.s 			page 36
 
 
  1463 06d5 01       		.byte	0x1
@@ -2158,7 +2158,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccHppeej.s 			page 1
  1517 074a F3010000 		.4byte	.LASF90
  1518 074e 06       		.byte	0x6
  1519 074f C5       		.byte	0xc5
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccHppeej.s 			page 37
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccTg6lv5.s 			page 37
 
 
  1520 0750 20       		.uleb128 0x20
@@ -2218,7 +2218,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccHppeej.s 			page 1
  1574 001f 24       		.uleb128 0x24
  1575 0020 00       		.byte	0
  1576 0021 0B       		.uleb128 0xb
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccHppeej.s 			page 38
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccTg6lv5.s 			page 38
 
 
  1577 0022 0B       		.uleb128 0xb
@@ -2278,7 +2278,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccHppeej.s 			page 1
  1631 0058 00       		.byte	0
  1632 0059 08       		.uleb128 0x8
  1633 005a 0F       		.uleb128 0xf
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccHppeej.s 			page 39
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccTg6lv5.s 			page 39
 
 
  1634 005b 00       		.byte	0
@@ -2338,7 +2338,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccHppeej.s 			page 1
  1688 0091 0E       		.uleb128 0xe
  1689 0092 2E       		.uleb128 0x2e
  1690 0093 01       		.byte	0x1
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccHppeej.s 			page 40
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccTg6lv5.s 			page 40
 
 
  1691 0094 3F       		.uleb128 0x3f
@@ -2398,7 +2398,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccHppeej.s 			page 1
  1745 00cd 01       		.byte	0x1
  1746 00ce 11       		.uleb128 0x11
  1747 00cf 01       		.uleb128 0x1
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccHppeej.s 			page 41
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccTg6lv5.s 			page 41
 
 
  1748 00d0 31       		.uleb128 0x31
@@ -2458,7 +2458,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccHppeej.s 			page 1
  1802 010a 18       		.uleb128 0x18
  1803 010b 9742     		.uleb128 0x2117
  1804 010d 19       		.uleb128 0x19
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccHppeej.s 			page 42
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccTg6lv5.s 			page 42
 
 
  1805 010e 01       		.uleb128 0x1
@@ -2518,7 +2518,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccHppeej.s 			page 1
  1859 0148 19       		.uleb128 0x19
  1860 0149 05       		.uleb128 0x5
  1861 014a 00       		.byte	0
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccHppeej.s 			page 43
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccTg6lv5.s 			page 43
 
 
  1862 014b 03       		.uleb128 0x3
@@ -2578,7 +2578,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccHppeej.s 			page 1
  1916 0182 11       		.uleb128 0x11
  1917 0183 01       		.uleb128 0x1
  1918 0184 12       		.uleb128 0x12
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccHppeej.s 			page 44
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccTg6lv5.s 			page 44
 
 
  1919 0185 06       		.uleb128 0x6
@@ -2638,7 +2638,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccHppeej.s 			page 1
  1973 01bc 13       		.uleb128 0x13
  1974 01bd 3F       		.uleb128 0x3f
  1975 01be 19       		.uleb128 0x19
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccHppeej.s 			page 45
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccTg6lv5.s 			page 45
 
 
  1976 01bf 02       		.uleb128 0x2
@@ -2698,7 +2698,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccHppeej.s 			page 1
  2030 0045 53       		.byte	0x53
  2031 0046 34000000 		.4byte	.LVL7
  2032 004a 3A000000 		.4byte	.LVL8
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccHppeej.s 			page 46
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccTg6lv5.s 			page 46
 
 
  2033 004e 0500     		.2byte	0x5
@@ -2758,7 +2758,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccHppeej.s 			page 1
  2087 00c6 0100     		.2byte	0x1
  2088 00c8 51       		.byte	0x51
  2089 00c9 08000000 		.4byte	.LVL17
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccHppeej.s 			page 47
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccTg6lv5.s 			page 47
 
 
  2090 00cd 1C000000 		.4byte	.LFE36
@@ -2818,7 +2818,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccHppeej.s 			page 1
  2144 0159 0100     		.2byte	0x1
  2145 015b 54       		.byte	0x54
  2146 015c 00000000 		.4byte	0
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccHppeej.s 			page 48
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccTg6lv5.s 			page 48
 
 
  2147 0160 00000000 		.4byte	0
@@ -2878,7 +2878,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccHppeej.s 			page 1
  2201 01e7 0A000000 		.4byte	.LVL53
  2202 01eb 0100     		.2byte	0x1
  2203 01ed 50       		.byte	0x50
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccHppeej.s 			page 49
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccTg6lv5.s 			page 49
 
 
  2204 01ee 0A000000 		.4byte	.LVL53
@@ -2938,7 +2938,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccHppeej.s 			page 1
  2258 002c 1C000000 		.4byte	.LFE38
  2259 0030 00000000 		.4byte	.LFB39
  2260 0034 0C000000 		.4byte	.LFE39
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccHppeej.s 			page 50
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccTg6lv5.s 			page 50
 
 
  2261 0038 00000000 		.4byte	.LFB40
@@ -2998,7 +2998,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccHppeej.s 			page 1
  2287 008c 43617053 		.ascii	"CapSense_modulationIDAC\000"
  2287      656E7365 
  2287      5F6D6F64 
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccHppeej.s 			page 51
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccTg6lv5.s 			page 51
 
 
  2287      756C6174 
@@ -3058,7 +3058,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccHppeej.s 			page 1
  2305      7354626C 
  2305      00
  2306              	.LASF84:
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccHppeej.s 			page 52
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccTg6lv5.s 			page 52
 
 
  2307 01b4 43617053 		.ascii	"CapSense_kValueTbl\000"
@@ -3118,7 +3118,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccHppeej.s 			page 1
  2327      65725461 
  2328              	.LASF70:
  2329 027c 43617053 		.ascii	"CapSense_widgetNumber\000"
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccHppeej.s 			page 53
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccTg6lv5.s 			page 53
 
 
  2329      656E7365 
@@ -3178,7 +3178,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccHppeej.s 			page 1
  2351      6C757469 
  2351      6F6E7354 
  2351      626C00
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccHppeej.s 			page 54
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccTg6lv5.s 			page 54
 
 
  2352              	.LASF39:
@@ -3238,7 +3238,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccHppeej.s 			page 1
  2372      5F417574 
  2372      6F54756E 
  2372      6500
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccHppeej.s 			page 55
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccTg6lv5.s 			page 55
 
 
  2373              	.LASF15:
@@ -3298,7 +3298,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccHppeej.s 			page 1
  2394      67657254 
  2394      68726573 
  2395              	.LASF87:
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccHppeej.s 			page 56
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccTg6lv5.s 			page 56
 
 
  2396 04e7 43617053 		.ascii	"CapSense_config\000"
@@ -3358,7 +3358,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccHppeej.s 			page 1
  2418      626C6500 
  2419              	.LASF98:
  2420 0592 43617053 		.ascii	"CapSense_SetAnalogSwitchesSrcDirect\000"
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccHppeej.s 			page 57
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccTg6lv5.s 			page 57
 
 
  2420      656E7365 
@@ -3418,7 +3418,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccHppeej.s 			page 1
  2440 0674 636F6E66 		.ascii	"config\000"
  2440      696700
  2441              	.LASF83:
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccHppeej.s 			page 58
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccTg6lv5.s 			page 58
 
 
  2442 067b 43617053 		.ascii	"CapSense_previousSampleTbl\000"
@@ -3478,7 +3478,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccHppeej.s 			page 1
  2460      6573686F 
  2460      6C64735F 
  2461              	.LASF40:
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccHppeej.s 			page 59
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccTg6lv5.s 			page 59
 
 
  2462 0776 70747253 		.ascii	"ptrSetBitValue\000"

@@ -57,6 +57,8 @@ CY_ISR(ADC_ISR_LOC) {
         */
         // Clear range detect status ??? Why does this clear it?
         ADC_SAR_RANGE_INTR_REG = range_status;
+        result[CH0] = ADC_GetResult16(CH0); //Get result
+        result[CH1] = ADC_GetResult16(CH1); //Get result
         result[CH2_SIN] = ADC_GetResult16(CH2_SIN); //Get result
         //shouldn't need to check for completion for CH1, locked to CH0, right?
         result[CH3_COS] = ADC_GetResult16(CH3_COS); //Get cos result
@@ -120,6 +122,7 @@ int main() {
     CyGlobalIntEnable;      /* Enable global interrupts */
     
     /* Place your initialization/startup code here (e.g. MyInst_Start()) */
+    PWM_1_Start();
     PWM_2_Start();
     
     for(;;) {
@@ -152,8 +155,8 @@ int main() {
                 led_cos++;
                 if (led_cos > LED_MAX) led_cos = LED_MAX;
                 }
-            PWM_1_WriteCompare(led_cos);
-            PWM_2_WriteCompare(led_sin);
+            PWM_1_WriteCompare(led_sin);
+            PWM_2_WriteCompare(led_cos);
             }
         }
     }

@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccOdCJa1.s 			page 1
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccGkte5p.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccOdCJa1.s 			page 1
   28:Generated_Source\PSoC4/cyPm.c **** * its main clock can be removed. It is identical to Active from a peripheral
   29:Generated_Source\PSoC4/cyPm.c **** * point of view. Any enabled interrupts can cause wakeup from the Sleep mode.
   30:Generated_Source\PSoC4/cyPm.c **** *
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccOdCJa1.s 			page 2
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccGkte5p.s 			page 2
 
 
   31:Generated_Source\PSoC4/cyPm.c **** *******************************************************************************/
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccOdCJa1.s 			page 1
   67              		.align	2
   68              		.global	CySysPmDeepSleep
   69              		.code	16
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccOdCJa1.s 			page 3
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccGkte5p.s 			page 3
 
 
   70              		.thumb_func
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccOdCJa1.s 			page 1
   95 0012 1360     		str	r3, [r2]
   75:Generated_Source\PSoC4/cyPm.c ****     #endif /* (CY_IP_SRSSV2) */
   76:Generated_Source\PSoC4/cyPm.c **** 
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccOdCJa1.s 			page 4
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccGkte5p.s 			page 4
 
 
   77:Generated_Source\PSoC4/cyPm.c ****     #if (CY_IP_CPUSS && CY_IP_SRSSV2)
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccOdCJa1.s 			page 1
  126 0038 2B60     		str	r3, [r5]
  101:Generated_Source\PSoC4/cyPm.c ****     #endif /* (CY_IP_SRSSV2) */
  102:Generated_Source\PSoC4/cyPm.c **** 
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccOdCJa1.s 			page 5
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccGkte5p.s 			page 5
 
 
  103:Generated_Source\PSoC4/cyPm.c ****     #if (CY_IP_CPUSS && CY_IP_SRSSV2)
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccOdCJa1.s 			page 1
  129:Generated_Source\PSoC4/cyPm.c ****     * corresponding variable should be defined with CY_NOINIT attribute. It
  130:Generated_Source\PSoC4/cyPm.c ****     * prevents data from being initialized to zero on startup. The interrupt
  131:Generated_Source\PSoC4/cyPm.c ****     * cause of the hibernate peripheral is retained, such that it can be either
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccOdCJa1.s 			page 6
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccGkte5p.s 			page 6
 
 
  132:Generated_Source\PSoC4/cyPm.c ****     * read by the firmware or cause an interrupt after the firmware has booted and
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccOdCJa1.s 			page 1
   30:Generated_Source\PSoC4/cyPm.h **** Deep Sleep, Hibernate, and Stop. Active, Sleep and Deep-Sleep are standard ARM defined power modes,
   31:Generated_Source\PSoC4/cyPm.h **** ARM CPUs. Hibernate/Stop are even lower power modes that are entered from firmware just like Deep-S
   32:Generated_Source\PSoC4/cyPm.h **** the CPU (and all peripherals) goes through a full reset.
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccOdCJa1.s 			page 7
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccGkte5p.s 			page 7
 
 
   33:Generated_Source\PSoC4/cyPm.h **** 
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccOdCJa1.s 			page 1
   87:Generated_Source\PSoC4/cyPm.h **** void CySysPmDeepSleep(void);
   88:Generated_Source\PSoC4/cyPm.h **** 
   89:Generated_Source\PSoC4/cyPm.h **** #if(CY_IP_SRSSV2)
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccOdCJa1.s 			page 8
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccGkte5p.s 			page 8
 
 
   90:Generated_Source\PSoC4/cyPm.h ****     void CySysPmHibernate(void);
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccOdCJa1.s 			page 1
  144:Generated_Source\PSoC4/cyPm.h ****     #define CY_PM_CPU_SCR_PTR                   ( (reg32 *) CYREG_CM0P_SCR)
  145:Generated_Source\PSoC4/cyPm.h **** #endif /* (CY_IP_CPUSS_CM0) */
  146:Generated_Source\PSoC4/cyPm.h **** 
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccOdCJa1.s 			page 9
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccGkte5p.s 			page 9
 
 
  147:Generated_Source\PSoC4/cyPm.h **** /* Power System Key & Delay Register */
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccOdCJa1.s 			page 1
  201:Generated_Source\PSoC4/cyPm.h ****     #define CY_PM_PWR_KEY_DELAY_REG_DEFAULT     ((uint32) 248u)
  202:Generated_Source\PSoC4/cyPm.h ****     #define CY_PM_PWR_KEY_DELAY_FREQ_DEFAULT    (48u)
  203:Generated_Source\PSoC4/cyPm.h **** #endif /* (CY_IP_SRSSV2) */
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccOdCJa1.s 			page 10
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccGkte5p.s 			page 10
 
 
  204:Generated_Source\PSoC4/cyPm.h **** 
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccOdCJa1.s 			page 1
  189 0026 1368     		ldr	r3, [r2]
  190 0028 9B00     		lsls	r3, r3, #2
  191 002a 9B08     		lsrs	r3, r3, #2
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccOdCJa1.s 			page 11
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccGkte5p.s 			page 11
 
 
  192 002c 1360     		str	r3, [r2]
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccOdCJa1.s 			page 1
  222 005a 8021     		movs	r1, #128
  223 005c 0906     		lsls	r1, r1, #24
  224 005e 0B43     		orrs	r3, r1
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccOdCJa1.s 			page 12
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccGkte5p.s 			page 12
 
 
  225 0060 1360     		str	r3, [r2]
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccOdCJa1.s 			page 1
  257              		.loc 1 172 0
  258              		@ sp needed
  259 008a 10BD     		pop	{r4, pc}
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccOdCJa1.s 			page 13
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccGkte5p.s 			page 13
 
 
  260              	.L9:
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccOdCJa1.s 			page 1
  200:Generated_Source\PSoC4/cyPm.c **** 
  201:Generated_Source\PSoC4/cyPm.c ****         /* Update token to indicate Stop mode transition. Preserve only polarity. */
  202:Generated_Source\PSoC4/cyPm.c ****         CY_PM_PWR_STOP_REG = (CY_PM_PWR_STOP_REG & CY_PM_PWR_STOP_POLARITY) | CY_PM_PWR_STOP_TOKEN_
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccOdCJa1.s 			page 14
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccGkte5p.s 			page 14
 
 
  203:Generated_Source\PSoC4/cyPm.c **** 
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccOdCJa1.s 			page 1
  297              		.loc 1 246 0
  298 0004 FFF7FEFF 		bl	CyEnterCriticalSection
  299              	.LVL10:
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccOdCJa1.s 			page 15
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccGkte5p.s 			page 15
 
 
  247:Generated_Source\PSoC4/cyPm.c **** 
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccOdCJa1.s 			page 1
  255:Generated_Source\PSoC4/cyPm.c **** 
  256:Generated_Source\PSoC4/cyPm.c ****     /*******************************************************************************
  257:Generated_Source\PSoC4/cyPm.c ****     * Function Name: CySysPmGetResetReason
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccOdCJa1.s 			page 16
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccGkte5p.s 			page 16
 
 
  258:Generated_Source\PSoC4/cyPm.c ****     ****************************************************************************//**
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccOdCJa1.s 			page 1
  370              	.LVL15:
  371              	.L18:
  285:Generated_Source\PSoC4/cyPm.c **** 
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccOdCJa1.s 			page 17
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccGkte5p.s 			page 17
 
 
  286:Generated_Source\PSoC4/cyPm.c ****         /* Wakeup from Stop (through WAKEUP pin assert) */
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccOdCJa1.s 			page 1
  311:Generated_Source\PSoC4/cyPm.c ****     *******************************************************************************/
  312:Generated_Source\PSoC4/cyPm.c ****     void CySysPmFreezeIo(void)
  313:Generated_Source\PSoC4/cyPm.c ****     {
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccOdCJa1.s 			page 18
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccGkte5p.s 			page 18
 
 
  400              		.loc 1 313 0
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccOdCJa1.s 			page 1
  429              		.loc 1 337 0
  430 0020 1A68     		ldr	r2, [r3]
  431 0022 1A60     		str	r2, [r3]
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccOdCJa1.s 			page 19
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccGkte5p.s 			page 19
 
 
  432              	.L24:
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccOdCJa1.s 			page 1
  478              	.LVL21:
  208:Generated_Source\PSoC4/cyPm.c **** 
  479              		.loc 1 208 0
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccOdCJa1.s 			page 20
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccGkte5p.s 			page 20
 
 
  480 001a 2368     		ldr	r3, [r4]
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccOdCJa1.s 			page 1
  351:Generated_Source\PSoC4/cyPm.c ****     *
  352:Generated_Source\PSoC4/cyPm.c ****     * If the firmware intent is to retain the data value on the port, then the
  353:Generated_Source\PSoC4/cyPm.c ****     * value must be read and re-written to the data register before calling this
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccOdCJa1.s 			page 21
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccGkte5p.s 			page 21
 
 
  354:Generated_Source\PSoC4/cyPm.c ****     * API. Furthermore, the drive mode must be re-programmed.  If this is not done,
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccOdCJa1.s 			page 1
  548 001c 1140     		ands	r1, r2
  549 001e 1960     		str	r1, [r3]
  380:Generated_Source\PSoC4/cyPm.c **** 
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccOdCJa1.s 			page 22
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccGkte5p.s 			page 22
 
 
  381:Generated_Source\PSoC4/cyPm.c ****         CyExitCriticalSection(interruptState);
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccOdCJa1.s 			page 1
  602 0048 02       		.uleb128 0x2
  603 0049 04       		.byte	0x4
  604 004a 07       		.byte	0x7
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccOdCJa1.s 			page 23
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccGkte5p.s 			page 23
 
 
  605 004b 0A010000 		.4byte	.LASF5
@@ -1378,7 +1378,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccOdCJa1.s 			page 1
  659 00bb 7E02     		.2byte	0x27e
  660 00bd C1000000 		.4byte	0xc1
  661 00c1 05       		.uleb128 0x5
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccOdCJa1.s 			page 24
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccGkte5p.s 			page 24
 
 
  662 00c2 83000000 		.4byte	0x83
@@ -1438,7 +1438,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccOdCJa1.s 			page 1
  716 013d 08       		.uleb128 0x8
  717 013e 08000000 		.4byte	.LVL2
  718 0142 C3020000 		.4byte	0x2c3
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccOdCJa1.s 			page 25
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccGkte5p.s 			page 25
 
 
  719 0146 0A       		.uleb128 0xa
@@ -1498,7 +1498,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccOdCJa1.s 			page 1
  773 01b8 06       		.uleb128 0x6
  774 01b9 0C000000 		.4byte	.LASF24
  775 01bd 01       		.byte	0x1
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccOdCJa1.s 			page 26
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccGkte5p.s 			page 26
 
 
  776 01be F2       		.byte	0xf2
@@ -1558,7 +1558,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccOdCJa1.s 			page 1
  830 0245 3A01     		.2byte	0x13a
  831 0247 6B000000 		.4byte	0x6b
  832 024b BB000000 		.4byte	.LLST6
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccOdCJa1.s 			page 27
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccGkte5p.s 			page 27
 
 
  833 024f 08       		.uleb128 0x8
@@ -1618,7 +1618,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccOdCJa1.s 			page 1
  887 02d8 E6       		.byte	0xe6
  888 02d9 13       		.uleb128 0x13
  889 02da 8F010000 		.4byte	.LASF31
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccOdCJa1.s 			page 28
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccGkte5p.s 			page 28
 
 
  890 02de 8F010000 		.4byte	.LASF31
@@ -1678,7 +1678,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccOdCJa1.s 			page 1
  944 0030 3B       		.uleb128 0x3b
  945 0031 05       		.uleb128 0x5
  946 0032 49       		.uleb128 0x49
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccOdCJa1.s 			page 29
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccGkte5p.s 			page 29
 
 
  947 0033 13       		.uleb128 0x13
@@ -1738,7 +1738,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccOdCJa1.s 			page 1
  1001 006c 01       		.uleb128 0x1
  1002 006d 31       		.uleb128 0x31
  1003 006e 13       		.uleb128 0x13
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccOdCJa1.s 			page 30
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccGkte5p.s 			page 30
 
 
  1004 006f 00       		.byte	0
@@ -1798,7 +1798,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccOdCJa1.s 			page 1
  1058 00ac 0B       		.uleb128 0xb
  1059 00ad 27       		.uleb128 0x27
  1060 00ae 19       		.uleb128 0x19
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccOdCJa1.s 			page 31
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccGkte5p.s 			page 31
 
 
  1061 00af 20       		.uleb128 0x20
@@ -1858,7 +1858,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccOdCJa1.s 			page 1
  1115 00e5 18       		.uleb128 0x18
  1116 00e6 9742     		.uleb128 0x2117
  1117 00e8 19       		.uleb128 0x19
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccOdCJa1.s 			page 32
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccGkte5p.s 			page 32
 
 
  1118 00e9 01       		.uleb128 0x1
@@ -1918,7 +1918,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccOdCJa1.s 			page 1
  1172 0120 0E       		.uleb128 0xe
  1173 0121 3A       		.uleb128 0x3a
  1174 0122 0B       		.uleb128 0xb
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccOdCJa1.s 			page 33
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccGkte5p.s 			page 33
 
 
  1175 0123 3B       		.uleb128 0x3b
@@ -1978,7 +1978,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccOdCJa1.s 			page 1
  1229 0078 00000000 		.4byte	.LVL13
  1230 007c 18000000 		.4byte	.LVL14
  1231 0080 0200     		.2byte	0x2
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccOdCJa1.s 			page 34
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccGkte5p.s 			page 34
 
 
  1232 0082 30       		.byte	0x30
@@ -2038,7 +2038,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccOdCJa1.s 			page 1
  1286 0034 28000000 		.4byte	.LFE7-.LFB7
  1287 0038 00000000 		.4byte	.LFB8
  1288 003c 38000000 		.4byte	.LFE8-.LFB8
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccOdCJa1.s 			page 35
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccGkte5p.s 			page 35
 
 
  1289 0040 00000000 		.4byte	.LFB5
@@ -2098,7 +2098,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccOdCJa1.s 			page 1
  1327      65642069 
  1327      6E7400
  1328              	.LASF34:
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccOdCJa1.s 			page 36
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccGkte5p.s 			page 36
 
 
  1329 0045 433A5C55 		.ascii	"C:\\Users\\JamesN4\\Documents\\PSoC Creator\\Hybrid"
@@ -2158,7 +2158,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccOdCJa1.s 			page 1
  1349              	.LASF13:
  1350 012e 646F7562 		.ascii	"double\000"
  1350      6C6500
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccOdCJa1.s 			page 37
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccGkte5p.s 			page 37
 
 
  1351              	.LASF28:
@@ -2218,7 +2218,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccOdCJa1.s 			page 1
  1373 01ff 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m0 -mthumb -g -O"
  1373      20726576 
  1373      6973696F 
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccOdCJa1.s 			page 38
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccGkte5p.s 			page 38
 
 
  1373      6E203233 
@@ -2278,7 +2278,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccOdCJa1.s 			page 1
  1396      73506D46 
  1396      7265657A 
  1396      65496F00 
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccOdCJa1.s 			page 39
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccGkte5p.s 			page 39
 
 
  1397              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran

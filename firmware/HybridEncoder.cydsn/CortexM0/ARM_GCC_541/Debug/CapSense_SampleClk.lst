@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccSh3E8A.s 			page 1
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccaCPWnG.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccSh3E8A.s 			page 1
   28:Generated_Source\PSoC4/CapSense_SampleClk.c **** * Summary:
   29:Generated_Source\PSoC4/CapSense_SampleClk.c **** *  Starts the clock, aligned to the specified running clock.
   30:Generated_Source\PSoC4/CapSense_SampleClk.c **** *
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccSh3E8A.s 			page 2
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccaCPWnG.s 			page 2
 
 
   31:Generated_Source\PSoC4/CapSense_SampleClk.c **** * Parameters:
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccSh3E8A.s 			page 1
   60              		.align	2
   61              		.global	CapSense_SampleClk_Stop
   62              		.code	16
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccSh3E8A.s 			page 3
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccaCPWnG.s 			page 3
 
 
   63              		.thumb_func
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccSh3E8A.s 			page 1
   72              	.L6:
   97:Generated_Source\PSoC4/CapSense_SampleClk.c **** #if defined CYREG_PERI_DIV_CMD
   98:Generated_Source\PSoC4/CapSense_SampleClk.c **** 
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccSh3E8A.s 			page 4
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccaCPWnG.s 			page 4
 
 
   99:Generated_Source\PSoC4/CapSense_SampleClk.c ****     /* Make sure any previous start command has finished. */
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccSh3E8A.s 			page 1
  125:Generated_Source\PSoC4/CapSense_SampleClk.c **** * Parameters:
  126:Generated_Source\PSoC4/CapSense_SampleClk.c **** *  clkDivider:  Divider register value (0-65535). This value is NOT the
  127:Generated_Source\PSoC4/CapSense_SampleClk.c **** *    divider; the clock hardware divides by clkDivider plus one. For example,
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccSh3E8A.s 			page 5
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccaCPWnG.s 			page 5
 
 
  128:Generated_Source\PSoC4/CapSense_SampleClk.c **** *    to divide the clock by 2, this parameter should be set to 1.
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccSh3E8A.s 			page 1
  151:Generated_Source\PSoC4/CapSense_SampleClk.c ****     maskVal = CapSense_SampleClk_DIV_REG & (uint32)(~(uint32)CapSense_SampleClk__DIVIDER_MASK);
  152:Generated_Source\PSoC4/CapSense_SampleClk.c ****     /* combine mask and new divider val into 32-bit value */
  153:Generated_Source\PSoC4/CapSense_SampleClk.c ****     regVal = clkDivider | maskVal;
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccSh3E8A.s 			page 6
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccaCPWnG.s 			page 6
 
 
  154:Generated_Source\PSoC4/CapSense_SampleClk.c ****     
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccSh3E8A.s 			page 1
  159 0006 80B2     		uxth	r0, r0
  179:Generated_Source\PSoC4/CapSense_SampleClk.c ****         >> CapSense_SampleClk_DIV_INT_SHIFT);
  180:Generated_Source\PSoC4/CapSense_SampleClk.c **** }
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccSh3E8A.s 			page 7
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccaCPWnG.s 			page 7
 
 
  160              		.loc 1 180 0
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccSh3E8A.s 			page 1
  187              		.cfi_endproc
  188              	.LFE4:
  189              		.size	CapSense_SampleClk_GetFractionalDividerRegister, .-CapSense_SampleClk_GetFractionalDividerRe
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccSh3E8A.s 			page 8
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccaCPWnG.s 			page 8
 
 
  190              		.text
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccSh3E8A.s 			page 1
  244 0065 04       		.byte	0x4
  245 0066 07       		.byte	0x7
  246 0067 47010000 		.4byte	.LASF8
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccSh3E8A.s 			page 9
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccaCPWnG.s 			page 9
 
 
  247 006b 04       		.uleb128 0x4
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccSh3E8A.s 			page 1
  301 00e1 00000000 		.4byte	.LFB1
  302 00e5 18000000 		.4byte	.LFE1-.LFB1
  303 00e9 01       		.uleb128 0x1
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccSh3E8A.s 			page 10
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccaCPWnG.s 			page 10
 
 
  304 00ea 9C       		.byte	0x9c
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccSh3E8A.s 			page 1
  358 0165 00       		.byte	0
  359              		.section	.debug_abbrev,"",%progbits
  360              	.Ldebug_abbrev0:
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccSh3E8A.s 			page 11
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccaCPWnG.s 			page 11
 
 
  361 0000 01       		.uleb128 0x1
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccSh3E8A.s 			page 1
  415 0036 05       		.uleb128 0x5
  416 0037 35       		.uleb128 0x35
  417 0038 00       		.byte	0
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccSh3E8A.s 			page 12
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccaCPWnG.s 			page 12
 
 
  418 0039 49       		.uleb128 0x49
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccSh3E8A.s 			page 1
  472 0070 0B       		.uleb128 0xb
  473 0071 27       		.uleb128 0x27
  474 0072 19       		.uleb128 0x19
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccSh3E8A.s 			page 13
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccaCPWnG.s 			page 13
 
 
  475 0073 11       		.uleb128 0x11
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccSh3E8A.s 			page 1
  529 00aa 13       		.uleb128 0x13
  530 00ab 11       		.uleb128 0x11
  531 00ac 01       		.uleb128 0x1
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccSh3E8A.s 			page 14
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccaCPWnG.s 			page 14
 
 
  532 00ad 12       		.uleb128 0x12
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccSh3E8A.s 			page 1
  586 0063 0A000000 		.4byte	.LVL3
  587 0067 10000000 		.4byte	.LVL5
  588 006b 0100     		.2byte	0x1
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccSh3E8A.s 			page 15
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccaCPWnG.s 			page 15
 
 
  589 006d 53       		.byte	0x53
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccSh3E8A.s 			page 1
  634      706C6543 
  634      6C6B5F53 
  635              	.LASF27:
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccSh3E8A.s 			page 16
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccaCPWnG.s 			page 16
 
 
  636 0026 433A5C55 		.ascii	"C:\\Users\\JamesN4\\Documents\\PSoC Creator\\Hybrid"
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccSh3E8A.s 			page 1
  657      6C00
  658              	.LASF16:
  659 011e 43617053 		.ascii	"CapSense_SampleClk_StartEx\000"
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccSh3E8A.s 			page 17
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccaCPWnG.s 			page 17
 
 
  659      656E7365 
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccSh3E8A.s 			page 1
  678              	.LASF14:
  679 0259 63686172 		.ascii	"char\000"
  679      00
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccSh3E8A.s 			page 18
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccaCPWnG.s 			page 18
 
 
  680              	.LASF2:

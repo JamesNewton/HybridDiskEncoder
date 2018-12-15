@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc4gJcWh.s 			page 1
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccT6FKNT.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc4gJcWh.s 			page 1
   28:Generated_Source\PSoC4/SPI_SPI.c ****     const SPI_SPI_INIT_STRUCT SPI_configSpi =
   29:Generated_Source\PSoC4/SPI_SPI.c ****     {
   30:Generated_Source\PSoC4/SPI_SPI.c ****         SPI_SPI_MODE,
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc4gJcWh.s 			page 2
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccT6FKNT.s 			page 2
 
 
   31:Generated_Source\PSoC4/SPI_SPI.c ****         SPI_SPI_SUB_MODE,
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc4gJcWh.s 			page 1
   85:Generated_Source\PSoC4/SPI_SPI.c ****             SPI_SetPins(SPI_SCB_MODE_SPI, config->mode, SPI_DUMMY_PARAM);
   86:Generated_Source\PSoC4/SPI_SPI.c **** 
   87:Generated_Source\PSoC4/SPI_SPI.c ****             /* Store internal configuration */
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc4gJcWh.s 			page 3
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccT6FKNT.s 			page 3
 
 
   88:Generated_Source\PSoC4/SPI_SPI.c ****             SPI_scbMode       = (uint8) SPI_SCB_MODE_SPI;
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc4gJcWh.s 			page 1
  142:Generated_Source\PSoC4/SPI_SPI.c ****             SPI_INTR_MASTER_MASK_REG = SPI_GET_SPI_INTR_MASTER_MASK(config->txInterruptMask);
  143:Generated_Source\PSoC4/SPI_SPI.c ****             SPI_INTR_RX_MASK_REG     = SPI_GET_SPI_INTR_RX_MASK(config->rxInterruptMask);
  144:Generated_Source\PSoC4/SPI_SPI.c ****             SPI_INTR_TX_MASK_REG     = SPI_GET_SPI_INTR_TX_MASK(config->txInterruptMask);
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc4gJcWh.s 			page 4
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccT6FKNT.s 			page 4
 
 
  145:Generated_Source\PSoC4/SPI_SPI.c ****             
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc4gJcWh.s 			page 1
   46 0012 0721     		movs	r1, #7
   47 0014 104A     		ldr	r2, .L2+20
   48 0016 1160     		str	r1, [r2]
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc4gJcWh.s 			page 5
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccT6FKNT.s 			page 5
 
 
  181:Generated_Source\PSoC4/SPI_SPI.c **** 
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc4gJcWh.s 			page 1
  206:Generated_Source\PSoC4/SPI_SPI.c ****         SPI_SpiSetActiveSlaveSelect(SPI_SPI_SLAVE_SELECT0);
  207:Generated_Source\PSoC4/SPI_SPI.c ****     #endif /* (SPI_SPI_MASTER_CONST) */
  208:Generated_Source\PSoC4/SPI_SPI.c **** 
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc4gJcWh.s 			page 6
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccT6FKNT.s 			page 6
 
 
  209:Generated_Source\PSoC4/SPI_SPI.c ****     #if(SPI_INTERNAL_RX_SW_BUFFER_CONST)
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc4gJcWh.s 			page 1
  231:Generated_Source\PSoC4/SPI_SPI.c **** void SPI_SpiPostEnable(void)
  232:Generated_Source\PSoC4/SPI_SPI.c **** {
  110              		.loc 1 232 0
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc4gJcWh.s 			page 7
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccT6FKNT.s 			page 7
 
 
  111              		.cfi_startproc
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc4gJcWh.s 			page 1
  283:Generated_Source\PSoC4/SPI_SPI.c ****         /* Set SCB SPI to drive output pin */
  284:Generated_Source\PSoC4/SPI_SPI.c ****         SPI_SET_HSIOM_SEL(SPI_SS1_M_HSIOM_REG, SPI_SS1_M_HSIOM_MASK,
  285:Generated_Source\PSoC4/SPI_SPI.c ****                                        SPI_SS1_M_HSIOM_POS, SPI_SS1_M_HSIOM_SEL_SPI);
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc4gJcWh.s 			page 8
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccT6FKNT.s 			page 8
 
 
  286:Generated_Source\PSoC4/SPI_SPI.c ****     #endif /* (SPI_SPI_MASTER_SS1_PIN) */
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc4gJcWh.s 			page 1
  316:Generated_Source\PSoC4/SPI_SPI.c **** void SPI_SpiStop(void)
  317:Generated_Source\PSoC4/SPI_SPI.c **** {
  139              		.loc 1 317 0
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc4gJcWh.s 			page 9
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccT6FKNT.s 			page 9
 
 
  140              		.cfi_startproc
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc4gJcWh.s 			page 1
  368:Generated_Source\PSoC4/SPI_SPI.c ****         SPI_IntrTxMask = LO16(SPI_GetTxInterruptMode() & SPI_INTR_SPIM_TX_RESTORE);
  369:Generated_Source\PSoC4/SPI_SPI.c ****     }
  370:Generated_Source\PSoC4/SPI_SPI.c ****     else
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc4gJcWh.s 			page 10
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccT6FKNT.s 			page 10
 
 
  371:Generated_Source\PSoC4/SPI_SPI.c ****     {
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc4gJcWh.s 			page 1
  425:Generated_Source\PSoC4/SPI_SPI.c ****         SPI_IntrTxMask = LO16(SPI_GetTxInterruptMode() & SPI_INTR_SPIM_TX_RESTORE);
  426:Generated_Source\PSoC4/SPI_SPI.c ****     #else
  427:Generated_Source\PSoC4/SPI_SPI.c ****         /* Store TX interrupt sources (exclude level triggered). */
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc4gJcWh.s 			page 11
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccT6FKNT.s 			page 11
 
 
  428:Generated_Source\PSoC4/SPI_SPI.c ****         SPI_IntrTxMask = LO16(SPI_GetTxInterruptMode() & SPI_INTR_SPIS_TX_RESTORE);
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc4gJcWh.s 			page 1
  456:Generated_Source\PSoC4/SPI_SPI.c ****     *   - SPI_SPI_SLAVE_SELECT3 - Slave select 3.
  457:Generated_Source\PSoC4/SPI_SPI.c ****     *
  458:Generated_Source\PSoC4/SPI_SPI.c ****     *******************************************************************************/
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc4gJcWh.s 			page 12
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccT6FKNT.s 			page 12
 
 
  459:Generated_Source\PSoC4/SPI_SPI.c ****     void SPI_SpiSetActiveSlaveSelect(uint32 slaveSelect)
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc4gJcWh.s 			page 1
  180 0006 F022     		movs	r2, #240
  181 0008 1201     		lsls	r2, r2, #4
  182 000a 1340     		ands	r3, r2
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc4gJcWh.s 			page 13
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccT6FKNT.s 			page 13
 
 
  183              	.LVL1:
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc4gJcWh.s 			page 1
  227 0010 0C       		.byte	0xc
  228 0011 07010000 		.4byte	.LASF23
  229 0015 80000000 		.4byte	.LASF24
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc4gJcWh.s 			page 14
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccT6FKNT.s 			page 14
 
 
  230 0019 00000000 		.4byte	.Ldebug_ranges0+0
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc4gJcWh.s 			page 1
  284 0084 04       		.byte	0x4
  285 0085 04       		.byte	0x4
  286 0086 DC000000 		.4byte	.LASF11
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc4gJcWh.s 			page 15
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccT6FKNT.s 			page 15
 
 
  287 008a 02       		.uleb128 0x2
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc4gJcWh.s 			page 1
  341 00fc 9C       		.byte	0x9c
  342 00fd 30010000 		.4byte	0x130
  343 0101 09       		.uleb128 0x9
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc4gJcWh.s 			page 16
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccT6FKNT.s 			page 16
 
 
  344 0102 2D000000 		.4byte	.LASF20
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc4gJcWh.s 			page 1
  398 001b 0E       		.uleb128 0xe
  399 001c 00       		.byte	0
  400 001d 00       		.byte	0
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc4gJcWh.s 			page 17
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccT6FKNT.s 			page 17
 
 
  401 001e 03       		.uleb128 0x3
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc4gJcWh.s 			page 1
  455 0055 07       		.uleb128 0x7
  456 0056 2E       		.uleb128 0x2e
  457 0057 00       		.byte	0
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc4gJcWh.s 			page 18
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccT6FKNT.s 			page 18
 
 
  458 0058 3F       		.uleb128 0x3f
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc4gJcWh.s 			page 1
  512 0090 49       		.uleb128 0x49
  513 0091 13       		.uleb128 0x13
  514 0092 02       		.uleb128 0x2
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc4gJcWh.s 			page 19
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccT6FKNT.s 			page 19
 
 
  515 0093 18       		.uleb128 0x18
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc4gJcWh.s 			page 1
  569 0000 00000000 		.4byte	.LVL0
  570 0004 12000000 		.4byte	.LVL2
  571 0008 0100     		.2byte	0x1
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc4gJcWh.s 			page 20
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccT6FKNT.s 			page 20
 
 
  572 000a 51       		.byte	0x51
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc4gJcWh.s 			page 1
  626 0078 1A       		.byte	0x1a
  627 0079 9F       		.byte	0x9f
  628 007a 00000000 		.4byte	0
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc4gJcWh.s 			page 21
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccT6FKNT.s 			page 21
 
 
  629 007e 00000000 		.4byte	0
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc4gJcWh.s 			page 1
  670      00
  671              	.LASF20:
  672 002d 736C6176 		.ascii	"slaveSelect\000"
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc4gJcWh.s 			page 22
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccT6FKNT.s 			page 22
 
 
  672      6553656C 
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc4gJcWh.s 			page 1
  694              	.LASF23:
  695 0107 47656E65 		.ascii	"Generated_Source\\PSoC4\\SPI_SPI.c\000"
  695      72617465 
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc4gJcWh.s 			page 23
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccT6FKNT.s 			page 23
 
 
  695      645F536F 
@@ -1378,7 +1378,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc4gJcWh.s 			page 1
  716              	.LASF2:
  717 0227 73686F72 		.ascii	"short int\000"
  717      7420696E 
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc4gJcWh.s 			page 24
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccT6FKNT.s 			page 24
 
 
  717      7400

@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 1
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccgbGPCH.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 1
   28:Generated_Source\PSoC4/CyDMA.c ****     &CyDmaDefaultInterruptCallback, &CyDmaDefaultInterruptCallback,
   29:Generated_Source\PSoC4/CyDMA.c ****     &CyDmaDefaultInterruptCallback, &CyDmaDefaultInterruptCallback,
   30:Generated_Source\PSoC4/CyDMA.c ****     &CyDmaDefaultInterruptCallback, &CyDmaDefaultInterruptCallback
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 2
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccgbGPCH.s 			page 2
 
 
   31:Generated_Source\PSoC4/CyDMA.c **** };
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 1
   85:Generated_Source\PSoC4/CyDMA.c **** *                   
   86:Generated_Source\PSoC4/CyDMA.c **** * Return:
   87:Generated_Source\PSoC4/CyDMA.c **** *  None.
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 3
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccgbGPCH.s 			page 3
 
 
   88:Generated_Source\PSoC4/CyDMA.c **** *
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 1
  142:Generated_Source\PSoC4/CyDMA.c **** uint32 CyDmaGetActiveChannels(void)
  143:Generated_Source\PSoC4/CyDMA.c **** {
  144:Generated_Source\PSoC4/CyDMA.c ****     return (CYDMA_STATUS_CH_ACT_REG);
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 4
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccgbGPCH.s 			page 4
 
 
  145:Generated_Source\PSoC4/CyDMA.c **** }
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 1
  199:Generated_Source\PSoC4/CyDMA.c **** {
  200:Generated_Source\PSoC4/CyDMA.c ****     return ((void *)CYDMA_STATUS_DST_ADDR_REG);
  201:Generated_Source\PSoC4/CyDMA.c **** }
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 5
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccgbGPCH.s 			page 5
 
 
  202:Generated_Source\PSoC4/CyDMA.c **** 
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 1
  256:Generated_Source\PSoC4/CyDMA.c **** *
  257:Generated_Source\PSoC4/CyDMA.c **** * Summary:
  258:Generated_Source\PSoC4/CyDMA.c **** *  Clears the pending interrupts.
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 6
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccgbGPCH.s 			page 6
 
 
  259:Generated_Source\PSoC4/CyDMA.c **** *
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 1
  313:Generated_Source\PSoC4/CyDMA.c **** /*******************************************************************************
  314:Generated_Source\PSoC4/CyDMA.c **** * Function Name: CyDmaGetInterruptSourceMasked
  315:Generated_Source\PSoC4/CyDMA.c **** ********************************************************************************
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 7
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccgbGPCH.s 			page 7
 
 
  316:Generated_Source\PSoC4/CyDMA.c **** *
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 1
  370:Generated_Source\PSoC4/CyDMA.c **** * Parameters:
  371:Generated_Source\PSoC4/CyDMA.c **** *  channel: Channel used by this function.
  372:Generated_Source\PSoC4/CyDMA.c **** *
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 8
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccgbGPCH.s 			page 8
 
 
  373:Generated_Source\PSoC4/CyDMA.c **** * Return:
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 1
  412:Generated_Source\PSoC4/CyDMA.c ****     /* Clear pending interrupts. */
  413:Generated_Source\PSoC4/CyDMA.c ****     CYDMA_INTR_REG = intr;
   43              		.loc 1 413 0
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 9
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccgbGPCH.s 			page 9
 
 
   44 0006 084B     		ldr	r3, .L5+4
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 1
   84              	.LFE15:
   85              		.size	CyDmaInterrupt, .-CyDmaInterrupt
   86              		.section	.text.CyDmaDefaultInterruptCallback,"ax",%progbits
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 10
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccgbGPCH.s 			page 10
 
 
   87              		.align	2
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 1
  112              		.align	2
  113              		.global	CyDmaDisable
  114              		.code	16
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 11
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccgbGPCH.s 			page 11
 
 
  115              		.thumb_func
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 1
  163              	.LFE3:
  164              		.size	CyDmaGetStatus, .-CyDmaGetStatus
  165              		.section	.text.CyDmaGetActiveChannels,"ax",%progbits
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 12
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccgbGPCH.s 			page 12
 
 
  166              		.align	2
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 1
  214              		.cfi_endproc
  215              	.LFE5:
  216              		.size	CyDmaGetActiveSrcAddress, .-CyDmaGetActiveSrcAddress
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 13
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccgbGPCH.s 			page 13
 
 
  217              		.section	.text.CyDmaGetActiveDstAddress,"ax",%progbits
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 1
  230:Generated_Source\PSoC4/CyDMA.c **** 
  266              		.loc 1 230 0
  267              		@ sp needed
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 14
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccgbGPCH.s 			page 14
 
 
  268 000a 10BD     		pop	{r4, pc}
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 1
  315              	.L27:
  316              		.align	2
  317              	.L26:
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 15
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccgbGPCH.s 			page 15
 
 
  318 0028 00000000 		.word	.LANCHOR1
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 1
  270:Generated_Source\PSoC4/CyDMA.c **** 
  367              		.loc 1 270 0
  368              		@ sp needed
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 16
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccgbGPCH.s 			page 16
 
 
  369 0004 7047     		bx	lr
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 1
  418 0000 014B     		ldr	r3, .L38
  419 0002 1868     		ldr	r0, [r3]
  310:Generated_Source\PSoC4/CyDMA.c **** 
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 17
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccgbGPCH.s 			page 17
 
 
  420              		.loc 1 310 0
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 1
  470              		.cfi_def_cfa_offset 16
  471              		.cfi_offset 4, -16
  472              		.cfi_offset 5, -12
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 18
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccgbGPCH.s 			page 18
 
 
  473              		.cfi_offset 6, -8
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 1
  521              		.cfi_offset 14, -4
  522 0002 0400     		movs	r4, r0
  379:Generated_Source\PSoC4/CyDMA.c ****     
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 19
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccgbGPCH.s 			page 19
 
 
  523              		.loc 1 379 0
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 1
  555              		.loc 1 473 0
  556              		.cfi_startproc
  557              		@ args = 0, pretend = 0, frame = 0
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 20
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccgbGPCH.s 			page 20
 
 
  558              		@ frame_needed = 0, uses_anonymous_args = 0
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 1
  489:Generated_Source\PSoC4/CyDMA.c **** }
  595              		.loc 1 489 0
  596              		@ sp needed
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 21
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccgbGPCH.s 			page 21
 
 
  597 001e 7047     		bx	lr
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 1
  627              		.loc 1 513 0 is_stmt 0 discriminator 1
  628 0008 0020     		movs	r0, #0
  629              	.LVL35:
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 22
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccgbGPCH.s 			page 22
 
 
  630 000a FFF7FEFF 		bl	CyHalt
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 1
  535:Generated_Source\PSoC4/CyDMA.c **** *  Enables the DMA channel.
  536:Generated_Source\PSoC4/CyDMA.c **** *
  537:Generated_Source\PSoC4/CyDMA.c **** * Parameters:
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 23
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccgbGPCH.s 			page 23
 
 
  538:Generated_Source\PSoC4/CyDMA.c **** *  channel: Channel used by this function.
@@ -1378,7 +1378,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 1
  700              		.size	CyDmaChEnable, .-CyDmaChEnable
  701              		.section	.text.CyDmaChDisable,"ax",%progbits
  702              		.align	2
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 24
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccgbGPCH.s 			page 24
 
 
  703              		.global	CyDmaChDisable
@@ -1438,7 +1438,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 1
  733 0014 5B00     		lsls	r3, r3, #1
  734 0016 5B08     		lsrs	r3, r3, #1
  735 0018 A350     		str	r3, [r4, r2]
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 25
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccgbGPCH.s 			page 25
 
 
  579:Generated_Source\PSoC4/CyDMA.c **** }
@@ -1498,7 +1498,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 1
  766 0006 02D9     		bls	.L71
  767              		.loc 1 602 0 is_stmt 0 discriminator 1
  768 0008 0020     		movs	r0, #0
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 26
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccgbGPCH.s 			page 26
 
 
  769              	.LVL49:
@@ -1558,7 +1558,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 1
  626:Generated_Source\PSoC4/CyDMA.c **** *******************************************************************************/
  627:Generated_Source\PSoC4/CyDMA.c **** void CyDmaSetPriority(int32 channel, int32 priority)
  628:Generated_Source\PSoC4/CyDMA.c **** {
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 27
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccgbGPCH.s 			page 27
 
 
  800              		.loc 1 628 0
@@ -1618,7 +1618,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 1
  846              	.L78:
  847              		.align	2
  848              	.L77:
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 28
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccgbGPCH.s 			page 28
 
 
  849 002c 80101040 		.word	1074794624
@@ -1678,7 +1678,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 1
  659:Generated_Source\PSoC4/CyDMA.c ****     priority = (CYDMA_CH_CTL_BASE.ctl[channel] & CYDMA_PRIO) >> CYDMA_PRIO_POS;
  881              		.loc 1 659 0 is_stmt 1
  882 000e A400     		lsls	r4, r4, #2
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 29
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccgbGPCH.s 			page 29
 
 
  883              	.LVL62:
@@ -1738,7 +1738,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 1
  912              	.LVL64:
  913 0000 70B5     		push	{r4, r5, r6, lr}
  914              		.cfi_def_cfa_offset 16
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 30
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccgbGPCH.s 			page 30
 
 
  915              		.cfi_offset 4, -16
@@ -1798,7 +1798,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 1
  961              		.size	CyDmaSetNextDescriptor, .-CyDmaSetNextDescriptor
  962              		.section	.text.CyDmaGetNextDescriptor,"ax",%progbits
  963              		.align	2
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 31
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccgbGPCH.s 			page 31
 
 
  964              		.global	CyDmaGetNextDescriptor
@@ -1858,7 +1858,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 1
  994 0014 800F     		lsrs	r0, r0, #30
  995 0016 0123     		movs	r3, #1
  996 0018 1840     		ands	r0, r3
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 32
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccgbGPCH.s 			page 32
 
 
  997              	.LVL75:
@@ -1918,7 +1918,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 1
  1021 0000 70B5     		push	{r4, r5, r6, lr}
  1022              		.cfi_def_cfa_offset 16
  1023              		.cfi_offset 4, -16
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 33
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccgbGPCH.s 			page 33
 
 
  1024              		.cfi_offset 5, -12
@@ -1978,7 +1978,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 1
  1072 0040 02D0     		beq	.L97
  1073              		.loc 1 752 0 is_stmt 0 discriminator 1
  1074 0042 0020     		movs	r0, #0
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 34
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccgbGPCH.s 			page 34
 
 
  1075 0044 FFF7FEFF 		bl	CyHalt
@@ -2038,7 +2038,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 1
  1124 0088 FFF7FEFF 		bl	CyHalt
  1125              	.LVL87:
  1126              	.L102:
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 35
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccgbGPCH.s 			page 35
 
 
  758:Generated_Source\PSoC4/CyDMA.c ****     
@@ -2098,7 +2098,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 1
  1166              		.loc 1 769 0
  1167              		@ sp needed
  1168              	.LVL90:
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 36
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccgbGPCH.s 			page 36
 
 
  1169 00c0 70BD     		pop	{r4, r5, r6, pc}
@@ -2158,7 +2158,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 1
  1198              		.cfi_def_cfa_offset 16
  1199              		.cfi_offset 4, -16
  1200              		.cfi_offset 5, -12
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 37
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccgbGPCH.s 			page 37
 
 
  1201              		.cfi_offset 6, -8
@@ -2218,7 +2218,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 1
  1250              	CyDmaGetDescriptorStatus:
  1251              	.LFB28:
  800:Generated_Source\PSoC4/CyDMA.c **** 
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 38
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccgbGPCH.s 			page 38
 
 
  801:Generated_Source\PSoC4/CyDMA.c **** 
@@ -2278,7 +2278,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 1
  1282              		.loc 1 824 0 is_stmt 1
  1283 001a 6D00     		lsls	r5, r5, #1
  1284              	.LVL101:
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 39
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccgbGPCH.s 			page 39
 
 
  1285 001c 2C19     		adds	r4, r5, r4
@@ -2338,7 +2338,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 1
  1314              	.LVL103:
  1315 0000 70B5     		push	{r4, r5, r6, lr}
  1316              		.cfi_def_cfa_offset 16
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 40
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccgbGPCH.s 			page 40
 
 
  1317              		.cfi_offset 4, -16
@@ -2398,7 +2398,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 1
  1366              	CyDmaGetSrcAddress:
  1367              	.LFB30:
  855:Generated_Source\PSoC4/CyDMA.c **** 
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 41
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccgbGPCH.s 			page 41
 
 
  856:Generated_Source\PSoC4/CyDMA.c **** 
@@ -2458,7 +2458,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 1
  1399 001a 6D00     		lsls	r5, r5, #1
  1400              	.LVL114:
  1401 001c 2C19     		adds	r4, r5, r4
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 42
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccgbGPCH.s 			page 42
 
 
  1402              	.LVL115:
@@ -2518,7 +2518,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 1
  1431              		.cfi_offset 4, -16
  1432              		.cfi_offset 5, -12
  1433              		.cfi_offset 6, -8
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 43
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccgbGPCH.s 			page 43
 
 
  1434              		.cfi_offset 14, -4
@@ -2578,7 +2578,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 1
  1483              	.LFB32:
  909:Generated_Source\PSoC4/CyDMA.c **** 
  910:Generated_Source\PSoC4/CyDMA.c **** 
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 44
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccgbGPCH.s 			page 44
 
 
  911:Generated_Source\PSoC4/CyDMA.c **** /*******************************************************************************
@@ -2638,7 +2638,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 1
  1516              	.LVL127:
  1517 001c 2C19     		adds	r4, r5, r4
  1518              	.LVL128:
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 45
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccgbGPCH.s 			page 45
 
 
  1519 001e 2401     		lsls	r4, r4, #4
@@ -2698,7 +2698,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 1
  1544              		@ args = 0, pretend = 0, frame = 0
  1545              		@ frame_needed = 0, uses_anonymous_args = 0
  1546              	.LVL129:
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 46
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccgbGPCH.s 			page 46
 
 
  1547 0000 70B5     		push	{r4, r5, r6, lr}
@@ -2758,7 +2758,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 1
  1594              	.LVL136:
  969:Generated_Source\PSoC4/CyDMA.c ****     CYDMA_DESCR_BASE.descriptor[channel][descriptor].ctl = regValue | dataElementSize;
  1595              		.loc 1 969 0
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 47
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccgbGPCH.s 			page 47
 
 
  1596 003a 3243     		orrs	r2, r6
@@ -2818,7 +2818,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 1
  1622              		@ frame_needed = 0, uses_anonymous_args = 0
  1623              	.LVL139:
  1624 0000 70B5     		push	{r4, r5, r6, lr}
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 48
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccgbGPCH.s 			page 48
 
 
  1625              		.cfi_def_cfa_offset 16
@@ -2878,7 +2878,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 1
  1674              		.global	CyDmaSetNumDataElements
  1675              		.code	16
  1676              		.thumb_func
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 49
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccgbGPCH.s 			page 49
 
 
  1677              		.type	CyDmaSetNumDataElements, %function
@@ -2938,7 +2938,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 1
 1031:Generated_Source\PSoC4/CyDMA.c ****     CYASSERT((descriptor     >= 0) && (descriptor      <  CYDMA_DESCR_NR));
  1703              		.loc 1 1031 0 is_stmt 1
  1704 0012 012C     		cmp	r4, #1
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 50
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccgbGPCH.s 			page 50
 
 
  1705 0014 02D9     		bls	.L148
@@ -2998,7 +2998,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 1
  1753              		.align	2
  1754              		.global	CyDmaGetNumDataElements
  1755              		.code	16
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 51
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccgbGPCH.s 			page 51
 
 
  1756              		.thumb_func
@@ -3058,7 +3058,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 1
  1784 0012 02D9     		bls	.L154
  1785              		.loc 1 1063 0 is_stmt 0 discriminator 1
  1786 0014 0020     		movs	r0, #0
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 52
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccgbGPCH.s 			page 52
 
 
  1787 0016 FFF7FEFF 		bl	CyHalt
@@ -3118,7 +3118,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 1
 1083:Generated_Source\PSoC4/CyDMA.c **** *  descriptor:    Descriptor (0 or 1) modified by this function.
 1084:Generated_Source\PSoC4/CyDMA.c **** *  transferWidth: Specifies the source and destination widths. Refer to 
 1085:Generated_Source\PSoC4/CyDMA.c **** *                 the API bit field definitions in CyDMA_P4.h or the API
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 53
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccgbGPCH.s 			page 53
 
 
 1086:Generated_Source\PSoC4/CyDMA.c **** *                 description in the DMA channel datasheet for the parameter
@@ -3178,7 +3178,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 1
  1858 0022 0020     		movs	r0, #0
  1859 0024 FFF7FEFF 		bl	CyHalt
  1860              	.LVL166:
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 54
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccgbGPCH.s 			page 54
 
 
  1861              	.L160:
@@ -3238,7 +3238,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 1
 1120:Generated_Source\PSoC4/CyDMA.c **** *  descriptor: Descriptor (0 or 1) modified by this function.
 1121:Generated_Source\PSoC4/CyDMA.c **** *                   
 1122:Generated_Source\PSoC4/CyDMA.c **** * Return:
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 55
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccgbGPCH.s 			page 55
 
 
 1123:Generated_Source\PSoC4/CyDMA.c **** *  Width of source and destination. Refer to the API bit field definitions in
@@ -3298,7 +3298,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 1
  1942              		.loc 1 1133 0
  1943              		@ sp needed
  1944 002e 70BD     		pop	{r4, r5, r6, pc}
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 56
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccgbGPCH.s 			page 56
 
 
  1945              	.L167:
@@ -3358,7 +3358,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 1
  1969              		.cfi_offset 6, -8
  1970              		.cfi_offset 14, -4
  1971 0002 0500     		movs	r5, r0
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 57
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccgbGPCH.s 			page 57
 
 
  1972 0004 0C00     		movs	r4, r1
@@ -3418,7 +3418,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 1
  2017              		.loc 1 1172 0
  2018              		@ sp needed
  2019              	.LVL187:
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 58
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccgbGPCH.s 			page 58
 
 
  2020 003e 70BD     		pop	{r4, r5, r6, pc}
@@ -3478,7 +3478,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 1
  2051 0006 0728     		cmp	r0, #7
  2052 0008 02D9     		bls	.L175
  2053              		.loc 1 1195 0 is_stmt 0 discriminator 1
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 59
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccgbGPCH.s 			page 59
 
 
  2054 000a 0020     		movs	r0, #0
@@ -3538,7 +3538,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 1
 1206:Generated_Source\PSoC4/CyDMA.c **** * Summary:
 1207:Generated_Source\PSoC4/CyDMA.c **** *  Sets the type of input trigger for the DMA For level sensitive triggers sets
 1208:Generated_Source\PSoC4/CyDMA.c **** *  how long the DMA waits for the trigger to go low (deactivate) before
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 60
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccgbGPCH.s 			page 60
 
 
 1209:Generated_Source\PSoC4/CyDMA.c **** *  triggering the channel again.
@@ -3598,7 +3598,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 1
 1232:Generated_Source\PSoC4/CyDMA.c ****     CYASSERT(0u == (triggerType & (uint32)~CYDMA_TRIGGER_TYPE));
  2129              		.loc 1 1232 0 is_stmt 1
  2130 001c 084B     		ldr	r3, .L183
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 61
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccgbGPCH.s 			page 61
 
 
  2131 001e 1E42     		tst	r6, r3
@@ -3658,7 +3658,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 1
 1243:Generated_Source\PSoC4/CyDMA.c **** * Summary:
 1244:Generated_Source\PSoC4/CyDMA.c **** *  Returns the trigger deactivation settings as set by CyDmaSetTriggerType() or
 1245:Generated_Source\PSoC4/CyDMA.c **** *  CyDmaSetConfiguration().
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 62
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccgbGPCH.s 			page 62
 
 
 1246:Generated_Source\PSoC4/CyDMA.c **** *
@@ -3718,7 +3718,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 1
  2212 0022 9C46     		mov	ip, r3
  2213 0024 6444     		add	r4, r4, ip
  2214 0026 A068     		ldr	r0, [r4, #8]
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 63
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccgbGPCH.s 			page 63
 
 
  2215 0028 C023     		movs	r3, #192
@@ -3778,7 +3778,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 1
  2241 0000 70B5     		push	{r4, r5, r6, lr}
  2242              		.cfi_def_cfa_offset 16
  2243              		.cfi_offset 4, -16
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 64
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccgbGPCH.s 			page 64
 
 
  2244              		.cfi_offset 5, -12
@@ -3838,7 +3838,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 1
  2290              	.LVL218:
  2291 003a A260     		str	r2, [r4, #8]
 1299:Generated_Source\PSoC4/CyDMA.c **** }
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 65
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccgbGPCH.s 			page 65
 
 
  2292              		.loc 1 1299 0
@@ -3898,7 +3898,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 1
 1322:Generated_Source\PSoC4/CyDMA.c ****     CYASSERT((channel    >= 0) && (channel    < CYDMA_CH_NR));
  2324              		.loc 1 1322 0
  2325 0006 0728     		cmp	r0, #7
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 66
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccgbGPCH.s 			page 66
 
 
  2326 0008 02D9     		bls	.L197
@@ -3958,7 +3958,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 1
 1332:Generated_Source\PSoC4/CyDMA.c **** *
 1333:Generated_Source\PSoC4/CyDMA.c **** * Summary:
 1334:Generated_Source\PSoC4/CyDMA.c **** *  Determines if the descriptor is preemptable.
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 67
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccgbGPCH.s 			page 67
 
 
 1335:Generated_Source\PSoC4/CyDMA.c **** *
@@ -4018,7 +4018,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 1
  2402              		.loc 1 1357 0 is_stmt 1
  2403 001c 084B     		ldr	r3, .L205
  2404 001e 1E42     		tst	r6, r3
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 68
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccgbGPCH.s 			page 68
 
 
  2405 0020 02D0     		beq	.L204
@@ -4078,7 +4078,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 1
 1369:Generated_Source\PSoC4/CyDMA.c **** *  Returns whether or not the descriptor is preemptable.
 1370:Generated_Source\PSoC4/CyDMA.c **** *
 1371:Generated_Source\PSoC4/CyDMA.c **** * Parameters:
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 69
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccgbGPCH.s 			page 69
 
 
 1372:Generated_Source\PSoC4/CyDMA.c **** *  channel:    Channel used by this function.
@@ -4138,7 +4138,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 1
  2487 0026 A068     		ldr	r0, [r4, #8]
  2488 0028 8023     		movs	r3, #128
  2489 002a 5B05     		lsls	r3, r3, #21
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 70
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccgbGPCH.s 			page 70
 
 
  2490 002c 1840     		ands	r0, r3
@@ -4198,7 +4198,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 1
  2517              		.cfi_offset 5, -12
  2518              		.cfi_offset 6, -8
  2519              		.cfi_offset 14, -4
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 71
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccgbGPCH.s 			page 71
 
 
  2520 0002 0500     		movs	r5, r0
@@ -4258,7 +4258,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 1
 1422:Generated_Source\PSoC4/CyDMA.c **** }
  2566              		.loc 1 1422 0
  2567              		@ sp needed
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 72
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccgbGPCH.s 			page 72
 
 
  2568              	.LVL251:
@@ -4318,7 +4318,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 1
  2599              		.loc 1 1445 0
  2600 0006 0728     		cmp	r0, #7
  2601 0008 02D9     		bls	.L219
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 73
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccgbGPCH.s 			page 73
 
 
  2602              		.loc 1 1445 0 is_stmt 0 discriminator 1
@@ -4378,7 +4378,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 1
  2652 001c 00000000 		.word	CyDmaDefaultInterruptCallback
  2653              		.bss
  2654              		.align	2
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 74
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccgbGPCH.s 			page 74
 
 
  2655              		.set	.LANCHOR1,. + 0
@@ -4438,7 +4438,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 1
  2709 0050 08       		.byte	0x8
  2710 0051 05       		.byte	0x5
  2711 0052 5F010000 		.4byte	.LASF6
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 75
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccgbGPCH.s 			page 75
 
 
  2712 0056 02       		.uleb128 0x2
@@ -4498,7 +4498,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 1
  2766 00c7 8E02     		.2byte	0x28e
  2767 00c9 CD000000 		.4byte	0xcd
  2768 00cd 06       		.uleb128 0x6
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 76
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccgbGPCH.s 			page 76
 
 
  2769 00ce 04       		.byte	0x4
@@ -4558,7 +4558,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 1
  2823 0137 0D       		.uleb128 0xd
  2824 0138 31070000 		.4byte	.LASF20
  2825 013c 03       		.byte	0x3
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 77
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccgbGPCH.s 			page 77
 
 
  2826 013d 31       		.byte	0x31
@@ -4618,7 +4618,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 1
  2880 01a7 04       		.byte	0x4
  2881 01a8 0D       		.uleb128 0xd
  2882 01a9 ED040000 		.4byte	.LASF26
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 78
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccgbGPCH.s 			page 78
 
 
  2883 01ad 03       		.byte	0x3
@@ -4678,7 +4678,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 1
  2937 021a 30000000 		.4byte	.LFE15-.LFB15
  2938 021e 01       		.uleb128 0x1
  2939 021f 9C       		.byte	0x9c
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 79
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccgbGPCH.s 			page 79
 
 
  2940 0220 45020000 		.4byte	0x245
@@ -4738,7 +4738,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 1
  2994 0298 77000000 		.4byte	0x77
  2995 029c 00000000 		.4byte	.LFB4
  2996 02a0 0C000000 		.4byte	.LFE4-.LFB4
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 80
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccgbGPCH.s 			page 80
 
 
  2997 02a4 01       		.uleb128 0x1
@@ -4798,7 +4798,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 1
  3051 0310 01       		.byte	0x1
  3052 0311 3E       		.byte	0x3e
  3053 0312 00000000 		.4byte	.LFB1
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 81
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccgbGPCH.s 			page 81
 
 
  3054 0316 34000000 		.4byte	.LFE1-.LFB1
@@ -4858,7 +4858,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 1
  3108 0383 9C       		.byte	0x9c
  3109 0384 97030000 		.4byte	0x397
  3110 0388 1C       		.uleb128 0x1c
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 82
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccgbGPCH.s 			page 82
 
 
  3111 0389 C3050000 		.4byte	.LASF48
@@ -4918,7 +4918,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 1
  3165 0407 01       		.byte	0x1
  3166 0408 5E01     		.2byte	0x15e
  3167 040a 83000000 		.4byte	0x83
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 83
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccgbGPCH.s 			page 83
 
 
  3168 040e 5E000000 		.4byte	.LLST3
@@ -4978,7 +4978,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 1
  3222 0482 83000000 		.4byte	0x83
  3223 0486 00000000 		.4byte	.LFB17
  3224 048a 24000000 		.4byte	.LFE17-.LFB17
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 84
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccgbGPCH.s 			page 84
 
 
  3225 048e 01       		.uleb128 0x1
@@ -5038,7 +5038,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 1
  3279 050c 00       		.byte	0
  3280 050d 1B       		.uleb128 0x1b
  3281 050e 66000000 		.4byte	.LASF61
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 85
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccgbGPCH.s 			page 85
 
 
  3282 0512 01       		.byte	0x1
@@ -5098,7 +5098,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 1
  3336 0589 01       		.uleb128 0x1
  3337 058a 9C       		.byte	0x9c
  3338 058b C0050000 		.4byte	0x5c0
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 86
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccgbGPCH.s 			page 86
 
 
  3339 058f 1F       		.uleb128 0x1f
@@ -5158,7 +5158,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 1
  3393 0605 01       		.byte	0x1
  3394 0606 7302     		.2byte	0x273
  3395 0608 83000000 		.4byte	0x83
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 87
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccgbGPCH.s 			page 87
 
 
  3396 060c 2C020000 		.4byte	.LLST14
@@ -5218,7 +5218,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 1
  3450 0682 14       		.uleb128 0x14
  3451 0683 01       		.uleb128 0x1
  3452 0684 50       		.byte	0x50
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 88
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccgbGPCH.s 			page 88
 
 
  3453 0685 01       		.uleb128 0x1
@@ -5278,7 +5278,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 1
  3507 06f5 01       		.byte	0x1
  3508 06f6 C602     		.2byte	0x2c6
  3509 06f8 83000000 		.4byte	0x83
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 89
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccgbGPCH.s 			page 89
 
 
  3510 06fc 00000000 		.4byte	.LFB25
@@ -5338,7 +5338,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 1
  3564 077a 60030000 		.4byte	.LLST21
  3565 077e 1A       		.uleb128 0x1a
  3566 077f 12000000 		.4byte	.LVL78
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 90
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccgbGPCH.s 			page 90
 
 
  3567 0783 0C120000 		.4byte	0x120c
@@ -5398,7 +5398,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 1
  3621 07ec 50       		.byte	0x50
  3622 07ed 01       		.uleb128 0x1
  3623 07ee 30       		.byte	0x30
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 91
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccgbGPCH.s 			page 91
 
 
  3624 07ef 00       		.byte	0
@@ -5458,7 +5458,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 1
  3678 0856 9D080000 		.4byte	0x89d
  3679 085a 1F       		.uleb128 0x1f
  3680 085b FC050000 		.4byte	.LASF52
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 92
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccgbGPCH.s 			page 92
 
 
  3681 085f 01       		.byte	0x1
@@ -5518,7 +5518,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 1
  3735 08dc 0C120000 		.4byte	0x120c
  3736 08e0 EA080000 		.4byte	0x8ea
  3737 08e4 14       		.uleb128 0x14
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 93
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccgbGPCH.s 			page 93
 
 
  3738 08e5 01       		.uleb128 0x1
@@ -5578,7 +5578,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 1
  3792 0958 0C120000 		.4byte	0x120c
  3793 095c 14       		.uleb128 0x14
  3794 095d 01       		.uleb128 0x1
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 94
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccgbGPCH.s 			page 94
 
 
  3795 095e 50       		.byte	0x50
@@ -5638,7 +5638,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 1
  3849 09d1 9C       		.byte	0x9c
  3850 09d2 290A0000 		.4byte	0xa29
  3851 09d6 1F       		.uleb128 0x1f
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 95
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccgbGPCH.s 			page 95
 
 
  3852 09d7 FC050000 		.4byte	.LASF52
@@ -5698,7 +5698,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 1
  3906 0a54 25060000 		.4byte	.LASF22
  3907 0a58 01       		.byte	0x1
  3908 0a59 9F03     		.2byte	0x39f
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 96
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccgbGPCH.s 			page 96
 
 
  3909 0a5b 83000000 		.4byte	0x83
@@ -5758,7 +5758,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 1
  3963 0ad8 78060000 		.4byte	.LLST39
  3964 0adc 1A       		.uleb128 0x1a
  3965 0add 12000000 		.4byte	.LVL131
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 97
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccgbGPCH.s 			page 97
 
 
  3966 0ae1 0C120000 		.4byte	0x120c
@@ -5818,7 +5818,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 1
  4020 0b59 14       		.uleb128 0x14
  4021 0b5a 01       		.uleb128 0x1
  4022 0b5b 50       		.byte	0x50
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 98
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccgbGPCH.s 			page 98
 
 
  4023 0b5c 01       		.uleb128 0x1
@@ -5878,7 +5878,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 1
  4077 0bd3 01       		.uleb128 0x1
  4078 0bd4 30       		.byte	0x30
  4079 0bd5 00       		.byte	0
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 99
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccgbGPCH.s 			page 99
 
 
  4080 0bd6 1A       		.uleb128 0x1a
@@ -5938,7 +5938,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 1
  4134 0c4f 01       		.uleb128 0x1
  4135 0c50 50       		.byte	0x50
  4136 0c51 01       		.uleb128 0x1
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 100
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccgbGPCH.s 			page 100
 
 
  4137 0c52 30       		.byte	0x30
@@ -5998,7 +5998,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 1
  4191 0ccc 00       		.byte	0
  4192 0ccd 1A       		.uleb128 0x1a
  4193 0cce 1C000000 		.4byte	.LVL165
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 101
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccgbGPCH.s 			page 101
 
 
  4194 0cd2 0C120000 		.4byte	0x120c
@@ -6058,7 +6058,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 1
  4248 0d47 01       		.uleb128 0x1
  4249 0d48 50       		.byte	0x50
  4250 0d49 01       		.uleb128 0x1
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 102
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccgbGPCH.s 			page 102
 
 
  4251 0d4a 30       		.byte	0x30
@@ -6118,7 +6118,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 1
  4305 0dc7 30       		.byte	0x30
  4306 0dc8 00       		.byte	0
  4307 0dc9 13       		.uleb128 0x13
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 103
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccgbGPCH.s 			page 103
 
 
  4308 0dca 28000000 		.4byte	.LVL182
@@ -6178,7 +6178,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 1
  4362 0e3c CA04     		.2byte	0x4ca
  4363 0e3e 00000000 		.4byte	.LFB41
  4364 0e42 48000000 		.4byte	.LFE41-.LFB41
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 104
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccgbGPCH.s 			page 104
 
 
  4365 0e46 01       		.uleb128 0x1
@@ -6238,7 +6238,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 1
  4419 0ebf 30       		.byte	0x30
  4420 0ec0 00       		.byte	0
  4421 0ec1 00       		.byte	0
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 105
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccgbGPCH.s 			page 105
 
 
  4422 0ec2 1E       		.uleb128 0x1e
@@ -6298,7 +6298,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 1
  4476 0f3b 0905     		.2byte	0x509
  4477 0f3d 83000000 		.4byte	0x83
  4478 0f41 8E0A0000 		.4byte	.LLST65
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 106
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccgbGPCH.s 			page 106
 
 
  4479 0f45 1F       		.uleb128 0x1f
@@ -6358,7 +6358,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 1
  4533 0fbb 34000000 		.4byte	.LFE44-.LFB44
  4534 0fbf 01       		.uleb128 0x1
  4535 0fc0 9C       		.byte	0x9c
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 107
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccgbGPCH.s 			page 107
 
 
  4536 0fc1 08100000 		.4byte	0x1008
@@ -6418,7 +6418,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 1
  4590 103e 1F       		.uleb128 0x1f
  4591 103f E0070000 		.4byte	.LASF30
  4592 1043 01       		.byte	0x1
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 108
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccgbGPCH.s 			page 108
 
 
  4593 1044 4705     		.2byte	0x547
@@ -6478,7 +6478,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 1
  4647 10ba 140C0000 		.4byte	.LLST75
  4648 10be 1F       		.uleb128 0x1f
  4649 10bf 25060000 		.4byte	.LASF22
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 109
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccgbGPCH.s 			page 109
 
 
  4650 10c3 01       		.byte	0x1
@@ -6538,7 +6538,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 1
  4704 113d 8605     		.2byte	0x586
  4705 113f 77000000 		.4byte	0x77
  4706 1143 F00C0000 		.4byte	.LLST80
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 110
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccgbGPCH.s 			page 110
 
 
  4707 1147 1A       		.uleb128 0x1a
@@ -6598,7 +6598,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 1
  4761 11bc 0C120000 		.4byte	0x120c
  4762 11c0 CA110000 		.4byte	0x11ca
  4763 11c4 14       		.uleb128 0x14
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 111
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccgbGPCH.s 			page 111
 
 
  4764 11c5 01       		.uleb128 0x1
@@ -6658,7 +6658,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 1
  4818              		.section	.debug_abbrev,"",%progbits
  4819              	.Ldebug_abbrev0:
  4820 0000 01       		.uleb128 0x1
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 112
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccgbGPCH.s 			page 112
 
 
  4821 0001 11       		.uleb128 0x11
@@ -6718,7 +6718,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 1
  4875 0037 35       		.uleb128 0x35
  4876 0038 00       		.byte	0
  4877 0039 49       		.uleb128 0x49
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 113
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccgbGPCH.s 			page 113
 
 
  4878 003a 13       		.uleb128 0x13
@@ -6778,7 +6778,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 1
  4932 0070 00       		.byte	0
  4933 0071 00       		.byte	0
  4934 0072 0B       		.uleb128 0xb
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 114
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccgbGPCH.s 			page 114
 
 
  4935 0073 21       		.uleb128 0x21
@@ -6838,7 +6838,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 1
  4989 00a9 00       		.byte	0
  4990 00aa 00       		.byte	0
  4991 00ab 10       		.uleb128 0x10
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 115
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccgbGPCH.s 			page 115
 
 
  4992 00ac 2E       		.uleb128 0x2e
@@ -6898,7 +6898,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 1
  5046 00e3 40       		.uleb128 0x40
  5047 00e4 18       		.uleb128 0x18
  5048 00e5 9742     		.uleb128 0x2117
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 116
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccgbGPCH.s 			page 116
 
 
  5049 00e7 19       		.uleb128 0x19
@@ -6958,7 +6958,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 1
  5103 0123 0B       		.uleb128 0xb
  5104 0124 3B       		.uleb128 0x3b
  5105 0125 0B       		.uleb128 0xb
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 117
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccgbGPCH.s 			page 117
 
 
  5106 0126 27       		.uleb128 0x27
@@ -7018,7 +7018,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 1
  5160 015e 19       		.uleb128 0x19
  5161 015f 34       		.uleb128 0x34
  5162 0160 00       		.byte	0
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 118
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccgbGPCH.s 			page 118
 
 
  5163 0161 03       		.uleb128 0x3
@@ -7078,7 +7078,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 1
  5217 019a 0B       		.uleb128 0xb
  5218 019b 3B       		.uleb128 0x3b
  5219 019c 05       		.uleb128 0x5
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 119
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccgbGPCH.s 			page 119
 
 
  5220 019d 49       		.uleb128 0x49
@@ -7138,7 +7138,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 1
  5274 01d5 01       		.uleb128 0x1
  5275 01d6 13       		.uleb128 0x13
  5276 01d7 00       		.byte	0
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 120
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccgbGPCH.s 			page 120
 
 
  5277 01d8 00       		.byte	0
@@ -7198,7 +7198,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 1
  5331 020e 2E       		.uleb128 0x2e
  5332 020f 00       		.byte	0
  5333 0210 3F       		.uleb128 0x3f
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 121
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccgbGPCH.s 			page 121
 
 
  5334 0211 19       		.uleb128 0x19
@@ -7258,7 +7258,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 1
  5388 005e 00000000 		.4byte	.LVL16
  5389 0062 0C000000 		.4byte	.LVL17
  5390 0066 0100     		.2byte	0x1
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 122
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccgbGPCH.s 			page 122
 
 
  5391 0068 50       		.byte	0x50
@@ -7318,7 +7318,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 1
  5445              	.LLST6:
  5446 00e6 00000000 		.4byte	.LVL26
  5447 00ea 06000000 		.4byte	.LVL27
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 123
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccgbGPCH.s 			page 123
 
 
  5448 00ee 0200     		.2byte	0x2
@@ -7378,7 +7378,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 1
  5502 0173 9F       		.byte	0x9f
  5503 0174 00000000 		.4byte	0
  5504 0178 00000000 		.4byte	0
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 124
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccgbGPCH.s 			page 124
 
 
  5505              	.LLST10:
@@ -7438,7 +7438,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 1
  5559              	.LLST13:
  5560 0200 00000000 		.4byte	.LVL52
  5561 0204 0C000000 		.4byte	.LVL53
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 125
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccgbGPCH.s 			page 125
 
 
  5562 0208 0100     		.2byte	0x1
@@ -7498,7 +7498,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 1
  5616 028c 0100     		.2byte	0x1
  5617 028e 50       		.byte	0x50
  5618 028f 0C000000 		.4byte	.LVL65
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 126
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccgbGPCH.s 			page 126
 
 
  5619 0293 1E000000 		.4byte	.LVL68
@@ -7558,7 +7558,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 1
  5673 0317 AE000000 		.4byte	.LVL88
  5674 031b 0100     		.2byte	0x1
  5675 031d 56       		.byte	0x56
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 127
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccgbGPCH.s 			page 127
 
 
  5676 031e AE000000 		.4byte	.LVL88
@@ -7618,7 +7618,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 1
  5730 03a2 1C000000 		.4byte	.LVL95
  5731 03a6 34000000 		.4byte	.LFE27
  5732 03aa 0400     		.2byte	0x4
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 128
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccgbGPCH.s 			page 128
 
 
  5733 03ac F3       		.byte	0xf3
@@ -7678,7 +7678,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 1
  5787 0430 F3       		.byte	0xf3
  5788 0431 01       		.uleb128 0x1
  5789 0432 51       		.byte	0x51
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 129
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccgbGPCH.s 			page 129
 
 
  5790 0433 9F       		.byte	0x9f
@@ -7738,7 +7738,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 1
  5844 04b7 9F       		.byte	0x9f
  5845 04b8 00000000 		.4byte	0
  5846 04bc 00000000 		.4byte	0
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 130
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccgbGPCH.s 			page 130
 
 
  5847              	.LLST29:
@@ -7798,7 +7798,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 1
  5901              	.LLST32:
  5902 0544 00000000 		.4byte	.LVL116
  5903 0548 11000000 		.4byte	.LVL118-1
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 131
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccgbGPCH.s 			page 131
 
 
  5904 054c 0100     		.2byte	0x1
@@ -7858,7 +7858,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 1
  5958 05d0 0100     		.2byte	0x1
  5959 05d2 51       		.byte	0x51
  5960 05d3 0F000000 		.4byte	.LVL125-1
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 132
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccgbGPCH.s 			page 132
 
 
  5961 05d7 1E000000 		.4byte	.LVL128
@@ -7918,7 +7918,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 1
  6015 065b 3E000000 		.4byte	.LVL138
  6016 065f 0100     		.2byte	0x1
  6017 0661 56       		.byte	0x56
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 133
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccgbGPCH.s 			page 133
 
 
  6018 0662 3E000000 		.4byte	.LVL138
@@ -7978,7 +7978,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 1
  6072 06e7 0E000000 		.4byte	.LVL146
  6073 06eb 0100     		.2byte	0x1
  6074 06ed 50       		.byte	0x50
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 134
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccgbGPCH.s 			page 134
 
 
  6075 06ee 0E000000 		.4byte	.LVL146
@@ -8038,7 +8038,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 1
  6129 0771 0100     		.2byte	0x1
  6130 0773 50       		.byte	0x50
  6131 0774 0C000000 		.4byte	.LVL156
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 135
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccgbGPCH.s 			page 135
 
 
  6132 0778 1C000000 		.4byte	.LVL159
@@ -8098,7 +8098,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 1
  6186 07fc 2C000000 		.4byte	.LVL168
  6187 0800 0100     		.2byte	0x1
  6188 0802 54       		.byte	0x54
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 136
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccgbGPCH.s 			page 136
 
 
  6189 0803 2C000000 		.4byte	.LVL168
@@ -8158,7 +8158,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 1
  6243 0888 0F000000 		.4byte	.LVL174-1
  6244 088c 0100     		.2byte	0x1
  6245 088e 51       		.byte	0x51
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 137
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccgbGPCH.s 			page 137
 
 
  6246 088f 0F000000 		.4byte	.LVL174-1
@@ -8218,7 +8218,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 1
  6300 0913 11000000 		.4byte	.LVL180-1
  6301 0917 3E000000 		.4byte	.LVL187
  6302 091b 0100     		.2byte	0x1
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 138
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccgbGPCH.s 			page 138
 
 
  6303 091d 56       		.byte	0x56
@@ -8278,7 +8278,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 1
  6357 099f 00000000 		.4byte	.LVL194
  6358 09a3 0E000000 		.4byte	.LVL195
  6359 09a7 0100     		.2byte	0x1
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 139
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccgbGPCH.s 			page 139
 
 
  6360 09a9 50       		.byte	0x50
@@ -8338,7 +8338,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 1
  6414 0a2d 52       		.byte	0x52
  6415 0a2e 00000000 		.4byte	0
  6416 0a32 00000000 		.4byte	0
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 140
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccgbGPCH.s 			page 140
 
 
  6417              	.LLST63:
@@ -8398,7 +8398,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 1
  6471              	.LLST66:
  6472 0aba 00000000 		.4byte	.LVL210
  6473 0abe 11000000 		.4byte	.LVL212-1
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 141
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccgbGPCH.s 			page 141
 
 
  6474 0ac2 0100     		.2byte	0x1
@@ -8458,7 +8458,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 1
  6528 0b47 50       		.byte	0x50
  6529 0b48 9F       		.byte	0x9f
  6530 0b49 00000000 		.4byte	0
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 142
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccgbGPCH.s 			page 142
 
 
  6531 0b4d 00000000 		.4byte	0
@@ -8518,7 +8518,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 1
  6585 0bd1 00000000 		.4byte	0
  6586              	.LLST73:
  6587 0bd5 00000000 		.4byte	.LVL226
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 143
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccgbGPCH.s 			page 143
 
 
  6588 0bd9 11000000 		.4byte	.LVL228-1
@@ -8578,7 +8578,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 1
  6642 0c61 01       		.uleb128 0x1
  6643 0c62 51       		.byte	0x51
  6644 0c63 9F       		.byte	0x9f
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 144
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccgbGPCH.s 			page 144
 
 
  6645 0c64 00000000 		.4byte	0
@@ -8638,7 +8638,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 1
  6699 0ce8 00000000 		.4byte	0
  6700 0cec 00000000 		.4byte	0
  6701              	.LLST80:
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 145
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccgbGPCH.s 			page 145
 
 
  6702 0cf0 3A000000 		.4byte	.LVL249
@@ -8698,7 +8698,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 1
  6756 0020 00000000 		.4byte	.LFB2
  6757 0024 10000000 		.4byte	.LFE2-.LFB2
  6758 0028 00000000 		.4byte	.LFB3
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 146
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccgbGPCH.s 			page 146
 
 
  6759 002c 0C000000 		.4byte	.LFE3-.LFB3
@@ -8758,7 +8758,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 1
  6813 0104 30000000 		.4byte	.LFE31-.LFB31
  6814 0108 00000000 		.4byte	.LFB32
  6815 010c 30000000 		.4byte	.LFE32-.LFB32
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 147
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccgbGPCH.s 			page 147
 
 
  6816 0110 00000000 		.4byte	.LFB33
@@ -8818,7 +8818,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 1
  6870 0048 00000000 		.4byte	.LFB8
  6871 004c 0C000000 		.4byte	.LFE8
  6872 0050 00000000 		.4byte	.LFB9
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 148
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccgbGPCH.s 			page 148
 
 
  6873 0054 0C000000 		.4byte	.LFE9
@@ -8878,7 +8878,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 1
  6927 012c 34000000 		.4byte	.LFE38
  6928 0130 00000000 		.4byte	.LFB39
  6929 0134 48000000 		.4byte	.LFE39
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 149
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccgbGPCH.s 			page 149
 
 
  6930 0138 00000000 		.4byte	.LFB40
@@ -8938,7 +8938,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 1
  6962      64647265 
  6962      737300
  6963              	.LASF61:
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 150
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccgbGPCH.s 			page 150
 
 
  6964 0066 4379446D 		.ascii	"CyDmaChEnable\000"
@@ -8998,7 +8998,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 1
  6982      7400
  6983              	.LASF0:
  6984 016d 7369676E 		.ascii	"signed char\000"
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 151
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccgbGPCH.s 			page 151
 
 
  6984      65642063 
@@ -9058,7 +9058,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 1
  7006      61446973 
  7006      61626C65 
  7006      00
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 152
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccgbGPCH.s 			page 152
 
 
  7007              	.LASF60:
@@ -9118,7 +9118,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 1
  7030      20696E74 
  7030      00
  7031              	.LASF38:
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 153
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccgbGPCH.s 			page 153
 
 
  7032 02e1 4379446D 		.ascii	"CyDmaGetActiveChannels\000"
@@ -9178,7 +9178,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 1
  7052      61476574 
  7052      50726565 
  7052      6D707461 
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 154
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccgbGPCH.s 			page 154
 
 
  7052      626C6500 
@@ -9238,7 +9238,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 1
  7074              	.LASF77:
  7075 0497 73726341 		.ascii	"srcAddress\000"
  7075      64647265 
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 155
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccgbGPCH.s 			page 155
 
 
  7075      737300
@@ -9298,7 +9298,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 1
  7095      636B5F74 
  7095      00
  7096              	.LASF100:
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 156
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccgbGPCH.s 			page 156
 
 
  7097 0560 4379446D 		.ascii	"CyDmaInterruptCallback\000"
@@ -9358,7 +9358,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 1
  7119 0618 4379446D 		.ascii	"CyDmaChAlloc\000"
  7119      61436841 
  7119      6C6C6F63 
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 157
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccgbGPCH.s 			page 157
 
 
  7119      00
@@ -9418,7 +9418,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 1
  7142              	.LASF27:
  7143 06dc 61646472 		.ascii	"addressIncrement\000"
  7143      65737349 
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 158
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccgbGPCH.s 			page 158
 
 
  7143      6E637265 
@@ -9478,7 +9478,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 1
  7163      70746F72 
  7163      5F72616D 
  7164              	.LASF92:
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccBo8Lla.s 			page 159
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccgbGPCH.s 			page 159
 
 
  7165 07a5 4379446D 		.ascii	"CyDmaSetTriggerType\000"

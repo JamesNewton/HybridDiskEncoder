@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccf2QNpA.s 			page 1
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbj7sVi.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccf2QNpA.s 			page 1
   28:Generated_Source\PSoC4/Comp_0.c ****         * from Hibernate. Attribute CY_NOINIT puts SRAM variable in memory section 
   29:Generated_Source\PSoC4/Comp_0.c ****         * which is retained in low power modes 
   30:Generated_Source\PSoC4/Comp_0.c ****         */
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccf2QNpA.s 			page 2
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbj7sVi.s 			page 2
 
 
   31:Generated_Source\PSoC4/Comp_0.c ****         CY_NOINIT static uint32 Comp_0_intrMaskRegState;
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccf2QNpA.s 			page 1
   85:Generated_Source\PSoC4/Comp_0.c **** *******************************************************************************/
   86:Generated_Source\PSoC4/Comp_0.c **** void Comp_0_Init(void)
   87:Generated_Source\PSoC4/Comp_0.c **** {
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccf2QNpA.s 			page 3
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbj7sVi.s 			page 3
 
 
   28              		.loc 1 87 0
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccf2QNpA.s 			page 1
  105:Generated_Source\PSoC4/Comp_0.c ****                 Comp_0_INTR_MASK_REG |= Comp_0_INTR_MASK_REG_DEFAULT;    
   65              		.loc 1 105 0
   66 002e 084B     		ldr	r3, .L4+12
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccf2QNpA.s 			page 4
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbj7sVi.s 			page 4
 
 
   67 0030 1A68     		ldr	r2, [r3]
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccf2QNpA.s 			page 1
  126:Generated_Source\PSoC4/Comp_0.c **** *
  127:Generated_Source\PSoC4/Comp_0.c **** * Parameters:
  128:Generated_Source\PSoC4/Comp_0.c **** *  None
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccf2QNpA.s 			page 5
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbj7sVi.s 			page 5
 
 
  129:Generated_Source\PSoC4/Comp_0.c **** *
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccf2QNpA.s 			page 1
  134 0024 00000000 		.word	.LANCHOR0
  135              		.cfi_endproc
  136              	.LFE4:
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccf2QNpA.s 			page 6
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbj7sVi.s 			page 6
 
 
  137              		.size	Comp_0_Enable, .-Comp_0_Enable
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccf2QNpA.s 			page 1
  185              		.type	Comp_0_Stop, %function
  186              	Comp_0_Stop:
  187              	.LFB5:
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccf2QNpA.s 			page 7
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbj7sVi.s 			page 7
 
 
  150:Generated_Source\PSoC4/Comp_0.c **** 
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccf2QNpA.s 			page 1
  204 000e 1360     		str	r3, [r2]
  188:Generated_Source\PSoC4/Comp_0.c ****     CyExitCriticalSection(enableInterrupts);
  205              		.loc 1 188 0
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccf2QNpA.s 			page 8
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbj7sVi.s 			page 8
 
 
  206 0010 FFF7FEFF 		bl	CyExitCriticalSection
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccf2QNpA.s 			page 1
  213:Generated_Source\PSoC4/Comp_0.c ****     enableInterrupts = CyEnterCriticalSection();
  236              		.loc 1 213 0
  237 0004 FFF7FEFF 		bl	CyEnterCriticalSection
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccf2QNpA.s 			page 9
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbj7sVi.s 			page 9
 
 
  238              	.LVL12:
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccf2QNpA.s 			page 1
  235:Generated_Source\PSoC4/Comp_0.c **** * Return:
  236:Generated_Source\PSoC4/Comp_0.c **** *  None
  237:Generated_Source\PSoC4/Comp_0.c **** *
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccf2QNpA.s 			page 10
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbj7sVi.s 			page 10
 
 
  238:Generated_Source\PSoC4/Comp_0.c **** *******************************************************************************/
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccf2QNpA.s 			page 1
  312 0028 04002B40 		.word	1076559876
  313              		.cfi_endproc
  314              	.LFE7:
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccf2QNpA.s 			page 11
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbj7sVi.s 			page 11
 
 
  315              		.size	Comp_0_SetInterruptMode, .-Comp_0_SetInterruptMode
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccf2QNpA.s 			page 1
  345              		.code	16
  346              		.thumb_func
  347              		.type	Comp_0_ClearInterrupt, %function
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccf2QNpA.s 			page 12
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbj7sVi.s 			page 12
 
 
  348              	Comp_0_ClearInterrupt:
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccf2QNpA.s 			page 1
  300:Generated_Source\PSoC4/Comp_0.c **** 
  301:Generated_Source\PSoC4/Comp_0.c **** /*******************************************************************************
  302:Generated_Source\PSoC4/Comp_0.c **** * Function Name: Comp_0_SetInterrupt
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccf2QNpA.s 			page 13
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbj7sVi.s 			page 13
 
 
  303:Generated_Source\PSoC4/Comp_0.c **** ********************************************************************************
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccf2QNpA.s 			page 1
  407              	.LFE10:
  408              		.size	Comp_0_SetInterrupt, .-Comp_0_SetInterrupt
  409              		.section	.text.Comp_0_SetHysteresis,"ax",%progbits
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccf2QNpA.s 			page 14
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbj7sVi.s 			page 14
 
 
  410              		.align	2
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccf2QNpA.s 			page 1
  438 0014 1360     		str	r3, [r2]
  439 0016 04E0     		b	.L33
  440              	.L32:
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccf2QNpA.s 			page 15
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbj7sVi.s 			page 15
 
 
  353:Generated_Source\PSoC4/Comp_0.c ****     }
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccf2QNpA.s 			page 1
  378:Generated_Source\PSoC4/Comp_0.c **** *
  379:Generated_Source\PSoC4/Comp_0.c **** *******************************************************************************/
  380:Generated_Source\PSoC4/Comp_0.c **** void Comp_0_SetFilter(uint32 filter)
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccf2QNpA.s 			page 16
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbj7sVi.s 			page 16
 
 
  381:Generated_Source\PSoC4/Comp_0.c **** {
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccf2QNpA.s 			page 1
  510              	.L39:
  511 0028 04002B40 		.word	1076559876
  512              		.cfi_endproc
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccf2QNpA.s 			page 17
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbj7sVi.s 			page 17
 
 
  513              	.LFE12:
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccf2QNpA.s 			page 1
  541              	.L42:
  542 0010 04002B40 		.word	1076559876
  543              		.cfi_endproc
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccf2QNpA.s 			page 18
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbj7sVi.s 			page 18
 
 
  544              	.LFE13:
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccf2QNpA.s 			page 1
  449:Generated_Source\PSoC4/Comp_0.c ****     Comp_0_TRIMA_REG = 0u;
  570              		.loc 1 449 0
  571 000c 0023     		movs	r3, #0
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccf2QNpA.s 			page 19
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbj7sVi.s 			page 19
 
 
  572 000e 234A     		ldr	r2, .L53+4
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccf2QNpA.s 			page 1
  609              	.LVL40:
  610 0040 8542     		cmp	r5, r0
  611 0042 02D1     		bne	.L47
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccf2QNpA.s 			page 20
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbj7sVi.s 			page 20
 
 
  461:Generated_Source\PSoC4/Comp_0.c ****     {
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccf2QNpA.s 			page 1
  645 0066 1368     		ldr	r3, [r2]
  646 0068 0133     		adds	r3, r3, #1
  647 006a 1360     		str	r3, [r2]
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccf2QNpA.s 			page 21
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbj7sVi.s 			page 21
 
 
  484:Generated_Source\PSoC4/Comp_0.c ****             CyDelayUs(1u);
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccf2QNpA.s 			page 1
  688 00a0 04FF2B40 		.word	1076625156
  689 00a4 04002B40 		.word	1076559876
  690              		.cfi_endproc
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccf2QNpA.s 			page 22
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbj7sVi.s 			page 22
 
 
  691              	.LFE14:
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccf2QNpA.s 			page 1
  722              	.L57:
  723              		.align	2
  724              	.L56:
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccf2QNpA.s 			page 23
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbj7sVi.s 			page 23
 
 
  725 0014 00FF2B40 		.word	1076625152
@@ -1378,7 +1378,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccf2QNpA.s 			page 1
  751              		.loc 1 546 0
  752 0008 0A4B     		ldr	r3, .L61
  753 000a 1968     		ldr	r1, [r3]
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccf2QNpA.s 			page 24
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbj7sVi.s 			page 24
 
 
  754 000c 0A4A     		ldr	r2, .L61+4
@@ -1438,7 +1438,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccf2QNpA.s 			page 1
  552:Generated_Source\PSoC4/Comp_0.c **** 
  553:Generated_Source\PSoC4/Comp_0.c **** 
  554:Generated_Source\PSoC4/Comp_0.c **** /*******************************************************************************
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccf2QNpA.s 			page 25
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbj7sVi.s 			page 25
 
 
  555:Generated_Source\PSoC4/Comp_0.c **** * Function Name: Comp_0_SetInterruptMask
@@ -1498,7 +1498,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccf2QNpA.s 			page 1
  578:Generated_Source\PSoC4/Comp_0.c **** 
  579:Generated_Source\PSoC4/Comp_0.c **** 
  580:Generated_Source\PSoC4/Comp_0.c **** /*******************************************************************************
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccf2QNpA.s 			page 26
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbj7sVi.s 			page 26
 
 
  581:Generated_Source\PSoC4/Comp_0.c **** * Function Name: Comp_0_GetInterruptMask
@@ -1558,7 +1558,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccf2QNpA.s 			page 1
  609:Generated_Source\PSoC4/Comp_0.c **** * Parameters:
  610:Generated_Source\PSoC4/Comp_0.c **** *  None
  611:Generated_Source\PSoC4/Comp_0.c **** *
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccf2QNpA.s 			page 27
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbj7sVi.s 			page 27
 
 
  612:Generated_Source\PSoC4/Comp_0.c **** * Return:
@@ -1618,7 +1618,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccf2QNpA.s 			page 1
  904 0004 0400     		.2byte	0x4
  905 0006 00000000 		.4byte	.Ldebug_abbrev0
  906 000a 04       		.byte	0x4
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccf2QNpA.s 			page 28
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbj7sVi.s 			page 28
 
 
  907 000b 01       		.uleb128 0x1
@@ -1678,7 +1678,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccf2QNpA.s 			page 1
  961 0078 1A020000 		.4byte	.LASF10
  962 007c 02       		.byte	0x2
  963 007d D401     		.2byte	0x1d4
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccf2QNpA.s 			page 29
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbj7sVi.s 			page 29
 
 
  964 007f 48000000 		.4byte	0x48
@@ -1738,7 +1738,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccf2QNpA.s 			page 1
  1018 00f8 50       		.byte	0x50
  1019 00f9 02       		.uleb128 0x2
  1020 00fa 74       		.byte	0x74
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccf2QNpA.s 			page 30
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbj7sVi.s 			page 30
 
 
  1021 00fb 00       		.sleb128 0
@@ -1798,7 +1798,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccf2QNpA.s 			page 1
  1075 0179 6B000000 		.4byte	0x6b
  1076 017d 26000000 		.4byte	.LLST2
  1077 0181 08       		.uleb128 0x8
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccf2QNpA.s 			page 31
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbj7sVi.s 			page 31
 
 
  1078 0182 06000000 		.4byte	.LVL9
@@ -1858,7 +1858,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccf2QNpA.s 			page 1
  1132 0209 8B000000 		.4byte	.LLST6
  1133 020d 07       		.uleb128 0x7
  1134 020e CB010000 		.4byte	.LASF23
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccf2QNpA.s 			page 32
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbj7sVi.s 			page 32
 
 
  1135 0212 01       		.byte	0x1
@@ -1918,7 +1918,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccf2QNpA.s 			page 1
  1189 0294 01       		.byte	0x1
  1190 0295 3F01     		.2byte	0x13f
  1191 0297 77000000 		.4byte	0x77
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccf2QNpA.s 			page 33
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbj7sVi.s 			page 33
 
 
  1192 029b D2000000 		.4byte	.LLST9
@@ -1978,7 +1978,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccf2QNpA.s 			page 1
  1246 0327 7C01     		.2byte	0x17c
  1247 0329 77000000 		.4byte	0x77
  1248 032d 50010000 		.4byte	.LLST13
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccf2QNpA.s 			page 34
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbj7sVi.s 			page 34
 
 
  1249 0331 10       		.uleb128 0x10
@@ -2038,7 +2038,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccf2QNpA.s 			page 1
  1303 03b5 08       		.uleb128 0x8
  1304 03b6 20000000 		.4byte	.LVL36
  1305 03ba 54030000 		.4byte	0x354
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccf2QNpA.s 			page 35
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbj7sVi.s 			page 35
 
 
  1306 03be 13       		.uleb128 0x13
@@ -2098,7 +2098,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccf2QNpA.s 			page 1
  1360 0439 80040000 		.4byte	0x480
  1361 043d 0F       		.uleb128 0xf
  1362 043e 5B020000 		.4byte	.LASF26
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccf2QNpA.s 			page 36
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbj7sVi.s 			page 36
 
 
  1363 0442 01       		.byte	0x1
@@ -2158,7 +2158,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccf2QNpA.s 			page 1
  1417 04c7 00000000 		.4byte	.LFB19
  1418 04cb 0C000000 		.4byte	.LFE19-.LFB19
  1419 04cf 01       		.uleb128 0x1
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccf2QNpA.s 			page 37
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbj7sVi.s 			page 37
 
 
  1420 04d0 9C       		.byte	0x9c
@@ -2218,7 +2218,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccf2QNpA.s 			page 1
  1474 0006 0B       		.uleb128 0xb
  1475 0007 03       		.uleb128 0x3
  1476 0008 0E       		.uleb128 0xe
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccf2QNpA.s 			page 38
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbj7sVi.s 			page 38
 
 
  1477 0009 1B       		.uleb128 0x1b
@@ -2278,7 +2278,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccf2QNpA.s 			page 1
  1531 003f 01       		.byte	0x1
  1532 0040 3F       		.uleb128 0x3f
  1533 0041 19       		.uleb128 0x19
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccf2QNpA.s 			page 39
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbj7sVi.s 			page 39
 
 
  1534 0042 03       		.uleb128 0x3
@@ -2338,7 +2338,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccf2QNpA.s 			page 1
  1588 007d 8A8201   		.uleb128 0x410a
  1589 0080 00       		.byte	0
  1590 0081 02       		.uleb128 0x2
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccf2QNpA.s 			page 40
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbj7sVi.s 			page 40
 
 
  1591 0082 18       		.uleb128 0x18
@@ -2398,7 +2398,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccf2QNpA.s 			page 1
  1645 00ba 3B       		.uleb128 0x3b
  1646 00bb 05       		.uleb128 0x5
  1647 00bc 27       		.uleb128 0x27
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccf2QNpA.s 			page 41
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbj7sVi.s 			page 41
 
 
  1648 00bd 19       		.uleb128 0x19
@@ -2458,7 +2458,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccf2QNpA.s 			page 1
  1702 00f4 02       		.uleb128 0x2
  1703 00f5 17       		.uleb128 0x17
  1704 00f6 00       		.byte	0
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccf2QNpA.s 			page 42
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbj7sVi.s 			page 42
 
 
  1705 00f7 00       		.byte	0
@@ -2518,7 +2518,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccf2QNpA.s 			page 1
  1759 0130 14       		.uleb128 0x14
  1760 0131 34       		.uleb128 0x34
  1761 0132 00       		.byte	0
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccf2QNpA.s 			page 43
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbj7sVi.s 			page 43
 
 
  1762 0133 03       		.uleb128 0x3
@@ -2578,7 +2578,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccf2QNpA.s 			page 1
  1816 000b 00000000 		.4byte	0
  1817 000f 00000000 		.4byte	0
  1818              	.LLST1:
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccf2QNpA.s 			page 44
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbj7sVi.s 			page 44
 
 
  1819 0013 06000000 		.4byte	.LVL5
@@ -2638,7 +2638,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccf2QNpA.s 			page 1
  1873 00a1 01       		.uleb128 0x1
  1874 00a2 50       		.byte	0x50
  1875 00a3 9F       		.byte	0x9f
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccf2QNpA.s 			page 45
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbj7sVi.s 			page 45
 
 
  1876 00a4 00000000 		.4byte	0
@@ -2698,7 +2698,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccf2QNpA.s 			page 1
  1930 0132 01       		.uleb128 0x1
  1931 0133 50       		.byte	0x50
  1932 0134 9F       		.byte	0x9f
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccf2QNpA.s 			page 46
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbj7sVi.s 			page 46
 
 
  1933 0135 00000000 		.4byte	0
@@ -2758,7 +2758,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccf2QNpA.s 			page 1
  1987 01c3 2E000000 		.4byte	.LVL38
  1988 01c7 62000000 		.4byte	.LVL44
  1989 01cb 0100     		.2byte	0x1
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccf2QNpA.s 			page 47
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbj7sVi.s 			page 47
 
 
  1990 01cd 54       		.byte	0x54
@@ -2818,7 +2818,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccf2QNpA.s 			page 1
  2044 0000 A4000000 		.4byte	0xa4
  2045 0004 0200     		.2byte	0x2
  2046 0006 00000000 		.4byte	.Ldebug_info0
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccf2QNpA.s 			page 48
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbj7sVi.s 			page 48
 
 
  2047 000a 04       		.byte	0x4
@@ -2878,7 +2878,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccf2QNpA.s 			page 1
  2101 0028 00000000 		.4byte	.LFB7
  2102 002c 2C000000 		.4byte	.LFE7
  2103 0030 00000000 		.4byte	.LFB8
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccf2QNpA.s 			page 49
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbj7sVi.s 			page 49
 
 
  2104 0034 0C000000 		.4byte	.LFE8
@@ -2938,7 +2938,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccf2QNpA.s 			page 1
  2141      6500
  2142              	.LASF41:
  2143 0045 436F6D70 		.ascii	"Comp_0_GetInterruptMask\000"
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccf2QNpA.s 			page 50
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbj7sVi.s 			page 50
 
 
  2143      5F305F47 
@@ -2998,7 +2998,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccf2QNpA.s 			page 1
  2162      74657272 
  2162      75707453 
  2163              	.LASF42:
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccf2QNpA.s 			page 51
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbj7sVi.s 			page 51
 
 
  2164 013d 436F6D70 		.ascii	"Comp_0_GetInterruptSourceMasked\000"
@@ -3058,7 +3058,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccf2QNpA.s 			page 1
  2186      5F305F43 
  2186      6C656172 
  2186      496E7465 
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccf2QNpA.s 			page 52
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbj7sVi.s 			page 52
 
 
  2186      72727570 
@@ -3118,7 +3118,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccf2QNpA.s 			page 1
  2208 02ff 73697A65 		.ascii	"sizetype\000"
  2208      74797065 
  2208      00
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccf2QNpA.s 			page 53
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbj7sVi.s 			page 53
 
 
  2209              	.LASF19:
@@ -3178,7 +3178,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccf2QNpA.s 			page 1
  2233              	.LASF15:
  2234 039e 6C6F6E67 		.ascii	"long double\000"
  2234      20646F75 
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccf2QNpA.s 			page 54
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccbj7sVi.s 			page 54
 
 
  2234      626C6500 

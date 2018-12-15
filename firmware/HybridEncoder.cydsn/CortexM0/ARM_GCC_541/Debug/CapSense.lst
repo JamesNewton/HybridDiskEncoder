@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 1
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccekjCSH.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 1
   28:Generated_Source\PSoC4/CapSense.c ****    For more details please see the IAR Technical Note 49981 */
   29:Generated_Source\PSoC4/CapSense.c **** #if defined(__ICCARM__)
   30:Generated_Source\PSoC4/CapSense.c ****     extern void CapSense_EnableSensor(uint32 sensor);
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 2
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccekjCSH.s 			page 2
 
 
   31:Generated_Source\PSoC4/CapSense.c ****     extern void CapSense_DisableSensor(uint32 sensor);
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 1
   85:Generated_Source\PSoC4/CapSense.c ****     (uint8) CapSense_Sns__Button1__BTN__SHIFT, 
   86:Generated_Source\PSoC4/CapSense.c **** };
   87:Generated_Source\PSoC4/CapSense.c **** 
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 3
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccekjCSH.s 			page 3
 
 
   88:Generated_Source\PSoC4/CapSense.c **** uint8 CapSense_modulationIDAC[CapSense_TOTAL_SENSOR_COUNT];
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 1
  142:Generated_Source\PSoC4/CapSense.c **** *
  143:Generated_Source\PSoC4/CapSense.c **** * Summary:
  144:Generated_Source\PSoC4/CapSense.c **** *  API initializes default CapSense configuration provided by the customizer that defines
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 4
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccekjCSH.s 			page 4
 
 
  145:Generated_Source\PSoC4/CapSense.c **** *  the mode of component operations and resets all the sensors to an inactive state.
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 1
  199:Generated_Source\PSoC4/CapSense.c **** 
  200:Generated_Source\PSoC4/CapSense.c ****     /* Clear all sensors */
  201:Generated_Source\PSoC4/CapSense.c ****     CapSense_ClearSensors();
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 5
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccekjCSH.s 			page 5
 
 
  202:Generated_Source\PSoC4/CapSense.c **** }
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 1
   38              		.loc 1 245 0
   39 0002 1648     		ldr	r0, .L2
   40 0004 0368     		ldr	r3, [r0]
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 6
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccekjCSH.s 			page 6
 
 
   41 0006 DBB2     		uxtb	r3, r3
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 1
  262:Generated_Source\PSoC4/CapSense.c ****         CapSense_CSD_IDAC_REG &= ~(CapSense_CSD_IDAC1_MODE_MASK  | CapSense_CSD_IDAC1_DATA_MASK);
  263:Generated_Source\PSoC4/CapSense.c ****         CapSense_CSD_IDAC_REG |= CapSense_DEFAULT_CSD_IDAC_CONFIG;
  264:Generated_Source\PSoC4/CapSense.c **** 
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 7
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccekjCSH.s 			page 7
 
 
  265:Generated_Source\PSoC4/CapSense.c ****         CapSense_CSD_CFG_REG &= ~(CapSense_CSD_CONFIG_MASK);
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 1
  110 005a 70BD     		pop	{r4, r5, r6, pc}
  111              	.L3:
  112              		.align	2
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 8
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccekjCSH.s 			page 8
 
 
  113              	.L2:
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 1
  312:Generated_Source\PSoC4/CapSense.c ****     uint32 newRegValue;
  313:Generated_Source\PSoC4/CapSense.c **** 
  314:Generated_Source\PSoC4/CapSense.c ****     /* Enable Clocks */
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 9
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccekjCSH.s 			page 9
 
 
  315:Generated_Source\PSoC4/CapSense.c ****     CapSense_SenseClk_Stop();
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 1
  335:Generated_Source\PSoC4/CapSense.c ****     /* Enable interrupt */
  336:Generated_Source\PSoC4/CapSense.c ****     CyIntEnable(CapSense_ISR_NUMBER);
  177              		.loc 1 336 0
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 10
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccekjCSH.s 			page 10
 
 
  178 0030 1120     		movs	r0, #17
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 1
  369:Generated_Source\PSoC4/CapSense.c **** void CapSense_Start(void)
  370:Generated_Source\PSoC4/CapSense.c **** {
  371:Generated_Source\PSoC4/CapSense.c **** 
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 11
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccekjCSH.s 			page 11
 
 
  372:Generated_Source\PSoC4/CapSense.c ****     static uint8 CapSense_initVar = 0u;
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 1
  426:Generated_Source\PSoC4/CapSense.c ****     #endif /* ((CapSense_TUNING_METHOD == CapSense__TUNING_AUTO) */
  427:Generated_Source\PSoC4/CapSense.c **** 
  428:Generated_Source\PSoC4/CapSense.c ****     /* Initialize Advanced Centroid */
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 12
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccekjCSH.s 			page 12
 
 
  429:Generated_Source\PSoC4/CapSense.c ****     #if(CapSense_TOTAL_TRACKPAD_GESTURES_COUNT > 0u)
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 1
  216 000e 0B40     		ands	r3, r1
  217 0010 1360     		str	r3, [r2]
  467:Generated_Source\PSoC4/CapSense.c **** 
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 13
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccekjCSH.s 			page 13
 
 
  468:Generated_Source\PSoC4/CapSense.c ****     #if(CapSense_IDAC_CNT == 2u)
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 1
  492:Generated_Source\PSoC4/CapSense.c **** *  CapSense_sensorEnableMask[] - used to store bit masks of the enabled sensors.
  493:Generated_Source\PSoC4/CapSense.c **** *
  494:Generated_Source\PSoC4/CapSense.c **** * Side Effects:
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 14
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccekjCSH.s 			page 14
 
 
  495:Generated_Source\PSoC4/CapSense.c **** *  This function affects the  current scanning and should not
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 1
  549:Generated_Source\PSoC4/CapSense.c ****     /* Clears status/control variable and set sensorIndex */
  550:Generated_Source\PSoC4/CapSense.c ****     CapSense_csdStatusVar = 0u;
  551:Generated_Source\PSoC4/CapSense.c ****     CapSense_sensorIndex = (uint8)sensor;
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 15
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccekjCSH.s 			page 15
 
 
  552:Generated_Source\PSoC4/CapSense.c **** 
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 1
  606:Generated_Source\PSoC4/CapSense.c **** 
  607:Generated_Source\PSoC4/CapSense.c ****     /* Backup sensorEnableMask array */
  608:Generated_Source\PSoC4/CapSense.c ****     for(snsIndex = 0u; snsIndex < CapSense_TOTAL_SENSOR_MASK; snsIndex++)
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 16
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccekjCSH.s 			page 16
 
 
  609:Generated_Source\PSoC4/CapSense.c ****     {
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 1
  663:Generated_Source\PSoC4/CapSense.c **** *  Sets the busy status(scan in progress) and clears the single scan mode.
  664:Generated_Source\PSoC4/CapSense.c **** *  CapSense_sensorIndex - used to store a sensor scanning sensor number.
  665:Generated_Source\PSoC4/CapSense.c **** *  Sets to 0xFF and provided to function CapSense_FindNextSensor or
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 17
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccekjCSH.s 			page 17
 
 
  666:Generated_Source\PSoC4/CapSense.c **** *
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 1
  253              		.loc 1 714 0
  254 0000 024B     		ldr	r3, .L11
  255 0002 1878     		ldrb	r0, [r3]
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 18
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccekjCSH.s 			page 18
 
 
  256 0004 0123     		movs	r3, #1
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 1
  281              	.LVL26:
  744:Generated_Source\PSoC4/CapSense.c ****     return CapSense_sensorRaw[sensor];
  282              		.loc 1 744 0
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 19
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccekjCSH.s 			page 19
 
 
  283 0000 4000     		lsls	r0, r0, #1
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 1
  311              	.LVL28:
  771:Generated_Source\PSoC4/CapSense.c ****     CapSense_sensorRaw[sensor] = value;
  312              		.loc 1 771 0
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 20
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccekjCSH.s 			page 20
 
 
  313 0000 4000     		lsls	r0, r0, #1
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 1
  803:Generated_Source\PSoC4/CapSense.c ****     *
  804:Generated_Source\PSoC4/CapSense.c ****     * Global Variables:
  805:Generated_Source\PSoC4/CapSense.c ****     *  CapSense_widgetResolution[] - used to store scan resolution of each widget.
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 21
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccekjCSH.s 			page 21
 
 
  806:Generated_Source\PSoC4/CapSense.c ****     *
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 1
  831:Generated_Source\PSoC4/CapSense.c **** *              The resolution values are defined in the CapSense.h file
  832:Generated_Source\PSoC4/CapSense.c **** *              The defines are encountered below:
  833:Generated_Source\PSoC4/CapSense.c **** *              CapSense_RESOLUTION_6_BITS
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 22
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccekjCSH.s 			page 22
 
 
  834:Generated_Source\PSoC4/CapSense.c **** *              CapSense_RESOLUTION_7_BITS
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 1
  859:Generated_Source\PSoC4/CapSense.c **** * Function Name: CapSense_ClearSensors
  860:Generated_Source\PSoC4/CapSense.c **** ********************************************************************************
  861:Generated_Source\PSoC4/CapSense.c **** *
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 23
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccekjCSH.s 			page 23
 
 
  862:Generated_Source\PSoC4/CapSense.c **** * Summary:
@@ -1378,7 +1378,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 1
  916:Generated_Source\PSoC4/CapSense.c ****     * Side Effects:
  917:Generated_Source\PSoC4/CapSense.c ****     *  None
  918:Generated_Source\PSoC4/CapSense.c ****     *
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 24
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccekjCSH.s 			page 24
 
 
  919:Generated_Source\PSoC4/CapSense.c ****     *******************************************************************************/
@@ -1438,7 +1438,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 1
  973:Generated_Source\PSoC4/CapSense.c ****     * Side Effects:
  974:Generated_Source\PSoC4/CapSense.c ****     *  None
  975:Generated_Source\PSoC4/CapSense.c ****     *
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 25
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccekjCSH.s 			page 25
 
 
  976:Generated_Source\PSoC4/CapSense.c ****     *******************************************************************************/
@@ -1498,7 +1498,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 1
 1030:Generated_Source\PSoC4/CapSense.c **** *  CapSense_PrtCfgTb[] - Contains pointers to the port config
 1031:Generated_Source\PSoC4/CapSense.c **** *  registers for each port.
 1032:Generated_Source\PSoC4/CapSense.c **** *
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 26
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccekjCSH.s 			page 26
 
 
 1033:Generated_Source\PSoC4/CapSense.c **** * Side Effects:
@@ -1558,7 +1558,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 1
  429 001c 9E68     		ldr	r6, [r3, #8]
  430              	.LVL40:
  431 001e 3268     		ldr	r2, [r6]
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 27
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccekjCSH.s 			page 27
 
 
  432              	.LVL41:
@@ -1618,7 +1618,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 1
 1060:Generated_Source\PSoC4/CapSense.c **** 
 1061:Generated_Source\PSoC4/CapSense.c **** 
 1062:Generated_Source\PSoC4/CapSense.c **** /*******************************************************************************
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 28
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccekjCSH.s 			page 28
 
 
 1063:Generated_Source\PSoC4/CapSense.c **** * Function Name: CapSense_DisableSensor
@@ -1678,7 +1678,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 1
  498 000a B900     		lsls	r1, r7, #2
  499 000c C9B2     		uxtb	r1, r1
  500              	.LVL51:
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 29
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccekjCSH.s 			page 29
 
 
 1097:Generated_Source\PSoC4/CapSense.c ****     uint8  pinModeShift = CapSense_pinShiftTbl[sensor]  * CapSense_PC_PIN_CFG_SIZE;
@@ -1738,7 +1738,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 1
  533              		.loc 1 1117 0
  534 0036 0626     		movs	r6, #6
  535              	.L30:
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 30
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccekjCSH.s 			page 30
 
 
  536              	.LVL55:
@@ -1798,7 +1798,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 1
 1135:Generated_Source\PSoC4/CapSense.c ****         /* Connect to Shield */
 1136:Generated_Source\PSoC4/CapSense.c ****         *CapSense_prtSelTbl[port] |= (CapSense_CSD_SHIELD_PORT_MODE << pinHSIOMShift);
 1137:Generated_Source\PSoC4/CapSense.c ****     }
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 31
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccekjCSH.s 			page 31
 
 
 1138:Generated_Source\PSoC4/CapSense.c ****     #endif /* (CapSense_IS_SHIELD_ENABLE) */
@@ -1858,7 +1858,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 1
  887:Generated_Source\PSoC4/CapSense.c **** 
  620              		.loc 1 887 0 is_stmt 1
  621              		@ sp needed
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 32
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccekjCSH.s 			page 32
 
 
  622              	.LVL71:
@@ -1918,7 +1918,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 1
 1181:Generated_Source\PSoC4/CapSense.c ****             snsType = CapSense_portTable[curSensor];
 1182:Generated_Source\PSoC4/CapSense.c **** 
 1183:Generated_Source\PSoC4/CapSense.c ****             /* Check if sensor is complex */
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 33
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccekjCSH.s 			page 33
 
 
 1184:Generated_Source\PSoC4/CapSense.c ****             if ((snsType & CapSense_COMPLEX_SS_FLAG) == 0u)
@@ -1978,7 +1978,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 1
 1238:Generated_Source\PSoC4/CapSense.c **** *
 1239:Generated_Source\PSoC4/CapSense.c **** *******************************************************************************/
 1240:Generated_Source\PSoC4/CapSense.c **** void CapSense_RestoreDriveModeAllPins(void)
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 34
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccekjCSH.s 			page 34
 
 
 1241:Generated_Source\PSoC4/CapSense.c **** {
@@ -2038,7 +2038,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 1
  636              		.cfi_startproc
  637              		@ args = 0, pretend = 0, frame = 0
  638              		@ frame_needed = 0, uses_anonymous_args = 0
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 35
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccekjCSH.s 			page 35
 
 
  639              	.LVL72:
@@ -2098,7 +2098,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 1
  683              		.type	CapSense_SetDriveModeAllPins, %function
  684              	CapSense_SetDriveModeAllPins:
  685              	.LFB50:
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 36
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccekjCSH.s 			page 36
 
 
 1168:Generated_Source\PSoC4/CapSense.c ****     uint8 curSensor;
@@ -2158,7 +2158,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 1
  731              		.loc 1 1215 0
  732              		@ sp needed
  733              	.LVL88:
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 37
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccekjCSH.s 			page 37
 
 
  734              	.LVL89:
@@ -2218,7 +2218,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 1
  781              	.L48:
  782 001a C046     		.align	2
  783              	.L47:
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 38
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccekjCSH.s 			page 38
 
 
  784 001c 00040240 		.word	1073873920
@@ -2278,7 +2278,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 1
 1345:Generated_Source\PSoC4/CapSense.c **** 
 1346:Generated_Source\PSoC4/CapSense.c ****     /* Define widget sensor belongs to */
 1347:Generated_Source\PSoC4/CapSense.c ****     widget = CapSense_widgetNumber[sensor];
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 39
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccekjCSH.s 			page 39
 
 
 1348:Generated_Source\PSoC4/CapSense.c **** 
@@ -2338,7 +2338,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 1
 1402:Generated_Source\PSoC4/CapSense.c **** 
 1403:Generated_Source\PSoC4/CapSense.c ****             newRegValue = CapSense_CSD_CFG_REG;
 1404:Generated_Source\PSoC4/CapSense.c ****             newRegValue |= CapSense_CSD_CFG_PRS_SELECT;
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 40
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccekjCSH.s 			page 40
 
 
 1405:Generated_Source\PSoC4/CapSense.c **** 
@@ -2398,7 +2398,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 1
 1459:Generated_Source\PSoC4/CapSense.c ****     CapSense_CMOD_CONNECTION_REG = newRegValue;
 1460:Generated_Source\PSoC4/CapSense.c **** 
 1461:Generated_Source\PSoC4/CapSense.c ****     newRegValue = CapSense_CMOD_PORT_PC_REG;
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 41
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccekjCSH.s 			page 41
 
 
 1462:Generated_Source\PSoC4/CapSense.c ****     newRegValue &= ~(CapSense_CSD_CMOD_PC_MASK);
@@ -2458,7 +2458,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 1
 1516:Generated_Source\PSoC4/CapSense.c **** *  None
 1517:Generated_Source\PSoC4/CapSense.c **** *
 1518:Generated_Source\PSoC4/CapSense.c **** * Global Variables:
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 42
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccekjCSH.s 			page 42
 
 
 1519:Generated_Source\PSoC4/CapSense.c **** *  CapSense_sensorRaw[] - used to store sensors raw data.
@@ -2518,7 +2518,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 1
 1573:Generated_Source\PSoC4/CapSense.c ****     newRegValue = CapSense_CMOD_PORT_DR_REG;
 1574:Generated_Source\PSoC4/CapSense.c ****     newRegValue &= ~(CapSense_CMOD_DR_MASK);
 1575:Generated_Source\PSoC4/CapSense.c ****     newRegValue |= CapSense_CMOD_DR_CONFIG;
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 43
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccekjCSH.s 			page 43
 
 
 1576:Generated_Source\PSoC4/CapSense.c ****     CapSense_CMOD_PORT_DR_REG = newRegValue;
@@ -2578,7 +2578,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 1
 1620:Generated_Source\PSoC4/CapSense.c ****     uint32 newRegValue;
 1621:Generated_Source\PSoC4/CapSense.c **** 
 1622:Generated_Source\PSoC4/CapSense.c ****     *CapSense_prtCfgTbl[portNumber] &= ~(CapSense_CSD_PIN_MODE_MASK << (pinNumber * CapSense_PC_PIN
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 44
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccekjCSH.s 			page 44
 
 
  807              		.loc 1 1622 0
@@ -2638,7 +2638,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 1
  856              	CapSense_SetShieldDelay:
  857              	.LFB56:
 1628:Generated_Source\PSoC4/CapSense.c **** 
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 45
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccekjCSH.s 			page 45
 
 
 1629:Generated_Source\PSoC4/CapSense.c **** 
@@ -2698,7 +2698,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 1
 1663:Generated_Source\PSoC4/CapSense.c **** }
  878              		.loc 1 1663 0
  879              		@ sp needed
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 46
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccekjCSH.s 			page 46
 
 
  880 0010 7047     		bx	lr
@@ -2758,7 +2758,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 1
  906              		.loc 1 1691 0 is_stmt 0 discriminator 1
  907 0008 034B     		ldr	r3, .L58
  908 000a 187A     		ldrb	r0, [r3, #8]
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 47
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccekjCSH.s 			page 47
 
 
  909 000c C0B2     		uxtb	r0, r0
@@ -2818,7 +2818,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 1
  936              		@ args = 0, pretend = 0, frame = 0
  937              		@ frame_needed = 0, uses_anonymous_args = 0
  938              		@ link register save eliminated.
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 48
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccekjCSH.s 			page 48
 
 
  939              	.LVL105:
@@ -2878,7 +2878,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 1
  976              	.LFB38:
  500:Generated_Source\PSoC4/CapSense.c ****     uint32 enableFlag;
  977              		.loc 1 500 0
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 49
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccekjCSH.s 			page 49
 
 
  978              		.cfi_startproc
@@ -2938,7 +2938,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 1
  1027              	.LFB53:
 1329:Generated_Source\PSoC4/CapSense.c ****     uint8 widget;
  1028              		.loc 1 1329 0
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 50
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccekjCSH.s 			page 50
 
 
  1029              		.cfi_startproc
@@ -2998,7 +2998,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 1
  1076              	.LVL129:
 1366:Generated_Source\PSoC4/CapSense.c ****     #endif /* (0u != CapSense_IS_M0S8PERI_BLOCK) */
  1077              		.loc 1 1366 0
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 51
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccekjCSH.s 			page 51
 
 
  1078 002c FFF7FEFF 		bl	CapSense_SampleClk_Stop
@@ -3058,7 +3058,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 1
  1123              		.loc 1 1389 0
  1124 0074 1120     		movs	r0, #17
  1125 0076 FFF7FEFF 		bl	CyIntClearPending
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 52
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccekjCSH.s 			page 52
 
 
  1126              	.LVL136:
@@ -3118,7 +3118,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 1
  1168              		.loc 1 1472 0
  1169 00aa 1120     		movs	r0, #17
  1170 00ac FFF7FEFF 		bl	CyIntEnable
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 53
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccekjCSH.s 			page 53
 
 
  1171              	.LVL145:
@@ -3178,7 +3178,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 1
  1218              		.cfi_endproc
  1219              	.LFE53:
  1220              		.size	CapSense_PreScan, .-CapSense_PreScan
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 54
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccekjCSH.s 			page 54
 
 
  1221              		.section	.text.CapSense_ScanSensor,"ax",%progbits
@@ -3238,7 +3238,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 1
  672:Generated_Source\PSoC4/CapSense.c ****     /* Clears status/control variable and set sensorIndex */
  1269              		.loc 1 672 0
  1270              		.cfi_startproc
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 55
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccekjCSH.s 			page 55
 
 
  1271              		@ args = 0, pretend = 0, frame = 0
@@ -3298,7 +3298,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 1
  1318              		.align	2
  1319              		.global	CapSense_PostScan
  1320              		.code	16
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 56
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccekjCSH.s 			page 56
 
 
  1321              		.thumb_func
@@ -3358,7 +3358,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 1
  1369 0032 D318     		adds	r3, r2, r3
  1370 0034 0441     		asrs	r4, r4, r0
  1371 0036 9C80     		strh	r4, [r3, #4]
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 57
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccekjCSH.s 			page 57
 
 
  1372              	.LVL164:
@@ -3418,7 +3418,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 1
  1417 006c 00000000 		.word	.LANCHOR0
  1418 0070 00000000 		.word	.LANCHOR2
  1419 0074 00000000 		.word	.LANCHOR1
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 58
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccekjCSH.s 			page 58
 
 
  1420 0078 FFFFFEFF 		.word	-65537
@@ -3478,7 +3478,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 1
 1764:Generated_Source\PSoC4/CapSense.c **** 
 1765:Generated_Source\PSoC4/CapSense.c ****     /* position is divided by 8 to calculate the element of the
 1766:Generated_Source\PSoC4/CapSense.c ****        table[] array that contains the enable bit
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 59
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccekjCSH.s 			page 59
 
 
 1767:Generated_Source\PSoC4/CapSense.c ****        for an appropriate sensor.
@@ -3538,7 +3538,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 1
  1481              		@ sp needed
  1482 0024 10BD     		pop	{r4, pc}
  1483              		.cfi_endproc
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 60
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccekjCSH.s 			page 60
 
 
  1484              	.LFE59:
@@ -3598,7 +3598,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 1
  611:Generated_Source\PSoC4/CapSense.c ****     }
  1531              		.loc 1 611 0 discriminator 3
  1532 001c 194A     		ldr	r2, .L97+12
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 61
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccekjCSH.s 			page 61
 
 
  1533 001e D218     		adds	r2, r2, r3
@@ -3658,7 +3658,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 1
  1579 005a 012C     		cmp	r4, #1
  1580 005c E8D9     		bls	.L94
  631:Generated_Source\PSoC4/CapSense.c ****     {
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 62
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccekjCSH.s 			page 62
 
 
  1581              		.loc 1 631 0 is_stmt 1
@@ -3718,7 +3718,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 1
 1797:Generated_Source\PSoC4/CapSense.c **** *  sensor: sensor index. The index value can be
 1798:Generated_Source\PSoC4/CapSense.c **** *  from 0 to (CapSense_TOTAL_SENSOR_COUNT-1).
 1799:Generated_Source\PSoC4/CapSense.c **** *
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 63
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccekjCSH.s 			page 63
 
 
 1800:Generated_Source\PSoC4/CapSense.c **** * Return:
@@ -3778,7 +3778,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 1
 1826:Generated_Source\PSoC4/CapSense.c ****     *
 1827:Generated_Source\PSoC4/CapSense.c ****     * Parameters:
 1828:Generated_Source\PSoC4/CapSense.c ****     *  sensor:  Sensor index.
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 64
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccekjCSH.s 			page 64
 
 
 1829:Generated_Source\PSoC4/CapSense.c ****     *  senseClk: represents the sense clock value.
@@ -3838,7 +3838,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 1
 1856:Generated_Source\PSoC4/CapSense.c **** * Summary:
 1857:Generated_Source\PSoC4/CapSense.c **** *  This API returns a value of the modulator sample clock divider for the  sensor.
 1858:Generated_Source\PSoC4/CapSense.c **** *
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 65
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccekjCSH.s 			page 65
 
 
 1859:Generated_Source\PSoC4/CapSense.c **** * Parameters:
@@ -3898,7 +3898,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 1
 1885:Generated_Source\PSoC4/CapSense.c ****     ********************************************************************************
 1886:Generated_Source\PSoC4/CapSense.c ****     *
 1887:Generated_Source\PSoC4/CapSense.c ****     * Summary:
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 66
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccekjCSH.s 			page 66
 
 
 1888:Generated_Source\PSoC4/CapSense.c ****     *  This API sets a value of the modulator sample clock divider for the  sensor.
@@ -3958,7 +3958,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 1
 1915:Generated_Source\PSoC4/CapSense.c **** * Function Name: CapSense_GetModulationIDAC
 1916:Generated_Source\PSoC4/CapSense.c **** ********************************************************************************
 1917:Generated_Source\PSoC4/CapSense.c **** *
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 67
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccekjCSH.s 			page 67
 
 
 1918:Generated_Source\PSoC4/CapSense.c **** * Summary:
@@ -4018,7 +4018,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 1
 1944:Generated_Source\PSoC4/CapSense.c ****     *
 1945:Generated_Source\PSoC4/CapSense.c ****     * Summary:
 1946:Generated_Source\PSoC4/CapSense.c ****     *  This API sets a value of the modulation IDAC for the  sensor.
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 68
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccekjCSH.s 			page 68
 
 
 1947:Generated_Source\PSoC4/CapSense.c ****     *
@@ -4078,7 +4078,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 1
 1974:Generated_Source\PSoC4/CapSense.c ****     * Summary:
 1975:Generated_Source\PSoC4/CapSense.c ****     *  This API returns a value of the compensation IDAC for the  sensor.
 1976:Generated_Source\PSoC4/CapSense.c ****     *
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 69
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccekjCSH.s 			page 69
 
 
 1977:Generated_Source\PSoC4/CapSense.c ****     * Parameters:
@@ -4138,7 +4138,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 1
 2003:Generated_Source\PSoC4/CapSense.c ****     * Summary:
 2004:Generated_Source\PSoC4/CapSense.c ****     *  This API sets a value of compensation IDAC for the  sensor.
 2005:Generated_Source\PSoC4/CapSense.c ****     *
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 70
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccekjCSH.s 			page 70
 
 
 2006:Generated_Source\PSoC4/CapSense.c ****     * Parameters:
@@ -4198,7 +4198,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 1
 2033:Generated_Source\PSoC4/CapSense.c **** *
 2034:Generated_Source\PSoC4/CapSense.c **** * Parameters:
 2035:Generated_Source\PSoC4/CapSense.c **** *  None
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 71
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccekjCSH.s 			page 71
 
 
 2036:Generated_Source\PSoC4/CapSense.c **** *
@@ -4258,7 +4258,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 1
 2058:Generated_Source\PSoC4/CapSense.c ****     *
 2059:Generated_Source\PSoC4/CapSense.c ****     * Summary:
 2060:Generated_Source\PSoC4/CapSense.c ****     *  This API sets the IDAC range to the 4x (1.2uA/bit) or 8x (2.4uA/bit) mode.
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 72
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccekjCSH.s 			page 72
 
 
 2061:Generated_Source\PSoC4/CapSense.c ****     *  The IDAC range is common for all the sensors and common for the modulation and
@@ -4318,7 +4318,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 1
  1896              	.L127:
 2092:Generated_Source\PSoC4/CapSense.c ****                                                CapSense_CSD_IDAC2_RANGE_8X);
 2093:Generated_Source\PSoC4/CapSense.c ****         }
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 73
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccekjCSH.s 			page 73
 
 
 2094:Generated_Source\PSoC4/CapSense.c ****     }
@@ -4378,7 +4378,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 1
  1924              		.cfi_offset 4, -16
  1925              		.cfi_offset 5, -12
  1926              		.cfi_offset 6, -8
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 74
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccekjCSH.s 			page 74
 
 
  1927              		.cfi_offset 14, -4
@@ -4438,7 +4438,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 1
  1963              		@ sp needed
  1964              	.LVL220:
  1965              	.LVL221:
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 75
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccekjCSH.s 			page 75
 
 
  1966              	.LVL222:
@@ -4498,7 +4498,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 1
 2178:Generated_Source\PSoC4/CapSense.c ****             rawData = CapSense_GetSensorRaw(sensor);
 2179:Generated_Source\PSoC4/CapSense.c **** 
 2180:Generated_Source\PSoC4/CapSense.c ****             /* Decrease IDAC until Rawdata reaches rawLevel */
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 76
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccekjCSH.s 			page 76
 
 
 2181:Generated_Source\PSoC4/CapSense.c ****             if(rawData < rawLevel)
@@ -4558,7 +4558,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 1
 2229:Generated_Source\PSoC4/CapSense.c ****         uint8 curSensor;
 2230:Generated_Source\PSoC4/CapSense.c ****         uint16 snsNumber;
 2231:Generated_Source\PSoC4/CapSense.c **** 
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 77
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccekjCSH.s 			page 77
 
 
 2232:Generated_Source\PSoC4/CapSense.c ****         /* Read sensor type: single or complex */
@@ -4618,7 +4618,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 1
  192:Generated_Source\PSoC4/CapSense.c ****     {
  2015              		.loc 1 192 0
  2016 0002 0024     		movs	r4, #0
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 78
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccekjCSH.s 			page 78
 
 
  2017 0004 04E0     		b	.L140
@@ -4678,7 +4678,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 1
  2063              		.cfi_offset 4, -8
  2064              		.cfi_offset 14, -4
  380:Generated_Source\PSoC4/CapSense.c ****     {
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 79
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccekjCSH.s 			page 79
 
 
  2065              		.loc 1 380 0
@@ -4738,7 +4738,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 1
  2112              		.global	CapSense_widgetResolution
  2113              		.comm	CapSense_compensationIDAC,2,4
  2114              		.comm	CapSense_modulationIDAC,2,4
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 80
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccekjCSH.s 			page 80
 
 
  2115              		.global	CapSense_pinShiftTbl
@@ -4761,13 +4761,13 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 1
  2132              		.size	CapSense_portTable, 2
  2133              	CapSense_portTable:
  2134 0000 06       		.byte	6
- 2135 0001 04       		.byte	4
+ 2135 0001 03       		.byte	3
  2136 0002 0000     		.space	2
  2137              		.type	CapSense_pinShiftTbl, %object
  2138              		.size	CapSense_pinShiftTbl, 2
  2139              	CapSense_pinShiftTbl:
- 2140 0004 00       		.byte	0
- 2141 0005 06       		.byte	6
+ 2140 0004 05       		.byte	5
+ 2141 0005 00       		.byte	0
  2142 0006 0000     		.space	2
  2143              		.type	CapSense_prtSelTbl, %object
  2144              		.size	CapSense_prtSelTbl, 32
@@ -4798,7 +4798,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 1
  2169 004c 00010440 		.word	1074004224
  2170 0050 00020440 		.word	1074004480
  2171 0054 00030440 		.word	1074004736
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 81
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccekjCSH.s 			page 81
 
 
  2172 0058 00040440 		.word	1074004992
@@ -4814,8 +4814,8 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 1
  2182              		.type	CapSense_maskTable, %object
  2183              		.size	CapSense_maskTable, 8
  2184              	CapSense_maskTable:
- 2185 006c 01000000 		.word	1
- 2186 0070 40000000 		.word	64
+ 2185 006c 20000000 		.word	32
+ 2186 0070 01000000 		.word	1
  2187              		.data
  2188              		.align	2
  2189              		.set	.LANCHOR1,. + 0
@@ -4833,7 +4833,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 1
  2201              		.size	CapSense_pcTable, 8
  2202              	CapSense_pcTable:
  2203 000c 08060440 		.word	1074005512
- 2204 0010 08040440 		.word	1074005000
+ 2204 0010 08030440 		.word	1074004744
  2205              		.bss
  2206              		.align	2
  2207              		.set	.LANCHOR0,. + 0
@@ -4858,7 +4858,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 1
  2226              		.size	CapSense_lowLevelTuningDone, 1
  2227              	CapSense_lowLevelTuningDone:
  2228 000a 00       		.space	1
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 82
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccekjCSH.s 			page 82
 
 
  2229              		.text
@@ -4918,7 +4918,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 1
  2283 005d 03       		.uleb128 0x3
  2284 005e 04       		.byte	0x4
  2285 005f 05       		.byte	0x5
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 83
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccekjCSH.s 			page 83
 
 
  2286 0060 696E7400 		.ascii	"int\000"
@@ -4978,7 +4978,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 1
  2340 00d4 06       		.uleb128 0x6
  2341 00d5 04       		.byte	0x4
  2342 00d6 6B000000 		.4byte	0x6b
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 84
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccekjCSH.s 			page 84
 
 
  2343 00da 06       		.uleb128 0x6
@@ -5038,7 +5038,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 1
  2397 0143 00       		.byte	0
  2398 0144 0D       		.uleb128 0xd
  2399 0145 1D040000 		.4byte	.LASF20
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 85
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccekjCSH.s 			page 85
 
 
  2400 0149 01       		.byte	0x1
@@ -5098,7 +5098,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 1
  2454 01ba 01       		.uleb128 0x1
  2455 01bb 50       		.byte	0x50
  2456 01bc 02       		.uleb128 0x2
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 86
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccekjCSH.s 			page 86
 
 
  2457 01bd 08       		.byte	0x8
@@ -5158,7 +5158,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 1
  2511 0228 83000000 		.4byte	0x83
  2512 022c 00000000 		.4byte	.LFB42
  2513 0230 10000000 		.4byte	.LFE42-.LFB42
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 87
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccekjCSH.s 			page 87
 
 
  2514 0234 01       		.uleb128 0x1
@@ -5218,7 +5218,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 1
  2568 02b2 2B03     		.2byte	0x32b
  2569 02b4 83000000 		.4byte	0x83
  2570 02b8 A0000000 		.4byte	.LLST4
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 88
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccekjCSH.s 			page 88
 
 
  2571 02bc 13       		.uleb128 0x13
@@ -5278,7 +5278,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 1
  2625 0341 01       		.byte	0x1
  2626 0342 1104     		.2byte	0x411
  2627 0344 6B000000 		.4byte	0x6b
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 89
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccekjCSH.s 			page 89
 
 
  2628 0348 AA010000 		.4byte	.LLST9
@@ -5338,7 +5338,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 1
  2682 03d6 F8000000 		.4byte	.LASF33
  2683 03da 01       		.byte	0x1
  2684 03db 4804     		.2byte	0x448
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 90
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccekjCSH.s 			page 90
 
 
  2685 03dd 6B000000 		.4byte	0x6b
@@ -5398,7 +5398,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 1
  2739 0460 5E070000 		.4byte	.LASF42
  2740 0464 01       		.byte	0x1
  2741 0465 0C05     		.2byte	0x50c
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 91
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccekjCSH.s 			page 91
 
 
  2742 0467 00000000 		.4byte	.LFB52
@@ -5458,7 +5458,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 1
  2796 04ef 01       		.byte	0x1
  2797 04f0 9104     		.2byte	0x491
  2798 04f2 6B000000 		.4byte	0x6b
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 92
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccekjCSH.s 			page 92
 
 
  2799 04f6 67040000 		.4byte	.LLST26
@@ -5518,7 +5518,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 1
  2853 0555 5F040000 		.4byte	0x45f
  2854 0559 0B       		.uleb128 0xb
  2855 055a 01       		.uleb128 0x1
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 93
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccekjCSH.s 			page 93
 
 
  2856 055b 50       		.byte	0x50
@@ -5578,7 +5578,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 1
  2910 05bf 83000000 		.4byte	0x83
  2911 05c3 35050000 		.4byte	.LLST30
  2912 05c7 12       		.uleb128 0x12
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 94
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccekjCSH.s 			page 94
 
 
  2913 05c8 26070000 		.4byte	.LASF45
@@ -5638,7 +5638,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 1
  2967 0650 27050000 		.4byte	.LASF57
  2968 0654 01       		.byte	0x1
  2969 0655 B506     		.2byte	0x6b5
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 95
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccekjCSH.s 			page 95
 
 
  2970 0657 DA000000 		.4byte	0xda
@@ -5698,7 +5698,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 1
  3024 06db 01       		.uleb128 0x1
  3025 06dc 51       		.byte	0x51
  3026 06dd 02       		.uleb128 0x2
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 96
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccekjCSH.s 			page 96
 
 
  3027 06de 74       		.byte	0x74
@@ -5758,7 +5758,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 1
  3081 0766 01       		.uleb128 0x1
  3082 0767 50       		.byte	0x50
  3083 0768 05       		.uleb128 0x5
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 97
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccekjCSH.s 			page 97
 
 
  3084 0769 03       		.byte	0x3
@@ -5818,7 +5818,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 1
  3138 07d2 08       		.byte	0x8
  3139 07d3 40       		.byte	0x40
  3140 07d4 00       		.byte	0
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 98
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccekjCSH.s 			page 98
 
 
  3141 07d5 0A       		.uleb128 0xa
@@ -5878,7 +5878,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 1
  3195 0841 0B       		.uleb128 0xb
  3196 0842 01       		.uleb128 0x1
  3197 0843 50       		.byte	0x50
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 99
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccekjCSH.s 			page 99
 
 
  3198 0844 02       		.uleb128 0x2
@@ -5938,7 +5938,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 1
  3252 08ac 00       		.byte	0
  3253 08ad 0D       		.uleb128 0xd
  3254 08ae B4050000 		.4byte	.LASF67
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 100
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccekjCSH.s 			page 100
 
 
  3255 08b2 01       		.byte	0x1
@@ -5998,7 +5998,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 1
  3309 093c 05       		.uleb128 0x5
  3310 093d 03       		.byte	0x3
  3311 093e 00000000 		.4byte	CapSense_scanSpeedTbl
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 101
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccekjCSH.s 			page 101
 
 
  3312 0942 0B       		.uleb128 0xb
@@ -6058,7 +6058,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 1
  3366 09a4 12       		.uleb128 0x12
  3367 09a5 A00A0000 		.4byte	.LASF58
  3368 09a9 01       		.byte	0x1
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 102
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccekjCSH.s 			page 102
 
 
  3369 09aa E006     		.2byte	0x6e0
@@ -6118,7 +6118,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 1
  3423 0a37 020A0000 		.4byte	.LLST58
  3424 0a3b 0A       		.uleb128 0xa
  3425 0a3c 4A000000 		.4byte	.LVL193
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 103
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccekjCSH.s 			page 103
 
 
  3426 0a40 80090000 		.4byte	0x980
@@ -6178,7 +6178,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 1
  3480 0a9e 9C       		.byte	0x9c
  3481 0a9f B40A0000 		.4byte	0xab4
  3482 0aa3 12       		.uleb128 0x12
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 104
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccekjCSH.s 			page 104
 
 
  3483 0aa4 D2040000 		.4byte	.LASF24
@@ -6238,7 +6238,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 1
  3537 0b23 9C       		.byte	0x9c
  3538 0b24 450B0000 		.4byte	0xb45
  3539 0b28 13       		.uleb128 0x13
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 105
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccekjCSH.s 			page 105
 
 
  3540 0b29 D2040000 		.4byte	.LASF24
@@ -6298,7 +6298,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 1
  3594 0ba2 00       		.byte	0
  3595 0ba3 11       		.uleb128 0x11
  3596 0ba4 9B090000 		.4byte	.LASF82
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 106
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccekjCSH.s 			page 106
 
 
  3597 0ba8 01       		.byte	0x1
@@ -6358,7 +6358,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 1
  3651 0c27 01       		.uleb128 0x1
  3652 0c28 9C       		.byte	0x9c
  3653 0c29 3C0C0000 		.4byte	0xc3c
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 107
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccekjCSH.s 			page 107
 
 
  3654 0c2d 13       		.uleb128 0x13
@@ -6418,7 +6418,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 1
  3708 0cad 01       		.uleb128 0x1
  3709 0cae 50       		.byte	0x50
  3710 0caf 02       		.uleb128 0x2
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 108
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccekjCSH.s 			page 108
 
 
  3711 0cb0 76       		.byte	0x76
@@ -6478,7 +6478,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 1
  3765 0d1f 01       		.uleb128 0x1
  3766 0d20 51       		.byte	0x51
  3767 0d21 01       		.uleb128 0x1
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 109
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccekjCSH.s 			page 109
 
 
  3768 0d22 30       		.byte	0x30
@@ -6538,7 +6538,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 1
  3822 0d9f 16       		.uleb128 0x16
  3823 0da0 6B000000 		.4byte	0x6b
  3824 0da4 AF0D0000 		.4byte	0xdaf
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 110
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccekjCSH.s 			page 110
 
 
  3825 0da8 17       		.uleb128 0x17
@@ -6598,7 +6598,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 1
  3879 0e1a 030E0000 		.4byte	0xe03
  3880 0e1e 05       		.uleb128 0x5
  3881 0e1f 03       		.byte	0x3
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 111
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccekjCSH.s 			page 111
 
 
  3882 0e20 00000000 		.4byte	CapSense_unscannedSnsDriveMode
@@ -6658,7 +6658,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 1
  3936 0e95 03       		.byte	0x3
  3937 0e96 00000000 		.4byte	CapSense_senseClkDividerVal
  3938 0e9a 15       		.uleb128 0x15
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 112
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccekjCSH.s 			page 112
 
 
  3939 0e9b 89000000 		.4byte	.LASF107
@@ -6718,7 +6718,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 1
  3993 0f13 07       		.uleb128 0x7
  3994 0f14 D10E0000 		.4byte	0xed1
  3995 0f18 15       		.uleb128 0x15
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 113
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccekjCSH.s 			page 113
 
 
  3996 0f19 0E020000 		.4byte	.LASF111
@@ -6778,7 +6778,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 1
  4050 0f91 1B060000 		.4byte	.LASF115
  4051 0f95 01       		.byte	0x1
  4052 0f96 53       		.byte	0x53
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 114
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccekjCSH.s 			page 114
 
 
  4053 0f97 A10F0000 		.4byte	0xfa1
@@ -6838,7 +6838,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 1
  4107 1011 11080000 		.4byte	.LASF124
  4108 1015 11080000 		.4byte	.LASF124
  4109 1019 06       		.byte	0x6
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 115
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccekjCSH.s 			page 115
 
 
  4110 101a 29       		.byte	0x29
@@ -6898,7 +6898,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 1
  4164 0005 13       		.uleb128 0x13
  4165 0006 0B       		.uleb128 0xb
  4166 0007 03       		.uleb128 0x3
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 116
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccekjCSH.s 			page 116
 
 
  4167 0008 0E       		.uleb128 0xe
@@ -6958,7 +6958,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 1
  4221 003e 0F       		.uleb128 0xf
  4222 003f 00       		.byte	0
  4223 0040 0B       		.uleb128 0xb
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 117
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccekjCSH.s 			page 117
 
 
  4224 0041 0B       		.uleb128 0xb
@@ -7018,7 +7018,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 1
  4278 007a 01       		.byte	0x1
  4279 007b 11       		.uleb128 0x11
  4280 007c 01       		.uleb128 0x1
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 118
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccekjCSH.s 			page 118
 
 
  4281 007d 31       		.uleb128 0x31
@@ -7078,7 +7078,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 1
  4335 00b9 3A       		.uleb128 0x3a
  4336 00ba 0B       		.uleb128 0xb
  4337 00bb 3B       		.uleb128 0x3b
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 119
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccekjCSH.s 			page 119
 
 
  4338 00bc 05       		.uleb128 0x5
@@ -7138,7 +7138,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 1
  4392 00f5 49       		.uleb128 0x49
  4393 00f6 13       		.uleb128 0x13
  4394 00f7 11       		.uleb128 0x11
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 120
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccekjCSH.s 			page 120
 
 
  4395 00f8 01       		.uleb128 0x1
@@ -7198,7 +7198,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 1
  4449 012f 00       		.byte	0
  4450 0130 00       		.byte	0
  4451 0131 15       		.uleb128 0x15
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 121
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccekjCSH.s 			page 121
 
 
  4452 0132 34       		.uleb128 0x34
@@ -7258,7 +7258,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 1
  4506 0168 3F       		.uleb128 0x3f
  4507 0169 19       		.uleb128 0x19
  4508 016a 3C       		.uleb128 0x3c
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 122
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccekjCSH.s 			page 122
 
 
  4509 016b 19       		.uleb128 0x19
@@ -7318,7 +7318,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 1
  4563 003c 49000000 		.4byte	.LVL11-1
  4564 0040 0100     		.2byte	0x1
  4565 0042 53       		.byte	0x53
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 123
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccekjCSH.s 			page 123
 
 
  4566 0043 00000000 		.4byte	0
@@ -7378,7 +7378,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 1
  4620 00c9 0100     		.2byte	0x1
  4621 00cb 50       		.byte	0x50
  4622 00cc 02000000 		.4byte	.LVL33
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 124
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccekjCSH.s 			page 124
 
 
  4623 00d0 0C000000 		.4byte	.LFE46
@@ -7438,7 +7438,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 1
  4677 0130 01       		.byte	0x1
  4678 0131 08       		.byte	0x8
  4679 0132 FF       		.byte	0xff
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 125
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccekjCSH.s 			page 125
 
 
  4680 0133 1A       		.byte	0x1a
@@ -7498,7 +7498,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 1
  4734 0189 9F       		.byte	0x9f
  4735 018a 40000000 		.4byte	.LVL48
  4736 018e 48000000 		.4byte	.LFE48
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 126
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccekjCSH.s 			page 126
 
 
  4737 0192 0E00     		.2byte	0xe
@@ -7558,7 +7558,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 1
  4791 0205 1A       		.byte	0x1a
  4792 0206 9F       		.byte	0x9f
  4793 0207 40000000 		.4byte	.LVL48
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 127
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccekjCSH.s 			page 127
 
 
  4794 020b 48000000 		.4byte	.LFE48
@@ -7618,7 +7618,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 1
  4848 0289 3E000000 		.4byte	.LVL57
  4849 028d 0100     		.2byte	0x1
  4850 028f 54       		.byte	0x54
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 128
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccekjCSH.s 			page 128
 
 
  4851 0290 3E000000 		.4byte	.LVL57
@@ -7678,7 +7678,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 1
  4905 02f3 0500     		.2byte	0x5
  4906 02f5 77       		.byte	0x77
  4907 02f6 00       		.sleb128 0
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 129
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccekjCSH.s 			page 129
 
 
  4908 02f7 32       		.byte	0x32
@@ -7738,7 +7738,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 1
  4962 0354 03       		.byte	0x3
  4963 0355 04000000 		.4byte	.LANCHOR2+4
  4964 0359 22       		.byte	0x22
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 130
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccekjCSH.s 			page 130
 
 
  4965 035a 94       		.byte	0x94
@@ -7798,7 +7798,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 1
  5019              	.LLST22:
  5020 03db 00000000 		.4byte	.LVL72
  5021 03df 06000000 		.4byte	.LVL73
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 131
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccekjCSH.s 			page 131
 
 
  5022 03e3 0100     		.2byte	0x1
@@ -7858,7 +7858,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 1
  5076              	.LLST26:
  5077 0467 04000000 		.4byte	.LVL80
  5078 046b 08000000 		.4byte	.LVL81
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 132
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccekjCSH.s 			page 132
 
 
  5079 046f 0200     		.2byte	0x2
@@ -7918,7 +7918,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 1
  5133 04e3 18000000 		.4byte	.LVL85
  5134 04e7 0E00     		.2byte	0xe
  5135 04e9 74       		.byte	0x74
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 133
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccekjCSH.s 			page 133
 
 
  5136 04ea 00       		.sleb128 0
@@ -7978,7 +7978,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 1
  5190 055e 0100     		.2byte	0x1
  5191 0560 51       		.byte	0x51
  5192 0561 04000000 		.4byte	.LVL95
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 134
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccekjCSH.s 			page 134
 
 
  5193 0565 34000000 		.4byte	.LFE55
@@ -8038,7 +8038,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 1
  5247 05e5 0100     		.2byte	0x1
  5248 05e7 50       		.byte	0x50
  5249 05e8 00000000 		.4byte	0
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 135
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccekjCSH.s 			page 135
 
 
  5250 05ec 00000000 		.4byte	0
@@ -8098,7 +8098,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 1
  5304 0666 00000000 		.4byte	0
  5305 066a 00000000 		.4byte	0
  5306              	.LLST38:
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 136
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccekjCSH.s 			page 136
 
 
  5307 066e 00000000 		.4byte	.LVL113
@@ -8158,7 +8158,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 1
  5361 06ff 0B00     		.2byte	0xb
  5362 0701 70       		.byte	0x70
  5363 0702 00       		.sleb128 0
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 137
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccekjCSH.s 			page 137
 
 
  5364 0703 72       		.byte	0x72
@@ -8218,7 +8218,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 1
  5418 077f A2000000 		.4byte	.LVL142
  5419 0783 0100     		.2byte	0x1
  5420 0785 53       		.byte	0x53
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 138
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccekjCSH.s 			page 138
 
 
  5421 0786 A2000000 		.4byte	.LVL142
@@ -8278,7 +8278,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 1
  5475 080f 00000000 		.4byte	0
  5476 0813 00000000 		.4byte	0
  5477              	.LLST48:
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 139
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccekjCSH.s 			page 139
 
 
  5478 0817 48000000 		.4byte	.LVL167
@@ -8338,7 +8338,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 1
  5532 0891 08       		.byte	0x8
  5533 0892 FF       		.byte	0xff
  5534 0893 1A       		.byte	0x1a
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 140
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccekjCSH.s 			page 140
 
 
  5535 0894 9F       		.byte	0x9f
@@ -8398,7 +8398,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 1
  5589 08fb F3       		.byte	0xf3
  5590 08fc 01       		.uleb128 0x1
  5591 08fd 51       		.byte	0x51
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 141
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccekjCSH.s 			page 141
 
 
  5592 08fe 9F       		.byte	0x9f
@@ -8458,7 +8458,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 1
  5646 0976 9F       		.byte	0x9f
  5647 0977 00000000 		.4byte	0
  5648 097b 00000000 		.4byte	0
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 142
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccekjCSH.s 			page 142
 
 
  5649              	.LLST54:
@@ -8518,7 +8518,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 1
  5703 09fe 00000000 		.4byte	0
  5704              	.LLST58:
  5705 0a02 18000000 		.4byte	.LVL189
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 143
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccekjCSH.s 			page 143
 
 
  5706 0a06 1C000000 		.4byte	.LVL190
@@ -8578,7 +8578,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 1
  5760 0a87 00000000 		.4byte	0
  5761 0a8b 00000000 		.4byte	0
  5762              	.LLST62:
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 144
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccekjCSH.s 			page 144
 
 
  5763 0a8f 00000000 		.4byte	.LVL208
@@ -8638,7 +8638,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 1
  5817 0b16 00000000 		.4byte	0
  5818              	.LLST66:
  5819 0b1a 02000000 		.4byte	.LVL224
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 145
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccekjCSH.s 			page 145
 
 
  5820 0b1e 06000000 		.4byte	.LVL225
@@ -8698,7 +8698,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 1
  5874 00a0 00000000 		.4byte	.LFB38
  5875 00a4 24000000 		.4byte	.LFE38-.LFB38
  5876 00a8 00000000 		.4byte	.LFB53
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 146
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccekjCSH.s 			page 146
 
 
  5877 00ac 0C010000 		.4byte	.LFE53-.LFB53
@@ -8758,7 +8758,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 1
  5931 002c 10000000 		.4byte	.LFE44
  5932 0030 00000000 		.4byte	.LFB45
  5933 0034 0C000000 		.4byte	.LFE45
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 147
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccekjCSH.s 			page 147
 
 
  5934 0038 00000000 		.4byte	.LFB46
@@ -8818,7 +8818,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 1
  5988 0110 00000000 		.4byte	.LFB69
  5989 0114 28000000 		.4byte	.LFE69
  5990 0118 00000000 		.4byte	.LFB70
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 148
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccekjCSH.s 			page 148
 
 
  5991 011c 2A000000 		.4byte	.LFE70
@@ -8878,7 +8878,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 1
  6016      676E6564 
  6016      20696E74 
  6016      00
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 149
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccekjCSH.s 			page 149
 
 
  6017              	.LASF107:
@@ -8938,7 +8938,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 1
  6038      75737900 
  6039              	.LASF32:
  6040 0146 70696E4D 		.ascii	"pinModeShift\000"
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 150
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccekjCSH.s 			page 150
 
 
  6040      6F646553 
@@ -8998,7 +8998,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 1
  6058      6E736F72 
  6059              	.LASF111:
  6060 020e 43617053 		.ascii	"CapSense_prtDRTbl\000"
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 151
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccekjCSH.s 			page 151
 
 
  6060      656E7365 
@@ -9058,7 +9058,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 1
  6079      5938434B 
  6079      49543433 
  6079      5C666972 
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 152
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccekjCSH.s 			page 152
 
 
  6080              	.LASF135:
@@ -9118,7 +9118,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 1
  6099 042d 73656E73 		.ascii	"sensorState\000"
  6099      6F725374 
  6099      61746500 
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 153
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccekjCSH.s 			page 153
 
 
  6100              	.LASF63:
@@ -9178,7 +9178,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 1
  6121      5F73656E 
  6121      736F7252 
  6121      617700
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 154
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccekjCSH.s 			page 154
 
 
  6122              	.LASF131:
@@ -9238,7 +9238,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 1
  6145 0591 70696E4E 		.ascii	"pinNumberTmp\000"
  6145      756D6265 
  6145      72546D70 
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 155
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccekjCSH.s 			page 155
 
 
  6145      00
@@ -9298,7 +9298,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 1
  6165      656E7365 
  6165      5F756E73 
  6165      63616E6E 
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 156
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccekjCSH.s 			page 156
 
 
  6165      6564536E 
@@ -9358,7 +9358,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 1
  6189      5F476574 
  6189      53656E73 
  6189      6F725261 
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 157
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccekjCSH.s 			page 157
 
 
  6190              	.LASF92:
@@ -9418,7 +9418,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 1
  6211      706C6543 
  6211      6C6B5F53 
  6212              	.LASF76:
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 158
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccekjCSH.s 			page 158
 
 
  6213 0841 43617053 		.ascii	"CapSense_GetModulatorClkDivider\000"
@@ -9478,7 +9478,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 1
  6235 08f2 43617053 		.ascii	"CapSense_AutoTune\000"
  6235      656E7365 
  6235      5F417574 
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 159
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccekjCSH.s 			page 159
 
 
  6235      6F54756E 
@@ -9538,7 +9538,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 1
  6253      6C54756E 
  6254              	.LASF125:
  6255 09d4 43617053 		.ascii	"CapSense_SenseClk_SetFractionalDividerRegister\000"
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 160
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccekjCSH.s 			page 160
 
 
  6255      656E7365 
@@ -9598,7 +9598,7 @@ ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 1
  6278              	.LASF58:
  6279 0aa0 706F7369 		.ascii	"position\000"
  6279      74696F6E 
-ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\cc1sfPJI.s 			page 161
+ARM GAS  C:\Users\JamesN4\AppData\Local\Temp\ccekjCSH.s 			page 161
 
 
  6279      00
