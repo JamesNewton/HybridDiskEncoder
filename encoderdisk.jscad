@@ -20,7 +20,7 @@ function getParameterDefinitions() {
     { name: 'slots', type: 'int', initial: 80, caption: "number of slots:" },
     { name: 'slotd', type: 'float', initial: 11, caption: "slots inset:" },
     { name: 'slotlength', type: 'float', initial: 3.5, caption: "slot length:" },
-    { name: 'mask', type: 'float', initial: 0.8, caption: "slot mask width:" },
+    { name: 'mask', type: 'float', initial: 0.1, caption: "slot mask adj:" },
     { name: 'cutfudge', type: 'float', initial: 0.4, caption: "laser cut width or<br> (-) filament spread:" },
     { name: 'thick', type: 'float', initial: 3, caption: "material thickness:" },
     { name: 'othick', type: 'float', initial: 0.4, caption: "opaque thickness:" },
@@ -32,11 +32,14 @@ var packingEpsilon = 3; //default spacing for flat parts
 const M3r = 1.5 //M3 diameter /2
 var thick = params.thick
 var thin = params.othick
-var maskw = params.mask - params.cutfudge
 var senser = (3 - params.cutfudge)/2 //size of the sensors LITE-ON LTR-4206E
 var emitr = (3 - params.cutfudge)/2 //size of the LED emiters LITE-ON LTE-4206
 var slotwidth = Math.PI*params.disk/params.slots/2 - params.cutfudge;
 // LED / photodiodes are T3, (3mm) so center to center ~4mm min
+//var maskw = params.mask - params.cutfudge
+//mask needs to be a circle, not a rectangle
+//https://github.com/JamesNewton/HybridDiskEncoder/issues/3
+var maskw = slotwidth + params.mask/2 - params.cutfudge
 var senseslots = Math.ceil(4.0 / Math.PI*params.disk/params.slots)*2
 var sensespace =  senseslots*1.5 //90 degrees out of phase
 var slotinc = 360.0/params.slots
@@ -69,9 +72,14 @@ var base = square({size: [basesize, basesize], center:true})
 var washer = circle({r:(sensespace+6)/2, center: true})
     .subtract(circle({r:params.hub/2, h:2, center: true}));
 var washertop = washer.translate([0,0,0]) //translate hack copys the object
+//var mask = square({size:[slotd-basesize,sensespace+6], center:true})
+//    .subtract(translate([params.slotlength/2,+sensespace/2,0],rotate([0,0,+slotinc],square({size: [params.slotlength,maskw], center:true}))))
+//    .subtract(translate([params.slotlength/2,-sensespace/2,0],rotate([0,0,-slotinc],square({size: [params.slotlength,maskw], center:true}))))
+//    .subtract(translate([-(slotd-basesize)/2-3,+sensespace/2,0],circle({r: M3r, center:true})))
+//    .subtract(translate([-(slotd-basesize)/2-3,-sensespace/2,0],circle({r: M3r, center:true})))
 var mask = square({size:[slotd-basesize,sensespace+6], center:true})
-    .subtract(translate([params.slotlength/2,+sensespace/2,0],rotate([0,0,+slotinc],square({size: [params.slotlength,maskw], center:true}))))
-    .subtract(translate([params.slotlength/2,-sensespace/2,0],rotate([0,0,-slotinc],square({size: [params.slotlength,maskw], center:true}))))
+    .subtract(translate([params.slotlength/2,+sensespace/2,0],rotate([0,0,+slotinc],circle({r: maskw, center:true}))))
+    .subtract(translate([params.slotlength/2,-sensespace/2,0],rotate([0,0,-slotinc],circle({r: maskw, center:true}))))
     .subtract(translate([-(slotd-basesize)/2-3,+sensespace/2,0],circle({r: M3r, center:true})))
     .subtract(translate([-(slotd-basesize)/2-3,-sensespace/2,0],circle({r: M3r, center:true})))
 var riser = square({size:[edge,sensespace+6], center:true})
