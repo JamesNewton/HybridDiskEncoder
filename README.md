@@ -13,10 +13,11 @@ don't move that fast, and have builtin motion control systems that avoid the nee
 
 **OpenJSCAD:** In keeping with the focus on Javascript in DDE (the Dexter IDE), node.js processing for remote control, and an upcoming 
 <a href="https://github.com/JamesNewton/AdvancedRoboticsWithJavascript/wiki">Robotics class</a>, this project uses<br>
-http://OpenJSCAD.com
+https://OpenJSCAD.com
 <br>as the CAD system of choice. This is unusual and may deter collaboration (hopefully not) but if you look at the code for a while,
 it becomes obvious that it just isn't that different from a regular cad system. The CAD system can be viewed and played with at:<br>
 https://openjscad.com/#https://raw.githubusercontent.com/JamesNewton/HybridDiskEncoder/master/encoderdisk.jscad
+(note: that link seems not to work directly, but if you go to OpenJSCAD.com first, then copy in the code above, it does work)
 <br>Use the mouse to turn the model (shift to shift, ctrl or scroll to zoom), scroll through the code on the right, 
 and edit parameters in the control block lower left. Switch from "Assembly" to "Parts" (bottom control block) to generate DXF or SVG
 output for cutting. 
