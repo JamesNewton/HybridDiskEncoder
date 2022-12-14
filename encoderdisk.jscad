@@ -4,7 +4,8 @@
 // revision   : 0
 // tags       : https://github.com/JamesNewton/HybridDiskEncoder
 // file       : encoderdisk.jscad
-// https://openjscad.org/#https://raw.githubusercontent.com/JamesNewton/HybridDiskEncoder/master/encoderdisk.jscad
+// https://openjscad.com/#https://raw.githubusercontent.com/JamesNewton/HybridDiskEncoder/master/encoderdisk.jscad
+// (if that doesn't load, open the site first, then copy in this file)
 
 //NOTES: 
 // - The small parts, e.g. riser and washer, can be blown away by the laser cutter. Best to cut the inside holes at full power
