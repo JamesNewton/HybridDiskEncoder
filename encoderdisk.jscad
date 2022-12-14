@@ -28,7 +28,7 @@ function getParameterDefinitions() {
 }
 
 function main () {
-var packingEpsilon = 3; //default spacing for flat parts
+var packingEpsilon = 1; //default spacing for flat parts
 const M3r = 1.5 //M3 diameter /2
 var thick = params.thick
 var thin = params.othick
@@ -123,7 +123,7 @@ var assembly = [
     
 var cutthick = []
     cutthick.push(base)
-    cutthick.push(arm)
+    cutthick.push(arm.rotateZ(90))
     cutthick.push(support)
     cutthick.push(sensors) 
     cutthick.push(LEDs) 
@@ -142,11 +142,13 @@ var cutthin = []
 
 if (0 == params.output) out = assembly; 
 else { 
-    out = binPack(cutthin, packingEpsilon )
-        .union(binPack(cutthick, packingEpsilon )
-            .translate([0, -basesize-packingEpsilon, 0])
+    let out1 = binPack(cutthin, packingEpsilon )
+    let out2 = binPack(cutthick, packingEpsilon )
+    let x = out1.getBounds()[1].x
+    //alert(x)
+    out = out1.union( out2.translate([0, -x, 0])
             )
-        .translate([-basesize, 0, 0]); 
+        .translate([-basesize, 10, 0]); 
     }
 return out;
 }
