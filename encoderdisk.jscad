@@ -28,6 +28,21 @@ function getParameterDefinitions() {
 { name: 'output', type: 'choice', caption: 'Output:', values: [0, 1], captions: ["Assembly", "Parts"], initial: 0 }    ];
 }
 
+function eyemask(w) {
+    //let w = 3
+    let jw = { points: [], color: 'black', type: 'poly' };
+    jw.segments = 16
+    for (let i = 0; i < Math.PI * 2; i += Math.PI / jw.segments) {
+      let x = i >= Math.PI ? Math.PI * 2 - i : i; //over to the right, then back
+      x -= Math.PI/2; //recenter
+      x /= Math.PI; //scale to the size of the circle
+      jw.points.push([w*(Math.sin(i) + 0.0001) / 2, w*x]);
+    }
+    jw.points.push(jw.points[0]); //close the path
+    let path = new CSG.Polygon2D(jw.points)
+    return path;//linear_extrude({ height: 1 }, path);
+}
+
 function main () {
 var packingEpsilon = 1; //default spacing for flat parts
 const M3r = 1.5 //M3 diameter /2
@@ -79,8 +94,8 @@ var washertop = washer.translate([0,0,0]) //translate hack copys the object
 //    .subtract(translate([-(slotd-basesize)/2-3,+sensespace/2,0],circle({r: M3r, center:true})))
 //    .subtract(translate([-(slotd-basesize)/2-3,-sensespace/2,0],circle({r: M3r, center:true})))
 var mask = square({size:[slotd-basesize,sensespace+6], center:true})
-    .subtract(translate([params.slotlength/2,+sensespace/2,0],rotate([0,0,+slotinc],circle({r: maskw, center:true}))))
-    .subtract(translate([params.slotlength/2,-sensespace/2,0],rotate([0,0,-slotinc],circle({r: maskw, center:true}))))
+    .subtract(translate([params.slotlength/2,+sensespace/2,0],rotate([0,0,+slotinc],eyemask(maskw*2))))
+    .subtract(translate([params.slotlength/2,-sensespace/2,0],rotate([0,0,-slotinc],eyemask(maskw*2))))
     .subtract(translate([-(slotd-basesize)/2-3,+sensespace/2,0],circle({r: M3r, center:true})))
     .subtract(translate([-(slotd-basesize)/2-3,-sensespace/2,0],circle({r: M3r, center:true})))
 var riser = square({size:[edge,sensespace+6], center:true})
