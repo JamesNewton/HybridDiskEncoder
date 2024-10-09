@@ -92,4 +92,5 @@ Detector to support mount should be adjustable? Or will laser cut and assembly b
 - TODO: Count pulses with on board digital logic for high speed operation?
 - TODO: Develop cycloidal drive and add motor / drive support?
 
-
+## See also:
+- https://photos.app.goo.gl/v6FCJX8Efcgw1NGY7 photo album of ongoing work. 
