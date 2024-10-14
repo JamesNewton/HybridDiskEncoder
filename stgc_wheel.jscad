@@ -7,10 +7,33 @@
 
 function getParameterDefinitions() {
   return [
-    { name: 'disk', type: 'float', initial: 77, caption: "disk diameter:" },
-    { name: 'hub', type: 'float', initial: 3, caption: "hub diameter:" },
     { name: 'slots', type: 'choice', caption: "Code:", 
 values: [
+"0000001|\
+5,4,3,2,1,2,5,0,1,6,2,3,1,0,1,5,4,2,\
+4,3,2,1,0,1,4,6,0,5,1,2,0,6,0,4,3,1,\
+3,2,1,0,6,0,3,5,6,4,0,1,6,5,6,3,2,0,\
+2,1,0,6,5,6,2,4,5,3,6,0,5,4,5,2,1,6,\
+1,0,6,5,4,5,1,3,4,2,5,6,4,3,4,1,0,5,\
+0,6,5,4,3,4,0,2,3,1,4,5,3,2,3,0,6,4,\
+6,5,4,3,2,3,6,1,2,0,3,4,2,1,2,6,5|18|126",
+"01010001|\
+7,6,7,1,5,4,5,2,1,4,1,7,0,3,7,\
+6,5,6,0,4,3,4,1,0,3,0,6,7,2,6,\
+5,4,5,7,3,2,3,0,7,2,7,5,6,1,5,\
+4,3,4,6,2,1,2,7,6,1,6,4,5,0,4,\
+3,2,3,5,1,0,1,6,5,0,5,3,4,7,3,\
+2,1,2,4,0,7,0,5,4,7,4,2,3,6,2,\
+1,0,1,3,7,6,7,4,3,6,3,1,2,5,1,\
+0,7,0,2,6,5,6,3,2,5,2,0,1,4,0,\
+7,6,7,1,5,4,5,2,1,4,1,7,0,3,7,\
+6,5,6,0,4,3,4,1,0,3,0,6,7,2,6,\
+5,4,5,7,3,2,3,0,7,2,7,5,6,1,5,\
+4,3,4,6,2,1,2,7,6,1,6,4,5,0,4,\
+3,2,3,5,1,0,1,6,5,0,5,3,4,7,3,\
+2,1,2,4,0,7,0,5,4,7,4,2,3,6,2,\
+1,0,1,3,7,6,7,4,3,6,3,1,2,5,1,\
+0,7,0,2,6,5,6,3,2,5,2,0,1,4|15|240",
 "0001111111|\
 0,1,0,4,1,6,4,7,4,6,4,8,4,6,4,7,4,6,\
 4,9,4,6,4,7,4,6,4,8,4,6,4,7,4,6,4,2,\
@@ -31,46 +54,21 @@ values: [
 2,3,2,6,3,8,6,9,6,8,6,0,6,8,6,9,6,8,\
 6,1,6,8,6,9,6,8,6,0,6,8,6,9,6,8,6,4,\
 1,2,1,5,2,7,5,8,5,7,5,9,5,7,5,8,5,7,\
-5,0,5,7,5,8,5,7,5,9,5,7,5,8,5,7,5,3|36",
-"01010001|\
-7,6,7,1,5,4,5,2,1,4,1,7,0,3,7,\
-6,5,6,0,4,3,4,1,0,3,0,6,7,2,6,\
-5,4,5,7,3,2,3,0,7,2,7,5,6,1,5,\
-4,3,4,6,2,1,2,7,6,1,6,4,5,0,4,\
-3,2,3,5,1,0,1,6,5,0,5,3,4,7,3,\
-2,1,2,4,0,7,0,5,4,7,4,2,3,6,2,\
-1,0,1,3,7,6,7,4,3,6,3,1,2,5,1,\
-0,7,0,2,6,5,6,3,2,5,2,0,1,4,0,\
-7,6,7,1,5,4,5,2,1,4,1,7,0,3,7,\
-6,5,6,0,4,3,4,1,0,3,0,6,7,2,6,\
-5,4,5,7,3,2,3,0,7,2,7,5,6,1,5,\
-4,3,4,6,2,1,2,7,6,1,6,4,5,0,4,\
-3,2,3,5,1,0,1,6,5,0,5,3,4,7,3,\
-2,1,2,4,0,7,0,5,4,7,4,2,3,6,2,\
-1,0,1,3,7,6,7,4,3,6,3,1,2,5,1,\
-0,7,0,2,6,5,6,3,2,5,2,0,1,4|15",
-"0000001|\
-5,4,3,2,1,2,5,0,1,6,2,3,1,0,1,5,4,2,\
-4,3,2,1,0,1,4,6,0,5,1,2,0,6,0,4,3,1,\
-3,2,1,0,6,0,3,5,6,4,0,1,6,5,6,3,2,0,\
-2,1,0,6,5,6,2,4,5,3,6,0,5,4,5,2,1,6,\
-1,0,6,5,4,5,1,3,4,2,5,6,4,3,4,1,0,5,\
-0,6,5,4,3,4,0,2,3,1,4,5,3,2,3,0,6,4,\
-6,5,4,3,2,3,6,1,2,0,3,4,2,1,2,6,5|18",
+5,0,5,7,5,8,5,7,5,9,5,7,5,8,5,7,5,3|36|360",
 "000000|\
 4,2,4,5,2,3,1,3,4,1,2,0,2,3,0,1,5,1,2,5,\
 0,4,0,1,4,5,3,5,0,3,4,2,4,5,2,3,1,3,4,1,\
-2,0,2,3,0,1,5,1,2,5,0,4,0,1,4,5,3,5,0|5",
-"00001|3,0,1,4,1,0,2,4,0,3,0,4,1,3,4,2,4,3,0,2,3,1,3,2,4,1,2,0,2,1|6",
-"00001|3,1,0,1,4,0,2,0,4,0,3,4,1,4,3,4,2,3,0,3,2,3,1,2,4,2,1,2,0|6",
-"110100|1,2,3,5,0,1,2,4,5,0,1,3,4,5,0,2,3,4,5,1,2,3,4,0|4",
-"11110|3,4,2,3,1,2,0,1,4,0|2",
-"1110|2,3,1,2,0,1,3,0|2"
+2,0,2,3,0,1,5,1,2,5,0,4,0,1,4,5,3,5,0|5|60",
+"00001|3,0,1,4,1,0,2,4,0,3,0,4,1,3,4,2,4,3,0,2,3,1,3,2,4,1,2,0,2,1|6|31",
+"00001|3,1,0,1,4,0,2,0,4,0,3,4,1,4,3,4,2,3,0,3,2,3,1,2,4,2,1,2,0|6|30",
+"110100|1,2,3,5,0,1,2,4,5,0,1,3,4,5,0,2,3,4,5,1,2,3,4,0|4|25",
+"11110|3,4,2,3,1,2,0,1,4,0|2|11",
+"1110|2,3,1,2,0,1,3,0|2|9"
 ],
 captions:[
-    "10,360 IEEE 42 #5 app",
-    "8,240 IEEE 42 #5 app",
     "7,126 IEEE 42 #5 app",
+    "8,240 IEEE 42 #5 app",
+    "10,360 IEEE 42 #5 app",
     "6,60 IEEE 42 #5 app",
     "5,31 IEEE 42 #5 III",
     "5,30 yoctopuce.com", //yoctopuce.com/EN/article/how-to-measure-wind-part-2"
@@ -78,8 +76,11 @@ captions:[
     "5,11 winzurf.co.nz", //http://www.winzurf.co.nz/Single_Track_Grey_Code_Patent/Single_track_Grey_code_encoder_patent.pdf
     "4,9 winzurf.co.nz", //http://www.winzurf.co.nz/Single_Track_Grey_Code_Patent/Single_track_Grey_code_encoder_patent.pdf
     ]},
+    { name: 'disk', type: 'float', initial: 77, caption: "disk diameter:" },
+    { name: 'hub', type: 'float', initial: 3, caption: "hub diameter:" },
     { name: 'slotd', type: 'float', initial: 11, caption: "slots inset:" },
     { name: 'slotlength', type: 'float', initial: 3.5, caption: "slot length:" },
+    { name: 'slotfudge', type: 'float', initial: .05, caption: "slot break:" },
     { name: 'mask', type: 'float', initial: 0.1, caption: "slot mask adj:" },
     { name: 'cutfudge', type: 'float', initial: 0.4, caption: "laser cut width or<br> (-) filament spread:" },
     { name: 'thick', type: 'float', initial: 3, caption: "material thickness:" },
@@ -138,28 +139,59 @@ function stgc(s, p, d) {
     return m
 }
 
-function cutarcs(l, m,r) {
+
+function cutarc(r, a, i) {
+    let curvedpath = CSG.Path2D.arc({
+        center: [0,0,0],
+        radius: r,
+        startangle: a * i - (a/2) + params.slotfudge,
+        endangle: a * i + (a/2),
+        resolution: resolution,
+    });
+    let curvedpathin = CSG.Path2D.arc({
+        center: [0,0,0],
+        radius: r-params.slotlength,
+        endangle: a * i - (a/2),
+        startangle: a * i + (a/2) - params.slotfudge,
+        resolution: resolution,
+    });
+    let curvedpath2 = curvedpath.concat(curvedpathin)
+    let curvedpathclosed = curvedpath2.close()
+    let curvedarea = curvedpathclosed.innerToCAG()
+    //let curvedvolumn = curvedarea No, need depth
+//        let curvedvolumn = curvedpath.rectangularExtrude(
+//            params.slotlength, params.thick, resolution, false
+//            );  No, because it extends the arc. 
+//          expandToCAG(pathradius, resolution) No, same issue
+//        let curvedvolumn = curvedarea.linear_extrude({depth:10})
+    let curvedvolumn = curvedarea.extrude({offset: [0, 0,  params.thick]})
+    return curvedvolumn
+    
+}
+
+function cutarcs(positions, r) {
+    let a = 360/positions //angle length of each arc
+    console.log(positions+" slots of "+a+" degrees")
+    curves = []
+    for (let i = 0; i<positions; i+=2){
+        curves.push(cutarc(r,a,i))
+        
+    }
+    return curves
+}
+
+function cutstgcarcs(l, m,r) {
     let a = 360/l //angle length of each arc
     console.log(l+" segments of "+a+" degrees")
     curves = []
     for (let i = 0; i<l; i++){
         if ("0"==m[i]) continue
-        let curvedpath = CSG.Path2D.arc({
-            center: [0,0,0],
-            radius: r,
-            startangle: a * i - (a/2),
-            endangle: a * i + (a/2) - params.slotlength,
-            resolution: resolution,
-        });
-        let curvedvolumn = curvedpath.rectangularExtrude(
-            params.slotlength, params.thick, resolution, false
-            );  
-        // w, h, resolution, roundEnds
-        curves.push(curvedvolumn)
+        curves.push(cutarc(r,a,i))
         
     }
     return curves
 }
+
 var resolution = 64
 
 function main () {
@@ -168,11 +200,13 @@ function main () {
     let start_key = code[0]
     let seq = code[1].split(",")
     let distance = parseInt(code[2])
+    let positions = parseInt(code[3])
     let m = stgc(seq, start_key, distance)
-    //return 
+    //return union(cutarcs(seq.length, m, params.disk-params.slotd*2))
     return difference(
         cylinder({r:params.disk, h:params.thick})
-        ,union(cutarcs(seq.length, m, params.disk-params.slotd*2))
+        ,union(cutstgcarcs(seq.length, m, params.disk-params.slotd*2-params.slotlength))
+        ,union(cutarcs(positions, params.disk-params.slotd))
         ,cylinder({r:params.hub, h:params.thick})
         )
 //    difference(
