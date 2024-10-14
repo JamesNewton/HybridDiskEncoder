@@ -9,7 +9,8 @@ make sense with out understanding it.
 their greater resolution and the simplicity of not supporting 3 dimisional objects may provide a cleaner signal and easy processing.
 
 **Firmware only, no FPGA required:** Because the primary goal of this project is to enable a very low cost human input device, it will not depend on FPGA speed, as humans
-don't move that fast, and have builtin motion control systems that avoid the need for a high speed feedback loop. 
+don't move that fast, and have builtin motion control systems that avoid the need for a high speed feedback loop. Interesting discussion of ultra ATAN2 methods:
+https://web.archive.org/web/20180529001306/https://www.coranac.com/documents/arctangent/
 
 **OpenJSCAD:** In keeping with the focus on Javascript in DDE (the Dexter IDE), node.js processing for remote control, and an upcoming 
 <a href="https://github.com/JamesNewton/AdvancedRoboticsWithJavascript/wiki">Robotics class</a>, this project uses<br>
@@ -84,7 +85,7 @@ Detector to support mount should be adjustable? Or will laser cut and assembly b
 - Done: Lasercut parts for test assembly, update CAD as needed
 - Done(ish): Write test firmware for A2D feedback to PC. 
 - TODO: Connect LEDs / Sensors to dev board, test and update design 
-- Done: Calculate ATAN2 on board and return degrees
+- Done: Calculate ATAN2 on board and return degrees. 
 - TODO: Count slots with the hardware and combine with ATAN2 degrees
 - TODO: Add AGC (Automatic Gain Control) to update onboard opamp gain.
 - TODO: Produce and assemble multiple joints into a non-driven arm with the same physical characteristics as Dexter
