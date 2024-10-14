@@ -56,12 +56,27 @@ values: [
 2,1,0,6,5,6,2,4,5,3,6,0,5,4,5,2,1,6,\
 1,0,6,5,4,5,1,3,4,2,5,6,4,3,4,1,0,5,\
 0,6,5,4,3,4,0,2,3,1,4,5,3,2,3,0,6,4,\
-6,5,4,3,2,3,6,1,2,0,3,4,2,1,2,6,5|18"
+6,5,4,3,2,3,6,1,2,0,3,4,2,1,2,6,5|18",
+"000000|\
+4,2,4,5,2,3,1,3,4,1,2,0,2,3,0,1,5,1,2,5,\
+0,4,0,1,4,5,3,5,0,3,4,2,4,5,2,3,1,3,4,1,\
+2,0,2,3,0,1,5,1,2,5,0,4,0,1,4,5,3,5,0|5",
+"00001|3,0,1,4,1,0,2,4,0,3,0,4,1,3,4,2,4,3,0,2,3,1,3,2,4,1,2,0,2,1|6",
+"00001|3,1,0,1,4,0,2,0,4,0,3,4,1,4,3,4,2,3,0,3,2,3,1,2,4,2,1,2,0|6",
+"110100|1,2,3,5,0,1,2,4,5,0,1,3,4,5,0,2,3,4,5,1,2,3,4,0|4",
+"11110|3,4,2,3,1,2,0,1,4,0|2",
+"1110|2,3,1,2,0,1,3,0|2"
 ],
 captions:[
-    "10,360 IEEE 42 NO. 5",
-    "8,240 IEEE 42 NO. 5",
-    "7,126 IEEE 42 NO. 5"
+    "10,360 IEEE 42 #5 app",
+    "8,240 IEEE 42 #5 app",
+    "7,126 IEEE 42 #5 app",
+    "6,60 IEEE 42 #5 app",
+    "5,31 IEEE 42 #5 III",
+    "5,30 yoctopuce.com", //yoctopuce.com/EN/article/how-to-measure-wind-part-2"
+    "6,25 winzurf.co.nz", //http://www.winzurf.co.nz/Single_Track_Grey_Code_Patent/Single_track_Grey_code_encoder_patent.pdf
+    "5,11 winzurf.co.nz", //http://www.winzurf.co.nz/Single_Track_Grey_Code_Patent/Single_track_Grey_code_encoder_patent.pdf
+    "4,9 winzurf.co.nz", //http://www.winzurf.co.nz/Single_Track_Grey_Code_Patent/Single_track_Grey_code_encoder_patent.pdf
     ]},
     { name: 'slotd', type: 'float', initial: 11, caption: "slots inset:" },
     { name: 'slotlength', type: 'float', initial: 3.5, caption: "slot length:" },
@@ -88,7 +103,7 @@ function stgc(s, p, d) {
     let v,b=0;
     let m=[]; 
     for(;d<=dh && (fail>0);d++) {
-        console.log('length:'+l+'<br>reading:position<br>'+p+':0')
+        console.log('length:'+l+' reading:position '+p+':0')
         for(let i=0;i<=s.length*l;i++) { 
             m[i]='_';
         }
@@ -123,14 +138,43 @@ function stgc(s, p, d) {
     return m
 }
 
+function cutarcs(l, m,r) {
+    let a = 360/l //angle length of each arc
+    console.log(l+" segments of "+a+" degrees")
+    curves = []
+    for (let i = 0; i<l; i++){
+        if ("0"==m[i]) continue
+        let curvedpath = CSG.Path2D.arc({
+            center: [0,0,0],
+            radius: r,
+            startangle: a * i - (a/2),
+            endangle: a * i + (a/2) - params.slotlength,
+            resolution: resolution,
+        });
+        let curvedvolumn = curvedpath.rectangularExtrude(
+            params.slotlength, params.thick, resolution, false
+            );  
+        // w, h, resolution, roundEnds
+        curves.push(curvedvolumn)
+        
+    }
+    return curves
+}
+var resolution = 64
+
 function main () {
     console.log(params.slots)
     let code=params.slots.split("|")
     let start_key = code[0]
     let seq = code[1].split(",")
     let distance = parseInt(code[2])
-    stgc(seq, start_key, distance)
-    return cylinder({r:params.disk, h:params.thick})
+    let m = stgc(seq, start_key, distance)
+    //return 
+    return difference(
+        cylinder({r:params.disk, h:params.thick})
+        ,union(cutarcs(seq.length, m, params.disk-params.slotd*2))
+        ,cylinder({r:params.hub, h:params.thick})
+        )
 //    difference(
 //      cylinder({r: 10, h:10}),
 //      sphere({r: 2, center: true})
