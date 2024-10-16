@@ -9,8 +9,10 @@ make sense with out understanding it.
 their greater resolution and the simplicity of not supporting 3 dimisional objects may provide a cleaner signal and easy processing.
 
 **Firmware only, no FPGA required:** Because the primary goal of this project is to enable a very low cost human input device, it will not depend on FPGA speed, as humans
-don't move that fast, and have builtin motion control systems that avoid the need for a high speed feedback loop. Interesting discussion of ultra ATAN2 methods:
+don't move that fast, and have builtin motion control systems that avoid the need for a high speed feedback loop. 
+- Interesting discussion of ultra ATAN2 methods:
 https://web.archive.org/web/20180529001306/https://www.coranac.com/documents/arctangent/
+- http://f3.to/portfolio/math/fastatan2.htm Fast atan2. `if |X|>|Y| [(-b*x*y)/(x^2+ a*y^2) + c*sign(x)] else [-c*sign(x*y)= c*sign(x) + (b*x*y)/(y^2+a*x^2)] where a = 0.28088, b = 180/Pi, c = b/2*Pi`
 
 **OpenJSCAD:** In keeping with the focus on Javascript in DDE (the Dexter IDE), node.js processing for remote control, and an upcoming 
 <a href="https://github.com/JamesNewton/AdvancedRoboticsWithJavascript/wiki">Robotics class</a>, this project uses<br>
