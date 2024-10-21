@@ -14,6 +14,8 @@ don't move that fast, and have builtin motion control systems that avoid the nee
 https://web.archive.org/web/20180529001306/https://www.coranac.com/documents/arctangent/
 - http://f3.to/portfolio/math/fastatan2.htm Fast atan2. `if |X|>|Y| [(-b*x*y)/(x^2+ a*y^2) + c*sign(x)] else [-c*sign(x*y)= c*sign(x) + (b*x*y)/(y^2+a*x^2)] where a = 0.28088, b = 180/Pi, c = b/2*Pi`
 
+Having said all that, goot old Math.h in C is probably more than good enough. 
+
 **OpenJSCAD:** In keeping with the focus on Javascript in DDE (the Dexter IDE), node.js processing for remote control, and an upcoming 
 <a href="https://github.com/JamesNewton/AdvancedRoboticsWithJavascript/wiki">Robotics class</a>, this project uses<br>
 https://OpenJSCAD.com
@@ -25,29 +27,25 @@ https://openjscad.com/#https://raw.githubusercontent.com/JamesNewton/HybridDiskE
 and edit parameters in the control block lower left. Switch from "Assembly" to "Parts" (bottom control block) to generate DXF or SVG
 output for cutting. 
 
-**Electronics** At this point, we are focused on the 
+**Electronics** Previously, we focused on the 
 <A href="http://www.cypress.com/products/32-bit-arm-cortex-m0-psoc-4200-programmable-digital-blocks">Cypress PSoC 4 chips</A>
 for the processor, with only opto sensors, and LEDs, (and USB serial interface).<br>
 http://www.cypress.com/part/cy8c4247azi-m485
+It is featured in this development system:<br>
+http://www.cypress.com/documentation/development-kitsboards/cy8ckit-043-psoc-4-m-series-prototyping-kit $10 WITH a debugger!
+The importance of a good debugger can not be overstated. 
 <br>This gives us:
 - 8 channel, 12 bit ADC 1-Msps, 
 - programmable analog front end (no need for external opamps), 
 - PWM output to adjust emmiter brightness (no need for manual adjust),
 - 128K FLASH, 16K RAM, 48 Mhz, 32 bit ARM Cortex-M0.
 
-And if we want to include support for high speed slot counting in the future: 48 macrocells for some FPGA ability. 
-
-It is featured in this development system:<br>
-http://www.cypress.com/documentation/development-kitsboards/cy8ckit-043-psoc-4-m-series-prototyping-kit $10 WITH a debugger!
-The importance of a good debugger can not be overstated. 
-
-The IDE includes schematic capture FPGA designer, etc... But it is Windows only IDE. However it is open source and has been 
-built on Linux<br>
-https://hackaday.io/project/18590-psoc-on-linux <br>
-https://github.com/clementleger/cypress_linux_tools
-
-And can apparently be run under wine<br>
+Sadly, it can NOT be run under wine<br>
 https://appdb.winehq.org/objectManager.php?sClass=application&iId=16168
+
+And the need for a frontend is removed by a little digital filtering and using PWM to control the brightness of the LEDs. 
+
+It turns out the PiPico is perfectly capable. The A2D is less able, but for a first version, it's perfectly able, and less complex. 
 
 <table><tr><td>
 <img src="https://raw.githubusercontent.com/JamesNewton/HybridDiskEncoder/master/docs/HybridEncoderFront.jpg">
@@ -73,9 +71,7 @@ At edge:
 - top support arm (w/holes for detectors). 
 
 ## Building the Firmware
-**IDE:** To start with the cy8ckit-043, you want this link:<br>
-http://www.cypress.com/file/199476
-<br>for both the Creator IDE and the support files for that hardware. 
+**IDE:** Just the current Arduino IDE or https://wokwi.com/ 
 
 ## Questions:
 Detector to support mount should be adjustable? Or will laser cut and assembly be accurate enough?
@@ -85,15 +81,14 @@ Detector to support mount should be adjustable? Or will laser cut and assembly b
 - Done: Order parts for electronics
 - Done: Order thin (1 or 2mm) acrylic and black / opaque cardstock. 110lb Cardstock with 3mm Acrylic seems to work
 - Done: Lasercut parts for test assembly, update CAD as needed
-- Done(ish): Write test firmware for A2D feedback to PC. 
-- TODO: Connect LEDs / Sensors to dev board, test and update design 
-- Done: Calculate ATAN2 on board and return degrees. 
+- Done: Write test firmware for PWM control of the LEDs and A2D feedback to PC. 
+- Done: Connect LEDs / Sensors to dev board, test and update design 
+- Done: Set the PWM levels on the LEDs to get full range response on the A2D
+- Done(ish): Calculate ATAN2 on board and return degrees. 
 - TODO: Count slots with the hardware and combine with ATAN2 degrees
-- TODO: Add AGC (Automatic Gain Control) to update onboard opamp gain.
-- TODO: Produce and assemble multiple joints into a non-driven arm with the same physical characteristics as Dexter
-- TODO: Add DDE support for serial connected device as an input only Dexter
-- TODO: Count pulses with on board digital logic for high speed operation?
-- TODO: Develop cycloidal drive and add motor / drive support?
+- TODO: Add support for Single Track Grey Code absolute position. see <a href="https://github.com/JamesNewton/HybridDiskEncoder/blob/master/stgc_wheel.jscad">stgc_wheel.jscad</a>
+- TODO: Add <a href="https://cfry.github.io/dde4/dde/index.html">DDE4</a> support for serials connected devices
+- TODO: Produce and assemble a joint with shaft pass through, integrated (on joint) encoder, separate(able) drive box for different motor sizes / types. 
 
 ## See also:
 - https://photos.app.goo.gl/v6FCJX8Efcgw1NGY7 photo album of ongoing work. 
