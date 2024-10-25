@@ -5,16 +5,18 @@ https://github.com/HaddingtonDynamics/Dexter/wiki/Encoders
 <br>Please take a moment to read and understand that revolutionary system before continuing here; many of the goals of this project won't
 make sense with out understanding it.
 
-**Laser cut:** Instead of using 3D printed disks, this project will focus on laser cut parts. As laser cutters become more available and lower cost, 
-their greater resolution and the simplicity of not supporting 3 dimisional objects may provide a cleaner signal and easy processing.
+**Laser cut:** Instead of using 3D printed disks, this project will focus on laser cut parts or PCBs. 
+As laser cutters become more available and lower cost, their greater resolution and the simplicity of not supporting 3 dimisional objects may provide a cleaner signal and easy processing.
+PCBs can be milled with excellent precision and are very strong, opaque, and can support silk screen as well as through-slots.
 
-**Firmware only, no FPGA required:** Because the primary goal of this project is to enable a very low cost human input device, it will not depend on FPGA speed, as humans
-don't move that fast, and have builtin motion control systems that avoid the need for a high speed feedback loop. 
+**Firmware only, no FPGA required:** Because the primary goal of this project is to enable a very low cost encoder, it will not depend on FPGA speed.
+One application is for a human input device, and as humans don't move that fast, and have builtin motion control systems that avoid the need for a high speed feedback loop. 
+When used as an encoder for robotics, rapid motion can be supported by switching to digital reading of the quadrature sensors, or via an inner single track grey code.
+
+For now, the math.h atan2 is fast enough, but if we feel the need for speed:
 - Interesting discussion of ultra ATAN2 methods:
 https://web.archive.org/web/20180529001306/https://www.coranac.com/documents/arctangent/
 - http://f3.to/portfolio/math/fastatan2.htm Fast atan2. `if |X|>|Y| [(-b*x*y)/(x^2+ a*y^2) + c*sign(x)] else [-c*sign(x*y)= c*sign(x) + (b*x*y)/(y^2+a*x^2)] where a = 0.28088, b = 180/Pi, c = b/2*Pi`
-
-Having said all that, goot old Math.h in C is probably more than good enough. 
 
 **OpenJSCAD:** In keeping with the focus on Javascript in DDE (the Dexter IDE), node.js processing for remote control, and an upcoming 
 <a href="https://github.com/JamesNewton/AdvancedRoboticsWithJavascript/wiki">Robotics class</a>, this project uses<br>
@@ -40,12 +42,12 @@ The importance of a good debugger can not be overstated.
 - PWM output to adjust emmiter brightness (no need for manual adjust),
 - 128K FLASH, 16K RAM, 48 Mhz, 32 bit ARM Cortex-M0.
 
-Sadly, it can NOT be run under wine<br>
+However, 
+1. it can NOT be run under wine<br>
 https://appdb.winehq.org/objectManager.php?sClass=application&iId=16168
+2. And the need for a frontend is removed by a little digital filtering and using PWM to control the brightness of the LEDs. 
 
-And the need for a frontend is removed by a little digital filtering and using PWM to control the brightness of the LEDs. 
-
-It turns out the PiPico is perfectly capable. The A2D is less able, but for a first version, it's perfectly able, and less complex. 
+Happily, it turns out the PiPico is perfectly capable. The A2D is less able, but for a first version, it's perfectly able, and less complex. 
 
 <table><tr><td>
 <img src="https://raw.githubusercontent.com/JamesNewton/HybridDiskEncoder/master/docs/HybridEncoderFront.jpg">
@@ -84,7 +86,7 @@ Detector to support mount should be adjustable? Or will laser cut and assembly b
 - Done: Write test firmware for PWM control of the LEDs and A2D feedback to PC. 
 - Done: Connect LEDs / Sensors to dev board, test and update design 
 - Done: Set the PWM levels on the LEDs to get full range response on the A2D
-- Done(ish): Calculate ATAN2 on board and return degrees. 
+- Done: Calculate ATAN2 on board and return degrees. 
 - TODO: Count slots with the hardware and combine with ATAN2 degrees
 - TODO: Open shaft passthrough <a href="https://github.com/JamesNewton/HybridDiskEncoder/issues/6">#6</a>
 - TODO: Add support for Single Track Grey Code absolute position. See <a href="https://github.com/JamesNewton/HybridDiskEncoder/issues/5">#5</a>
