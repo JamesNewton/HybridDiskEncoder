@@ -9,15 +9,6 @@ make sense with out understanding it.
 As laser cutters become more available and lower cost, their greater resolution and the simplicity of not supporting 3 dimisional objects may provide a cleaner signal and easy processing.
 PCBs can be milled with excellent precision and are very strong, opaque, and can support silk screen as well as through-slots.
 
-**Firmware only, no FPGA required:** Because the primary goal of this project is to enable a very low cost encoder, it will not depend on FPGA speed.
-One application is for a human input device, and as humans don't move that fast, and have builtin motion control systems that avoid the need for a high speed feedback loop. 
-When used as an encoder for robotics, rapid motion can be supported by switching to digital reading of the quadrature sensors, or via an inner single track grey code.
-
-For now, the math.h atan2 is fast enough, but if we feel the need for speed:
-- Interesting discussion of ultra ATAN2 methods:
-https://web.archive.org/web/20180529001306/https://www.coranac.com/documents/arctangent/
-- http://f3.to/portfolio/math/fastatan2.htm Fast atan2. `if |X|>|Y| [(-b*x*y)/(x^2+ a*y^2) + c*sign(x)] else [-c*sign(x*y)= c*sign(x) + (b*x*y)/(y^2+a*x^2)] where a = 0.28088, b = 180/Pi, c = b/2*Pi`
-
 **OpenJSCAD:** In keeping with the focus on Javascript in DDE (the Dexter IDE), node.js processing for remote control, and an upcoming 
 <a href="https://github.com/JamesNewton/AdvancedRoboticsWithJavascript/wiki">Robotics class</a>, this project uses<br>
 https://OpenJSCAD.com
@@ -54,6 +45,17 @@ Happily, it turns out the PiPico is perfectly capable. The A2D is less able, but
   </td><td>
 <img src="https://raw.githubusercontent.com/JamesNewton/HybridDiskEncoder/master/docs/HybridEncoderBack.jpg" >
   </td></tr></table>
+
+**Firmware only, no FPGA required:** Because the primary goal of this project is to enable a very low cost encoder, it will not depend on FPGA speed.
+One application is for a human input device, and as humans don't move that fast, and have builtin motion control systems that avoid the need for a high speed feedback loop. 
+When used as an encoder for robotics, rapid motion can be supported by switching to digital reading of the quadrature sensors, or via an inner single track grey code.
+
+For now, the math.h atan2 is fast enough, but if we feel the need for speed:
+- Interesting discussion of ultra ATAN2 methods:
+https://web.archive.org/web/20180529001306/https://www.coranac.com/documents/arctangent/
+- http://f3.to/portfolio/math/fastatan2.htm Fast atan2. `if |X|>|Y| [(-b*x*y)/(x^2+ a*y^2) + c*sign(x)] else [-c*sign(x*y)= c*sign(x) + (b*x*y)/(y^2+a*x^2)] where a = 0.28088, b = 180/Pi, c = b/2*Pi`
+
+The original PSoC Firmware is in the "Firmware" folder, the new Pi Pico Arduino code is in the .ino file in the home directory. 
   
 **Layers**<br>
 Encoder center hub layers: 
