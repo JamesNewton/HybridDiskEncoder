@@ -60,7 +60,7 @@ The original PSoC Firmware is in the "Firmware" folder, the new Pi Pico Arduino 
 **Layers**<br>
 Encoder center hub layers: 
 - base, 
-- washer,
+- stgc washer,
 - opaque disk support and code disk, 
 - moving arm, 
 - washer, 
@@ -76,6 +76,10 @@ At edge:
 
 ## Building the Firmware
 **IDE:** Just the current Arduino IDE or https://wokwi.com/ 
+
+## Single Track Grey Code
+
+[Single Track Grey Code](http://techref.massmind.org/techref/io/sensor/pos/enc/greycodes.htm)
 
 ## Questions:
 Detector to support mount should be adjustable? Or will laser cut and assembly be accurate enough?
