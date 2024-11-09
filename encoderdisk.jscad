@@ -197,7 +197,7 @@ function cutstgcarcs(l, m, r, off) {
     curves = []
     for (let i = 0; i<l; i++){
         if ("0"==m[i]) continue
-        curves.push(cutarc(r,a,i))
+        curves.push(rotate([0,0,off], cutarc(r,a,i)))
         
     }
     return curves
@@ -260,7 +260,7 @@ var slots = []
           )
         );
    }
-let stgcoff = 20
+let stgcoff = distancedeg/2 //offset to avoid LEDs (support)
 let stgcr = params.disk/2-params.slotd+params.slotlength
 var stgcslots = cutstgcarcs(seq.length, m, stgcr, stgcoff);
 var washer = circle({r: params.disk/6, center: true})
@@ -283,6 +283,7 @@ let stgcsensors = []
           )
         );
    }
+let maskl = slotd-basesize
 var base = square({size: [basesize, basesize], center:true})
     .subtract(translate([slotd/2+params.slotlength/2,+sensespace/2,0],circle({r:emitr, center:true})))
     .subtract(translate([slotd/2+params.slotlength/2,-sensespace/2,0],circle({r:emitr, center:true})))
@@ -295,7 +296,7 @@ var base = square({size: [basesize, basesize], center:true})
 //    .subtract(translate([params.slotlength/2,-sensespace/2,0],rotate([0,0,-slotinc],square({size: [params.slotlength,maskw], center:true}))))
 //    .subtract(translate([-(slotd-basesize)/2-3,+sensespace/2,0],circle({r: M3r, center:true})))
 //    .subtract(translate([-(slotd-basesize)/2-3,-sensespace/2,0],circle({r: M3r, center:true})))
-var mask = square({size:[slotd-basesize,sensespace+6], center:true})
+var mask = square({size:[maskl,sensespace+6], center:true})
     .subtract(translate([params.slotlength/2,+sensespace/2,0],rotate([0,0,+slotinc],eyemask(maskw*2))))
     .subtract(translate([params.slotlength/2,-sensespace/2,0],rotate([0,0,-slotinc],eyemask(maskw*2))))
     .subtract(translate([-(slotd-basesize)/2-3,+sensespace/2,0],circle({r: M3r, center:true})))
@@ -308,7 +309,7 @@ var arm = square({size: [slotd,Math.max(sensespace+7,params.hub+4)], center:true
     .subtract(circle({r: 1, center: true}).translate([-slotd/3,0]))
     .subtract(circle({r: params.hub/2, center: true}).translate([slotd/2-params.hub,0]))
     .translate([-slotd/2+params.hub,0])
-var sensors = square({size:[slotd-basesize,sensespace+6], center:true})
+var sensors = square({size:[maskl,sensespace+6], center:true})
     .subtract(translate([params.slotlength/2,+sensespace/2,0],circle({r: senser, center:true})))
     .subtract(translate([params.slotlength/2,-sensespace/2,0],circle({r: senser, center:true})))
     .subtract(translate([-(slotd-basesize)/2-3,+sensespace/2,0],circle({r: M3r, center:true})))
@@ -327,7 +328,7 @@ var assembly = [
     
     linear_extrude({height: thin},washer).translate([0,0,thick]).setColor([.2,.2,.2]),
     linear_extrude({height: thin},disksup).translate([0,0,thick+thin]).setColor([1,1,1]),
-    //linear_extrude({height: thin},disk).translate([0,0,thick+thin*2]).setColor([.2,.2,.2]),
+    linear_extrude({height: thin},disk).translate([0,0,thick+thin*2]).setColor([.2,.2,.2]),
     linear_extrude({height: thick},arm).translate([0,0,thick+thin*3]).setColor(1,0.5,0.3),
     linear_extrude({height: thin},washertop).translate([0,0,thick*2+thin*3]).setColor([.2,.2,.2]),
 
