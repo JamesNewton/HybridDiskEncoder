@@ -76,10 +76,10 @@ captions:[
     "5,11 winzurf.co.nz", //http://www.winzurf.co.nz/Single_Track_Grey_Code_Patent/Single_track_Grey_code_encoder_patent.pdf
     "4,9 winzurf.co.nz", //http://www.winzurf.co.nz/Single_Track_Grey_Code_Patent/Single_track_Grey_code_encoder_patent.pdf
     ]},
-    { name: 'disk', type: 'float', initial: 77, caption: "disk diameter:" },
+    { name: 'disk', type: 'float', initial: 50, caption: "disk diameter:" },
     { name: 'hub', type: 'float', initial: 3, caption: "hub diameter:" },
-    { name: 'slotd', type: 'float', initial: 11, caption: "slots inset:" },
-    { name: 'slotlength', type: 'float', initial: 3.5, caption: "slot length:" },
+    { name: 'slotd', type: 'float', initial: 2, caption: "slots inset:" },
+    { name: 'slotlength', type: 'float', initial: 5, caption: "slot length:" },
     { name: 'slotfudge', type: 'float', initial: .05, caption: "slot break:" },
     { name: 'mask', type: 'float', initial: 0.1, caption: "slot mask adj:" },
     { name: 'cutfudge', type: 'float', initial: 0.4, caption: "laser cut width or<br> (-) filament spread:" },
