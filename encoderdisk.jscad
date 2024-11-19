@@ -263,6 +263,9 @@ var slots = []
 let stgcoff = distancedeg/2 //offset to avoid LEDs (support)
 let stgcr = params.disk/2-params.slotd+params.slotlength
 var stgcslots = cutstgcarcs(seq.length, m, stgcr, stgcoff);
+// the sensor for the single track grey code. Trying OPB702
+// https://www.mouser.com/datasheet/2/414/OPB702-3241541.pdf
+var stgcsens = square({size:[3.18, 12.2], center: true})
 var washer = circle({r: params.disk/6, center: true})
     .subtract(circle({r: params.hub/2, h:2, center: true}))
 var disksup = circle({r:(params.disk-params.slotd)/2, center: true})
@@ -271,14 +274,14 @@ var disksup = circle({r:(params.disk-params.slotd)/2, center: true})
 var disk = circle({r: params.disk/2-0.5, fn: 50, center: true})
     .subtract(circle({r: params.hub/2, h:2, center: true}))
     .subtract(slots)
-var washertop = circle({r:(sensespace+6)/2, center: true})
+var washtop = circle({r:(sensespace+6)/2, center: true})
     .subtract(circle({r:params.hub/2, h:2, center: true}));
 let stgcsensors = []
    for(i=0.0; i<360; i+=distancedeg) {
       stgcsensors.push(
         rotate([0,0,i+stgcoff], 
           translate([stgcr-(params.slotlength/2),-slotwidth/2,-1], 
-            circle({r: senser, center:true})
+            stgcsens//circle({r: senser, center:true})
             )
           )
         );
@@ -324,20 +327,17 @@ var support = square({size: [supsize,Math.max(sensespace+7,params.hub+4)], cente
     .translate([supsize/2-params.hub,0])
     
 var assembly = [
-    linear_extrude({height: thick},base).setColor(1,0.5,0.3,1),
-    
-    linear_extrude({height: thin},washer).translate([0,0,thick]).setColor([.2,.2,.2]),
-    linear_extrude({height: thin},disksup).translate([0,0,thick+thin]).setColor([1,1,1]),
-    linear_extrude({height: thin},disk).translate([0,0,thick+thin*2]).setColor([.2,.2,.2]),
-    linear_extrude({height: thick},arm).translate([0,0,thick+thin*3]).setColor(1,0.5,0.3),
-    linear_extrude({height: thin},washertop).translate([0,0,thick*2+thin*3]).setColor([.2,.2,.2]),
-
-    linear_extrude({height: thick},LEDs).translate([slotd/2,0,-thick]).setColor(1,0.5,0.3), //below the base
-
-    linear_extrude({height: thin*3},riser).translate([basesize/2-edge/2,0,thick]),
-    linear_extrude({height: thin},mask).translate([slotd/2,0,thick+thin*3]).setColor([.2,.2,.2]),
-    linear_extrude({height: thick},sensors).translate([slotd/2,0,thick+thin*4]).setColor(1,0.5,0.3),
-    linear_extrude({height: thick},support).translate([0,0,thick*2+thin*4]).setColor(1,0.5,0.3),
+    linear_extrude({height: thick}, base    ).setColor(1,0.5,0.3,1),
+    linear_extrude({height: thin},  washer  ).translate([0,0,thick]).setColor([.2,.2,.2]),
+    linear_extrude({height: thin},  disksup ).translate([0,0,thick+thin]).setColor([1,1,1]),
+    linear_extrude({height: thin},  disk    ).translate([0,0,thick+thin*2]).setColor([.2,.2,.2]),
+    linear_extrude({height: thick}, arm     ).translate([0,0,thick+thin*3]).setColor(1,0.5,0.3),
+    linear_extrude({height: thin},  washtop ).translate([0,0,thick*2+thin*3]).setColor([.2,.2,.2]),
+    linear_extrude({height: thick}, LEDs    ).translate([slotd/2,0,-thick]).setColor(1,0.5,0.3), //below the base
+    linear_extrude({height: thin*3},riser   ).translate([basesize/2-edge/2,0,thick]),
+    linear_extrude({height: thin},  mask    ).translate([slotd/2,0,thick+thin*3]).setColor([.2,.2,.2]),
+    linear_extrude({height: thick}, sensors ).translate([slotd/2,0,thick+thin*4]).setColor(1,0.5,0.3),
+    linear_extrude({height: thick}, support ).translate([0,0,thick*2+thin*4]).setColor(1,0.5,0.3),
     ]
     
 var cutthick = []
@@ -353,7 +353,7 @@ var cutthin = []
     cutthin.push(disksup)
     cutthin.push(mask)
     cutthin.push(washer)
-    cutthin.push(washertop)
+    cutthin.push(washtop)
     cutthin.push(riser) //need 2 of these...
     cutthin.push(riser.translate([0,0,0])) //translate to copy the object
     //actually may need three since card stock compresses
