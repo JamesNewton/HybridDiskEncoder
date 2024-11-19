@@ -265,7 +265,7 @@ let stgcr = params.disk/2-params.slotd+params.slotlength
 var stgcslots = cutstgcarcs(seq.length, m, stgcr, stgcoff);
 // the sensor for the single track grey code. Trying OPB702
 // https://www.mouser.com/datasheet/2/414/OPB702-3241541.pdf
-var stgcsens = square({size:[3.18, 12.2], center: true})
+var stgcsens = square({size:[4.78, 12.2], center: true})
 var washer = circle({r: params.disk/6, center: true})
     .subtract(circle({r: params.hub/2, h:2, center: true}))
 var disksup = circle({r:(params.disk-params.slotd)/2, center: true})
@@ -327,7 +327,7 @@ var support = square({size: [supsize,Math.max(sensespace+7,params.hub+4)], cente
     .translate([supsize/2-params.hub,0])
     
 var assembly = [
-    linear_extrude({height: thick}, base    ).setColor(1,0.5,0.3,1),
+    linear_extrude({height: thick}, base    ).translate([0,0,-0.05]).setColor(1,0.5,0.3,1),
     linear_extrude({height: thin},  washer  ).translate([0,0,thick]).setColor([.2,.2,.2]),
     linear_extrude({height: thin},  disksup ).translate([0,0,thick+thin]).setColor([1,1,1]),
     linear_extrude({height: thin},  disk    ).translate([0,0,thick+thin*2]).setColor([.2,.2,.2]),
