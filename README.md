@@ -30,7 +30,7 @@ At edge:
 - emitter mount, (below base)
 - base w/ holes for M3 screws and emitters, 
 - riser x2,
-- opaque mask, 
+- opaque mask, [in the correct shape](https://stackblitz.com/edit/enc-slot-shape-area-ydgggx?file=index.js)
 - detector mount, 
 - top support arm (w/holes for detectors).
 
