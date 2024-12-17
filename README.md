@@ -91,7 +91,11 @@ The original PSoC Firmware is in the "Firmware" folder, the new Pi Pico Arduino 
 
 ## Single Track Grey Code
 
-[Single Track Grey Code](http://techref.massmind.org/techref/io/sensor/pos/enc/greycodes.htm)
+The analog reading of our position in a single slot is an "absolute" position, not relative (like a standard quadrature encoder). With 
+[Single Track Grey Codes](http://techref.massmind.org/techref/io/sensor/pos/enc/greycodes.htm) we can provide an absolute position to a single slot. 
+There is a second disk "hidden" under the main disk which has a STGC pattern cut in it, and the base of the test rig has slots for the sensors. 
+The [STGC Explorer](https://jamesnewton.github.io/massmind/techref/stgc_explorer.html) shows the know working codes, helps to validate possible new codes,
+visualizes the sequence and sensor position, and then produces the C code to decode the readings. See issue 5 for the current status.
 
 ## Questions:
 Detector to support mount should be adjustable? Or will laser cut and assembly be accurate enough?
