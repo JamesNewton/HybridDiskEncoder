@@ -80,14 +80,16 @@ http://www.cypress.com/documentation/development-kitsboards/cy8ckit-043-psoc-4-m
 However, 
 1. it can NOT be run under wine<br>
 https://appdb.winehq.org/objectManager.php?sClass=application&iId=16168
-2. And the need for a frontend is removed by a little digital filtering and using PWM to control the brightness of the LEDs. 
+2. And the need for a frontend is removed by a little digital filtering and using PWM to control the brightness of the LEDs.
+
+The original PSoC Firmware is in the "Firmware" folder
 
 **PiPico!** Happily, it turns out the PiPico is perfectly capable. The A2D is less able, but for a first version, it's perfectly able, and less complex. 
-
-The original PSoC Firmware is in the "Firmware" folder, the new Pi Pico Arduino code is in the .ino file in the home directory.  
+It's easy to program via [Wokwi.com](https://wokwi.com/) or Arduino IDE via the [Earle Philhower](https://github.com/earlephilhower/arduino-pico) board support files.
+See the [HybridEncoder.ino](https://github.com/JamesNewton/HybridDiskEncoder/blob/master/HybridEncoder.ino) file in the home directory.  
 
 ## Building the Firmware
-**IDE:** Just the current Arduino IDE or https://wokwi.com/ 
+**IDE:** Just the current Arduino IDE the [Earle Philhower](https://github.com/earlephilhower/arduino-pico) board support files or https://wokwi.com/ 
 
 ## Single Track Grey Code
 
