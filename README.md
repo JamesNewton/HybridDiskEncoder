@@ -91,6 +91,10 @@ See the [HybridEncoder.ino](https://github.com/JamesNewton/HybridDiskEncoder/blo
 ## Building the Firmware
 **IDE:** Just the current Arduino IDE the [Earle Philhower](https://github.com/earlephilhower/arduino-pico) board support files or https://wokwi.com/ 
 
+With this code, we can see the sin, cos, and computed atan2 which gives us about 1000 clicks _inside each slot_! Again, the point is that this divides up each slot, and then we can count (already done) the slot which multiplies the clicks. With 1000 per slot and 126 slots, that is 126,000 CPR. Note the lack of smooth motion here is due to sticktion in the very poor bearing (there isn't one) in the test rig. The actual joint will be smoother. 
+
+![Screenshot from 2024-10-25 11-44-36](https://github.com/user-attachments/assets/626e6719-cd4a-44f4-b280-8321136480d5)
+
 ## Single Track Grey Code
 
 The analog reading of our position in a single slot is an "absolute" position, not relative (like a standard quadrature encoder). With 
