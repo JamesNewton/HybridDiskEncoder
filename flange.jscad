@@ -1,12 +1,12 @@
 //Flange to hold encoder disk onto threaded shaft. 
-//TODO: Add locating pins or holes for pins on flange surface
 
 function main() {
-    fudge = 0.2 //mm of fudge factor
+    fudge = 0.4 //mm of fudge factor
 	hi = 10;
 	dia = 20;
 	fldi = 40;
 	flhi = 5
+	tab = 3
 	nut = difference(
 		cylinder({r:dia*0.7, h:hi, fn:6}),
 		cylinder({r:dia/2+fudge, h:hi + 0.2}).translate([0,0,-0.1])
@@ -19,7 +19,11 @@ function main() {
 		cylinder({r1:fldi/2, r2:dia/2+fudge, h:flhi/2, fn:20})
 		    .translate([0,0,flhi/2])
 		),
-		cylinder({r:dia/2+fudge, h:hi + 0.2}).translate([0,0,-0.1])
+		cylinder({r:dia/2+fudge, h:hi + 0.2}).translate([0,0,-0.1]),
+		cylinder({r:tab/2+fudge, h:hi + 0.2})
+		    .translate([((fldi-dia)*.7+dia)/2,0,-0.1]),
+		cylinder({r:tab/2+fudge, h:hi + 0.2})
+		    .translate([-((fldi-dia)*.7+dia)/2,0,-0.1])
 	);
 
   return union(nut, threads, flange);
