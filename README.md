@@ -86,7 +86,7 @@ The original PSoC Firmware is in the "Firmware" folder
 
 **PiPico!** Happily, it turns out the PiPico is perfectly capable. The A2D is less able, but for a first version, it's perfectly able, and less complex. 
 It's easy to program via [Wokwi.com](https://wokwi.com/) or Arduino IDE via the [Earle Philhower](https://github.com/earlephilhower/arduino-pico) board support files.
-See the [HybridEncoder.ino](https://github.com/JamesNewton/HybridDiskEncoder/blob/master/HybridEncoder.ino) file in the home directory.  
+See the [HybridEncoder.ino](https://github.com/JamesNewton/HybridDiskEncoder/blob/master/HybridEncoder.ino) file in the home directory. Hint: [these labels](https://forum.dronebotworkshop.com/show-tell/breadboard-pinout-helpers-for-tiny-arduino-boards/) are very handy. 
 
 ## Building the Firmware
 **IDE:** Just the current Arduino IDE the [Earle Philhower](https://github.com/earlephilhower/arduino-pico) board support files or https://wokwi.com/ 
