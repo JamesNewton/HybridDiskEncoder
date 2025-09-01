@@ -3,7 +3,21 @@
 This encoder is based on the Haddington Dynamic Analog / Digital Hybrid encoders used on the Dexter robot arm:<br>
 https://github.com/HaddingtonDynamics/Dexter/wiki/Encoders
 <br>Please take a moment to read and understand that revolutionary system before continuing here; many of the goals of this project won't
-make sense with out understanding it.
+make sense with out understanding it. 
+
+A key point is the "eye" graph shown on that page which seems to confuse people. Here is a step by step set of questions which may help:
+
+- A standard quadrature encoder has two sensors, 90 degrees out of phase, right?
+
+- Also 90 degrees out of phase: Sine and Cosine, right?
+
+- Look up "plot sine on x and cosine on y" and see what picture you get... it's a circle right?
+
+- But what is the center of the circle? zero on the standard graph, but the A2D encoder chips don't give you + - through zero, they go from e.g. 0 to 8192 right? So the center of the eye would then be around 4096... So you have to subtract some from each to recenter it. And that is the center point of the eye.
+
+- And the analog electronics don't always go from 0 to 8192... sometimes they are e.g. 123 to 7994 or like that. So... what if they are only 123 to 5678? "Zero" isn't at 4096 anymore. It's at the average of those two.
+
+- Doing this "Eye calibration" simply finds the true center so atan2 returns correct angles despite offsets/imperfections.
 
 ## Physical Design
 
