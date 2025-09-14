@@ -24,18 +24,40 @@ function main() {
     const bear_slot_clear = params.belt_clear_center - ride_thick / 2;
     // ---- OBJECTS ---
     const bearing = 
-      difference(
+      union(
          cylinder({r:params.bear_od_rad, h:ride_thick, center: true}),
-         cylinder({r:params.ride_id_rad, h:ride_thick, center: true})
+         cylinder({r:params.ride_id_rad, h:params.mnt_thick, center: true})
       )
 
 
     return union(
         difference(
-            cylinder({r:params.mnt_od_rad, h: params.mnt_thick, center: true} ),
-            cylinder({r:params.mnt_id_rad, h: params.mnt_thick, center: true} )
-        ).translate([0,params.mnt2ride,0])
-        ,
-        bearing
-    ).translate([0,0,params.mnt_thick/2])
+            linear_extrude({height:params.mnt_thick},
+                hull(
+                    circle({r:params.mnt_od_rad} ),
+                    circle({r:params.mnt_od_rad / 2} )
+                        .translate([
+                            params.mnt_od_rad / 2,
+                            -params.mnt2ride,
+                            0
+                        ])
+                )
+            ).translate([
+                -params.mnt_od_rad,
+                -params.mnt2ride/2,
+                -params.mnt_thick/2]
+                ),
+            cylinder({r:params.mnt_id_rad, h: params.mnt_thick} )
+            .translate([
+                0,
+                0,
+                -params.mnt_thick/2]
+                ),
+            bearing.translate([
+                params.mnt_od_rad / 3,-
+                params.mnt2ride,
+                0
+                ])
+            )
+        ).translate([0,0,params.mnt_thick/2])
     }
