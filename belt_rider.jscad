@@ -22,13 +22,19 @@ function main() {
     const belt_clear_center = params.belt_clear - params.belt_thick / 2;
     //distance from plate to near edge of bearing slot
     const bear_slot_clear = params.belt_clear_center - ride_thick / 2;
+    
     // ---- OBJECTS ---
     const bearing = 
-      union(
+      difference(
          cylinder({r:params.bear_od_rad, h:ride_thick, center: true}),
          cylinder({r:params.ride_id_rad, h:params.mnt_thick, center: true})
       )
 
+    const bearing_space = 
+      union(
+         cylinder({r:params.bear_od_rad, h:ride_thick, center: true}),
+         cylinder({r:params.ride_id_rad, h:params.mnt_thick, center: true})
+      )
 
     return union(
         difference(
@@ -38,13 +44,13 @@ function main() {
                     circle({r:params.mnt_od_rad / 2} )
                         .translate([
                             params.mnt_od_rad / 2,
-                            -params.mnt2ride,
+                            -params.mnt2ride + params.mnt_od_rad / 2,
                             0
                         ])
                 )
             ).translate([
                 -params.mnt_od_rad,
-                -params.mnt2ride/2,
+                -params.mnt_od_rad,
                 -params.mnt_thick/2]
                 ),
             cylinder({r:params.mnt_id_rad, h: params.mnt_thick} )
@@ -53,8 +59,8 @@ function main() {
                 0,
                 -params.mnt_thick/2]
                 ),
-            bearing.translate([
-                params.mnt_od_rad / 3,-
+            bearing_space.translate([
+                params.mnt_od_rad * 0.3,-
                 params.mnt2ride,
                 0
                 ])
