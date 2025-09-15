@@ -3,16 +3,16 @@
 function getParameterDefinitions() {
   return [
     { name: 'mnt_id_rad', type: 'float', initial: 1.5, caption: "mounting shaft radius:" },
-    { name: 'mnt_od_rad', type: 'float', initial: 17, caption: "outer radius:" },
-    { name: 'mnt_thick', type: 'float', initial: 38, caption: "mounting thickness:" },
-    { name: 'mnt2ride', type: 'float', initial: 18, caption: "distance from mount to rider:" },
+    { name: 'mnt_od_rad', type: 'float', initial: 15, caption: "outer radius:" },
+    { name: 'mnt_thick', type: 'float', initial: 20, caption: "mounting thickness:" },
+    { name: 'mnt2ride', type: 'float', initial: 30, caption: "distance from mount to rider:" },
     { name: 'ride_id_rad', type: 'float', initial: 1.5, caption: "rider shaft radius:" },
     { name: 'belt_thick', type: 'float', initial: 16, caption: "belt thickness:" },
     { name: 'belt_clear', type: 'float', initial: 12.5, caption: "from plate to belt edge:" },
     { name: 'bear_od_rad', type: 'float', initial: 5, caption: "bearing outer radius:" },
-    { name: 'bear_thick', type: 'float', initial: 12, caption: "bearing thickness:" },
+    { name: 'bear_thick', type: 'float', initial: 4, caption: "bearing thickness:" },
     { name: 'bear_count', type: 'int', initial: 3, caption: "number of bearings:" },
-{ name: 'output', type: 'choice', caption: 'Output:', values: [0, 1], captions: ["Assembly", "Parts"], initial: 0 }    ];
+{ name: 'output', type: 'choice', caption: 'Output:', values: [0, 1], captions: ["Assembly", "Print"], initial: 0 }    ];
 }
 
 function main() {
@@ -24,15 +24,30 @@ function main() {
     const bear_slot_clear = params.belt_clear_center - ride_thick / 2;
     
     // ---- OBJECTS ---
-    const bearing = 
-      difference(
+    let bearing
+    console.log(params.output)
+    if (params.output==0) { //visualize assembly
+    bearing = 
+      union(
          cylinder({r:params.bear_od_rad, h:ride_thick, center: true}),
-         cylinder({r:params.ride_id_rad, h:params.mnt_thick, center: true})
-      )
+         cylinder({r:params.ride_id_rad, h:params.mnt_thick*1.1, center: true})
+      ).setColor(css2rgb('silver'))
+    } else { //support
+    bearing = 
+        difference(
+         cylinder({
+             r1:params.ride_id_rad*1.08, 
+             r2:params.bear_od_rad-0.2, 
+             h:ride_thick-0.2, 
+             center: true
+         }),
+         cylinder({r:params.ride_id_rad, h:params.mnt_thick*1.1, center: true})
+         )
+    }
 
     const bearing_space = 
       union(
-         cylinder({r:params.bear_od_rad, h:ride_thick, center: true}),
+         cylinder({r:params.bear_od_rad*1.1, h:ride_thick, center: true}),
          cylinder({r:params.ride_id_rad, h:params.mnt_thick, center: true})
       )
 
@@ -60,10 +75,24 @@ function main() {
                 -params.mnt_thick/2]
                 ),
             bearing_space.translate([
-                params.mnt_od_rad * 0.3,-
-                params.mnt2ride,
+                params.mnt_od_rad * 0.2,-
+                params.mnt2ride - params.mnt_od_rad / 4,
                 0
                 ])
             )
+        , bearing.translate([
+                params.mnt_od_rad * 0.2,-
+                params.mnt2ride - params.mnt_od_rad / 4,
+                0
+                ])
         ).translate([0,0,params.mnt_thick/2])
     }
+    
+    
+    
+    
+    
+    
+    
+    
+    
