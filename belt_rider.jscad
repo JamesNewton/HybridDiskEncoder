@@ -2,11 +2,11 @@
 
 function getParameterDefinitions() {
   return [
-    { name: 'mnt_id_rad', type: 'float', initial: 1.5, caption: "mounting shaft radius:" },
+    { name: 'mnt_id_rad', type: 'float', initial: 3, caption: "mounting shaft radius:" },
     { name: 'mnt_od_rad', type: 'float', initial: 15, caption: "outer radius:" },
     { name: 'mnt_thick', type: 'float', initial: 20, caption: "mounting thickness:" },
     { name: 'mnt2ride', type: 'float', initial: 30, caption: "distance from mount to rider:" },
-    { name: 'ride_id_rad', type: 'float', initial: 1.5, caption: "rider shaft radius:" },
+    { name: 'ride_id_rad', type: 'float', initial: 3, caption: "rider shaft radius:" },
     { name: 'belt_thick', type: 'float', initial: 16, caption: "belt thickness:" },
     { name: 'belt_clear', type: 'float', initial: 12.5, caption: "from plate to belt edge:" },
     { name: 'bear_od_rad', type: 'float', initial: 5, caption: "bearing outer radius:" },
@@ -16,6 +16,8 @@ function getParameterDefinitions() {
 }
 
 function main() {
+    //multiplier for clearance allowance
+    const allowance = 1.1
     //thickness of the belt rider
     const ride_thick = params.bear_count * params.bear_thick
     //distance from mounting plate to near edge of belt
@@ -30,14 +32,14 @@ function main() {
     bearing = 
       union(
          cylinder({r:params.bear_od_rad, h:ride_thick, center: true}),
-         cylinder({r:params.ride_id_rad, h:params.mnt_thick*1.1, center: true})
+         cylinder({r:params.ride_id_rad*1.1, h:params.mnt_thick*1.1, center: true})
       ).setColor(css2rgb('silver'))
     } else { //support
     bearing = 
         difference(
          cylinder({
              r1:params.ride_id_rad*1.08, 
-             r2:params.bear_od_rad-0.2, 
+             r2:params.ride_id_rad*1.08, 
              h:ride_thick-0.2, 
              center: true
          }),
@@ -48,7 +50,7 @@ function main() {
     const bearing_space = 
       union(
          cylinder({r:params.bear_od_rad*1.1, h:ride_thick, center: true}),
-         cylinder({r:params.ride_id_rad, h:params.mnt_thick, center: true})
+         cylinder({r:params.ride_id_rad*allowance, h:params.mnt_thick, center: true})
       )
 
     return union(
@@ -68,7 +70,7 @@ function main() {
                 -params.mnt_od_rad,
                 -params.mnt_thick/2]
                 ),
-            cylinder({r:params.mnt_id_rad, h: params.mnt_thick} )
+            cylinder({r:params.mnt_id_rad*allowance, h: params.mnt_thick} )
             .translate([
                 0,
                 0,
