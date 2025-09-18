@@ -2,11 +2,11 @@
 
 function getParameterDefinitions() {
   return [
-    { name: 'mnt_id_rad', type: 'float', initial: 3, caption: "mounting shaft radius:" },
+    { name: 'mnt_id_rad', type: 'float', initial: 2, caption: "mounting shaft radius:" },
     { name: 'mnt_od_rad', type: 'float', initial: 15, caption: "outer radius:" },
     { name: 'mnt_thick', type: 'float', initial: 20, caption: "mounting thickness:" },
     { name: 'mnt2ride', type: 'float', initial: 30, caption: "distance from mount to rider:" },
-    { name: 'ride_id_rad', type: 'float', initial: 3, caption: "rider shaft radius:" },
+    { name: 'ride_id_rad', type: 'float', initial: 2.6, caption: "rider shaft radius:" },
     { name: 'belt_thick', type: 'float', initial: 16, caption: "belt thickness:" },
     { name: 'belt_clear', type: 'float', initial: 12.5, caption: "from plate to belt edge:" },
     { name: 'bear_od_rad', type: 'float', initial: 5, caption: "bearing outer radius:" },
@@ -20,10 +20,8 @@ function main() {
     const allowance = 1.1
     //thickness of the belt rider
     const ride_thick = params.bear_count * params.bear_thick
-    //distance from mounting plate to near edge of belt
-    const belt_clear_center = params.belt_clear - params.belt_thick / 2;
-    //distance from plate to near edge of bearing slot
-    const bear_slot_clear = params.belt_clear_center - ride_thick / 2;
+    //extra distance from mounting plate to near edge of bearings
+    const bear_extra = (params.belt_thick - ride_thick) / 2
     
     // ---- OBJECTS ---
     let bearing
@@ -34,23 +32,27 @@ function main() {
          cylinder({r:params.bear_od_rad, h:ride_thick, center: true}),
          cylinder({r:params.ride_id_rad*1.1, h:params.mnt_thick*1.1, center: true})
       ).setColor(css2rgb('silver'))
-    } else { //support
+    } else { //support or better yet, nothing.
     bearing = 
         difference(
          cylinder({
-             r1:params.ride_id_rad*1.08, 
-             r2:params.ride_id_rad*1.08, 
+             r:params.ride_id_rad, 
              h:ride_thick-0.2, 
              center: true
          }),
-         cylinder({r:params.ride_id_rad, h:params.mnt_thick*1.1, center: true})
+         cylinder({r:params.ride_id_rad*allowance, h:params.mnt_thick*1.1, center: true})
          )
     }
 
     const bearing_space = 
       union(
          cylinder({r:params.bear_od_rad*1.1, h:ride_thick, center: true}),
-         cylinder({r:params.ride_id_rad*allowance, h:params.mnt_thick, center: true})
+         cylinder({
+            r:params.ride_id_rad*allowance, 
+            h:params.mnt_thick * 2 + bear_extra, 
+            center: true
+             
+         })
       )
 
     return union(
@@ -77,15 +79,15 @@ function main() {
                 -params.mnt_thick/2]
                 ),
             bearing_space.translate([
-                params.mnt_od_rad * 0.2,-
-                params.mnt2ride - params.mnt_od_rad / 4,
-                0
+                params.mnt_od_rad * 0.4 - params.ride_id_rad * 1.2 - 0.2,-
+                params.mnt2ride - params.mnt_od_rad / 3 + params.ride_id_rad,
+                bear_extra
                 ])
             )
         , bearing.translate([
-                params.mnt_od_rad * 0.2,-
-                params.mnt2ride - params.mnt_od_rad / 4,
-                0
+                params.mnt_od_rad * 0.4 - params.ride_id_rad * 1.2 - 0.2,-
+                params.mnt2ride - params.mnt_od_rad / 3 + params.ride_id_rad,
+                bear_extra
                 ])
         ).translate([0,0,params.mnt_thick/2])
     }
