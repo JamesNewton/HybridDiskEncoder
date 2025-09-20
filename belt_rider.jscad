@@ -12,6 +12,7 @@ function getParameterDefinitions() {
     { name: 'bear_od_rad', type: 'float', initial: 5, caption: "bearing outer radius:" },
     { name: 'bear_thick', type: 'float', initial: 4, caption: "bearing thickness:" },
     { name: 'bear_count', type: 'int', initial: 4, caption: "number of bearings:" },
+{ name: 'side', type: 'choice', caption: 'Belt side:', values: [1, 0], captions: ["front", "back"], initial: 0 },
 { name: 'output', type: 'choice', caption: 'Output:', values: [0, 1], captions: ["Assembly", "Print"], initial: 0 }    ];
 }
 
@@ -22,7 +23,8 @@ function main() {
     const bear_thick = params.bear_count * params.bear_thick
     //extra distance from mounting plate to near edge of bearings
     const bear_extra = params.belt_clear + (params.belt_thick - bear_thick) / 2
-    
+    //ofset to change the side
+    const side_off = params.side * 5
     // ---- OBJECTS ---
     let bearing
     console.log(params.output)
@@ -61,7 +63,7 @@ function main() {
                     circle({r:params.mnt_od_rad} ),
                     circle({r:params.mnt_od_rad / 2} )
                         .translate([
-                            params.mnt_od_rad / 2,
+                            params.mnt_od_rad / 2 + side_off,
                             -params.mnt2ride + params.mnt_od_rad / 2,
                             0
                         ])
