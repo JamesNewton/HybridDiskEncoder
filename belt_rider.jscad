@@ -71,12 +71,7 @@ function main() {
                 -params.mnt_od_rad,
                 0]
                 ),
-            cylinder({r:params.mnt_id_rad*allowance, h: params.mnt_thick} )
-            .translate([
-                0,
-                0,
-                -params.mnt_thick/2]
-                ),
+            cylinder({r:params.mnt_id_rad*allowance, h: params.mnt_thick} ),
             cylinder({ //extra clearance for mounting bolt nut
                 r:params.mnt_id_rad*3, 
                 h: params.mnt_id_rad*2
@@ -94,12 +89,4 @@ function main() {
                 ])
         )
     }
-    
-    
-    
-    
-    
-    
-    
-    
     
