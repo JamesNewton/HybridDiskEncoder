@@ -130,10 +130,10 @@ Detector to support mount should be adjustable? Or will laser cut and assembly b
 - Done: Set the PWM levels on the LEDs to get full range response on the A2D
 - Done: Calculate ATAN2 on board and return degrees. 
 - Done: Count slots (standard quadrature decode) and combine with ATAN2 degrees <a href="https://github.com/JamesNewton/HybridDiskEncoder/issues/8">#8</a>
-- TODO: Open shaft passthrough <a href="https://github.com/JamesNewton/HybridDiskEncoder/issues/6">#6</a>
+- Done: Open shaft passthrough <a href="https://github.com/JamesNewton/HybridDiskEncoder/issues/6">#6</a>
 - TODO: Add support for Single Track Grey Code absolute position. See <a href="https://github.com/JamesNewton/HybridDiskEncoder/issues/5">#5</a>
 - TODO: Add <a href="https://cfry.github.io/dde4/dde/index.html">DDE4</a> support for serials connected devices
-- TODO: Produce and assemble a joint with shaft pass through, integrated (on joint) encoder, separate(able) drive box for different motor sizes / types. 
+- TODO: Produce and assemble a joint with shaft pass through, integrated (on joint) encoder, separate(able) drive box for different motor sizes / types. <a href="https://github.com/JamesNewton/HybridDiskEncoder/issues/9">#9</a>
 
 ## See also:
 - https://photos.app.goo.gl/v6FCJX8Efcgw1NGY7 photo album of ongoing work. 
