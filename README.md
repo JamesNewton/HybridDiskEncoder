@@ -1,5 +1,7 @@
 # Hybrid Disk Encoder
 
+https://github.com/JamesNewton/HybridDiskEncoder Home of this project
+
 This encoder is based on the Haddington Dynamic Analog / Digital Hybrid encoders used on the Dexter robot arm:<br>
 https://github.com/HaddingtonDynamics/Dexter/wiki/Encoders
 <br>Please take a moment to read and understand that revolutionary system before continuing here; many of the goals of this project won't
