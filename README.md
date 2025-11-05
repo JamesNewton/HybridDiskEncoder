@@ -1,9 +1,9 @@
 # Hybrid Disk Encoder
 
-https://github.com/JamesNewton/HybridDiskEncoder Home of this project
+[https://github.com/JamesNewton/HybridDiskEncoder](https://github.com/JamesNewton/HybridDiskEncoder) Home of this project
 
 This encoder is based on the Haddington Dynamic Analog / Digital Hybrid encoders used on the Dexter robot arm:<br>
-https://github.com/HaddingtonDynamics/Dexter/wiki/Encoders
+[https://github.com/HaddingtonDynamics/Dexter/wiki/Encoders](https://github.com/HaddingtonDynamics/Dexter/wiki/Encoders)
 <br>Please take a moment to read and understand that revolutionary system before continuing here; many of the goals of this project won't
 make sense with out understanding it. 
 
@@ -78,15 +78,15 @@ When used as an encoder for robotics, rapid motion can be supported by switching
 
 For now, the standard C/C++ math.h atan2 is fast enough, but if we feel the need for speed:
 - Interesting discussion of ultra ATAN2 methods:
-https://web.archive.org/web/20180529001306/https://www.coranac.com/documents/arctangent/
-- http://f3.to/portfolio/math/fastatan2.htm Fast atan2. `if |X|>|Y| [(-b*x*y)/(x^2+ a*y^2) + c*sign(x)] else [-c*sign(x*y)= c*sign(x) + (b*x*y)/(y^2+a*x^2)] where a = 0.28088, b = 180/Pi, c = b/2*Pi`
+[https://web.archive.org/web/20180529001306/https://www.coranac.com/documents/arctangent/](https://www.coranac.com/documents/arctangent/)
+- [http://f3.to/portfolio/math/fastatan2.htm](http://f3.to/portfolio/math/fastatan2.htm) Fast atan2. `if |X|>|Y| [(-b*x*y)/(x^2+ a*y^2) + c*sign(x)] else [-c*sign(x*y)= c*sign(x) + (b*x*y)/(y^2+a*x^2)] where a = 0.28088, b = 180/Pi, c = b/2*Pi`
 
 **PSoC4?** Previously, we focused on the 
 <A href="http://www.cypress.com/products/32-bit-arm-cortex-m0-psoc-4200-programmable-digital-blocks">Cypress PSoC 4 chips</A>
 for the processor.<br>
-http://www.cypress.com/part/cy8c4247azi-m485
+[http://www.cypress.com/part/cy8c4247azi-m485](http://www.cypress.com/part/cy8c4247azi-m485)
 It is featured in this development system:<br>
-http://www.cypress.com/documentation/development-kitsboards/cy8ckit-043-psoc-4-m-series-prototyping-kit $10 WITH a debugger!
+[http://www.cypress.com/documentation/development-kitsboards/cy8ckit-043-psoc-4-m-series-prototyping-kit](http://www.cypress.com/documentation/development-kitsboards/cy8ckit-043-psoc-4-m-series-prototyping-kit) $10 WITH a debugger!
 <br>This gives us:
 - 8 channel, 12 bit ADC 1-Msps, 
 - programmable analog front end (no need for external opamps), 
@@ -95,7 +95,7 @@ http://www.cypress.com/documentation/development-kitsboards/cy8ckit-043-psoc-4-m
 
 However, 
 1. it can NOT be run under wine<br>
-https://appdb.winehq.org/objectManager.php?sClass=application&iId=16168
+[https://appdb.winehq.org/objectManager.php?sClass=application&iId=16168](https://appdb.winehq.org/objectManager.php?sClass=application&iId=16168)
 2. And the need for a frontend is removed by a little digital filtering and using PWM to control the brightness of the LEDs.
 
 The original PSoC Firmware is in the "Firmware" folder
@@ -105,7 +105,7 @@ It's easy to program via [Wokwi.com](https://wokwi.com/) or Arduino IDE via the 
 See the [HybridEncoder.ino](https://github.com/JamesNewton/HybridDiskEncoder/blob/master/HybridEncoder.ino) file in the home directory. Hint: [these labels](https://forum.dronebotworkshop.com/show-tell/breadboard-pinout-helpers-for-tiny-arduino-boards/) are very handy. 
 
 ## Building the Firmware
-**IDE:** Just the current Arduino IDE the [Earle Philhower](https://github.com/earlephilhower/arduino-pico) board support files or https://wokwi.com/ 
+**IDE:** Just the current Arduino IDE the [Earle Philhower](https://github.com/earlephilhower/arduino-pico) board support files or [https://wokwi.com/](https://wokwi.com/) 
 
 With this code, we can see the sin, cos, and computed atan2 which gives us about 1000 clicks _inside each slot_! Again, the point is that this divides up each slot, and then we can count (already done) the slot which multiplies the clicks. With 1000 per slot and 126 slots, that is 126,000 CPR. Note the lack of smooth motion here is due to sticktion in the very poor bearing (there isn't one) in the test rig. The actual joint will be smoother. 
 
@@ -114,7 +114,7 @@ With this code, we can see the sin, cos, and computed atan2 which gives us about
 ## Single Track Grey Code
 
 The analog reading of our position in a single slot is an "absolute" position, not relative (like a standard quadrature encoder). With 
-[Single Track Grey Codes](http://techref.massmind.org/techref/io/sensor/pos/enc/greycodes.htm) we can provide an absolute position to a single slot. 
+[Single Track Grey Codes](https://massmind.org/techref/io/sensor/pos/enc/greycodes.htm) we can provide an absolute position to a single slot. 
 There is a second disk "hidden" under the main disk which has a STGC pattern cut in it, and the base of the test rig has slots for the sensors. 
 The [STGC Explorer](https://jamesnewton.github.io/massmind/techref/stgc_explorer.html) shows the know working codes, helps to validate possible new codes,
 visualizes the sequence and sensor position, and then produces the C code to decode the readings. See issue 5 for the current status.
