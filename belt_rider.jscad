@@ -5,7 +5,7 @@ function getParameterDefinitions() {
     { name: 'mnt_id_rad', type: 'float', initial: 2, caption: "mounting shaft radius:" },
     { name: 'mnt_od_rad', type: 'float', initial: 15, caption: "outer radius:" },
     { name: 'mnt_thick', type: 'float', initial: 20, caption: "mounting thickness:" },
-    { name: 'mnt2ride', type: 'float', initial: 30, caption: "distance from mount to rider:" },
+    { name: 'mnt2ride', type: 'float', initial: 25, caption: "distance from mount to rider:" },
     { name: 'ride_id_rad', type: 'float', initial: 2.6, caption: "rider shaft radius:" },
     { name: 'belt_thick', type: 'float', initial: 16, caption: "belt thickness:" },
     { name: 'belt_clear', type: 'float', initial: 12.5, caption: "from plate to belt edge:" },
