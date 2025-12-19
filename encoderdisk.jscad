@@ -95,7 +95,12 @@ captions:[
     { name: 'cutfudge', type: 'float', initial: 0.4, caption: "laser cut width or<br> (-) filament spread:" },
     { name: 'thick', type: 'float', initial: 3, caption: "material thickness:" },
     { name: 'othick', type: 'float', initial: 0.4, caption: "opaque thickness:" },
-{ name: 'output', type: 'choice', caption: 'Output:', values: [0, 1], captions: ["Assembly", "Parts"], initial: 0 }    ];
+    { name: 'output', type: 'choice', caption: 'Output:', 
+        values: [0, 1, 2, 3], 
+        captions: ["Assembly", "Parts", "Disk Slots", "Disk STGC"], 
+        initial: 0 
+        }
+    ];
 }
 
 
@@ -360,7 +365,9 @@ var cutthin = []
     cutthin.push(riser.translate([0,0,0])) //translate to copy the object
 
 if (0 == params.output) out = assembly; 
-else { 
+if (2 == params.output) out = disk; 
+if (3 == params.output) out = disksup; 
+if (1 == params.output) { 
     let out1 = binPack(cutthin, packingEpsilon )
     let out2 = binPack(cutthick, packingEpsilon )
     let b = out2.getBounds()[1]
