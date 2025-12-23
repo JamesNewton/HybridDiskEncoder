@@ -135,7 +135,8 @@ Detector to support mount should be adjustable? Or will laser cut and assembly b
 - Done: Open shaft passthrough <a href="https://github.com/JamesNewton/HybridDiskEncoder/issues/6">#6</a>
 - TODO: Add support for Single Track Grey Code absolute position. See <a href="https://github.com/JamesNewton/HybridDiskEncoder/issues/5">#5</a>
 - TODO: Add <a href="https://cfry.github.io/dde4/dde/index.html">DDE4</a> support for serials connected devices
-- TODO: Produce and assemble a joint with shaft pass through, integrated (on joint) encoder, separate(able) drive box for different motor sizes / types. <a href="https://github.com/JamesNewton/HybridDiskEncoder/issues/9">#9</a>
+- TODO: Try making an encoder disk with both <a href="https://github.com/JamesNewton/HybridDiskEncoder/issues/5">STGC</a> (as silkscreen) and milled slots on a single PCB. See <a href="https://github.com/JamesNewton/HybridDiskEncoder/issues/12">#12</a>
+- TODO: Produce and assemble a joint with shaft pass through, integrated (on joint) encoder, separate(able) drive box for different motor sizes / types. <a href="https://github.com/JamesNewton/HybridDiskEncoder/issues/9">#9</a> PLEASE HELP? I'm a horrible fabricator
 
 ## See also:
 - https://photos.app.goo.gl/v6FCJX8Efcgw1NGY7 photo album of ongoing work. 
