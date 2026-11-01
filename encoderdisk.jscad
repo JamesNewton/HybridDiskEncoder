@@ -86,8 +86,8 @@ captions:[
     "5,11 winzurf.co.nz", //http://www.winzurf.co.nz/Single_Track_Grey_Code_Patent/Single_track_Grey_code_encoder_patent.pdf
     "4,9 winzurf.co.nz", //http://www.winzurf.co.nz/Single_Track_Grey_Code_Patent/Single_track_Grey_code_encoder_patent.pdf
     ]},
-    { name: 'disk', type: 'float', initial: 86, caption: "disk diameter:" },
-    { name: 'hub', type: 'float', initial: 3, caption: "hub diameter:" },
+    { name: 'disk', type: 'float', initial: 81, caption: "disk diameter:" },
+    { name: 'hub', type: 'float', initial: 4.5, caption: "hub diameter:" },
     { name: 'slotd', type: 'float', initial: 9, caption: "slots inset:" },
     { name: 'slotlength', type: 'float', initial: 3, caption: "slot length:" },
     { name: 'slotfudge', type: 'float', initial: .05, caption: "slot break:" },
@@ -96,8 +96,8 @@ captions:[
     { name: 'thick', type: 'float', initial: 3, caption: "material thickness:" },
     { name: 'othick', type: 'float', initial: 0.4, caption: "opaque thickness:" },
     { name: 'output', type: 'choice', caption: 'Output:', 
-        values: [0, 1, 2, 3], 
-        captions: ["Assembly", "Parts", "Disk Slots", "Disk STGC"], 
+        values: [0, 1, 2, 3, 4], 
+        captions: ["Assembly", "Parts", "Disk Slots", "Disk STGC", "Mask"], 
         initial: 0 
         }
     ];
@@ -265,6 +265,16 @@ var slots = []
           )
         );
    }
+var hubscrews = []
+    for (i=0; i<360; i+=360/3) {
+      hubscrews.push(
+        rotate([0,0,i],
+          translate([5,1,-1],
+            circle({r: 0.5, h:2, center: true})
+          )
+        )
+      )
+    }
 let stgcoff = distancedeg/2 //offset to avoid LEDs (support)
 let stgcr = params.disk/2-params.slotd+params.slotlength
 var stgcslots = cutstgcarcs(seq.length, m, stgcr, stgcoff);
@@ -278,6 +288,7 @@ var disksup = circle({r:(params.disk-params.slotd)/2, center: true})
     .subtract(stgcslots);
 var disk = circle({r: params.disk/2-0.5, fn: 50, center: true})
     .subtract(circle({r: params.hub/2, h:2, center: true}))
+    .subtract(hubscrews)
     .subtract(slots)
 var washtop = circle({r:(sensespace+6)/2, center: true})
     .subtract(circle({r:params.hub/2, h:2, center: true}));
@@ -304,7 +315,14 @@ var base = square({size: [basesize, basesize], center:true})
 //    .subtract(translate([params.slotlength/2,-sensespace/2,0],rotate([0,0,-slotinc],square({size: [params.slotlength,maskw], center:true}))))
 //    .subtract(translate([-(slotd-basesize)/2-3,+sensespace/2,0],circle({r: M3r, center:true})))
 //    .subtract(translate([-(slotd-basesize)/2-3,-sensespace/2,0],circle({r: M3r, center:true})))
-var mask = square({size:[maskl,sensespace+6], center:true})
+let maskbodyw = sensespace+6
+//make it at least 10mm wide to fit the 3D printed holder
+if (maskbodyw < 10) maskbodyw = 10
+var mask = union(
+            square({size:[maskl,maskbodyw], center:true}),
+            square({size:[4,maskbodyw+4], center:true})
+                .translate([-maskl/2+1.95,0,0])
+            )
     .subtract(translate([params.slotlength/2,+sensespace/2,0],rotate([0,0,+slotinc],eyemask(maskw*2))))
     .subtract(translate([params.slotlength/2,-sensespace/2,0],rotate([0,0,-slotinc],eyemask(maskw*2))))
     .subtract(translate([-(slotd-basesize)/2-3,+sensespace/2,0],circle({r: M3r, center:true})))
@@ -367,6 +385,7 @@ var cutthin = []
 if (0 == params.output) out = assembly; 
 if (2 == params.output) out = disk; 
 if (3 == params.output) out = disksup; 
+if (4 == params.output) out = mask; 
 if (1 == params.output) { 
     let out1 = binPack(cutthin, packingEpsilon )
     let out2 = binPack(cutthick, packingEpsilon )
