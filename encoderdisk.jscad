@@ -315,13 +315,15 @@ var base = square({size: [basesize, basesize], center:true})
 //    .subtract(translate([params.slotlength/2,-sensespace/2,0],rotate([0,0,-slotinc],square({size: [params.slotlength,maskw], center:true}))))
 //    .subtract(translate([-(slotd-basesize)/2-3,+sensespace/2,0],circle({r: M3r, center:true})))
 //    .subtract(translate([-(slotd-basesize)/2-3,-sensespace/2,0],circle({r: M3r, center:true})))
+let maskbodyl = 18
 let maskbodyw = sensespace+6
 //make it at least 10mm wide to fit the 3D printed holder
 if (maskbodyw < 10) maskbodyw = 10
 var mask = union(
-            square({size:[maskl,maskbodyw], center:true}),
+            square({size:[maskbodyl,maskbodyw], center:true})
+                .translate([-maskl/4,0,0]),
             square({size:[4,maskbodyw+4], center:true})
-                .translate([-maskl/2+1.95,0,0])
+                .translate([maskbodyl/2-maskl/4+1.9,0,0])
             )
     .subtract(translate([params.slotlength/2,+sensespace/2,0],rotate([0,0,+slotinc],eyemask(maskw*2))))
     .subtract(translate([params.slotlength/2,-sensespace/2,0],rotate([0,0,-slotinc],eyemask(maskw*2))))
